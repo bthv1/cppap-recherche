@@ -144,10 +144,25 @@
       "tone": "ok",
       "hint": "Correspondance corrigée à la main et relue en revue de code."
     },
+    "siret": {
+      "label": "SIRET publié par la CPPAP",
+      "tone": "ok",
+      "hint": "Le fichier source déclare lui-même le SIRET de l'éditeur : le rattachement est exact, sans rapprochement de noms."
+    },
+    "siret_propage": {
+      "label": "SIRET déclaré sur une autre liste",
+      "tone": "ok",
+      "hint": "Cette liste ne publie pas de SIRET, mais le même éditeur en déclare un dans une autre liste CPPAP. Rattachement exact par déduction."
+    },
+    "siret_absent": {
+      "label": "SIRET publié, entreprise absente",
+      "tone": "warn",
+      "hint": "Le SIRET vient du fichier officiel, mais l'entreprise n'est pas dans l'API : elle est probablement non diffusible ou radiée."
+    },
     "certain": {
       "label": "Correspondance certaine",
       "tone": "ok",
-      "hint": "Dénomination identique et signaux concordants, sans homonyme proche."
+      "hint": "Dénomination identique et signaux concordants, sans homonyme proche. Rapprochement par le nom, la source ne publiant pas de SIRET."
     },
     "probable": {
       "label": "Correspondance probable",

@@ -41,6 +41,9 @@ log = logging.getLogger("normalize")
 # soit revendiqué par l'éditeur, et `nom` en dernier pour qu'il capte les libellés
 # génériques restants (« Titre », « Nom »).
 FIELD_ORDER = (
+    # `siret` en premier : c'est l'identifiant le plus fort du fichier, et son alias
+    # (« SIRET ») ne peut être confondu avec aucun autre champ.
+    "siret",
     "cppap",
     "editeur",
     "forme_juridique",
@@ -157,6 +160,26 @@ def normalize_departement(value: str) -> str:
     return code
 
 
+def normalize_siret(value: str) -> str:
+    """Ramène un SIRET à ses 14 chiffres, ou chaîne vide s'il est inexploitable.
+
+    Les tableurs mutilent volontiers ces numéros : espaces de groupage, points, et surtout
+    zéro initial perdu lors d'un passage par une colonne numérique. On restitue ce zéro
+    quand il ne manque qu'un chiffre — le cas est fréquent et sans ambiguïté.
+    """
+    digits = re.sub(r"\D", "", value or "")
+    if not digits:
+        return ""
+    if len(digits) == 13:
+        digits = f"0{digits}"
+    return digits if len(digits) == 14 else ""
+
+
+def siren_from_siret(siret: str) -> str:
+    """Les 9 premiers chiffres d'un SIRET identifient l'unité légale."""
+    return siret[:9] if len(siret) == 14 else ""
+
+
 def normalize_cppap(value: str) -> str:
     """Uniformise l'écriture d'un numéro CPPAP en séparant ses groupes par une espace."""
     cleaned = re.sub(r"[^0-9A-Za-z]+", " ", (value or "").strip()).strip()
@@ -240,6 +263,7 @@ def build_records(
 
         qualification = cell(row, "qualification")
         departement = normalize_departement(cell(row, "departement"))
+        siret = normalize_siret(cell(row, "siret"))
 
         record_id = _record_id(source["type"], cppap, nom, editeur)
         count = seen_ids.get(record_id, 0) + 1
@@ -256,6 +280,11 @@ def build_records(
                 "cppap": cppap,
                 "nom": nom,
                 "editeur": editeur,
+                # SIRET déclaré dans le fichier officiel, quand la source le fournit : il
+                # remplace le rapprochement par nom par une jointure exacte sur SIREN.
+                "siret": siret,
+                "siret_source": cell(row, "siret"),
+                "siren": siren_from_siret(siret),
                 "forme_juridique": cell(row, "forme_juridique"),
                 "departement": departement,
                 "departement_source": cell(row, "departement"),

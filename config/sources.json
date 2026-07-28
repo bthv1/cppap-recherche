@@ -27,6 +27,21 @@
       "dataset_slug": "liste-des-services-de-presse-en-ligne-reconnus",
       "required": ["cppap", "nom"],
       "columns": {
+        "siret": [
+          "siret",
+          "n siret",
+          "no siret",
+          "num siret",
+          "numero siret",
+          "numero de siret",
+          "n de siret",
+          "siret de l editeur",
+          "siret editeur",
+          "siret de l entreprise",
+          "siret de l entreprise editrice",
+          "numero siret de l editeur",
+          "etablissement siret"
+        ],
         "cppap": [
           "n cppap",
           "no cppap",
@@ -118,6 +133,21 @@
       "dataset_slug": "liste-des-publications-de-presse",
       "required": ["cppap", "nom"],
       "columns": {
+        "siret": [
+          "siret",
+          "n siret",
+          "no siret",
+          "num siret",
+          "numero siret",
+          "numero de siret",
+          "n de siret",
+          "siret de l editeur",
+          "siret editeur",
+          "siret de l entreprise",
+          "siret de l entreprise editrice",
+          "numero siret de l editeur",
+          "etablissement siret"
+        ],
         "cppap": [
           "n cppap",
           "no cppap",
@@ -203,6 +233,21 @@
       "dataset_slug": "liste-des-agences-de-presse-agreees",
       "required": ["nom"],
       "columns": {
+        "siret": [
+          "siret",
+          "n siret",
+          "no siret",
+          "num siret",
+          "numero siret",
+          "numero de siret",
+          "n de siret",
+          "siret de l editeur",
+          "siret editeur",
+          "siret de l entreprise",
+          "siret de l entreprise editrice",
+          "numero siret de l editeur",
+          "etablissement siret"
+        ],
         "cppap": [
           "n cppap",
           "no cppap",

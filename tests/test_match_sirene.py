@@ -14,9 +14,11 @@ from match_sirene import (
     THRESHOLD_CERTAIN,
     classify,
     collect_publishers,
+    collect_sirens,
     extract_entreprise,
     load_overrides,
     name_similarity,
+    resolve_by_siren,
     resolve_override_targets,
     score_candidate,
 )
@@ -204,3 +206,67 @@ def test_un_override_orphelin_est_signale(caplog):
 
     assert not publisher_overrides and not record_overrides
     assert "cle-inconnue" in caplog.text
+
+
+# --------------------------------------------------------------------------------------
+# Jointure exacte par SIRET
+# --------------------------------------------------------------------------------------
+
+
+def test_collect_sirens_deduplique_par_entreprise():
+    """Un SIREN = un appel d'API, même s'il couvre plusieurs titres."""
+    records = [
+        {"siren": "900000101", "siret": "90000010100017"},
+        {"siren": "900000101", "siret": "90000010100017"},
+        {"siren": "900000107", "siret": "90000010700014"},
+        {"siren": "", "siret": ""},
+    ]
+    sirens = collect_sirens(records)
+
+    assert set(sirens) == {"900000101", "900000107"}
+    assert sirens["900000101"]["records"] == 2
+    assert sirens["900000101"]["siret"] == "90000010100017"
+
+
+def test_collect_sirens_sur_une_source_sans_siret():
+    assert collect_sirens([{"siren": "", "siret": ""}]) == {}
+
+
+def test_resolve_by_siren_marque_un_siret_absent_de_l_api():
+    """L'entreprise est absente de l'API, mais le SIRET reste officiel.
+
+    Ce cas doit se distinguer d'un échec d'appariement : confondre les deux ferait douter
+    d'une donnée qui, elle, vient du fichier de la CPPAP.
+    """
+
+    class ClientVide:
+        def get_json(self, url, params=None):
+            return {"results": []}
+
+    resolution = resolve_by_siren(ClientVide(), "999000000", "99900000000018", "2026-07-28")
+
+    assert resolution["confidence"] == "siret_absent"
+    assert resolution["siren"] == "999000000"
+    assert resolution["siret_declare"] == "99900000000018"
+    assert "entreprise" not in resolution
+
+
+def test_resolve_by_siren_signale_un_etablissement_qui_n_est_pas_le_siege(candidats):
+    """Le SIRET déclaré à la CPPAP désigne un établissement, pas forcément le siège."""
+
+    class ClientFixe:
+        def __init__(self, result):
+            self.result = result
+
+        def get_json(self, url, params=None):
+            return {"results": [self.result]}
+
+    siege_siret = candidats[0]["siege"]["siret"]
+    au_siege = resolve_by_siren(ClientFixe(candidats[0]), "900000101", siege_siret, "2026-07-28")
+    ailleurs = resolve_by_siren(
+        ClientFixe(candidats[0]), "900000101", "90000010199999", "2026-07-28"
+    )
+
+    assert au_siege["confidence"] == "siret"
+    assert au_siege["siret_est_siege"] is True
+    assert ailleurs["siret_est_siege"] is False

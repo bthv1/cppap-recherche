@@ -45,6 +45,59 @@
   }
 }
 
+/* Un choix de thème explicite doit primer sur la préférence du système, dans les deux sens.
+   Les hôtes qui proposent un bouton de thème le signalent en posant `data-theme` sur la
+   racine ; le sélecteur d'attribut est plus spécifique que la media query, il gagne donc.
+
+   La palette apparaît deux fois volontairement : `light-dark()` permettrait de ne la décrire
+   qu'une seule fois, mais un navigateur qui ne la connaît pas rendrait les couleurs
+   invalides à l'usage — texte illisible plutôt que thème approximatif. Duplication assumée. */
+
+:root[data-theme="light"] {
+  color-scheme: light;
+  --bg: #fbfaf8;
+  --bg-raised: #ffffff;
+  --bg-sunken: #f2efea;
+  --ink: #1b1a18;
+  --ink-soft: #56534d;
+  --ink-faint: #85817a;
+  --line: #e2ddd5;
+  --line-strong: #cdc6bb;
+  --accent: #1b4f8a;
+  --accent-soft: #e8f0f9;
+  --ok: #1f6b45;
+  --ok-soft: #e6f2ea;
+  --warn: #8a5a12;
+  --warn-soft: #fbf0dc;
+  --risk: #97361f;
+  --risk-soft: #fbe9e4;
+  --none-soft: #efece7;
+  --radius: 8px;
+  --shadow: 0 1px 2px rgb(27 26 24 / 6%), 0 6px 20px rgb(27 26 24 / 6%);
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #16161a;
+  --bg-raised: #1e1e24;
+  --bg-sunken: #121216;
+  --ink: #eceae6;
+  --ink-soft: #b3afa8;
+  --ink-faint: #8b8781;
+  --line: #33333c;
+  --line-strong: #45454f;
+  --accent: #8fbcf0;
+  --accent-soft: #1b2a3d;
+  --ok: #7ec9a0;
+  --ok-soft: #16291f;
+  --warn: #e0b571;
+  --warn-soft: #2c2417;
+  --risk: #eda392;
+  --risk-soft: #2f1c17;
+  --none-soft: #24242b;
+  --shadow: 0 1px 2px rgb(0 0 0 / 40%), 0 8px 24px rgb(0 0 0 / 30%);
+}
+
 * { box-sizing: border-box; }
 
 html { -webkit-text-size-adjust: 100%; }

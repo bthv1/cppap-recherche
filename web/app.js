@@ -224,7 +224,10 @@ async function openCard(id, { updateHash = true } = {}) {
     el.card.innerHTML = renderCard(detail, state.meta);
     attachCardBehaviour(el.card, detail, state.meta);
     if (window.matchMedia('(max-width: 900px)').matches) {
-      el.card.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      // En colonne unique la carte s'affiche sous la liste : on y amène le lecteur, en
+      // respectant une préférence de mouvement réduit.
+      const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      el.card.scrollIntoView({ behavior: reduced ? 'auto' : 'smooth', block: 'start' });
     }
   } catch (error) {
     el.card.innerHTML = `<div class="card-section">Chargement impossible : ${esc(error.message)}</div>`;

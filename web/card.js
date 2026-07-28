@@ -45,6 +45,20 @@ function badge(text, extra = '') {
   return `<span class="badge ${extra}">${esc(text)}</span>`;
 }
 
+/** Groupage lisible d'un SIRET : 3-3-3-5, comme l'écrit l'INSEE. */
+function formatSiret(siret) {
+  const digits = String(siret ?? '').replace(/\D/g, '');
+  if (digits.length !== 14) return '';
+  return `${digits.slice(0, 3)} ${digits.slice(3, 6)} ${digits.slice(6, 9)} ${digits.slice(9)}`;
+}
+
+/** Groupage lisible d'un SIREN : 3-3-3. */
+function formatSiren(siren) {
+  const digits = String(siren ?? '').replace(/\D/g, '');
+  if (digits.length !== 9) return String(siren ?? '');
+  return `${digits.slice(0, 3)} ${digits.slice(3, 6)} ${digits.slice(6)}`;
+}
+
 function link(href, text, { external = true } = {}) {
   const rel = external ? ' rel="noopener noreferrer"' : '';
   const target = external ? ' target="_blank"' : '';
@@ -133,6 +147,9 @@ function editeurSection(detail) {
 
   const rows = [
     field('Raison sociale', detail.editeur),
+    // Le SIRET, quand la liste le publie, est la donnée qui rend le rattachement exact :
+    // on l'affiche du côté source, là où il a été déclaré.
+    field('SIRET déclaré', formatSiret(detail.siret) || detail.siret_source),
     field('Forme juridique', detail.forme_juridique),
     field('Département du siège', departement),
     field('Commune', detail.commune),
@@ -162,14 +179,33 @@ function sireneSection(detail, meta) {
   const sirene = detail.sirene;
   const { info, html: note } = confidenceNote(sirene, labels);
 
-  if (!sirene || !sirene.siren || !sirene.entreprise) {
+  if (!sirene || !sirene.entreprise) {
     const searchUrl = `https://annuaire-entreprises.data.gouv.fr/rechercher?terme=${
       encodeURIComponent(detail.editeur || detail.nom)}`;
+
+    // Un SIRET publié dont l'entreprise est absente de l'API n'est PAS un échec
+    // d'appariement : l'identifiant reste officiel. Le confondre avec « aucune
+    // correspondance » ferait douter d'une donnée qui, elle, est fiable.
+    const known = sirene?.siren
+      ? `<dl class="fields">
+           ${field('SIREN', formatSiren(sirene.siren))}
+           ${field('SIRET déclaré par la CPPAP', formatSiret(sirene.siret_declare))}
+         </dl>
+         <p>L'identifiant vient du fichier officiel, mais l'API Recherche d'entreprises ne
+         renvoie pas cette entreprise : elle est vraisemblablement non diffusible, ou radiée.</p>
+         <p class="card-links">${link(
+           `${meta.annuaire_base}/${sirene.siren}`, 'Tenter la fiche Annuaire des entreprises',
+         )}</p>`
+      : `<p>Aucune entreprise n'a pu être rattachée à cette raison sociale.</p>
+         <p class="card-links">${link(
+           searchUrl,
+           `Chercher « ${detail.editeur || detail.nom} » dans l'Annuaire des entreprises`,
+         )}</p>`;
+
     return `<section class="card-section">
       <h3>Siège social et entreprise (SIRENE)</h3>
       ${note}
-      <p>Aucune entreprise n'a pu être rattachée automatiquement à cette raison sociale.</p>
-      <p class="card-links">${link(searchUrl, 'Chercher « ' + (detail.editeur || detail.nom) + ' » dans l\'Annuaire des entreprises')}</p>
+      ${known}
       ${candidatesBlock(sirene)}
     </section>`;
   }
@@ -185,7 +221,7 @@ function sireneSection(detail, meta) {
     : '';
 
   const identity = [
-    field('SIREN', e.siren),
+    field('SIREN', formatSiren(e.siren)),
     field('Dénomination SIRENE', e.nom_complet ?? e.nom_raison_sociale),
     field('Sigle', e.sigle),
     field('Nature juridique', codeWithLabel(e.nature_juridique, labels.nature_juridique)),
@@ -204,7 +240,16 @@ function sireneSection(detail, meta) {
   ].join('');
 
   const siegeRows = [
-    field('SIRET du siège', siege.siret),
+    field('SIRET du siège', formatSiret(siege.siret) || siege.siret),
+    // Le SIRET déclaré à la CPPAP désigne un établissement, pas forcément le siège :
+    // le signaler évite de croire à une incohérence entre les deux numéros.
+    sirene.siret_declare && sirene.siret_est_siege === false
+      ? field(
+          'Établissement déclaré',
+          `${formatSiret(sirene.siret_declare)} — l'établissement déclaré à la CPPAP `
+            + "n'est pas le siège social",
+        )
+      : '',
     field('Enseigne', Array.isArray(siege.liste_enseignes)
       ? siege.liste_enseignes.join(', ') : siege.liste_enseignes),
     field('Nom commercial', siege.nom_commercial),

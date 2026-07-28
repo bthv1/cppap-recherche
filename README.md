@@ -25,22 +25,37 @@ scripts Python sans aucune dépendance de production, et un Cloudflare Worker fa
    complète de l'éditeur — siège social avec adresse, code NAF, nature juridique, date de
    création, effectifs, état administratif, dirigeants.
 
-## Le point à comprendre avant d'utiliser les données
+## Comment le rattachement à SIRENE est établi
 
-> **Les fichiers CPPAP ne contiennent pas de numéro SIREN.** Ils ne portent que la raison
-> sociale, la forme juridique et le département du siège.
+Les trois listes ne se valent pas sur ce point : **certaines publient le SIRET de l'éditeur,
+d'autres non.** Le rattachement emprunte donc quatre chemins, de fiabilité décroissante, et
+**chaque fiche affiche celui qui a été emprunté** :
 
-Le rattachement média → entreprise est donc **reconstitué par rapprochement de noms**, pas
-obtenu par jointure sur une clé. Trois conséquences assumées :
+| Niveau affiché | Origine | Fiabilité |
+|---|---|---|
+| `Vérifié manuellement` | correction humaine dans `data/sirene/overrides.csv`, relue en PR | maximale |
+| `SIRET publié par la CPPAP` | la liste déclare elle-même le SIRET → **jointure exacte** | exacte |
+| `SIRET déclaré sur une autre liste` | la liste ne publie pas de SIRET, mais le même éditeur en déclare un dans une autre liste CPPAP | exacte par déduction |
+| `Certaine` / `Probable` / `Incertaine` / `Aucune` | rapprochement heuristique sur la raison sociale | à vérifier |
 
-- chaque fiche affiche un **niveau de confiance** (`vérifié`, `certain`, `probable`,
-  `incertain`, `aucun`) et conserve ses autres candidats ;
-- l'appariement est **calculé une fois puis versionné** dans `data/sirene/cache.json`, donc
+Un cinquième niveau, `SIRET publié, entreprise absente`, signale un SIRET officiel dont
+l'entreprise ne figure pas dans l'API — non diffusible ou radiée. L'identifiant reste vrai ;
+c'est la fiche entreprise qui manque.
+
+Là où le SIRET est absent, le rapprochement se fait sur le nom, et il est faillible. Trois
+garde-fous :
+
+- le niveau de confiance est **toujours affiché**, avec les autres candidats envisagés ;
+- le résultat est **calculé une fois puis versionné** dans `data/sirene/cache.json`, donc
   relisible en diff — jamais recalculé silencieusement ;
-- il est **corrigeable à la main** via `data/sirene/overrides.csv`, en pull request relue.
+- il est **corrigeable à la main** via `data/sirene/overrides.csv`, prioritaire sur tout le reste.
 
 Un rattachement `probable` ou `incertain` ne doit jamais être présenté comme un fait. Le filtre
-« Rattachement SIRENE à vérifier » de l'interface sert précisément à relire ces cas.
+« Rattachement SIRENE à vérifier » de l'interface isole précisément ces cas.
+
+L'ordre de priorité vit dans un seul module, `scripts/lib/resolution.py`, partagé par
+l'appariement et la génération du site : les statistiques annoncées décrivent donc exactement
+ce que les fiches affichent.
 
 ## Architecture
 
@@ -50,7 +65,7 @@ data.gouv.fr ──┐
                ▼
         data/raw/ · data/latest/ · data/manifest.json
                │
-               │  scripts/match_sirene.py  éditeur -> SIREN (API Recherche d'entreprises)
+               │  scripts/match_sirene.py  SIRET publié -> jointure exacte, sinon nom
                ▼
         data/sirene/cache.json  (+ overrides.csv)
                │
@@ -66,9 +81,11 @@ data.gouv.fr ──┐
 | `config/sources.json` | Les trois sources et, surtout, la **carte d'alias de colonnes** |
 | `config/labels.json` | Libellés NAF, natures juridiques, tranches d'effectifs, niveaux de confiance |
 | `config/departements.json` | Codes et libellés de départements |
+| `scripts/lib/resolution.py` | **Ordre de priorité du rattachement**, partagé par l'appariement et le site |
 | `scripts/lib/` | Normalisation de texte, client HTTP à débit limité, lecture CSV/XLSX |
 | `web/` | Site statique, JS vanilla, MiniSearch vendorisé — aucun CDN |
 | `worker/` | Relais CORS facultatif vers l'API Recherche d'entreprises |
+| `scripts/build_preview.py` | Assemble le site en un fichier HTML unique, consultable hors ligne |
 
 Stack : **Python 3.11, bibliothèque standard uniquement** (`urllib`, `csv`, `unicodedata`,
 `difflib`, `zipfile`). Aucune dépendance de production, ni côté scripts, ni côté navigateur.
@@ -85,6 +102,9 @@ libellé de département précisé en 2020). L'appariement des colonnes est donc
 `config/sources.json` liste, pour chaque champ canonique, les libellés plausibles, comparés sur
 en-tête normalisé (minuscules, accents pliés) — d'abord à l'identique, puis par inclusion au
 mot entier pour absorber les intitulés rallongés.
+
+C'est ce mécanisme qui absorbe l'hétérogénéité entre listes : la colonne `SIRET` est déclarée
+pour les trois sources, et simplement absente du résultat là où la liste ne la publie pas.
 
 - Toute colonne non reconnue est **conservée** dans l'objet `extra` de la fiche : aucune perte.
 - Un champ **requis** introuvable fait **échouer bruyamment** l'ingestion, en affichant les
@@ -106,6 +126,18 @@ node --test worker/index.test.mjs    # tests du relais
 python scripts/build_site.py --from-fixtures
 python -m http.server -d site 8000
 ```
+
+### Aperçu en un seul fichier
+
+```sh
+python scripts/build_site.py            # ou --from-fixtures
+python scripts/build_preview.py --out apercu.html
+```
+
+Produit un HTML autonome — données, styles et scripts embarqués — qui s'ouvre directement dans
+un navigateur, sans serveur. Utile pour archiver l'outil tel qu'il était à une date donnée, ou
+le consulter hors ligne. Le site publié reste, lui, découpé en index compact plus lots de
+détail : cet assemblage n'a pas d'intérêt pour la publication courante.
 
 ### Sur données réelles
 

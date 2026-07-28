@@ -49,12 +49,32 @@ def test_detail_bucket_est_deterministe():
 # --------------------------------------------------------------------------------------
 
 
-def test_attach_sirene_utilise_la_cle_editeur(sirene):
-    record = {"id": "publication-x", "publisher_key": "societe editrice du monde|75"}
+def test_attach_sirene_utilise_le_rapprochement_par_nom(sirene):
+    """Éditeur sans SIRET nulle part : c'est l'heuristique qui fournit le rattachement."""
+    record = {"id": "spel-x", "publisher_key": "societe editrice de mediapart|75"}
+    resolution = attach_sirene(record, sirene)
+
+    assert resolution["siren"] == "900000103"
+    assert resolution["confidence"] == "certain"
+
+
+def test_attach_sirene_propage_le_siret_entre_listes(sirene):
+    """Sans SIRET sur la fiche, mais l'éditeur en déclare un dans une autre liste CPPAP."""
+    record = {"id": "spel-x", "publisher_key": "societe editrice du monde|75", "siren": ""}
     resolution = attach_sirene(record, sirene)
 
     assert resolution["siren"] == "900000101"
-    assert resolution["confidence"] == "certain"
+    assert resolution["confidence"] == "siret_propage"
+
+
+def test_attach_sirene_prefere_le_siret_de_la_fiche(sirene):
+    """Quand la fiche porte elle-même un SIRET, le rattachement est direct, pas propagé."""
+    record = {
+        "id": "publication-x",
+        "publisher_key": "societe editrice du monde|75",
+        "siren": "900000101",
+    }
+    assert attach_sirene(record, sirene)["confidence"] == "siret"
 
 
 def test_un_override_de_fiche_prime_sur_la_cle_editeur():
@@ -103,7 +123,7 @@ def test_build_payloads_annote_les_libelles_de_departement(config, records, sire
         d for payload in buckets.values() for d in payload.values() if d["departement"] == "75"
     )
     assert detail["departement_label"] == "Paris"
-    assert {"code": "75", "label": "Paris", "count": 9} in stats["departements"]
+    assert {"code": "75", "label": "Paris", "count": 10} in stats["departements"]
 
 
 def test_build_payloads_retire_la_cle_interne_d_editeur(config, records, sirene):
@@ -166,7 +186,7 @@ def test_main_from_fixtures_genere_un_site_complet(tmp_path):
     meta = json.loads((tmp_path / "data" / "meta.json").read_text(encoding="utf-8"))
 
     assert meta["fixtures"] is True
-    assert meta["stats"]["total"] == len(search["rows"]) == 16
+    assert meta["stats"]["total"] == len(search["rows"]) == 18
     assert meta["detail_buckets"] == DETAIL_BUCKETS
     assert len(list((tmp_path / "data" / "details").glob("*.json"))) == DETAIL_BUCKETS
 

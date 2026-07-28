@@ -31,6 +31,7 @@ from typing import Any
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from lib import repo
+from lib.resolution import resolve_record
 from normalize import load_all_records
 
 log = logging.getLogger("build_site")
@@ -49,23 +50,28 @@ def detail_bucket(record_id: str) -> int:
 def load_sirene(from_fixtures: bool) -> dict[str, Any]:
     path = repo.FIXTURES / "sirene_cache.json" if from_fixtures else repo.SIRENE_CACHE_FILE
     cache = repo.read_json(path, default=None) or {}
-    entries = cache.get("entries") or {}
-    record_entries = cache.get("record_entries") or {}
-    if not entries and not record_entries:
+    loaded = {
+        "entries": cache.get("entries") or {},
+        "record_entries": cache.get("record_entries") or {},
+        "siren_entries": cache.get("siren_entries") or {},
+        "publisher_siren": cache.get("publisher_siren") or {},
+    }
+    if not any(loaded.values()):
         log.warning(
             "Aucun appariement SIREN dans %s — les fiches seront publiées sans volet SIRENE. "
             "Lancez scripts/match_sirene.py pour l'alimenter.",
             path,
         )
-    return {"entries": entries, "record_entries": record_entries}
+    return loaded
 
 
 def attach_sirene(record: dict[str, Any], sirene: dict[str, Any]) -> dict[str, Any] | None:
-    """Rattache la résolution SIREN d'une fiche : override de fiche d'abord, éditeur ensuite."""
-    forced = sirene["record_entries"].get(record["id"])
-    if forced:
-        return forced
-    return sirene["entries"].get(record.get("publisher_key") or "")
+    """Rattache la résolution SIRENE retenue pour une fiche.
+
+    L'ordre de priorité vit dans `lib/resolution.py`, partagé avec `match_sirene.py` : ses
+    statistiques doivent décrire exactement ce que le site publie.
+    """
+    return resolve_record(record, sirene)
 
 
 def source_context(manifest: dict[str, Any], config: dict[str, Any]) -> dict[str, dict[str, Any]]:

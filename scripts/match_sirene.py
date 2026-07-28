@@ -1,17 +1,20 @@
 #!/usr/bin/env python3
-"""Appariement des éditeurs CPPAP avec la base SIRENE.
+"""Rattachement des éditeurs CPPAP à la base SIRENE.
 
-Les fichiers CPPAP ne contiennent aucun numéro SIREN : ils ne portent que la raison
-sociale, la forme juridique et le département du siège. Le rapprochement est donc
-heuristique, par nom — et c'est le point faible assumé de la chaîne. Trois choix en
-découlent :
+Toutes les listes CPPAP ne se valent pas sur ce point, et le script emprunte donc trois
+chemins de fiabilité décroissante — l'ordre exact vit dans `lib/resolution.py` :
 
-- le résultat est **mis en cache et versionné** dans data/sirene/cache.json, donc relisible
-  en diff et jamais recalculé silencieusement ;
-- chaque appariement porte un **niveau de confiance** et conserve ses trois meilleurs
-  candidats, pour que l'interface puisse afficher un doute plutôt qu'une fausse certitude ;
-- data/sirene/overrides.csv permet de **corriger un appariement à la main**, en PR relue,
-  avec priorité absolue sur l'heuristique.
+1. **SIRET publié dans la source.** Une liste qui porte une colonne SIRET donne une jointure
+   exacte : une requête par entreprise, aucune heuristique, aucun candidat concurrent.
+2. **Propagation entre listes.** Les listes ne portent pas toutes cette colonne. Un éditeur
+   qui déclare son SIRET dans l'une fait donc profiter ses fiches des autres de ce
+   rattachement — sauf si ses fiches déclarent des SIREN divergents, cas où l'on préfère
+   retomber sur l'heuristique, qui exposera le doute.
+3. **Rapprochement par le nom.** Pour le reste, seule la raison sociale est disponible. Ce
+   chemin est faillible, d'où trois garde-fous : résultat mis en cache et versionné dans
+   data/sirene/cache.json (relisible en diff, jamais recalculé silencieusement), niveau de
+   confiance accompagné des trois meilleurs candidats, et correction manuelle possible via
+   data/sirene/overrides.csv, prioritaire sur tout le reste.
 
 Source interrogée : API Recherche d'entreprises (données SIRENE + RNE, ouverte, sans clé).
 Débit plafonné à 7 req/s par IP côté API ; on reste volontairement à 4 req/s.
@@ -36,12 +39,20 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from lib import repo
 from lib.http import HttpClient, HttpError
+from lib.resolution import (
+    LEVEL_ORDER,
+    REVIEW_LEVELS,
+    build_publisher_siren_map,
+    count_by_confidence,
+)
 from lib.text import fold, normalize_company, token_set_ratio
 from normalize import load_all_records
 
 log = logging.getLogger("match_sirene")
 
-CACHE_VERSION = 2
+# 3 : ajout de `siren_entries` (jointure exacte par SIRET) et `publisher_siren` (propagation
+# entre listes). Un cache d'une version antérieure est rejeté et reconstruit.
+CACHE_VERSION = 3
 
 # Tous les champs utiles à la fiche, sauf `matching_etablissements` (inutile ici) et `score`.
 INCLUDE_FIELDS = "siege,dirigeants,complements,finances,tva"
@@ -387,6 +398,57 @@ def resolve_publisher(
     return resolution
 
 
+def resolve_by_siren(
+    client: HttpClient,
+    siren: str,
+    siret: str,
+    resolved_at: str,
+) -> dict[str, Any]:
+    """Résolution exacte, quand la source publie elle-même le SIRET de l'éditeur.
+
+    Aucune heuristique ici : le rattachement vient du fichier officiel, une seule requête
+    suffit et il n'y a pas de candidat concurrent. C'est le cas à privilégier partout où la
+    source le permet.
+
+    Le SIRET déclaré désigne un *établissement*, qui n'est pas nécessairement le siège :
+    on interroge donc l'unité légale par son SIREN, dont l'API renvoie le siège.
+    """
+    resolution: dict[str, Any] = {
+        "resolved_at": resolved_at,
+        "siren": siren,
+        "siret_declare": siret,
+        "strategy": "SIRET publié dans la source",
+        "score": 1.0,
+        "candidates": [],
+    }
+    candidate = fetch_by_siren(client, siren)
+    if candidate:
+        resolution["confidence"] = "siret"
+        resolution["entreprise"] = extract_entreprise(candidate)
+        siege_siret = (candidate.get("siege") or {}).get("siret")
+        # Information utile en soi : l'établissement déclaré à la CPPAP peut ne pas être le siège.
+        resolution["siret_est_siege"] = bool(siege_siret) and siege_siret == siret
+    else:
+        # Une entreprise non diffusible ou radiée est absente de l'API : le SIRET reste vrai,
+        # c'est la fiche entreprise qui manque. Le distinguer d'un échec d'appariement évite
+        # de faire douter d'une donnée qui, elle, est officielle.
+        resolution["confidence"] = "siret_absent"
+        log.info("SIREN %s (SIRET %s) absent de l'API — non diffusible ou radié", siren, siret)
+    return resolution
+
+
+def collect_sirens(records: list[dict[str, Any]]) -> dict[str, dict[str, Any]]:
+    """Regroupe les SIREN issus des SIRET publiés : un appel d'API par entreprise."""
+    sirens: dict[str, dict[str, Any]] = {}
+    for record in records:
+        siren = record.get("siren")
+        if not siren:
+            continue
+        entry = sirens.setdefault(siren, {"siret": record["siret"], "records": 0})
+        entry["records"] += 1
+    return sirens
+
+
 # --------------------------------------------------------------------------------------
 # Overrides et cache
 # --------------------------------------------------------------------------------------
@@ -452,9 +514,10 @@ def resolve_override_targets(
 def load_cache() -> dict[str, Any]:
     cache = repo.read_json(repo.SIRENE_CACHE_FILE, default=None)
     if not isinstance(cache, dict) or cache.get("version") != CACHE_VERSION:
-        return {"version": CACHE_VERSION, "entries": {}, "record_entries": {}}
+        return {"version": CACHE_VERSION, "entries": {}, "record_entries": {}, "siren_entries": {}}
     cache.setdefault("entries", {})
     cache.setdefault("record_entries", {})
+    cache.setdefault("siren_entries", {})
     return cache
 
 
@@ -536,6 +599,7 @@ def main(argv: list[str] | None = None) -> int:
         return 1
 
     publishers = collect_publishers(records)
+    sirens = collect_sirens(records)
     cache = load_cache()
     overrides = load_overrides()
     publisher_overrides, record_overrides = resolve_override_targets(records, overrides)
@@ -543,10 +607,29 @@ def main(argv: list[str] | None = None) -> int:
 
     records_by_id = {record["id"]: record for record in records}
 
+    # Les trois listes ne portent pas toutes une colonne SIRET. Un éditeur qui en déclare un
+    # dans l'une fait donc profiter ses fiches des autres listes de ce rattachement exact.
+    publisher_siren = build_publisher_siren_map(records)
+    cache["publisher_siren"] = publisher_siren
+
+    # Ne restent à rapprocher par le nom que les éditeurs qu'aucun SIRET ne couvre — ni sur la
+    # fiche, ni par propagation. Autant d'appels d'API économisés, et de doute évité.
+    publishers_needing_fuzzy = {
+        record["publisher_key"]
+        for record in records
+        if record["publisher_key"]
+        and not record.get("siren")
+        and record["publisher_key"] not in publisher_siren
+    }
+
+    pending_sirens = [
+        siren for siren in sirens if args.refresh or siren not in cache["siren_entries"]
+    ]
     pending = [
         key
         for key in publishers
-        if args.refresh or key not in cache["entries"] or key in publisher_overrides
+        if (key in publishers_needing_fuzzy or key in publisher_overrides)
+        and (args.refresh or key not in cache["entries"] or key in publisher_overrides)
     ]
     pending_records = [
         record_id
@@ -554,20 +637,44 @@ def main(argv: list[str] | None = None) -> int:
         if args.refresh or record_id not in cache["record_entries"]
     ]
     if args.limit:
+        pending_sirens = pending_sirens[: args.limit]
         pending = pending[: args.limit]
 
-    log.info(
-        "%s éditeur(s) unique(s) pour %s fiche(s) — %s à résoudre, %s déjà en cache%s",
-        len(publishers),
-        len(records),
-        len(pending),
-        len(publishers) - len(pending),
-        f" | {len(pending_records)} override(s) au niveau fiche" if pending_records else "",
+    with_siret = sum(1 for record in records if record.get("siren"))
+    propagated = sum(
+        1
+        for record in records
+        if not record.get("siren") and record["publisher_key"] in publisher_siren
     )
+    log.info(
+        "%s fiche(s) : %s avec SIRET publié, %s couvertes par propagation depuis une autre "
+        "liste, %s à rapprocher par le nom",
+        len(records),
+        with_siret,
+        propagated,
+        len(records) - with_siret - propagated,
+    )
+    log.info(
+        "%s entreprise(s) distincte(s) à interroger par SIREN, %s éditeur(s) à rapprocher",
+        len(pending_sirens),
+        len(pending),
+    )
+    if pending_records:
+        log.info("%s override(s) manuel(s) au niveau fiche", len(pending_records))
 
     client = HttpClient(user_agent=config["user_agent"], per_second=args.per_second)
     processed = 0
     try:
+        for index, siren in enumerate(pending_sirens, start=1):
+            cache["siren_entries"][siren] = resolve_by_siren(
+                client, siren, sirens[siren]["siret"], resolved_at
+            )
+            processed += 1
+            if index % 100 == 0 or index == len(pending_sirens):
+                log.info("  %s/%s SIREN résolus", index, len(pending_sirens))
+            if args.save_every and processed % args.save_every == 0:
+                save_cache(cache)
+
         for index, key in enumerate(pending, start=1):
             publisher = publishers[key]
             override = publisher_overrides.get(key)
@@ -605,17 +712,21 @@ def main(argv: list[str] | None = None) -> int:
         if processed:
             save_cache(cache)
 
-    counts: dict[str, int] = {}
-    for entry in cache["entries"].values():
-        level = entry.get("confidence", "aucun")
-        counts[level] = counts.get(level, 0) + 1
+    # Décompte par fiche, pas par éditeur : un éditeur mal apparié qui publie quarante titres
+    # dégrade quarante fiches. C'est ce nombre-là qui intéresse un lecteur.
+    counts = count_by_confidence(records, cache)
     total = sum(counts.values()) or 1
-    log.info("Confiance d'appariement sur %s éditeur(s) en cache :", total)
-    for level in ("verifie", "certain", "probable", "incertain", "aucun"):
+    log.info("Confiance d'appariement sur %s fiche(s) :", total)
+    for level in LEVEL_ORDER:
         count = counts.get(level, 0)
-        log.info("  %-10s %5s  (%4.1f %%)", level, count, 100 * count / total)
+        if count:
+            log.info("  %-13s %6s  (%4.1f %%)", level, count, 100 * count / total)
+
+    a_relire = sum(counts.get(level, 0) for level in REVIEW_LEVELS)
     log.info(
-        "Les niveaux « incertain » et « aucun » sont à relire ; corrigez-les via %s",
+        "%s fiche(s) à relire avant citation (%s) ; corrigez-les via %s",
+        a_relire,
+        ", ".join(sorted(REVIEW_LEVELS)),
         repo.SIRENE_OVERRIDES_FILE.relative_to(repo.ROOT),
     )
     return 0

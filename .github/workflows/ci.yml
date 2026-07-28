@@ -58,6 +58,9 @@ jobs:
       # Vérifie la chaîne complète normalisation -> index -> lots de détail, sans réseau.
       - run: python scripts/build_site.py --from-fixtures --out /tmp/site
 
+      - name: Assembler l'aperçu en un fichier unique
+        run: python scripts/build_preview.py --site /tmp/site --out /tmp/apercu.html
+
       - name: Contrôler les sorties attendues
         run: |
           test -s /tmp/site/index.html
@@ -65,6 +68,10 @@ jobs:
           test -s /tmp/site/data/meta.json
           test -s /tmp/site/data/details/0.json
           test -s /tmp/site/vendor/minisearch/minisearch.js
+          test -s /tmp/apercu.html
+          # L'aperçu doit être autonome : aucune ressource externe à charger.
+          ! grep -q 'src="' /tmp/apercu.html
+          ! grep -q 'rel="stylesheet"' /tmp/apercu.html
           python - <<'PY'
           import json, pathlib
           search = json.loads(pathlib.Path('/tmp/site/data/search.json').read_text())

@@ -17,8 +17,10 @@ from normalize import (
     map_columns,
     normalize_cppap,
     normalize_departement,
+    normalize_siret,
     normalize_url,
     publisher_key,
+    siren_from_siret,
 )
 
 
@@ -236,9 +238,78 @@ def test_identifiants_dupliques_sont_suffixes(sources):
 def test_load_all_records_sur_les_fixtures(config):
     records, reports = load_all_records(config, repo.FIXTURES / "published")
 
-    assert len(records) == 16
+    assert len(records) == 18
     assert {r["type"] for r in records} == {"spel", "publication", "agence"}
     assert all("error" not in report for report in reports.values())
     # Chaque enregistrement porte un identifiant unique et une clé d'éditeur exploitable.
     assert len({r["id"] for r in records}) == len(records)
     assert all(r["publisher_key"] for r in records)
+
+
+# --------------------------------------------------------------------------------------
+# SIRET publié dans la source
+# --------------------------------------------------------------------------------------
+
+
+@pytest.mark.parametrize(
+    ("raw", "expected"),
+    [
+        ("90000010100017", "90000010100017"),
+        # Groupage typographique fréquent dans les exports de tableur.
+        ("900 000 109 00021", "90000010900021"),
+        ("900.000.109.00021", "90000010900021"),
+        # Zéro initial perdu par une colonne numérique : restitué sans ambiguïté.
+        ("9000011200015", "09000011200015"),
+        # Longueurs inexploitables : rejetées plutôt que devinées.
+        ("123", ""),
+        ("900000101", ""),
+        ("900000101000170", ""),
+        ("", ""),
+        ("non renseigné", ""),
+    ],
+)
+def test_normalize_siret(raw, expected):
+    assert normalize_siret(raw) == expected
+
+
+def test_siren_from_siret():
+    assert siren_from_siret("90000010100017") == "900000101"
+    assert siren_from_siret("09000011200015") == "090000112"
+    # Une entrée non normalisée ne doit pas produire un SIREN tronqué silencieusement.
+    assert siren_from_siret("900000101") == ""
+    assert siren_from_siret("") == ""
+
+
+def test_les_fiches_portent_le_siret_et_le_siren_derive(sources):
+    rows = [
+        ["N° CPPAP", "Titre", "SIRET", "Raison sociale"],
+        ["0722 C 83260", "Le Monde", "900 000 101 00017", "SOCIETE EDITRICE DU MONDE"],
+    ]
+    records, report = build_records(rows, sources["publications"])
+
+    assert report["resolved"]["siret"].startswith("exact:")
+    assert records[0]["siret"] == "90000010100017"
+    assert records[0]["siren"] == "900000101"
+    # La valeur brute est conservée : elle documente ce que la source a réellement écrit.
+    assert records[0]["siret_source"] == "900 000 101 00017"
+
+
+def test_une_source_sans_colonne_siret_reste_exploitable(sources):
+    """Toutes les listes CPPAP ne publient pas de SIRET : l'absence n'est pas une erreur."""
+    records, report = build_records(fixture_rows("spel"), sources["spel"])
+
+    assert "siret" in report["unresolved"]
+    assert all(r["siret"] == "" and r["siren"] == "" for r in records)
+
+
+def test_un_siret_illisible_ne_bloque_pas_la_fiche(sources):
+    rows = [
+        ["N° CPPAP", "Titre", "SIRET", "Raison sociale"],
+        ["0722 C 83260", "Le Monde", "à compléter", "SOCIETE EDITRICE DU MONDE"],
+    ]
+    records, _ = build_records(rows, sources["publications"])
+
+    # La fiche existe, simplement sans jointure exacte : elle repassera par l'heuristique.
+    assert len(records) == 1
+    assert records[0]["siren"] == ""
+    assert records[0]["siret_source"] == "à compléter"
