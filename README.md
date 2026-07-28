@@ -25,6 +25,26 @@ scripts Python sans aucune dépendance de production, et un Cloudflare Worker fa
    complète de l'éditeur — siège social avec adresse, code NAF, nature juridique, date de
    création, effectifs, état administratif, dirigeants.
 
+## Ce que contiennent réellement les listes
+
+Constaté au premier passage sur les données réelles (28 juillet 2026) — et ce n'est pas
+intuitif :
+
+| Liste | Fiches | Ce qu'il faut savoir |
+|---|---|---|
+| Publications de presse | 26 669 | **21 653 (81 %) au statut « Non Inscrit »**. Le fichier recense les titres connus de la CPPAP, pas seulement les titres inscrits. Seule liste à publier un SIRET, et seulement pour 15 % des lignes. |
+| Services de presse en ligne | 1 242 | Tous reconnus par construction. Pas de colonne SIRET. |
+| Agences de presse agréées | 180 | Toutes agréées par construction. Ni SIRET, ni n° CPPAP, ni département. |
+
+> **Un numéro CPPAP affiché ne vaut pas agrément en cours.** L'interface porte donc un badge
+> `NON INSCRIT` dès la liste de résultats, un avertissement en tête de fiche, la date
+> d'expiration de l'inscription, et un filtre « inscrits ou reconnus uniquement ».
+
+Le champ `qualification` n'a pas le même sens partout : `IPG` dans la liste des services en
+ligne, mais surtout des régimes postaux et fiscaux (`DISPOSITIF_FISCAL_39_BIS_A`,
+`CIBLAGE_POSTAL_D_19_2`) dans celle des publications. Seules les valeurs désignant
+explicitement l'information politique et générale alimentent le marqueur IPG.
+
 ## Comment le rattachement à SIRENE est établi
 
 Les trois listes ne se valent pas sur ce point : **certaines publient le SIRET de l'éditeur,
@@ -37,6 +57,9 @@ d'autres non.** Le rattachement emprunte donc quatre chemins, de fiabilité déc
 | `SIRET publié par la CPPAP` | la liste déclare elle-même le SIRET → **jointure exacte** | exacte |
 | `SIRET déclaré sur une autre liste` | la liste ne publie pas de SIRET, mais le même éditeur en déclare un dans une autre liste CPPAP | exacte par déduction |
 | `Certaine` / `Probable` / `Incertaine` / `Aucune` | rapprochement heuristique sur la raison sociale | à vérifier |
+
+Sur les données réelles : 4 057 fiches portent un SIRET publié, 3 516 de plus en héritent par
+propagation entre listes, et 20 518 relèvent du rapprochement par le nom.
 
 Un cinquième niveau, `SIRET publié, entreprise absente`, signale un SIRET officiel dont
 l'entreprise ne figure pas dans l'API — non diffusible ou radiée. L'identifiant reste vrai ;
@@ -90,10 +113,14 @@ data.gouv.fr ──┐
 Stack : **Python 3.11, bibliothèque standard uniquement** (`urllib`, `csv`, `unicodedata`,
 `difflib`, `zipfile`). Aucune dépendance de production, ni côté scripts, ni côté navigateur.
 
-Le site charge un index compact au démarrage (~350 Ko compressés pour 15 000 fiches) et va
-chercher les fiches complètes dans l'un des 32 lots à l'ouverture d'une carte. Le lot est
-déduit d'une empreinte de l'identifiant, donc **stable entre deux publications** : le cache du
-navigateur survit aux mises à jour de données.
+Le site charge un index compact au démarrage (~845 Ko compressés pour 28 000 fiches) puis va
+chercher les fiches complètes dans l'un des 64 lots à l'ouverture d'une carte — **24 Ko
+compressés par lot**. Le lot est déduit d'une empreinte de l'identifiant, donc **stable entre
+deux publications** : le cache du navigateur survit aux mises à jour de données.
+
+Les fiches publiées ne transportent ni champ vide, ni valeur reconstituable depuis
+`meta.json` (libellés de type et de département, liens de source) : `web/app.js` les
+recompose. Sans cette diète, un quart du poids téléchargé était de la répétition.
 
 ### Tolérance aux changements de schéma
 
@@ -142,10 +169,16 @@ détail : cet assemblage n'a pas d'intérêt pour la publication courante.
 ### Sur données réelles
 
 ```sh
-python scripts/ingest.py             # télécharge et archive si le contenu a changé
-python scripts/match_sirene.py       # complète le cache d'appariement (incrémental)
-python scripts/build_site.py         # génère site/
+python scripts/ingest.py                        # télécharge et archive si le contenu a changé
+python scripts/match_sirene.py --skip-fuzzy     # jointures exactes par SIRET : quelques minutes
+python scripts/match_sirene.py                  # rapprochement par nom : ~100 min, reprenable
+python scripts/build_site.py                    # génère site/
 ```
+
+L'appariement complet demande environ 100 minutes de requêtes (plafond de l'API : 7 req/s ;
+on reste à 4). Le cache est écrit au fil de l'eau : une exécution interrompue laisse un
+progrès réutilisable, et la suivante reprend là où elle s'est arrêtée. Le workflow de
+synchronisation borne l'étape dans le temps et commite ce progrès partiel quoi qu'il arrive.
 
 `python scripts/normalize.py --source spel --limit 3` affiche les colonnes détectées et
 quelques fiches : c'est l'outil à lancer en premier quand un fichier source change de forme.
