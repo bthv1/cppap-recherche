@@ -15,6 +15,13 @@ on:
     workflows: ['Synchronisation des données CPPAP']
     types: [completed]
   workflow_dispatch:
+    inputs:
+      allow_fixtures:
+        description: >-
+          Publier la démonstration sur données de test faute de données réelles.
+          À n'utiliser que pour valider la chaîne : le site affichera des données inventées.
+        type: boolean
+        default: false
 
 permissions:
   contents: read
@@ -48,14 +55,22 @@ jobs:
           # Variable de dépôt facultative (Settings → Variables) : URL du relais SIRENE.
           # Absente, les fiches affichent l'instantané archivé — le site reste complet.
           SIRENE_PROXY_URL: ${{ vars.SIRENE_PROXY_URL }}
+          ALLOW_FIXTURES: ${{ inputs.allow_fixtures }}
         run: |
-          if [ ! -f data/latest/spel.csv ] && [ ! -f data/latest/publications.csv ] \
-             && [ ! -f data/latest/agences.csv ]; then
-            echo '::warning::Aucune donnée dans data/latest — lancez le workflow de synchronisation.'
-            echo 'Publication d une démonstration sur fixtures pour que le site ne soit pas vide.'
+          if ls data/latest/*.csv >/dev/null 2>&1; then
+            python scripts/build_site.py
+          elif [ "$ALLOW_FIXTURES" = 'true' ]; then
+            echo '::warning::Aucune donnée réelle — publication de la démonstration sur fixtures.'
             python scripts/build_site.py --from-fixtures
           else
-            python scripts/build_site.py
+            # Refus délibéré : publier des données inventées sur une URL publique, même
+            # signalées par un bandeau, est plus dommageable qu'un déploiement manquant.
+            echo '::error::Aucune donnée dans data/latest/ : rien ne sera publié.'
+            echo 'Lancez le workflow « Synchronisation des données CPPAP » pour ingérer les' >&2
+            echo 'listes officielles, la publication suivra automatiquement.' >&2
+            echo 'Pour valider la chaîne sur données de test, relancez ce workflow avec' >&2
+            echo "l'option « allow_fixtures »." >&2
+            exit 1
           fi
 
       - name: Résumer la publication
