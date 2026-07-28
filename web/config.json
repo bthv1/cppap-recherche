@@ -1,0 +1,15 @@
+{
+  "_comment": [
+    "Configuration du site statique.",
+    "",
+    "sireneProxy : URL du Cloudflare Worker qui relaie l'API Recherche d'entreprises en",
+    "ajoutant les en-têtes CORS (voir worker/). Facultatif — laissé vide, les fiches",
+    "affichent l'instantané SIRENE archivé dans le dépôt, avec sa date. Le site est",
+    "pleinement fonctionnel dans les deux cas ; le Worker ne sert qu'à rafraîchir une",
+    "fiche à la demande.",
+    "",
+    "La variable d'environnement SIRENE_PROXY_URL, lue par scripts/build_site.py, a",
+    "priorité sur cette valeur — c'est ainsi que le workflow Pages l'injecte."
+  ],
+  "sireneProxy": ""
+}

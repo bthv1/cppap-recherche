@@ -1,0 +1,235 @@
+name: Synchronisation des données CPPAP
+
+on:
+  schedule:
+    # Lundi 05h17 UTC. Les listes ne changent qu'à chaque commission (~4 fois par an) :
+    # une exécution hebdomadaire suffit, et sans changement de contenu rien n'est commité.
+    - cron: '17 5 * * 1'
+  workflow_dispatch:
+    inputs:
+      refresh_sirene:
+        description: Réinterroger tous les éditeurs auprès de SIRENE (long)
+        type: boolean
+        default: false
+      sources:
+        description: 'Limiter à ces sources (ex. : spel,publications). Vide = toutes.'
+        type: string
+        default: ''
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  # Deux synchronisations simultanées se marcheraient sur les pieds au moment du push.
+  group: sync-data
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Préparer les arguments de source
+        id: args
+        # L'entrée passe par l'environnement, jamais par interpolation directe dans le shell :
+        # `${{ inputs.… }}` inséré dans un script est un vecteur d'injection.
+        env:
+          SOURCES: ${{ inputs.sources }}
+        run: |
+          ARGS=""
+          for key in $(printf '%s' "$SOURCES" | tr ',' ' '); do
+            ARGS="$ARGS --source $key"
+          done
+          echo "source_args=$ARGS" >> "$GITHUB_OUTPUT"
+
+      # ------------------------------------------------------------------
+      # 1. Ingestion et archivage
+      # ------------------------------------------------------------------
+      - name: Ingérer les jeux de données data.gouv.fr
+        id: ingest
+        # Une source en échec (dérive de schéma) ne doit pas empêcher d'archiver les autres :
+        # on laisse le workflow continuer, et on signale l'échec par une issue en fin de course.
+        continue-on-error: true
+        run: |
+          python scripts/ingest.py ${{ steps.args.outputs.source_args }} \
+            --report /tmp/ingest.json 2>&1 | tee /tmp/ingest-log.txt
+
+      - name: Résumer l'ingestion
+        run: |
+          {
+            echo '## Ingestion'
+            echo
+            python - <<'PY'
+          import json, pathlib
+          path = pathlib.Path('/tmp/ingest.json')
+          if not path.exists():
+              print("_Aucun compte rendu produit : l'ingestion a échoué avant écriture._")
+              raise SystemExit(0)
+          data = json.loads(path.read_text())
+          print('| Source | Lignes | Nouvelle version | Colonnes détectées |')
+          print('|---|---|---|---|')
+          for report in data['reports']:
+              cols = ', '.join(f'`{c}`' for c in report['columns'])
+              print(f"| {report['key']} | {report['rows']} | "
+                    f"{'oui' if report['changed'] else 'non'} | {cols} |")
+          for failure in data.get('failures') or []:
+              print(f"\n> **Échec** : {failure}")
+          PY
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      # ------------------------------------------------------------------
+      # 2. Appariement SIREN
+      # ------------------------------------------------------------------
+      - name: Apparier les éditeurs à la base SIRENE
+        # Incrémental : sans nouvel éditeur, l'étape ne fait aucun appel réseau. On la lance
+        # donc systématiquement, ce qui rattrape aussi les éditeurs restés non résolus après
+        # une exécution interrompue.
+        env:
+          REFRESH: ${{ inputs.refresh_sirene }}
+        run: |
+          EXTRA=""
+          if [ "$REFRESH" = 'true' ]; then EXTRA="--refresh"; fi
+          python scripts/match_sirene.py $EXTRA 2>&1 | tee /tmp/sirene-log.txt
+
+      - name: Résumer l'appariement SIREN
+        run: |
+          {
+            echo
+            echo '## Rattachement SIREN'
+            echo
+            echo '```'
+            grep -A 8 "Confiance d'appariement" /tmp/sirene-log.txt || echo 'Aucun changement.'
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      # ------------------------------------------------------------------
+      # 3. Commit
+      # ------------------------------------------------------------------
+      - name: Détecter les changements à commiter
+        id: changes
+        run: |
+          git add -A data/
+          if git diff --cached --quiet; then
+            echo 'dirty=false' >> "$GITHUB_OUTPUT"
+            echo 'Aucun changement de données : ni nouvelle version, ni nouvel appariement.'
+          else
+            echo 'dirty=true' >> "$GITHUB_OUTPUT"
+            git diff --cached --stat
+          fi
+
+      - name: Rédiger les notes de version
+        if: steps.changes.outputs.dirty == 'true'
+        run: |
+          CHANGED=$(python - <<'PY'
+          import json, pathlib
+          path = pathlib.Path('/tmp/ingest.json')
+          data = json.loads(path.read_text()) if path.exists() else {'reports': []}
+          print(','.join(r['key'] for r in data['reports'] if r['changed']))
+          PY
+          )
+          echo "CHANGED_SOURCES=$CHANGED" >> "$GITHUB_ENV"
+          python scripts/release_notes.py --changed "$CHANGED" --out /tmp/notes.md
+          cat /tmp/notes.md >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Commiter et pousser
+        if: steps.changes.outputs.dirty == 'true'
+        run: |
+          git config user.name  'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+
+          if [ -n "${CHANGED_SOURCES:-}" ]; then
+            SUBJECT="data: nouvelles versions ($CHANGED_SOURCES)"
+          else
+            SUBJECT='data: complément du rattachement SIREN'
+          fi
+          git commit -m "$SUBJECT" \
+            -m 'Archivage automatique depuis data.gouv.fr et rattachement SIRENE.'
+
+          # La branche a pu bouger pendant l'appariement (long) : on rejoue par-dessus.
+          # Le `if` est nécessaire — sous `set -e`, une liste `a && b` qui échoue arrête l'étape.
+          pushed=0
+          for attempt in 1 2 3; do
+            if git pull --rebase --autostash origin "$GITHUB_REF_NAME" \
+               && git push origin "HEAD:$GITHUB_REF_NAME"; then
+              pushed=1
+              break
+            fi
+            echo "Push en échec (tentative $attempt) — nouvelle tentative"
+            sleep $((attempt * 4))
+          done
+          if [ "$pushed" != 1 ]; then
+            echo 'Impossible de pousser après 3 tentatives.' >&2
+            exit 1
+          fi
+
+      # ------------------------------------------------------------------
+      # 4. Release : une version citable par publication
+      # ------------------------------------------------------------------
+      - name: Publier la Release de version
+        if: steps.changes.outputs.dirty == 'true' && env.CHANGED_SOURCES != ''
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          BASE="data-$(date -u +%F)"
+          TAG="$BASE"
+          n=1
+          # Une seconde publication le même jour est légitime : on suffixe plutôt qu'écraser.
+          while gh release view "$TAG" >/dev/null 2>&1; do
+            n=$((n + 1))
+            TAG="$BASE-$n"
+          done
+
+          ASSETS=$(python - <<'PY'
+          import json, pathlib
+          data = json.loads(pathlib.Path('/tmp/ingest.json').read_text())
+          paths = [r['snapshot'] for r in data['reports'] if r.get('snapshot')]
+          paths += [str(p) for p in sorted(pathlib.Path('data/latest').glob('*.csv'))]
+          paths.append('data/manifest.json')
+          print(' '.join(p for p in paths if pathlib.Path(p).exists()))
+          PY
+          )
+
+          echo "Release $TAG — pièces jointes : $ASSETS"
+          # shellcheck disable=SC2086  # séparation en mots voulue pour la liste de fichiers
+          gh release create "$TAG" $ASSETS \
+            --title "Listes CPPAP — version du $(date -u +%d/%m/%Y)" \
+            --notes-file /tmp/notes.md
+
+      # ------------------------------------------------------------------
+      # 5. Alerte en cas de dérive de schéma
+      # ------------------------------------------------------------------
+      - name: Ouvrir une issue si l'ingestion a échoué
+        if: steps.ingest.outcome == 'failure'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          BODY=$(printf '%s\n\n```\n%s\n```\n\nExécution : %s\n' \
+            "L'ingestion d'au moins une source a échoué. Cause la plus probable : **les en-têtes du fichier publié ont changé** et un champ requis n'est plus reconnu. Le journal ci-dessous liste les en-têtes observés — ajoutez l'alias manquant dans \`config/sources.json\`." \
+            "$(tail -60 /tmp/ingest-log.txt 2>/dev/null || echo 'journal indisponible')" \
+            "$RUN_URL")
+
+          # Une seule issue ouverte à la fois : sinon on commente celle qui existe déjà.
+          EXISTING=$(gh issue list --state open \
+            --search 'Ingestion CPPAP en échec in:title' \
+            --json number --jq '.[0].number // empty')
+
+          if [ -n "$EXISTING" ]; then
+            gh issue comment "$EXISTING" --body "$BODY"
+          else
+            gh issue create --title "Ingestion CPPAP en échec le $(date -u +%F)" --body "$BODY"
+          fi
+
+      - name: Refléter l'échec d'ingestion sur le workflow
+        if: steps.ingest.outcome == 'failure'
+        run: |
+          echo "L'ingestion a échoué pour au moins une source — voir l'issue ouverte." >&2
+          exit 1

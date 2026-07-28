@@ -1,0 +1,89 @@
+{
+  "_comment": "Réponse imitée de GET /search?q=societe editrice du monde&departement=75. SIREN FICTIFS.",
+  "total_results": 2,
+  "page": 1,
+  "per_page": 10,
+  "total_pages": 1,
+  "results": [
+    {
+      "siren": "900000101",
+      "nom_complet": "SOCIETE EDITRICE DU MONDE",
+      "nom_raison_sociale": "SOCIETE EDITRICE DU MONDE",
+      "sigle": null,
+      "nombre_etablissements": 3,
+      "nombre_etablissements_ouverts": 2,
+      "activite_principale": "58.13Z",
+      "section_activite_principale": "J",
+      "nature_juridique": "5599",
+      "categorie_entreprise": "ETI",
+      "date_creation": "1944-12-18",
+      "etat_administratif": "A",
+      "tranche_effectif_salarie": "42",
+      "annee_tranche_effectif_salarie": "2024",
+      "statut_diffusion": "O",
+      "siege": {
+        "siret": "90000010100017",
+        "adresse": "67 AVENUE PIERRE MENDES FRANCE 75013 PARIS",
+        "numero_voie": "67",
+        "type_voie": "AV",
+        "libelle_voie": "PIERRE MENDES FRANCE",
+        "code_postal": "75013",
+        "commune": "75113",
+        "libelle_commune": "PARIS 13",
+        "departement": "75",
+        "region": "11",
+        "latitude": "48.829746",
+        "longitude": "2.373033",
+        "activite_principale": "58.13Z",
+        "date_creation": "1994-01-01",
+        "etat_administratif": "A",
+        "est_siege": true
+      },
+      "dirigeants": [
+        {
+          "nom": "DUPONT",
+          "prenoms": "CAMILLE",
+          "annee_de_naissance": "1972",
+          "qualite": "Président du directoire",
+          "type_dirigeant": "personne physique"
+        }
+      ],
+      "complements": {
+        "est_association": false,
+        "est_ess": false,
+        "convention_collective_renseignee": true,
+        "liste_idcc": ["1895"]
+      }
+    },
+    {
+      "siren": "900000202",
+      "nom_complet": "SOCIETE EDITRICE DU MONDE DIPLOMATIQUE",
+      "nom_raison_sociale": "SOCIETE EDITRICE DU MONDE DIPLOMATIQUE",
+      "sigle": null,
+      "nombre_etablissements": 1,
+      "nombre_etablissements_ouverts": 1,
+      "activite_principale": "58.14Z",
+      "section_activite_principale": "J",
+      "nature_juridique": "5599",
+      "categorie_entreprise": "PME",
+      "date_creation": "1996-03-04",
+      "etat_administratif": "A",
+      "tranche_effectif_salarie": "21",
+      "statut_diffusion": "O",
+      "siege": {
+        "siret": "90000020200011",
+        "adresse": "1 AVENUE STEPHEN PICHON 75013 PARIS",
+        "code_postal": "75013",
+        "libelle_commune": "PARIS 13",
+        "departement": "75",
+        "latitude": "48.833",
+        "longitude": "2.359",
+        "activite_principale": "58.14Z",
+        "etat_administratif": "A",
+        "est_siege": true
+      },
+      "dirigeants": [],
+      "complements": {}
+    }
+  ]
+}

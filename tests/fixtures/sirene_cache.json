@@ -1,0 +1,1027 @@
+{
+  "entries": {
+    "agence france presse|75": {
+      "candidates": [
+        {
+          "adresse": "11 PLACE DE LA BOURSE 75002 PARIS 2",
+          "departement": "75",
+          "etat_administratif": "A",
+          "nature_juridique": "7381",
+          "nom": "AGENCE FRANCE PRESSE",
+          "score": 0.99,
+          "siren": "900000113"
+        }
+      ],
+      "confidence": "certain",
+      "departement": "75",
+      "editeur": "AGENCE FRANCE PRESSE",
+      "entreprise": {
+        "activite_principale": "63.91Z",
+        "annee_tranche_effectif_salarie": "2024",
+        "categorie_entreprise": "GE",
+        "complements": {
+          "convention_collective_renseignee": true,
+          "liste_idcc": [
+            "1895"
+          ]
+        },
+        "date_creation": "1957-01-10",
+        "dirigeants": [
+          {
+            "annee_de_naissance": "1970",
+            "nom": "MARTIN",
+            "prenoms": "CLAUDE",
+            "qualite": "Directeur général",
+            "type_dirigeant": "personne physique"
+          }
+        ],
+        "dirigeants_total": 1,
+        "etat_administratif": "A",
+        "nature_juridique": "7381",
+        "nom_complet": "AGENCE FRANCE PRESSE",
+        "nom_raison_sociale": "AGENCE FRANCE PRESSE",
+        "nombre_etablissements": 2,
+        "nombre_etablissements_ouverts": 1,
+        "section_activite_principale": "N",
+        "siege": {
+          "activite_principale": "63.91Z",
+          "adresse": "11 PLACE DE LA BOURSE 75002 PARIS 2",
+          "code_postal": "75002",
+          "date_creation": "1957-01-10",
+          "departement": "75",
+          "etat_administratif": "A",
+          "latitude": "48.8687",
+          "libelle_commune": "PARIS 2",
+          "libelle_voie": "DE LA BOURSE",
+          "longitude": "2.3413",
+          "numero_voie": "11",
+          "region": "11",
+          "siret": "90000011300017",
+          "type_voie": "PL"
+        },
+        "siren": "900000113",
+        "statut_diffusion": "O",
+        "tranche_effectif_salarie": "52"
+      },
+      "resolved_at": "2026-07-28",
+      "score": 0.99,
+      "siren": "900000113",
+      "strategy": "nom+departement"
+    },
+    "arret sur images|75": {
+      "candidates": [
+        {
+          "adresse": "4 RUE DE LA FIDELITE 75010 PARIS 10",
+          "departement": "75",
+          "etat_administratif": "A",
+          "nature_juridique": "5710",
+          "nom": "ARRET SUR IMAGES",
+          "score": 0.98,
+          "siren": "900000104"
+        }
+      ],
+      "confidence": "certain",
+      "departement": "75",
+      "editeur": "ARRET SUR IMAGES SAS",
+      "entreprise": {
+        "activite_principale": "58.13Z",
+        "annee_tranche_effectif_salarie": "2024",
+        "categorie_entreprise": "PME",
+        "complements": {
+          "convention_collective_renseignee": true,
+          "liste_idcc": [
+            "1895"
+          ]
+        },
+        "date_creation": "2007-06-11",
+        "dirigeants": [
+          {
+            "annee_de_naissance": "1970",
+            "nom": "MARTIN",
+            "prenoms": "CLAUDE",
+            "qualite": "Directeur général",
+            "type_dirigeant": "personne physique"
+          }
+        ],
+        "dirigeants_total": 1,
+        "etat_administratif": "A",
+        "nature_juridique": "5710",
+        "nom_complet": "ARRET SUR IMAGES",
+        "nom_raison_sociale": "ARRET SUR IMAGES",
+        "nombre_etablissements": 2,
+        "nombre_etablissements_ouverts": 1,
+        "section_activite_principale": "J",
+        "siege": {
+          "activite_principale": "58.13Z",
+          "adresse": "4 RUE DE LA FIDELITE 75010 PARIS 10",
+          "code_postal": "75010",
+          "date_creation": "2007-06-11",
+          "departement": "75",
+          "etat_administratif": "A",
+          "latitude": "48.8748",
+          "libelle_commune": "PARIS 10",
+          "libelle_voie": "DE LA FIDELITE",
+          "longitude": "2.3556",
+          "numero_voie": "4",
+          "region": "11",
+          "siret": "90000010400017",
+          "type_voie": "RUE"
+        },
+        "siren": "900000104",
+        "statut_diffusion": "O",
+        "tranche_effectif_salarie": "11"
+      },
+      "resolved_at": "2026-07-28",
+      "score": 0.98,
+      "siren": "900000104",
+      "strategy": "nom+departement"
+    },
+    "editions fantomes du val perdu|23": {
+      "candidates": [],
+      "confidence": "aucun",
+      "departement": "23",
+      "editeur": "EDITIONS FANTOMES DU VAL PERDU",
+      "resolved_at": "2026-07-28",
+      "score": 0.41,
+      "strategy": "nom"
+    },
+    "hans lucas|75": {
+      "candidates": [
+        {
+          "adresse": "31 RUE DE LA FONTAINE AU ROI 75011 PARIS 11",
+          "departement": "75",
+          "etat_administratif": "A",
+          "nature_juridique": "5710",
+          "nom": "HANS LUCAS",
+          "score": 0.98,
+          "siren": "900000115"
+        }
+      ],
+      "confidence": "certain",
+      "departement": "75",
+      "editeur": "HANS LUCAS",
+      "entreprise": {
+        "activite_principale": "63.91Z",
+        "annee_tranche_effectif_salarie": "2024",
+        "categorie_entreprise": "PME",
+        "complements": {
+          "convention_collective_renseignee": true,
+          "liste_idcc": [
+            "1895"
+          ]
+        },
+        "date_creation": "2011-10-19",
+        "dirigeants": [
+          {
+            "annee_de_naissance": "1970",
+            "nom": "MARTIN",
+            "prenoms": "CLAUDE",
+            "qualite": "Directeur général",
+            "type_dirigeant": "personne physique"
+          }
+        ],
+        "dirigeants_total": 1,
+        "etat_administratif": "A",
+        "nature_juridique": "5710",
+        "nom_complet": "HANS LUCAS",
+        "nom_raison_sociale": "HANS LUCAS",
+        "nombre_etablissements": 2,
+        "nombre_etablissements_ouverts": 1,
+        "section_activite_principale": "N",
+        "siege": {
+          "activite_principale": "63.91Z",
+          "adresse": "31 RUE DE LA FONTAINE AU ROI 75011 PARIS 11",
+          "code_postal": "75011",
+          "date_creation": "2011-10-19",
+          "departement": "75",
+          "etat_administratif": "A",
+          "latitude": "48.8690",
+          "libelle_commune": "PARIS 11",
+          "longitude": "2.3720",
+          "region": "11",
+          "siret": "90000011500017"
+        },
+        "siren": "900000115",
+        "statut_diffusion": "O",
+        "tranche_effectif_salarie": "03"
+      },
+      "resolved_at": "2026-07-28",
+      "score": 0.98,
+      "siren": "900000115",
+      "strategy": "nom+departement"
+    },
+    "humanoid|75": {
+      "candidates": [
+        {
+          "adresse": "24 RUE DE LA MICHODIERE 75002 PARIS 2",
+          "departement": "75",
+          "etat_administratif": "A",
+          "nature_juridique": "5710",
+          "nom": "HUMANOID",
+          "score": 0.99,
+          "siren": "900000107"
+        }
+      ],
+      "confidence": "certain",
+      "departement": "75",
+      "editeur": "HUMANOID",
+      "entreprise": {
+        "activite_principale": "58.13Z",
+        "annee_tranche_effectif_salarie": "2024",
+        "categorie_entreprise": "PME",
+        "complements": {
+          "convention_collective_renseignee": true,
+          "liste_idcc": [
+            "1895"
+          ]
+        },
+        "date_creation": "2008-04-15",
+        "dirigeants": [
+          {
+            "annee_de_naissance": "1970",
+            "nom": "MARTIN",
+            "prenoms": "CLAUDE",
+            "qualite": "Directeur général",
+            "type_dirigeant": "personne physique"
+          }
+        ],
+        "dirigeants_total": 1,
+        "etat_administratif": "A",
+        "nature_juridique": "5710",
+        "nom_complet": "HUMANOID",
+        "nom_raison_sociale": "HUMANOID",
+        "nombre_etablissements": 2,
+        "nombre_etablissements_ouverts": 1,
+        "section_activite_principale": "J",
+        "siege": {
+          "activite_principale": "58.13Z",
+          "adresse": "24 RUE DE LA MICHODIERE 75002 PARIS 2",
+          "code_postal": "75002",
+          "date_creation": "2008-04-15",
+          "departement": "75",
+          "etat_administratif": "A",
+          "latitude": "48.8698",
+          "libelle_commune": "PARIS 2",
+          "libelle_voie": "DE LA MICHODIERE",
+          "longitude": "2.3325",
+          "numero_voie": "24",
+          "region": "11",
+          "siret": "90000010700017",
+          "type_voie": "RUE"
+        },
+        "siren": "900000107",
+        "statut_diffusion": "O",
+        "tranche_effectif_salarie": "21"
+      },
+      "resolved_at": "2026-07-28",
+      "score": 0.99,
+      "siren": "900000107",
+      "strategy": "nom+departement"
+    },
+    "indigo publications|": {
+      "candidates": [
+        {
+          "adresse": "142 RUE MONTMARTRE 75009 PARIS 9",
+          "departement": "",
+          "etat_administratif": "A",
+          "nature_juridique": "5499",
+          "nom": "INDIGO PUBLICATIONS",
+          "score": 0.88,
+          "siren": "900000108"
+        }
+      ],
+      "confidence": "probable",
+      "departement": "",
+      "editeur": "INDIGO PUBLICATIONS",
+      "entreprise": {
+        "activite_principale": "58.14Z",
+        "annee_tranche_effectif_salarie": "2024",
+        "categorie_entreprise": "PME",
+        "complements": {
+          "convention_collective_renseignee": true,
+          "liste_idcc": [
+            "1895"
+          ]
+        },
+        "date_creation": "1985-02-20",
+        "dirigeants": [
+          {
+            "annee_de_naissance": "1970",
+            "nom": "MARTIN",
+            "prenoms": "CLAUDE",
+            "qualite": "Directeur général",
+            "type_dirigeant": "personne physique"
+          }
+        ],
+        "dirigeants_total": 1,
+        "etat_administratif": "A",
+        "nature_juridique": "5499",
+        "nom_complet": "INDIGO PUBLICATIONS",
+        "nom_raison_sociale": "INDIGO PUBLICATIONS",
+        "nombre_etablissements": 2,
+        "nombre_etablissements_ouverts": 1,
+        "section_activite_principale": "J",
+        "siege": {
+          "activite_principale": "58.14Z",
+          "adresse": "142 RUE MONTMARTRE 75009 PARIS 9",
+          "code_postal": "75009",
+          "date_creation": "1985-02-20",
+          "departement": "75",
+          "etat_administratif": "A",
+          "latitude": "48.8697",
+          "libelle_commune": "PARIS 9",
+          "libelle_voie": "MONTMARTRE",
+          "longitude": "2.3436",
+          "numero_voie": "142",
+          "region": "11",
+          "siret": "90000010800017",
+          "type_voie": "RUE"
+        },
+        "siren": "900000108",
+        "statut_diffusion": "O",
+        "tranche_effectif_salarie": "11"
+      },
+      "resolved_at": "2026-07-28",
+      "score": 0.88,
+      "siren": "900000108",
+      "strategy": "nom"
+    },
+    "la hulotte|08": {
+      "candidates": [
+        {
+          "adresse": "8 RUE DE L EGLISE 08430 BOULT-AUX-BOIS",
+          "departement": "08",
+          "etat_administratif": "A",
+          "nature_juridique": "5499",
+          "nom": "LA HULOTTE",
+          "score": 0.98,
+          "siren": "900000112"
+        }
+      ],
+      "confidence": "certain",
+      "departement": "08",
+      "editeur": "SARL LA HULOTTE",
+      "entreprise": {
+        "activite_principale": "58.14Z",
+        "annee_tranche_effectif_salarie": "2024",
+        "categorie_entreprise": "PME",
+        "complements": {
+          "convention_collective_renseignee": true,
+          "liste_idcc": [
+            "1895"
+          ]
+        },
+        "date_creation": "1972-04-01",
+        "dirigeants": [
+          {
+            "annee_de_naissance": "1970",
+            "nom": "MARTIN",
+            "prenoms": "CLAUDE",
+            "qualite": "Directeur général",
+            "type_dirigeant": "personne physique"
+          }
+        ],
+        "dirigeants_total": 1,
+        "etat_administratif": "A",
+        "nature_juridique": "5499",
+        "nom_complet": "LA HULOTTE",
+        "nom_raison_sociale": "LA HULOTTE",
+        "nombre_etablissements": 2,
+        "nombre_etablissements_ouverts": 1,
+        "section_activite_principale": "J",
+        "siege": {
+          "activite_principale": "58.14Z",
+          "adresse": "8 RUE DE L EGLISE 08430 BOULT-AUX-BOIS",
+          "code_postal": "08430",
+          "date_creation": "1972-04-01",
+          "departement": "08",
+          "etat_administratif": "A",
+          "latitude": "49.4670",
+          "libelle_commune": "BOULT-AUX-BOIS",
+          "libelle_voie": "DE L EGLISE",
+          "longitude": "4.7920",
+          "numero_voie": "8",
+          "region": "11",
+          "siret": "90000011200017",
+          "type_voie": "RUE"
+        },
+        "siren": "900000112",
+        "statut_diffusion": "O",
+        "tranche_effectif_salarie": "03"
+      },
+      "resolved_at": "2026-07-28",
+      "score": 0.98,
+      "siren": "900000112",
+      "strategy": "nom+departement"
+    },
+    "le monde diplomatique|75": {
+      "candidates": [
+        {
+          "adresse": "1 AVENUE STEPHEN PICHON 75013 PARIS 13",
+          "departement": "75",
+          "etat_administratif": "A",
+          "nature_juridique": "5599",
+          "nom": "SOCIETE EDITRICE DU MONDE DIPLOMATIQUE",
+          "score": 0.82,
+          "siren": "900000202"
+        }
+      ],
+      "confidence": "incertain",
+      "departement": "75",
+      "editeur": "LE MONDE DIPLOMATIQUE SA",
+      "entreprise": {
+        "activite_principale": "58.14Z",
+        "annee_tranche_effectif_salarie": "2024",
+        "categorie_entreprise": "PME",
+        "complements": {
+          "convention_collective_renseignee": true,
+          "liste_idcc": [
+            "1895"
+          ]
+        },
+        "date_creation": "1996-03-04",
+        "dirigeants": [
+          {
+            "annee_de_naissance": "1970",
+            "nom": "MARTIN",
+            "prenoms": "CLAUDE",
+            "qualite": "Directeur général",
+            "type_dirigeant": "personne physique"
+          }
+        ],
+        "dirigeants_total": 1,
+        "etat_administratif": "A",
+        "nature_juridique": "5599",
+        "nom_complet": "SOCIETE EDITRICE DU MONDE DIPLOMATIQUE",
+        "nom_raison_sociale": "SOCIETE EDITRICE DU MONDE DIPLOMATIQUE",
+        "nombre_etablissements": 2,
+        "nombre_etablissements_ouverts": 1,
+        "section_activite_principale": "J",
+        "siege": {
+          "activite_principale": "58.14Z",
+          "adresse": "1 AVENUE STEPHEN PICHON 75013 PARIS 13",
+          "code_postal": "75013",
+          "date_creation": "1996-03-04",
+          "departement": "75",
+          "etat_administratif": "A",
+          "latitude": "48.8330",
+          "libelle_commune": "PARIS 13",
+          "libelle_voie": "STEPHEN PICHON",
+          "longitude": "2.3590",
+          "numero_voie": "1",
+          "region": "11",
+          "siret": "90000020200017",
+          "type_voie": "AV"
+        },
+        "siren": "900000202",
+        "statut_diffusion": "O",
+        "tranche_effectif_salarie": "21"
+      },
+      "resolved_at": "2026-07-28",
+      "score": 0.82,
+      "siren": "900000202",
+      "strategy": "nom+departement"
+    },
+    "le poulpe|76": {
+      "candidates": [
+        {
+          "adresse": "5 RUE SAINT-NICOLAS 76000 ROUEN",
+          "departement": "76",
+          "etat_administratif": "A",
+          "nature_juridique": "9220",
+          "nom": "LE POULPE",
+          "score": 0.87,
+          "siren": "900000106"
+        }
+      ],
+      "confidence": "probable",
+      "departement": "76",
+      "editeur": "ASSOCIATION LE POULPE",
+      "entreprise": {
+        "activite_principale": "94.99Z",
+        "annee_tranche_effectif_salarie": "2024",
+        "complements": {
+          "convention_collective_renseignee": true,
+          "liste_idcc": [
+            "1895"
+          ]
+        },
+        "date_creation": "2019-11-04",
+        "dirigeants": [
+          {
+            "annee_de_naissance": "1970",
+            "nom": "MARTIN",
+            "prenoms": "CLAUDE",
+            "qualite": "Directeur général",
+            "type_dirigeant": "personne physique"
+          }
+        ],
+        "dirigeants_total": 1,
+        "etat_administratif": "A",
+        "nature_juridique": "9220",
+        "nom_complet": "LE POULPE",
+        "nom_raison_sociale": "LE POULPE",
+        "nombre_etablissements": 2,
+        "nombre_etablissements_ouverts": 1,
+        "section_activite_principale": "N",
+        "siege": {
+          "activite_principale": "94.99Z",
+          "adresse": "5 RUE SAINT-NICOLAS 76000 ROUEN",
+          "code_postal": "76000",
+          "date_creation": "2019-11-04",
+          "departement": "76",
+          "etat_administratif": "A",
+          "latitude": "49.4404",
+          "libelle_commune": "ROUEN",
+          "libelle_voie": "SAINT-NICOLAS",
+          "longitude": "1.0995",
+          "numero_voie": "5",
+          "region": "11",
+          "siret": "90000010600017",
+          "type_voie": "RUE"
+        },
+        "siren": "900000106",
+        "statut_diffusion": "O",
+        "tranche_effectif_salarie": "02"
+      },
+      "resolved_at": "2026-07-28",
+      "score": 0.87,
+      "siren": "900000106",
+      "strategy": "nom+departement"
+    },
+    "les editions marechal le canard enchaine|75": {
+      "candidates": [
+        {
+          "adresse": "173 RUE SAINT-HONORE 75009 PARIS 9",
+          "departement": "75",
+          "etat_administratif": "A",
+          "nature_juridique": "5599",
+          "nom": "LES EDITIONS MARECHAL LE CANARD ENCHAINE",
+          "score": 0.97,
+          "siren": "900000109"
+        }
+      ],
+      "confidence": "certain",
+      "departement": "75",
+      "editeur": "LES EDITIONS MARÉCHAL - LE CANARD ENCHAINÉ",
+      "entreprise": {
+        "activite_principale": "58.13Z",
+        "annee_tranche_effectif_salarie": "2024",
+        "categorie_entreprise": "PME",
+        "complements": {
+          "convention_collective_renseignee": true,
+          "liste_idcc": [
+            "1895"
+          ]
+        },
+        "date_creation": "1915-09-10",
+        "dirigeants": [
+          {
+            "annee_de_naissance": "1970",
+            "nom": "MARTIN",
+            "prenoms": "CLAUDE",
+            "qualite": "Directeur général",
+            "type_dirigeant": "personne physique"
+          }
+        ],
+        "dirigeants_total": 1,
+        "etat_administratif": "A",
+        "nature_juridique": "5599",
+        "nom_complet": "LES EDITIONS MARECHAL LE CANARD ENCHAINE",
+        "nom_raison_sociale": "LES EDITIONS MARECHAL LE CANARD ENCHAINE",
+        "nombre_etablissements": 2,
+        "nombre_etablissements_ouverts": 1,
+        "section_activite_principale": "J",
+        "siege": {
+          "activite_principale": "58.13Z",
+          "adresse": "173 RUE SAINT-HONORE 75009 PARIS 9",
+          "code_postal": "75009",
+          "date_creation": "1915-09-10",
+          "departement": "75",
+          "etat_administratif": "A",
+          "latitude": "48.8635",
+          "libelle_commune": "PARIS 9",
+          "libelle_voie": "SAINT-HONORE",
+          "longitude": "2.3374",
+          "numero_voie": "173",
+          "region": "11",
+          "siret": "90000010900017",
+          "type_voie": "RUE"
+        },
+        "siren": "900000109",
+        "statut_diffusion": "O",
+        "tranche_effectif_salarie": "31"
+      },
+      "resolved_at": "2026-07-28",
+      "score": 0.97,
+      "siren": "900000109",
+      "strategy": "nom+departement"
+    },
+    "mediacites lyon|69": {
+      "candidates": [
+        {
+          "adresse": "12 RUE DE LA CHARITE 69002 LYON 2",
+          "departement": "69",
+          "etat_administratif": "A",
+          "nature_juridique": "5499",
+          "nom": "MEDIACITES",
+          "score": 0.89,
+          "siren": "900000105"
+        }
+      ],
+      "confidence": "probable",
+      "departement": "69",
+      "editeur": "MEDIACITES LYON",
+      "entreprise": {
+        "activite_principale": "58.13Z",
+        "annee_tranche_effectif_salarie": "2024",
+        "categorie_entreprise": "PME",
+        "complements": {
+          "convention_collective_renseignee": true,
+          "liste_idcc": [
+            "1895"
+          ]
+        },
+        "date_creation": "2016-09-30",
+        "dirigeants": [
+          {
+            "annee_de_naissance": "1970",
+            "nom": "MARTIN",
+            "prenoms": "CLAUDE",
+            "qualite": "Directeur général",
+            "type_dirigeant": "personne physique"
+          }
+        ],
+        "dirigeants_total": 1,
+        "etat_administratif": "A",
+        "nature_juridique": "5499",
+        "nom_complet": "MEDIACITES",
+        "nom_raison_sociale": "MEDIACITES",
+        "nombre_etablissements": 2,
+        "nombre_etablissements_ouverts": 1,
+        "section_activite_principale": "J",
+        "siege": {
+          "activite_principale": "58.13Z",
+          "adresse": "12 RUE DE LA CHARITE 69002 LYON 2",
+          "code_postal": "69002",
+          "date_creation": "2016-09-30",
+          "departement": "69",
+          "etat_administratif": "A",
+          "latitude": "45.7523",
+          "libelle_commune": "LYON 2",
+          "libelle_voie": "DE LA CHARITE",
+          "longitude": "4.8290",
+          "numero_voie": "12",
+          "region": "11",
+          "siret": "90000010500017",
+          "type_voie": "RUE"
+        },
+        "siren": "900000105",
+        "statut_diffusion": "O",
+        "tranche_effectif_salarie": "03"
+      },
+      "resolved_at": "2026-07-28",
+      "score": 0.89,
+      "siren": "900000105",
+      "strategy": "nom+departement"
+    },
+    "ouest france|49": {
+      "candidates": [
+        {
+          "adresse": "10 RUE DU BREIL 49100 ANGERS",
+          "departement": "49",
+          "etat_administratif": "A",
+          "nature_juridique": "5599",
+          "nom": "OUEST-FRANCE",
+          "score": 0.99,
+          "siren": "900000110"
+        }
+      ],
+      "confidence": "certain",
+      "departement": "49",
+      "editeur": "SA OUEST-FRANCE",
+      "entreprise": {
+        "activite_principale": "58.13Z",
+        "annee_tranche_effectif_salarie": "2024",
+        "categorie_entreprise": "ETI",
+        "complements": {
+          "convention_collective_renseignee": true,
+          "liste_idcc": [
+            "1895"
+          ]
+        },
+        "date_creation": "1944-08-07",
+        "dirigeants": [
+          {
+            "annee_de_naissance": "1970",
+            "nom": "MARTIN",
+            "prenoms": "CLAUDE",
+            "qualite": "Directeur général",
+            "type_dirigeant": "personne physique"
+          }
+        ],
+        "dirigeants_total": 1,
+        "etat_administratif": "A",
+        "nature_juridique": "5599",
+        "nom_complet": "OUEST-FRANCE",
+        "nom_raison_sociale": "OUEST-FRANCE",
+        "nombre_etablissements": 2,
+        "nombre_etablissements_ouverts": 1,
+        "section_activite_principale": "J",
+        "siege": {
+          "activite_principale": "58.13Z",
+          "adresse": "10 RUE DU BREIL 49100 ANGERS",
+          "code_postal": "49100",
+          "date_creation": "1944-08-07",
+          "departement": "49",
+          "etat_administratif": "A",
+          "latitude": "47.4784",
+          "libelle_commune": "ANGERS",
+          "libelle_voie": "DU BREIL",
+          "longitude": "-0.5632",
+          "numero_voie": "10",
+          "region": "11",
+          "siret": "90000011000017",
+          "type_voie": "RUE"
+        },
+        "siren": "900000110",
+        "statut_diffusion": "O",
+        "tranche_effectif_salarie": "51"
+      },
+      "resolved_at": "2026-07-28",
+      "score": 0.99,
+      "siren": "900000110",
+      "strategy": "nom+departement"
+    },
+    "sipa press|92": {
+      "candidates": [
+        {
+          "adresse": "26 RUE DANTON 92300 LEVALLOIS-PERRET",
+          "departement": "92",
+          "etat_administratif": "A",
+          "nature_juridique": "5710",
+          "nom": "SIPA PRESS",
+          "score": 0.98,
+          "siren": "900000114"
+        }
+      ],
+      "confidence": "certain",
+      "departement": "92",
+      "editeur": "SIPA PRESS",
+      "entreprise": {
+        "activite_principale": "63.91Z",
+        "annee_tranche_effectif_salarie": "2024",
+        "categorie_entreprise": "PME",
+        "complements": {
+          "convention_collective_renseignee": true,
+          "liste_idcc": [
+            "1895"
+          ]
+        },
+        "date_creation": "1973-05-02",
+        "dirigeants": [
+          {
+            "annee_de_naissance": "1970",
+            "nom": "MARTIN",
+            "prenoms": "CLAUDE",
+            "qualite": "Directeur général",
+            "type_dirigeant": "personne physique"
+          }
+        ],
+        "dirigeants_total": 1,
+        "etat_administratif": "A",
+        "nature_juridique": "5710",
+        "nom_complet": "SIPA PRESS",
+        "nom_raison_sociale": "SIPA PRESS",
+        "nombre_etablissements": 2,
+        "nombre_etablissements_ouverts": 1,
+        "section_activite_principale": "N",
+        "siege": {
+          "activite_principale": "63.91Z",
+          "adresse": "26 RUE DANTON 92300 LEVALLOIS-PERRET",
+          "code_postal": "92300",
+          "date_creation": "1973-05-02",
+          "departement": "92",
+          "etat_administratif": "A",
+          "latitude": "48.8930",
+          "libelle_commune": "LEVALLOIS-PERRET",
+          "libelle_voie": "DANTON",
+          "longitude": "2.2870",
+          "numero_voie": "26",
+          "region": "11",
+          "siret": "90000011400017",
+          "type_voie": "RUE"
+        },
+        "siren": "900000114",
+        "statut_diffusion": "O",
+        "tranche_effectif_salarie": "11"
+      },
+      "resolved_at": "2026-07-28",
+      "score": 0.98,
+      "siren": "900000114",
+      "strategy": "nom+departement"
+    },
+    "societe editrice de mediapart|75": {
+      "candidates": [
+        {
+          "adresse": "127 AVENUE LEDRU ROLLIN 75011 PARIS 11",
+          "departement": "75",
+          "etat_administratif": "A",
+          "nature_juridique": "5710",
+          "nom": "SOCIETE EDITRICE DE MEDIAPART",
+          "score": 1.0,
+          "siren": "900000103"
+        }
+      ],
+      "confidence": "certain",
+      "departement": "75",
+      "editeur": "SOCIETE EDITRICE DE MEDIAPART",
+      "entreprise": {
+        "activite_principale": "58.13Z",
+        "annee_tranche_effectif_salarie": "2024",
+        "categorie_entreprise": "PME",
+        "complements": {
+          "convention_collective_renseignee": true,
+          "liste_idcc": [
+            "1895"
+          ]
+        },
+        "date_creation": "2008-01-25",
+        "dirigeants": [
+          {
+            "annee_de_naissance": "1970",
+            "nom": "MARTIN",
+            "prenoms": "CLAUDE",
+            "qualite": "Directeur général",
+            "type_dirigeant": "personne physique"
+          }
+        ],
+        "dirigeants_total": 1,
+        "etat_administratif": "A",
+        "nature_juridique": "5710",
+        "nom_complet": "SOCIETE EDITRICE DE MEDIAPART",
+        "nom_raison_sociale": "SOCIETE EDITRICE DE MEDIAPART",
+        "nombre_etablissements": 2,
+        "nombre_etablissements_ouverts": 1,
+        "section_activite_principale": "J",
+        "siege": {
+          "activite_principale": "58.13Z",
+          "adresse": "127 AVENUE LEDRU ROLLIN 75011 PARIS 11",
+          "code_postal": "75011",
+          "date_creation": "2008-01-25",
+          "departement": "75",
+          "etat_administratif": "A",
+          "latitude": "48.8532",
+          "libelle_commune": "PARIS 11",
+          "libelle_voie": "LEDRU ROLLIN",
+          "longitude": "2.3778",
+          "numero_voie": "127",
+          "region": "11",
+          "siret": "90000010300017",
+          "type_voie": "AV"
+        },
+        "siren": "900000103",
+        "statut_diffusion": "O",
+        "tranche_effectif_salarie": "21"
+      },
+      "resolved_at": "2026-07-28",
+      "score": 1.0,
+      "siren": "900000103",
+      "strategy": "nom+departement"
+    },
+    "societe editrice du monde|75": {
+      "candidates": [
+        {
+          "adresse": "67 AVENUE PIERRE MENDES FRANCE 75013 PARIS 13",
+          "departement": "75",
+          "etat_administratif": "A",
+          "nature_juridique": "5599",
+          "nom": "SOCIETE EDITRICE DU MONDE",
+          "score": 1.0,
+          "siren": "900000101"
+        }
+      ],
+      "confidence": "certain",
+      "departement": "75",
+      "editeur": "SOCIETE EDITRICE DU MONDE",
+      "entreprise": {
+        "activite_principale": "58.13Z",
+        "annee_tranche_effectif_salarie": "2024",
+        "categorie_entreprise": "ETI",
+        "complements": {
+          "convention_collective_renseignee": true,
+          "liste_idcc": [
+            "1895"
+          ]
+        },
+        "date_creation": "1944-12-18",
+        "dirigeants": [
+          {
+            "annee_de_naissance": "1970",
+            "nom": "MARTIN",
+            "prenoms": "CLAUDE",
+            "qualite": "Directeur général",
+            "type_dirigeant": "personne physique"
+          }
+        ],
+        "dirigeants_total": 1,
+        "etat_administratif": "A",
+        "nature_juridique": "5599",
+        "nom_complet": "SOCIETE EDITRICE DU MONDE",
+        "nom_raison_sociale": "SOCIETE EDITRICE DU MONDE",
+        "nombre_etablissements": 2,
+        "nombre_etablissements_ouverts": 1,
+        "section_activite_principale": "J",
+        "siege": {
+          "activite_principale": "58.13Z",
+          "adresse": "67 AVENUE PIERRE MENDES FRANCE 75013 PARIS 13",
+          "code_postal": "75013",
+          "date_creation": "1944-12-18",
+          "departement": "75",
+          "etat_administratif": "A",
+          "latitude": "48.8297",
+          "libelle_commune": "PARIS 13",
+          "libelle_voie": "PIERRE MENDES FRANCE",
+          "longitude": "2.3730",
+          "numero_voie": "67",
+          "region": "11",
+          "siret": "90000010100017",
+          "type_voie": "AV"
+        },
+        "siren": "900000101",
+        "statut_diffusion": "O",
+        "tranche_effectif_salarie": "42"
+      },
+      "resolved_at": "2026-07-28",
+      "score": 1.0,
+      "siren": "900000101",
+      "strategy": "nom+departement"
+    },
+    "telerama|75": {
+      "candidates": [
+        {
+          "adresse": "80 BOULEVARD AUGUSTE BLANQUI 75013 PARIS 13",
+          "departement": "75",
+          "etat_administratif": "A",
+          "nature_juridique": "5599",
+          "nom": "TELERAMA",
+          "score": 0.99,
+          "siren": "900000111"
+        }
+      ],
+      "confidence": "certain",
+      "departement": "75",
+      "editeur": "TELERAMA SA",
+      "entreprise": {
+        "activite_principale": "58.14Z",
+        "annee_tranche_effectif_salarie": "2024",
+        "categorie_entreprise": "PME",
+        "complements": {
+          "convention_collective_renseignee": true,
+          "liste_idcc": [
+            "1895"
+          ]
+        },
+        "date_creation": "1950-03-01",
+        "dirigeants": [
+          {
+            "annee_de_naissance": "1970",
+            "nom": "MARTIN",
+            "prenoms": "CLAUDE",
+            "qualite": "Directeur général",
+            "type_dirigeant": "personne physique"
+          }
+        ],
+        "dirigeants_total": 1,
+        "etat_administratif": "A",
+        "nature_juridique": "5599",
+        "nom_complet": "TELERAMA",
+        "nom_raison_sociale": "TELERAMA",
+        "nombre_etablissements": 2,
+        "nombre_etablissements_ouverts": 1,
+        "section_activite_principale": "J",
+        "siege": {
+          "activite_principale": "58.14Z",
+          "adresse": "80 BOULEVARD AUGUSTE BLANQUI 75013 PARIS 13",
+          "code_postal": "75013",
+          "date_creation": "1950-03-01",
+          "departement": "75",
+          "etat_administratif": "A",
+          "latitude": "48.8297",
+          "libelle_commune": "PARIS 13",
+          "longitude": "2.3448",
+          "region": "11",
+          "siret": "90000011100017"
+        },
+        "siren": "900000111",
+        "statut_diffusion": "O",
+        "tranche_effectif_salarie": "31"
+      },
+      "resolved_at": "2026-07-28",
+      "score": 0.99,
+      "siren": "900000111",
+      "strategy": "nom+departement"
+    }
+  },
+  "version": 2
+}

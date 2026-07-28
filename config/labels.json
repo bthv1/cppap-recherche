@@ -1,0 +1,168 @@
+{
+  "_comment": [
+    "Libellés d'affichage pour les codes renvoyés par l'API Recherche d'entreprises.",
+    "",
+    "Volontairement partiel : seules les valeurs fréquentes dans le secteur de la presse",
+    "sont listées. Un code absent est affiché tel quel dans la fiche, accompagné d'un lien",
+    "vers la fiche annuaire-entreprises — mieux vaut un code brut qu'un libellé inventé.",
+    "Complétez ces tables au fil des cas rencontrés."
+  ],
+
+  "naf": {
+    "18.11Z": "Imprimerie de journaux",
+    "18.12Z": "Autre imprimerie (labeur)",
+    "18.13Z": "Activités de pré-presse",
+    "47.62Z": "Commerce de détail de journaux et papeterie en magasin spécialisé",
+    "58.11Z": "Édition de livres",
+    "58.12Z": "Édition de répertoires et de fichiers d'adresses",
+    "58.13Z": "Édition de journaux",
+    "58.14Z": "Édition de revues et périodiques",
+    "58.19Z": "Autres activités d'édition",
+    "58.21Z": "Édition de jeux électroniques",
+    "58.29A": "Édition de logiciels système et de réseau",
+    "58.29B": "Édition de logiciels outils de développement et de langages",
+    "58.29C": "Édition de logiciels applicatifs",
+    "59.11A": "Production de films et de programmes pour la télévision",
+    "59.11B": "Production de films institutionnels et publicitaires",
+    "59.11C": "Production de films pour le cinéma",
+    "59.12Z": "Post-production de films cinématographiques et de programmes de télévision",
+    "59.13A": "Distribution de films cinématographiques",
+    "59.20Z": "Enregistrement sonore et édition musicale",
+    "60.10Z": "Édition et diffusion de programmes radio",
+    "60.20A": "Édition de chaînes généralistes",
+    "60.20B": "Édition de chaînes thématiques",
+    "62.01Z": "Programmation informatique",
+    "63.11Z": "Traitement de données, hébergement et activités connexes",
+    "63.12Z": "Portails Internet",
+    "63.91Z": "Activités des agences de presse",
+    "63.99Z": "Autres services d'information n.c.a.",
+    "64.20Z": "Activités des sociétés holding",
+    "70.10Z": "Activités des sièges sociaux",
+    "70.21Z": "Conseil en relations publiques et communication",
+    "70.22Z": "Conseil pour les affaires et autres conseils de gestion",
+    "73.11Z": "Activités des agences de publicité",
+    "73.12Z": "Régie publicitaire de médias",
+    "74.20Z": "Activités photographiques",
+    "74.30Z": "Traduction et interprétation",
+    "74.90B": "Activités spécialisées, scientifiques et techniques diverses",
+    "77.40Z": "Location-bail de propriété intellectuelle",
+    "82.19Z": "Photocopie, préparation de documents et autres activités de bureau",
+    "85.59A": "Formation continue d'adultes",
+    "90.03A": "Création artistique relative aux arts plastiques",
+    "90.03B": "Autre création artistique",
+    "94.99Z": "Autres organisations fonctionnant par adhésion volontaire"
+  },
+
+  "nature_juridique": {
+    "1000": "Entrepreneur individuel",
+    "5202": "Société en nom collectif",
+    "5306": "Société en commandite simple",
+    "5308": "Société en commandite par actions",
+    "5451": "SARL coopérative ouvrière de production (SCOP)",
+    "5458": "SARL coopérative de production (SCOP)",
+    "5485": "Société d'exercice libéral à responsabilité limitée",
+    "5498": "SARL unipersonnelle",
+    "5499": "Société à responsabilité limitée (SARL)",
+    "5510": "Société anonyme nationale à conseil d'administration",
+    "5515": "Société anonyme d'économie mixte à conseil d'administration",
+    "5547": "Société anonyme coopérative de production (SCOP) à conseil d'administration",
+    "5560": "Autre société anonyme à conseil d'administration",
+    "5585": "Société d'exercice libéral à forme anonyme à conseil d'administration",
+    "5599": "Société anonyme à conseil d'administration (SA)",
+    "5699": "Société anonyme à directoire (SA)",
+    "5710": "Société par actions simplifiée (SAS)",
+    "5720": "Société par actions simplifiée à associé unique (SASU)",
+    "5785": "Société d'exercice libéral par actions simplifiée",
+    "5800": "Société européenne",
+    "6540": "Société civile immobilière (SCI)",
+    "6588": "Société civile de moyens",
+    "6599": "Société civile",
+    "9210": "Association non déclarée",
+    "9220": "Association déclarée",
+    "9230": "Association déclarée, reconnue d'utilité publique",
+    "9300": "Fondation",
+    "9900": "Autre personne morale de droit privé"
+  },
+
+  "tranche_effectif": {
+    "NN": "Effectif non renseigné",
+    "00": "0 salarié",
+    "01": "1 ou 2 salariés",
+    "02": "3 à 5 salariés",
+    "03": "6 à 9 salariés",
+    "11": "10 à 19 salariés",
+    "12": "20 à 49 salariés",
+    "21": "50 à 99 salariés",
+    "22": "100 à 199 salariés",
+    "31": "200 à 249 salariés",
+    "32": "250 à 499 salariés",
+    "41": "500 à 999 salariés",
+    "42": "1 000 à 1 999 salariés",
+    "51": "2 000 à 4 999 salariés",
+    "52": "5 000 à 9 999 salariés",
+    "53": "10 000 salariés et plus"
+  },
+
+  "categorie_entreprise": {
+    "PME": "Petite ou moyenne entreprise",
+    "ETI": "Entreprise de taille intermédiaire",
+    "GE": "Grande entreprise"
+  },
+
+  "complements": {
+    "est_association": "Association",
+    "est_ess": "Économie sociale et solidaire",
+    "est_societe_mission": "Société à mission",
+    "est_entrepreneur_individuel": "Entrepreneur individuel",
+    "est_entrepreneur_spectacle": "Licence d'entrepreneur de spectacle",
+    "est_organisme_formation": "Organisme de formation",
+    "est_qualiopi": "Certifié Qualiopi",
+    "est_rge": "Reconnu garant de l'environnement (RGE)",
+    "est_bio": "Certifié bio",
+    "est_siae": "Structure d'insertion par l'activité économique",
+    "est_achats_responsables": "Achats responsables (RFAR)",
+    "est_avocat": "Inscrit à l'Annuaire des avocats",
+    "est_collectivite_territoriale": "Collectivité territoriale",
+    "est_administration": "Administration",
+    "est_finess": "Établissement FINESS",
+    "est_uai": "Établissement d'enseignement (UAI)",
+    "est_patrimoine_vivant": "Entreprise du patrimoine vivant",
+    "est_alim_confiance": "Contrôle sanitaire Alim'Confiance",
+    "convention_collective_renseignee": "Convention collective renseignée",
+    "egapro_renseignee": "Index égalité professionnelle renseigné"
+  },
+
+  "etat_administratif": {
+    "A": "Active",
+    "C": "Cessée",
+    "F": "Fermé"
+  },
+
+  "confidence": {
+    "verifie": {
+      "label": "Vérifié manuellement",
+      "tone": "ok",
+      "hint": "Correspondance corrigée à la main et relue en revue de code."
+    },
+    "certain": {
+      "label": "Correspondance certaine",
+      "tone": "ok",
+      "hint": "Dénomination identique et signaux concordants, sans homonyme proche."
+    },
+    "probable": {
+      "label": "Correspondance probable",
+      "tone": "warn",
+      "hint": "Forte ressemblance, mais un signal manque ou diverge. À vérifier avant citation."
+    },
+    "incertain": {
+      "label": "Correspondance incertaine",
+      "tone": "risk",
+      "hint": "Plusieurs entreprises plausibles. Ne pas considérer ce rattachement comme établi."
+    },
+    "aucun": {
+      "label": "Aucune correspondance",
+      "tone": "none",
+      "hint": "Aucune entreprise suffisamment proche dans la base. L'éditeur peut être non diffusible, radié, ou écrit différemment."
+    }
+  }
+}

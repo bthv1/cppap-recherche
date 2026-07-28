@@ -1,0 +1,98 @@
+name: Publication du site
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'web/**'
+      - 'scripts/**'
+      - 'config/**'
+      - 'data/**'
+      - '.github/workflows/pages.yml'
+  # Les pushes faits avec GITHUB_TOKEN ne déclenchent pas `push` : c'est `workflow_run` qui
+  # enchaîne la publication après une synchronisation de données.
+  workflow_run:
+    workflows: ['Synchronisation des données CPPAP']
+    types: [completed]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Générer le site
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # Déclenché par workflow_run, le SHA par défaut est celui d'avant le commit de
+          # données : on prend explicitement la tête de la branche par défaut.
+          ref: >-
+            ${{ github.event_name == 'workflow_run'
+                && github.event.repository.default_branch
+                || github.ref }}
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Générer le site
+        env:
+          # Variable de dépôt facultative (Settings → Variables) : URL du relais SIRENE.
+          # Absente, les fiches affichent l'instantané archivé — le site reste complet.
+          SIRENE_PROXY_URL: ${{ vars.SIRENE_PROXY_URL }}
+        run: |
+          if [ ! -f data/latest/spel.csv ] && [ ! -f data/latest/publications.csv ] \
+             && [ ! -f data/latest/agences.csv ]; then
+            echo '::warning::Aucune donnée dans data/latest — lancez le workflow de synchronisation.'
+            echo 'Publication d une démonstration sur fixtures pour que le site ne soit pas vide.'
+            python scripts/build_site.py --from-fixtures
+          else
+            python scripts/build_site.py
+          fi
+
+      - name: Résumer la publication
+        run: |
+          {
+            echo '## Site généré'
+            echo
+            python - <<'PY'
+          import json, pathlib
+          meta = json.loads(pathlib.Path('site/data/meta.json').read_text())
+          stats = meta['stats']
+          if meta['fixtures']:
+              print('> **Démonstration sur fixtures** — aucune donnée réelle archivée.')
+              print()
+          print(f"- {stats['total']} fiches, dont {stats['ipg']} qualifiées IPG")
+          print('- Rattachement SIRENE : '
+                + ', '.join(f'{k} = {v}' for k, v in sorted(stats['by_confidence'].items())))
+          print(f"- Relais SIRENE : {meta['sirene_proxy'] or 'non configuré (instantané archivé)'}")
+          index = pathlib.Path('site/data/search.json').stat().st_size
+          details = sum(p.stat().st_size for p in pathlib.Path('site/data/details').glob('*.json'))
+          print(f'- Index de recherche : {index / 1024:.0f} Ko | lots de détail : {details / 1024:.0f} Ko')
+          PY
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  deploy:
+    name: Déployer sur GitHub Pages
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

@@ -1,0 +1,18 @@
+name = "cppap-sirene"
+main = "index.js"
+compatibility_date = "2025-09-01"
+workers_dev = true
+
+# Restreindre les origines autorisées à celle du site publié évite que ce relais serve de
+# proxy ouvert. Laissez « * » (ou supprimez la variable) pour autoriser toute origine —
+# les données relayées sont publiques, mais le débit consommé, lui, est le vôtre.
+#
+# Remplacez <compte> par votre identifiant GitHub Pages avant déploiement.
+[vars]
+ALLOWED_ORIGINS = "*"
+
+# Exemple de restriction :
+# ALLOWED_ORIGINS = "https://bthv1.github.io"
+
+[observability]
+enabled = true

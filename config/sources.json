@@ -1,0 +1,264 @@
+{
+  "_comment": [
+    "Configuration des trois jeux Open Data CPPAP publiés sur data.gouv.fr.",
+    "",
+    "Les en-têtes réels de ces CSV ne sont pas garantis stables : la CPPAP a déjà renommé",
+    "des colonnes par le passé (« IPG » devenu « Qualification » en 2019, précision de la",
+    "situation géographique de l'éditeur en 2020). L'appariement est donc déclaratif : pour",
+    "chaque champ canonique on liste des alias, comparés sur en-tête normalisé (minuscules,",
+    "accents pliés, caractères non alphanumériques réduits à une espace).",
+    "",
+    "Voir scripts/normalize.py : appariement exact d'abord, puis appariement par inclusion,",
+    "puis échec bruyant affichant les en-têtes observés si un champ requis manque.",
+    "",
+    "Toute colonne non reconnue est conservée dans l'objet `extra` de l'enregistrement :",
+    "aucune donnée source n'est perdue, même si l'alias correspondant n'existe pas encore."
+  ],
+
+  "user_agent": "cppap-recherche/1.0 (+https://github.com/bthv1/cppap-recherche)",
+
+  "sources": [
+    {
+      "key": "spel",
+      "type": "spel",
+      "label": "Service de presse en ligne",
+      "label_plural": "Services de presse en ligne reconnus",
+      "dataset": "5bc6cf3a9ce2e72581422d3f",
+      "dataset_slug": "liste-des-services-de-presse-en-ligne-reconnus",
+      "required": ["cppap", "nom"],
+      "columns": {
+        "cppap": [
+          "n cppap",
+          "no cppap",
+          "num cppap",
+          "numero cppap",
+          "numero de cppap",
+          "n de cppap",
+          "numero de la decision",
+          "cppap"
+        ],
+        "nom": [
+          "nom du service",
+          "nom du service de presse en ligne",
+          "nom du spel",
+          "denomination du service",
+          "titre du service",
+          "nom du site",
+          "service de presse en ligne",
+          "titre",
+          "nom"
+        ],
+        "url": [
+          "url",
+          "adresse url",
+          "url du service",
+          "adresse du service",
+          "adresse du site",
+          "adresse internet",
+          "site internet",
+          "site web",
+          "lien"
+        ],
+        "editeur": [
+          "raison sociale",
+          "raison sociale de l editeur",
+          "raison sociale de l entreprise",
+          "raison sociale editeur",
+          "denomination sociale",
+          "societe editrice",
+          "editeur",
+          "entreprise",
+          "nom de l entreprise"
+        ],
+        "forme_juridique": [
+          "forme juridique",
+          "forme juridique de l entreprise",
+          "forme juridique de l editeur",
+          "statut juridique"
+        ],
+        "departement": [
+          "departement du siege",
+          "departement du siege social",
+          "departement du siege de l entreprise",
+          "departement de l editeur",
+          "departement siege",
+          "code departement",
+          "no departement",
+          "departement",
+          "dept"
+        ],
+        "commune": ["commune du siege", "commune", "ville", "ville du siege"],
+        "qualification": [
+          "qualification",
+          "qualification du service",
+          "ipg",
+          "qualification ipg",
+          "information politique et generale"
+        ],
+        "date_decision": [
+          "date de la decision",
+          "date de decision",
+          "date decision",
+          "date de la commission",
+          "date d effet",
+          "date de validite",
+          "date de fin de validite",
+          "validite",
+          "annee"
+        ]
+      }
+    },
+
+    {
+      "key": "publications",
+      "type": "publication",
+      "label": "Publication de presse",
+      "label_plural": "Publications de presse",
+      "dataset": "5bb834e89ce2e7693d2456a5",
+      "dataset_slug": "liste-des-publications-de-presse",
+      "required": ["cppap", "nom"],
+      "columns": {
+        "cppap": [
+          "n cppap",
+          "no cppap",
+          "num cppap",
+          "numero cppap",
+          "numero de cppap",
+          "n de cppap",
+          "numero d inscription",
+          "cppap"
+        ],
+        "nom": [
+          "titre",
+          "titre de la publication",
+          "titre de presse",
+          "nom de la publication",
+          "denomination de la publication",
+          "publication",
+          "nom"
+        ],
+        "editeur": [
+          "raison sociale",
+          "raison sociale de l editeur",
+          "raison sociale de l entreprise",
+          "raison sociale editeur",
+          "denomination sociale",
+          "societe editrice",
+          "editeur",
+          "entreprise",
+          "nom de l entreprise"
+        ],
+        "forme_juridique": [
+          "forme juridique",
+          "forme juridique de l entreprise",
+          "forme juridique de l editeur",
+          "statut juridique"
+        ],
+        "departement": [
+          "departement du siege",
+          "departement du siege social",
+          "departement du siege de l entreprise",
+          "departement de l editeur",
+          "departement siege",
+          "code departement",
+          "no departement",
+          "departement",
+          "dept"
+        ],
+        "commune": ["commune du siege", "commune", "ville", "ville du siege"],
+        "qualification": [
+          "qualification",
+          "ipg",
+          "qualification ipg",
+          "information politique et generale"
+        ],
+        "periodicite": [
+          "periodicite",
+          "periodicite de la publication",
+          "rythme de parution",
+          "parution",
+          "frequence"
+        ],
+        "date_decision": [
+          "date de la decision",
+          "date de decision",
+          "date decision",
+          "date de la commission",
+          "date d effet",
+          "date de validite",
+          "date de fin de validite",
+          "validite",
+          "annee"
+        ]
+      }
+    },
+
+    {
+      "key": "agences",
+      "type": "agence",
+      "label": "Agence de presse agréée",
+      "label_plural": "Agences de presse agréées",
+      "_dataset_comment": "ID non fourni : résolu depuis le slug au premier run, puis à figer ici.",
+      "dataset": "liste-des-agences-de-presse-agreees",
+      "dataset_slug": "liste-des-agences-de-presse-agreees",
+      "required": ["nom"],
+      "columns": {
+        "cppap": [
+          "n cppap",
+          "no cppap",
+          "numero cppap",
+          "numero d agrement",
+          "n d agrement",
+          "n agrement",
+          "numero de l agrement",
+          "numero d inscription",
+          "agrement",
+          "cppap"
+        ],
+        "nom": [
+          "nom de l agence",
+          "denomination de l agence",
+          "nom commercial",
+          "agence",
+          "titre",
+          "nom"
+        ],
+        "url": ["url", "adresse url", "site internet", "site web", "adresse du site", "lien"],
+        "editeur": [
+          "raison sociale",
+          "raison sociale de l agence",
+          "raison sociale de l entreprise",
+          "denomination sociale",
+          "entreprise",
+          "nom de l entreprise"
+        ],
+        "forme_juridique": [
+          "forme juridique",
+          "forme juridique de l entreprise",
+          "statut juridique"
+        ],
+        "departement": [
+          "departement du siege",
+          "departement du siege social",
+          "departement du siege de l entreprise",
+          "departement siege",
+          "code departement",
+          "no departement",
+          "departement",
+          "dept"
+        ],
+        "commune": ["commune du siege", "commune", "ville", "ville du siege"],
+        "qualification": ["qualification", "ipg", "information politique et generale"],
+        "date_decision": [
+          "date de la decision",
+          "date de decision",
+          "date de l agrement",
+          "date d effet",
+          "date de validite",
+          "validite",
+          "annee"
+        ]
+      }
+    }
+  ]
+}

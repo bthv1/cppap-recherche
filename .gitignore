@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Site généré par scripts/build_site.py — reconstruit à chaque déploiement
+/site/
+
+node_modules/
+.wrangler/
+
+.DS_Store

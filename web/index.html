@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Recherche CPPAP — médias reconnus et leurs éditeurs</title>
+<meta name="description" content="Moteur de recherche des services de presse en ligne, publications de presse et agences de presse reconnus par la CPPAP, enrichi des données SIRENE de l'entreprise éditrice.">
+<meta name="color-scheme" content="light dark">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <h1>Recherche CPPAP</h1>
+    <p class="tagline">
+      Services de presse en ligne, publications de presse et agences de presse reconnus par la
+      <abbr title="Commission paritaire des publications et agences de presse">CPPAP</abbr>,
+      rattachés à leur entreprise éditrice dans la base SIRENE.
+    </p>
+    <p class="dataset-state" id="dataset-state" aria-live="polite">Chargement des données…</p>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <form class="search" id="search-form" role="search" autocomplete="off">
+    <div class="search-field">
+      <label for="q" class="visually-hidden">Rechercher un média par son nom</label>
+      <input type="search" id="q" name="q" placeholder="Nom d'un média, d'un éditeur ou n° CPPAP…"
+             spellcheck="false" enterkeyhint="search">
+      <button type="button" id="clear" class="clear" hidden aria-label="Effacer la recherche">×</button>
+    </div>
+
+    <div class="filters">
+      <label class="filter">
+        <span>Type</span>
+        <select id="f-type">
+          <option value="">Tous les types</option>
+        </select>
+      </label>
+
+      <label class="filter">
+        <span>Département du siège</span>
+        <select id="f-dept">
+          <option value="">Tous les départements</option>
+        </select>
+      </label>
+
+      <label class="filter checkbox">
+        <input type="checkbox" id="f-ipg">
+        <span>Uniquement <abbr title="Information politique et générale">IPG</abbr></span>
+      </label>
+
+      <label class="filter checkbox">
+        <input type="checkbox" id="f-doubt">
+        <span>Rattachement SIRENE à vérifier</span>
+      </label>
+    </div>
+  </form>
+
+  <div class="layout">
+    <section class="results-pane" aria-labelledby="results-heading">
+      <h2 id="results-heading" class="results-count" aria-live="polite">—</h2>
+      <ol class="results" id="results"></ol>
+      <p class="results-more" id="results-more" hidden></p>
+    </section>
+
+    <aside class="card-pane" id="card-pane" aria-label="Fiche détaillée">
+      <div class="card-empty" id="card-empty">
+        <p><strong>Sélectionnez un média</strong> pour afficher sa fiche : agrément CPPAP,
+        entreprise éditrice et siège social issu de SIRENE.</p>
+      </div>
+      <article class="card" id="card" hidden tabindex="-1"></article>
+    </aside>
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p id="footer-sources">Sources : <span id="source-links"></span></p>
+    <p class="disclaimer">
+      Le rattachement entre un média et son entreprise SIRENE est reconstitué par
+      rapprochement de la raison sociale : <strong>les fichiers CPPAP ne contiennent pas de
+      numéro SIREN</strong>. Chaque fiche indique le niveau de confiance de ce rapprochement —
+      vérifiez-le avant toute citation.
+    </p>
+    <p class="repo">
+      Code et archives des versions successives :
+      <a id="repo-link" href="https://github.com/bthv1/cppap-recherche">bthv1/cppap-recherche</a>
+    </p>
+  </div>
+</footer>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>

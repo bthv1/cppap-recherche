@@ -1,0 +1,16 @@
+cle,siren,note
+# Corrections manuelles de l'appariement éditeur -> SIREN. Priorité absolue sur l'heuristique.
+#
+# `cle` est recherchée dans cet ordre :
+#   1. l'identifiant de fiche         ex. publication-0722-c-83260
+#   2. le numéro CPPAP normalisé      ex. 0722 C 83260
+#   3. la clé d'éditeur               ex. societe editrice du monde|75
+#      (raison sociale normalisée + « | » + code département, telle qu'affichée
+#       dans data/sirene/cache.json)
+#
+# `siren` doit comporter exactement 9 chiffres (les espaces sont acceptés).
+# `note` documente la vérification faite — indiquez la source, c'est ce qui rend
+# la correction relisible en revue de PR.
+#
+# Les lignes commençant par # sont ignorées. Exemple :
+# societe editrice du monde|75,123456789,Vérifié sur annuaire-entreprises le 2026-07-28

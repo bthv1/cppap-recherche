@@ -1,0 +1,75 @@
+name: CI
+
+on:
+  push:
+    branches-ignore: [gh-pages]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  python:
+    name: Lint et tests Python
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Installer les outils de développement
+        # Les scripts n'ont aucune dépendance de production : uniquement l'outillage.
+        run: python -m pip install --upgrade "ruff>=0.5" "pytest>=8.0"
+
+      - run: ruff check .
+      - run: ruff format --check .
+      - run: pytest
+
+  worker:
+    name: Tests du relais SIRENE
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      # `node:test` est intégré : aucune installation, aucun node_modules.
+      - run: node --test worker/index.test.mjs
+
+  site:
+    name: Génération du site sur fixtures
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      # Vérifie la chaîne complète normalisation -> index -> lots de détail, sans réseau.
+      - run: python scripts/build_site.py --from-fixtures --out /tmp/site
+
+      - name: Contrôler les sorties attendues
+        run: |
+          test -s /tmp/site/index.html
+          test -s /tmp/site/data/search.json
+          test -s /tmp/site/data/meta.json
+          test -s /tmp/site/data/details/0.json
+          test -s /tmp/site/vendor/minisearch/minisearch.js
+          python - <<'PY'
+          import json, pathlib
+          search = json.loads(pathlib.Path('/tmp/site/data/search.json').read_text())
+          meta = json.loads(pathlib.Path('/tmp/site/data/meta.json').read_text())
+          assert search['rows'], 'index de recherche vide'
+          assert meta['stats']['total'] == len(search['rows']), 'incohérence index/statistiques'
+          print(f"{meta['stats']['total']} fiches, {len(meta['stats']['departements'])} départements")
+          PY
