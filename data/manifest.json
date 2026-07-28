@@ -1,0 +1,144 @@
+{
+  "sources": {
+    "agences": {
+      "dataset_id": "5bc6cf339ce2e72581422d3e",
+      "dataset_page": "https://www.data.gouv.fr/datasets/liste-des-agences-de-presse-agreees",
+      "dataset_slug": "liste-des-agences-de-presse-agreees",
+      "label": "Agence de presse agréée",
+      "license": "lov2",
+      "type": "agence",
+      "versions": [
+        {
+          "columns": [
+            "IDENTIFICATION (dénomination sociale)",
+            "Nom commercial",
+            "Arrêté du",
+            "JORF – Date"
+          ],
+          "content_sha256": "0590668347432a8f51f1452c5a376b1822618cae4274cbb5cb53b8c52677fd7a",
+          "content_sha8": "05906683",
+          "download_method": "resource-url",
+          "file_sha256": "203a8766ece0d37ee2d8157f26ac7f994ffe9ea61548ff71c1b377e2953b32a7",
+          "observed_at": "2026-07-28",
+          "profile": {
+            "encoding": "UTF-8-SIG",
+            "indexes": null,
+            "nb_duplicates": 0,
+            "separator": ";",
+            "total_lines": 180
+          },
+          "resource_format": "csv",
+          "resource_id": "be70cfa6-4501-46cd-907c-422556ceefc3",
+          "resource_last_modified": "2026-03-27T10:48:32.264000+00:00",
+          "resource_title": "liste-des-agences-de-presse-agreees.csv",
+          "resource_url": "https://static.data.gouv.fr/resources/liste-des-agences-de-presse-agreees/20260327-104831/liste-des-agences-de-presse-agreees.csv",
+          "rows": 180,
+          "snapshot": "data/raw/agences/2026-07-28__05906683.csv",
+          "source_format": {
+            "delimiter": ";",
+            "encoding": "utf-8-sig",
+            "parser": "csv"
+          }
+        }
+      ]
+    },
+    "publications": {
+      "dataset_id": "5bb834e89ce2e7693d2456a5",
+      "dataset_page": "https://www.data.gouv.fr/datasets/liste-des-publications-de-presse",
+      "dataset_slug": "liste-des-publications-de-presse",
+      "label": "Publication de presse",
+      "license": "lov2",
+      "type": "publication",
+      "versions": [
+        {
+          "columns": [
+            "editeur",
+            "siret",
+            "forme_juridique",
+            "departement",
+            "type_de_presse",
+            "nom_du_titre_de_presse",
+            "statut_inscription",
+            "demande_en_cours",
+            "numero_cppap",
+            "date_expiration_inscription",
+            "date_derniere_decision",
+            "qualification",
+            "regime_derogatoire",
+            "ajl",
+            "url_spel"
+          ],
+          "content_sha256": "8407975b29f33c39b7c37ad9e56fe1ecb6c22f9d9db936c0862d9be7f485e5f5",
+          "content_sha8": "8407975b",
+          "download_method": "resource-url",
+          "file_sha256": "3f9c93befaac6c0151affaa628f43b6a04ea679abe1ab4c08d11c566eb99c7b2",
+          "observed_at": "2026-07-28",
+          "profile": {
+            "encoding": "utf-8",
+            "indexes": null,
+            "nb_duplicates": 0,
+            "separator": ";",
+            "total_lines": 26669
+          },
+          "resource_format": "csv",
+          "resource_id": "a98cced2-babe-45b4-95dd-ce5336155dbc",
+          "resource_last_modified": "2026-07-28T15:03:54+00:00",
+          "resource_title": "liste-des-publications-de-presse-inscrites.csv",
+          "resource_url": "https://ministere-culture.s3.sbg.io.cloud.ovh.net/PRESSE/liste_des_publications_de_presse_inscrites.csv",
+          "rows": 26669,
+          "snapshot": "data/raw/publications/2026-07-28__8407975b.csv",
+          "source_format": {
+            "delimiter": ";",
+            "encoding": "utf-8-sig",
+            "parser": "csv"
+          }
+        }
+      ]
+    },
+    "spel": {
+      "dataset_id": "5bc6cf3a9ce2e72581422d3f",
+      "dataset_page": "https://www.data.gouv.fr/datasets/liste-des-services-de-presse-en-ligne-reconnus",
+      "dataset_slug": "liste-des-services-de-presse-en-ligne-reconnus",
+      "label": "Service de presse en ligne",
+      "license": "lov2",
+      "type": "spel",
+      "versions": [
+        {
+          "columns": [
+            "Editeur",
+            "Forme juridique",
+            "Département",
+            "Service",
+            "url",
+            "Qualification",
+            "Numéro CPPAP"
+          ],
+          "content_sha256": "d78a9cb5f38dda4b7a29a69656396d67bf349210c1a6e2b9189ab82f2d90ec0a",
+          "content_sha8": "d78a9cb5",
+          "download_method": "resource-url",
+          "file_sha256": "bb98a6354c5d78e3b1980ce32376e738a2a57c0f09fff1fcaf4ed4e688c17df6",
+          "observed_at": "2026-07-28",
+          "profile": {
+            "encoding": "UTF-8-SIG",
+            "indexes": null,
+            "nb_duplicates": 1,
+            "separator": ";",
+            "total_lines": 1264
+          },
+          "resource_format": "csv",
+          "resource_id": "cbc0ae80-1ad5-4733-8c82-0218bb547aef",
+          "resource_last_modified": "2026-06-26T09:30:13.844000+00:00",
+          "resource_title": "liste-des-services-de-presse-en-ligne-reconnus.csv",
+          "resource_url": "https://static.data.gouv.fr/resources/liste-des-services-de-presse-en-ligne-reconnus/20260626-093013/liste-des-services-de-presse-en-ligne-reconnus.csv",
+          "rows": 1242,
+          "snapshot": "data/raw/spel/2026-07-28__d78a9cb5.csv",
+          "source_format": {
+            "delimiter": ";",
+            "encoding": "utf-8-sig",
+            "parser": "csv"
+          }
+        }
+      ]
+    }
+  }
+}
