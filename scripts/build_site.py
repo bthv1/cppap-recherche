@@ -36,9 +36,21 @@ from normalize import load_all_records
 
 log = logging.getLogger("build_site")
 
-DETAIL_BUCKETS = 32
+DETAIL_BUCKETS = 64
 
-SEARCH_FIELDS = ("id", "nom", "editeur", "cppap", "type", "dept", "ipg", "bucket", "confidence")
+SEARCH_FIELDS = (
+    "id",
+    "nom",
+    "editeur",
+    "cppap",
+    "type",
+    "dept",
+    "ipg",
+    "bucket",
+    "confidence",
+    # 1 inscrit, 0 non inscrit, -1 statut non précisé par la source.
+    "inscrit",
+)
 
 
 def detail_bucket(record_id: str) -> int:
@@ -116,6 +128,7 @@ def build_payloads(
     by_type: dict[str, int] = {}
     dept_counts: dict[str, int] = {}
     confidence_counts: dict[str, int] = {}
+    statut_counts: dict[str, int] = {}
 
     for record in records:
         resolution = attach_sirene(record, sirene)
@@ -133,22 +146,15 @@ def build_payloads(
                 1 if record["ipg"] else 0,
                 bucket,
                 confidence,
+                -1 if record["inscrit"] is None else int(record["inscrit"]),
             ]
         )
 
-        source = sources.get(record["source"]) or {}
-        detail = {
-            **{k: v for k, v in record.items() if k != "publisher_key"},
-            "departement_label": departements.get(record["departement"], ""),
-            "source_page": source.get("dataset_page"),
-            "source_snapshot": (source.get("latest") or {}).get("snapshot"),
-            "source_version": (source.get("latest") or {}).get("observed_at"),
-        }
-        if resolution:
-            detail["sirene"] = resolution
-        buckets[bucket][record["id"]] = detail
+        buckets[bucket][record["id"]] = slim_detail(record, resolution)
 
         by_type[record["type"]] = by_type.get(record["type"], 0) + 1
+        statut_key = {True: "inscrit", False: "non_inscrit"}.get(record["inscrit"], "inconnu")
+        statut_counts[statut_key] = statut_counts.get(statut_key, 0) + 1
         if record["departement"]:
             dept_counts[record["departement"]] = dept_counts.get(record["departement"], 0) + 1
         confidence_counts[confidence] = confidence_counts.get(confidence, 0) + 1
@@ -158,6 +164,7 @@ def build_payloads(
         "total": len(records),
         "by_type": by_type,
         "by_confidence": confidence_counts,
+        "by_statut": statut_counts,
         "ipg": sum(1 for r in records if r["ipg"]),
         "departements": [
             {"code": code, "label": departements.get(code, code), "count": count}
@@ -165,6 +172,38 @@ def build_payloads(
         ],
     }
     return search, buckets, stats
+
+
+# Champs internes, ou dérivables côté navigateur depuis `meta.json` : les répéter sur chacune
+# des 28 000 fiches représentait à lui seul un quart du poids des lots de détail.
+# `type_label` se retrouve depuis `type` via `meta.types`, comme le libellé de département
+# depuis `meta.stats.departements` et les liens de source depuis `meta.sources`.
+_DROPPED_FIELDS = frozenset({"publisher_key", "type_label"})
+
+
+def slim_detail(record: dict[str, Any], resolution: dict[str, Any] | None) -> dict[str, Any]:
+    """Fiche allégée : ni champ vide, ni valeur redondante.
+
+    Les libellés de type, de département et les liens de source sont reconstitués par
+    `web/app.js` à partir de `meta.json`, qui les porte une seule fois.
+    """
+    detail = {
+        key: value
+        for key, value in record.items()
+        if key not in _DROPPED_FIELDS
+        # `False` et `0` sont des valeurs signifiantes : seules les chaînes vides, les listes
+        # vides et `None` sont écartées.
+        and value not in ("", None, [], {})
+    }
+    # Le libellé source du département ne sert que s'il n'a pas pu être normalisé en code.
+    if detail.get("departement_source") == detail.get("departement"):
+        detail.pop("departement_source", None)
+    # Idem pour le SIRET brut, utile seulement s'il diffère de la forme normalisée.
+    if detail.get("siret_source", "").replace(" ", "") == detail.get("siret", ""):
+        detail.pop("siret_source", None)
+    if resolution:
+        detail["sirene"] = resolution
+    return detail
 
 
 def copy_web(destination: Path) -> None:

@@ -54,7 +54,9 @@ export class MediaIndex {
       processTerm: (term) => fold(term) || null,
       searchOptions: {
         prefix: true,
-        fuzzy: 0.2,
+        // Pas de tolérance aux fautes sur les termes courts : sur un sigle de trois lettres,
+        // une distance de 1 rapproche « AFP » de « ALP » et noie le résultat cherché.
+        fuzzy: (term) => (term.length > 4 ? 0.2 : 0),
         combineWith: 'AND',
         boost: { nom: 4, cppap: 2, editeur: 1.5 },
       },
@@ -67,6 +69,9 @@ export class MediaIndex {
     if (filters.dept && record.dept !== filters.dept) return false;
     if (filters.ipg && record.ipg !== 1) return false;
     if (filters.doubt && !DOUBTFUL.has(record.confidence)) return false;
+    // Quatre publications sur cinq ne sont pas inscrites : ce filtre laisse écarter le bruit
+    // sans jamais masquer par défaut ce que la source contient.
+    if (filters.inscrit && record.inscrit !== 1) return false;
     return true;
   }
 

@@ -45,6 +45,28 @@ function badge(text, extra = '') {
   return `<span class="badge ${extra}">${esc(text)}</span>`;
 }
 
+/**
+ * État d'inscription d'une fiche, tel qu'il doit être affiché.
+ *
+ * Point sensible : le fichier des publications de presse contient quatre titres sur cinq
+ * qui ne sont **pas** inscrits. Sans cette distinction, la fiche laisserait croire que tout
+ * numéro affiché vaut agrément en cours. L'expiration se calcule côté navigateur, pour
+ * rester juste quel que soit le temps écoulé depuis la dernière publication du site.
+ */
+export function statutState(detail, labels) {
+  const table = labels.statut ?? {};
+  if (detail.inscrit === false) return { key: 'non_inscrit', ...table.non_inscrit };
+  if (detail.inscrit === true) {
+    const expiration = String(detail.date_expiration ?? '');
+    if (/^\d{4}-\d{2}-\d{2}$/.test(expiration)) {
+      const today = new Date().toISOString().slice(0, 10);
+      if (expiration < today) return { key: 'expire', ...table.expire };
+    }
+    return { key: 'inscrit', ...table.inscrit };
+  }
+  return { key: 'inconnu', ...table.inconnu };
+}
+
 /** Groupage lisible d'un SIRET : 3-3-3-5, comme l'écrit l'INSEE. */
 function formatSiret(siret) {
   const digits = String(siret ?? '').replace(/\D/g, '');
@@ -125,17 +147,30 @@ function dirigeantLine(person) {
 // --------------------------------------------------------------------------------------
 
 function cppapSection(detail, labels) {
+  const statut = statutState(detail, labels);
+
   const rows = [
     field('N° CPPAP', detail.cppap),
-    field('Type', detail.type_label),
+    field('Type', [detail.type_label, detail.type_presse].filter(has).join(' · ')),
+    field('Statut', detail.statut),
+    field("Expiration de l'inscription", frenchDate(detail.date_expiration)),
     field('Qualification', detail.qualification),
     field('Périodicité', detail.periodicite),
-    field('Date de décision', frenchDate(detail.date_decision)),
-    detail.url ? field('Site', link(detail.url, detail.url.replace(/^https?:\/\//, '')), { raw: true }) : '',
+    field('Dernière décision', frenchDate(detail.date_decision)),
+    detail.url
+      ? field('Site', link(detail.url, detail.url.replace(/^https?:\/\//, '')), { raw: true })
+      : '',
   ].join('');
-  void labels;
+
+  // L'avertissement précède les champs : il conditionne la lecture de tout ce qui suit.
+  const warning = statut.key === 'inscrit' || statut.key === 'inconnu'
+    ? ''
+    : `<p class="note tone-${esc(statut.tone)}"><strong>${esc(statut.label)}</strong> — ${
+        esc(statut.hint)}</p>`;
+
   return `<section class="card-section">
     <h3>Agrément CPPAP</h3>
+    ${warning}
     <dl class="fields">${rows}</dl>
   </section>`;
 }
@@ -342,11 +377,14 @@ export function renderCard(detail, meta) {
   const tone = labels.confidence?.[level]?.tone ?? 'none';
   const confidenceLabel = labels.confidence?.[level]?.label ?? level;
 
+  const statut = statutState(detail, labels);
   const tags = [
     badge(detail.type_label ?? detail.type),
+    // Le statut d'inscription vient avant tout le reste : c'est la première chose à savoir.
+    statut.key === 'inscrit' ? '' : badge(statut.label, `tone-${statut.tone}`),
     detail.ipg ? badge('IPG', 'ipg') : '',
     badge(confidenceLabel, `tone-${tone}`),
-  ].join('');
+  ].filter(Boolean).join('');
 
   return `
     <div class="card-head">

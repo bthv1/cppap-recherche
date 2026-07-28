@@ -584,6 +584,11 @@ def forced_resolution(
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--refresh", action="store_true", help="Réinterroger même si en cache")
+    parser.add_argument(
+        "--skip-fuzzy",
+        action="store_true",
+        help="Ne faire que les jointures exactes par SIRET (rapide, aucun rapprochement de nom)",
+    )
     parser.add_argument("--limit", type=int, default=0, help="Ne résoudre que N éditeurs")
     parser.add_argument("--per-second", type=float, default=4.0, help="Débit (max API : 7)")
     parser.add_argument("--save-every", type=int, default=25, help="Sauvegarde du cache tous les N")
@@ -636,6 +641,15 @@ def main(argv: list[str] | None = None) -> int:
         for record_id in record_overrides
         if args.refresh or record_id not in cache["record_entries"]
     ]
+    if args.skip_fuzzy:
+        # Les jointures exactes coûtent une requête par entreprise et sont les plus fiables :
+        # les traiter seules permet de publier vite, le rapprochement par nom suivant plus tard.
+        log.info(
+            "--skip-fuzzy : %s éditeur(s) laissé(s) au rapprochement par nom d'une exécution "
+            "ultérieure",
+            len(pending),
+        )
+        pending = []
     if args.limit:
         pending_sirens = pending_sirens[: args.limit]
         pending = pending[: args.limit]

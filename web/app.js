@@ -18,6 +18,7 @@ const el = {
   type: document.getElementById('f-type'),
   dept: document.getElementById('f-dept'),
   ipg: document.getElementById('f-ipg'),
+  inscrit: document.getElementById('f-inscrit'),
   doubt: document.getElementById('f-doubt'),
   count: document.getElementById('results-heading'),
   results: document.getElementById('results'),
@@ -65,8 +66,10 @@ function describeDataset(meta) {
     .reduce((sum, level) => sum + (stats.by_confidence?.[level] ?? 0), 0);
   const share = stats.total ? Math.round((100 * confident) / stats.total) : 0;
 
+  const inscrits = stats.by_statut?.inscrit ?? 0;
   const parts = [
     `${numberFormat.format(stats.total ?? 0)} fiches issues de ${sources.length} listes CPPAP`,
+    `dont ${numberFormat.format(inscrits)} inscrites ou reconnues`,
     `${numberFormat.format(stats.ipg ?? 0)} qualifiées IPG`,
   ];
   if (dates.length) parts.push(`dernière version archivée le ${frenchDate(dates[dates.length - 1])}`);
@@ -123,6 +126,7 @@ function currentFilters() {
     type: el.type.value,
     dept: el.dept.value,
     ipg: el.ipg.checked,
+    inscrit: el.inscrit.checked,
     doubt: el.doubt.checked,
   };
 }
@@ -137,8 +141,13 @@ function resultLabel(record, meta) {
   ].filter(Boolean);
 
   const tone = meta.labels?.confidence?.[record.confidence]?.tone ?? 'none';
+  // Un titre non inscrit doit se voir dans la liste, pas seulement après ouverture de la fiche.
+  const statut = record.inscrit === 0
+    ? `<span class="badge tone-risk">${esc(meta.labels?.statut?.non_inscrit?.label ?? 'NON INSCRIT')}</span>`
+    : '';
   const badges = [
     `<span class="badge">${esc(typeLabel)}</span>`,
+    statut,
     record.ipg ? '<span class="badge ipg">IPG</span>' : '',
     tone === 'ok' ? '' : `<span class="badge tone-${esc(tone)}">SIREN ?</span>`,
   ].filter(Boolean).join(' ');
@@ -186,6 +195,28 @@ function renderResults(query) {
 // Carte
 // --------------------------------------------------------------------------------------
 
+/**
+ * Reconstitue les libellés que les fiches ne transportent plus.
+ *
+ * Les lots de détail omettent tout ce qui est répétitif — libellé de type, de département,
+ * liens vers la source — parce que `meta.json` les porte déjà une seule fois. Les répéter sur
+ * chacune des dizaines de milliers de fiches pesait un quart du poids téléchargé.
+ */
+function enrichDetail(detail, meta) {
+  const source = (meta.sources ?? {})[detail.source] ?? {};
+  const type = (meta.types ?? []).find((t) => t.type === detail.type);
+  const dept = (meta.stats?.departements ?? []).find((d) => d.code === detail.departement);
+
+  return {
+    ...detail,
+    type_label: detail.type_label ?? type?.label ?? detail.type,
+    departement_label: dept?.label ?? '',
+    source_page: source.dataset_page,
+    source_snapshot: source.latest?.snapshot,
+    source_version: source.latest?.observed_at,
+  };
+}
+
 async function loadDetail(id) {
   const record = state.index.byId.get(id);
   if (!record) return null;
@@ -216,11 +247,12 @@ async function openCard(id, { updateHash = true } = {}) {
   }
 
   try {
-    const detail = await loadDetail(id);
-    if (!detail) {
+    const raw = await loadDetail(id);
+    if (!raw) {
       el.card.innerHTML = '<div class="card-section">Fiche introuvable.</div>';
       return;
     }
+    const detail = enrichDetail(raw, state.meta);
     el.card.innerHTML = renderCard(detail, state.meta);
     attachCardBehaviour(el.card, detail, state.meta);
     if (window.matchMedia('(max-width: 900px)').matches) {
@@ -259,6 +291,7 @@ function wireEvents() {
   el.type.addEventListener('change', rerender);
   el.dept.addEventListener('change', rerender);
   el.ipg.addEventListener('change', rerender);
+  el.inscrit.addEventListener('change', rerender);
   el.doubt.addEventListener('change', rerender);
 
   el.clear.addEventListener('click', () => {

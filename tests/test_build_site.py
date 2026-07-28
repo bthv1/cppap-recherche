@@ -115,15 +115,44 @@ def test_build_payloads_produit_un_index_coherent(config, records, sirene):
     assert sum(len(payload) for payload in buckets.values()) == len(records)
 
 
-def test_build_payloads_annote_les_libelles_de_departement(config, records, sirene):
+def test_les_libelles_de_departement_vont_dans_les_statistiques(config, records, sirene):
+    """Le libellé n'est publié qu'une fois, dans meta.json, pas sur chaque fiche.
+
+    Répéter « Paris » sur des dizaines de milliers de fiches pesait un quart du poids
+    téléchargé ; `web/app.js` le reconstitue à l'ouverture d'une carte.
+    """
     sources = source_context({"sources": {}}, config)
     _, buckets, stats = build_payloads(records, sirene, {"75": "Paris"}, sources)
 
-    detail = next(
-        d for payload in buckets.values() for d in payload.values() if d["departement"] == "75"
-    )
-    assert detail["departement_label"] == "Paris"
     assert {"code": "75", "label": "Paris", "count": 10} in stats["departements"]
+
+    detail = next(
+        d for payload in buckets.values() for d in payload.values() if d.get("departement") == "75"
+    )
+    assert "departement_label" not in detail
+
+
+def test_les_fiches_publiees_sont_allegees(config, records, sirene):
+    """Ni champ vide, ni valeur reconstituable depuis meta.json."""
+    sources = source_context({"sources": {}}, config)
+    _, buckets, _ = build_payloads(records, sirene, {"75": "Paris"}, sources)
+    fiches = [d for payload in buckets.values() for d in payload.values()]
+
+    for detail in fiches:
+        assert "" not in detail.values(), f"champ vide conservé dans {detail['id']}"
+        for derivable in (
+            "type_label",
+            "departement_label",
+            "source_page",
+            "source_snapshot",
+            "source_version",
+            "publisher_key",
+        ):
+            assert derivable not in detail
+
+    # Les valeurs signifiantes qui ressemblent à du vide doivent survivre à l'allègement.
+    assert any(d.get("ipg") is False for d in fiches)
+    assert any(d.get("inscrit") is True for d in fiches)
 
 
 def test_build_payloads_retire_la_cle_interne_d_editeur(config, records, sirene):

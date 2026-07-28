@@ -45,6 +45,9 @@ FIELD_ORDER = (
     # (« SIRET ») ne peut être confondu avec aucun autre champ.
     "siret",
     "cppap",
+    "statut",
+    "date_expiration",
+    "type_presse",
     "editeur",
     "forme_juridique",
     "departement",
@@ -53,8 +56,14 @@ FIELD_ORDER = (
     "periodicite",
     "url",
     "date_decision",
+    "nom_commercial",
+    # `nom` en dernier : il capte les libellés génériques que rien de plus précis n'a pris.
     "nom",
 )
+
+# Valeurs de remplissage tenant lieu de case vide, sous leur forme pliée. Volontairement
+# restrictif : « NA », « NC » ou « SO » pourraient être un nom de média réel, on n'y touche pas.
+_PLACEHOLDERS = frozenset({"neant", "sans objet", "non renseigne", "non communique", "inconnu"})
 
 _DEPARTEMENT = re.compile(r"^(2[ab]|\d{2,3})")
 # Appliqués à une valeur déjà passée par `fold` : « Information politique et générale »
@@ -160,6 +169,43 @@ def normalize_departement(value: str) -> str:
     return code
 
 
+def clean_value(value: str) -> str:
+    """Vide les valeurs qui tiennent lieu de case vide.
+
+    Deux cas : une valeur sans aucun caractère alphanumérique (« - », « -- », « / »), et une
+    mention explicite d'absence. Sans cela, la colonne « Nom commercial » des agences de
+    presse afficherait « - » pour la plupart d'entre elles.
+    """
+    stripped = (value or "").strip()
+    if not stripped:
+        return ""
+    folded = fold(stripped)
+    if not folded or folded in _PLACEHOLDERS:
+        return ""
+    return stripped
+
+
+def is_inscrit(statut: str, implicite: str = "") -> bool | None:
+    """Le média est-il effectivement inscrit ou reconnu ?
+
+    Question décisive : la liste des publications de presse contient **quatre titres sur
+    cinq qui ne sont pas inscrits**. Les présenter comme les autres laisserait croire à un
+    agrément qui n'existe pas.
+
+    Les listes des services de presse en ligne et des agences ne portent pas de colonne de
+    statut : y figurer vaut reconnaissance, d'où le statut implicite déclaré par la source.
+    Retourne None quand rien ne permet de conclure.
+    """
+    folded = fold(statut)
+    if folded:
+        if folded.startswith("non") or folded.startswith("pas "):
+            return False
+        if folded.startswith(("inscrit", "reconnu", "agree", "actif", "valide", "oui")):
+            return True
+        return None
+    return True if implicite else None
+
+
 def normalize_siret(value: str) -> str:
     """Ramène un SIRET à ses 14 chiffres, ou chaîne vide s'il est inexploitable.
 
@@ -213,8 +259,14 @@ def normalize_url(value: str) -> str:
 
 
 def _record_id(source_type: str, cppap: str, nom: str, editeur: str) -> str:
+    """Identifiant stable et lisible, puisqu'il sert de lien partageable vers la fiche."""
     if cppap:
         return f"{source_type}-{slugify(cppap)}"
+    # Les agences de presse n'ont pas de n° CPPAP : leur nom donne une URL bien plus
+    # utilisable qu'une empreinte, et reste stable tant que le nom ne change pas.
+    slug = slugify(nom or editeur, fallback="")
+    if slug:
+        return f"{source_type}-{slug[:80]}"
     digest = hashlib.sha1(f"{nom}|{editeur}".encode()).hexdigest()[:10]
     return f"{source_type}-h{digest}"
 
@@ -243,7 +295,7 @@ def build_records(
         index = mapping.get(field)
         if index is None or index >= len(row):
             return ""
-        return (row[index] or "").strip()
+        return clean_value(row[index])
 
     unclaimed_indexes = [
         i for i in range(len(header)) if i not in set(mapping.values()) and header[i]
@@ -258,12 +310,17 @@ def build_records(
         cppap = normalize_cppap(cell(row, "cppap"))
         nom = cell(row, "nom")
         editeur = cell(row, "editeur")
+        # Pour une agence de presse, la société *est* le média : une seule colonne porte les
+        # deux, et une colonne ne peut être revendiquée qu'une fois.
+        if not editeur and source.get("editeur_defaults_to_nom"):
+            editeur = nom
         if not nom and not editeur:
             continue
 
         qualification = cell(row, "qualification")
         departement = normalize_departement(cell(row, "departement"))
         siret = normalize_siret(cell(row, "siret"))
+        statut = cell(row, "statut") or source.get("statut_implicite", "")
 
         record_id = _record_id(source["type"], cppap, nom, editeur)
         count = seen_ids.get(record_id, 0) + 1
@@ -279,7 +336,14 @@ def build_records(
                 "type_label": source["label"],
                 "cppap": cppap,
                 "nom": nom,
+                "nom_commercial": cell(row, "nom_commercial"),
                 "editeur": editeur,
+                # Statut d'inscription : décisif, quatre publications sur cinq ne sont pas
+                # inscrites. `inscrit` vaut None quand la source ne permet pas de conclure.
+                "statut": statut,
+                "inscrit": is_inscrit(statut, source.get("statut_implicite", "")),
+                "date_expiration": cell(row, "date_expiration"),
+                "type_presse": cell(row, "type_presse"),
                 # SIRET déclaré dans le fichier officiel, quand la source le fournit : il
                 # remplace le rapprochement par nom par une jointure exacte sur SIREN.
                 "siret": siret,

@@ -7,7 +7,6 @@
     "vers la fiche annuaire-entreprises — mieux vaut un code brut qu'un libellé inventé.",
     "Complétez ces tables au fil des cas rencontrés."
   ],
-
   "naf": {
     "18.11Z": "Imprimerie de journaux",
     "18.12Z": "Autre imprimerie (labeur)",
@@ -52,7 +51,6 @@
     "90.03B": "Autre création artistique",
     "94.99Z": "Autres organisations fonctionnant par adhésion volontaire"
   },
-
   "nature_juridique": {
     "1000": "Entrepreneur individuel",
     "5202": "Société en nom collectif",
@@ -83,7 +81,6 @@
     "9300": "Fondation",
     "9900": "Autre personne morale de droit privé"
   },
-
   "tranche_effectif": {
     "NN": "Effectif non renseigné",
     "00": "0 salarié",
@@ -102,13 +99,11 @@
     "52": "5 000 à 9 999 salariés",
     "53": "10 000 salariés et plus"
   },
-
   "categorie_entreprise": {
     "PME": "Petite ou moyenne entreprise",
     "ETI": "Entreprise de taille intermédiaire",
     "GE": "Grande entreprise"
   },
-
   "complements": {
     "est_association": "Association",
     "est_ess": "Économie sociale et solidaire",
@@ -131,13 +126,11 @@
     "convention_collective_renseignee": "Convention collective renseignée",
     "egapro_renseignee": "Index égalité professionnelle renseigné"
   },
-
   "etat_administratif": {
     "A": "Active",
     "C": "Cessée",
     "F": "Fermé"
   },
-
   "confidence": {
     "verifie": {
       "label": "Vérifié manuellement",
@@ -178,6 +171,29 @@
       "label": "Aucune correspondance",
       "tone": "none",
       "hint": "Aucune entreprise suffisamment proche dans la base. L'éditeur peut être non diffusible, radié, ou écrit différemment."
+    }
+  },
+  "statut": {
+    "_comment": "Ton d'affichage du statut d'inscription. Quatre publications sur cinq ne sont pas inscrites : la distinction doit être immédiatement lisible.",
+    "inscrit": {
+      "label": "Inscrit",
+      "tone": "ok",
+      "hint": "Le média figure comme inscrit ou reconnu dans la liste officielle."
+    },
+    "non_inscrit": {
+      "label": "NON INSCRIT",
+      "tone": "risk",
+      "hint": "Le média figure dans le fichier de la CPPAP mais n'y est PAS inscrit. Le numéro affiché ne vaut pas agrément en cours."
+    },
+    "inconnu": {
+      "label": "Statut non précisé",
+      "tone": "none",
+      "hint": "La source ne précise pas le statut d'inscription."
+    },
+    "expire": {
+      "label": "Inscription expirée",
+      "tone": "warn",
+      "hint": "L'inscription était valide mais sa date d'expiration est dépassée."
     }
   }
 }

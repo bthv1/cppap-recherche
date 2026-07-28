@@ -15,6 +15,12 @@ on:
         description: 'Limiter à ces sources (ex. : spel,publications). Vide = toutes.'
         type: string
         default: ''
+      skip_fuzzy:
+        description: >-
+          N'effectuer que les jointures exactes par SIRET. Rapide ; le rapprochement par nom
+          est laissé à une exécution ultérieure.
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -59,6 +65,9 @@ jobs:
         # on laisse le workflow continuer, et on signale l'échec par une issue en fin de course.
         continue-on-error: true
         run: |
+          # `set -o pipefail` est indispensable : sans lui, `python … | tee` renvoie le code
+          # de sortie de `tee`, et un plantage de Python passe pour un succès.
+          set -o pipefail
           python scripts/ingest.py ${{ steps.args.outputs.source_args }} \
             --report /tmp/ingest.json 2>&1 | tee /tmp/ingest-log.txt
 
@@ -92,11 +101,19 @@ jobs:
         # Incrémental : sans nouvel éditeur, l'étape ne fait aucun appel réseau. On la lance
         # donc systématiquement, ce qui rattrape aussi les éditeurs restés non résolus après
         # une exécution interrompue.
+        # Borné dans le temps : le cache est écrit au fil de l'eau, une exécution coupée
+        # laisse donc un progrès réutilisable, que les étapes suivantes commitent quand même.
+        timeout-minutes: 150
+        continue-on-error: true
+        id: match
         env:
           REFRESH: ${{ inputs.refresh_sirene }}
+          SKIP_FUZZY: ${{ inputs.skip_fuzzy }}
         run: |
+          set -o pipefail
           EXTRA=""
           if [ "$REFRESH" = 'true' ]; then EXTRA="--refresh"; fi
+          if [ "$SKIP_FUZZY" = 'true' ]; then EXTRA="$EXTRA --skip-fuzzy"; fi
           python scripts/match_sirene.py $EXTRA 2>&1 | tee /tmp/sirene-log.txt
 
       - name: Résumer l'appariement SIREN
@@ -115,6 +132,7 @@ jobs:
       # ------------------------------------------------------------------
       - name: Détecter les changements à commiter
         id: changes
+        if: always()
         run: |
           git add -A data/
           if git diff --cached --quiet; then
@@ -126,7 +144,7 @@ jobs:
           fi
 
       - name: Rédiger les notes de version
-        if: steps.changes.outputs.dirty == 'true'
+        if: always() && steps.changes.outputs.dirty == 'true'
         run: |
           CHANGED=$(python - <<'PY'
           import json, pathlib
@@ -140,7 +158,7 @@ jobs:
           cat /tmp/notes.md >> "$GITHUB_STEP_SUMMARY"
 
       - name: Commiter et pousser
-        if: steps.changes.outputs.dirty == 'true'
+        if: always() && steps.changes.outputs.dirty == 'true'
         run: |
           git config user.name  'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
@@ -174,7 +192,7 @@ jobs:
       # 4. Release : une version citable par publication
       # ------------------------------------------------------------------
       - name: Publier la Release de version
-        if: steps.changes.outputs.dirty == 'true' && env.CHANGED_SOURCES != ''
+        if: always() && steps.changes.outputs.dirty == 'true' && env.CHANGED_SOURCES != ''
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
@@ -228,8 +246,14 @@ jobs:
             gh issue create --title "Ingestion CPPAP en échec le $(date -u +%F)" --body "$BODY"
           fi
 
-      - name: Refléter l'échec d'ingestion sur le workflow
-        if: steps.ingest.outcome == 'failure'
+      - name: Refléter les échecs sur le workflow
+        if: always() && (steps.ingest.outcome == 'failure' || steps.match.outcome == 'failure')
         run: |
-          echo "L'ingestion a échoué pour au moins une source — voir l'issue ouverte." >&2
+          if [ '${{ steps.ingest.outcome }}' = 'failure' ]; then
+            echo "L'ingestion a échoué pour au moins une source — voir l'issue ouverte." >&2
+          fi
+          if [ '${{ steps.match.outcome }}' = 'failure' ]; then
+            echo "L'appariement SIREN s'est interrompu (erreur ou délai dépassé)." >&2
+            echo 'Le progrès partiel est commité : relancez pour poursuivre.' >&2
+          fi
           exit 1

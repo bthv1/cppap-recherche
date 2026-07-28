@@ -12,6 +12,8 @@ from lib.tabular import read_rows
 from normalize import (
     SchemaError,
     build_records,
+    clean_value,
+    is_inscrit,
     is_ipg,
     load_all_records,
     map_columns,
@@ -145,8 +147,9 @@ def test_les_agences_n_exigent_pas_de_numero_cppap(sources):
 
     assert len(records) == 1
     assert records[0]["cppap"] == ""
-    # Sans n° CPPAP, l'identifiant est dérivé d'une empreinte du nom et de l'éditeur.
-    assert records[0]["id"].startswith("agence-h")
+    # Sans n° CPPAP, l'identifiant vient du nom : une URL lisible et partageable, plutôt
+    # qu'une empreinte opaque.
+    assert records[0]["id"] == "agence-agence-x"
 
 
 # --------------------------------------------------------------------------------------
@@ -313,3 +316,156 @@ def test_un_siret_illisible_ne_bloque_pas_la_fiche(sources):
     assert len(records) == 1
     assert records[0]["siren"] == ""
     assert records[0]["siret_source"] == "à compléter"
+
+
+# --------------------------------------------------------------------------------------
+# Statut d'inscription
+# --------------------------------------------------------------------------------------
+
+
+@pytest.mark.parametrize(
+    ("statut", "implicite", "expected"),
+    [
+        ("Inscrit", "", True),
+        ("inscrit", "", True),
+        # Le piège central : quatre publications sur cinq portent cette valeur.
+        ("Non Inscrit", "", False),
+        ("non inscrit", "", False),
+        ("Reconnu", "", True),
+        ("Agréée", "", True),
+        # Sans colonne de statut, figurer dans une liste de médias reconnus vaut reconnaissance.
+        ("", "Reconnu", True),
+        ("", "", None),
+        ("Valeur imprévue", "", None),
+    ],
+)
+def test_is_inscrit(statut, implicite, expected):
+    assert is_inscrit(statut, implicite) is expected
+
+
+def test_le_statut_implicite_s_applique_aux_listes_sans_colonne(sources):
+    """La liste des services reconnus n'a pas de colonne statut : y être suffit."""
+    rows = [["Numéro CPPAP", "Service", "Editeur"], ["0330 W 95411", "exemple.fr", "EXEMPLE"]]
+    records, _ = build_records(rows, sources["spel"])
+
+    assert records[0]["statut"] == "Reconnu"
+    assert records[0]["inscrit"] is True
+
+
+def test_un_titre_non_inscrit_est_marque_comme_tel(sources):
+    rows = [
+        ["numero_cppap", "nom_du_titre_de_presse", "editeur", "statut_inscription"],
+        ["2588058", "ELETÜNK", "MISSION CATHOLIQUE HONGROISE", "Non Inscrit"],
+    ]
+    records, _ = build_records(rows, sources["publications"])
+
+    assert records[0]["statut"] == "Non Inscrit"
+    assert records[0]["inscrit"] is False
+
+
+# --------------------------------------------------------------------------------------
+# Valeurs de remplissage
+# --------------------------------------------------------------------------------------
+
+
+@pytest.mark.parametrize(
+    ("raw", "expected"),
+    [
+        # Le cas réel : « Nom commercial » vaut « - » pour la plupart des agences de presse.
+        ("-", ""),
+        ("--", ""),
+        (" / ", ""),
+        ("Néant", ""),
+        ("non renseigné", ""),
+        ("  Le Monde  ", "Le Monde"),
+        ("", ""),
+        # Volontairement conservés : ce pourrait être un nom de média réel.
+        ("NC", "NC"),
+        ("SO", "SO"),
+    ],
+)
+def test_clean_value(raw, expected):
+    assert clean_value(raw) == expected
+
+
+def test_l_editeur_retombe_sur_le_nom_pour_une_agence(sources):
+    """Pour une agence de presse, la société est le média : une seule colonne les porte."""
+    rows = [["IDENTIFICATION (dénomination sociale)", "Nom commercial"], ["17 JUIN MÉDIA", "-"]]
+    records, _ = build_records(rows, sources["agences"])
+
+    assert records[0]["nom"] == "17 JUIN MÉDIA"
+    assert records[0]["editeur"] == "17 JUIN MÉDIA"
+    # Le « - » ne doit pas se retrouver affiché comme nom commercial.
+    assert records[0]["nom_commercial"] == ""
+
+
+def test_les_entetes_reels_observes_sont_tous_reconnus(sources):
+    """Verrou de non-régression sur les en-têtes constatés lors du premier run réel."""
+    reels = {
+        "spel": [
+            "Editeur",
+            "Forme juridique",
+            "Département",
+            "Service",
+            "url",
+            "Qualification",
+            "Numéro CPPAP",
+        ],
+        "publications": [
+            "editeur",
+            "siret",
+            "forme_juridique",
+            "departement",
+            "type_de_presse",
+            "nom_du_titre_de_presse",
+            "statut_inscription",
+            "demande_en_cours",
+            "numero_cppap",
+            "date_expiration_inscription",
+            "date_derniere_decision",
+            "qualification",
+            "regime_derogatoire",
+            "ajl",
+            "url_spel",
+        ],
+        "agences": [
+            "IDENTIFICATION (dénomination sociale)",
+            "Nom commercial",
+            "Arrêté du",
+            "JORF \u2013 Date",  # tiret demi-cadratin : le caractère réel du fichier source
+        ],
+    }
+    attendus = {
+        "spel": {
+            "cppap",
+            "nom",
+            "editeur",
+            "url",
+            "forme_juridique",
+            "departement",
+            "qualification",
+        },
+        "publications": {
+            "cppap",
+            "nom",
+            "editeur",
+            "siret",
+            "statut",
+            "date_expiration",
+            "type_presse",
+            "forme_juridique",
+            "departement",
+            "qualification",
+            "date_decision",
+            "url",
+        },
+        "agences": {"nom", "nom_commercial", "date_decision"},
+    }
+    for key, header in reels.items():
+        mapping, _ = map_columns(header, sources[key]["columns"])
+        manquants = attendus[key] - set(mapping)
+        assert not manquants, f"[{key}] champs non résolus : {manquants}"
+
+    # Et le nom des agences vient bien de la dénomination, pas de « Nom commercial ».
+    mapping, _ = map_columns(reels["agences"], sources["agences"]["columns"])
+    assert reels["agences"][mapping["nom"]].startswith("IDENTIFICATION")
