@@ -25,7 +25,7 @@ from typing import Any
 TRUSTED_LEVELS = frozenset({"verifie", "siret", "certain"})
 
 # Niveaux à relire avant citation : soit l'heuristique doute, soit l'entreprise est absente.
-REVIEW_LEVELS = frozenset({"siret_absent", "probable", "incertain", "aucun"})
+REVIEW_LEVELS = frozenset({"siret_absent", "siret_non_verifie", "probable", "incertain", "aucun"})
 
 # Ordre d'affichage des statistiques.
 LEVEL_ORDER = (
@@ -35,6 +35,7 @@ LEVEL_ORDER = (
     "certain",
     "probable",
     "siret_absent",
+    "siret_non_verifie",
     "incertain",
     "aucun",
 )

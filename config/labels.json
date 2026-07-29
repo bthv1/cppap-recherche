@@ -171,6 +171,11 @@
       "label": "Aucune correspondance",
       "tone": "none",
       "hint": "Aucune entreprise suffisamment proche dans la base. L'éditeur peut être non diffusible, radié, ou écrit différemment."
+    },
+    "siret_non_verifie": {
+      "label": "SIRET publié, non vérifié",
+      "tone": "warn",
+      "hint": "Le SIRET vient du fichier officiel, mais l'interrogation de la base a échoué : rien n'a pu être confirmé. La prochaine synchronisation réessaiera."
     }
   },
   "statut": {

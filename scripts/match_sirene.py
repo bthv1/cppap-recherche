@@ -111,10 +111,19 @@ LEGAL_FORM_TO_NATURE_PREFIX = {
 # --------------------------------------------------------------------------------------
 
 
+class SearchFailed(RuntimeError):
+    """La requête n'a pas abouti — à ne pas confondre avec « aucun résultat »."""
+
+
 def search(
     client: HttpClient, query: str, departement: str = "", per_page: int = 10
 ) -> list[dict[str, Any]]:
-    """Recherche textuelle. Retourne la liste brute des résultats."""
+    """Recherche textuelle. Retourne la liste brute des résultats.
+
+    Lève `SearchFailed` si la requête n'aboutit pas. La distinction importe : renvoyer une
+    liste vide sur une panne réseau ferait conclure « entreprise absente de la base » là où
+    l'on n'a simplement rien pu vérifier.
+    """
     params: dict[str, Any] = {
         "q": query,
         "per_page": per_page,
@@ -126,15 +135,37 @@ def search(
     try:
         payload = client.get_json(f"{repo.RECHERCHE_ENTREPRISES_API}/search", params)
     except HttpError as exc:
-        log.warning("Recherche « %s » en échec (%s)", query, exc)
-        return []
+        raise SearchFailed(str(exc)) from exc
     return (payload or {}).get("results") or []
 
 
+def search_or_empty(
+    client: HttpClient, query: str, departement: str = "", per_page: int = 10
+) -> list[dict[str, Any]]:
+    """Variante tolérante, pour le rapprochement par nom où une panne n'est pas fatale."""
+    try:
+        return search(client, query, departement, per_page)
+    except SearchFailed as exc:
+        log.warning("Recherche « %s » en échec (%s)", query, exc)
+        return []
+
+
 def fetch_by_siren(client: HttpClient, siren: str) -> dict[str, Any] | None:
-    """Récupère une entreprise par son SIREN — utilisé pour les overrides manuels."""
-    results = search(client, f"siren:{siren}", per_page=1)
-    return results[0] if results else None
+    """Récupère une entreprise par son SIREN, et vérifie que c'est bien la bonne.
+
+    Deux formes de requête sont tentées : l'OpenAPI décrit `q` comme acceptant un SIREN brut
+    en « recherche directe », tandis que le dépôt de l'API documente la forme préfixée
+    `siren:…`. La première tentative avec un SIREN préfixé s'est révélée ne rien renvoyer sur
+    les 2 444 entreprises du premier passage réel — on essaie donc les deux, et surtout on
+    **contrôle que le SIREN retourné est celui demandé** : une requête textuelle peut très
+    bien répondre autre chose, et l'accepter en silence rattacherait un média à la mauvaise
+    entreprise.
+    """
+    for query in (siren, f"siren:{siren}"):
+        for candidate in search(client, query, per_page=5):
+            if str(candidate.get("siren") or "") == siren:
+                return candidate
+    return None
 
 
 # --------------------------------------------------------------------------------------
@@ -367,7 +398,7 @@ def resolve_publisher(
     used_strategy = "aucune"
 
     for label, query, dept_filter in strategies:
-        results = search(client, query, dept_filter)
+        results = search_or_empty(client, query, dept_filter)
         scored: list[tuple[float, dict[str, Any], dict[str, float]]] = []
         for result in results:
             score, parts = score_candidate(editeur_norm, departement, forme_juridique, result)
@@ -421,7 +452,16 @@ def resolve_by_siren(
         "score": 1.0,
         "candidates": [],
     }
-    candidate = fetch_by_siren(client, siren)
+    try:
+        candidate = fetch_by_siren(client, siren)
+    except SearchFailed as exc:
+        # Rien n'a pu être vérifié : le dire, et ne pas mettre l'entrée en cache comme si
+        # l'absence était établie — la prochaine exécution réessaiera.
+        log.warning("SIREN %s : interrogation impossible (%s)", siren, exc)
+        resolution["confidence"] = "siret_non_verifie"
+        resolution["erreur"] = str(exc)
+        return resolution
+
     if candidate:
         resolution["confidence"] = "siret"
         resolution["entreprise"] = extract_entreprise(candidate)
@@ -581,8 +621,40 @@ def forced_resolution(
     return resolution
 
 
+def probe(client: HttpClient, sirens: list[str]) -> int:
+    """Diagnostic : quelle forme de requête l'API accepte-t-elle réellement ?
+
+    Existe parce que la forme préfixée `q=siren:…` n'a rien renvoyé sur 2 444 entreprises
+    réelles, et que le réseau nécessaire au diagnostic n'est pas toujours accessible depuis
+    le poste de développement.
+    """
+    for siren in sirens:
+        log.info("--- SIREN %s", siren)
+        for label, query in (("brut", siren), ("préfixé", f"siren:{siren}")):
+            try:
+                results = search(client, query, per_page=5)
+            except SearchFailed as exc:
+                log.info("   %-9s ÉCHEC : %s", label, exc)
+                continue
+            exact = [r for r in results if str(r.get("siren") or "") == siren]
+            log.info(
+                "   %-9s %s résultat(s), %s exact(s)%s",
+                label,
+                len(results),
+                len(exact),
+                f" — {exact[0].get('nom_complet')}" if exact else "",
+            )
+    return 0
+
+
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument(
+        "--probe",
+        nargs="+",
+        metavar="SIREN",
+        help="Diagnostiquer les formes de requête acceptées par l'API, puis quitter",
+    )
     parser.add_argument("--refresh", action="store_true", help="Réinterroger même si en cache")
     parser.add_argument(
         "--skip-fuzzy",
@@ -598,6 +670,11 @@ def main(argv: list[str] | None = None) -> int:
     logging.basicConfig(level=logging.INFO, format="%(levelname)-7s %(message)s")
 
     config = repo.load_config()
+
+    if args.probe:
+        client = HttpClient(user_agent=config["user_agent"], per_second=args.per_second)
+        return probe(client, args.probe)
+
     records, _ = load_all_records(config, args.data_dir)
     if not records:
         log.error("Aucun enregistrement — lancez d'abord scripts/ingest.py")
