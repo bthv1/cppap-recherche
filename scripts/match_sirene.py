@@ -64,6 +64,9 @@ THRESHOLD_PROBABLE = 0.85
 THRESHOLD_INCERTAIN = 0.70
 CERTAIN_MARGIN = 0.10
 
+# En deçà, une absence généralisée peut être un hasard d'échantillon ; au-delà, non.
+IMPLAUSIBLE_SAMPLE = 20
+
 MAX_CANDIDATES = 3
 MAX_DIRIGEANTS = 12
 
@@ -802,6 +805,24 @@ def main(argv: list[str] | None = None) -> int:
     finally:
         if processed:
             save_cache(cache)
+
+    # Garde-fou contre une panne silencieuse. Le premier passage réel a renvoyé « entreprise
+    # absente de la base » pour les 2 444 SIREN interrogés, faute d'une forme de requête
+    # correcte, et rien ne l'a signalé. Une absence totale sur un échantillon significatif
+    # d'identifiants officiels n'est pas un résultat plausible : c'est un contrat d'API rompu.
+    exact = cache["siren_entries"]
+    if len(exact) >= IMPLAUSIBLE_SAMPLE:
+        absents = sum(1 for e in exact.values() if e.get("confidence") != "siret")
+        if absents == len(exact):
+            log.error(
+                "Les %s SIREN interrogés sont tous donnés absents de la base. Un SIRET publié "
+                "par la CPPAP désigne une entreprise réelle : c'est l'interrogation qui est en "
+                "cause, pas les données. Diagnostiquez avec « --probe <siren> » avant de "
+                "publier ce cache.",
+                len(exact),
+            )
+            save_cache(cache)
+            return 1
 
     # Décompte par fiche, pas par éditeur : un éditeur mal apparié qui publie quarante titres
     # dégrade quarante fiches. C'est ce nombre-là qui intéresse un lecteur.

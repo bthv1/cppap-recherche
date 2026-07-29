@@ -1,3 +1,6 @@
+# Diagnostic à lancer quand le rattachement SIREN cesse de fonctionner : l'API a déjà
+# changé de contrat une fois (`q=siren:…` a cessé de répondre), et le réseau nécessaire
+# n'est pas toujours accessible depuis un poste de développement.
 name: Sonde API SIRENE
 
 on:
@@ -27,23 +30,3 @@ jobs:
           set -o pipefail
           # shellcheck disable=SC2086  # séparation en mots voulue
           python scripts/match_sirene.py --probe $SIRENS
-      - name: Réponse brute, pour lever tout doute sur les paramètres
-        env:
-          SIRENS: ${{ inputs.sirens }}
-        run: |
-          SIREN=$(printf '%s' "$SIRENS" | cut -d' ' -f1)
-          UA='cppap-recherche/1.0 (+https://github.com/bthv1/cppap-recherche)'
-          for Q in "$SIREN" "siren:$SIREN"; do
-            echo "=== q=$Q (sans minimal/include) ==="
-            curl -sS -A "$UA" --get \
-              --data-urlencode "q=$Q" --data-urlencode 'per_page=1' \
-              'https://recherche-entreprises.api.gouv.fr/search' \
-              | head -c 400; echo
-            echo "=== q=$Q (avec minimal + include) ==="
-            curl -sS -A "$UA" --get \
-              --data-urlencode "q=$Q" --data-urlencode 'per_page=1' \
-              --data-urlencode 'minimal=true' \
-              --data-urlencode 'include=siege,dirigeants,complements,finances,tva' \
-              'https://recherche-entreprises.api.gouv.fr/search' \
-              | head -c 400; echo
-          done
