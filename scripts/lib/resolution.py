@@ -21,8 +21,9 @@ from __future__ import annotations
 
 from typing import Any
 
-# Niveaux qui n'exigent aucune relecture humaine.
-TRUSTED_LEVELS = frozenset({"verifie", "siret", "certain"})
+# Niveaux qui n'exigent aucune relecture humaine : décision humaine, SIRET publié,
+# SIRET hérité d'une autre liste du même éditeur, ou rapprochement de nom sans ambiguïté.
+TRUSTED_LEVELS = frozenset({"verifie", "siret", "siret_propage", "certain"})
 
 # Niveaux à relire avant citation : soit l'heuristique doute, soit l'entreprise est absente.
 REVIEW_LEVELS = frozenset({"siret_absent", "siret_non_verifie", "probable", "incertain", "aucun"})

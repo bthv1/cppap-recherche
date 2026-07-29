@@ -4,9 +4,9 @@
 Trois sorties, dimensionnées pour que la recherche soit instantanée sans télécharger
 l'intégralité des données :
 
-- `data/search.json` : index compact au format colonnes (~15 000 fiches, quelques centaines
-  de Ko une fois compressé), chargé au démarrage et indexé côté navigateur ;
-- `data/details/<n>.json` : fiches complètes réparties en 32 lots, chargées à l'ouverture
+- `data/search.json` : index compact au format colonnes (28 000 fiches, ~845 Ko compressés),
+  chargé au démarrage et indexé côté navigateur ;
+- `data/details/<n>.json` : fiches complètes réparties en 64 lots, chargées à l'ouverture
   d'une carte. Le lot est déduit d'une empreinte de l'identifiant, donc **stable d'une
   publication à l'autre** : le cache du navigateur survit aux mises à jour de données ;
 - `data/meta.json` : versions archivées, statistiques d'appariement, libellés, filtres.
@@ -31,7 +31,7 @@ from typing import Any
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from lib import repo
-from lib.resolution import resolve_record
+from lib.resolution import TRUSTED_LEVELS, resolve_record
 from normalize import load_all_records
 
 log = logging.getLogger("build_site")
@@ -266,6 +266,9 @@ def main(argv: list[str] | None = None) -> int:
         "annuaire_base": repo.ANNUAIRE_ENTREPRISES,
         "sirene_proxy": proxy,
         "detail_buckets": DETAIL_BUCKETS,
+        # Source unique de vérité pour « rattachement établi » : sans cela l'interface
+        # redéfinit sa propre liste et finit par annoncer un taux faux.
+        "confidence_trusted": sorted(TRUSTED_LEVELS),
         "sources": sources,
         "stats": stats,
         "labels": labels,

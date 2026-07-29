@@ -58,8 +58,19 @@ d'autres non.** Le rattachement emprunte donc quatre chemins, de fiabilité déc
 | `SIRET déclaré sur une autre liste` | la liste ne publie pas de SIRET, mais le même éditeur en déclare un dans une autre liste CPPAP | exacte par déduction |
 | `Certaine` / `Probable` / `Incertaine` / `Aucune` | rapprochement heuristique sur la raison sociale | à vérifier |
 
-Sur les données réelles : 4 057 fiches portent un SIRET publié, 3 516 de plus en héritent par
-propagation entre listes, et 20 518 relèvent du rapprochement par le nom.
+Résultat mesuré au 29 juillet 2026, jointures exactes seules (le rapprochement par nom reste
+à exécuter) :
+
+| | Fiches | Part |
+|---|---|---|
+| SIRET publié par la CPPAP | 4 014 | 14,3 % |
+| SIRET hérité d'une autre liste du même éditeur | 3 500 | 12,5 % |
+| SIRET publié mais entreprise absente de l'API | 59 | 0,2 % |
+| En attente du rapprochement par le nom | 20 518 | 73,0 % |
+
+Soit **7 514 fiches (27 %) rattachées de façon exacte**, sans aucune heuristique. Sur
+2 444 entreprises interrogées par SIREN, 2 404 ont été retrouvées (98 %) — les 40 autres sont
+vraisemblablement non diffusibles ou radiées.
 
 Un cinquième niveau, `SIRET publié, entreprise absente`, signale un SIRET officiel dont
 l'entreprise ne figure pas dans l'API — non diffusible ou radiée. L'identifiant reste vrai ;

@@ -62,7 +62,10 @@ function describeDataset(meta) {
     .filter(Boolean)
     .sort();
 
-  const confident = ['certain', 'verifie']
+  // La liste des niveaux considérés comme établis vient de meta.json, pas d'ici : la
+  // dupliquer avait fait annoncer « 0 % » alors que le quart des fiches était rattaché.
+  const trusted = meta.confidence_trusted ?? ['verifie', 'siret', 'siret_propage', 'certain'];
+  const confident = trusted
     .reduce((sum, level) => sum + (stats.by_confidence?.[level] ?? 0), 0);
   const share = stats.total ? Math.round((100 * confident) / stats.total) : 0;
 
