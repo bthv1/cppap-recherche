@@ -8,6 +8,7 @@ disparaît.
 
 import pytest
 from lib import repo
+from lib.cppap import parse_cppap
 from lib.tabular import read_rows
 from normalize import (
     SchemaError,
@@ -17,7 +18,7 @@ from normalize import (
     is_ipg,
     load_all_records,
     map_columns,
-    normalize_cppap,
+    merge_by_serie,
     normalize_departement,
     normalize_siret,
     normalize_url,
@@ -178,20 +179,6 @@ def test_normalize_departement(raw, expected):
 @pytest.mark.parametrize(
     ("raw", "expected"),
     [
-        ("0620 W 91234", "0620 W 91234"),
-        ("0620W91234", "0620W91234"),
-        ("0620-W-91234", "0620 W 91234"),
-        ("  0722   c   83260 ", "0722 C 83260"),
-        ("", ""),
-    ],
-)
-def test_normalize_cppap(raw, expected):
-    assert normalize_cppap(raw) == expected
-
-
-@pytest.mark.parametrize(
-    ("raw", "expected"),
-    [
         ("IPG", True),
         ("ipg", True),
         ("Information politique et générale", True),
@@ -241,9 +228,13 @@ def test_identifiants_dupliques_sont_suffixes(sources):
 def test_load_all_records_sur_les_fixtures(config):
     records, reports = load_all_records(config, repo.FIXTURES / "published")
 
-    assert len(records) == 18
+    # 20 lignes réparties sur trois listes, dont une inscription décrite par deux listes :
+    # elle ne donne qu'une fiche.
+    assert len(records) == 19
     assert {r["type"] for r in records} == {"spel", "publication", "agence"}
-    assert all("error" not in report for report in reports.values())
+    assert all(
+        "error" not in report for key, report in reports.items() if not key.startswith("_")
+    )
     # Chaque enregistrement porte un identifiant unique et une clé d'éditeur exploitable.
     assert len({r["id"] for r in records}) == len(records)
     assert all(r["publisher_key"] for r in records)
@@ -469,3 +460,252 @@ def test_les_entetes_reels_observes_sont_tous_reconnus(sources):
     # Et le nom des agences vient bien de la dénomination, pas de « Nom commercial ».
     mapping, _ = map_columns(reels["agences"], sources["agences"]["columns"])
     assert reels["agences"][mapping["nom"]].startswith("IDENTIFICATION")
+
+
+# --------------------------------------------------------------------------------------
+# Fusion des fiches partageant un n° d'inscription
+# --------------------------------------------------------------------------------------
+#
+# Le même agrément s'écrit « 1026 Y 90833 » dans la liste des services de presse en ligne et
+# « 2590833 » dans celle des publications de presse. Sans réunion, un même média donne deux
+# fiches sans lien, chacune amputée de ce que l'autre porte.
+
+
+def _record(source, key, cppap, **overrides):
+    """Fiche minimale telle que `build_records` la produit, pour éprouver la fusion seule."""
+    number = parse_cppap(cppap)
+    base = {
+        "id": f"cppap-{number.serie}" if number.serie else f"{key}-x",
+        "type": key,
+        "types": [key],
+        "source": source,
+        "sources": [source],
+        "type_label": source,
+        "cppap": number.raw,
+        "cppap_serie": number.serie,
+        "cppap_lettre": number.lettre,
+        "cppap_prefixe": number.prefixe,
+        "cppap_forme": number.forme,
+        "cppap_ecritures": {source: number.raw} if number.raw else {},
+        "nom": "",
+        "editeur": "",
+        "statut": "",
+        "inscrit": None,
+        "date_expiration": number.expiration,
+        "date_expiration_origine": "cppap" if number.expiration else "",
+        "siret": "",
+        "siren": "",
+        "siret_source": "",
+        "departement": "",
+        "departement_source": "",
+        "qualification": "",
+        "ipg": False,
+        "url": "",
+        "extra": {},
+    }
+    return {**base, **overrides}
+
+
+@pytest.fixture
+def paire():
+    """Une même inscription vue par les deux listes, comme dans les fichiers réels."""
+    return [
+        _record(
+            "spel",
+            "spel",
+            "1026 Y 90833",
+            nom="exemple.fr",
+            editeur="EXEMPLE MEDIAS",
+            statut="Reconnu",
+            inscrit=True,
+            qualification="IPG",
+            ipg=True,
+            url="https://exemple.fr",
+        ),
+        _record(
+            "publications",
+            "publication",
+            "2590833",
+            nom="exemple.fr",
+            editeur="EXEMPLE MEDIAS",
+            statut="Inscrit",
+            inscrit=True,
+            date_expiration="2026-10-31",
+            siret="90000010100017",
+            siren="900000101",
+            siret_source="90000010100017",
+            departement="75",
+            departement_source="75",
+            type_presse="Service de presse en ligne",
+        ),
+    ]
+
+
+def test_une_inscription_vue_par_deux_listes_donne_une_seule_fiche(paire, config):
+    records, report = merge_by_serie(paire, config)
+
+    assert len(records) == 1
+    assert report["fusionnees"] == 1
+    assert report["groupes_rejetes"] == 0
+
+    fiche = records[0]
+    # L'identifiant dérive du n° d'inscription : c'est la partie permanente du numéro.
+    assert fiche["id"] == "cppap-90833"
+    assert fiche["types"] == ["spel", "publication"]
+    assert fiche["sources"] == ["spel", "publications"]
+
+
+def test_la_fiche_fusionnee_reunit_ce_que_chaque_liste_apporte(paire, config):
+    """Chacune des deux listes comble une lacune de l'autre — c'est tout l'intérêt."""
+    fiche = merge_by_serie(paire, config)[0][0]
+
+    # La liste des services de presse en ligne apporte la forme complète du numéro et l'URL.
+    assert fiche["cppap"] == "1026 Y 90833"
+    assert fiche["cppap_lettre"] == "Y"
+    assert fiche["url"] == "https://exemple.fr"
+    # La liste des publications apporte le SIRET, donc un rattachement SIRENE exact.
+    assert fiche["siret"] == "90000010100017"
+    assert fiche["siren"] == "900000101"
+    assert fiche["type_presse"] == "Service de presse en ligne"
+    # Une qualification portée par une seule liste reste vraie.
+    assert fiche["qualification"] == "IPG"
+    assert fiche["ipg"] is True
+
+
+def test_les_deux_ecritures_du_numero_sont_conservees(paire, config):
+    """Un lecteur arrive avec le numéro tel que sa source l'écrit : les deux doivent mener ici."""
+    fiche = merge_by_serie(paire, config)[0][0]
+
+    assert fiche["cppap_ecritures"] == {"spel": "1026 Y 90833", "publications": "2590833"}
+    assert fiche["cppap_serie"] == "90833"
+
+
+def test_le_statut_le_plus_a_jour_est_retenu_avec_sa_date(paire, config):
+    """La liste des publications fait foi sur le statut : elle est mise à jour plus souvent.
+
+    Cas réel : 126 services encore listés comme reconnus y sont « Non Inscrit », leur
+    inscription ayant expiré. Les présenter comme reconnus serait faux.
+    """
+    paire[1]["statut"] = "Non Inscrit"
+    paire[1]["inscrit"] = False
+    paire[1]["date_expiration"] = "2026-03-31"
+
+    fiche = merge_by_serie(paire, config)[0][0]
+
+    assert fiche["statut"] == "Non Inscrit"
+    assert fiche["inscrit"] is False
+    assert fiche["date_expiration"] == "2026-03-31"
+    # La date vient de la source, pas du numéro : la provenance suit la valeur retenue.
+    assert fiche["date_expiration_origine"] == ""
+
+
+def test_l_expiration_deduite_du_numero_sert_a_defaut(paire, config):
+    """La liste des services de presse en ligne ne publie pas de date d'expiration.
+
+    Elle est lisible dans le numéro : « 1026 » vaut octobre 2026. Sans ce décodage, une
+    reconnaissance expirée s'affiche comme valide.
+    """
+    paire[1]["date_expiration"] = ""
+
+    fiche = merge_by_serie(paire, config)[0][0]
+
+    assert fiche["date_expiration"] == "2026-10-31"
+    assert fiche["date_expiration_origine"] == "cppap"
+
+
+def test_un_numero_reattribue_n_est_pas_fusionne(paire, config):
+    """Cas réel : le n° 90135 désigne trois titres, dont un expiré depuis 2015.
+
+    L'éditeur fait partie de la clé de rapprochement : le titre d'un autre éditeur reste
+    une fiche à part, et son identifiant cesse de dériver du seul numéro.
+    """
+    intrus = _record(
+            "publications",
+            "publication",
+            "2590833",
+            nom="AUTRE TITRE",
+            editeur="UN AUTRE EDITEUR",
+            statut="Non Inscrit",
+            inscrit=False,
+            date_expiration="2015-01-22",
+    )
+    records, report = merge_by_serie([*paire, intrus], config)
+
+    assert report["fusionnees"] == 1
+    assert report["numeros_ambigus"] == ["90833"]
+    assert len(records) == 2
+    # Les deux fiches restantes portent des identifiants distincts et explicites.
+    assert {r["id"] for r in records} == {
+        "cppap-90833-exemple-medias",
+        "cppap-90833-un-autre-editeur",
+    }
+
+
+def test_un_meme_numero_repete_dans_une_liste_bloque_la_fusion(paire, config):
+    """Deux fiches d'une même liste pour un même numéro et un même éditeur : on renonce.
+
+    Rien ne permet de dire laquelle décrit l'inscription vue par l'autre liste.
+    """
+    doublon = {**paire[1], "nom": "un autre titre"}
+    records, report = merge_by_serie([*paire, doublon], config)
+
+    assert report["fusionnees"] == 0
+    assert report["groupes_rejetes"] == 1
+    assert "répété" in report["rejets"][0]["raison"]
+    assert len(records) == 3
+    # Les identifiants retombent sur la liste d'origine et restent uniques.
+    assert len({r["id"] for r in records}) == 3
+
+
+def test_deux_dates_publiees_divergentes_bloquent_la_fusion(paire, config):
+    """Même numéro, même éditeur, mais deux inscriptions distinctes dans le temps."""
+    paire[0]["date_expiration"] = "2026-10-31"
+    paire[0]["date_expiration_origine"] = ""
+    paire[1]["date_expiration"] = "2019-06-30"
+
+    records, report = merge_by_serie(paire, config)
+
+    assert report["fusionnees"] == 0
+    assert "expiration" in report["rejets"][0]["raison"]
+    assert len(records) == 2
+
+
+def test_une_date_deduite_du_numero_ne_bloque_jamais_la_fusion(paire, config):
+    """Elle n'est qu'une lecture du numéro : la date publiée par une source lui est supérieure.
+
+    Sans cette règle, le moindre écart entre la date lue dans le numéro et celle publiée en
+    colonne priverait le lecteur d'une fiche complète, pour une divergence qu'aucune source
+    n'affirme.
+    """
+    assert paire[0]["date_expiration_origine"] == "cppap"
+    paire[1]["date_expiration"] = "2026-03-31"
+
+    fiche = merge_by_serie(paire, config)[0][0]
+
+    assert fiche["date_expiration"] == "2026-03-31"
+    assert fiche["date_expiration_origine"] == ""
+
+
+def test_une_fiche_sans_homologue_traverse_la_fusion_intacte(paire, config):
+    """Les agences de presse n'ont pas de n° CPPAP : elles ne doivent pas être touchées."""
+    agence = _record("agences", "agence", "", nom="AGENCE X", editeur="AGENCE X")
+    records, report = merge_by_serie([*paire, agence], config)
+
+    assert report["fusionnees"] == 1
+    assert agence in records
+
+
+def test_plusieurs_prefixes_dans_une_liste_desactivent_la_fusion(paire, config):
+    """Le préfixe de la liste des publications est observé, jamais supposé.
+
+    S'il cessait d'être constant, deux n° d'inscription identiques ne désigneraient plus
+    forcément la même inscription : mieux vaut renoncer à réunir que réunir à tort.
+    """
+    autre_prefixe = _record(
+        "publications", "publication", "2690001", nom="AUTRE", editeur="AUTRE EDITEUR"
+    )
+    records, report = merge_by_serie([*paire, autre_prefixe], config)
+
+    assert report["sources_ecartees"] == ["publications"]
+    assert report["fusionnees"] == 0
+    assert len(records) == 3

@@ -124,7 +124,7 @@ def test_les_libelles_de_departement_vont_dans_les_statistiques(config, records,
     sources = source_context({"sources": {}}, config)
     _, buckets, stats = build_payloads(records, sirene, {"75": "Paris"}, sources)
 
-    assert {"code": "75", "label": "Paris", "count": 10} in stats["departements"]
+    assert {"code": "75", "label": "Paris", "count": 11} in stats["departements"]
 
     detail = next(
         d for payload in buckets.values() for d in payload.values() if d.get("departement") == "75"
@@ -215,7 +215,7 @@ def test_main_from_fixtures_genere_un_site_complet(tmp_path):
     meta = json.loads((tmp_path / "data" / "meta.json").read_text(encoding="utf-8"))
 
     assert meta["fixtures"] is True
-    assert meta["stats"]["total"] == len(search["rows"]) == 18
+    assert meta["stats"]["total"] == len(search["rows"]) == 19
     assert meta["detail_buckets"] == DETAIL_BUCKETS
     assert len(list((tmp_path / "data" / "details").glob("*.json"))) == DETAIL_BUCKETS
 
@@ -247,3 +247,104 @@ def test_main_echoue_proprement_sans_donnees(monkeypatch, tmp_path, caplog):
     assert "ingest.py" in caplog.text
     # Rien n'a été écrit : pas de site partiel à déployer par accident.
     assert not (tmp_path / "site").exists()
+
+
+# --------------------------------------------------------------------------------------
+# Fiches réunissant plusieurs listes
+# --------------------------------------------------------------------------------------
+
+
+def _entry(search, record_id):
+    for row in search["rows"]:
+        entry = dict(zip(search["fields"], row, strict=True))
+        if entry["id"] == record_id:
+            return entry
+    raise AssertionError(f"{record_id} absent de l'index")
+
+
+def test_les_ecritures_du_numero_sont_indexees(config, records, sirene):
+    """Recopier « 2595780 » depuis la liste des publications doit mener à la même fiche.
+
+    La forme complète du numéro est affichée, mais l'écriture propre à l'autre liste ne s'y
+    retrouve pas par simple sous-chaîne : elle doit être indexée séparément.
+    """
+    search, _, _ = build_payloads(records, sirene, {}, source_context({"sources": {}}, config))
+    entry = _entry(search, "cppap-95780")
+
+    assert entry["cppap"] == "1226 X 95780"
+    assert entry["cppap_alt"] == "2595780"
+
+
+def test_le_numero_d_inscription_n_est_pas_repete_dans_l_index(config, records, sirene):
+    """« 95780 » est déjà contenu dans les deux écritures : l'index n'a pas à le porter.
+
+    Le répéter sur des dizaines de milliers de fiches alourdirait le premier chargement sans
+    rien apporter — la recherche par sous-chaîne le retrouve seule.
+    """
+    search, _, _ = build_payloads(records, sirene, {}, source_context({"sources": {}}, config))
+
+    assert "95780" not in _entry(search, "cppap-95780")["cppap_alt"].split("|")
+    # Une fiche d'une seule liste n'a aucune écriture concurrente à publier.
+    assert _entry(search, "cppap-79320")["cppap_alt"] == ""
+
+
+def test_une_fiche_de_deux_listes_ressort_des_filtres_des_deux(config, records, sirene):
+    search, _, stats = build_payloads(records, sirene, {}, source_context({"sources": {}}, config))
+    entry = _entry(search, "cppap-95780")
+
+    assert entry["type"] == "spel"
+    assert entry["types"] == "spel|publication"
+    # Comptée dans chaque liste : la somme dépasse donc le nombre de fiches, à dessein.
+    assert sum(stats["by_type"].values()) == stats["total"] + stats["multi_listes"]
+    assert stats["multi_listes"] == 1
+
+
+def test_la_fiche_detaillee_porte_ses_deux_listes_et_ses_deux_ecritures(config, records, sirene):
+    _, buckets, _ = build_payloads(records, sirene, {}, source_context({"sources": {}}, config))
+    detail = next(
+        payload["cppap-95780"] for payload in buckets.values() if "cppap-95780" in payload
+    )
+
+    assert detail["types"] == ["spel", "publication"]
+    assert detail["sources"] == ["spel", "publications"]
+    assert detail["cppap_ecritures"] == {"spel": "1226 X 95780", "publications": "2595780"}
+    # Le SIRET vient de la liste des publications : le rattachement SIRENE est donc exact.
+    assert detail["sirene"]["confidence"] == "siret"
+
+
+def test_les_listes_a_un_seul_element_sont_omises_des_fiches(config, records, sirene):
+    """`type` et `source` disent déjà la même chose : les répéter alourdirait chaque fiche."""
+    _, buckets, _ = build_payloads(records, sirene, {}, source_context({"sources": {}}, config))
+    detail = next(
+        payload["cppap-79320"] for payload in buckets.values() if "cppap-79320" in payload
+    )
+
+    assert "types" not in detail
+    assert "sources" not in detail
+    assert detail["type"] == "publication"
+
+
+def test_le_rapport_de_fusion_est_publie(tmp_path):
+    """Ce que la fusion a réuni — et refusé de réunir — doit être lisible sans relire les logs."""
+    assert build_site.main(["--from-fixtures", "--out", str(tmp_path)]) == 0
+    meta = json.loads((tmp_path / "data" / "meta.json").read_text(encoding="utf-8"))
+
+    assert meta["fusion"]["fusionnees"] == 1
+    assert meta["fusion"]["groupes_rejetes"] == 0
+    # Les écritures de numéro rencontrées par source : une dérive de format devient visible.
+    assert meta["schema_reports"]["publications"]["cppap_prefixes"] == {"25": 1}
+    assert meta["schema_reports"]["spel"]["cppap_formes"]["complete"] > 0
+    # Le rapport de fusion ne se fait pas passer pour une source.
+    assert "_fusion" not in meta["schema_reports"]
+
+
+def test_un_numero_partage_par_deux_editeurs_donne_deux_fiches_distinctes(config, records):
+    """La fixture porte deux titres sous le n° 83260, chez deux éditeurs différents.
+
+    Cas observé dans les fichiers réels : un n° d'inscription est réattribué après expiration.
+    Les fiches restent séparées, et leurs identifiants cessent de dériver du seul numéro pour
+    ne pas se recouvrir.
+    """
+    ids = {r["id"] for r in records if r["cppap_serie"] == "83260"}
+
+    assert ids == {"cppap-83260-societe-editrice-du-monde", "cppap-83260-le-monde-diplomatique"}

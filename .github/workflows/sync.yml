@@ -127,6 +127,22 @@ jobs:
             echo '```'
           } >> "$GITHUB_STEP_SUMMARY"
 
+      # Le rapprochement des fiches d'une même inscription repose sur des faits observés dans
+      # les fichiers (écriture du numéro, constance du préfixe). Un changement en amont doit
+      # sauter aux yeux du relecteur du run, pas se perdre dans le journal.
+      - name: Résumer la réunion des fiches d'une même inscription
+        if: always()
+        run: |
+          {
+            echo
+            echo "## Réunion des fiches d'une même inscription"
+            echo
+            echo '```'
+            grep -E "Fusion par n|Fusion refusée|préfixes de n° CPPAP" /tmp/sirene-log.txt \
+              || echo 'Aucune fiche réunie — à vérifier si les listes se recoupent toujours.'
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+
       # ------------------------------------------------------------------
       # 3. Commit
       # ------------------------------------------------------------------

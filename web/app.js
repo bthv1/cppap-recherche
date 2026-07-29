@@ -70,8 +70,12 @@ function describeDataset(meta) {
   const share = stats.total ? Math.round((100 * confident) / stats.total) : 0;
 
   const inscrits = stats.by_statut?.inscrit ?? 0;
+  const merged = stats.multi_listes ?? 0;
   const parts = [
-    `${numberFormat.format(stats.total ?? 0)} fiches issues de ${sources.length} listes CPPAP`,
+    `${numberFormat.format(stats.total ?? 0)} fiches issues de ${sources.length} listes CPPAP`
+      + (merged
+        ? ` (${numberFormat.format(merged)} inscriptions figurant dans deux listes, réunies en une fiche)`
+        : ''),
     `dont ${numberFormat.format(inscrits)} inscrites ou reconnues`,
     `${numberFormat.format(stats.ipg ?? 0)} qualifiées IPG`,
   ];
@@ -135,7 +139,9 @@ function currentFilters() {
 }
 
 function resultLabel(record, meta) {
-  const typeLabel = (meta.types ?? []).find((t) => t.type === record.type)?.label ?? record.type;
+  const typeLabels = record.typeList.map(
+    (key) => (meta.types ?? []).find((t) => t.type === key)?.label ?? key,
+  );
   const dept = (meta.stats?.departements ?? []).find((d) => d.code === record.dept);
   const bits = [
     record.editeur ? esc(record.editeur) : '',
@@ -149,7 +155,7 @@ function resultLabel(record, meta) {
     ? `<span class="badge tone-risk">${esc(meta.labels?.statut?.non_inscrit?.label ?? 'NON INSCRIT')}</span>`
     : '';
   const badges = [
-    `<span class="badge">${esc(typeLabel)}</span>`,
+    ...typeLabels.map((label) => `<span class="badge">${esc(label)}</span>`),
     statut,
     record.ipg ? '<span class="badge ipg">IPG</span>' : '',
     tone === 'ok' ? '' : `<span class="badge tone-${esc(tone)}">SIREN ?</span>`,
@@ -206,33 +212,44 @@ function renderResults(query) {
  * chacune des dizaines de milliers de fiches pesait un quart du poids téléchargé.
  */
 function enrichDetail(detail, meta) {
-  const source = (meta.sources ?? {})[detail.source] ?? {};
   const type = (meta.types ?? []).find((t) => t.type === detail.type);
   const dept = (meta.stats?.departements ?? []).find((d) => d.code === detail.departement);
+
+  // Une fiche peut réunir plusieurs listes CPPAP : chacune garde sa page, sa version et son
+  // instantané archivé, pour rester citable séparément.
+  const sourceList = (detail.sources ?? [detail.source]).map((key) => {
+    const source = (meta.sources ?? {})[key] ?? {};
+    return {
+      key,
+      label: source.label_plural ?? source.label ?? key,
+      page: source.dataset_page,
+      snapshot: source.latest?.snapshot,
+      version: source.latest?.observed_at,
+    };
+  });
 
   return {
     ...detail,
     type_label: detail.type_label ?? type?.label ?? detail.type,
     departement_label: dept?.label ?? '',
-    source_page: source.dataset_page,
-    source_snapshot: source.latest?.snapshot,
-    source_version: source.latest?.observed_at,
+    source_list: sourceList,
   };
 }
 
-async function loadDetail(id) {
-  const record = state.index.byId.get(id);
-  if (!record) return null;
-
+async function loadDetail(record) {
   const bucket = record.bucket;
   if (!state.buckets.has(bucket)) {
     state.buckets.set(bucket, fetchJson(`data/details/${bucket}.json`));
   }
   const payload = await state.buckets.get(bucket);
-  return payload[id] ?? null;
+  return payload[record.id] ?? null;
 }
 
-async function openCard(id, { updateHash = true } = {}) {
+async function openCard(requestedId, { updateHash = true } = {}) {
+  // Un lien partagé avant la réunion des listes désigne une fiche qui n'existe plus sous cet
+  // identifiant : on la retrouve par son numéro et l'on remet le lien à jour.
+  const record = state.index.resolve(requestedId);
+  const id = record?.id ?? requestedId;
   state.currentId = id;
   for (const button of el.results.querySelectorAll('.result')) {
     // `toggleAttribute` poserait aria-current="" , que le sélecteur CSS ne reconnaît pas.
@@ -244,13 +261,15 @@ async function openCard(id, { updateHash = true } = {}) {
   el.card.hidden = false;
   el.card.innerHTML = '<div class="card-section">Chargement de la fiche…</div>';
 
-  if (updateHash) {
+  // Un identifiant obsolète est réécrit même à l'ouverture d'un lien reçu : le lecteur
+  // repart ainsi avec l'adresse qui restera valable.
+  if (updateHash || (record && record.id !== requestedId)) {
     const next = `#/f/${encodeURIComponent(id)}`;
     if (window.location.hash !== next) history.replaceState(null, '', next);
   }
 
   try {
-    const raw = await loadDetail(id);
+    const raw = record ? await loadDetail(record) : null;
     if (!raw) {
       el.card.innerHTML = '<div class="card-section">Fiche introuvable.</div>';
       return;

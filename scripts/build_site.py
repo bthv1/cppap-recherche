@@ -42,8 +42,17 @@ SEARCH_FIELDS = (
     "id",
     "nom",
     "editeur",
+    # Écriture principale du n° CPPAP, la forme complète quand une liste la publie.
     "cppap",
+    # Autres écritures du même numéro, jointes par « | » : le n° d'inscription seul, et la
+    # forme préfixée de la liste des publications. Sans elles, un lecteur qui recopie le
+    # numéro tel qu'il l'a sous les yeux ne retrouve pas la fiche.
+    "cppap_alt",
     "type",
+    # Listes d'où provient la fiche, jointes par « | ». Vide quand il n'y en a qu'une, `type`
+    # suffisant alors : une fiche fusionnée appartient à deux listes et doit ressortir des
+    # filtres de chacune.
+    "types",
     "dept",
     "ipg",
     "bucket",
@@ -134,6 +143,7 @@ def build_payloads(
         resolution = attach_sirene(record, sirene)
         confidence = (resolution or {}).get("confidence", "aucun")
         bucket = detail_bucket(record["id"])
+        types = record.get("types") or [record["type"]]
 
         rows.append(
             [
@@ -141,7 +151,9 @@ def build_payloads(
                 record["nom"],
                 record["editeur"],
                 record["cppap"],
+                "|".join(alternate_writings(record)),
                 record["type"],
+                "|".join(types) if len(types) > 1 else "",
                 record["departement"],
                 1 if record["ipg"] else 0,
                 bucket,
@@ -152,7 +164,11 @@ def build_payloads(
 
         buckets[bucket][record["id"]] = slim_detail(record, resolution)
 
-        by_type[record["type"]] = by_type.get(record["type"], 0) + 1
+        # Une fiche fusionnée appartient à plusieurs listes : elle est comptée dans chacune,
+        # donc la somme de `by_type` dépasse le nombre de fiches. C'est voulu — le filtre
+        # « publications de presse » doit annoncer tout ce qu'il renvoie.
+        for type_key in types:
+            by_type[type_key] = by_type.get(type_key, 0) + 1
         statut_key = {True: "inscrit", False: "non_inscrit"}.get(record["inscrit"], "inconnu")
         statut_counts[statut_key] = statut_counts.get(statut_key, 0) + 1
         if record["departement"]:
@@ -163,6 +179,7 @@ def build_payloads(
     stats = {
         "total": len(records),
         "by_type": by_type,
+        "multi_listes": sum(1 for r in records if len(r.get("types") or []) > 1),
         "by_confidence": confidence_counts,
         "by_statut": statut_counts,
         "ipg": sum(1 for r in records if r["ipg"]),
@@ -179,6 +196,32 @@ def build_payloads(
 # `type_label` se retrouve depuis `type` via `meta.types`, comme le libellé de département
 # depuis `meta.stats.departements` et les liens de source depuis `meta.sources`.
 _DROPPED_FIELDS = frozenset({"publisher_key", "type_label"})
+
+
+def alternate_writings(record: dict[str, Any]) -> list[str]:
+    """Écritures du n° CPPAP autres que celle affichée en premier.
+
+    Le même numéro s'écrit `1026 Y 90833` dans la liste des services de presse en ligne et
+    `2590833` dans celle des publications, son n° d'inscription permanent étant `90833`. Un
+    lecteur recopie le numéro tel qu'il l'a sous les yeux : les trois doivent aboutir.
+
+    Seules les écritures que la recherche ne retrouverait pas seule sont renvoyées : `90833`
+    est déjà contenu dans `2590833` comme dans `1026 Y 90833`, et la recherche par sous-chaîne
+    du navigateur le trouve donc sans qu'on ait à le répéter sur 26 000 fiches.
+    """
+    primary = record["cppap"]
+    reference = _digits_and_letters(primary)
+    candidates = [*record.get("cppap_ecritures", {}).values(), record.get("cppap_serie", "")]
+    return list(
+        dict.fromkeys(
+            c for c in candidates if c and _digits_and_letters(c) not in reference and c != primary
+        )
+    )
+
+
+def _digits_and_letters(value: str) -> str:
+    """Forme comparable d'un numéro, séparateurs retirés — comme le fait `web/search.js`."""
+    return "".join(ch for ch in value.lower() if ch.isalnum())
 
 
 def slim_detail(record: dict[str, Any], resolution: dict[str, Any] | None) -> dict[str, Any]:
@@ -198,6 +241,11 @@ def slim_detail(record: dict[str, Any], resolution: dict[str, Any] | None) -> di
     # Le libellé source du département ne sert que s'il n'a pas pu être normalisé en code.
     if detail.get("departement_source") == detail.get("departement"):
         detail.pop("departement_source", None)
+    # `types`/`sources` ne portent une information qu'au-delà d'un seul élément : sinon
+    # `type` et `source` disent déjà la même chose.
+    for field, scalar in (("types", "type"), ("sources", "source")):
+        if detail.get(field) == [detail.get(scalar)]:
+            detail.pop(field, None)
     # Idem pour le SIRET brut, utile seulement s'il diffère de la forme normalisée.
     if detail.get("siret_source", "").replace(" ", "") == detail.get("siret", ""):
         detail.pop("siret_source", None)
@@ -286,10 +334,14 @@ def main(argv: list[str] | None = None) -> int:
                 "resolved": report.get("resolved"),
                 "unresolved": report.get("unresolved"),
                 "columns_kept_as_extra": report.get("unclaimed_columns"),
+                "cppap_formes": report.get("cppap_formes"),
+                "cppap_prefixes": report.get("cppap_prefixes"),
             }
             for key, report in reports.items()
-            if "error" not in report
+            # Les clés préfixées d'un blanc soulignement ne décrivent pas une source.
+            if not key.startswith("_") and "error" not in report
         },
+        "fusion": reports.get("_fusion") or {},
     }
 
     copy_web(args.out)

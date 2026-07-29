@@ -14,6 +14,25 @@
     "requis introuvable fait échouer l'ingestion en affichant les en-têtes rencontrés."
   ],
   "user_agent": "cppap-recherche/1.0 (+https://github.com/bthv1/cppap-recherche)",
+  "merge": {
+    "_comment": [
+      "Fusion des fiches portant le même n° d'inscription CPPAP.",
+      "",
+      "Les 1 242 services de presse en ligne reconnus figurent aussi dans la liste des",
+      "publications de presse, sous le même n° d'inscription écrit autrement :",
+      "« 1026 Y 90833 » d'un côté, « 2590833 » de l'autre. Voir scripts/lib/cppap.py.",
+      "",
+      "value_priority : quelle liste fournit un champ quand plusieurs le renseignent. La",
+      "liste des publications passe en premier — c'est la plus fréquemment mise à jour, et",
+      "c'est elle qui porte le SIRET, le statut d'inscription et les dates.",
+      "",
+      "display_priority : ordre des libellés et des badges. La reconnaissance en tant que",
+      "service de presse en ligne est la qualification la plus précise d'un média en ligne,",
+      "elle est donc annoncée la première."
+    ],
+    "value_priority": ["publications", "spel", "agences"],
+    "display_priority": ["spel", "publications", "agences"]
+  },
   "sources": [
     {
       "key": "spel",

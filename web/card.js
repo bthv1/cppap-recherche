@@ -32,6 +32,18 @@ function codeWithLabel(code, table) {
   return label ? `${code} — ${label}` : String(code);
 }
 
+/**
+ * Libellé lisible d'une valeur codée, ou la valeur brute à défaut.
+ *
+ * Contrairement à `codeWithLabel`, le code n'est pas rappelé : les deux listes CPPAP écrivent
+ * la même qualification différemment (« 39bisA » d'un côté, « DISPOSITIF_FISCAL_39_BIS_A » de
+ * l'autre) et c'est l'information, non son écriture, qui intéresse le lecteur.
+ */
+function labelled(code, table) {
+  if (!has(code)) return '';
+  return table?.[code] ?? String(code);
+}
+
 /** Les dates SIRENE sont en ISO ; celles de la CPPAP peuvent être dans un autre format. */
 function frenchDate(value) {
   const text = String(value ?? '').trim();
@@ -146,15 +158,91 @@ function dirigeantLine(person) {
 // Volets
 // --------------------------------------------------------------------------------------
 
-function cppapSection(detail, labels) {
+/** Précision d'appoint sous une valeur : provenance, mise en garde, explication. */
+function hint(text) {
+  return `<span class="hint">${esc(text)}</span>`;
+}
+
+/**
+ * Le n° CPPAP tel que chaque liste l'écrit, et le n° d'inscription qu'il contient.
+ *
+ * Les deux listes ne publient pas le même morceau du numéro. Celle des services de presse en
+ * ligne donne la forme complète, « 1026 Y 90833 » : mois et année d'expiration, lettre de
+ * rubrique, puis n° d'inscription. Celle des publications de presse ne publie que ce
+ * n° d'inscription, précédé d'un préfixe constant : « 2590833 ». Un même agrément se présente
+ * donc sous deux écritures selon la source consultée — d'où leur affichage côte à côte.
+ */
+function numeroRows(detail, meta) {
+  const sources = meta.sources ?? {};
+  const others = Object.entries(detail.cppap_ecritures ?? {})
+    .filter(([, value]) => value && value !== detail.cppap)
+    .map(([key, value]) => {
+      const label = sources[key]?.label_plural ?? sources[key]?.label ?? key;
+      return `${esc(value)} ${hint(`dans la liste des ${label.toLowerCase()}`)}`;
+    });
+
+  return [
+    field('N° CPPAP', detail.cppap),
+    others.length
+      ? field('Même numéro, autre écriture', others.join('<br>'), { raw: true })
+      : '',
+    has(detail.cppap_serie) && detail.cppap_serie !== detail.cppap
+      ? field(
+          "N° d'inscription",
+          `${esc(detail.cppap_serie)} ${hint(
+            'partie permanente du numéro, inchangée d\'un renouvellement à l\'autre',
+          )}`,
+          { raw: true },
+        )
+      : '',
+  ].join('');
+}
+
+/** Libellés des listes CPPAP dont la fiche provient — deux quand elle les réunit. */
+function listLabels(detail, meta) {
+  const table = meta.types ?? [];
+  return (detail.types ?? [detail.type])
+    .map((key) => table.find((t) => t.type === key)?.label ?? key)
+    .filter(Boolean);
+}
+
+/**
+ * Joint des libellés en écartant les répétitions.
+ *
+ * Le libellé d'une liste et le type de presse porté par une autre disent parfois la même
+ * chose — « Service de presse en ligne » des deux côtés : l'afficher deux fois donnerait
+ * l'impression d'une donnée mal recopiée.
+ */
+function joinDistinct(values, separator = ' · ') {
+  const seen = new Map();
+  for (const value of values.filter(has)) {
+    const key = String(value).trim().toLowerCase();
+    if (!seen.has(key)) seen.set(key, String(value).trim());
+  }
+  return [...seen.values()].join(separator);
+}
+
+function cppapSection(detail, meta) {
+  const labels = meta.labels ?? {};
   const statut = statutState(detail, labels);
+  const expiration = frenchDate(detail.date_expiration);
 
   const rows = [
-    field('N° CPPAP', detail.cppap),
-    field('Type', [detail.type_label, detail.type_presse].filter(has).join(' · ')),
+    numeroRows(detail, meta),
+    field('Type', joinDistinct([...listLabels(detail, meta), detail.type_presse])),
     field('Statut', detail.statut),
-    field("Expiration de l'inscription", frenchDate(detail.date_expiration)),
-    field('Qualification', detail.qualification),
+    // La liste des services de presse en ligne ne porte aucune colonne d'expiration : la
+    // date vient alors du numéro lui-même, ce que le lecteur doit pouvoir constater.
+    has(expiration)
+      ? field(
+          "Expiration de l'inscription",
+          detail.date_expiration_origine === 'cppap'
+            ? `${esc(expiration)} ${hint('déduite du n° CPPAP, la liste ne publiant pas cette date')}`
+            : esc(expiration),
+          { raw: true },
+        )
+      : '',
+    field('Qualification', labelled(detail.qualification, labels.qualification)),
     field('Périodicité', detail.periodicite),
     field('Dernière décision', frenchDate(detail.date_decision)),
     detail.url
@@ -347,23 +435,40 @@ function extraSection(detail) {
   </section>`;
 }
 
+/**
+ * Sources de la fiche — une entrée par liste CPPAP dont elle provient.
+ *
+ * Une fiche réunissant deux listes doit rester citable liste par liste : chacune a sa page
+ * data.gouv.fr, sa date de version et son instantané archivé, et les deux peuvent différer
+ * de plusieurs semaines.
+ */
 function sourcesSection(detail, meta) {
   const repo = meta.repository ?? '';
-  const links = [];
-  if (detail.source_page) links.push(link(detail.source_page, 'Jeu de données sur data.gouv.fr'));
-  if (detail.source_snapshot && repo) {
-    links.push(link(
-      `https://github.com/${repo}/blob/HEAD/${detail.source_snapshot}`,
-      `Version archivée${detail.source_version ? ` du ${frenchDate(detail.source_version)}` : ''}`,
-    ));
-  }
-  const siren = detail.sirene?.siren;
-  if (siren) links.push(link(`${meta.annuaire_base}/${siren}`, 'Fiche Annuaire des entreprises'));
+  const blocks = (detail.source_list ?? []).map((source) => {
+    const links = [];
+    if (source.page) links.push(link(source.page, 'Jeu de données sur data.gouv.fr'));
+    if (source.snapshot && repo) {
+      links.push(link(
+        `https://github.com/${repo}/blob/HEAD/${source.snapshot}`,
+        `Version archivée${source.version ? ` du ${frenchDate(source.version)}` : ''}`,
+      ));
+    }
+    if (!links.length) return '';
+    return `<p class="card-links">${
+      detail.source_list.length > 1 ? `<span class="source-name">${esc(source.label)}</span>` : ''
+    }${links.join('')}</p>`;
+  }).filter(Boolean);
 
-  if (!links.length) return '';
+  const siren = detail.sirene?.siren;
+  if (siren) {
+    blocks.push(`<p class="card-links">${
+      link(`${meta.annuaire_base}/${siren}`, 'Fiche Annuaire des entreprises')}</p>`);
+  }
+
+  if (!blocks.length) return '';
   return `<section class="card-section">
     <h3>Sources</h3>
-    <p class="card-links">${links.join('')}</p>
+    ${blocks.join('')}
   </section>`;
 }
 
@@ -379,7 +484,8 @@ export function renderCard(detail, meta) {
 
   const statut = statutState(detail, labels);
   const tags = [
-    badge(detail.type_label ?? detail.type),
+    // Une pastille par liste : figurer dans les deux est une information en soi.
+    ...listLabels(detail, meta).map((label) => badge(label)),
     // Le statut d'inscription vient avant tout le reste : c'est la première chose à savoir.
     statut.key === 'inscrit' ? '' : badge(statut.label, `tone-${statut.tone}`),
     detail.ipg ? badge('IPG', 'ipg') : '',
@@ -391,7 +497,7 @@ export function renderCard(detail, meta) {
       <h2>${esc(detail.nom)}</h2>
       <div class="card-tags">${tags}</div>
     </div>
-    ${cppapSection(detail, labels)}
+    ${cppapSection(detail, meta)}
     ${editeurSection(detail)}
     ${sireneSection(detail, meta)}
     ${extraSection(detail)}

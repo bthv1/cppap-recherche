@@ -37,8 +37,15 @@ export class MediaIndex {
     this.records = rows.map((row) => {
       const record = {};
       fields.forEach((field, i) => { record[field] = row[i]; });
-      // Clé compacte pour retrouver « 0620W91234 » saisi sans séparateurs.
-      record.cppapKey = fold(record.cppap).replace(/[^0-9a-z]/g, '');
+      // Une fiche réunissant plusieurs listes CPPAP doit ressortir des filtres de chacune.
+      // `types` n'est renseigné que dans ce cas, `type` suffisant sinon.
+      record.typeList = record.types ? record.types.split('|') : [record.type];
+      // Clés compactes pour retrouver un numéro saisi sans séparateurs, sous n'importe
+      // laquelle de ses écritures : « 1026Y90833 » relevé dans un ours, « 2590833 » copié
+      // depuis la liste des publications, ou le seul n° d'inscription « 90833 ».
+      record.cppapKeys = [record.cppap, ...(record.cppap_alt ? record.cppap_alt.split('|') : [])]
+        .map((value) => fold(value).replace(/[^0-9a-z]/g, ''))
+        .filter(Boolean);
       return record;
     });
 
@@ -48,7 +55,7 @@ export class MediaIndex {
 
     this.mini = new MiniSearch({
       idField: 'id',
-      fields: ['nom', 'editeur', 'cppap'],
+      fields: ['nom', 'editeur', 'cppap', 'cppap_alt'],
       storeFields: [],
       tokenize,
       processTerm: (term) => fold(term) || null,
@@ -56,16 +63,37 @@ export class MediaIndex {
         prefix: true,
         // Pas de tolérance aux fautes sur les termes courts : sur un sigle de trois lettres,
         // une distance de 1 rapproche « AFP » de « ALP » et noie le résultat cherché.
-        fuzzy: (term) => (term.length > 4 ? 0.2 : 0),
+        // Aucune non plus sur un nombre : un chiffre qui diffère dans un n° CPPAP désigne un
+        // autre agrément, pas une faute de frappe à pardonner — « 2590066 » ramenait
+        // trente-quatre fiches, dont trente-trois sans rapport.
+        fuzzy: (term) => (/^\d+$/.test(term) ? 0 : term.length > 4 ? 0.2 : 0),
         combineWith: 'AND',
-        boost: { nom: 4, cppap: 2, editeur: 1.5 },
+        boost: { nom: 4, cppap: 2, cppap_alt: 2, editeur: 1.5 },
       },
     });
     this.mini.addAll(this.records);
   }
 
+  /**
+   * Retrouve une fiche par son identifiant, y compris un identifiant devenu obsolète.
+   *
+   * Avant la réunion des listes, chaque liste avait sa propre fiche pour une même
+   * inscription, identifiée par l'écriture du numéro qui lui était propre :
+   * `spel-1026-y-90833` et `publication-2590833`. Les liens déjà partagés doivent continuer
+   * de mener à la fiche, désormais unique.
+   */
+  resolve(id) {
+    const direct = this.byId.get(id);
+    if (direct) return direct;
+
+    // « spel-1229-y-90066 » → « 1229y90066 » : le préfixe de liste tombe, le numéro reste.
+    const key = fold(id).replace(/^[a-z]+-/, '').replace(/[^0-9a-z]/g, '');
+    if (key.length < 4 || !/\d/.test(key)) return null;
+    return this.records.find((r) => r.cppapKeys.some((k) => k.includes(key))) ?? null;
+  }
+
   static matches(record, filters) {
-    if (filters.type && record.type !== filters.type) return false;
+    if (filters.type && !record.typeList.includes(filters.type)) return false;
     if (filters.dept && record.dept !== filters.dept) return false;
     if (filters.ipg && record.ipg !== 1) return false;
     if (filters.doubt && !DOUBTFUL.has(record.confidence)) return false;
@@ -93,12 +121,14 @@ export class MediaIndex {
         .filter(Boolean);
 
       // Complément pour les n° CPPAP saisis sans séparateurs, que la tokenisation ne
-      // peut pas rapprocher : « 0620W91234 » face à « 0620 W 91234 ».
+      // peut pas rapprocher : « 0620W91234 » face à « 0620 W 91234 ». La recherche par
+      // sous-chaîne fait aussi tout le travail pour le n° d'inscription seul, contenu dans
+      // chacune des écritures du numéro.
       const digits = fold(trimmed).replace(/[^0-9a-z]/g, '');
       if (digits.length >= 3) {
         const seen = new Set(candidates.map((r) => r.id));
         for (const record of this.records) {
-          if (!seen.has(record.id) && record.cppapKey.includes(digits)) {
+          if (!seen.has(record.id) && record.cppapKeys.some((key) => key.includes(digits))) {
             candidates.push(record);
           }
         }

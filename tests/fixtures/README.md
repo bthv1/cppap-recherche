@@ -38,3 +38,14 @@ Les en-têtes réels des fichiers CPPAP n'ont pas pu être observés au moment d
 carte d'alias de `config/sources.json` est donc à confirmer lors du premier run réel de
 `.github/workflows/sync.yml`, qui journalise les en-têtes rencontrés. Les intitulés utilisés ici
 sont plausibles, pas vérifiés.
+
+## Une inscription décrite par deux listes
+
+`spel.csv` et `publications.csv` portent chacun une ligne pour le n° d'inscription **95780**
+(« Numerama Hebdo », éditeur HUMANOID), écrit sous les deux formes observées dans les fichiers
+réels : `1226 X 95780` d'un côté, `2595780` de l'autre. C'est ce qui fait exercer la réunion des
+fiches par `scripts/normalize.py` sans réseau, y compris dans l'aperçu `--from-fixtures`.
+
+`publications.csv` porte par ailleurs deux titres sous le n° **83260**, chez deux éditeurs
+différents : un n° d'inscription réattribué, comme il en existe dans les données réelles. Les
+deux fiches doivent rester distinctes.

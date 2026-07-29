@@ -131,6 +131,16 @@
     "C": "Cessée",
     "F": "Fermé"
   },
+  "qualification": {
+    "_comment": "Les deux listes écrivent la même qualification différemment : « 39bisA » dans la liste des services de presse en ligne, « DISPOSITIF_FISCAL_39_BIS_A » dans celle des publications. Une valeur absente de cette table est affichée telle quelle.",
+    "IPG": "Information politique et générale",
+    "39bisA": "Régime fiscal 39 bis A",
+    "39bisB": "Régime fiscal 39 bis B",
+    "DISPOSITIF_FISCAL_39_BIS_A": "Régime fiscal 39 bis A",
+    "DISPOSITIF_FISCAL_39_BIS_B": "Régime fiscal 39 bis B",
+    "CIBLAGE_POSTAL_D_19_2": "Ciblage postal D.19-2",
+    "CIBLAGE_POSTAL_D_27_2": "Ciblage postal D.27-2"
+  },
   "confidence": {
     "verifie": {
       "label": "Vérifié manuellement",

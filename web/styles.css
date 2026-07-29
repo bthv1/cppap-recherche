@@ -346,7 +346,13 @@ dl.fields dd { margin: 0; overflow-wrap: anywhere; }
 .note.tone-risk { border-left-color: var(--risk); background: var(--risk-soft); color: var(--risk); }
 .note.tone-none { border-left-color: var(--line-strong); }
 
+/* Précision d'appoint sous une valeur : provenance d'une donnée déduite, écriture concurrente
+   d'un même numéro. Doit se lire comme un commentaire, jamais comme la donnée elle-même. */
+.hint { display: block; font-size: 0.8rem; line-height: 1.35; color: var(--ink-faint); }
+
 .card-links { display: flex; flex-wrap: wrap; gap: 0.4rem 1rem; font-size: 0.88rem; }
+.card-links + .card-links { margin-top: 0.35rem; }
+.card-links .source-name { flex-basis: 100%; color: var(--ink-faint); font-size: 0.8rem; }
 
 .dirigeants { margin: 0; padding-left: 1.1rem; }
 .dirigeants li { margin-bottom: 0.2rem; }

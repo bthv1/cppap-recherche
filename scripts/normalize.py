@@ -32,6 +32,7 @@ from typing import Any
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from lib import repo
+from lib.cppap import CppapNumber, parse_cppap
 from lib.tabular import read_rows
 from lib.text import fold, normalize_company, normalize_header, slugify
 
@@ -175,8 +176,12 @@ def clean_value(value: str) -> str:
     Deux cas : une valeur sans aucun caractère alphanumérique (« - », « -- », « / »), et une
     mention explicite d'absence. Sans cela, la colonne « Nom commercial » des agences de
     presse afficherait « - » pour la plupart d'entre elles.
+
+    Les blancs internes sont réduits au passage : quelques cellules source portent un saut de
+    ligne au milieu du titre (« Whart - Application\\nplication »), qui n'apporte rien et
+    parasite l'indexation.
     """
-    stripped = (value or "").strip()
+    stripped = re.sub(r"\s+", " ", value or "").strip()
     if not stripped:
         return ""
     folded = fold(stripped)
@@ -226,12 +231,6 @@ def siren_from_siret(siret: str) -> str:
     return siret[:9] if len(siret) == 14 else ""
 
 
-def normalize_cppap(value: str) -> str:
-    """Uniformise l'écriture d'un numéro CPPAP en séparant ses groupes par une espace."""
-    cleaned = re.sub(r"[^0-9A-Za-z]+", " ", (value or "").strip()).strip()
-    return re.sub(r"\s+", " ", cleaned).upper()
-
-
 def is_ipg(qualification: str) -> bool:
     """Vrai si la qualification correspond à « information politique et générale ».
 
@@ -258,10 +257,19 @@ def normalize_url(value: str) -> str:
 # --------------------------------------------------------------------------------------
 
 
-def _record_id(source_type: str, cppap: str, nom: str, editeur: str) -> str:
-    """Identifiant stable et lisible, puisqu'il sert de lien partageable vers la fiche."""
-    if cppap:
-        return f"{source_type}-{slugify(cppap)}"
+def _record_id(source_type: str, number: CppapNumber, nom: str, editeur: str) -> str:
+    """Identifiant stable et lisible, puisqu'il sert de lien partageable vers la fiche.
+
+    Fondé sur le **n° d'inscription** et non sur l'écriture de la source : les deux listes
+    écrivent le même numéro différemment (`1026 Y 90833` et `2590833`), et c'est ce qui
+    permet à leurs deux fiches de porter d'emblée le même identifiant, donc de fusionner.
+    Le n° d'inscription est aussi la partie permanente du numéro : contrairement à la forme
+    complète, il ne change pas au renouvellement, donc le lien partagé ne se périme pas.
+    """
+    if number.serie:
+        return f"cppap-{number.serie}"
+    if number.raw:
+        return _fallback_id(source_type, number.raw)
     # Les agences de presse n'ont pas de n° CPPAP : leur nom donne une URL bien plus
     # utilisable qu'une empreinte, et reste stable tant que le nom ne change pas.
     slug = slugify(nom or editeur, fallback="")
@@ -269,6 +277,11 @@ def _record_id(source_type: str, cppap: str, nom: str, editeur: str) -> str:
         return f"{source_type}-{slug[:80]}"
     digest = hashlib.sha1(f"{nom}|{editeur}".encode()).hexdigest()[:10]
     return f"{source_type}-h{digest}"
+
+
+def _fallback_id(source_type: str, cppap: str) -> str:
+    """Identifiant préfixé par la liste d'origine, donc unique même en cas de n° réattribué."""
+    return f"{source_type}-{slugify(cppap)}"
 
 
 def build_records(
@@ -303,11 +316,17 @@ def build_records(
 
     records: list[dict[str, Any]] = []
     seen_ids: dict[str, int] = {}
+    prefixes: dict[str, int] = {}
+    formes: dict[str, int] = {}
     for row in data_rows:
         if not any(row):
             continue
 
-        cppap = normalize_cppap(cell(row, "cppap"))
+        number = parse_cppap(cell(row, "cppap"))
+        cppap = number.raw
+        formes[number.forme] = formes.get(number.forme, 0) + 1
+        if number.prefixe:
+            prefixes[number.prefixe] = prefixes.get(number.prefixe, 0) + 1
         nom = cell(row, "nom")
         editeur = cell(row, "editeur")
         # Pour une agence de presse, la société *est* le média : une seule colonne porte les
@@ -322,7 +341,16 @@ def build_records(
         siret = normalize_siret(cell(row, "siret"))
         statut = cell(row, "statut") or source.get("statut_implicite", "")
 
-        record_id = _record_id(source["type"], cppap, nom, editeur)
+        # La liste des services de presse en ligne ne porte aucune colonne d'expiration —
+        # mais son numéro commence par le mois et l'année d'expiration. Sans ce décodage,
+        # 126 reconnaissances déjà expirées s'affichent comme valides.
+        date_expiration = cell(row, "date_expiration")
+        date_expiration_origine = ""
+        if not date_expiration and number.expiration:
+            date_expiration = number.expiration
+            date_expiration_origine = "cppap"
+
+        record_id = _record_id(source["type"], number, nom, editeur)
         count = seen_ids.get(record_id, 0) + 1
         seen_ids[record_id] = count
         if count > 1:
@@ -332,9 +360,18 @@ def build_records(
             {
                 "id": record_id,
                 "type": source["type"],
+                "types": [source["type"]],
                 "source": source["key"],
+                "sources": [source["key"]],
                 "type_label": source["label"],
+                # Écriture de la source, conservée telle quelle, et ses composants décodés :
+                # les deux listes écrivent le même numéro différemment.
                 "cppap": cppap,
+                "cppap_serie": number.serie,
+                "cppap_lettre": number.lettre,
+                "cppap_prefixe": number.prefixe,
+                "cppap_forme": number.forme,
+                "cppap_ecritures": {source["key"]: cppap} if cppap else {},
                 "nom": nom,
                 "nom_commercial": cell(row, "nom_commercial"),
                 "editeur": editeur,
@@ -342,7 +379,10 @@ def build_records(
                 # inscrites. `inscrit` vaut None quand la source ne permet pas de conclure.
                 "statut": statut,
                 "inscrit": is_inscrit(statut, source.get("statut_implicite", "")),
-                "date_expiration": cell(row, "date_expiration"),
+                "date_expiration": date_expiration,
+                # Vide quand la source publie la date ; « cppap » quand elle a été lue dans
+                # le numéro lui-même, ce que la fiche signale au lecteur.
+                "date_expiration_origine": date_expiration_origine,
                 "type_presse": cell(row, "type_presse"),
                 # SIRET déclaré dans le fichier officiel, quand la source le fournit : il
                 # remplace le rapprochement par nom par une jointure exacte sur SIREN.
@@ -377,7 +417,280 @@ def build_records(
 
     report["records"] = len(records)
     report["duplicate_ids"] = duplicates
+    # Écritures du n° CPPAP rencontrées : c'est ce qui rend visible dans les journaux du
+    # workflow un changement de format en amont, plutôt que de le laisser fausser les
+    # rapprochements en silence.
+    report["cppap_formes"] = dict(sorted(formes.items()))
+    report["cppap_prefixes"] = dict(sorted(prefixes.items()))
+    if len(prefixes) > 1:
+        log.warning(
+            "[%s] Plusieurs préfixes de n° CPPAP observés (%s) — le n° d'inscription n'est "
+            "plus une clé sûre, le rapprochement entre listes est désactivé pour cette source.",
+            source["key"],
+            ", ".join(f"{k} ({v} fois)" for k, v in sorted(prefixes.items())),
+        )
     return records, report
+
+
+# --------------------------------------------------------------------------------------
+# Fusion des fiches partageant un n° d'inscription
+# --------------------------------------------------------------------------------------
+
+# Champs dont la provenance est indissociable : le compagnon est repris du même membre que
+# le champ meneur, faute de quoi une fiche annoncerait une date venue d'une liste et sa
+# provenance venue d'une autre.
+_COUPLED_FIELDS = {
+    "date_expiration": ("date_expiration_origine",),
+    "siret": ("siret_source", "siren"),
+    "departement": ("departement_source",),
+    "statut": ("inscrit",),
+}
+
+# Champs recalculés par la fusion elle-même, jamais repris d'un membre.
+_COMPUTED_FIELDS = frozenset(
+    {
+        "id",
+        "type",
+        "types",
+        "source",
+        "sources",
+        "type_label",
+        "cppap",
+        "cppap_ecritures",
+        "ipg",
+        "extra",
+    }
+)
+
+_EMPTY = ("", None, [], {})
+
+
+def _rank(order: tuple[str, ...], key: str) -> int:
+    return order.index(key) if key in order else len(order)
+
+
+def _first(members: list[dict[str, Any]], field: str) -> dict[str, Any] | None:
+    """Premier membre renseignant ce champ, dans l'ordre déjà trié des membres."""
+    for member in members:
+        if member.get(field) not in _EMPTY:
+            return member
+    return None
+
+
+def _incoherence(members: list[dict[str, Any]]) -> str:
+    """Raison de ne pas fusionner ce groupe, ou chaîne vide s'il est cohérent.
+
+    Le groupe partage déjà un n° d'inscription **et** un éditeur : restent deux façons pour
+    lui de ne pas décrire une seule inscription.
+    """
+    per_source: dict[str, int] = {}
+    for member in members:
+        per_source[member["source"]] = per_source.get(member["source"], 0) + 1
+    repeated = [key for key, count in per_source.items() if count > 1]
+    if repeated:
+        return f"n° répété dans une même liste pour un même éditeur ({', '.join(sorted(repeated))})"
+
+    # Seules les dates **publiées** par une source font autorité. Celle déduite du numéro est
+    # une lecture du même numéro : la laisser opposer son veto priverait le lecteur d'une
+    # fiche complète pour une divergence que la source elle-même n'affirme pas.
+    expirations = {
+        m["date_expiration"]
+        for m in members
+        if m["date_expiration"] and not m["date_expiration_origine"]
+    }
+    if len(expirations) > 1:
+        return f"dates d'expiration différentes ({', '.join(sorted(expirations))})"
+
+    return ""
+
+
+def _merge_group(
+    members: list[dict[str, Any]],
+    value_priority: tuple[str, ...],
+    display_priority: tuple[str, ...],
+) -> dict[str, Any]:
+    """Fusionne des fiches décrivant la même inscription, vue par plusieurs listes."""
+    by_value = sorted(members, key=lambda r: _rank(value_priority, r["source"]))
+    by_display = sorted(members, key=lambda r: _rank(display_priority, r["source"]))
+    primary = by_display[0]
+
+    merged: dict[str, Any] = {}
+    fields = {key for member in members for key in member} - _COMPUTED_FIELDS
+    companions = {c for group in _COUPLED_FIELDS.values() for c in group}
+
+    for field in fields - companions:
+        donor = _first(by_value, field)
+        if donor is None:
+            # Aucun membre ne renseigne ce champ : on garde la valeur du membre principal
+            # pour que le schéma de la fiche reste celui des fiches non fusionnées.
+            merged[field] = primary.get(field)
+        else:
+            merged[field] = donor[field]
+        for companion in _COUPLED_FIELDS.get(field, ()):
+            source_of_truth = donor or primary
+            merged[companion] = source_of_truth.get(companion)
+
+    merged["types"] = list(dict.fromkeys(m["type"] for m in by_display))
+    merged["sources"] = list(dict.fromkeys(m["source"] for m in by_display))
+    merged["type"] = merged["types"][0]
+    merged["source"] = merged["sources"][0]
+    merged["type_label"] = primary["type_label"]
+
+    # La forme complète du numéro l'emporte pour l'affichage — c'est celle qui figure dans
+    # l'ours d'un journal — mais les deux écritures sont conservées, pour que la recherche
+    # aboutisse quelle que soit la source consultée par le lecteur.
+    complete = next((m for m in by_display if m["cppap_forme"] == "complete"), None)
+    reference = complete or _first(by_display, "cppap") or primary
+    merged["cppap"] = reference["cppap"]
+    merged["cppap_lettre"] = reference["cppap_lettre"]
+    merged["cppap_forme"] = reference["cppap_forme"]
+    merged["cppap_ecritures"] = {
+        key: value for m in by_display for key, value in m["cppap_ecritures"].items()
+    }
+
+    # Une qualification portée par une seule des deux listes reste vraie : on la conserve.
+    merged["ipg"] = any(m["ipg"] for m in members)
+
+    merged["extra"] = {
+        f"{m['source']} · {key}": value for m in by_display for key, value in m["extra"].items()
+    }
+    return merged
+
+
+def merge_by_serie(
+    records: list[dict[str, Any]], config: dict[str, Any] | None = None
+) -> tuple[list[dict[str, Any]], dict[str, Any]]:
+    """Réunit en une fiche les inscriptions décrites par plusieurs listes CPPAP.
+
+    Les 1 242 services de presse en ligne reconnus figurent **aussi** dans la liste des
+    publications de presse, sous le même n° d'inscription écrit autrement. Publier les deux
+    donnait deux fiches sans lien pour un même média, chacune amputée de ce que l'autre
+    porte : le n° complet et l'URL d'un côté, le SIRET, le statut et les dates de l'autre.
+
+    La clé de rapprochement est le couple **n° d'inscription + éditeur**, et non le seul
+    numéro : un n° d'inscription **réattribué** existe dans les données réelles — le n° 90135
+    est porté par trois titres, dont un dont l'inscription a expiré en 2015. L'éditeur dans la
+    clé sépare naturellement ces cas, là où un contrôle a posteriori aurait dû renoncer à
+    fusionner tout le groupe. Vérifié : l'éditeur est écrit identiquement des deux côtés sur
+    les 1 241 titres communs, ce rapprochement n'en perd donc aucun.
+    """
+    merge_config = (config or {}).get("merge") or {}
+    value_priority = tuple(merge_config.get("value_priority") or ())
+    display_priority = tuple(merge_config.get("display_priority") or ())
+
+    # Une source dont les numéros présentent plusieurs préfixes n'offre plus de clé sûre :
+    # rien ne dit alors que deux n° d'inscription identiques désignent la même inscription.
+    prefixes: dict[str, set[str]] = {}
+    for record in records:
+        if record["cppap_prefixe"]:
+            prefixes.setdefault(record["source"], set()).add(record["cppap_prefixe"])
+    blocked = {source for source, seen in prefixes.items() if len(seen) > 1}
+
+    groups: dict[tuple[str, str], list[dict[str, Any]]] = {}
+    for record in records:
+        serie = record["cppap_serie"]
+        if serie and record["source"] not in blocked:
+            groups.setdefault((serie, normalize_company(record["editeur"])), []).append(record)
+
+    # Un n° d'inscription réparti sur plusieurs éditeurs est ambigu : ses fiches ne peuvent
+    # pas se contenter du numéro comme identifiant.
+    per_serie: dict[str, int] = {}
+    for serie, _ in groups:
+        per_serie[serie] = per_serie.get(serie, 0) + 1
+
+    resolved: dict[tuple[str, str], dict[str, Any]] = {}
+    identity: dict[tuple[str, str], str] = {}
+    rejected: list[dict[str, Any]] = []
+    for key, members in groups.items():
+        serie, editeur_key = key
+        identity[key] = (
+            f"cppap-{serie}"
+            if per_serie[serie] == 1
+            else f"cppap-{serie}-{slugify(editeur_key, fallback='x')[:40]}"
+        )
+        if len({m["source"] for m in members}) < 2:
+            continue
+        reason = _incoherence(members)
+        if reason:
+            rejected.append(
+                {"serie": serie, "editeur": editeur_key, "raison": reason, "fiches": len(members)}
+            )
+            continue
+        merged = _merge_group(members, value_priority, display_priority)
+        merged["id"] = identity[key]
+        resolved[key] = merged
+
+    # Reconstruction dans l'ordre d'origine : la fiche fusionnée prend la place du premier
+    # de ses membres rencontré, pour que la sortie reste déterministe entre deux exécutions.
+    output: list[dict[str, Any]] = []
+    emitted: set[tuple[str, str]] = set()
+    rejected_keys = {(r["serie"], r["editeur"]) for r in rejected}
+    for record in records:
+        key = (record["cppap_serie"], normalize_company(record["editeur"]))
+        if key in resolved:
+            if key not in emitted:
+                output.append(resolved[key])
+                emitted.add(key)
+            continue
+        if key in rejected_keys:
+            # Le numéro ne peut plus servir d'identifiant : on retombe sur un identifiant
+            # préfixé par la liste d'origine.
+            record = {**record, "id": _fallback_id(record["type"], record["cppap"])}
+        elif key in identity and len(groups[key]) == 1:
+            record = {**record, "id": identity[key]}
+        output.append(record)
+
+    output, collisions = _deduplicate_ids(output)
+
+    report = {
+        "fusionnees": len(resolved),
+        "fiches_avant": len(records),
+        "fiches_apres": len(output),
+        "groupes_rejetes": len(rejected),
+        "rejets": rejected[:20],
+        "numeros_ambigus": sorted({s for s, n in per_serie.items() if n > 1}),
+        "sources_ecartees": sorted(blocked),
+        "identifiants_desambigues": collisions,
+    }
+    if resolved:
+        log.info(
+            "Fusion par n° d'inscription : %s inscription(s) réunie(s), %s fiche(s) publiée(s) "
+            "au lieu de %s",
+            len(resolved),
+            len(output),
+            len(records),
+        )
+    for entry in rejected:
+        log.warning(
+            "Fusion refusée pour le n° %s / éditeur %r (%s fiches) : %s",
+            entry["serie"],
+            entry["editeur"],
+            entry["fiches"],
+            entry["raison"],
+        )
+    return output, report
+
+
+def _deduplicate_ids(records: list[dict[str, Any]]) -> tuple[list[dict[str, Any]], int]:
+    """Garantit l'unicité des identifiants sur l'ensemble des listes réunies.
+
+    `build_records` ne voyait qu'une source à la fois ; depuis que l'identifiant dérive du
+    n° d'inscription, une collision peut naître entre deux listes. Deux fiches partageant
+    un identifiant se recouvriraient silencieusement dans les lots de détail du site.
+    """
+    seen: dict[str, int] = {}
+    output: list[dict[str, Any]] = []
+    collisions = 0
+    for record in records:
+        count = seen.get(record["id"], 0) + 1
+        seen[record["id"]] = count
+        if count > 1:
+            collisions += 1
+            record = {**record, "id": f"{record['id']}-{count}"}
+        output.append(record)
+    if collisions:
+        log.warning("%s identifiant(s) suffixé(s) pour rester unique(s)", collisions)
+    return output, collisions
 
 
 def publisher_key(editeur: str, departement: str) -> str:
@@ -409,9 +722,15 @@ def load_source_records(source: dict[str, Any], csv_path: Path | None = None) ->
 
 
 def load_all_records(
-    config: dict[str, Any], data_dir: Path | None = None
+    config: dict[str, Any], data_dir: Path | None = None, *, merge: bool = True
 ) -> tuple[list[dict[str, Any]], dict[str, Any]]:
-    """Normalise toutes les sources disponibles. Une source absente est signalée, non fatale."""
+    """Normalise toutes les sources disponibles. Une source absente est signalée, non fatale.
+
+    Les fiches d'une même inscription vues par plusieurs listes sont réunies (`merge_by_serie`)
+    avant d'être rendues : `build_site.py` et `match_sirene.py` travaillent ainsi sur exactement
+    les mêmes fiches, donc les statistiques d'appariement décrivent bien ce qui est publié.
+    Le rapport de fusion est déposé sous la clé `_fusion`.
+    """
     records: list[dict[str, Any]] = []
     reports: dict[str, Any] = {}
     for source in config["sources"]:
@@ -437,6 +756,8 @@ def load_all_records(
                 source["key"],
                 ", ".join(report["unclaimed_columns"]),
             )
+    if merge:
+        records, reports["_fusion"] = merge_by_serie(records, config)
     return records, reports
 
 

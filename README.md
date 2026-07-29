@@ -30,11 +30,14 @@ scripts Python sans aucune dépendance de production, et un Cloudflare Worker fa
 Constaté au premier passage sur les données réelles (28 juillet 2026) — et ce n'est pas
 intuitif :
 
-| Liste | Fiches | Ce qu'il faut savoir |
+| Liste | Lignes | Ce qu'il faut savoir |
 |---|---|---|
 | Publications de presse | 26 669 | **21 653 (81 %) au statut « Non Inscrit »**. Le fichier recense les titres connus de la CPPAP, pas seulement les titres inscrits. Seule liste à publier un SIRET, et seulement pour 15 % des lignes. |
-| Services de presse en ligne | 1 242 | Tous reconnus par construction. Pas de colonne SIRET. |
+| Services de presse en ligne | 1 242 | Tous reconnus par construction. Pas de colonne SIRET, ni de date d'expiration. **Les 1 242 figurent aussi dans la liste des publications**, sous le même n° d'inscription écrit autrement. |
 | Agences de presse agréées | 180 | Toutes agréées par construction. Ni SIRET, ni n° CPPAP, ni département. |
+
+Soit **26 849 fiches publiées** : les 28 091 lignes moins les 1 242 inscriptions décrites par
+deux listes, réunies en une fiche (voir la section suivante).
 
 > **Un numéro CPPAP affiché ne vaut pas agrément en cours.** L'interface porte donc un badge
 > `NON INSCRIT` dès la liste de résultats, un avertissement en tête de fiche, la date
@@ -43,7 +46,66 @@ intuitif :
 Le champ `qualification` n'a pas le même sens partout : `IPG` dans la liste des services en
 ligne, mais surtout des régimes postaux et fiscaux (`DISPOSITIF_FISCAL_39_BIS_A`,
 `CIBLAGE_POSTAL_D_19_2`) dans celle des publications. Seules les valeurs désignant
-explicitement l'information politique et générale alimentent le marqueur IPG.
+explicitement l'information politique et générale alimentent le marqueur IPG. Les deux
+vocabulaires sont ramenés à un libellé lisible par `config/labels.json`.
+
+## Anatomie du n° CPPAP, et pourquoi il s'écrit de deux façons
+
+Les deux listes ne publient pas le même morceau du numéro. C'est la principale chausse-trappe
+de ces données : **« 1026 Y 90833 » et « 2590833 » désignent le même agrément.**
+
+```
+1026        Y            90833
+MMAA        lettre       n° d'inscription (permanent)
+expiration  rubrique     ← seul élément publié par la liste des publications
+```
+
+| | Services de presse en ligne | Publications de presse |
+|---|---|---|
+| Origine | ressource data.gouv (`static.data.gouv.fr`) | export de base du ministère de la Culture (`ministere-culture.s3…`) |
+| En-têtes | intitulés humains | `snake_case` |
+| Écriture du numéro | forme complète, `0330 W 95411` | n° d'inscription préfixé, `2595411` |
+| Expiration | **aucune colonne** — lisible dans le numéro | colonne `date_expiration_inscription` |
+
+Ce n'est ni une cellule mal formatée ni un zéro initial perdu : le fichier source écrit la
+valeur entre guillemets, donc en texte. Le préfixe est **constant sur les 26 669 lignes** de la
+liste des publications, il ne porte donc aucune information propre à la ligne.
+
+Mesuré sur les fichiers réels : les 1 242 n° d'inscription de la liste des services de presse
+en ligne figurent **tous** dans celle des publications, et le rapprochement est corroboré par
+quatre champs indépendants — éditeur identique 1 241/1 241, forme juridique 1 241/1 241, titre
+1 240/1 241, et **expiration déduite du numéro égale à la colonne publiée 1 241/1 241, sans une
+divergence**.
+
+`scripts/lib/cppap.py` porte cette lecture, et seul lui. Trois conséquences dans le site :
+
+- **une fiche par inscription**, alimentée par les deux listes (26 849 fiches au lieu de
+  28 091). La liste des services en ligne apporte la forme complète du numéro, l'URL et la
+  qualification ; celle des publications apporte le SIRET, le statut et les dates. Les deux
+  sources restent citées et archivées séparément sur la fiche ;
+- **la recherche accepte les trois écritures** — `1026 Y 90833`, `2590833`, `90833` ;
+- **l'expiration est déduite du numéro** quand la liste ne la publie pas. Sans cela, 126
+  reconnaissances déjà expirées s'affichaient comme valides.
+
+La lettre de rubrique n'est **pas** interprétée. Sur les 1 241 titres communs, elle est
+pourtant en correspondance stricte avec la qualification (`W` aucune, `X` 39 bis B, `Y` IPG,
+`Z` 39 bis A) — mais cette correspondance est observée, non documentée par la CPPAP : elle
+n'alimente aucune donnée dérivée.
+
+### Garde-fous du rapprochement
+
+La clé est le couple **n° d'inscription + éditeur**, jamais le seul numéro : un numéro peut
+être **réattribué**. Le n° 90135 est ainsi porté par trois titres, dont un dont l'inscription a
+expiré en 2015. Deux fiches ne sont réunies que si aucune liste n'en fournit deux, et que les
+dates d'expiration *publiées* concordent — une date déduite du numéro ne peut pas s'y opposer,
+elle n'est qu'une lecture de ce même numéro. Un numéro ambigu donne des fiches distinctes et
+des identifiants explicites (`cppap-90135-nextinteractive`).
+
+Si le préfixe de la liste des publications cessait d'être constant, le n° d'inscription ne
+serait plus une clé sûre : **le rapprochement est alors désactivé pour cette source**, avec un
+avertissement. Les écritures rencontrées sont comptées par source et publiées dans
+`meta.json` (`schema_reports.<source>.cppap_prefixes`), pour qu'une dérive de format en amont
+soit visible dans les journaux du workflow plutôt que silencieuse.
 
 ## Comment le rattachement à SIRENE est établi
 
@@ -58,19 +120,26 @@ d'autres non.** Le rattachement emprunte donc quatre chemins, de fiabilité déc
 | `SIRET déclaré sur une autre liste` | la liste ne publie pas de SIRET, mais le même éditeur en déclare un dans une autre liste CPPAP | exacte par déduction |
 | `Certaine` / `Probable` / `Incertaine` / `Aucune` | rapprochement heuristique sur la raison sociale | à vérifier |
 
-Résultat mesuré au 29 juillet 2026, jointures exactes seules (le rapprochement par nom reste
-à exécuter) :
+Résultat mesuré au 29 juillet 2026 sur les 26 849 fiches, jointures exactes seules (le
+rapprochement par nom reste à exécuter) :
 
 | | Fiches | Part |
 |---|---|---|
-| SIRET publié par la CPPAP | 4 014 | 14,3 % |
-| SIRET hérité d'une autre liste du même éditeur | 3 500 | 12,5 % |
-| SIRET publié mais entreprise absente de l'API | 59 | 0,2 % |
-| En attente du rapprochement par le nom | 20 518 | 73,0 % |
+| SIRET publié par la CPPAP | 4 014 | 15,0 % |
+| SIRET hérité d'une autre liste du même éditeur | 2 402 | 8,9 % |
+| SIRET publié mais entreprise absente de l'API | 52 | 0,2 % |
+| En attente du rapprochement par le nom | 20 381 | 75,9 % |
 
-Soit **7 514 fiches (27 %) rattachées de façon exacte**, sans aucune heuristique. Sur
+Soit **6 416 fiches (24 %) rattachées de façon exacte**, sans aucune heuristique. Sur
 2 444 entreprises interrogées par SIREN, 2 404 ont été retrouvées (98 %) — les 40 autres sont
 vraisemblablement non diffusibles ou radiées.
+
+> Ces parts ont **baissé** en apparence lors de la réunion des fiches d'une même inscription :
+> un service de presse en ligne comptait auparavant pour deux fiches rattachées, une par liste.
+> Sur les 1 242 inscriptions concernées, le rattachement est en réalité meilleur — 1 186
+> établies contre 1 098 avant, et surtout 1 173 **jointures exactes** là où c'étaient des
+> déductions. Le n° d'inscription confirme d'ailleurs les 1 084 déductions antérieures sans un
+> seul désaccord.
 
 Un cinquième niveau, `SIRET publié, entreprise absente`, signale un SIRET officiel dont
 l'entreprise ne figure pas dans l'API — non diffusible ou radiée. L'identifiant reste vrai ;
@@ -103,7 +172,7 @@ data.gouv.fr ──┐
                ▼
         data/sirene/cache.json  (+ overrides.csv)
                │
-               │  scripts/build_site.py    index compact + 32 lots de détail
+               │  scripts/build_site.py    index compact + 64 lots de détail
                ▼
         site/  ──> GitHub Pages
                │
@@ -116,6 +185,7 @@ data.gouv.fr ──┐
 | `config/labels.json` | Libellés NAF, natures juridiques, tranches d'effectifs, niveaux de confiance |
 | `config/departements.json` | Codes et libellés de départements |
 | `scripts/lib/resolution.py` | **Ordre de priorité du rattachement**, partagé par l'appariement et le site |
+| `scripts/lib/cppap.py` | **Lecture du n° CPPAP** : ses deux écritures, son n° d'inscription, son expiration |
 | `scripts/lib/` | Normalisation de texte, client HTTP à débit limité, lecture CSV/XLSX |
 | `web/` | Site statique, JS vanilla, MiniSearch vendorisé — aucun CDN |
 | `worker/` | Relais CORS facultatif vers l'API Recherche d'entreprises |
@@ -124,10 +194,10 @@ data.gouv.fr ──┐
 Stack : **Python 3.11, bibliothèque standard uniquement** (`urllib`, `csv`, `unicodedata`,
 `difflib`, `zipfile`). Aucune dépendance de production, ni côté scripts, ni côté navigateur.
 
-Le site charge un index compact au démarrage (~845 Ko compressés pour 28 000 fiches) puis va
-chercher les fiches complètes dans l'un des 64 lots à l'ouverture d'une carte — **24 Ko
-compressés par lot**. Le lot est déduit d'une empreinte de l'identifiant, donc **stable entre
-deux publications** : le cache du navigateur survit aux mises à jour de données.
+Le site charge un index compact au démarrage (~840 Ko compressés pour 26 849 fiches) puis va
+chercher les fiches complètes dans l'un des 64 lots à l'ouverture d'une carte — de l'ordre de
+**60 Ko compressés par lot**. Le lot est déduit d'une empreinte de l'identifiant, donc **stable
+entre deux publications** : le cache du navigateur survit aux mises à jour de données.
 
 Les fiches publiées ne transportent ni champ vide, ni valeur reconstituable depuis
 `meta.json` (libellés de type et de département, liens de source) : `web/app.js` les
