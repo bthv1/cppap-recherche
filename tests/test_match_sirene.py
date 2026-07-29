@@ -9,18 +9,24 @@ import json
 
 import pytest
 from lib import repo
+from lib.http import HttpError
 from lib.text import normalize_company
 from match_sirene import (
+    IMPLAUSIBLE_SAMPLE,
     THRESHOLD_CERTAIN,
+    SearchFailed,
     classify,
     collect_publishers,
     collect_sirens,
     extract_entreprise,
+    fetch_by_siren,
     load_overrides,
     name_similarity,
     resolve_by_siren,
     resolve_override_targets,
     score_candidate,
+    search,
+    search_or_empty,
 )
 
 
@@ -270,3 +276,112 @@ def test_resolve_by_siren_signale_un_etablissement_qui_n_est_pas_le_siege(candid
     assert au_siege["confidence"] == "siret"
     assert au_siege["siret_est_siege"] is True
     assert ailleurs["siret_est_siege"] is False
+
+
+# --------------------------------------------------------------------------------------
+# Interrogation par SIREN
+#
+# Le bug le plus coûteux de ce projet : `q=siren:123456789` renvoyait zéro résultat sur les
+# 2 444 entreprises du premier passage réel, alors que `q=123456789` renvoie la bonne. Rien
+# ne l'avait signalé. Ces tests figent les deux garde-fous mis en place.
+# --------------------------------------------------------------------------------------
+
+
+class ApiRealiste:
+    """Imite le comportement constaté : seul le SIREN brut donne un résultat.
+
+    La forme préfixée est traitée comme du texte et ne renvoie rien.
+    """
+
+    def __init__(self, siren, *, prefixe_repond=False):
+        self.siren = siren
+        self.prefixe_repond = prefixe_repond
+        self.queries = []
+
+    def get_json(self, url, params=None):
+        query = (params or {}).get("q", "")
+        self.queries.append(query)
+        if query == self.siren:
+            return {"results": [{"siren": self.siren, "nom_complet": "EDITEUR RÉEL"}]}
+        if query.startswith("siren:") and self.prefixe_repond:
+            return {"results": [{"siren": self.siren, "nom_complet": "EDITEUR RÉEL"}]}
+        return {"results": []}
+
+
+def test_fetch_by_siren_essaie_la_forme_brute():
+    client = ApiRealiste("312408784")
+    resultat = fetch_by_siren(client, "312408784")
+
+    assert resultat["siren"] == "312408784"
+    # La forme brute est tentée en premier : inutile d'appeler la seconde.
+    assert client.queries == ["312408784"]
+
+
+def test_fetch_by_siren_se_replie_sur_la_forme_prefixee():
+    """Si l'API redevient un jour préfixée, le repli doit fonctionner sans nouveau correctif."""
+
+    class SeulPrefixe(ApiRealiste):
+        def get_json(self, url, params=None):
+            query = (params or {}).get("q", "")
+            self.queries.append(query)
+            if query == f"siren:{self.siren}":
+                return {"results": [{"siren": self.siren}]}
+            return {"results": []}
+
+    client = SeulPrefixe("312408784")
+    assert fetch_by_siren(client, "312408784")["siren"] == "312408784"
+    assert client.queries == ["312408784", "siren:312408784"]
+
+
+def test_fetch_by_siren_rejette_un_resultat_qui_n_est_pas_le_bon():
+    """Une réponse textuelle sans rapport ne doit jamais être acceptée.
+
+    L'accepter rattacherait un média à la mauvaise entreprise — le pire résultat possible
+    pour un outil dont la fonction est de vérifier qui édite quoi.
+    """
+
+    class ToujoursParasite:
+        """Aucune requête ne trouve le bon SIREN, mais toutes répondent quelque chose."""
+
+        def __init__(self):
+            self.queries = []
+
+        def get_json(self, url, params=None):
+            self.queries.append((params or {}).get("q", ""))
+            return {"results": [{"siren": "999999999", "nom_complet": "SANS RAPPORT"}]}
+
+    client = ToujoursParasite()
+    assert fetch_by_siren(client, "312408784") is None
+    # Les deux formes ont bien été tentées avant de renoncer.
+    assert client.queries == ["312408784", "siren:312408784"]
+
+
+def test_une_panne_ne_devient_pas_une_absence():
+    """Distinguer « rien n'a pu être vérifié » de « l'entreprise n'est pas dans la base »."""
+
+    class ClientEnPanne:
+        def get_json(self, url, params=None):
+            raise HttpError("HTTP 503 sur /search", status=503)
+
+    resolution = resolve_by_siren(ClientEnPanne(), "312408784", "31240878400030", "2026-07-29")
+
+    assert resolution["confidence"] == "siret_non_verifie"
+    assert "entreprise" not in resolution
+    assert resolution["erreur"]
+
+
+def test_search_leve_sur_panne_et_search_or_empty_tolere():
+    class ClientEnPanne:
+        def get_json(self, url, params=None):
+            raise HttpError("HTTP 503", status=503)
+
+    with pytest.raises(SearchFailed):
+        search(ClientEnPanne(), "le monde")
+
+    # Le rapprochement par nom, lui, ne doit pas s'arrêter sur une requête ratée.
+    assert search_or_empty(ClientEnPanne(), "le monde") == []
+
+
+def test_le_seuil_d_invraisemblance_est_atteignable():
+    """Le garde-fou ne sert à rien s'il exige plus d'entrées qu'un run n'en produit."""
+    assert 1 < IMPLAUSIBLE_SAMPLE <= 100
