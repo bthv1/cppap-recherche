@@ -95,20 +95,45 @@ export class MediaIndex {
   static matches(record, filters) {
     if (filters.type && !record.typeList.includes(filters.type)) return false;
     if (filters.dept && record.dept !== filters.dept) return false;
-    if (filters.ipg && record.ipg !== 1) return false;
+    if (filters.qual && record.qual !== filters.qual) return false;
     if (filters.doubt && !DOUBTFUL.has(record.confidence)) return false;
-    // Quatre publications sur cinq ne sont pas inscrites : ce filtre laisse écarter le bruit
-    // sans jamais masquer par défaut ce que la source contient.
+    // Actif par défaut : quatre titres sur cinq de la liste des publications ont vu leur
+    // inscription expirer, et les afficher d'emblée laisserait croire à un agrément en cours.
+    // Le décompte total reste annoncé dans le bandeau, et la case se décoche.
     if (filters.inscrit && record.inscrit !== 1) return false;
     return true;
   }
 
   /**
    * @param {string} text    requête libre ; vide = parcours alphabétique
-   * @param {object} filters {type, dept, ipg, doubt}
+   * @param {object} filters {type, dept, qual, inscrit, doubt}
    * @param {number} limit   nombre de résultats retournés
    */
   query(text, filters = {}, limit = 60) {
+    const filtered = this.candidates(text).filter((r) => MediaIndex.matches(r, filters));
+    return { total: filtered.length, items: filtered.slice(0, limit) };
+  }
+
+  /**
+   * Décompte des valeurs d'une facette parmi les résultats courants.
+   *
+   * La facette ignore **son propre** filtre : sinon, choisir « IPG » afficherait « IPG (456) »
+   * et zéro partout ailleurs, ce qui rendrait le menu inutilisable. Recompté à chaque rendu,
+   * pour qu'un menu n'annonce jamais un nombre que la liste ne montre pas.
+   */
+  facet(text, filters, field) {
+    const counts = new Map();
+    const others = { ...filters, [field]: '' };
+    for (const record of this.candidates(text)) {
+      if (!MediaIndex.matches(record, others)) continue;
+      const value = record[field];
+      if (value) counts.set(value, (counts.get(value) ?? 0) + 1);
+    }
+    return counts;
+  }
+
+  /** Fiches retenues par la requête, avant application des filtres. */
+  candidates(text) {
     const trimmed = String(text ?? '').trim();
     let candidates;
 
@@ -135,7 +160,6 @@ export class MediaIndex {
       }
     }
 
-    const filtered = candidates.filter((record) => MediaIndex.matches(record, filters));
-    return { total: filtered.length, items: filtered.slice(0, limit) };
+    return candidates;
   }
 }

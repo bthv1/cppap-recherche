@@ -17,8 +17,9 @@ const el = {
   clear: document.getElementById('clear'),
   type: document.getElementById('f-type'),
   dept: document.getElementById('f-dept'),
-  ipg: document.getElementById('f-ipg'),
+  qual: document.getElementById('f-qual'),
   inscrit: document.getElementById('f-inscrit'),
+  inscritHint: document.getElementById('inscrit-hint'),
   doubt: document.getElementById('f-doubt'),
   count: document.getElementById('results-heading'),
   results: document.getElementById('results'),
@@ -116,11 +117,18 @@ function renderMeta(meta) {
     el.type.append(option);
   }
 
-  for (const dept of meta.stats?.departements ?? []) {
-    const option = document.createElement('option');
-    option.value = dept.code;
-    option.textContent = `${dept.code} — ${dept.label} (${numberFormat.format(dept.count)})`;
-    el.dept.append(option);
+  fillOptions(el.dept, (meta.stats?.departements ?? []).map(
+    (dept) => ({ value: dept.code, label: `${dept.code} — ${dept.label}` }),
+  ));
+  fillOptions(el.qual, (meta.stats?.qualifications ?? []).map(
+    (qual) => ({ value: qual.cle, label: qual.label }),
+  ));
+
+  // Le filtre est actif par défaut : il faut dire ce qu'il écarte, et combien.
+  const expires = meta.stats?.by_statut?.non_inscrit ?? 0;
+  if (expires) {
+    el.inscritHint.textContent = `décochez pour inclure les ${numberFormat.format(expires)} `
+      + "titres dont l'inscription a expiré";
   }
 }
 
@@ -128,11 +136,39 @@ function renderMeta(meta) {
 // Résultats
 // --------------------------------------------------------------------------------------
 
+/** Alimente un menu de filtre. Le libellé est mémorisé, le décompte lui étant ajouté à chaque rendu. */
+function fillOptions(select, entries) {
+  for (const { value, label } of entries) {
+    const option = document.createElement('option');
+    option.value = value;
+    option.dataset.label = label;
+    option.textContent = label;
+    select.append(option);
+  }
+}
+
+/**
+ * Met à jour les décomptes des menus de filtre d'après les résultats courants.
+ *
+ * Un nombre figé serait trompeur dès qu'un autre filtre est actif — et celui des inscriptions
+ * en cours l'est par défaut : le menu annoncerait 491 fiches IPG là où la liste en montre 456.
+ */
+function refreshFacetCounts(query, filters) {
+  for (const [select, field] of [[el.qual, 'qual'], [el.dept, 'dept']]) {
+    const counts = state.index.facet(query, filters, field);
+    for (const option of select.options) {
+      if (!option.value) continue;
+      option.textContent = `${option.dataset.label} (${
+        numberFormat.format(counts.get(option.value) ?? 0)})`;
+    }
+  }
+}
+
 function currentFilters() {
   return {
     type: el.type.value,
     dept: el.dept.value,
-    ipg: el.ipg.checked,
+    qual: el.qual.value,
     inscrit: el.inscrit.checked,
     doubt: el.doubt.checked,
   };
@@ -150,14 +186,18 @@ function resultLabel(record, meta) {
   ].filter(Boolean);
 
   const tone = meta.labels?.confidence?.[record.confidence]?.tone ?? 'none';
-  // Un titre non inscrit doit se voir dans la liste, pas seulement après ouverture de la fiche.
+  // Un titre dont l'inscription a expiré doit se voir dans la liste, pas seulement après
+  // ouverture de la fiche. `exp` distingue l'inscription expirée du statut simplement absent.
+  const statutKey = record.exp ? 'non_inscrit_expire' : 'non_inscrit';
   const statut = record.inscrit === 0
-    ? `<span class="badge tone-risk">${esc(meta.labels?.statut?.non_inscrit?.label ?? 'NON INSCRIT')}</span>`
+    ? `<span class="badge tone-risk">${
+        esc(meta.labels?.statut?.[statutKey]?.label ?? 'NON INSCRIT')}</span>`
     : '';
+  const qual = (meta.stats?.qualifications ?? []).find((q) => q.cle === record.qual);
   const badges = [
     ...typeLabels.map((label) => `<span class="badge">${esc(label)}</span>`),
     statut,
-    record.ipg ? '<span class="badge ipg">IPG</span>' : '',
+    qual ? `<span class="badge${record.ipg ? ' ipg' : ''}">${esc(qual.court)}</span>` : '',
     tone === 'ok' ? '' : `<span class="badge tone-${esc(tone)}">SIREN ?</span>`,
   ].filter(Boolean).join(' ');
 
@@ -166,7 +206,9 @@ function resultLabel(record, meta) {
 }
 
 function renderResults(query) {
-  const { total, items } = state.index.query(query, currentFilters(), RESULT_LIMIT);
+  const filters = currentFilters();
+  const { total, items } = state.index.query(query, filters, RESULT_LIMIT);
+  refreshFacetCounts(query, filters);
 
   el.count.textContent = total === 0
     ? 'Aucun résultat'
@@ -312,7 +354,7 @@ function wireEvents() {
   el.q.addEventListener('input', debounce(rerender, 120));
   el.type.addEventListener('change', rerender);
   el.dept.addEventListener('change', rerender);
-  el.ipg.addEventListener('change', rerender);
+  el.qual.addEventListener('change', rerender);
   el.inscrit.addEventListener('change', rerender);
   el.doubt.addEventListener('change', rerender);
 

@@ -54,11 +54,22 @@ SEARCH_FIELDS = (
     # filtres de chacune.
     "types",
     "dept",
+    # Qualification ramenée à une clé commune aux deux vocabulaires des listes : le filtre
+    # ne peut porter sur l'écriture source, qui diffère d'une liste à l'autre.
+    "qual",
     "ipg",
     "bucket",
     "confidence",
     # 1 inscrit, 0 non inscrit, -1 statut non précisé par la source.
     "inscrit",
+    # 1 quand l'inscription était déjà expirée à la génération du site, sinon 0. Permet à la
+    # liste de résultats de distinguer « inscription expirée » de « non inscrit » sans
+    # transporter 26 849 dates, qui pesaient 94 Ko compressés à elles seules.
+    #
+    # Le calcul à la génération est sûr **dans un seul sens** : une date passée le reste, donc
+    # un 1 ne devient jamais faux. Seul un 0 peut vieillir, pour une inscription expirant entre
+    # deux publications — et la fiche, elle, recalcule à la date de lecture.
+    "exp",
 )
 
 
@@ -129,8 +140,10 @@ def build_payloads(
     sirene: dict[str, Any],
     departements: dict[str, str],
     sources: dict[str, dict[str, Any]],
+    qualifications: dict[str, Any] | None = None,
 ) -> tuple[dict[str, Any], dict[int, dict[str, Any]], dict[str, Any]]:
     """Construit l'index de recherche, les lots de détail et les statistiques."""
+    today = datetime.now(UTC).date().isoformat()
     rows: list[list[Any]] = []
     buckets: dict[int, dict[str, Any]] = {i: {} for i in range(DETAIL_BUCKETS)}
 
@@ -138,6 +151,7 @@ def build_payloads(
     dept_counts: dict[str, int] = {}
     confidence_counts: dict[str, int] = {}
     statut_counts: dict[str, int] = {}
+    qual_counts: dict[str, int] = {}
 
     for record in records:
         resolution = attach_sirene(record, sirene)
@@ -155,10 +169,12 @@ def build_payloads(
                 record["type"],
                 "|".join(types) if len(types) > 1 else "",
                 record["departement"],
+                record["qualification_cle"],
                 1 if record["ipg"] else 0,
                 bucket,
                 confidence,
                 -1 if record["inscrit"] is None else int(record["inscrit"]),
+                1 if record["date_expiration"] and record["date_expiration"] < today else 0,
             ]
         )
 
@@ -173,6 +189,9 @@ def build_payloads(
         statut_counts[statut_key] = statut_counts.get(statut_key, 0) + 1
         if record["departement"]:
             dept_counts[record["departement"]] = dept_counts.get(record["departement"], 0) + 1
+        if record["qualification_cle"]:
+            key = record["qualification_cle"]
+            qual_counts[key] = qual_counts.get(key, 0) + 1
         confidence_counts[confidence] = confidence_counts.get(confidence, 0) + 1
 
     search = {"fields": list(SEARCH_FIELDS), "rows": rows}
@@ -187,8 +206,31 @@ def build_payloads(
             {"code": code, "label": departements.get(code, code), "count": count}
             for code, count in sorted(dept_counts.items())
         ],
+        "qualifications": qualification_stats(qual_counts, qualifications or {}),
     }
     return search, buckets, stats
+
+
+def qualification_stats(
+    counts: dict[str, int], table: dict[str, Any]
+) -> list[dict[str, Any]]:
+    """Qualifications rencontrées, dans l'ordre déclaré par `config/labels.json`.
+
+    Une clé absente de la table — qualification apparue en amont — est reprise en fin de liste
+    avec son écriture pour libellé : le filtre la propose, elle ne se perd pas.
+    """
+    declared = [key for key in table if not key.startswith("_")]
+    extra = sorted(key for key in counts if key not in declared)
+    return [
+        {
+            "cle": key,
+            "label": (table.get(key) or {}).get("label") or key,
+            "court": (table.get(key) or {}).get("court") or key,
+            "count": counts[key],
+        }
+        for key in [*declared, *extra]
+        if counts.get(key)
+    ]
 
 
 # Champs internes, ou dérivables côté navigateur depuis `meta.json` : les répéter sur chacune
@@ -295,14 +337,12 @@ def main(argv: list[str] | None = None) -> int:
         for k, v in repo.read_json(repo.ROOT / "config" / "departements.json").items()
         if not k.startswith("_")
     }
-    labels = {
-        k: v
-        for k, v in repo.read_json(repo.ROOT / "config" / "labels.json").items()
-        if not k.startswith("_")
-    }
+    labels = repo.load_labels()
 
     sources = source_context(manifest, config)
-    search, buckets, stats = build_payloads(records, sirene, departements, sources)
+    search, buckets, stats = build_payloads(
+        records, sirene, departements, sources, labels.get("qualification")
+    )
 
     site_config = repo.read_json(repo.WEB / "config.json", default={}) or {}
     proxy = args.sirene_proxy or site_config.get("sireneProxy") or ""

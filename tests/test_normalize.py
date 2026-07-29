@@ -23,6 +23,7 @@ from normalize import (
     normalize_siret,
     normalize_url,
     publisher_key,
+    qualification_key,
     siren_from_siret,
 )
 
@@ -709,3 +710,71 @@ def test_plusieurs_prefixes_dans_une_liste_desactivent_la_fusion(paire, config):
     assert report["sources_ecartees"] == ["publications"]
     assert report["fusionnees"] == 0
     assert len(records) == 3
+
+
+# --------------------------------------------------------------------------------------
+# Qualification : deux vocabulaires, une clé
+# --------------------------------------------------------------------------------------
+
+
+@pytest.mark.parametrize(
+    ("raw", "expected"),
+    [
+        # La même qualification, écrite par chacune des deux listes.
+        ("39bisA", "39bisA"),
+        ("DISPOSITIF_FISCAL_39_BIS_A", "39bisA"),
+        ("39bisB", "39bisB"),
+        ("DISPOSITIF_FISCAL_39_BIS_B", "39bisB"),
+        ("IPG", "ipg"),
+        ("Information politique et générale", "ipg"),
+        ("CIBLAGE_POSTAL_D_19_2", "d19_2"),
+        ("", ""),
+    ],
+)
+def test_qualification_key_reunit_les_deux_vocabulaires(raw, expected):
+    """Sans clé commune, un filtre par qualification proposerait deux entrées par régime."""
+    assert qualification_key(raw) == expected
+
+
+def test_qualification_key_tolere_la_casse_et_les_accents():
+    assert qualification_key("dispositif_fiscal_39_bis_a") == "39bisA"
+    assert qualification_key("information politique et generale") == "ipg"
+
+
+def test_une_qualification_inconnue_reste_filtrable():
+    """Une valeur apparue en amont doit apparaître, pas disparaître en silence."""
+    assert qualification_key("RÉGIME INÉDIT 2027") == "regime-inedit-2027"
+
+
+def test_une_absence_de_qualification_n_en_cree_pas_une():
+    """« Non IPG » énonce une absence : en faire une clé ajouterait au filtre une
+    qualification qui n'existe pas — c'est l'intitulé historique de la colonne, encore
+    présent dans les fichiers d'avant 2019."""
+    assert qualification_key("Non IPG") == ""
+    assert qualification_key("Sans qualification") == ""
+    assert qualification_key("Aucune") == ""
+
+
+def test_la_cle_de_qualification_suit_la_valeur_retenue_a_la_fusion(paire, config):
+    """Les deux champs sont indissociables : une clé venue d'une autre liste que sa valeur
+    afficherait un libellé sans rapport avec l'écriture affichée."""
+    paire[0]["qualification"] = "39bisB"
+    paire[0]["qualification_cle"] = "39bisB"
+    paire[1]["qualification"] = "DISPOSITIF_FISCAL_39_BIS_A"
+    paire[1]["qualification_cle"] = "39bisA"
+
+    fiche = merge_by_serie(paire, config)[0][0]
+
+    assert (fiche["qualification"], fiche["qualification_cle"]) == (
+        "DISPOSITIF_FISCAL_39_BIS_A",
+        "39bisA",
+    )
+
+
+def test_les_fiches_portent_la_cle_de_qualification(sources):
+    records, _ = build_records(fixture_rows("publications"), sources["publications"])
+    monde = next(r for r in records if r["nom"] == "Le Monde")
+
+    assert monde["qualification"] == "Information politique et générale"
+    assert monde["qualification_cle"] == "ipg"
+    assert monde["ipg"] is True

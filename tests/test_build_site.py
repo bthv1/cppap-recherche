@@ -348,3 +348,71 @@ def test_un_numero_partage_par_deux_editeurs_donne_deux_fiches_distinctes(config
     ids = {r["id"] for r in records if r["cppap_serie"] == "83260"}
 
     assert ids == {"cppap-83260-societe-editrice-du-monde", "cppap-83260-le-monde-diplomatique"}
+
+
+# --------------------------------------------------------------------------------------
+# Filtre par qualification, et distinction des inscriptions expirées
+# --------------------------------------------------------------------------------------
+
+
+def test_les_qualifications_sont_publiees_dans_l_ordre_declare(config, records, sirene):
+    """L'ordre du menu de filtre vient de config/labels.json, pas du hasard des données."""
+    table = repo.load_labels()["qualification"]
+    _, _, stats = build_payloads(
+        records, sirene, {}, source_context({"sources": {}}, config), table
+    )
+    cles = [q["cle"] for q in stats["qualifications"]]
+
+    assert cles == [k for k in table if not k.startswith("_") and k in cles]
+    ipg = next(q for q in stats["qualifications"] if q["cle"] == "ipg")
+    assert ipg["label"] == "Information politique et générale"
+    assert ipg["court"] == "IPG"
+    assert ipg["count"] > 0
+
+
+def test_une_qualification_inconnue_est_proposee_avec_son_ecriture(config, records, sirene):
+    """Une qualification apparue en amont doit rester filtrable, libellée telle quelle."""
+    inedits = [{**r, "qualification": "RÉGIME INÉDIT", "qualification_cle": "regime-inedit"}
+               for r in records[:2]]
+    _, _, stats = build_payloads(
+        [*records[2:], *inedits], sirene, {}, source_context({"sources": {}}, config),
+        repo.load_labels()["qualification"],
+    )
+    entry = next(q for q in stats["qualifications"] if q["cle"] == "regime-inedit")
+
+    assert entry["label"] == "regime-inedit"
+    assert entry["count"] == 2
+    # Les qualifications déclarées passent avant celles découvertes.
+    assert stats["qualifications"][-1]["cle"] == "regime-inedit"
+
+
+def test_l_index_porte_la_cle_de_qualification(config, records, sirene):
+    search, _, _ = build_payloads(
+        records, sirene, {}, source_context({"sources": {}}, config),
+        repo.load_labels()["qualification"],
+    )
+    entry = _entry(search, "cppap-83260-societe-editrice-du-monde")
+
+    # L'écriture source (« Information politique et générale ») ne peut pas servir de valeur
+    # de filtre : l'autre liste écrit « IPG » pour la même chose.
+    assert entry["qual"] == "ipg"
+    assert entry["ipg"] == 1
+
+
+def test_l_index_signale_une_inscription_deja_expiree(config, records, sirene):
+    """Un drapeau calculé à la génération, pour distinguer l'expiré du statut absent.
+
+    Sûr dans un seul sens : une date passée le reste, donc un 1 ne peut pas devenir faux.
+    """
+    passe = {**records[0], "date_expiration": "1999-12-31", "inscrit": False}
+    futur = {**records[1], "date_expiration": "2099-12-31", "inscrit": True}
+    sans = {**records[2], "date_expiration": "", "inscrit": False}
+    search, _, _ = build_payloads(
+        [passe, futur, sans], sirene, {}, source_context({"sources": {}}, config)
+    )
+    rows = {r[search["fields"].index("id")]: r for r in search["rows"]}
+
+    exp = search["fields"].index("exp")
+    assert rows[passe["id"]][exp] == 1
+    assert rows[futur["id"]][exp] == 0
+    assert rows[sans["id"]][exp] == 0

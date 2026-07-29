@@ -33,15 +33,17 @@ function codeWithLabel(code, table) {
 }
 
 /**
- * Libellé lisible d'une valeur codée, ou la valeur brute à défaut.
+ * Libellé lisible d'une qualification, ou son écriture source à défaut.
  *
- * Contrairement à `codeWithLabel`, le code n'est pas rappelé : les deux listes CPPAP écrivent
- * la même qualification différemment (« 39bisA » d'un côté, « DISPOSITIF_FISCAL_39_BIS_A » de
- * l'autre) et c'est l'information, non son écriture, qui intéresse le lecteur.
+ * Le libellé est cherché sur la **clé** de qualification, pas sur son écriture : les deux
+ * listes CPPAP désignent la même chose différemment (« 39bisA » d'un côté,
+ * « DISPOSITIF_FISCAL_39_BIS_A » de l'autre), et c'est l'information, non son écriture, qui
+ * intéresse le lecteur. Une qualification apparue en amont s'affiche telle quelle.
  */
-function labelled(code, table) {
-  if (!has(code)) return '';
-  return table?.[code] ?? String(code);
+function qualificationLabel(detail, labels) {
+  if (!has(detail.qualification)) return '';
+  const entry = labels.qualification?.[detail.qualification_cle];
+  return entry?.label ?? String(detail.qualification);
 }
 
 /** Les dates SIRENE sont en ISO ; celles de la CPPAP peuvent être dans un autre format. */
@@ -67,16 +69,27 @@ function badge(text, extra = '') {
  */
 export function statutState(detail, labels) {
   const table = labels.statut ?? {};
-  if (detail.inscrit === false) return { key: 'non_inscrit', ...table.non_inscrit };
+  const expired = hasExpired(detail.date_expiration);
+
+  if (detail.inscrit === false) {
+    // Sur les données réelles, les 21 653 titres « Non Inscrit » portent **tous** une date
+    // d'expiration passée : ils ont été inscrits, leur inscription n'a pas été renouvelée.
+    // On ne le dit que des fiches qui le démontrent — une fiche sans date le prouverait pas.
+    return expired
+      ? { key: 'non_inscrit_expire', ...table.non_inscrit_expire }
+      : { key: 'non_inscrit', ...table.non_inscrit };
+  }
   if (detail.inscrit === true) {
-    const expiration = String(detail.date_expiration ?? '');
-    if (/^\d{4}-\d{2}-\d{2}$/.test(expiration)) {
-      const today = new Date().toISOString().slice(0, 10);
-      if (expiration < today) return { key: 'expire', ...table.expire };
-    }
-    return { key: 'inscrit', ...table.inscrit };
+    return expired ? { key: 'expire', ...table.expire } : { key: 'inscrit', ...table.inscrit };
   }
   return { key: 'inconnu', ...table.inconnu };
+}
+
+/** Vrai si la date d'expiration est passée — évalué au moment de la lecture, pas de la publication. */
+function hasExpired(value) {
+  const expiration = String(value ?? '');
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(expiration)) return false;
+  return expiration < new Date().toISOString().slice(0, 10);
 }
 
 /** Groupage lisible d'un SIRET : 3-3-3-5, comme l'écrit l'INSEE. */
@@ -242,7 +255,7 @@ function cppapSection(detail, meta) {
           { raw: true },
         )
       : '',
-    field('Qualification', labelled(detail.qualification, labels.qualification)),
+    field('Qualification', qualificationLabel(detail, labels)),
     field('Périodicité', detail.periodicite),
     field('Dernière décision', frenchDate(detail.date_decision)),
     detail.url
@@ -250,11 +263,13 @@ function cppapSection(detail, meta) {
       : '',
   ].join('');
 
-  // L'avertissement précède les champs : il conditionne la lecture de tout ce qui suit.
+  // L'avertissement précède les champs : il conditionne la lecture de tout ce qui suit. La
+  // date rend le fait concret, plutôt que de renvoyer le lecteur à la ligne du dessous.
+  const since = has(expiration) && statut.key !== 'inscrit' ? ` Expiration : ${expiration}.` : '';
   const warning = statut.key === 'inscrit' || statut.key === 'inconnu'
     ? ''
     : `<p class="note tone-${esc(statut.tone)}"><strong>${esc(statut.label)}</strong> — ${
-        esc(statut.hint)}</p>`;
+        esc(statut.hint)}${esc(since)}</p>`;
 
   return `<section class="card-section">
     <h3>Agrément CPPAP</h3>

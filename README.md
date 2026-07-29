@@ -20,7 +20,8 @@ scripts Python sans aucune dépendance de production, et un Cloudflare Worker fa
    GitHub par version** avec le différentiel ligne à ligne — de quoi citer l'état exact d'une
    liste à une date donnée.
 3. **Recherche** par nom de média, d'éditeur ou n° CPPAP, tolérante aux accents et aux fautes
-   de frappe, avec filtres par type, département et qualification IPG.
+   de frappe, avec filtres par liste, département, qualification (IPG, régimes 39 bis A et B,
+   ciblage postal) et statut d'inscription.
 4. **Restitue une carte dédiée** : agrément CPPAP, entreprise déclarée, puis fiche SIRENE
    complète de l'éditeur — siège social avec adresse, code NAF, nature juridique, date de
    création, effectifs, état administratif, dirigeants.
@@ -39,15 +40,42 @@ intuitif :
 Soit **26 849 fiches publiées** : les 28 091 lignes moins les 1 242 inscriptions décrites par
 deux listes, réunies en une fiche (voir la section suivante).
 
-> **Un numéro CPPAP affiché ne vaut pas agrément en cours.** L'interface porte donc un badge
-> `NON INSCRIT` dès la liste de résultats, un avertissement en tête de fiche, la date
-> d'expiration de l'inscription, et un filtre « inscrits ou reconnus uniquement ».
+> **Un numéro CPPAP affiché ne vaut pas agrément en cours.** Les 21 653 titres au statut
+> « Non Inscrit » portent **tous** une date d'expiration passée, de 1970 à cette année : ce sont
+> des titres qui ont été inscrits et dont l'inscription n'a pas été renouvelée. Le filtre
+> « Inscrits ou reconnus uniquement » est donc **actif par défaut**, et les fiches concernées
+> portent la mention `INSCRIPTION EXPIRÉE` avec la date, dès la liste de résultats.
+>
+> La mention n'est apposée qu'aux fiches qui la démontrent — statut négatif **et** date
+> d'expiration passée. Une fiche sans date retombe sur `NON INSCRIT`, plus prudent : le fait
+> vérifié sur l'ensemble ne dispense pas de le constater sur chacune.
 
 Le champ `qualification` n'a pas le même sens partout : `IPG` dans la liste des services en
 ligne, mais surtout des régimes postaux et fiscaux (`DISPOSITIF_FISCAL_39_BIS_A`,
 `CIBLAGE_POSTAL_D_19_2`) dans celle des publications. Seules les valeurs désignant
-explicitement l'information politique et générale alimentent le marqueur IPG. Les deux
-vocabulaires sont ramenés à un libellé lisible par `config/labels.json`.
+explicitement l'information politique et générale alimentent le marqueur IPG.
+
+Les deux vocabulaires sont ramenés à une **clé commune** déclarée dans `config/labels.json`,
+qui porte pour chaque qualification les écritures sous lesquelles les listes la désignent.
+C'est ce qui rend possible le filtre par qualification — sans elle, le menu proposerait deux
+entrées pour un même régime :
+
+| Clé | Libellé | Écritures rencontrées | Fiches |
+|---|---|---|---|
+| `ipg` | Information politique et générale | `IPG`, `Information politique et générale` | 491 |
+| `39bisA` | Régime fiscal 39 bis A | `39bisA`, `DISPOSITIF_FISCAL_39_BIS_A` | 229 |
+| `39bisB` | Régime fiscal 39 bis B | `39bisB`, `DISPOSITIF_FISCAL_39_BIS_B` | 278 |
+| `d19_2` | Ciblage postal D.19-2 | `CIBLAGE_POSTAL_D_19_2` | 418 |
+| `d27_2` | Ciblage postal D.27-2 | `CIBLAGE_POSTAL_D_27_2` | 1 |
+
+Une écriture inconnue de la table reçoit une clé dérivée d'elle-même : la qualification reste
+filtrable et s'affiche telle quelle, plutôt que de disparaître. À l'inverse, une valeur qui
+énonce une **absence** (« Non IPG », intitulé de la colonne avant 2019) ne crée aucune clé —
+sans quoi le filtre proposerait une qualification qui n'existe pas.
+
+Les décomptes des menus de filtre sont recalculés à chaque rendu sur les résultats courants :
+un nombre figé mentirait dès qu'un autre filtre est actif, et celui des inscriptions en cours
+l'est par défaut.
 
 ## Anatomie du n° CPPAP, et pourquoi il s'écrit de deux façons
 

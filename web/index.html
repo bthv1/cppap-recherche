@@ -47,14 +47,18 @@
         </select>
       </label>
 
-      <label class="filter checkbox">
-        <input type="checkbox" id="f-ipg">
-        <span>Uniquement <abbr title="Information politique et générale">IPG</abbr></span>
+      <label class="filter">
+        <span>Qualification</span>
+        <select id="f-qual">
+          <option value="">Toutes les qualifications</option>
+        </select>
       </label>
 
       <label class="filter checkbox">
-        <input type="checkbox" id="f-inscrit">
-        <span>Inscrits ou reconnus uniquement</span>
+        <input type="checkbox" id="f-inscrit" checked>
+        <span>Inscrits ou reconnus uniquement
+          <span class="hint" id="inscrit-hint"></span>
+        </span>
       </label>
 
       <label class="filter checkbox">
@@ -101,9 +105,11 @@
     </p>
     <p class="disclaimer">
       <strong>Figurer dans un fichier de la CPPAP ne vaut pas agrément en cours.</strong> La
-      liste des publications de presse recense les titres connus de la commission, dont une
-      large majorité n'y est pas inscrite : lisez le statut et la date d'expiration portés sur
-      chaque fiche.
+      liste des publications de presse recense aussi les titres dont l'inscription a expiré et
+      n'a pas été renouvelée : ils y sont au statut « Non Inscrit », et <strong>tous portent
+      une date d'expiration passée</strong> — de 1970 à cette année. Ils sont donc écartés par
+      défaut ; décochez « Inscrits ou reconnus uniquement » pour les voir, et lisez le statut
+      et la date d'expiration portés sur chaque fiche.
     </p>
     <p class="repo">
       Code et archives des versions successives :

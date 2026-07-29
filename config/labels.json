@@ -132,14 +132,41 @@
     "F": "Fermé"
   },
   "qualification": {
-    "_comment": "Les deux listes écrivent la même qualification différemment : « 39bisA » dans la liste des services de presse en ligne, « DISPOSITIF_FISCAL_39_BIS_A » dans celle des publications. Une valeur absente de cette table est affichée telle quelle.",
-    "IPG": "Information politique et générale",
-    "39bisA": "Régime fiscal 39 bis A",
-    "39bisB": "Régime fiscal 39 bis B",
-    "DISPOSITIF_FISCAL_39_BIS_A": "Régime fiscal 39 bis A",
-    "DISPOSITIF_FISCAL_39_BIS_B": "Régime fiscal 39 bis B",
-    "CIBLAGE_POSTAL_D_19_2": "Ciblage postal D.19-2",
-    "CIBLAGE_POSTAL_D_27_2": "Ciblage postal D.27-2"
+    "_comment": [
+      "Qualifications CPPAP, et les écritures sous lesquelles chaque liste les désigne :",
+      "« 39bisA » dans la liste des services de presse en ligne, « DISPOSITIF_FISCAL_39_BIS_A »",
+      "dans celle des publications. `valeurs` sert à ramener les deux vocabulaires à une même",
+      "clé — c'est ce qui rend le filtre par qualification possible.",
+      "",
+      "L'ordre des entrées est celui du menu de filtre. Une valeur source absente de toutes les",
+      "listes `valeurs` reçoit une clé dérivée de son écriture et reste filtrable, affichée",
+      "telle quelle : une nouvelle qualification en amont apparaît, elle ne disparaît pas."
+    ],
+    "ipg": {
+      "label": "Information politique et générale",
+      "court": "IPG",
+      "valeurs": ["IPG", "Information politique et générale"]
+    },
+    "39bisA": {
+      "label": "Régime fiscal 39 bis A",
+      "court": "39 bis A",
+      "valeurs": ["39bisA", "DISPOSITIF_FISCAL_39_BIS_A"]
+    },
+    "39bisB": {
+      "label": "Régime fiscal 39 bis B",
+      "court": "39 bis B",
+      "valeurs": ["39bisB", "DISPOSITIF_FISCAL_39_BIS_B"]
+    },
+    "d19_2": {
+      "label": "Ciblage postal D.19-2",
+      "court": "D.19-2",
+      "valeurs": ["CIBLAGE_POSTAL_D_19_2"]
+    },
+    "d27_2": {
+      "label": "Ciblage postal D.27-2",
+      "court": "D.27-2",
+      "valeurs": ["CIBLAGE_POSTAL_D_27_2"]
+    }
   },
   "confidence": {
     "verifie": {
@@ -199,6 +226,11 @@
       "label": "NON INSCRIT",
       "tone": "risk",
       "hint": "Le média figure dans le fichier de la CPPAP mais n'y est PAS inscrit. Le numéro affiché ne vaut pas agrément en cours."
+    },
+    "non_inscrit_expire": {
+      "label": "INSCRIPTION EXPIRÉE",
+      "tone": "risk",
+      "hint": "Titre autrefois inscrit à la CPPAP, dont l'inscription a expiré et n'a pas été renouvelée. Le numéro ne vaut donc pas agrément en cours."
     },
     "inconnu": {
       "label": "Statut non précisé",

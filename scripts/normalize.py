@@ -26,6 +26,7 @@ import json
 import logging
 import re
 import sys
+from functools import lru_cache
 from pathlib import Path
 from typing import Any
 
@@ -231,6 +232,43 @@ def siren_from_siret(siret: str) -> str:
     return siret[:9] if len(siret) == 14 else ""
 
 
+@lru_cache(maxsize=1)
+def _qualification_table() -> dict[str, Any]:
+    """Table des qualifications, lue une fois — elle est consultée à chaque ligne."""
+    return repo.load_labels().get("qualification", {})
+
+
+def qualification_key(qualification: str, table: dict[str, Any] | None = None) -> str:
+    """Ramène une qualification à une clé unique, quelle que soit la liste qui l'écrit.
+
+    Les deux listes désignent la même chose autrement — « 39bisA » ici,
+    « DISPOSITIF_FISCAL_39_BIS_A » là. Sans cette clé, un filtre par qualification
+    proposerait deux entrées pour un même régime.
+
+    Une écriture inconnue de `config/labels.json` reçoit une clé dérivée d'elle-même : elle
+    reste filtrable et s'affiche telle quelle, plutôt que de disparaître silencieusement.
+    """
+    value = (qualification or "").strip()
+    if not value:
+        return ""
+
+    folded = fold(value)
+    for key, entry in (_qualification_table() if table is None else table).items():
+        if key.startswith("_") or not isinstance(entry, dict):
+            continue
+        if any(fold(candidate) == folded for candidate in entry.get("valeurs", ())):
+            return key
+
+    # « Non IPG », « Sans qualification », « Aucune » : la source énonce une **absence** de
+    # qualification. En faire une clé ajouterait au filtre une qualification qui n'existe pas.
+    if _IPG_NEGATION.search(folded):
+        return ""
+    # Repli : `is_ipg` reconnaît « Information politique et générale » sous ses variantes.
+    if is_ipg(value):
+        return "ipg"
+    return slugify(value, fallback="")
+
+
 def is_ipg(qualification: str) -> bool:
     """Vrai si la qualification correspond à « information politique et générale ».
 
@@ -394,6 +432,8 @@ def build_records(
                 "departement_source": cell(row, "departement"),
                 "commune": cell(row, "commune"),
                 "qualification": qualification,
+                # Clé commune aux deux vocabulaires, sur laquelle porte le filtre.
+                "qualification_cle": qualification_key(qualification),
                 "ipg": is_ipg(qualification),
                 "periodicite": cell(row, "periodicite"),
                 "url": normalize_url(cell(row, "url")),
@@ -444,6 +484,7 @@ _COUPLED_FIELDS = {
     "siret": ("siret_source", "siren"),
     "departement": ("departement_source",),
     "statut": ("inscrit",),
+    "qualification": ("qualification_cle",),
 }
 
 # Champs recalculés par la fusion elle-même, jamais repris d'un membre.

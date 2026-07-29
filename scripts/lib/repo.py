@@ -9,6 +9,7 @@ from typing import Any
 ROOT = Path(__file__).resolve().parents[2]
 
 CONFIG_FILE = ROOT / "config" / "sources.json"
+LABELS_FILE = ROOT / "config" / "labels.json"
 
 DATA = ROOT / "data"
 DATA_LATEST = DATA / "latest"
@@ -34,6 +35,17 @@ def load_config(path: Path | None = None) -> dict[str, Any]:
     if not config.get("sources"):
         raise ValueError(f"Aucune source déclarée dans {path or CONFIG_FILE}")
     return config
+
+
+def load_labels(path: Path | None = None) -> dict[str, Any]:
+    """Charge config/labels.json en ignorant les clés de commentaire.
+
+    Sert autant à l'affichage (libellés NAF, natures juridiques) qu'à la **normalisation** :
+    la table `qualification` déclare, pour chaque qualification, les écritures sous lesquelles
+    les listes CPPAP la désignent.
+    """
+    labels = read_json(path or LABELS_FILE, default={}) or {}
+    return {key: value for key, value in labels.items() if not key.startswith("_")}
 
 
 def read_json(path: Path, default: Any = None) -> Any:

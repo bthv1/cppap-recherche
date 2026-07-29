@@ -207,6 +207,10 @@ abbr { text-decoration: underline dotted; cursor: help; }
   align-self: flex-end; padding-bottom: 0.45rem;
   cursor: pointer;
 }
+/* Une case dont le libellé porte une précision sur deux lignes : la case reste en tête de
+   ligne, sinon elle flotte au milieu du texte et les cases voisines se désalignent. */
+.filter.checkbox:has(.hint) { align-items: start; }
+.filter.checkbox .hint { margin-top: 0.15rem; }
 .filter.checkbox input { width: 1rem; height: 1rem; accent-color: var(--accent); }
 
 /* ---------- Disposition deux colonnes ---------- */
