@@ -92,6 +92,49 @@
             "encoding": "utf-8-sig",
             "parser": "csv"
           }
+        },
+        {
+          "columns": [
+            "editeur",
+            "siret",
+            "forme_juridique",
+            "departement",
+            "type_de_presse",
+            "nom_du_titre_de_presse",
+            "statut_inscription",
+            "demande_en_cours",
+            "numero_cppap",
+            "date_expiration_inscription",
+            "date_derniere_decision",
+            "qualification",
+            "regime_derogatoire",
+            "ajl",
+            "url_spel"
+          ],
+          "content_sha256": "596477349673ea1e0b6dd7a1bcec959748b527794af25e32565ba9a2c33b3e9b",
+          "content_sha8": "59647734",
+          "download_method": "resource-url",
+          "file_sha256": "1bb74faa744bc280623d618f532458421041270d9cefbdc3b15e5bb6d6059d66",
+          "observed_at": "2026-08-03",
+          "profile": {
+            "encoding": "utf-8",
+            "indexes": null,
+            "nb_duplicates": 0,
+            "separator": ";",
+            "total_lines": 26669
+          },
+          "resource_format": "csv",
+          "resource_id": "a98cced2-babe-45b4-95dd-ce5336155dbc",
+          "resource_last_modified": "2026-08-02T15:03:07+00:00",
+          "resource_title": "liste-des-publications-de-presse-inscrites.csv",
+          "resource_url": "https://ministere-culture.s3.sbg.io.cloud.ovh.net/PRESSE/liste_des_publications_de_presse_inscrites.csv",
+          "rows": 26669,
+          "snapshot": "data/raw/publications/2026-08-03__59647734.csv",
+          "source_format": {
+            "delimiter": ";",
+            "encoding": "utf-8-sig",
+            "parser": "csv"
+          }
         }
       ]
     },
