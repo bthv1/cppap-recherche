@@ -1,4 +1,5 @@
 editeur,siret,forme_juridique,departement,type_de_presse,nom_du_titre_de_presse,statut_inscription,demande_en_cours,numero_cppap,date_expiration_inscription,date_derniere_decision,qualification,regime_derogatoire,ajl,url_spel
+SANS DOUTE,92897766900011,SAS,75,Service de presse en ligne,sansdoute.info,Non Inscrit,,2595424,2026-03-31,2026-02-01,,Non,Non,http://www.sansdoute.info
 INF'OGM: VEILLE CITOYENNE SUR LES OGM,42390238600030,ASSOCIATION,75,Service de presse en ligne,infogm.org,Non Inscrit,Demande de renouvellement en cours,2590928,2026-06-30,2022-05-25,DISPOSITIF_FISCAL_39_BIS_A,Non,Non,http://www.infogm.org
 LEL MEDIA,94317185000010,"SAS, SOCIÉTÉ PAR ACTIONS SIMPLIFIÉE",75,Service de presse en ligne,lel.media,Non Inscrit,Première demande en cours,,,,,Non,,https://lel.media/
 TROUSSARD NICOLAS,53238859200034,ENTREPRENEUR INDIVIDUEL,37,Service de presse en ligne,"Vigilo, la veille conformité qu'il vous faut",Non Inscrit,Première demande en cours,,,,,Non,,
@@ -9,7 +10,7 @@ ALLIEDHEALTH,49992238300033,SAS,13,Service de presse en ligne,santelog.com,Inscr
 LES EDITIONS ROTATIVE,38854133600060,SAS,75,Service de presse en ligne,charliehebdo.fr,Inscrit,Demande de renouvellement en cours,2590882,2026-09-30,2021-11-25,IPG,Non,Non,https://charliehebdo.fr/
 MEDIAGAMING,81362979700016,"SAS, SOCIÉTÉ PAR ACTIONS SIMPLIFIÉE",75,Service de presse en ligne,Team aAa,Non Inscrit,Première demande en cours,,,,,Non,,team-aaa.com
 AUDIO PRINT,45303237700047,SARL,75,Service de presse en ligne,guitariste.com,Non Inscrit,Demande de renouvellement en cours,2590491,2026-07-31,2021-07-08,,Non,Non,http://www.guitariste.com
-L'AUNISIENNE DE PRESSE,79744648100013,SARL,17,Service de presse en ligne,lhebdo17.fr,Non Inscrit,Demande de renouvellement en cours,2594259,2026-07-31,2021-07-08,IPG,Non,Non,http://www.lhebdo17.fr
+L'AUNISIENNE DE PRESSE,79744648100013,SARL,17,Service de presse en ligne,lhebdo17.fr,Non Inscrit,Demande de renouvellement en cours,2594259,2026-07-31,2021-07-08,IPG,Non,Oui,http://www.lhebdo17.fr
 LYON DECIDEURS,,SAS,69,Service de presse en ligne,lyondecideurs.com,Non Inscrit,Demande de renouvellement en cours,2594645,2026-07-31,,,Non,Non,http://www.lyondecideurs.com
 AMÉLIE ACATRINEI-ALDEA,79008601100026,MICRO-ENTREPRENEUR,93,Service de presse en ligne,projetarcadie.com,Non Inscrit,Demande de renouvellement en cours,2594949,2026-05-31,2023-05-11,DISPOSITIF_FISCAL_39_BIS_A,Non,Non,http://www.projetarcadie.com
 HERODOTE.NET,51383851600013,SAS,75,Service de presse en ligne,herodote.net,Non Inscrit,Demande de renouvellement en cours,2592409,2026-05-31,,,Non,Non,http://www.herodote.net
@@ -22,14 +23,13 @@ IC NEWS,,SAS,75,Service de presse en ligne,infochretienne.com,Non Inscrit,Demand
 CAGNON SACHA,88278777300010,ENTREPRISE INDIVIDUELLE,69,Service de presse en ligne,foutouart.fr,Inscrit,Demande de renouvellement en cours,2595169,2026-10-31,2024-10-03,DISPOSITIF_FISCAL_39_BIS_A,Non,Non,https://foutouart.fr/
 BP MEDIA,95211627500019,SARL,75,Service de presse en ligne,bonpote.com,Non Inscrit,Demande de renouvellement en cours,2595456,2026-07-31,2025-07-03,DISPOSITIF_FISCAL_39_BIS_A,Non,Non,http://www.bonpote.com
 SATSE PUBLICATIONS,84102373200016,SAS,76,Service de presse en ligne,lepoulpe.info,Non Inscrit,Demande de renouvellement en cours,2593981,2026-07-31,2021-07-08,IPG,Non,Non,http://www.lepoulpe.info
-IMPRIMERIE GASPARD-ROYER,67715038500016,SARL,70,Service de presse en ligne,lesaffichesdelahautesaone.fr,Non Inscrit,Demande de renouvellement en cours,2594643,2026-07-31,2022-09-15,IPG,Non,Non,http://www.lesaffichesdelahautesaone.fr
-CAP'PRESSE,94101662800013,SAS,,Service de presse en ligne,cap-infos.fr,Non Inscrit,Demande de renouvellement en cours,2595469,2026-07-31,2025-07-03,,Non,Non,http://www.cap-infos.fr
+IMPRIMERIE GASPARD-ROYER,67715038500016,SARL,70,Service de presse en ligne,lesaffichesdelahautesaone.fr,Non Inscrit,Demande de renouvellement en cours,2594643,2026-07-31,2022-09-15,IPG,Non,Oui,http://www.lesaffichesdelahautesaone.fr
+CAP'PRESSE,94101662800013,SAS,,Service de presse en ligne,cap-infos.fr,Non Inscrit,Demande de renouvellement en cours,2595469,2026-07-31,2025-07-03,,Non,Oui,http://www.cap-infos.fr
 SOCIETE DE PRESSE DU BREIL,44303462400025,EURL,75,Service de presse en ligne,jurishebdo.fr,Non Inscrit,Demande de renouvellement en cours,2595460,2026-07-31,2025-07-03,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,http://www.jurishebdo.fr
 ARCHEMEDIAS,87982078500019,SARL,31,Service de presse en ligne,revue-natives.com,Non Inscrit,Demande de renouvellement en cours,2594931,2026-06-30,2023-10-26,DISPOSITIF_FISCAL_39_BIS_A,Non,Non,http://www.revue-natives.com
 GROUPE EXPRESS,55201868100171,SA,75,Service de presse en ligne,lexpress.fr,Non Inscrit,Demande de renouvellement en cours,2590095,2026-07-31,2021-07-08,IPG,Non,Non,http://www.lexpress.fr
 RIGHTBRAIN,93015800100014,MICRO-ENTREPRENEUR,75,Service de presse en ligne,rightbrain-magazine.com,Inscrit,Demande de renouvellement en cours,2595495,2026-09-30,2025-09-25,DISPOSITIF_FISCAL_39_BIS_A,Non,Non,https://rightbrain-magazine.com/
 ANTILLA,98174641500018,SARL,,Service de presse en ligne,batisseurs-outremer.com,Non Inscrit,Demande de renouvellement en cours,2595290,2026-05-31,,,Non,Non,http://www.batisseurs-outremer.com
-SANS DOUTE,92897766900011,SAS,75,Service de presse en ligne,sansdoute.info,Non Inscrit,Demande de renouvellement en cours,2595424,2026-03-31,2026-02-01,,Non,Non,http://www.sansdoute.info
 APM INTERNATIONAL,35161685900036,SAS,75,Service de presse en ligne,apmmarketaccess.com,Non Inscrit,Demande de renouvellement en cours,2593876,2026-03-31,,,Non,Non,https://www.apmmarketaccess.com/
 ECOSTYLIA MEDIA,93444289800011,SAS,75,Service de presse en ligne,ecostylia.com,Non Inscrit,Demande de renouvellement en cours,2595416,2026-03-31,,,Non,Non,http://www.ecostylia.com
 SOCIETE DU JOURNAL L'UNION,33568067400629,SA,51,Service de presse en ligne,lardennais.fr,Non Inscrit,Demande de renouvellement en cours,2594219,2026-03-31,,,Non,Non,https://www.lardennais.fr/
@@ -66,13 +66,13 @@ LES PETITES AFFICHES MATOT BRAINE,,EURL,51,Service de presse en ligne,matot-brai
 AGENCE D'EDITION MEDICALE (AEI),34982984600089,SARL,75,Service de presse en ligne,hemato-news.com,Inscrit,Demande de renouvellement en cours,2593190,2026-10-31,2023-10-26,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,http://hemato-news.com
 WEB LEX,80306481500019,SAS,44,Service de presse en ligne,weblex.fr,Inscrit,Demande de renouvellement en cours,2592436,2026-09-30,2021-09-16,,Non,Non,http://www.weblex.fr
 DEALFLOW-DATA,82010879300028,SAS,91,Service de presse en ligne,fusions-acquisitions.info,Inscrit,Demande de renouvellement en cours,2593143,2026-09-30,2023-09-28,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,http://fusions-acquisitions.info
-EDITIONS CROQUE FUTUR,32503329800069,SAS,75,Service de presse en ligne,challenges.fr,Non Inscrit,Demande de renouvellement en cours,2590244,2026-01-31,2021-07-08,IPG,Non,Non,http://www.challenges.fr
+EDITIONS CROQUE FUTUR,32503329800069,SAS,75,Service de presse en ligne,challenges.fr,Non Inscrit,Demande de renouvellement en cours,2590244,2026-01-31,2021-07-08,IPG,Non,Oui,http://www.challenges.fr
 A L'EST DE BREST-LITOVSK,89846687500025,ASSOCIATION,75,Service de presse en ligne,desk-russie.eu,Non Inscrit,Demande de renouvellement en cours,2595288,2026-05-31,2024-05-30,,Non,Non,http://www.desk-russie.eu
 MUNCHIES,82289384800058,"SAS, SOCIÉTÉ PAR ACTIONS SIMPLIFIÉE",44,Service de presse en ligne,Newsweed,Non Inscrit,Première demande en cours,,,,,Non,,https://www.newsweed.fr
 ERB MEDIA,49345117300030,SOCIÉTÉ À RESPONSABILITÉ LIMITÉE (SANS AUTRE INDICATION),35,Service de presse en ligne,Footmarseille.com,Non Inscrit,Première demande en cours,,,,,Non,,https://www.footmarseille.com/
 "LE CONTEMPORAIN, REVUE DES DEBATS POLITIQUES ET LITTERAIRES",99299159600014,ASSOCIATION DÉCLARÉE,78,Service de presse en ligne,lecontemporain.net,Non Inscrit,Première demande en cours,,,,,Non,,https://www.lecontemporain.net/?m=1
 MACHNIENWSKI CHRISTOPHER,88191869200032,ENTREPRENEUR INDIVIDUEL,59,Service de presse en ligne,La Cuisine de Terroir,Non Inscrit,Première demande en cours,,,,,Non,,www.lacuisinedeterroir.fr
-SOCIETE NOUVELLE COURRIER FRANCAIS,47220072400269,SAS,33,Service de presse en ligne,echo-ouest.fr,Inscrit,Demande de renouvellement en cours,2594689,2026-09-30,2021-09-16,IPG,Non,Non,http://www.echo-ouest.fr
+SOCIETE NOUVELLE COURRIER FRANCAIS,47220072400269,SAS,33,Service de presse en ligne,echo-ouest.fr,Inscrit,Demande de renouvellement en cours,2594689,2026-09-30,2021-09-16,IPG,Non,Oui,http://www.echo-ouest.fr
 MEDIALAND,82850092600013,SAS,06,Service de presse en ligne,actufoot.com,Non Inscrit,Demande de renouvellement en cours,2595268,2026-03-31,2024-03-14,,Non,Non,http://www.actufoot.com
 SOEURCIERES,91919599000016,"SAS, SOCIÉTÉ PAR ACTIONS SIMPLIFIÉE",75,Service de presse en ligne,on-suzane,Non Inscrit,Première demande en cours,,,,,Non,,https://www.on-suzane.co/onsuzane-dito
 FREEDOM VOICES NETWORK,83787059100034,ASSOCIATION,75,Service de presse en ligne,forbiddenstories.org,Inscrit,Demande de renouvellement en cours,2594578,2026-10-31,2024-10-09,DISPOSITIF_FISCAL_39_BIS_A,Non,Non,https://forbiddenstories.org
@@ -376,7 +376,7 @@ NUMERO PRESSE,41868005400024,SAS,75,Publication imprimée,NUMERO,Non Inscrit,Dem
 CENTRE POMPIDOU,18004602100028,,75,Publication imprimée,CAHIERS DU MUSEE NATIONAL D'ART MODERNE,Non Inscrit,Demande de renouvellement en cours,2508436,2025-07-31,2020-09-24,,Non,Non,
 FAITES LE ZERO,,SARL,75,Publication imprimée,STANDARD,Non Inscrit,Demande de renouvellement en cours,2583033,2018-05-24,2018-05-24,,Non,Non,
 ASSOCIATION DU ROSAIRE LANGUEDOC-ROUSSILLON,,,34,Publication imprimée,ROSAIRE Bulletin de Montpellier,Inscrit,Demande de renouvellement en cours,2586987,2029-12-31,2025-10-09,,Non,Non,
-LEXTENSO,,SA,92,Service de presse en ligne,actu-juridique.fr,Non Inscrit,,2593979,2026-07-31,2021-07-08,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,http://www.actu-juridique.fr
+LEXTENSO,,SA,92,Service de presse en ligne,actu-juridique.fr,Non Inscrit,,2593979,2026-07-31,2021-07-08,DISPOSITIF_FISCAL_39_BIS_B,Non,Oui,http://www.actu-juridique.fr
 DEPESCHE VERTRIEB GMBH,,,,Publication imprimée,TOP MODEL,Non Inscrit,,2594636,2026-07-31,2021-07-01,,Non,Non,
 UNION NATIONALE DES ASSOCIATIONS FRANCE- ALZHEIMER ET MALADIES APPARENTEES,,,75,Publication imprimée,ALZHEIMER INFOS,Non Inscrit,,2588560,2026-07-31,2021-05-20,,Oui,Non,
 SECTEUR PASTORAL LAFRANCAISE MOLIERES,,ASSOCIATION,82,Publication imprimée,POINTS DE VUE - Bulletin catholique du secteur pastoral Lafrançaise-Molières,Non Inscrit,,2585198,2026-07-31,2021-09-09,,Non,Non,
@@ -752,7 +752,7 @@ ORACOM,39752265700055,SA,75,Publication imprimée,CULTURE JEUX ANIMAUX,Non Inscr
 G+G MEDIA GROUPE,,SAS,75,Service de presse en ligne,a3dm-magazine.fr,Non Inscrit,,2594491,2026-03-31,2021-03-11,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,http://www.a3dm-magazine.fr
 LES EDITIONS DE L'INATTENDU,,EURL,21,Publication imprimée,L'INATTENDU - Bourgogne Franche Comté,Non Inscrit,,2594547,2026-04-30,2021-04-29,,Non,Non,
 SOLIDARITES INTERNATIONAL,,ASSOCIATION,92,Publication imprimée,AIDER PLUS LOIN - Journal des donateurs,Non Inscrit,,2587781,2025-09-30,2020-10-22,,Oui,Non,
-SEPAQ,,SARL,46,Service de presse en ligne,defensepaysannedulot.fr,Non Inscrit,,2594594,2026-05-31,,,Non,Non,http://www.defensepaysannedulot.fr
+SEPAQ,,SARL,46,Service de presse en ligne,defensepaysannedulot.fr,Non Inscrit,,2594594,2026-05-31,,,Non,Oui,http://www.defensepaysannedulot.fr
 MEDIAMANIA,,SARL,75,Publication imprimée,L'ECHO DES SAVANES,Non Inscrit,,2582485,2025-10-31,2021-09-29,,Non,Non,
 SUD EDUCATION CLERMONT-FERRAND,,,63,Publication imprimée,AZIMUTS - SUD EDUCATION CLERMONT-FERRAND,Non Inscrit,,2506036,2026-05-31,2021-04-29,,Oui,Non,
 LEXIS NEXIS,,SA,75,Publication imprimée,REVUE DES PROCEDURES COLLECTIVES CIVILES ET COMMERCIALES,Non Inscrit,,2586597,2026-06-30,2021-06-17,,Non,Non,
@@ -979,7 +979,7 @@ UDAF DE LA MANCHE,,ASSOCIATION,50,Publication imprimée,FAMILLES DE LA MANCHE,No
 EDITIONS DE MONTREUIL,79450415900011,SARL,93,Publication imprimée,HACK & CRACK,Non Inscrit,,2593424,2026-06-30,2024-06-20,,Non,Non,
 EDITIONS PREMIERES LOGES,,SARL,75,Publication imprimée,CLASSICA,Non Inscrit,,2578228,2025-11-30,2021-01-07,,Non,Non,
 JOURNAL LE SAINT-AFFRICAIN - JLSA,50896970600011,SARL,12,Service de presse en ligne,lesaintaffricain.fr,Non Inscrit,,2594448,2026-05-31,2024-05-30,,Non,Non,https://lesaintaffricain.fr/
-INF'AGRI 19,,SARL,19,Service de presse en ligne,union-paysanne.com,Non Inscrit,,2594492,2026-03-31,2021-09-16,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,http://www.union-paysanne.com
+INF'AGRI 19,,SARL,19,Service de presse en ligne,union-paysanne.com,Non Inscrit,,2594492,2026-03-31,2021-09-16,DISPOSITIF_FISCAL_39_BIS_B,Non,Oui,http://www.union-paysanne.com
 EDITIONS JEAN DE PORTAL,41508154100012,SARL,75,Publication imprimée,LES EMMERDEURS,Non Inscrit,,2589794,2026-02-28,2021-03-30,,Non,Non,
 ETABLISSEMENT PUBLIC DE LA REUNION DES MUSEES NATIONAUX ET DU GRAND PALAIS DES CHAMPS-ELYSEES,69204158500583,,75,Publication imprimée,LA REVUE DES MUSEES DE FRANCE - Revue du Louvre,Non Inscrit,,2587520,2026-01-31,2021-05-20,,Non,Non,
 CAFETECH,89961910000014,SASU,75,Service de presse en ligne,Cafétech - Newsletter,Non Inscrit,,2595292,2026-05-31,2024-05-30,,Non,Non,Cafetech - Newsletter
@@ -1041,7 +1041,7 @@ VERLAG W. SACHON GMBH + CO,,,,Publication imprimée,GETRÄNKE INDUSTRIE,Non Insc
 MUSEE DE LA RESISTANCE NATIONALE,,ASSOCIATION,94,Publication imprimée,NOTRE MUSEE,Non Inscrit,,2584717,2026-04-30,2021-05-20,,Non,Non,
 SISTERON JOURNAL,99277560100014,SAS,04,Publication imprimée,SISTERON JOURNAL - Val de Durance,Non Inscrit,,2587763,2026-05-31,2023-05-04,,Non,Non,
 ASSOCIATION TECHNIQUE ENERGIE ENVIRONNEMENT (ATEE),,,92,Publication imprimée,ENERGIE PLUS,Non Inscrit,,2583107,2026-05-31,2021-06-17,,Non,Non,
-GUADELOUPE PLUS,75088479300043,SARL,75,Service de presse en ligne,lecourrierdeguadeloupe.com,Non Inscrit,,2595296,2026-05-31,2025-05-22,IPG,Non,Non,https://lecourrierdeguadeloupe.com/
+GUADELOUPE PLUS,75088479300043,SARL,75,Service de presse en ligne,lecourrierdeguadeloupe.com,Non Inscrit,,2595296,2026-05-31,2025-05-22,IPG,Non,Oui,https://lecourrierdeguadeloupe.com/
 LES ECHOS,58207143700047,SAS,75,Publication imprimée,LES ECHOS,Non Inscrit,,2583015,2026-04-30,2021-04-15,CIBLAGE_POSTAL_D_19_2,Non,Non,
 DIVERTI EDITIONS,,SAS,86,Publication imprimée,FEEL GREEN,Non Inscrit,,2594301,2025-09-30,2020-09-03,,Non,Non,
 COUDEYRE PRESSE LOISIR,,SAS,30,Publication imprimée,"SANGLIER ET SES CHASSES - Connaissance, Chasse, Gestion",Non Inscrit,,2586538,2026-01-31,2021-01-07,,Non,Non,
@@ -1054,7 +1054,7 @@ LMEDIA,,SAS,75,Publication imprimée,green ID - entreprises et territoires,Non I
 DIVERTI EDITIONS,,SAS,86,Publication imprimée,OBJECTIF BIEN-ETRE,Non Inscrit,,2594421,2026-01-31,2021-01-07,,Non,Non,
 L'ABEILLE,30019739900011,SARL,88,Publication imprimée,"L'ABEILLE - Hebdomadaire régional d'information - Vosges, Meuse Haute-Marne",Non Inscrit,,2586982,2026-06-30,2025-06-26,CIBLAGE_POSTAL_D_19_2,Non,Non,
 EEIF,,ASSOCIATION,75,Publication imprimée,L ECLAIREUR - PENSEE JUIVE EN MOUVEMENT,Non Inscrit,,2593739,2025-09-30,2020-12-10,,Non,Non,
-LA TRIBUNE,30116942100114,SARL,26,Service de presse en ligne,lamaurienne.fr,Non Inscrit,,2593076,2026-05-31,,,Non,Non,http://www.lamaurienne.fr
+LA TRIBUNE,30116942100114,SARL,26,Service de presse en ligne,lamaurienne.fr,Non Inscrit,,2593076,2026-05-31,,,Non,Oui,http://www.lamaurienne.fr
 INTERNET PRESSE INFOS,43357862200089,SARL,10,Publication imprimée,JOURNAL DES CASINOS,Non Inscrit,,2584469,2026-03-31,2021-04-29,,Non,Non,
 WISSENSCHAFTLICHE BUCHGESELLSCHAFT,,,,Publication imprimée,ARCHAOLOGIE IN DEUTSCHLAND,Non Inscrit,,2593313,2026-02-28,2021-02-18,,Non,Non,
 PRODIGEO ASSURANCES,48201126900016,SA,75,Publication imprimée,LE FIL DES ANS - Edition régionale 1 - SUD OUEST,Non Inscrit,,2583733,2026-06-30,2021-10-07,,Non,Non,
@@ -24550,7 +24550,7 @@ WP COMPANY LLC,,SARL,20,Service de presse en ligne,washingtonpost.com,Inscrit,,2
 WITE NITE,,SAS,75,Service de presse en ligne,witenite.com,Non Inscrit,,2591103,2014-05-26,2014-05-26,,Non,Non,http://www.witenite.com
 ZEBULON,,SARL,06,Service de presse en ligne,zebulon.fr,Non Inscrit,,2592106,2017-03-02,2017-03-02,,Non,Non,http://www.zebulon.fr
 CULTURE MEDIA,,SAS,75,Service de presse en ligne,zoolemag.com,Non Inscrit,,2593668,2025-01-23,2025-01-23,,Non,Non,https://zoolemag.com
-COMPO ECHOS,,SARL,33,Service de presse en ligne,vie-economique.com,Inscrit,,2594373,2030-11-30,2025-10-30,,Non,Non,https://www.vie-economique.com
+COMPO ECHOS,,SARL,33,Service de presse en ligne,vie-economique.com,Inscrit,,2594373,2030-11-30,2025-10-30,,Non,Oui,https://www.vie-economique.com
 ASSOCIATION PISTES,,ASSOCIATION,75,Service de presse en ligne,vih.org,Non Inscrit,,2590309,2014-07-14,2014-07-14,,Non,Non,http://www.vih.org
 L'ACTEUR RURAL,,SARL,61,Service de presse en ligne,village.tm.fr,Non Inscrit,,2592476,2020-09-10,2020-09-10,,Non,Non,http://www.village.tm.fr
 VISIONARY MARKETING,,SAS,75,Service de presse en ligne,visionarymarketing.com,Non Inscrit,,2594209,2022-11-24,2022-11-24,,Non,Non,https://visionarymarketing.com
@@ -24602,7 +24602,7 @@ MAGWEB,,SARL,93,Service de presse en ligne,photo.fr,Non Inscrit,,2591836,2019-03
 PREMIERES LOGES,,SARL,75,Service de presse en ligne,pianiste.fr,Inscrit,,2594687,2026-09-30,2021-09-16,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,http://www.pianiste.fr
 POC MEDIA,,SASU,75,Service de presse en ligne,pocmedia.fr,Non Inscrit,,2594390,2023-05-11,2023-05-11,,Non,Non,http://www.pocmedia.fr
 OUTSIDE MEDIA,,SAS,74,Service de presse en ligne,outside.fr,Inscrit,,2594201,2031-06-30,2026-06-25,,Non,Non,http://www.outside.fr
-PARIS NORMANDIE,,SAS,76,Service de presse en ligne,paris-normandie.fr,Inscrit,,2590224,2031-06-30,2026-06-25,IPG,Non,Non,https://www.paris-normandie.fr/
+PARIS NORMANDIE,,SAS,76,Service de presse en ligne,paris-normandie.fr,Inscrit,,2590224,2031-06-30,2026-06-25,IPG,Non,Oui,https://www.paris-normandie.fr/
 PEOPLE ARE STRANGE,,,69,Service de presse en ligne,peoplearestrange.net/magazine,Non Inscrit,,2592167,2016-01-28,2016-01-28,,Non,Non,http://www.peoplearestrange.net/magazine
 OKEAPROD,,SAS,10,Service de presse en ligne,okeanews.fr,Non Inscrit,,2592050,2017-03-02,2017-03-02,,Non,Non,http://www.okeanews.fr
 LYRIC MEDIA,,SAS,75,Service de presse en ligne,opera-magazine.com,Non Inscrit,,2594646,2026-03-26,2026-03-26,,Non,Non,http://www.opera-magazine.com
@@ -24678,7 +24678,7 @@ JOBSFERIC,,SAS,75,Service de presse en ligne,jobsferic.fr,Non Inscrit,,2593878,2
 JOL PRESS,,SNC,75,Service de presse en ligne,jolpress.com,Non Inscrit,,2592236,2017-03-02,2017-03-02,,Non,Non,http://www.jolpress.com
 SOCIAL RH PUBLICATIONS,,SAS,75,Service de presse en ligne,info-socialrh.com,Non Inscrit,,2594162,2025-07-03,2025-07-03,,Non,Non,http://www.info-socialrh.com
 INDÉLOIRE,,SAS,37,Service de presse en ligne,info-tours.fr,Non Inscrit,,2594195,2022-11-24,2022-11-24,,Non,Non,http://www.info-tours.fr
-INFORMATEUR JUDICIAIRE,,SAS,44,Service de presse en ligne,informateurjudiciaire.fr,Inscrit,,2594379,2030-11-30,2025-10-30,,Non,Non,http://www.informateurjudiciaire.fr
+INFORMATEUR JUDICIAIRE,,SAS,44,Service de presse en ligne,informateurjudiciaire.fr,Inscrit,,2594379,2030-11-30,2025-10-30,,Non,Oui,http://www.informateurjudiciaire.fr
 WOMAN2THETOP,,SAS,75,Service de presse en ligne,informelles.media,Non Inscrit,,2594652,2024-01-25,2024-01-25,,Non,Non,http://www.informelles.media
 FAST MEDIAS,,SAS,75,Service de presse en ligne,ideolog.fr,Non Inscrit,,2591030,2014-05-26,2014-05-26,,Non,Non,http://www.ideolog.fr
 INTERNATIONAL HERALD TRIBUNE,,SAS,92,Service de presse en ligne,iht.com,Non Inscrit,,2592232,2019-09-19,2019-09-19,,Non,Non,http://www.iht.com
@@ -24723,7 +24723,7 @@ CHARLES PHILIPPE PRESSE,,SARL,92,Service de presse en ligne,enduromag.fr,Non Ins
 DIESESPORT,,SARL,93,Service de presse en ligne,diesefoot.fr,Non Inscrit,,2592317,2017-03-02,2017-03-02,,Non,Non,http://diesefoot.fr
 GATE EDITIONS,,SAS,92,Service de presse en ligne,docseniors.com,Non Inscrit,,2592647,2018-03-08,2018-03-08,,Non,Non,http://docseniors.com
 EASYTRIBU,,SARL,33,Service de presse en ligne,easytribu.com,Non Inscrit,,2592644,2017-03-02,2017-03-02,,Non,Non,http://www.easytribu.com
-L'ECHO DU BERRY,,SAS,36,Service de presse en ligne,echoduberry.fr,Inscrit,,2594245,2030-07-31,2025-07-03,IPG,Non,Non,http://www.echoduberry.fr
+L'ECHO DU BERRY,,SAS,36,Service de presse en ligne,echoduberry.fr,Inscrit,,2594245,2030-07-31,2025-07-03,IPG,Non,Oui,http://www.echoduberry.fr
 MEDIA IMPACT,,SARL,13,Service de presse en ligne,editionarabediplo.com,Non Inscrit,,2594093,2022-05-25,2022-05-25,,Non,Non,https://www.editionarabediplo.com/
 PARRESIA,,SAS,92,Service de presse en ligne,edp-audio.fr,Non Inscrit,,2591554,2025-01-23,2025-01-23,,Non,Non,https://www.edp-audio.fr/
 DEMAIN-VENDÉE,,ASSOCIATION,85,Service de presse en ligne,demain-vendee.fr,Non Inscrit,,2594356,2023-01-19,2023-01-19,,Non,Non,https://demain-vendee.fr
@@ -24761,7 +24761,7 @@ ABP MEDIA,,SARL,29,Service de presse en ligne,bigouden.tv,Non Inscrit,,2591370,2
 BLUE RIDE,,SARL,93,Service de presse en ligne,bikelive.com,Non Inscrit,,2592794,2021-03-11,2021-03-11,,Non,Non,http://www.bikelive.com
 EDP SANTE,,SARL,91,Service de presse en ligne,biologiste-infos.eu,Non Inscrit,,2591555,2019-03-14,2019-03-14,,Non,Non,http://www.biologiste-infos.eu
 EDITIONS AVANTCHŒUR,,SASU,92,Service de presse en ligne,avantchoeur.com,Non Inscrit,,2592799,2019-03-14,2019-03-14,,Non,Non,http://www.avantchoeur.com
-SOCIETE D'EDITION ET DE PUBLICATION AGRICOLES DU DEPARTEMENT DE L'ARDECHE,,SARL,07,Service de presse en ligne,avenir-agricole-ardeche.fr,Inscrit,,2595063,2028-01-31,2023-01-19,,Non,Non,http://www.avenir-agricole-ardeche.fr
+SOCIETE D'EDITION ET DE PUBLICATION AGRICOLES DU DEPARTEMENT DE L'ARDECHE,,SARL,07,Service de presse en ligne,avenir-agricole-ardeche.fr,Inscrit,,2595063,2028-01-31,2023-01-19,,Non,Oui,http://www.avenir-agricole-ardeche.fr
 A VIVRE EDITIONS,,SARL,75,Service de presse en ligne,avivremagazine.fr,Non Inscrit,,2592158,2019-07-04,2019-07-04,,Non,Non,http://www.avivremagazine.fr
 SOCIETE AXONAISE DE PRESSE,,SAS,02,Service de presse en ligne,axonais.fr,Non Inscrit,,2594102,2023-09-28,2023-09-28,,Non,Non,http://axonais.fr/
 COMST,,SAS,75,Service de presse en ligne,b@ti-com - NewsLetter,Non Inscrit,,2592642,2022-11-24,2022-11-24,,Non,Non,b@ti-com - NewsLetter
@@ -24771,7 +24771,7 @@ ATABULA,,SASU,75,Service de presse en ligne,atabula.com,Non Inscrit,,2594369,202
 REMI LEBRERE,,MICRO-ENTREPRENEUR,11,Service de presse en ligne,audefaitsdivers.fr,Non Inscrit,,2592603,2017-03-02,2017-03-02,,Non,Non,http://www.audefaitsdivers.fr
 PUBLIMEN,,SARL,75,Service de presse en ligne,autonews.fr,Non Inscrit,,2590104,2017-03-02,2017-03-02,,Non,Non,http://www.autonews.fr
 EDITIONS VB,,SA,78,Service de presse en ligne,autopresse.fr,Non Inscrit,,2592161,2019-07-04,2019-07-04,,Non,Non,http://www.autopresse.fr
-COMPO ECHOS,,SARL,33,Service de presse en ligne,annonces-landaises.com,Inscrit,,2594372,2030-11-30,2025-10-30,,Non,Non,http://www.annonces-landaises.com
+COMPO ECHOS,,SARL,33,Service de presse en ligne,annonces-landaises.com,Inscrit,,2594372,2030-11-30,2025-10-30,,Non,Oui,http://www.annonces-landaises.com
 AGRI TERROIR COMMUNICATION,,SA,57,Service de presse en ligne,arboriculture-fruitiere.com,Non Inscrit,,2592629,2024-05-30,2024-05-30,,Non,Non,http://www.arboriculture-fruitiere.com
 ET ASSOCIES,,SARL,75,Service de presse en ligne,artdmagazine.com,Non Inscrit,,2591517,2015-01-29,2015-01-29,,Non,Non,http://www.artdmagazine.com
 A&F MARKETS,,SARL,75,Service de presse en ligne,artmediaagency.com,Non Inscrit,,2592159,2017-03-02,2017-03-02,,Non,Non,http://www.artmediaagency.com
@@ -24794,21 +24794,21 @@ RMC SPORT,,SA,75,Service de presse en ligne,App' sport,Non Inscrit,,2591354,2014
 CASDEN BANQUE POPULAIRE,78427577802426,SCOP,77,Service de presse en ligne,vousnousils.fr,Inscrit,,2591299,2031-05-31,2026-05-28,,Non,Non,http://www.vousnousils.fr
 INDÉLOIRE,,SAS,37,Service de presse en ligne,37degres-mag.fr,Non Inscrit,,2594194,2022-11-24,2022-11-24,,Non,Non,http://www.37degres-mag.fr
 CAPITAL ACTIVE MEDIAS,,SARL,25,Service de presse en ligne,772424.fr,Non Inscrit,,2591887,2016-01-28,2016-01-28,,Non,Non,http://www.772424.fr
-7 JOURS LES PETITES AFFICHES DE BRETAGNE,,SAS,35,Service de presse en ligne,7jours.fr,Inscrit,,2594368,2030-11-30,2025-10-30,,Non,Non,http://www.7jours.fr
-SOCIETE DU JOURNAL L'UNION,33568067400629,SA,51,Service de presse en ligne,lunion.fr,Inscrit,,2590242,2030-01-31,2025-03-27,IPG,Non,Non,https://www.lunion.fr
-NOUVELLE REPUBLIQUE DU CENTRE OUEST,58480012200676,SA,37,Service de presse en ligne,lanouvellerepublique.fr,Inscrit,,2590223,2030-01-31,2025-01-23,IPG,Non,Non,http://www.lanouvellerepublique.fr
-GROUPE PROGRES,32126368300823,SA,69,Service de presse en ligne,leprogres.fr,Inscrit,,2591558,2027-10-31,2022-09-15,IPG,Non,Non,http://www.leprogres.fr
+7 JOURS LES PETITES AFFICHES DE BRETAGNE,,SAS,35,Service de presse en ligne,7jours.fr,Inscrit,,2594368,2030-11-30,2025-10-30,,Non,Oui,http://www.7jours.fr
+SOCIETE DU JOURNAL L'UNION,33568067400629,SA,51,Service de presse en ligne,lunion.fr,Inscrit,,2590242,2030-01-31,2025-03-27,IPG,Non,Oui,https://www.lunion.fr
+NOUVELLE REPUBLIQUE DU CENTRE OUEST,58480012200676,SA,37,Service de presse en ligne,lanouvellerepublique.fr,Inscrit,,2590223,2030-01-31,2025-01-23,IPG,Non,Oui,http://www.lanouvellerepublique.fr
+GROUPE PROGRES,32126368300823,SA,69,Service de presse en ligne,leprogres.fr,Inscrit,,2591558,2027-10-31,2022-09-15,IPG,Non,Oui,http://www.leprogres.fr
 BERGER-LEVRAULT,75580064600373,SA,92,Service de presse en ligne,horizonspublics.fr,Inscrit,,2594370,2030-11-30,2025-11-27,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,http://www.horizonspublics.fr
-LA PROVENCE,05680681300467,SA,13,Service de presse en ligne,laprovence.com,Inscrit,,2590334,2031-06-30,2026-06-25,IPG,Non,Non,http://www.laprovence.com
-LA MONTAGNE,85620015900510,SA,63,Service de presse en ligne,lamontagne.fr,Inscrit,,2590574,2030-09-30,2025-09-25,IPG,Non,Non,http://www.lamontagne.fr
-SOCIETE ANONYME DE PRESSE ET D'EDITION DU SUD OUEST (SAPESO),45620494000542,SA,33,Service de presse en ligne,sudouest.fr,Inscrit,,2590248,2030-02-28,2025-01-23,IPG,Non,Non,http://www.sudouest.fr
+LA PROVENCE,05680681300467,SA,13,Service de presse en ligne,laprovence.com,Inscrit,,2590334,2031-06-30,2026-06-25,IPG,Non,Oui,http://www.laprovence.com
+LA MONTAGNE,85620015900510,SA,63,Service de presse en ligne,lamontagne.fr,Inscrit,,2590574,2030-09-30,2025-09-25,IPG,Non,Oui,http://www.lamontagne.fr
+SOCIETE ANONYME DE PRESSE ET D'EDITION DU SUD OUEST (SAPESO),45620494000542,SA,33,Service de presse en ligne,sudouest.fr,Inscrit,,2590248,2030-02-28,2025-01-23,IPG,Non,Oui,http://www.sudouest.fr
 ASSOCIATION SOS JEUNESSE,77568550600583,ASSOCIATION,75,Service de presse en ligne,respectmag.com,Non Inscrit,,2591323,2019-03-14,2019-03-14,,Non,Non,http://www.respectmag.com
 ASSOCIATION SOS JEUNESSE,77568550600583,ASSOCIATION,75,Service de presse en ligne,up-inspirer.fr,Non Inscrit,,2592793,2021-03-11,2021-03-11,,Non,Non,http://www.up-inspirer.fr
 LE DAUPHINE LIBERE,05750274200364,SA,38,Service de presse en ligne,avignews.com,Non Inscrit,,2590257,2016-01-28,2016-01-28,,Non,Non,http://www.avignews.com
 LE DAUPHINE LIBERE,05750274200364,SA,38,Service de presse en ligne,grenews.com,Non Inscrit,,2590258,2016-01-28,2016-01-28,,Non,Non,http://www.grenews.com
-LE DAUPHINE LIBERE,05750274200364,SA,38,Service de presse en ligne,ledauphine.com,Inscrit,,2590259,2031-05-31,2026-05-28,IPG,Non,Non,http://www.ledauphine.com
+LE DAUPHINE LIBERE,05750274200364,SA,38,Service de presse en ligne,ledauphine.com,Inscrit,,2590259,2031-05-31,2026-05-28,IPG,Non,Oui,http://www.ledauphine.com
 LE DAUPHINE LIBERE,05750274200364,SA,38,Service de presse en ligne,skichrono.com,Non Inscrit,,2590260,2016-01-28,2016-01-28,,Non,Non,http://www.skichrono.com
-GROUPE LA DEPECHE DU MIDI,57080454200365,SA,31,Service de presse en ligne,ladepeche.fr,Inscrit,,2592265,2029-03-31,2024-05-30,IPG,Non,Non,http://www.ladepeche.fr
+GROUPE LA DEPECHE DU MIDI,57080454200365,SA,31,Service de presse en ligne,ladepeche.fr,Inscrit,,2592265,2029-03-31,2024-05-30,IPG,Non,Oui,http://www.ladepeche.fr
 L'INDEPENDANT DU MIDI,57420141400319,SA,66,Service de presse en ligne,lindependant.fr,Inscrit,,2590471,2030-05-31,2025-05-22,IPG,Non,Non,https://www.lindependant.fr
 IMPRIMERIE DU MESSAGER,79558003400333,SA,74,Service de presse en ligne,lasavoie.lemessager.fr,Non Inscrit,,2594146,2025-01-23,2025-01-23,,Non,Non,https://lasavoie.lemessager.fr
 IMPRIMERIE DU MESSAGER,79558003400333,SA,74,Service de presse en ligne,latribunerepublicaine.fr,Non Inscrit,,2594147,2025-03-27,2025-03-27,,Non,Non,https://www.latribunerepublicaine.fr/
@@ -24816,12 +24816,12 @@ IMPRIMERIE DU MESSAGER,79558003400333,SA,74,Service de presse en ligne,lemessage
 IMPRIMERIE DU MESSAGER,79558003400333,SA,74,Service de presse en ligne,lepaysgessien.lemessager.fr,Non Inscrit,,2594149,2025-01-23,2025-01-23,,Non,Non,https://lepaysgessien.lemessager.fr
 IMPRIMERIE DU MESSAGER,79558003400333,SA,74,Service de presse en ligne,lessorsavoyard.lemessager.fr,Non Inscrit,,2594150,2025-01-23,2025-01-23,,Non,Non,https://lessorsavoyard.lemessager.fr
 MANCHE ATLANTIQUE PRESSE,42408109900246,SAS,44,Service de presse en ligne,"lfie, la lettre du financement des entreprises - Newsletter",Non Inscrit,,2593331,2019-01-24,2019-01-24,,Non,Non,"lfie, la lettre du financement des entreprises - Newsletter"
-SOCIETE NOUVELLE COURRIER FRANCAIS,47220072400269,SAS,33,Service de presse en ligne,courrier-francais.com,Inscrit,,2594031,2029-09-30,2024-10-03,IPG,Non,Non,https://www.courrier-francais.com/
-SOCIETE NOUVELLE COURRIER FRANCAIS,47220072400269,SAS,33,Service de presse en ligne,courrierdegironde.fr,Inscrit,,2594030,2029-09-30,2024-10-03,IPG,Non,Non,https://www.courrierdegironde.fr
-GROUPE MONITEUR,40308082300244,SAS,94,Service de presse en ligne,lemoniteur.fr,Inscrit,,2590261,2030-02-28,2025-03-27,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,http://www.lemoniteur.fr
+SOCIETE NOUVELLE COURRIER FRANCAIS,47220072400269,SAS,33,Service de presse en ligne,courrier-francais.com,Inscrit,,2594031,2029-09-30,2024-10-03,IPG,Non,Oui,https://www.courrier-francais.com/
+SOCIETE NOUVELLE COURRIER FRANCAIS,47220072400269,SAS,33,Service de presse en ligne,courrierdegironde.fr,Inscrit,,2594030,2029-09-30,2024-10-03,IPG,Non,Oui,https://www.courrierdegironde.fr
+GROUPE MONITEUR,40308082300244,SAS,94,Service de presse en ligne,lemoniteur.fr,Inscrit,,2590261,2030-02-28,2025-03-27,DISPOSITIF_FISCAL_39_BIS_B,Non,Oui,http://www.lemoniteur.fr
 GROUPE MONITEUR,40308082300244,SAS,94,Service de presse en ligne,lemoniteurmateriels.fr,Inscrit,,2594854,2029-03-31,2024-03-14,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,http://www.lemoniteurmateriels.fr
 GROUPE MONITEUR,40308082300244,SAS,94,Service de presse en ligne,lettreducadre.fr,Inscrit,,2591663,2028-01-31,2024-06-27,DISPOSITIF_FISCAL_39_BIS_A,Non,Non,http://www.lettreducadre.fr
-MANCHE ATLANTIQUE PRESSE,42408109900246,SAS,44,Service de presse en ligne,lejournaldesentreprises.com,Inscrit,,2592430,2029-09-30,2025-09-25,DISPOSITIF_FISCAL_39_BIS_A,Non,Non,http://www.lejournaldesentreprises.com
+MANCHE ATLANTIQUE PRESSE,42408109900246,SAS,44,Service de presse en ligne,lejournaldesentreprises.com,Inscrit,,2592430,2029-09-30,2025-09-25,DISPOSITIF_FISCAL_39_BIS_A,Non,Oui,http://www.lejournaldesentreprises.com
 GROUPE MONITEUR,40308082300244,SAS,94,Service de presse en ligne,associationmodeemploi.fr,Inscrit,,2591662,2028-03-31,2024-06-27,DISPOSITIF_FISCAL_39_BIS_A,Non,Non,https://www.associationmodeemploi.fr
 GROUPE MONITEUR,40308082300244,SAS,94,Service de presse en ligne,cahiers-techniques-batiment.fr,Inscrit,,2594852,2027-03-31,2022-05-25,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,http://www.cahiers-techniques-batiment.fr
 GROUPE MONITEUR,40308082300244,SAS,94,Service de presse en ligne,courrierdesmaires.fr,Inscrit,,2591404,2027-06-30,2022-05-25,DISPOSITIF_FISCAL_39_BIS_A,Non,Non,http://www.courrierdesmaires.fr
@@ -24829,7 +24829,7 @@ GROUPE MONITEUR,40308082300244,SAS,94,Service de presse en ligne,enerpresse.com,
 GROUPE MONITEUR,40308082300244,SAS,94,Service de presse en ligne,lagazettedescommunes.com,Inscrit,,2591180,2026-10-31,2021-11-25,DISPOSITIF_FISCAL_39_BIS_A,Non,Non,http://www.lagazettedescommunes.com
 GROUPE LA CENTRALE,31877162300200,SASU,75,Service de presse en ligne,caradisiac.com,Inscrit,,2591224,2027-09-30,2025-09-25,,Non,Non,http://www.caradisiac.com
 REPUBLIQUE DU CENTRE,08588003700206,SAPO,45,Service de presse en ligne,larep.fr,Inscrit,,2591667,2028-01-31,2023-01-19,IPG,Non,Non,https://www.larep.fr
-L'YONNE REPUBLICAINE,42552037600228,SA,89,Service de presse en ligne,lyonne.fr,Inscrit,,2590578,2030-09-30,2025-09-25,IPG,Non,Non,http://www.lyonne.fr
+L'YONNE REPUBLICAINE,42552037600228,SA,89,Service de presse en ligne,lyonne.fr,Inscrit,,2590578,2030-09-30,2025-09-25,IPG,Non,Oui,http://www.lyonne.fr
 CONNECTION,32822346600231,SAS,93,Service de presse en ligne,komitid.fr,Non Inscrit,,2593836,2026-06-25,2026-06-25,,Non,Non,http://www.komitid.fr
 GROUPE MONITEUR,40308082300244,SAS,94,Service de presse en ligne,amc-archi.com,Inscrit,,2592590,2030-01-31,2025-03-27,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,https://www.amc-archi.com/
 SOCIETE DU JOURNAL MIDI LIBRE,45680115800191,SA,34,Service de presse en ligne,midilibre.fr,Inscrit,,2590371,2030-04-30,2025-05-22,IPG,Non,Non,http://www.midilibre.fr
@@ -24851,7 +24851,7 @@ GROUPE EXPRESS,55201868100171,SA,75,Service de presse en ligne,votreargent.lexpr
 SOCIETE ALSACIENNE DE PUBLICATIONS,94575073500173,SAS,68,Service de presse en ligne,lalsace.fr,Inscrit,,2591659,2028-01-31,2023-01-19,IPG,Non,Non,http://www.lalsace.fr
 SOCIETE ALSACIENNE DE PUBLICATIONS,94575073500173,SAS,68,Service de presse en ligne,lepays.fr,Non Inscrit,,2591660,2019-03-14,2019-03-14,,Non,Non,http://www.lepays.fr
 EDITIONS TECHNIQUES POUR L'AUTOMOBILE ET L'INDUSTRIE (ETAI),80642036000174,SAS,92,Service de presse en ligne,auto-infos.fr,Inscrit,,2590120,2029-11-30,2025-01-23,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,https://www.auto-infos.fr
-CENTRE FRANCE HEBDOS,85620030800166,SAS,63,Service de presse en ligne,le-pays.fr,Inscrit,,2594139,2030-01-31,2025-01-23,IPG,Non,Non,https://www.le-pays.fr
+CENTRE FRANCE HEBDOS,85620030800166,SAS,63,Service de presse en ligne,le-pays.fr,Inscrit,,2594139,2030-01-31,2025-01-23,IPG,Non,Oui,https://www.le-pays.fr
 DOCTISSIMO,56201352400169,SAS,92,Service de presse en ligne,doctissimo.fr,Inscrit,,2594874,2028-03-31,2023-05-11,,Non,Non,http://www.doctissimo.fr
 EDITIONS DALLOZ,57219555000171,SAS,92,Service de presse en ligne,actu.dalloz-etudiant.fr,Inscrit,,2591226,2027-01-31,2022-01-20,,Non,Non,http://actu.dalloz-etudiant.fr
 EDITIONS DALLOZ,57219555000171,SAS,92,Service de presse en ligne,dalloz-actualite.fr,Inscrit,,2590213,2030-01-31,2025-05-22,,Non,Non,http://www.dalloz-actualite.fr
@@ -24904,7 +24904,7 @@ BAYARD,54204248600119,SA,92,Service de presse en ligne,vosquestionsdeparents.fr,
 REWORLD MEDIA MAGAZINES,45279126200127,SAS,92,Service de presse en ligne,bibamagazine.fr,Inscrit,,2594861,2027-03-31,2022-03-10,,Non,Non,http://www.bibamagazine.fr
 BAYARD,54204248600119,SA,92,Service de presse en ligne,App' I love english news,Inscrit,,2595439,2030-05-31,2025-05-22,,Non,Non,App' I love english news
 BAYARD,54204248600119,SA,92,Service de presse en ligne,croire.com,Non Inscrit,,2592315,2019-11-14,2019-11-14,,Non,Non,http://www.croire.com
-BAYARD,54204248600119,SA,92,Service de presse en ligne,la-croix.com,Inscrit,,2590210,2030-01-31,2025-01-23,IPG,Non,Non,http://www.la-croix.com
+BAYARD,54204248600119,SA,92,Service de presse en ligne,la-croix.com,Inscrit,,2590210,2030-01-31,2025-01-23,IPG,Non,Oui,http://www.la-croix.com
 BAYARD,54204248600119,SA,92,Service de presse en ligne,lepelerin.com,Inscrit,,2590211,2026-09-30,2024-11-28,IPG,Non,Non,http://www.lepelerin.com
 BAYARD,54204248600119,SA,92,Service de presse en ligne,notretemps.com,Inscrit,,2590127,2029-12-31,2025-01-23,DISPOSITIF_FISCAL_39_BIS_A,Non,Non,http://www.notretemps.com
 MARIE CLAIRE ALBUM,55206277000110,SAS,92,Service de presse en ligne,magicmaman.com,Inscrit,,2594826,2029-02-28,2025-03-27,,Non,Non,http://www.magicmaman.com
@@ -24912,7 +24912,7 @@ MARIE CLAIRE ALBUM,55206277000110,SAS,92,Service de presse en ligne,marieclaire.
 LA TRIBUNE,30116942100114,SARL,26,Service de presse en ligne,e-tribune.fr,Inscrit,,2594382,2030-11-30,2025-11-27,IPG,Non,Non,http://www.e-tribune.fr
 INSTITUT DE SOUDURE,78475641300117,ASSOCIATION,93,Service de presse en ligne,soudage-et-techniques-connexes.fr,Inscrit,,2595316,2029-06-30,2024-06-27,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,http://www.soudage-et-techniques-connexes.fr
 PGV MAISON,34517440300104,SAS,75,Service de presse en ligne,systemed.fr,Non Inscrit,,2590927,2022-11-24,2022-11-24,,Non,Non,http://www.systemed.fr
-LE BERRY REPUBLICAIN,32362235700107,SAS,18,Service de presse en ligne,leberry.fr,Inscrit,,2590577,2030-09-30,2025-09-25,IPG,Non,Non,http://www.leberry.fr
+LE BERRY REPUBLICAIN,32362235700107,SAS,18,Service de presse en ligne,leberry.fr,Inscrit,,2590577,2030-09-30,2025-09-25,IPG,Non,Oui,http://www.leberry.fr
 ECHO COMMUNICATION,80592044400108,SA,28,Service de presse en ligne,lechorepublicain.fr,Inscrit,,2591655,2028-01-31,2023-01-19,IPG,Non,Non,https://www.lechorepublicain.fr
 MARIE CLAIRE ALBUM,55206277000110,SAS,92,Service de presse en ligne,cosmopolitan.fr,Inscrit,,2594757,2026-11-30,2021-11-25,,Non,Non,http://www.cosmopolitan.fr
 MARIE CLAIRE ALBUM,55206277000110,SAS,92,Service de presse en ligne,magazine-avantages.fr,Inscrit,,2595421,2030-03-31,2025-03-27,,Non,Non,http://www.magazine-avantages.fr
@@ -24926,7 +24926,7 @@ PRISMA MEDIA,31882618700102,SAS,92,Service de presse en ligne,caminteresse.fr,In
 PRISMA MEDIA,31882618700102,SAS,92,Service de presse en ligne,capital.fr,Inscrit,,2590495,2030-02-28,2025-03-27,IPG,Non,Non,http://www.capital.fr
 PRISMA MEDIA,31882618700102,SAS,92,Service de presse en ligne,femmeactuelle.fr,Inscrit,,2590266,2030-02-28,2025-03-27,,Non,Non,http://www.femmeactuelle.fr
 PRISMA MEDIA,31882618700102,SAS,92,Service de presse en ligne,geo.fr,Inscrit,,2590268,2031-01-31,2026-01-22,IPG,Non,Non,https://www.geo.fr/
-L'EST ECLAIR,41287958700100,SAS,10,Service de presse en ligne,lest-eclair.fr,Inscrit,,2590288,2027-01-31,2025-01-23,IPG,Non,Non,http://www.lest-eclair.fr
+L'EST ECLAIR,41287958700100,SAS,10,Service de presse en ligne,lest-eclair.fr,Inscrit,,2590288,2027-01-31,2025-01-23,IPG,Non,Oui,http://www.lest-eclair.fr
 L'EST ECLAIR,41287958700100,SAS,10,Service de presse en ligne,liberation-champagne.fr,Inscrit,,2594859,2027-03-31,2022-03-10,IPG,Non,Non,http://www.liberation-champagne.fr
 PRISMA MEDIA,31882618700102,SAS,92,Service de presse en ligne,21 millions - Newsletter,Non Inscrit,,2595149,2025-09-25,2025-09-25,,Non,Non,21 millions - Newsletter
 PRISMA MEDIA,31882618700102,SAS,92,Service de presse en ligne,Momentum - Newsletter,Inscrit,,2595150,2030-06-30,2025-07-03,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,Momentum - Newsletter
@@ -24934,9 +24934,9 @@ PRISMA MEDIA,31882618700102,SAS,92,Service de presse en ligne,Trackers - Newslet
 EDITIALIS,73203070500097,SASU,92,Service de presse en ligne,relationclientmag.fr,Inscrit,,2590477,2031-01-31,2026-01-22,,Non,Non,https://www.relationclientmag.fr/
 UNIQUE HERITAGE PRESSE,33841246300097,SAS,75,Service de presse en ligne,reponseatout.com,Non Inscrit,,2591557,2019-03-14,2019-03-14,,Non,Non,http://www.reponseatout.com
 GROUPE PSYCHOLOGIES,32692952800098,SASU,75,Service de presse en ligne,psychologies.com,Inscrit,,2590929,2026-11-30,2021-09-16,,Non,Non,http://www.psychologies.com
-S.E.P.L,39010050100100,SARL,33,Service de presse en ligne,hautegironde.fr,Inscrit,,2594026,2029-09-30,2024-10-03,IPG,Non,Non,http://www.hautegironde.fr
+S.E.P.L,39010050100100,SARL,33,Service de presse en ligne,hautegironde.fr,Inscrit,,2594026,2029-09-30,2024-10-03,IPG,Non,Oui,http://www.hautegironde.fr
 S.E.P.L,39010050100100,SARL,33,Service de presse en ligne,ladepechedubassin.fr,Inscrit,,2594027,2029-09-30,2024-10-03,IPG,Non,Non,http://www.ladepechedubassin.fr
-S.E.P.L,39010050100100,SARL,33,Service de presse en ligne,leresistant.fr,Inscrit,,2594028,2029-09-30,2024-10-03,IPG,Non,Non,https://www.leresistant.fr/
+S.E.P.L,39010050100100,SARL,33,Service de presse en ligne,leresistant.fr,Inscrit,,2594028,2029-09-30,2024-10-03,IPG,Non,Oui,https://www.leresistant.fr/
 CCM BENCHMARK GROUP,51208563000097,SAS,75,Service de presse en ligne,journaldesfemmes.fr,Inscrit,,2595332,2026-10-31,2024-10-03,,Non,Non,http://www.journaldesfemmes.fr
 CCM BENCHMARK GROUP,51208563000097,SAS,75,Service de presse en ligne,journaldunet.com,Inscrit,,2595333,2026-10-31,2024-10-03,IPG,Non,Non,http://www.journaldunet.com
 UNIQUE HERITAGE PRESSE,33841246300097,SAS,75,Service de presse en ligne,lemondedesados.fr,Inscrit,,2594697,2028-09-30,2023-09-28,IPG,Non,Non,http://www.lemondedesados.fr
@@ -24961,17 +24961,17 @@ SOCIETE D'EDITION DE LA PRESSE REGIONALE,57080166200091,SA,31,Service de presse 
 INTERNET PRESSE INFOS,43357862200089,SARL,10,Service de presse en ligne,journaldescasinos.com,Inscrit,,2594493,2031-05-31,2026-05-28,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,http://www.journaldescasinos.com
 COURRIER INTERNATIONAL,34476186100089,SA,75,Service de presse en ligne,ulyssemag.com,Non Inscrit,,2590209,2013-07-14,2013-07-14,,Non,Non,http://www.ulyssemag.com
 VISION PLURIELLE,39462397900090,SAS,75,Service de presse en ligne,acuite.fr,Inscrit,,2592669,2027-03-31,2022-05-25,,Non,Non,http://www.acuite.fr
-LE POPULAIRE DU CENTRE,75750035000090,SA,87,Service de presse en ligne,lepopulaire.fr,Inscrit,,2590575,2030-09-30,2025-09-25,IPG,Non,Non,http://www.lepopulaire.fr
+LE POPULAIRE DU CENTRE,75750035000090,SA,87,Service de presse en ligne,lepopulaire.fr,Inscrit,,2590575,2030-09-30,2025-09-25,IPG,Non,Oui,http://www.lepopulaire.fr
 EDITIONS REWORLD AXEL SPRINGER,34786306000088,SNC,92,Service de presse en ligne,autoplus.fr,Inscrit,,2591751,2028-03-31,2023-05-11,,Non,Non,http://www.autoplus.fr
 AGENCE D'EDITION MEDICALE (AEI),34982984600089,SARL,75,Service de presse en ligne,arv-trials.com,Non Inscrit,,2593318,2022-03-10,2022-03-10,,Non,Non,http://www.arv-trials.com
 COURRIER INTERNATIONAL,34476186100089,SA,75,Service de presse en ligne,courrierinternational.com,Inscrit,,2590079,2029-12-31,2025-01-23,IPG,Non,Non,http://www.courrierinternational.com
 AGENCE D'EDITION MEDICALE (AEI),34982984600089,SARL,75,Service de presse en ligne,hepatonews.com,Inscrit,,2592312,2027-07-31,2022-05-25,,Non,Non,http://www.hepatonews.com
 AGEFI,33476865200086,SAS,75,Service de presse en ligne,thefinancialnewswire.fr,Non Inscrit,,2594007,2022-03-10,2022-03-10,,Non,Non,http://www.thefinancialnewswire.fr
 IPD,49072763300086,SAS,94,Service de presse en ligne,usine-digitale.fr,Inscrit,,2592803,2027-09-30,2022-11-24,DISPOSITIF_FISCAL_39_BIS_A,Non,Non,https://www.usine-digitale.fr
-IPD,49072763300086,SAS,94,Service de presse en ligne,usinenouvelle.com,Inscrit,,2590091,2026-12-31,2022-01-20,DISPOSITIF_FISCAL_39_BIS_A,Non,Non,http://www.usinenouvelle.com
+IPD,49072763300086,SAS,94,Service de presse en ligne,usinenouvelle.com,Inscrit,,2590091,2026-12-31,2022-01-20,DISPOSITIF_FISCAL_39_BIS_A,Non,Oui,http://www.usinenouvelle.com
 LEXBASE,41804021800087,SA,75,Service de presse en ligne,lexbase.fr,Inscrit,,2592651,2027-03-31,2022-03-10,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,http://www.lexbase.fr
 EDITIONS REWORLD AXEL SPRINGER,34786306000088,SNC,92,Service de presse en ligne,autojournal.fr,Inscrit,,2595081,2028-03-31,2023-03-09,,Non,Non,http://www.autojournal.fr
-IPD,49072763300086,SAS,94,Service de presse en ligne,lsa-conso.fr,Inscrit,,2590089,2029-10-31,2024-10-03,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,http://www.lsa-conso.fr
+IPD,49072763300086,SAS,94,Service de presse en ligne,lsa-conso.fr,Inscrit,,2590089,2029-10-31,2024-10-03,DISPOSITIF_FISCAL_39_BIS_B,Non,Oui,http://www.lsa-conso.fr
 IPD,49072763300086,SAS,94,Service de presse en ligne,neorestauration.com,Inscrit,,2590090,2028-11-30,2023-11-30,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,http://www.neorestauration.com
 AGEFI,33476865200086,SAS,75,Service de presse en ligne,newsmanagers.com,Non Inscrit,,2590439,2023-09-28,2023-09-28,,Non,Non,https://www.newsmanagers.com
 FRANCE MEDIAS MONDE,50152402900086,SA,92,Service de presse en ligne,rfi.fr,Inscrit,,2592422,2029-09-30,2024-10-31,IPG,Non,Non,https://www.rfi.fr
@@ -24982,7 +24982,7 @@ AGEFI,33476865200086,SAS,75,Service de presse en ligne,institinvest.com,Non Insc
 IPD,49072763300086,SAS,94,Service de presse en ligne,larevuedujouet.fr,Inscrit,,2594855,2027-03-31,2022-05-25,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,http://www.larevuedujouet.fr
 IPD,49072763300086,SAS,94,Service de presse en ligne,lechotouristique.com,Non Inscrit,,2590088,2020-09-10,2020-09-10,,Non,Non,http://www.lechotouristique.com
 AGEFI,33476865200086,SAS,75,Service de presse en ligne,agefiactifs.com,Non Inscrit,,2591950,2023-09-28,2023-09-28,,Non,Non,http://www.agefiactifs.com
-IPD,49072763300086,SAS,94,Service de presse en ligne,argusdelassurance.com,Inscrit,,2590085,2027-03-31,2022-01-20,,Non,Non,http://www.argusdelassurance.com
+IPD,49072763300086,SAS,94,Service de presse en ligne,argusdelassurance.com,Inscrit,,2590085,2027-03-31,2022-01-20,,Non,Oui,http://www.argusdelassurance.com
 AGEFI,33476865200086,SAS,75,Service de presse en ligne,distribinvest.com,Non Inscrit,,2592460,2020-11-19,2020-11-19,,Non,Non,https://www.distribinvest.com
 IPD,49072763300086,SAS,94,Service de presse en ligne,emballagesmagazine.com,Non Inscrit,,2590086,2014-07-14,2014-07-14,,Non,Non,http://www.emballagesmagazine.com
 AGEFI,33476865200086,SAS,75,Service de presse en ligne,etatsmajors.com,Non Inscrit,,2591095,2014-01-30,2014-01-30,,Non,Non,http://www.etatsmajors.com
@@ -25062,7 +25062,7 @@ SOCIETE EDITRICE DE MEDIAPART,50063193200075,SAS,75,Service de presse en ligne,m
 UFC QUE CHOISIR,78467249500073,ASSOCIATION,75,Service de presse en ligne,quechoisir.org,Inscrit,,2590118,2029-12-31,2025-01-23,DISPOSITIF_FISCAL_39_BIS_A,Non,Non,http://www.quechoisir.org
 NIVIS MEDIAS,40024832400073,SAS,38,Service de presse en ligne,trekmag.com,Non Inscrit,,2595114,2025-11-27,2025-11-27,,Non,Non,http://www.trekmag.com
 NIVIS MEDIAS,40024832400073,SAS,38,Service de presse en ligne,windmag.com,Inscrit,,2595222,2028-11-30,2023-11-30,,Non,Non,http://www.windmag.com
-L'AISNE NOUVELLE,58568028300074,SA,02,Service de presse en ligne,aisnenouvelle.fr,Inscrit,,2590287,2031-06-30,2026-06-25,IPG,Non,Non,https://www.aisnenouvelle.fr/
+L'AISNE NOUVELLE,58568028300074,SA,02,Service de presse en ligne,aisnenouvelle.fr,Inscrit,,2590287,2031-06-30,2026-06-25,IPG,Non,Oui,https://www.aisnenouvelle.fr/
 EDICOM,33857431200074,SAS,75,Service de presse en ligne,investissementconseils.com,Inscrit,,2593384,2027-05-31,2022-05-25,,Non,Non,http://www.investissementconseils.com
 EDITIONS LA VIE DU RAIL,33413012700072,SA,75,Service de presse en ligne,lettreducheminot.fr,Inscrit,,2595136,2030-06-30,2025-05-22,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,http://www.lettreducheminot.fr
 EDITIONS LA VIE DU RAIL,33413012700072,SA,75,Service de presse en ligne,railpassion.fr,Inscrit,,2595137,2028-06-30,2023-06-29,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,http://www.railpassion.fr
@@ -25079,7 +25079,7 @@ INDIGO PUBLICATIONS,32207763700070,SAS,75,Service de presse en ligne,lalettre.fr
 OPINION INDEPENDANTE DU SUD-OUEST,34501863400070,SAS,31,Service de presse en ligne,lopinion.com,Inscrit,,2594240,2030-07-31,2025-05-22,IPG,Non,Non,https://lopinion.com/
 SOCIETE D'EDITION DU FLOCON,34100279800070,SARL,62,Service de presse en ligne,paramag.fr,Non Inscrit,,2591506,2025-03-27,2025-03-27,,Non,Non,http://paramag.fr
 INDIGO PUBLICATIONS,32207763700070,SAS,75,Service de presse en ligne,pressenews.fr,Non Inscrit,,2591835,2019-03-14,2019-03-14,,Non,Non,http://www.pressenews.fr
-TOURMAG.COM,43035345800069,SARL,13,Service de presse en ligne,tourmag.com,Inscrit,,2590116,2026-12-31,2024-03-14,,Non,Non,http://www.tourmag.com
+TOURMAG.COM,43035345800069,SARL,13,Service de presse en ligne,tourmag.com,Inscrit,,2590116,2026-12-31,2024-03-14,,Non,Oui,http://www.tourmag.com
 INDIGO PUBLICATIONS,32207763700070,SAS,75,Service de presse en ligne,africaintelligence.com,Non Inscrit,,2592894,2025-10-31,2025-10-31,,Non,Non,http://www.africaintelligence.com
 INDIGO PUBLICATIONS,32207763700070,SAS,75,Service de presse en ligne,africaintelligence.fr,Inscrit,,2590644,2027-05-31,2026-05-28,IPG,Non,Non,http://www.africaintelligence.fr
 INDIGO PUBLICATIONS,32207763700070,SAS,75,Service de presse en ligne,glitz.paris,Inscrit,,2595018,2030-11-30,2025-11-27,DISPOSITIF_FISCAL_39_BIS_A,Non,Non,http://www.glitz.paris/
@@ -25090,7 +25090,7 @@ EDITIONS CROQUE FUTUR,32503329800069,SAS,75,Service de presse en ligne,sciencese
 PRESSAGRIMED,45980016500068,SA,34,Service de presse en ligne,enpaysvarois.fr,Non Inscrit,,2594327,2023-09-28,2023-09-28,,Non,Non,http://www.enpaysvarois.fr
 SOCIETE FRANCAISE DE PROMOTION ARTISTIQUE,30495146000068,SARL,75,Service de presse en ligne,historia.fr,Inscrit,,2594742,2026-10-31,2024-10-03,,Non,Non,https://www.historia.fr
 PRESSAGRIMED,45980016500068,SA,34,Service de presse en ligne,paysandumidi.fr,Non Inscrit,,2594328,2023-09-28,2023-09-28,,Non,Non,http://www.paysandumidi.fr
-PRESSAGRIMED,45980016500068,SA,34,Service de presse en ligne,pressagrimed.fr,Inscrit,,2594685,2028-09-30,2023-09-28,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,http://www.pressagrimed.fr
+PRESSAGRIMED,45980016500068,SA,34,Service de presse en ligne,pressagrimed.fr,Inscrit,,2594685,2028-09-30,2023-09-28,DISPOSITIF_FISCAL_39_BIS_B,Non,Oui,http://www.pressagrimed.fr
 ZINFOS 974,50471537600068,SARL,,Service de presse en ligne,zinfos974.com,Inscrit,,2590335,2031-06-30,2026-06-25,IPG,Non,Non,http://www.zinfos974.com
 EDITIONS CROQUE FUTUR,32503329800069,SAS,75,Service de presse en ligne,App' challenges soir,Non Inscrit,,2592474,2020-09-10,2020-09-10,,Non,Non,challenges soir - Applications sur tablettes numériques
 GROUPE REVUE FIDUCIAIRE,55207230800067,SAS,75,Service de presse en ligne,rfsocial.grouperf.com,Inscrit,,2592230,2029-03-31,2024-03-14,,Non,Non,http://rfsocial.grouperf.com
@@ -25119,7 +25119,7 @@ PUBLI NEWS,33039483400064,SARL,92,Service de presse en ligne,publi-news.fr,Non I
 INFLUENCIA,75358905000065,SAS,92,Service de presse en ligne,Influencia.net,Non Inscrit,,2595244,2026-06-25,2026-06-25,,Non,Non,http://www.Influencia.net
 ANDRH - ASSOCIATION NATIONALE DES DIRECTEURS DES RESSOURCES HUMAINES,78441418700061,ASSOCIATION,75,Service de presse en ligne,magazineandrh.fr,Inscrit,,2595544,2031-03-31,2026-03-26,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,http://www.magazineandrh.fr/
 10 MEDIAS,50835445300062,SAS,92,Service de presse en ligne,le10sport.com,Inscrit,,2590654,2027-11-30,2023-01-19,,Non,Non,https://le10sport.com
-SOCIETE DES PUBLICATIONS DU COURRIER DE L OUEST,77560935700063,SA,49,Service de presse en ligne,LE COURRIER DE L'OUEST - Application,Inscrit,,2595548,2031-03-31,2026-03-26,DISPOSITIF_FISCAL_39_BIS_A,Non,Non,LE COURRIER DE L'OUEST - Application
+SOCIETE DES PUBLICATIONS DU COURRIER DE L OUEST,77560935700063,SA,49,Service de presse en ligne,LE COURRIER DE L'OUEST - Application,Inscrit,,2595548,2031-03-31,2026-03-26,DISPOSITIF_FISCAL_39_BIS_A,Non,Oui,LE COURRIER DE L'OUEST - Application
 MAKINA CORPUS,43758242200063,SARL,31,Service de presse en ligne,consommer-responsable.fr,Non Inscrit,,2591668,2016-01-28,2016-01-28,,Non,Non,http://www.consommer-responsable.fr
 SOCIETE DES PUBLICATIONS DU COURRIER DE L'OUEST,77560935700063,SA,49,Service de presse en ligne,courrierdelouest.fr,Non Inscrit,,2591504,2022-11-24,2022-11-24,,Non,Non,http://www.courrierdelouest.fr
 COOPERATIVE D'EDITION DE LA VIE MUTUALISTE,30198559400060,SA,93,Service de presse en ligne,vivamagazine.fr,Inscrit,,2590883,2031-05-31,2026-05-28,,Non,Non,http://www.vivamagazine.fr
@@ -25148,7 +25148,7 @@ EDITIONS LEGISLATIVES,73201140800059,SASU,92,Service de presse en ligne,lemedias
 ELO PRESSE,32013087500059,SAS,35,Service de presse en ligne,lineaires.com,Inscrit,,2594076,2029-11-30,2024-11-28,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,http://www.lineaires.com
 BAUER MEDIA FRANCE,33311070800059,SNC,75,Service de presse en ligne,maxi-mag.fr,Non Inscrit,,2591873,2022-11-24,2022-11-24,,Non,Non,http://www.maxi-mag.fr
 ELO PRESSE,32013087500059,SAS,35,Service de presse en ligne,plm-magazine.com,Inscrit,,2594077,2029-11-30,2024-11-28,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,http://www.plm-magazine.com
-DORDOGNE LIBRE,57198010100059,SARL,24,Service de presse en ligne,dordognelibre.fr,Inscrit,,2594190,2030-03-31,2025-09-25,IPG,Non,Non,https://www.dordognelibre.fr/
+DORDOGNE LIBRE,57198010100059,SARL,24,Service de presse en ligne,dordognelibre.fr,Inscrit,,2594190,2030-03-31,2025-09-25,IPG,Non,Oui,https://www.dordognelibre.fr/
 EDITIONS LEGISLATIVES,73201140800059,SASU,92,Service de presse en ligne,editions-legislatives.fr,Non Inscrit,,2590641,2016-09-29,2016-09-29,,Non,Non,http://www.editions-legislatives.fr
 EDITIONS LEGISLATIVES,73201140800059,SASU,92,Service de presse en ligne,elnet.fr,Inscrit,,2593198,2026-09-30,2021-11-25,,Non,Non,http://www.elnet.fr
 EUROPE 1 DIGITAL,41509650200059,SARL,75,Service de presse en ligne,europe1.fr,Inscrit,,2590130,2031-03-31,2026-03-26,IPG,Non,Non,http://www.europe1.fr
@@ -25169,7 +25169,7 @@ EDITIONS FITAMANT,38801982000058,SARL,29,Service de presse en ligne,vitisbio.fr,
 EDITIONS LARIVIERE,57207188400058,SAS,92,Service de presse en ligne,voileetmoteur.com,Inscrit,,2594850,2027-03-31,2022-03-10,,Non,Non,http://www.voileetmoteur.com
 EDITIONS LEGISLATIVES,73201140800059,SASU,92,Service de presse en ligne,actuel-avocat.fr,Non Inscrit,,2590302,2018-03-08,2018-03-08,,Non,Non,http://www.actuel-avocat.fr
 EDITIONS LEGISLATIVES,73201140800059,SASU,92,Service de presse en ligne,actuel-ce.fr,Inscrit,,2590303,2027-01-31,2022-01-20,,Non,Non,http://www.actuel-ce.fr
-EDITIONS FITAMANT,38801982000058,SARL,29,Service de presse en ligne,pdm-seafoodmag.com,Inscrit,,2594487,2031-05-31,2026-05-28,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,http://www.pdm-seafoodmag.com
+EDITIONS FITAMANT,38801982000058,SARL,29,Service de presse en ligne,pdm-seafoodmag.com,Inscrit,,2594487,2031-05-31,2026-05-28,DISPOSITIF_FISCAL_39_BIS_B,Non,Oui,http://www.pdm-seafoodmag.com
 EDITIONS FITAMANT,38801982000058,SARL,29,Service de presse en ligne,referencecarrelage.com,Inscrit,,2593652,2028-03-31,2023-06-29,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,http://www.referencecarrelage.com
 EDITIONS FITAMANT,38801982000058,SARL,29,Service de presse en ligne,revue-alimentation-animale.fr,Inscrit,,2593569,2028-01-31,2023-01-19,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,http://www.revue-alimentation-animale.fr
 EDITIONS LARIVIERE,57207188400058,SAS,92,Service de presse en ligne,rocknfolk.com,Inscrit,,2594903,2027-05-31,2022-05-25,,Non,Non,http://www.rocknfolk.com
@@ -25187,7 +25187,7 @@ EDITIONS LARIVIERE,57207188400058,SAS,92,Service de presse en ligne,lemondeduple
 EDITIONS LARIVIERE,57207188400058,SAS,92,Service de presse en ligne,lofficielducycle.com,Inscrit,,2594848,2027-03-31,2022-03-10,,Non,Non,http://www.lofficielducycle.com
 EDITIONS LARIVIERE,57207188400058,SAS,92,Service de presse en ligne,chassons.com,Inscrit,,2594841,2029-03-31,2024-10-03,,Non,Non,http://www.chassons.com
 EDITIONS LARIVIERE,57207188400058,SAS,92,Service de presse en ligne,chevalmag.com,Inscrit,,2594842,2027-03-31,2022-03-10,,Non,Non,http://www.chevalmag.com
-EDITIONS FITAMANT,38801982000058,SARL,29,Service de presse en ligne,culturesmarines.fr,Inscrit,,2594486,2031-05-31,2026-05-28,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,http://www.culturesmarines.fr
+EDITIONS FITAMANT,38801982000058,SARL,29,Service de presse en ligne,culturesmarines.fr,Inscrit,,2594486,2031-05-31,2026-05-28,DISPOSITIF_FISCAL_39_BIS_B,Non,Oui,http://www.culturesmarines.fr
 EDITIONS LARIVIERE,57207188400058,SAS,92,Service de presse en ligne,decisions-hpa.com,Inscrit,,2594843,2027-03-31,2022-03-10,,Non,Non,http://www.decisions-hpa.com
 EDITIONS LARIVIERE,57207188400058,SAS,92,Service de presse en ligne,fashion-dailynews.com,Non Inscrit,,2590272,2013-07-14,2013-07-14,,Non,Non,http://www.fashion-dailynews.com
 SUPPLY CHAIN MAGAZINE,48534114600058,SAS,57,Service de presse en ligne,franceroutes.fr,Inscrit,,2593095,2028-03-31,2023-03-09,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,http://www.franceroutes.fr
@@ -25199,7 +25199,7 @@ SUPPLY CHAIN MAGAZINE,48534114600058,SAS,57,Service de presse en ligne,actu-tran
 EDITIONS FITAMANT,38801982000058,SARL,29,Service de presse en ligne,biofil.fr,Inscrit,,2593568,2028-01-31,2023-01-19,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,http://www.biofil.fr
 REUSSIR,38830863700056,SA,14,Service de presse en ligne,porc.reussir.fr - 0417 T 81862,Non Inscrit,,2592615,2014-01-01,2014-01-01,,Non,Non,http://porc.reussir.fr
 PORTE A COTE,82788306700056,ASSOCIATION,93,Service de presse en ligne,radioparleur.net,Inscrit,,2593941,2030-01-31,2025-03-27,IPG,Non,Non,https://radioparleur.net/
-REUSSIR,38830863700056,SA,14,Service de presse en ligne,reussir.fr,Inscrit,,2593664,2028-04-30,2024-11-28,,Non,Non,http://www.reussir.fr
+REUSSIR,38830863700056,SA,14,Service de presse en ligne,reussir.fr,Inscrit,,2593664,2028-04-30,2024-11-28,,Non,Oui,http://www.reussir.fr
 COTE MAISON,83199163300056,SAS,92,Service de presse en ligne,thegoodlife.fr,Inscrit,,2593145,2030-05-31,2025-05-22,,Non,Non,https://thegoodlife.fr/
 EDITIONS FITAMANT TECHNOLOGIES,50966789500056,SARL,75,Service de presse en ligne,electroniques.biz,Inscrit,,2591412,2027-06-30,2022-05-25,,Non,Non,http://www.electroniques.biz
 REUSSIR,38830863700056,SA,14,Service de presse en ligne,grandes-cultures.reussir.fr - 0319 T 84473,Non Inscrit,,2592614,2014-01-01,2014-01-01,,Non,Non,http://grandes-cultures.reussir.fr
@@ -25240,22 +25240,22 @@ LAGARDERE MEDIA NEWS,83428937300054,SAS,75,Service de presse en ligne,lejdd.fr,I
 CALCAMO,49872398000054,SASU,35,Service de presse en ligne,moneyvox.fr,Inscrit,,2594112,2027-09-30,2025-09-25,DISPOSITIF_FISCAL_39_BIS_A,Non,Non,http://www.moneyvox.fr
 PUBLI-LOUVRE,49184785100053,SARL,75,Service de presse en ligne,echoidf.fr,Inscrit,,2592249,2029-03-31,2024-03-14,IPG,Non,Non,http://www.echoidf.fr
 MEDIA FILIERE,75405571300053,SARL,75,Service de presse en ligne,filieresport.com,Non Inscrit,,2592806,2026-06-25,2026-06-25,,Non,Non,http://www.filieresport.com
-SOCIETE NOUVELLE DU JOURNAL L'HUMANITE (SNJH),56208530800053,SA,93,Service de presse en ligne,humanite.fr,Inscrit,,2590141,2029-12-31,2024-11-28,IPG,Non,Non,http://www.humanite.fr
+SOCIETE NOUVELLE DU JOURNAL L'HUMANITE (SNJH),56208530800053,SA,93,Service de presse en ligne,humanite.fr,Inscrit,,2590141,2029-12-31,2024-11-28,IPG,Non,Oui,http://www.humanite.fr
 INVESTIR PUBLICATIONS,35166080800053,SAS,75,Service de presse en ligne,investir.fr,Non Inscrit,,2590100,2016-01-28,2016-01-28,,Non,Non,http://www.investir.fr
 INVESTIR PUBLICATIONS,35166080800053,SAS,75,Service de presse en ligne,lalettredelexpansion.com,Inscrit,,2595118,2030-05-31,2025-05-22,,Non,Non,http://www.lalettredelexpansion.com
 SPORT 24,41958318200052,SA,75,Service de presse en ligne,sport24.lefigaro.fr,Non Inscrit,,2590145,2015-01-29,2015-01-29,,Non,Non,http://www.sport24.com
 PROMOTION PRESSE INTERNATIONALE,72201261400052,SAS,75,Service de presse en ligne,traitementsetmateriaux.fr,Inscrit,,2591239,2030-03-31,2025-03-27,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,http://traitementsetmateriaux.fr
 PROMOTION PRESSE INTERNATIONALE,72201261400052,SAS,75,Service de presse en ligne,tribune-auto-ecoles.fr,Inscrit,,2592126,2028-10-31,2023-10-26,,Non,Non,https://www.tribune-auto-ecoles.fr
-SEP DE BOURGOGNE,35147550400053,SARL,21,Service de presse en ligne,agribourgogne.fr,Inscrit,,2593762,2028-09-30,2023-09-29,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,https://www.agribourgogne.fr
+SEP DE BOURGOGNE,35147550400053,SARL,21,Service de presse en ligne,agribourgogne.fr,Inscrit,,2593762,2028-09-30,2023-09-29,DISPOSITIF_FISCAL_39_BIS_B,Non,Oui,https://www.agribourgogne.fr
 INVESTIR PUBLICATIONS,35166080800053,SAS,75,Service de presse en ligne,boursier.com,Inscrit,,2590105,2028-03-31,2023-03-09,,Non,Non,http://www.boursier.com
-SOCIETE EDITRICE DU MONDE,43389185000052,SA,75,Service de presse en ligne,lemonde.fr,Inscrit,,2590064,2029-12-31,2024-11-28,IPG,Non,Non,http://www.lemonde.fr
+SOCIETE EDITRICE DU MONDE,43389185000052,SA,75,Service de presse en ligne,lemonde.fr,Inscrit,,2590064,2029-12-31,2024-11-28,IPG,Non,Oui,http://www.lemonde.fr
 MILLE SOURCES COMMUNICATION,39109559300052,SARL,75,Service de presse en ligne,lettredesachats.com,Non Inscrit,,2592046,2024-05-30,2024-05-30,,Non,Non,http://www.lettredesachats.com
-COM'SOL COMMUNICATION SOLIDARITE,39842706200052,SARL,75,Service de presse en ligne,liti.fr,Inscrit,,2594968,2027-09-30,2022-09-15,DISPOSITIF_FISCAL_39_BIS_A,Non,Non,http://www.liti.fr
-MEDIAS DE PROXIMITE,56278001500052,SAS,31,Service de presse en ligne,nrpyrenees.fr,Inscrit,,2594152,2030-01-31,2025-01-23,IPG,Non,Non,https://www.nrpyrenees.fr/
+COM'SOL COMMUNICATION SOLIDARITE,39842706200052,SARL,75,Service de presse en ligne,liti.fr,Inscrit,,2594968,2027-09-30,2022-09-15,DISPOSITIF_FISCAL_39_BIS_A,Non,Oui,http://www.liti.fr
+MEDIAS DE PROXIMITE,56278001500052,SAS,31,Service de presse en ligne,nrpyrenees.fr,Inscrit,,2594152,2030-01-31,2025-01-23,IPG,Non,Oui,https://www.nrpyrenees.fr/
 PROMOTION PRESSE INTERNATIONALE,72201261400052,SAS,75,Service de presse en ligne,officiel-taxi.fr,Non Inscrit,,2592125,2019-06-04,2019-06-04,,Non,Non,http://www.officiel-taxi.fr
-MEDIAS DE PROXIMITE,56278001500052,SAS,31,Service de presse en ligne,petitbleu.fr,Inscrit,,2594153,2030-01-31,2025-01-23,IPG,Non,Non,http://www.petitbleu.fr
+MEDIAS DE PROXIMITE,56278001500052,SAS,31,Service de presse en ligne,petitbleu.fr,Inscrit,,2594153,2030-01-31,2025-01-23,IPG,Non,Oui,http://www.petitbleu.fr
 PROMOTION PRESSE INTERNATIONALE,72201261400052,SAS,75,Service de presse en ligne,leclaireur-coiffeurs.com,Inscrit,,2592124,2028-10-31,2023-10-26,,Non,Non,https://www.leclaireur-coiffeurs.com
-TARN MEDIAS,31446775400052,SARL,81,Service de presse en ligne,lejournaldici.com,Inscrit,,2593620,2028-03-31,2023-05-11,IPG,Non,Non,https://www.lejournaldici.com
+TARN MEDIAS,31446775400052,SARL,81,Service de presse en ligne,lejournaldici.com,Inscrit,,2593620,2028-03-31,2023-05-11,IPG,Non,Oui,https://www.lejournaldici.com
 PROMOTION PRESSE INTERNATIONALE,72201261400052,SAS,75,Service de presse en ligne,cahiers-ophtalmologie.fr,Inscrit,,2593396,2027-05-31,2022-05-25,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,http://www.cahiers-ophtalmologie.fr
 FINANCIERE DE LOISIRS,39223844000052,SA,37,Service de presse en ligne,ecranfantastique.fr,Non Inscrit,,2593364,2019-03-14,2019-03-14,,Non,Non,https://ecranfantastique.fr
 PROMOTION PRESSE INTERNATIONALE,72201261400052,SAS,75,Service de presse en ligne,fluidestransmissions.com,Inscrit,,2594445,2028-01-31,2023-01-19,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,http://www.fluidestransmissions.com
@@ -25339,7 +25339,7 @@ MADMOIZELLE AGENCY,48334410700048,SAS,75,Service de presse en ligne,madmoizelle.
 SURPERFORMANCE,43943005900048,SAS,74,Service de presse en ligne,marketscreener.com,Inscrit,,2594443,2028-01-31,2023-01-19,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,http://www.marketscreener.com
 OUEST FRANCE MULTIMEDIA,33506155200048,SARL,35,Service de presse en ligne,maville.com,Non Inscrit,,2590220,2018-03-08,2018-03-08,,Non,Non,http://www.maville.com
 1633,40184486500048,SAS,75,Service de presse en ligne,menshealth.fr,Non Inscrit,,2592410,2016-03-10,2016-03-10,,Non,Non,http://www.menshealth.fr
-PAYSAN BRETON,49548015400048,SAS,22,Service de presse en ligne,paysan-breton.fr,Inscrit,,2591096,2026-10-31,2021-11-25,DISPOSITIF_FISCAL_39_BIS_A,Non,Non,http://www.paysan-breton.fr
+PAYSAN BRETON,49548015400048,SAS,22,Service de presse en ligne,paysan-breton.fr,Inscrit,,2591096,2026-10-31,2021-11-25,DISPOSITIF_FISCAL_39_BIS_A,Non,Oui,http://www.paysan-breton.fr
 REED BUSINESS INFORMATION,33961195600048,SAS,92,Service de presse en ligne,pca-on-line.com,Non Inscrit,,2590122,2013-07-14,2013-07-14,,Non,Non,http://www.pca-on-line.com
 NET MEDIA EUROPE,49864788200048,SA,75,Service de presse en ligne,channelbiz.fr,Non Inscrit,,2590121,2018-03-08,2018-03-08,,Non,Non,http://www.channelbiz.fr
 DIRECT VELO,50131666500048,ASSOCIATION,22,Service de presse en ligne,directvelo.com,Inscrit,,2593383,2027-09-30,2025-09-25,,Non,Non,http://www.directvelo.com
@@ -25352,7 +25352,7 @@ GLSJ COMMUNICATION,45143857600048,EURL,75,Service de presse en ligne,actukids.co
 ALPES DEVELOPPEMENT,45297961000048,SARL,69,Service de presse en ligne,alpesdusud.alpes1.com,Inscrit,,2595306,2031-05-31,2026-05-28,DISPOSITIF_FISCAL_39_BIS_A,Non,Non,http://alpesdusud.alpes1.com
 SOCIETE DE PRESSE ET D'INFORMATION,40141886800048,SA,86,Service de presse en ligne,centre-presse.fr,Inscrit,,2592334,2029-05-31,2024-05-30,IPG,Non,Non,http://www.centre-presse.fr
 IC PUBLICATIONS,71200245000047,SAS,75,Service de presse en ligne,magazinedelafrique.com,Non Inscrit,,2593616,2023-10-26,2023-10-26,,Non,Non,http://magazinedelafrique.com
-IPARLA BAIGURA KOMUNIKAZIOA,49485486200047,SCIC,64,Service de presse en ligne,mediabask.eus,Inscrit,,2594017,2029-09-30,2024-10-03,IPG,Non,Non,http://www.mediabask.eus
+IPARLA BAIGURA KOMUNIKAZIOA,49485486200047,SCIC,64,Service de presse en ligne,mediabask.eus,Inscrit,,2594017,2029-09-30,2024-10-03,IPG,Non,Oui,http://www.mediabask.eus
 POINTS DE VENTE,52215297400047,SAS,75,Service de presse en ligne,pointsdevente.fr,Inscrit,,2591837,2028-05-31,2023-05-11,,Non,Non,http://pointsdevente.fr
 LES TABLETTES LORRAINES,32596341100047,SAS,54,Service de presse en ligne,tabletteslorraines.fr,Non Inscrit,,2593763,2025-09-25,2025-09-25,,Non,Non,https://www.tabletteslorraines.fr
 TERRE DE VIGNES,40491236200047,SARL,75,Service de presse en ligne,vsnews.fr,Inscrit,,2591839,2031-05-31,2026-05-28,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,http://www.vsnews.fr
@@ -25363,7 +25363,7 @@ SOCIÉTÉ D'EDITIONS ET DE PÉRIODIQUES TECHNIQUES,55212018000047,SAS,75,Service
 TERRITORIAL,40492695800046,SAS,92,Service de presse en ligne,technicites.fr,Non Inscrit,,2591664,2019-03-14,2019-03-14,,Non,Non,http://www.technicites.fr
 GROUPE FRANCE AGRICOLE,47998918800046,SAS,93,Service de presse en ligne,vitisphere.com,Inscrit,,2593335,2027-03-31,2022-03-10,,Non,Non,http://www.vitisphere.com
 SCC ARABIES,33430564600047,SARL,75,Service de presse en ligne,arabies.com,Non Inscrit,,2590273,2016-01-28,2016-01-28,,Non,Non,http://www.arabies.com
-MARCEL BONNATERRE EDITION,34354969700047,SARL,12,Service de presse en ligne,bulletindespalion.fr,Inscrit,,2595510,2030-10-31,2025-10-30,IPG,Non,Non,http://www.bulletindespalion.fr
+MARCEL BONNATERRE EDITION,34354969700047,SARL,12,Service de presse en ligne,bulletindespalion.fr,Inscrit,,2595510,2030-10-31,2025-10-30,IPG,Non,Oui,http://www.bulletindespalion.fr
 DFCG,38322404500047,ASSOCIATION,75,Service de presse en ligne,finance-gestion.com,Inscrit,,2592584,2027-03-31,2022-03-10,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,http://www.finance-gestion.com
 GROUPE FRANCE AGRICOLE,47998918800046,SAS,93,Service de presse en ligne,latoque.fr,Inscrit,,2594809,2029-01-31,2024-01-25,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,http://www.latoque.fr
 EDITIONS ARC EN CIEL,34457290000046,SARL,82,Service de presse en ligne,lepetitjournal.net,Inscrit,,2593385,2027-05-31,2022-11-24,IPG,Non,Non,http://www.lepetitjournal.net
@@ -25381,13 +25381,13 @@ GROUPE FRANCE AGRICOLE,47998918800046,SAS,93,Service de presse en ligne,agrodist
 SANTE PORT ROYAL - GINKGO MEDIA,43472895200046,SASU,75,Service de presse en ligne,alternativesante.fr,Inscrit,,2592655,2030-03-31,2025-05-22,,Non,Non,http://www.alternativesante.fr
 LE LETTRE ECONOMIQUE DE BRETAGNE,35118220900046,SARL,35,Service de presse en ligne,ecobretagne.com,Non Inscrit,,2593527,2025-05-22,2025-05-22,,Non,Non,http://www.ecobretagne.com
 REVUE GENERALE DES ROUTES ET DE L'AMENAGEMENT,55209916000046,SAS,75,Service de presse en ligne,editions-rgra.com,Inscrit,,2593444,2027-06-30,2022-06-21,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,http://www.editions-rgra.com
-MEDIALAB,53986770500045,SARL,67,Service de presse en ligne,rue89strasbourg.com,Inscrit,,2591524,2027-09-30,2022-09-15,IPG,Non,Non,http://www.rue89strasbourg.com
+MEDIALAB,53986770500045,SARL,67,Service de presse en ligne,rue89strasbourg.com,Inscrit,,2591524,2027-09-30,2022-09-15,IPG,Non,Oui,http://www.rue89strasbourg.com
 ENERSTRATEGIES,33376184900046,SAS,75,Service de presse en ligne,Europenergies - Newsletter,Inscrit,,2593295,2029-01-31,2024-03-14,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,Europenergies - Newsletter
 HEADWAY ADVISORY,53298990200046,SAS,75,Service de presse en ligne,L'essentiel du sup - Newsletter,Inscrit,,2593756,2030-11-30,2025-11-27,,Non,Non,L'essentiel du sup - Newsletter
 SERONI INTERACTIVE,50848890500045,SAS,75,Service de presse en ligne,lalettredelassurance.com,Inscrit,,2592942,2031-01-31,2026-01-22,,Non,Non,http://www.lalettredelassurance.com
 L'EQUIPE 24/24,41480447600045,SASU,92,Service de presse en ligne,lequipe.fr,Inscrit,,2590137,2029-12-31,2026-06-25,,Non,Non,http://www.lequipe.fr
 SERONI INTERACTIVE,50848890500045,SAS,75,Service de presse en ligne,news-assurances.com,Non Inscrit,,2590251,2016-01-28,2016-01-28,,Non,Non,http://www.news-assurances.com
-SERONI INTERACTIVE,50848890500045,SAS,75,Service de presse en ligne,newsassurances.pro,Inscrit,,2591666,2029-09-30,2025-05-22,,Non,Non,https://www.newsassurances.pro/
+SERONI INTERACTIVE,50848890500045,SAS,75,Service de presse en ligne,newsassurances.pro,Inscrit,,2591666,2029-09-30,2025-05-22,,Non,Oui,https://www.newsassurances.pro/
 SAABRE,52188120100045,SAS,67,Service de presse en ligne,revolution-energetique.com,Inscrit,,2595185,2030-09-30,2025-09-25,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,https://www.revolution-energetique.com
 RDM EDITIONS,42876028400045,SAS,69,Service de presse en ligne,rhonealpespassions.com,Non Inscrit,,2591945,2016-01-28,2016-01-28,,Non,Non,http://www.rhonealpespassions.com
 CORPORATE FINANCE NEWS,50044265200045,SAS,75,Service de presse en ligne,cfnewsimmo.net,Inscrit,,2595490,2027-09-30,2025-09-25,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,https://www.cfnewsimmo.net/
@@ -25413,7 +25413,7 @@ TOUT LYON,49434194400044,SAS,69,Service de presse en ligne,lessor42.fr,Non Inscr
 L'ETUDIANT,81483978300044,SASU,75,Service de presse en ligne,letudiant.fr,Inscrit,,2592127,2028-11-30,2026-06-25,DISPOSITIF_FISCAL_39_BIS_A,Non,Non,http://www.letudiant.fr
 SUNMEDIAS PRODUCTIONS,81103049300043,ASSOCIATION,83,Service de presse en ligne,varactu.fr,Non Inscrit,,2595468,2026-05-20,2026-05-20,,Non,Non,https://www.varactu.fr
 TOUS LES JOURS CURIEUX,37758995700044,SAS,75,Service de presse en ligne,Tous les jours curieux - Application,Non Inscrit,,2593400,2023-11-30,2023-11-30,,Non,Non,Tous les jours curieux - Application
-COGITERRA,45041444600044,SAS,75,Service de presse en ligne,actu-environnement.com,Inscrit,,2590078,2026-12-31,2021-11-25,DISPOSITIF_FISCAL_39_BIS_A,Non,Non,http://www.actu-environnement.com
+COGITERRA,45041444600044,SAS,75,Service de presse en ligne,actu-environnement.com,Inscrit,,2590078,2026-12-31,2021-11-25,DISPOSITIF_FISCAL_39_BIS_A,Non,Oui,http://www.actu-environnement.com
 INSTITUT DE DROIT DE LA CONCURRENCE,47870350700044,SAS,75,Service de presse en ligne,concurrences.com,Inscrit,,2593932,2029-06-30,2024-06-27,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,https://www.concurrences.com/
 CONTEXTE,79504704200044,SAS,75,Service de presse en ligne,contexte.com,Inscrit,,2592037,2030-10-31,2025-10-30,IPG,Non,Non,https://www.contexte.com
 KONBINI,50222005600043,SAS,75,Service de presse en ligne,konbini.com,Inscrit,,2593968,2027-05-31,2022-05-25,DISPOSITIF_FISCAL_39_BIS_A,Non,Non,https://www.konbini.com
@@ -25421,11 +25421,11 @@ FÉDÉRATION NATIONALE DES SYNDICATS CFTC DES PERSONNELS DES COLLECTIVITÉS TERR
 LFF MEDIA,79864322700043,SARL,75,Service de presse en ligne,lefilmfrancais.com,Inscrit,,2591759,2029-01-31,2024-01-25,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,http://www.lefilmfrancais.com
 GROUPE PEDAGOFICHE,58628001800043,SAS,63,Service de presse en ligne,mairiexpertbudget.fr,Inscrit,,2594378,2026-11-30,2022-11-24,,Non,Non,http://www.mairiexpertbudget.fr
 SOPREDA 2,40173096500043,SA,74,Service de presse en ligne,eco-savoie-mont-blanc.com,Non Inscrit,,2593535,2019-01-24,2019-01-24,,Non,Non,https://eco-savoie-mont-blanc.com
-ECRAN TOTAL,79467362400043,SASU,92,Service de presse en ligne,ecran-total.fr,Inscrit,,2595369,2026-11-30,2024-11-28,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,https://ecran-total.fr/
+ECRAN TOTAL,79467362400043,SASU,92,Service de presse en ligne,ecran-total.fr,Inscrit,,2595369,2026-11-30,2024-11-28,DISPOSITIF_FISCAL_39_BIS_B,Non,Oui,https://ecran-total.fr/
 EDIMARK,49300558100043,SAS,75,Service de presse en ligne,edimark.fr,Inscrit,,2592038,2028-10-31,2023-11-30,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,http://www.edimark.fr
 EHPA PRESSE,41312791100043,SARL,75,Service de presse en ligne,ehpapresse.fr,Non Inscrit,,2593654,2023-10-26,2023-10-26,,Non,Non,http://www.ehpapresse.fr
 FUTURIBLES,34054176200043,SARL,75,Service de presse en ligne,futuribles.com,Inscrit,,2591022,2026-09-30,2021-09-16,IPG,Non,Non,https://www.futuribles.com
-SOPREDA 2,40173096500043,SA,74,Service de presse en ligne,groupe-ecomedia.com,Inscrit,,2593844,2029-01-31,2023-11-30,DISPOSITIF_FISCAL_39_BIS_A,Non,Non,https://groupe-ecomedia.com
+SOPREDA 2,40173096500043,SA,74,Service de presse en ligne,groupe-ecomedia.com,Inscrit,,2593844,2029-01-31,2023-11-30,DISPOSITIF_FISCAL_39_BIS_A,Non,Oui,https://groupe-ecomedia.com
 VERIDIK,83195771700042,ASSOCIATION,31,Service de presse en ligne,veridik.fr,Non Inscrit,,2595096,2025-09-25,2025-09-25,,Non,Non,http://www.veridik.fr
 YOUMATTER,51377075000042,SASU,75,Service de presse en ligne,youmatter.world,Inscrit,,2594110,2026-11-30,2022-06-21,DISPOSITIF_FISCAL_39_BIS_A,Non,Non,https://youmatter.world/
 RH EDITIONS,41122832300043,SAS,69,Service de presse en ligne,acteursdeleconomie.com,Non Inscrit,,2591422,2018-03-08,2018-03-08,,Non,Non,http://acteursdeleconomie.com
@@ -25435,12 +25435,12 @@ DYNAMIQUE ENTREPRENEURIALE,50473986300042,SAS,75,Service de presse en ligne,dyna
 LIBERATION,38202819900042,SARL,75,Service de presse en ligne,ecrans.fr,Non Inscrit,,2591502,2019-03-14,2019-03-14,,Non,Non,http://www.ecrans.fr
 HUMANOID,52478120000042,SASU,75,Service de presse en ligne,frandroid.com,Inscrit,,2594938,2030-06-30,2025-09-25,,Non,Non,http://www.frandroid.com
 EDITIONS DE L'ADOUR,39882498700042,SARL,65,Service de presse en ligne,lasemainedespyrenees.fr,Inscrit,,2592321,2027-05-31,2022-05-25,IPG,Non,Non,http://www.lasemainedespyrenees.fr
-LIBERATION,38202819900042,SARL,75,Service de presse en ligne,liberation.fr,Inscrit,,2590066,2029-12-31,2024-11-28,IPG,Non,Non,http://www.liberation.fr
+LIBERATION,38202819900042,SARL,75,Service de presse en ligne,liberation.fr,Inscrit,,2590066,2029-12-31,2024-11-28,IPG,Non,Oui,http://www.liberation.fr
 LE MONDE DIPLOMATIQUE,40006429100042,SA,75,Service de presse en ligne,monde-diplomatique.fr,Inscrit,,2590218,2030-01-31,2025-01-23,IPG,Non,Non,http://www.monde-diplomatique.fr
 REPORTERS SANS FRONTIERES,34368422100041,ASSOCIATION,75,Service de presse en ligne,rsf.org,Inscrit,,2590542,2031-03-31,2026-03-26,,Non,Non,http://rsf.org
 E2J2,50862426900041,SAS,75,Service de presse en ligne,slate.fr,Inscrit,,2590060,2029-12-31,2024-11-28,IPG,Non,Non,http://www.slate.fr
 TRACES ECRITES,38064404700041,SARL,21,Service de presse en ligne,tracesecritesnews.fr,Non Inscrit,,2593299,2025-03-27,2025-03-27,,Non,Non,http://www.tracesecritesnews.fr
-ROSEBUD,49340029500041,SA,69,Service de presse en ligne,tribunedelyon.fr,Inscrit,,2591528,2031-01-31,2025-11-27,,Non,Non,https://tribunedelyon.fr/
+ROSEBUD,49340029500041,SA,69,Service de presse en ligne,tribunedelyon.fr,Inscrit,,2591528,2031-01-31,2025-11-27,,Non,Oui,https://tribunedelyon.fr/
 FRONTLINE MEDIA,75246706800041,SAS,75,Service de presse en ligne,mindfintech.fr,Non Inscrit,,2593393,2023-06-29,2023-06-29,,Non,Non,https://www.mindfintech.fr
 FRONTLINE MEDIA,75246706800041,SAS,75,Service de presse en ligne,mindhealth.fr,Non Inscrit,,2593657,2023-06-29,2023-06-29,,Non,Non,http://www.mindhealth.fr
 FRONTLINE MEDIA,75246706800041,SAS,75,Service de presse en ligne,mindnews.fr,Non Inscrit,,2590423,2023-06-29,2023-06-29,,Non,Non,http://www.mindnews.fr
@@ -25458,11 +25458,11 @@ AEROSPATIUM,81921592200041,SAS,31,Service de presse en ligne,aerospatium.info,In
 A&L RICHEST MEDIA,49866464800041,SARL,41,Service de presse en ligne,bloiscapitale.com,Non Inscrit,,2595228,2026-05-28,2026-05-28,,Non,Non,https://bloiscapitale.com
 MARKETEAM,45129363300041,SARL,44,Service de presse en ligne,cometmedias.com,Inscrit,,2591560,2030-04-30,2025-07-03,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,http://www.cometmedias.com
 JEROME GIANOLI,52118931600040,MICRO-ENTREPRENEUR,21,Service de presse en ligne,ginjfo.com,Inscrit,,2592105,2026-09-30,2025-09-25,,Non,Non,http://www.ginjfo.com
-SOCIETE NOUVELLE DU NOUVEL ECONOMISTE (S2NE),80944923400040,SA,75,Service de presse en ligne,lenouveleconomiste.fr,Inscrit,,2590241,2028-07-31,2023-06-29,IPG,Non,Non,https://www.lenouveleconomiste.fr/
+SOCIETE NOUVELLE DU NOUVEL ECONOMISTE (S2NE),80944923400040,SA,75,Service de presse en ligne,lenouveleconomiste.fr,Inscrit,,2590241,2028-07-31,2023-06-29,IPG,Non,Oui,https://www.lenouveleconomiste.fr/
 PRESSE GENERALISTE DES FRANCAIS DE L'ETRANGER,83857836700040,SAS,75,Service de presse en ligne,lesfrancais.press,Inscrit,,2593761,2030-09-30,2025-09-25,IPG,Non,Non,https://www.lesfrancais.press
-LYON CAPITALE,48906985600040,SAS,92,Service de presse en ligne,lyoncapitale.fr,Inscrit,,2594323,2030-09-30,2025-09-25,IPG,Non,Non,https://www.lyoncapitale.fr
+LYON CAPITALE,48906985600040,SAS,92,Service de presse en ligne,lyoncapitale.fr,Inscrit,,2594323,2030-09-30,2025-09-25,IPG,Non,Oui,https://www.lyoncapitale.fr
 PARIS MATCH,92235216600040,SASU,75,Service de presse en ligne,parismatch.com,Inscrit,,2590107,2031-01-31,2026-01-22,IPG,Non,Non,http://www.parismatch.com
-BIOTECHFINANCES (EEI),48076439800040,SARL,07,Service de presse en ligne,biotech-finances.com,Inscrit,,2590370,2029-03-31,2024-11-28,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,http://www.biotech-finances.com
+BIOTECHFINANCES (EEI),48076439800040,SARL,07,Service de presse en ligne,biotech-finances.com,Inscrit,,2590370,2029-03-31,2024-11-28,DISPOSITIF_FISCAL_39_BIS_B,Non,Oui,http://www.biotech-finances.com
 CENTRE DE RECHERCHE ET D'ACTION SOCIALES - CERAS,77573052600040,ASSOCIATION,93,Service de presse en ligne,ceras-projet.org,Non Inscrit,,2591097,2015-09-08,2015-09-08,,Non,Non,http://www.ceras-projet.org
 LES PETITES AFFICHES DE VAUCLUSE,48166988500040,SASU,84,Service de presse en ligne,echodumardi.com,Inscrit,,2593572,2028-01-31,2022-11-24,IPG,Non,Non,https://www.echodumardi.com
 ECO DE L'AIN,34086321600040,SAS,01,Service de presse en ligne,eco-ain.com,Non Inscrit,,2593524,2019-01-24,2019-01-24,,Non,Non,https://eco-ain.com
@@ -25475,14 +25475,14 @@ WORLDCRUNCH,52538637100039,SAS,75,Service de presse en ligne,worldcrunch.com,Ins
 NEWS MEDIA 3.1,81378878300039,SCOP,31,Service de presse en ligne,lejournaltoulousain.fr,Inscrit,,2593491,2027-09-30,2022-11-24,IPG,Non,Non,http://www.lejournaltoulousain.fr
 EDITIONS NUIT ET JOUR,39839696000039,SAS,92,Service de presse en ligne,lenouveaudetective.com,Inscrit,,2595010,2027-11-30,2024-06-26,DISPOSITIF_FISCAL_39_BIS_A,Non,Non,http://www.lenouveaudetective.com
 LES EDITIONS INDEPENDANTES,42878718800039,SA,75,Service de presse en ligne,lesinrocks.com,Inscrit,,2590219,2030-01-31,2025-05-22,IPG,Non,Non,http://www.lesinrocks.com
-DEVAL PRESSE INFOS,38803026400039,SAS,26,Service de presse en ligne,limpartial.fr,Inscrit,,2593584,2030-01-31,2025-01-27,IPG,Non,Non,http://www.limpartial.fr
+DEVAL PRESSE INFOS,38803026400039,SAS,26,Service de presse en ligne,limpartial.fr,Inscrit,,2593584,2030-01-31,2025-01-27,IPG,Non,Oui,http://www.limpartial.fr
 MATCHEM,87965348300039,SAS,75,Service de presse en ligne,paris-courses.com,Non Inscrit,,2591241,2017-06-29,2017-06-29,,Non,Non,http://www.paris-courses.com
 MATCHEM,87965348300039,SAS,75,Service de presse en ligne,paris-turf.com,Inscrit,,2591244,2027-01-31,2022-03-10,,Non,Non,http://www.paris-turf.com
 TP PRESSE,33399956300039,SARL,78,Service de presse en ligne,constructioncayola.com,Inscrit,,2591078,2028-05-31,2023-06-29,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,http://www.constructioncayola.com
-DEVAL PRESSE INFOS,38803026400039,SAS,26,Service de presse en ligne,echo-drome-ardeche.com,Inscrit,,2593707,2028-06-30,2023-06-29,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,http://www.echo-drome-ardeche.com
+DEVAL PRESSE INFOS,38803026400039,SAS,26,Service de presse en ligne,echo-drome-ardeche.com,Inscrit,,2593707,2028-06-30,2023-06-29,DISPOSITIF_FISCAL_39_BIS_B,Non,Oui,http://www.echo-drome-ardeche.com
 ESPACE SOCIAL EUROPEEN,48070615900039,SARL,75,Service de presse en ligne,espace-social.com,Inscrit,,2594192,2030-03-31,2025-05-22,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,http://www.espace-social.com
 CICERO,75165374200039,SAS,54,Service de presse en ligne,infodujour.fr,Non Inscrit,,2593195,2025-10-30,2025-10-30,,Non,Non,http://infodujour.fr
-EDI.M3,52059672700039,SAS,57,Service de presse en ligne,lasemaine.fr,Inscrit,,2592418,2029-09-30,2024-10-03,IPG,Non,Non,https://www.lasemaine.fr/
+EDI.M3,52059672700039,SAS,57,Service de presse en ligne,lasemaine.fr,Inscrit,,2592418,2029-09-30,2024-10-03,IPG,Non,Oui,https://www.lasemaine.fr/
 VSTUDIO,80139172300039,SAS,75,Service de presse en ligne,Voxe - Newsletter,Inscrit,,2594600,2028-05-31,2023-05-11,IPG,Non,Non,Voxe - Newsletter
 MATCHEM,87965348300039,SAS,75,Service de presse en ligne,bilto.fr,Non Inscrit,,2591240,2017-06-29,2017-06-29,,Non,Non,http://www.bilto.fr
 BTLV - BOB VOUS DIT TOUTE LA VERITE,79540625500039,SAS,75,Service de presse en ligne,btlv.fr,Inscrit,,2593621,2031-05-31,2026-05-28,,Non,Non,https://www.btlv.fr
@@ -25505,10 +25505,10 @@ NOUVEAU DEPART,90109075300038,SAS,75,Service de presse en ligne,histoirescrepues
 HUFFINGTON POST,49997300600038,SAS,75,Service de presse en ligne,huffingtonpost.fr,Inscrit,,2590329,2030-04-30,2025-07-03,IPG,Non,Non,http://www.huffingtonpost.fr
 RED ON LINE,42504306400038,SAS,92,Service de presse en ligne,journaldelenvironnement.net,Non Inscrit,,2590110,2021-09-16,2021-09-16,,Non,Non,http://www.journaldelenvironnement.net
 SOCIETE DE PRESSE ANTILLAISE,40071818500038,SARL,,Service de presse en ligne,journaldesaintbarth.com,Inscrit,,2594973,2029-09-30,2024-10-31,IPG,Non,Non,https://www.journaldesaintbarth.com/
-SOCIÉTÉ NOUVELLE DES EDITIONS COMTOISES,38455180000038,SARL,70,Service de presse en ligne,lapressedegray.com,Inscrit,,2594653,2028-07-31,2023-06-29,IPG,Non,Non,https://www.lapressedegray.com/
-SOCIÉTÉ NOUVELLE DES EDITIONS COMTOISES,38455180000038,SARL,70,Service de presse en ligne,lapressedevesoul.com,Inscrit,,2594604,2028-05-31,2023-05-11,IPG,Non,Non,https://www.lapressedevesoul.com/
+SOCIÉTÉ NOUVELLE DES EDITIONS COMTOISES,38455180000038,SARL,70,Service de presse en ligne,lapressedegray.com,Inscrit,,2594653,2028-07-31,2023-06-29,IPG,Non,Oui,https://www.lapressedegray.com/
+SOCIÉTÉ NOUVELLE DES EDITIONS COMTOISES,38455180000038,SARL,70,Service de presse en ligne,lapressedevesoul.com,Inscrit,,2594604,2028-05-31,2023-05-11,IPG,Non,Oui,https://www.lapressedevesoul.com/
 DIGITAL ART INTERNATIONAL,51182519200038,SARL,75,Service de presse en ligne,digitalarti.com,Non Inscrit,,2590970,2019-03-14,2019-03-14,,Non,Non,http://www.digitalarti.com
-LES ECHOS JUDICIAIRES GIRONDINS,45620047600038,SAS,33,Service de presse en ligne,echos-judiciaires.com,Inscrit,,2594383,2030-11-30,2025-10-30,,Non,Non,http://www.echos-judiciaires.com
+LES ECHOS JUDICIAIRES GIRONDINS,45620047600038,SAS,33,Service de presse en ligne,echos-judiciaires.com,Inscrit,,2594383,2030-11-30,2025-10-30,,Non,Oui,http://www.echos-judiciaires.com
 INFODIUM,49434530900038,SASU,75,Service de presse en ligne,financierterritorial.fr,Inscrit,,2593931,2026-10-31,2024-10-03,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,http://www.financierterritorial.fr
 EDITIONS 21,43139999700037,SARL,75,Service de presse en ligne,yoga-magazine.fr,Non Inscrit,,2594213,2022-11-24,2022-11-24,,Non,Non,https://www.yoga-magazine.fr
 BRIEF MEDIA (BRIEF.ME),80752660300038,SAS,75,Service de presse en ligne,brief.eco,Inscrit,,2593706,2030-06-30,2025-05-22,IPG,Non,Non,https://www.brief.eco
@@ -25525,7 +25525,7 @@ LE POHER HEBDO,40363497500037,SARL,29,Service de presse en ligne,lepoher.fr,Insc
 FOLK MEDIA,52295858600037,SARL,31,Service de presse en ligne,lerugbynistere.fr,Inscrit,,2592873,2027-11-30,2022-11-24,,Non,Non,http://www.lerugbynistere.fr
 GLORIA MEDIA,84099451100037,SASU,75,Service de presse en ligne,lesglorieuses.fr,Inscrit,,2594169,2027-11-30,2022-11-24,DISPOSITIF_FISCAL_39_BIS_A,Non,Non,http://www.lesglorieuses.fr
 ALCYON,39336935000037,SARL,75,Service de presse en ligne,hospitality-on.com,Inscrit,,2594901,2027-05-31,2022-05-25,,Non,Non,http://www.hospitality-on.com
-BUZ BUZ,52864201000037,SARL,,Service de presse en ligne,lememento.paris,Inscrit,,2594902,2029-05-31,2024-10-31,,Non,Non,http://www.lememento.paris
+BUZ BUZ,52864201000037,SARL,,Service de presse en ligne,lememento.paris,Inscrit,,2594902,2029-05-31,2024-10-31,,Non,Oui,http://www.lememento.paris
 LE PAYSAN VIGNERON,90582010600037,SARL,16,Service de presse en ligne,lepaysanvigneron.com,Inscrit,,2590277,2029-11-30,2024-11-28,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,http://lepaysanvigneron.com/
 S2C,81364957100037,SAS,92,Service de presse en ligne,coiffuredeparis.fr,Non Inscrit,,2592041,2021-07-08,2021-07-08,,Non,Non,http://www.coiffuredeparis.fr
 S2C,81364957100037,SAS,92,Service de presse en ligne,cosmetiquemag.fr,Non Inscrit,,2590535,2021-07-08,2021-07-08,,Non,Non,http://www.cosmetiquemag.fr
@@ -25561,10 +25561,10 @@ ALL CONTENTS PRESSE,50745208400035,SARL,75,Service de presse en ligne,parisberli
 L'ATELIER MEDIATIQUE,51744080600035,ASSOCIATION,12,Service de presse en ligne,lempaille.fr,Inscrit,,2595454,2030-07-31,2025-07-03,,Non,Non,https://lempaille.fr/
 LES PRO DE LA PETITE ENFANCE,81865347900035,SAS,75,Service de presse en ligne,lesprosdelapetiteenfance.fr,Inscrit,,2593292,2027-09-30,2022-09-15,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,https://lesprosdelapetiteenfance.fr
 MEDIALOT,43305740300035,EIRL,46,Service de presse en ligne,medialot.fr,Inscrit,,2592940,2029-11-30,2024-10-31,IPG,Non,Non,http://medialot.fr
-SOCIETE DE PUBLICATIONS ET DE PUBLICITE POUR LES SOCIETES (SPPS),55207462700035,SAS,75,Service de presse en ligne,jss.fr,Inscrit,,2593537,2029-11-30,2024-10-03,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,http://www.jss.fr
+SOCIETE DE PUBLICATIONS ET DE PUBLICITE POUR LES SOCIETES (SPPS),55207462700035,SAS,75,Service de presse en ligne,jss.fr,Inscrit,,2593537,2029-11-30,2024-10-03,DISPOSITIF_FISCAL_39_BIS_B,Non,Oui,http://www.jss.fr
 ATLANTIQUE ENERGIE,42143825000035,MICRO-ENTREPRENEUR,49,Service de presse en ligne,landesinfo.net,Inscrit,,2594070,2027-09-30,2022-11-24,,Non,Non,https://landesinfo.net/
 IMAGE MEDIA,49788804000035,SAS,75,Service de presse en ligne,lemondedelaphoto.com,Non Inscrit,,2590659,2023-06-29,2023-06-29,,Non,Non,http://www.lemondedelaphoto.com
-LE COURRIER DES BALKANS - COURRIERS D'EUROPE ET D'ORIENT,42047698800035,ASSOCIATION,94,Service de presse en ligne,courrierdesbalkans.fr,Inscrit,,2590543,2030-09-30,2025-10-30,IPG,Non,Non,http://www.courrierdesbalkans.fr
+LE COURRIER DES BALKANS - COURRIERS D'EUROPE ET D'ORIENT,42047698800035,ASSOCIATION,94,Service de presse en ligne,courrierdesbalkans.fr,Inscrit,,2590543,2030-09-30,2025-10-30,IPG,Non,Oui,http://www.courrierdesbalkans.fr
 HAUT ANJOU,55686004700035,SARL,53,Service de presse en ligne,hautanjou.fr,Inscrit,,2593825,2028-09-30,2023-09-28,IPG,Non,Non,https://www.hautanjou.fr
 EDITIONS SENONAISES DE PRESSE,41058565700035,SARL,89,Service de presse en ligne,independantdelyonne.com,Inscrit,,2594744,2026-11-30,2021-11-25,DISPOSITIF_FISCAL_39_BIS_A,Non,Non,http://www.independantdelyonne.com
 DM EDITIONS,05439498600035,SARL,,Service de presse en ligne,Les Nouvelles de Mayotte - Newsletter,Inscrit,,2592585,2027-01-31,2022-03-10,IPG,Non,Non,Les Nouvelles de Mayotte - Newsletter
@@ -25572,12 +25572,12 @@ ALL CONTENTS PRESSE,50745208400035,SARL,75,Service de presse en ligne,algerparis
 ATLANTIQUE ENERGIE,42143825000035,MICRO-ENTREPRENEUR,49,Service de presse en ligne,angersinfo.fr,Non Inscrit,,2592092,2015-11-12,2015-11-12,,Non,Non,http://www.angersinfo.fr
 FACTOSOFT,48031840100035,SAS,59,Service de presse en ligne,consoglobe.com,Non Inscrit,,2593185,2019-03-14,2019-03-14,,Non,Non,http://www.consoglobe.com
 SOPRESS,50059243100034,SARL,06,Service de presse en ligne,optimistemagazine.fr,Non Inscrit,,2593445,2023-01-19,2023-01-19,,Non,Non,http://www.optimistemagazine.fr
-TECHNOPRESSE,35020673600034,SARL,75,Service de presse en ligne,security-info.com,Inscrit,,2595549,2028-03-31,2026-03-26,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,http://www.security-info.com
+TECHNOPRESSE,35020673600034,SARL,75,Service de presse en ligne,security-info.com,Inscrit,,2595549,2028-03-31,2026-03-26,DISPOSITIF_FISCAL_39_BIS_B,Non,Oui,http://www.security-info.com
 ESPACE CAPRICORNE PRESSE REUNION,75010753400034,SARL,,Service de presse en ligne,telemagplus.re,Inscrit,,2594807,2027-01-31,2022-01-20,,Non,Non,http://www.telemagplus.re
 L'OBSERVATEUR,44632040000034,SAS,59,Service de presse en ligne,lobservateurduvalenciennois.fr,Non Inscrit,,2592325,2016-09-29,2016-09-29,,Non,Non,http://www.lobservateurduvalenciennois.fr
 SUNMADE,51022917200034,SARL,13,Service de presse en ligne,magmalemag.com,Non Inscrit,,2594442,2023-09-28,2023-09-28,,Non,Non,http://www.magmalemag.com
 ALTAPRESSE,44863686000034,SARL,75,Service de presse en ligne,moto-net.com,Inscrit,,2590075,2026-12-31,2022-01-20,,Non,Non,http://www.moto-net.com
-SOCIETE NOUVELLE NORD LITTORAL,33905853900034,SA,62,Service de presse en ligne,nordlittoral.fr,Inscrit,,2591040,2031-05-31,2026-05-28,IPG,Non,Non,https://www.nordlittoral.fr/
+SOCIETE NOUVELLE NORD LITTORAL,33905853900034,SA,62,Service de presse en ligne,nordlittoral.fr,Inscrit,,2591040,2031-05-31,2026-05-28,IPG,Non,Oui,https://www.nordlittoral.fr/
 L'OBSERVATEUR,44632040000034,SAS,59,Service de presse en ligne,lobservateur.fr,Inscrit,,2593204,2026-09-30,2021-07-08,IPG,Non,Non,http://www.lobservateur.fr
 L'OBSERVATEUR,44632040000034,SAS,59,Service de presse en ligne,lobservateurdelavesnois.fr,Non Inscrit,,2592324,2016-09-29,2016-09-29,,Non,Non,http://www.lobservateurdelavesnois.fr
 L'OBSERVATEUR,44632040000034,SAS,59,Service de presse en ligne,lobservateurducambresis.fr,Non Inscrit,,2592326,2016-09-29,2016-09-29,,Non,Non,http://www.lobservateurducambresis.fr
@@ -25606,7 +25606,7 @@ GROUPE BAKCHICH,49037471700034,SAS,75,Service de presse en ligne,bakchich.info,N
 BRUT,82916239500034,SAS,75,Service de presse en ligne,brut.media,Inscrit,,2595397,2027-01-31,2025-01-23,IPG,Non,Non,http://www.brut.media
 WE DEMAIN,75005157500033,SARL,75,Service de presse en ligne,wedemain.fr,Inscrit,,2592435,2026-11-30,2024-11-28,IPG,Non,Non,http://www.wedemain.fr
 CUP INTERACTIVE,42825745500033,SASU,75,Service de presse en ligne,zdnet.fr,Inscrit,,2590096,2027-06-30,2022-03-10,,Non,Non,http://www.zdnet.fr
-SAECNO,34146824700034,SARL,14,Service de presse en ligne,agriculteur-normand.com,Inscrit,,2592887,2030-11-30,2025-11-27,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,http://www.agriculteur-normand.com
+SAECNO,34146824700034,SARL,14,Service de presse en ligne,agriculteur-normand.com,Inscrit,,2592887,2030-11-30,2025-11-27,DISPOSITIF_FISCAL_39_BIS_B,Non,Oui,http://www.agriculteur-normand.com
 TEMOIGNAGES,31085054000033,SARL,,Service de presse en ligne,temoignages.re,Inscrit,,2592433,2031-01-31,2026-01-22,,Non,Non,http://www.temoignages.re
 RUE PREMION,40371121100033,SARL,44,Service de presse en ligne,terristoires.info,Non Inscrit,,2590660,2019-03-14,2019-03-14,,Non,Non,http://www.terristoires.info
 MARLAU EDITIONS,33956058300033,SAS,75,Service de presse en ligne,tolerie-mag.com,Inscrit,,2594496,2031-06-30,2026-06-25,IPG,Non,Non,http://www.tolerie-mag.com
@@ -25639,7 +25639,7 @@ COM'IN MARSEILLE (MADE IN MARSEILLE),82216703700032,SASU,13,Service de presse en
 DESTINATIONSANTE.COM,52137819000032,SAS,44,Service de presse en ligne,destinationsante.com,Inscrit,,2590885,2030-11-30,2025-11-27,,Non,Non,https://destinationsante.com/
 PUBLI-TOPEX,66203577300032,SASU,75,Service de presse en ligne,geometre-lemag.fr,Non Inscrit,,2593397,2022-11-24,2022-11-24,,Non,Non,http://www.geometre-lemag.fr
 ASSOCIATION POUR LA FONDATION INTERNET NOUVELLE GENERATION (FING),43240162800032,ASSOCIATION,75,Service de presse en ligne,internetactu.net,Non Inscrit,,2592313,2017-03-02,2017-03-02,,Non,Non,http://www.internetactu.net
-E.EDITION,83418966400032,SASU,69,Service de presse en ligne,afa-info.com,Inscrit,,2594239,2031-03-31,2026-03-26,,Non,Non,https://www.afa-info.com/
+E.EDITION,83418966400032,SASU,69,Service de presse en ligne,afa-info.com,Inscrit,,2594239,2031-03-31,2026-03-26,,Non,Oui,https://www.afa-info.com/
 ASSOCIATION SCIENTIFIQUE ET TECHNIQUE POUR L'EAU ET L'ENVIRONNEMENT,78471705000032,ASSOCIATION,92,Service de presse en ligne,astee-tsm.fr,Inscrit,,2592616,2028-04-30,2023-03-09,,Non,Non,https://astee-tsm.fr
 FAURE MARIE-LISE,78882775600032,MICRO-ENTREPRENEUR,13,Service de presse en ligne,blogstorymarseille.com,Non Inscrit,,2592936,2019-03-14,2019-03-14,,Non,Non,http://blogstorymarseille.com
 LES TERRESTRES,83923365700031,ASSOCIATION,19,Service de presse en ligne,terrestres.org,Inscrit,,2594396,2031-05-31,2026-05-28,IPG,Non,Non,http://www.terrestres.org/
@@ -25656,20 +25656,20 @@ FRANCE GAZ,78485482000031,ASSOCIATION,92,Service de presse en ligne,gazdaujourdh
 INFORMATION DENTAIRE,50249438800031,SASU,75,Service de presse en ligne,information-dentaire.fr,Inscrit,,2591876,2028-06-30,2023-06-29,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,https://www.information-dentaire.fr
 "UNION GENERALE DES INGENIEURS, CADRES, TECHNICIENS - UGICT CGT",78454665700031,UNION SYNDICALE,93,Service de presse en ligne,journaloptions.fr,Inscrit,,2594692,2028-09-30,2023-09-28,DISPOSITIF_FISCAL_39_BIS_A,Non,Non,http://www.journaloptions.fr
 OFFREMEDIA,48536249500031,SAS,75,Service de presse en ligne,100% média - Newsletter,Non Inscrit,,2590867,2023-11-30,2023-11-30,,Non,Non,100% média - Newsletter
-L'AMI DU PEUPLE,58850042100031,SAS,67,Service de presse en ligne,ami-hebdo.com,Inscrit,,2594415,2030-11-30,2025-10-30,IPG,Non,Non,http://www.ami-hebdo.com
-SEPA - SOCIÉTÉ D'EDITIONS ET DE PUBLICITÉ AGRICOLES DE L'EST,67850165100031,SA,67,Service de presse en ligne,est-agricole.com,Inscrit,,2592596,2027-01-31,2022-01-20,,Non,Non,https://www.est-agricole.com
+L'AMI DU PEUPLE,58850042100031,SAS,67,Service de presse en ligne,ami-hebdo.com,Inscrit,,2594415,2030-11-30,2025-10-30,IPG,Non,Oui,http://www.ami-hebdo.com
+SEPA - SOCIÉTÉ D'EDITIONS ET DE PUBLICITÉ AGRICOLES DE L'EST,67850165100031,SA,67,Service de presse en ligne,est-agricole.com,Inscrit,,2592596,2027-01-31,2022-01-20,,Non,Oui,https://www.est-agricole.com
 FENETRE SUR L'EUROPE,43367201100031,ASSOCIATION,67,Service de presse en ligne,fenetreeurope.com,Non Inscrit,,2590886,2014-01-30,2014-01-30,,Non,Non,http://www.fenetreeurope.com
 RADIO CLASSIQUE,34024936600030,SAS,75,Service de presse en ligne,radioclassique.fr,Non Inscrit,,2594393,2023-03-09,2023-03-09,,Non,Non,https://www.radioclassique.fr
 AD-DSP,44201338900030,SARL,75,Service de presse en ligne,toutlecine.com,Non Inscrit,,2590851,2019-03-14,2019-03-14,,Non,Non,http://www.toutlecine.com
 LE TRAIT D'UNION PAYSAN,71080102800030,SARL,31,Service de presse en ligne,tup31.com,Non Inscrit,,2593713,2024-01-25,2024-01-25,,Non,Non,http://www.tup31.com
 RC MEDIA,50784825700030,SAS,38,Service de presse en ligne,vcoaching.com,Inscrit,,2595523,2027-11-30,2025-11-27,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,https://www.vcoaching.com
-EDITION PRESSE HEBDO,38911333300030,SARL,62,Service de presse en ligne,liberte-actus.fr,Inscrit,,2595335,2030-01-31,2025-01-23,IPG,Non,Non,http://www.liberte-actus.fr
+EDITION PRESSE HEBDO,38911333300030,SARL,62,Service de presse en ligne,liberte-actus.fr,Inscrit,,2595335,2030-01-31,2025-01-23,IPG,Non,Oui,http://www.liberte-actus.fr
 GUILLAUME ROBERT,50024997400030,EIRL,31,Service de presse en ligne,matosvelo.fr,Non Inscrit,,2594989,2026-03-26,2026-03-26,,Non,Non,http://www.matosvelo.fr
 TRIBELEADR,75349531600030,SAS,92,Service de presse en ligne,positivr.fr,Inscrit,,2594691,2028-09-30,2023-09-28,DISPOSITIF_FISCAL_39_BIS_A,Non,Non,https://www.positivr.fr
 INTRAMUROS,40160523300030,SA,75,Service de presse en ligne,intramuros.fr,Non Inscrit,,2591877,2019-03-14,2019-03-14,,Non,Non,http://www.intramuros.fr
 DIRECTION ET GESTION,33332923300030,SARL,91,Service de presse en ligne,larsg.fr,Inscrit,,2593974,2029-07-31,2024-10-03,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,http://www.larsg.fr
 LE CHEVAL,40328572900030,SARL,88,Service de presse en ligne,lecheval.fr,Non Inscrit,,2594581,2023-11-30,2023-11-30,,Non,Non,http://www.lecheval.fr
-JOURNAL DE LA COTIERE,40300363500030,SARL,01,Service de presse en ligne,bugeycotiere.fr,Inscrit,,2595179,2028-09-30,2023-09-28,DISPOSITIF_FISCAL_39_BIS_A,Non,Non,http://www.bugeycotiere.fr
+JOURNAL DE LA COTIERE,40300363500030,SARL,01,Service de presse en ligne,bugeycotiere.fr,Inscrit,,2595179,2028-09-30,2023-09-28,DISPOSITIF_FISCAL_39_BIS_A,Non,Oui,http://www.bugeycotiere.fr
 CADRE DE VILLE,45137169400030,SAS,92,Service de presse en ligne,cadredeville.com,Inscrit,,2590255,2030-02-28,2025-03-27,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,https://www.cadredeville.com
 FASTFOOT,78854846900030,MICRO-ENTREPRENEUR,07,Service de presse en ligne,fastfoot.fr,Non Inscrit,,2592171,2021-07-08,2021-07-08,,Non,Non,http://www.fastfoot.fr
 AGRA,53858263600030,SAS,14,Service de presse en ligne,VSB - Newsletter,Non Inscrit,,2593567,2020-03-12,2020-03-12,,Non,Non,VSB - Newsletter
@@ -25703,7 +25703,7 @@ JAPON INFORMATION,80202362200029,SAS,31,Service de presse en ligne,japoninfos.co
 CMI DIGITAL,43393431200029,SASU,92,Service de presse en ligne,fluctuat.net,Non Inscrit,,2590657,2014-01-30,2014-01-30,,Non,Non,http://fluctuat.premiere.fr
 HEALTH & CO,43465589000029,SARL,69,Service de presse en ligne,hygienes.net,Inscrit,,2594990,2026-09-30,2022-09-28,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,http://www.hygienes.net
 MACGENERATION,48093504800029,SARL,69,Service de presse en ligne,igen.fr,Inscrit,,2594156,2027-01-31,2021-11-25,,Non,Non,http://www.igen.fr
-SOCIETE DES EDITIONS DE L'AGRICULTURE DROMOISE,30771150700029,SARL,26,Service de presse en ligne,agriculture-dromoise.fr,Inscrit,,2592747,2030-06-30,2025-05-22,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,http://www.agriculture-dromoise.fr
+SOCIETE DES EDITIONS DE L'AGRICULTURE DROMOISE,30771150700029,SARL,26,Service de presse en ligne,agriculture-dromoise.fr,Inscrit,,2592747,2030-06-30,2025-05-22,DISPOSITIF_FISCAL_39_BIS_B,Non,Oui,http://www.agriculture-dromoise.fr
 CMI DIGITAL,43393431200029,SASU,92,Service de presse en ligne,be.com,Non Inscrit,,2591028,2017-03-02,2017-03-02,,Non,Non,http://www.be.com
 SOPHIA HISTOIRE & COLLECTIONS,82128754700029,SAS,75,Service de presse en ligne,charge-utile.fr,Non Inscrit,,2594394,2026-05-28,2026-05-28,,Non,Non,http://www.charge-utile.fr
 QUATRE,84039441500029,SAS,75,Service de presse en ligne,6Mois La photo du lundi - Newsletter,Non Inscrit,,2594825,2024-10-03,2024-10-03,,Non,Non,6Mois La photo du lundi - Newsletter
@@ -25720,13 +25720,13 @@ FREQUENCES,39277403000028,SASU,75,Service de presse en ligne,satellifacts.com,In
 SHINE MEDIA,82326703400028,SAS,69,Service de presse en ligne,siecledigital.fr,Inscrit,,2594868,2029-03-31,2024-05-30,,Non,Non,http://www.siecledigital.fr
 LIPARI PRESSE,47818271000028,SARL,75,Service de presse en ligne,pemagazine.fr,Non Inscrit,,2590337,2019-06-04,2019-06-04,,Non,Non,http://www.pemagazine.fr
 PHOTOTREND,79115087300028,SARL,92,Service de presse en ligne,phototrend.fr,Inscrit,,2595144,2030-06-30,2025-09-25,,Non,Non,http://www.phototrend.fr
-SOCIETE ANONYME D'EDITION ET DE PUBLICITE - SANEP,91572019700028,SA,68,Service de presse en ligne,phr.fr,Inscrit,,2592597,2027-01-31,2022-01-20,,Non,Non,https://www.phr.fr
+SOCIETE ANONYME D'EDITION ET DE PUBLICITE - SANEP,91572019700028,SA,68,Service de presse en ligne,phr.fr,Inscrit,,2592597,2027-01-31,2022-01-20,,Non,Oui,https://www.phr.fr
 BEY MEDIAS PRESSE ET INTERNET,79210924100028,SAS,75,Service de presse en ligne,lopinion.fr,Inscrit,,2592036,2028-10-31,2023-10-26,IPG,Non,Non,http://www.lopinion.fr
 LA NEWS,43196075600028,SARL,69,Service de presse en ligne,lyonmag.com,Inscrit,,2594198,2030-03-31,2025-03-27,IPG,Non,Non,http://www.lyonmag.com
 MACON-INFOS,53033642900028,SARL,71,Service de presse en ligne,macon-infos.com,Inscrit,,2594158,2027-01-31,2022-03-10,,Non,Non,http://www.macon-infos.com
 MANIFESTO XXI,81267341600028,ASSOCIATION,93,Service de presse en ligne,manifesto-21.com,Non Inscrit,,2595033,2026-05-28,2026-05-28,,Non,Non,https://manifesto-21.com/
-EDITING,44255105100028,SARL,,Service de presse en ligne,interentreprises.com,Inscrit,,2594191,2030-03-31,2025-03-27,,Non,Non,http://www.interentreprises.com
-SOCIETE D'EDITION ET DE PUBLICITES AGRICOLES DU DEPARTEMENT DE L'AIN AGRICOLE SEPADA,76220089700028,SARL,01,Service de presse en ligne,lainagricole.fr,Inscrit,,2593718,2028-06-30,2023-06-29,,Non,Non,http://www.lainagricole.fr
+EDITING,44255105100028,SARL,,Service de presse en ligne,interentreprises.com,Inscrit,,2594191,2030-03-31,2025-03-27,,Non,Oui,http://www.interentreprises.com
+SOCIETE D'EDITION ET DE PUBLICITES AGRICOLES DU DEPARTEMENT DE L'AIN AGRICOLE SEPADA,76220089700028,SARL,01,Service de presse en ligne,lainagricole.fr,Inscrit,,2593718,2028-06-30,2023-06-29,,Non,Oui,http://www.lainagricole.fr
 LA TRIBUNE DE L'ART,49154305400028,SARL,75,Service de presse en ligne,latribunedelart.com,Inscrit,,2590063,2029-12-31,2024-11-28,DISPOSITIF_FISCAL_39_BIS_A,Non,Non,http://www.latribunedelart.com
 OBSERVATOIRE DU CONSPIRATIONNISME,80540719400028,ASSOCIATION,75,Service de presse en ligne,conspiracywatch.info,Inscrit,,2593758,2030-09-30,2025-09-25,,Non,Non,http://www.conspiracywatch.info
 INDEPENDANTE DE PRESSE D'ANCENIS,85780456100028,SARL,44,Service de presse en ligne,echoancenis.fr,Inscrit,,2595176,2028-09-30,2023-09-28,IPG,Non,Non,http://www.echoancenis.fr
@@ -25742,23 +25742,23 @@ ACTION CRITIQUE MEDIA,49149014000028,ASSOCIATION,75,Service de presse en ligne,a
 TERRE DE VINS,42213624200027,SASU,33,Service de presse en ligne,terredevins.com,Inscrit,,2590880,2029-06-30,2024-06-27,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,http://www.terredevins.com
 COULISSES EDITIONS,52475263100027,ASSOCIATION,75,Service de presse en ligne,theatral-magazine.com,Inscrit,,2590648,2027-11-30,2023-01-19,,Non,Non,http://www.theatral-magazine.com
 AWEBNET,53927300300027,ASSOCIATION,25,Service de presse en ligne,toutmontbeliard.com,Inscrit,,2593192,2026-09-30,2025-09-25,,Non,Non,http://www.toutmontbeliard.com
-SOCIETE DES EDITIONS DU VAUCLUSE AGRICOLE - SEVA,59262017300027,SARL,84,Service de presse en ligne,vaucluse-agricole.com,Inscrit,,2591036,2026-09-30,2021-09-16,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,http://www.vaucluse-agricole.com
+SOCIETE DES EDITIONS DU VAUCLUSE AGRICOLE - SEVA,59262017300027,SARL,84,Service de presse en ligne,vaucluse-agricole.com,Inscrit,,2591036,2026-09-30,2021-09-16,DISPOSITIF_FISCAL_39_BIS_B,Non,Oui,http://www.vaucluse-agricole.com
 TURFCOM,52441563500027,SAS,75,Service de presse en ligne,province-courses.fr,Non Inscrit,,2593768,2024-03-14,2024-03-14,,Non,Non,https://province-courses.fr
 LA TENGO,53922504500027,SAS,75,Service de presse en ligne,revuecharles.fr,Non Inscrit,,2592650,2019-03-14,2019-03-14,,Non,Non,http://revuecharles.fr
 MARIE-AUBE AUVITY,75264662000027,MICRO-ENTREPRENEUR,33,Service de presse en ligne,sowhat-magazine.fr,Non Inscrit,,2593391,2024-11-28,2024-11-28,,Non,Non,http://www.sowhat-magazine.fr
 ERIC CHARPENTIER,44981771700027,MICRO-ENTREPRENEUR,31,Service de presse en ligne,melles750.fr,Inscrit,,2594777,2026-11-30,2022-11-24,,Non,Non,http://www.melles750.fr
-SOCIETE D'EXPLOITATION DU JOURNAL PAYSANS DE LA LOIRE,56450348000027,SARL,42,Service de presse en ligne,paysansdelaloire.fr,Inscrit,,2592748,2030-06-30,2025-05-22,DISPOSITIF_FISCAL_39_BIS_A,Non,Non,http://www.paysansdelaloire.fr
+SOCIETE D'EXPLOITATION DU JOURNAL PAYSANS DE LA LOIRE,56450348000027,SARL,42,Service de presse en ligne,paysansdelaloire.fr,Inscrit,,2592748,2030-06-30,2025-05-22,DISPOSITIF_FISCAL_39_BIS_A,Non,Oui,http://www.paysansdelaloire.fr
 AVANTI,34893295500027,SARL,75,Service de presse en ligne,profession-sage-femme.com,Inscrit,,2593191,2026-09-30,2021-09-16,,Non,Non,http://profession-sage-femme.com
 EDITIONS PARISIENNES,58215124700027,SASU,75,Service de presse en ligne,lebatimentperformant.fr,Inscrit,,2591403,2027-06-30,2022-06-21,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,https://lebatimentperformant.fr
 LES EDITIONS DU DEMOCRATE,48004213400027,SARL,24,Service de presse en ligne,ledemocratedebergerac.fr,Inscrit,,2594087,2027-11-30,2022-11-24,IPG,Non,Non,https://www.ledemocratedebergerac.fr/
 ASSOCIATION DES MAIRES DE FRANCE,78471845400027,ASSOCIATION,75,Service de presse en ligne,maire-info.com,Inscrit,,2594740,2026-11-30,2021-11-25,DISPOSITIF_FISCAL_39_BIS_A,Non,Non,http://www.maire-info.com
 ASSOCIATION DES MAIRES DE FRANCE,78471845400027,ASSOCIATION,75,Service de presse en ligne,mairesdefrance.com,Inscrit,,2595566,2031-06-30,2026-06-25,DISPOSITIF_FISCAL_39_BIS_A,Non,Non,http://www.mairesdefrance.com
 EUSKAL KOMUNIKABIDEAK,44989312200027,SARL,64,Service de presse en ligne,iparraldekohitza.eus,Inscrit,,2591020,2029-09-30,2024-10-31,IPG,Non,Non,http://iparraldekohitza.eus
-LES GAZETTES ASSOCIÉES - SAGA,34234789500027,SA,34,Service de presse en ligne,lagazettedemontpellier.fr,Inscrit,,2590434,2027-04-30,2022-05-25,IPG,Non,Non,http://www.lagazettedemontpellier.fr
-LES GAZETTES ASSOCIÉES - SAGA,34234789500027,SA,34,Service de presse en ligne,lagazettedenimes.fr,Inscrit,,2593841,2029-01-31,2024-01-25,IPG,Non,Non,http://www.lagazettedenimes.fr
+LES GAZETTES ASSOCIÉES - SAGA,34234789500027,SA,34,Service de presse en ligne,lagazettedemontpellier.fr,Inscrit,,2590434,2027-04-30,2022-05-25,IPG,Non,Oui,http://www.lagazettedemontpellier.fr
+LES GAZETTES ASSOCIÉES - SAGA,34234789500027,SA,34,Service de presse en ligne,lagazettedenimes.fr,Inscrit,,2593841,2029-01-31,2024-01-25,IPG,Non,Oui,http://www.lagazettedenimes.fr
 PUBLIPRESSE MEDIAS,42489664500027,SARL,25,Service de presse en ligne,lapressedudoubs.fr,Non Inscrit,,2594392,2026-05-28,2026-05-28,,Non,Non,http://www.lapressedudoubs.fr
 PUBLIC MEDIA,41092499700027,SARL,86,Service de presse en ligne,info-eco.fr,Non Inscrit,,2592941,2021-07-08,2021-07-08,,Non,Non,http://www.info-eco.fr
-SEJIAR - SOCIÉTÉ D'EXPLOITATION DU JOURNAL L'INFORMATION AGRICOLE DU RHÔNE,97050730700027,SARL,69,Service de presse en ligne,infoagri69.fr,Inscrit,,2594333,2030-09-30,2025-09-25,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,http://www.infoagri69.fr
+SEJIAR - SOCIÉTÉ D'EXPLOITATION DU JOURNAL L'INFORMATION AGRICOLE DU RHÔNE,97050730700027,SARL,69,Service de presse en ligne,infoagri69.fr,Inscrit,,2594333,2030-09-30,2025-09-25,DISPOSITIF_FISCAL_39_BIS_B,Non,Oui,http://www.infoagri69.fr
 SOCIETE DE PRESSE ET DE DOCUMENTATION AGRICOLE DE LA CREUSE,99725003000027,SARL,23,Service de presse en ligne,creuse-agricole.com,Non Inscrit,,2592890,2026-05-28,2026-05-28,,Non,Non,http://creuse-agricole.com
 HANDICAP.FR,44275594800027,SAS,69,Service de presse en ligne,handicap.fr,Inscrit,,2593929,2031-06-30,2026-06-25,DISPOSITIF_FISCAL_39_BIS_A,Non,Non,https://www.handicap.fr/
 EDITIONS DU SUD SEPTIMANIE,49537589100027,SARL,34,Service de presse en ligne,herault-tribune.com,Inscrit,,2592696,2028-07-31,2023-06-29,DISPOSITIF_FISCAL_39_BIS_A,Non,Non,http://www.herault-tribune.com
@@ -25797,7 +25797,7 @@ TOCSIN,43273526400025,SARL,75,Service de presse en ligne,societesdelinformation.
 THE LOCAL EUROPE AB,79076620800025,SARL,,Service de presse en ligne,thelocal.fr,Non Inscrit,,2594208,2022-11-24,2022-11-24,,Non,Non,http://www.thelocal.fr
 PIOCHE! MAGAZINE,89312402400025,SAS,37,Service de presse en ligne,piochemag.fr,Inscrit,,2594761,2028-11-30,2023-11-30,DISPOSITIF_FISCAL_39_BIS_A,Non,Non,http://www.piochemag.fr
 BORDEAUX MEDIA,87845976700025,SAS,33,Service de presse en ligne,placeco.fr,Inscrit,,2594371,2027-11-30,2023-01-19,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,http://www.placeco.fr
-SOCIETE D'EDITIONS RURALES PERIGORDINES (SERP),70198047600025,SA,24,Service de presse en ligne,reussirleperigord.fr,Inscrit,,2593767,2028-09-30,2023-09-28,IPG,Non,Non,http://www.reussirleperigord.fr
+SOCIETE D'EDITIONS RURALES PERIGORDINES (SERP),70198047600025,SA,24,Service de presse en ligne,reussirleperigord.fr,Inscrit,,2593767,2028-09-30,2023-09-28,IPG,Non,Oui,http://www.reussirleperigord.fr
 NEWSFROMPHOTOGRAPHERS.COM,83060828700025,SAS,69,Service de presse en ligne,newsfromphotographers.com,Non Inscrit,,2594759,2024-05-30,2024-05-30,,Non,Non,http://www.newsfromphotographers.com
 NOUVELLES EDITIONS CARIBEENNES,52107008600025,SARL,,Service de presse en ligne,nouvellessemaine.fr,Inscrit,,2594760,2026-11-30,2021-11-25,IPG,Non,Non,http://www.nouvellessemaine.fr
 NOUVELLE SA LA VIE OUVRIERE,56203977600025,SA,93,Service de presse en ligne,nvo.fr,Inscrit,,2591098,2026-10-31,2021-09-16,IPG,Non,Non,http://www.nvo.fr
@@ -25838,7 +25838,7 @@ PLAY BAC PRESSE,39887284600025,SAS,75,Service de presse en ligne,L'actu - Applic
 PLAY BAC PRESSE,39887284600025,SAS,75,Service de presse en ligne,L'éco - Application,Inscrit,,2593404,2027-05-31,2022-09-15,IPG,Non,Non,L'éco - Application
 LOIRE TELE,45244006800024,SA,42,Service de presse en ligne,tl7.fr,Inscrit,,2594582,2027-05-31,2023-05-11,IPG,Non,Non,http://www.tl7.fr
 MEDIA DE L'OUEST PARISIEN,33962793700024,SA,78,Service de presse en ligne,tv78.com,Inscrit,,2595458,2027-07-31,2025-07-03,DISPOSITIF_FISCAL_39_BIS_A,Non,Non,https://tv78.com/
-SOCIÉTÉ D’EDITION MEUSIENNE DE LA PRESSE AGRICOLE - SEMPA,84718008000024,SARL,55,Service de presse en ligne,vieagricole-meuse.fr,Inscrit,,2594765,2026-11-30,2024-10-03,,Non,Non,https://www.vieagricole-meuse.fr/
+SOCIÉTÉ D’EDITION MEUSIENNE DE LA PRESSE AGRICOLE - SEMPA,84718008000024,SARL,55,Service de presse en ligne,vieagricole-meuse.fr,Inscrit,,2594765,2026-11-30,2024-10-03,,Non,Oui,https://www.vieagricole-meuse.fr/
 WHAT ABOUT YOURS ?,85407621300024,SAS,75,Service de presse en ligne,wayorientation.fr,Non Inscrit,,2594773,2024-05-30,2024-05-30,,Non,Non,https://wayorientation.fr/
 RELIKTO,80447370000024,ASSOCIATION,76,Service de presse en ligne,relikto.com,Inscrit,,2595533,2028-01-31,2026-01-22,,Non,Non,http://www.relikto.com
 TETU,92831230500024,SAS,75,Service de presse en ligne,tetu.com,Inscrit,,2592693,2031-01-31,2026-01-22,IPG,Non,Non,http://tetu.com
@@ -25870,7 +25870,7 @@ LGNET,50419731000023,SAS,75,Service de presse en ligne,yagg.com,Non Inscrit,,259
 MILK,53215257600023,SAS,92,Service de presse en ligne,milkmagazine.net,Inscrit,,2595251,2029-01-31,2024-01-25,,Non,Non,http://www.milkmagazine.net
 POUR LA SCIENCE,31179739300023,SARL,75,Service de presse en ligne,pourlascience.fr,Inscrit,,2591526,2027-09-30,2022-11-24,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,http://www.pourlascience.fr
 PRESSAC,50395046100023,SARL,78,Service de presse en ligne,profession-spectacle.com,Non Inscrit,,2593663,2025-10-30,2025-10-30,,Non,Non,http://www.profession-spectacle.com
-IMPRIMERIE COOPERATIVE DU SUD-OUEST,08562021900023,SA,81,Service de presse en ligne,letarnlibre.com,Inscrit,,2591752,2028-03-31,2023-03-09,IPG,Non,Non,http://www.letarnlibre.com
+IMPRIMERIE COOPERATIVE DU SUD-OUEST,08562021900023,SA,81,Service de presse en ligne,letarnlibre.com,Inscrit,,2591752,2028-03-31,2023-03-09,IPG,Non,Oui,http://www.letarnlibre.com
 OMAHA EDITIONS,50261043900023,SARL,69,Service de presse en ligne,mag5.fr,Non Inscrit,,2592501,2018-03-08,2018-03-08,,Non,Non,http://www.mag5.fr
 MILK,53215257600023,SAS,92,Service de presse en ligne,milkdecoration.com,Inscrit,,2595250,2029-01-31,2024-01-25,,Non,Non,http://www.milkdecoration.com
 B2M,50230445400023,SARL,06,Service de presse en ligne,lechommerces.fr,Inscrit,,2593614,2030-03-31,2025-03-27,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,http://www.lechommerces.fr
@@ -25921,7 +25921,7 @@ OMAHA EDITIONS,50261043900023,SARL,69,Service de presse en ligne,foot-herault.fr
 OMAHA EDITIONS,50261043900023,SARL,69,Service de presse en ligne,foot09.fr,Non Inscrit,,2592477,2018-03-08,2018-03-08,,Non,Non,http://www.foot09.fr
 OMAHA EDITIONS,50261043900023,SARL,69,Service de presse en ligne,foot12.fr,Non Inscrit,,2592478,2018-03-08,2018-03-08,,Non,Non,http://www.foot12.fr
 ENTRAID',33335288800023,SA,35,Service de presse en ligne,entraid.com,Inscrit,,2590881,2031-06-30,2026-06-25,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,http://www.entraid.com
-SOCIETE AGRICOLE ET DE COMMUNICATION (SAEC),34024132200023,SARL,27,Service de presse en ligne,eure-agricole.fr,Inscrit,,2593982,2029-07-31,2024-10-03,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,http://www.eure-agricole.fr
+SOCIETE AGRICOLE ET DE COMMUNICATION (SAEC),34024132200023,SARL,27,Service de presse en ligne,eure-agricole.fr,Inscrit,,2593982,2029-07-31,2024-10-03,DISPOSITIF_FISCAL_39_BIS_B,Non,Oui,http://www.eure-agricole.fr
 EURONEWS,38785804600023,SA,69,Service de presse en ligne,euronews.com,Inscrit,,2594775,2026-10-31,2024-10-31,IPG,Non,Non,http://www.euronews.com
 GRAND GARAGE,83763423700023,SASU,75,Service de presse en ligne,auposte.fr,Inscrit,,2595014,2029-11-30,2024-11-28,IPG,Non,Non,https://www.auposte.fr/
 POUR LA SCIENCE,31179739300023,SARL,75,Service de presse en ligne,cerveauetpsycho.fr,Inscrit,,2593493,2027-09-30,2022-11-24,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,http://www.cerveauetpsycho.fr
@@ -25929,13 +25929,13 @@ ARTS,79453146700023,SAS,75,Service de presse en ligne,comicsblog.fr,Non Inscrit,
 ARTS,79453146700023,SAS,75,Service de presse en ligne,9emeart.fr,Non Inscrit,,2593877,2021-09-16,2021-09-16,,Non,Non,http://www.9emeart.fr
 CENTRE INFFO,77572464400023,ASSOCIATION,93,Service de presse en ligne,Le quotidien de la formation - NewsLetter,Non Inscrit,,2593194,2024-03-14,2024-03-14,,Non,Non,Le quotidien de la formation - NewsLetter
 TELE PAESE,47928201400022,SCIC,20,Service de presse en ligne,stampa-paese.com,Inscrit,,2595205,2030-12-31,2025-12-18,IPG,Non,Non,https://stampa-paese.com/
-SOCIETE D'EDITION DE LA TERRE DAUPHINOISE,38399885300022,SARL,38,Service de presse en ligne,terredauphinoise.fr,Inscrit,,2592383,2029-06-30,2024-06-27,DISPOSITIF_FISCAL_39_BIS_A,Non,Non,http://www.terredauphinoise.fr
+SOCIETE D'EDITION DE LA TERRE DAUPHINOISE,38399885300022,SARL,38,Service de presse en ligne,terredauphinoise.fr,Inscrit,,2592383,2029-06-30,2024-06-27,DISPOSITIF_FISCAL_39_BIS_A,Non,Oui,http://www.terredauphinoise.fr
 VOSGES INFO PUB,79817897600022,SAS,88,Service de presse en ligne,vosgesinfo.fr,Inscrit,,2594211,2027-03-31,2025-03-27,IPG,Non,Non,https://vosgesinfo.fr/
 MARTIN MEDIA,33491096500022,SAS,55,Service de presse en ligne,rfgenealogie.com,Inscrit,,2593529,2027-11-30,2022-11-24,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,https://www.rfgenealogie.com
 VOSGES INFO PUB,79817897600022,SAS,88,Service de presse en ligne,saintdieinfo.fr,Inscrit,,2594212,2027-03-31,2022-03-10,IPG,Non,Non,https://saintdieinfo.fr/
-SOCIETE NOUVELLE SEMEUR HEBDO,80329468000022,SARL,63,Service de presse en ligne,semeur.com,Inscrit,,2594119,2026-11-30,2021-09-16,IPG,Non,Non,http://www.semeur.com
+SOCIETE NOUVELLE SEMEUR HEBDO,80329468000022,SARL,63,Service de presse en ligne,semeur.com,Inscrit,,2594119,2026-11-30,2021-09-16,IPG,Non,Oui,http://www.semeur.com
 UNION DES ASSOCIATIONS DIOCÉSAIRES DE FRANCE (UADF),38756523700022,ASSOCIATION,75,Service de presse en ligne,narthex.fr,Non Inscrit,,2591217,2024-06-27,2024-06-27,,Non,Non,http://www.narthex.fr
-SOCIÉTÉ NOUVELLE DES PETITES AFFICHES DES ALPES MARITIMES,95780830600022,SARL,06,Service de presse en ligne,petitesaffiches.fr,Inscrit,,2591024,2028-06-30,2026-06-25,IPG,Non,Non,https://www.petitesaffiches.fr
+SOCIÉTÉ NOUVELLE DES PETITES AFFICHES DES ALPES MARITIMES,95780830600022,SARL,06,Service de presse en ligne,petitesaffiches.fr,Inscrit,,2591024,2028-06-30,2026-06-25,IPG,Non,Oui,https://www.petitesaffiches.fr
 VOSGES INFO PUB,79817897600022,SAS,88,Service de presse en ligne,remiremontinfo.fr,Non Inscrit,,2591400,2025-03-27,2025-03-27,,Non,Non,http://remiremontinfo.fr
 EDICA,34294407100022,SARL,10,Service de presse en ligne,revueagricole10.com,Inscrit,,2593928,2029-06-30,2024-10-03,,Non,Non,http://www.revueagricole10.com
 AICP (ACADÉMIE INTERNATIONALE DE COUPE DE PARIS),33913912300022,ASSOCIATION,75,Service de presse en ligne,mt2magazine.fr,Inscrit,,2595005,2027-11-30,2022-11-24,,Non,Non,http://www.mt2magazine.fr
@@ -25945,7 +25945,7 @@ L'IMPREVU,80511431100022,SAS,75,Service de presse en ligne,limprevu.fr,Non Inscr
 ANTENNE REUNION TELEVISION,33131436800022,SA,,Service de presse en ligne,linfo.re,Inscrit,,2592361,2028-09-30,2023-09-28,IPG,Non,Non,http://www.linfo.re
 SOCIETE GUYANAISE DE PRESSE,89446540000022,SARL,,Service de presse en ligne,monewsguyane.com,Inscrit,,2594768,2026-11-30,2021-11-25,IPG,Non,Non,http://www.monewsguyane.com
 MARTIN MEDIA,33491096500022,SAS,55,Service de presse en ligne,lassmat.fr,Inscrit,,2593531,2027-11-30,2022-11-24,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,https://www.lassmat.fr
-LES EDITIONS CORREZIENNES,67562002500022,SARL,19,Service de presse en ligne,laviecorrezienne.fr,Inscrit,,2594118,2026-11-30,2021-09-16,IPG,Non,Non,http://www.laviecorrezienne.fr
+LES EDITIONS CORREZIENNES,67562002500022,SARL,19,Service de presse en ligne,laviecorrezienne.fr,Inscrit,,2594118,2026-11-30,2021-09-16,IPG,Non,Oui,http://www.laviecorrezienne.fr
 BARA,79538552500022,SARL,,Service de presse en ligne,lejournaldemayotte.yt,Inscrit,,2592314,2031-01-31,2025-11-27,IPG,Non,Non,https://lejournaldemayotte.yt
 MAZURCAS,44209668100022,ASSOCIATION,69,Service de presse en ligne,lezebre.info,Non Inscrit,,2590573,2021-03-11,2021-03-11,,Non,Non,http://lezebre.info
 MARTIN MEDIA,33491096500022,SAS,55,Service de presse en ligne,jdanimation.fr,Inscrit,,2595084,2028-03-31,2023-03-09,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,http://www.jdanimation.fr
@@ -25961,7 +25961,7 @@ VOSGES INFO PUB,79817897600022,SAS,88,Service de presse en ligne,epinalinfos.fr,
 L'ECHO EDITION,39395594300021,SAS,84,Service de presse en ligne,vegetable.fr,Inscrit,,2595442,2030-05-31,2025-05-22,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,http://www.vegetable.fr
 SOCIETE GUYANAISE DE PRESSE,89446540000022,SARL,,Service de presse en ligne,97-news.com,Inscrit,,2595030,2029-11-30,2024-10-31,IPG,Non,Non,https://www.97-news.com/
 TIMEFORMED,95219029600022,SAS,92,Service de presse en ligne,Timefornews - Newsletter,Inscrit,,2595550,2028-03-31,2026-03-26,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,Timefornews - Newsletter
-DARK SIDE MEDIA (DS MEDIA),50773157800021,SARL,31,Service de presse en ligne,touleco.fr,Inscrit,,2591225,2029-01-31,2024-01-25,,Non,Non,http://www.touleco.fr
+DARK SIDE MEDIA (DS MEDIA),50773157800021,SARL,31,Service de presse en ligne,touleco.fr,Inscrit,,2591225,2029-01-31,2024-01-25,,Non,Oui,http://www.touleco.fr
 KEPHREN PUBLISHING,75053808400021,SASU,92,Service de presse en ligne,tribunek-mr-neuromusculaires.fr,Non Inscrit,,2595057,2025-09-25,2025-09-25,,Non,Non,http://www.tribunek-mr-neuromusculaires.fr
 VAMEDIA,49178784200021,SARL,59,Service de presse en ligne,va-infos.fr,Inscrit,,2592434,2026-09-30,2021-09-16,,Non,Non,http://www.va-infos.fr
 KEPHREN PUBLISHING,75053808400021,SASU,92,Service de presse en ligne,rfht.fr,Inscrit,,2595056,2031-05-31,2026-05-28,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,http://www.rfht.fr
@@ -25973,7 +25973,7 @@ TERRE-ECOS,50144290900021,SAS,75,Service de presse en ligne,reference-agro.com,N
 TERRE-ECOS,50144290900021,SAS,75,Service de presse en ligne,reference-environnement.com,Non Inscrit,,2591843,2021-01-14,2021-01-14,,Non,Non,http://www.reference-environnement.com
 JABRON EDITIONS,81117238600021,ASSOCIATION,26,Service de presse en ligne,montelimar-news.fr,Non Inscrit,,2593005,2023-10-26,2023-10-26,,Non,Non,http://www.montelimar-news.fr
 EDITIONS DE LA NAVIGATION DU RHIN,58850223700021,SARL,67,Service de presse en ligne,n-pi.fr,Non Inscrit,,2591372,2022-03-10,2022-03-10,,Non,Non,http://www.n-pi.fr
-FDF EDITIONS,50739066400021,SASU,,Service de presse en ligne,lelegis.fr,Inscrit,,2593747,2028-09-30,2023-09-28,DISPOSITIF_FISCAL_39_BIS_A,Non,Non,https://www.lelegis.fr
+FDF EDITIONS,50739066400021,SASU,,Service de presse en ligne,lelegis.fr,Inscrit,,2593747,2028-09-30,2023-09-28,DISPOSITIF_FISCAL_39_BIS_A,Non,Oui,https://www.lelegis.fr
 LA TCHATCHE,44501563900021,ASSOCIATION,13,Service de presse en ligne,leravi.org,Non Inscrit,,2591027,2024-03-14,2024-03-14,,Non,Non,http://www.leravi.org
 LE RURALISCOPE,39904990700021,MICRO-ENTREPRENEUR,58,Service de presse en ligne,leruraliscope.fr,Non Inscrit,,2593078,2019-03-14,2019-03-14,,Non,Non,http://leruraliscope.fr
 TERRE-ECOS,50144290900021,SAS,75,Service de presse en ligne,lexalerte.fr,Non Inscrit,,2591841,2021-01-14,2021-01-14,,Non,Non,http://www.lexalerte.fr
@@ -26000,10 +26000,10 @@ TENDANCE OUEST,32598592700020,SARL,50,Service de presse en ligne,tendanceouest.c
 LYON MEDIA PLUS,40084069000020,SARL,69,Service de presse en ligne,tonicradio.fr,Non Inscrit,,2595111,2024-11-28,2024-11-28,,Non,Non,https://www.tonicradio.fr/
 VERON ET COMPAGNIE,42170675500020,SAS,35,Service de presse en ligne,tribune-de-la-siderurgie.fr,Inscrit,,2595465,2030-07-31,2025-07-03,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,http://www.tribune-de-la-siderurgie.fr
 LES EDITIONS DE BIONNAY,40132543600020,SAS,69,Service de presse en ligne,professionpaysagiste.com,Inscrit,,2594941,2027-06-30,2022-06-21,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,http://www.professionpaysagiste.com
-INF'AGRI 72,42127631200020,SARL,72,Service de presse en ligne,reussir-agri72.fr,Inscrit,,2593791,2028-11-30,2023-11-30,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,http://www.reussir-agri72.fr
+INF'AGRI 72,42127631200020,SARL,72,Service de presse en ligne,reussir-agri72.fr,Inscrit,,2593791,2028-11-30,2023-11-30,DISPOSITIF_FISCAL_39_BIS_B,Non,Oui,http://www.reussir-agri72.fr
 JABA MEDIA,82980908600020,SAS,75,Service de presse en ligne,serieously.com,Inscrit,,2594680,2028-09-30,2023-11-30,,Non,Non,http://www.serieously.com
 NEWS TANK FOOTBALL,79314502000020,SAS,75,Service de presse en ligne,sport.newstank.fr,Inscrit,,2593757,2030-09-30,2025-10-30,,Non,Non,https://sport.newstank.fr
-PRESSE ANTILLES GUYANE,87968988300020,SAS,,Service de presse en ligne,martinique.franceantilles.fr,Inscrit,,2593571,2027-07-31,2022-09-15,IPG,Non,Non,http://www.martinique.franceantilles.fr
+PRESSE ANTILLES GUYANE,87968988300020,SAS,,Service de presse en ligne,martinique.franceantilles.fr,Inscrit,,2593571,2027-07-31,2022-09-15,IPG,Non,Oui,http://www.martinique.franceantilles.fr
 MEDIACITES,82300531900020,SAS,92,Service de presse en ligne,mediacites.fr,Inscrit,,2593294,2029-01-31,2024-06-27,IPG,Non,Non,http://www.mediacites.fr
 N3D,81278469200020,SAS,94,Service de presse en ligne,n3d.eu,Non Inscrit,,2592938,2023-09-28,2023-09-28,,Non,Non,http://www.n3d.eu
 VERON ET COMPAGNIE,42170675500020,SAS,35,Service de presse en ligne,profession-recycleur.fr,Inscrit,,2595464,2030-07-31,2025-07-03,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,http://www.profession-recycleur.fr
@@ -26012,22 +26012,22 @@ LISBETH MEDIA,91080509200020,ASSOCIATION,29,Service de presse en ligne,lisbethme
 FRANCE COMMUNICATION INTERNATIONAL,53915849300020,SAS,69,Service de presse en ligne,ma-sante.news,Inscrit,,2595486,2027-09-30,2025-09-25,,Non,Non,https://ma-sante.news/
 L'IMPRIMERIE BRISSON,31301426800020,SARL,17,Service de presse en ligne,langerienlibre.fr,Inscrit,,2594340,2027-09-30,2022-09-15,IPG,Non,Non,http://www.langerienlibre.fr
 LA VIE COMMUNALE ET DEPARTEMENTALE,57202818100020,SA,75,Service de presse en ligne,laviecommunale-actualites.fr,Inscrit,,2592698,2030-04-30,2025-05-22,,Non,Non,http://www.laviecommunale-actualites.fr
-ALFA EDITIONS,44415046000020,EURL,,Service de presse en ligne,leprobant.fr,Inscrit,,2593745,2028-09-30,2023-09-28,DISPOSITIF_FISCAL_39_BIS_A,Non,Non,https://www.leprobant.fr
-AVEYRON INFO,83417843600020,SARL,12,Service de presse en ligne,leprogresstaffricain.fr,Inscrit,,2594237,2030-07-31,2025-07-03,IPG,Non,Non,https://www.leprogresstaffricain.fr/
+ALFA EDITIONS,44415046000020,EURL,,Service de presse en ligne,leprobant.fr,Inscrit,,2593745,2028-09-30,2023-09-28,DISPOSITIF_FISCAL_39_BIS_A,Non,Oui,https://www.leprobant.fr
+AVEYRON INFO,83417843600020,SARL,12,Service de presse en ligne,leprogresstaffricain.fr,Inscrit,,2594237,2030-07-31,2025-07-03,IPG,Non,Oui,https://www.leprogresstaffricain.fr/
 MODESTE ET GENIALE,53339919200020,ASSOCIATION,75,Service de presse en ligne,la-bas.org,Non Inscrit,,2592604,2026-05-28,2026-05-28,,Non,Non,http://la-bas.org
 M,32909511100020,SARL,34,Service de presse en ligne,lalettrem.fr,Inscrit,,2592224,2030-10-31,2025-10-30,,Non,Non,http://www.lalettrem.fr
 2050 NOW LE MEDIA,92246877200020,SAS,75,Service de presse en ligne,greenunivers.com,Inscrit,,2590214,2027-07-31,2025-07-03,,Non,Non,https://www.greenunivers.com/
-PRESSE ANTILLES GUYANE,87968988300020,SAS,,Service de presse en ligne,guadeloupe.franceantilles.fr,Inscrit,,2593570,2027-07-31,2022-09-15,IPG,Non,Non,http://www.guadeloupe.franceantilles.fr
+PRESSE ANTILLES GUYANE,87968988300020,SAS,,Service de presse en ligne,guadeloupe.franceantilles.fr,Inscrit,,2593570,2027-07-31,2022-09-15,IPG,Non,Oui,http://www.guadeloupe.franceantilles.fr
 PRESSE ANTILLES GUYANE,87968988300020,SAS,,Service de presse en ligne,hexagone.franceantilles.fr,Inscrit,,2595557,2028-05-31,2026-05-28,IPG,Non,Non,https://hexagone.franceantilles.fr/
 TELEROUTE FRANCE,48008135500020,,92,Service de presse en ligne,flash-transport.com,Non Inscrit,,2590824,2014-01-30,2014-01-30,,Non,Non,http://www.flash-transport.com
 SUMMERTIME,84144892100020,SAS,69,Service de presse en ligne,flushmag.fr,Inscrit,,2594974,2027-09-30,2022-09-15,DISPOSITIF_FISCAL_39_BIS_A,Non,Non,http://www.flushmag.fr
 NEWS TANK FOOTBALL,79314502000020,SAS,75,Service de presse en ligne,football.newstank.eu,Inscrit,,2592166,2031-03-31,2026-03-26,,Non,Non,http://football.newstank.eu
-PRESSE ANTILLES GUYANE,87968988300020,SAS,,Service de presse en ligne,franceguyane.fr,Inscrit,,2592637,2027-07-31,2022-09-15,IPG,Non,Non,http://www.franceguyane.fr
+PRESSE ANTILLES GUYANE,87968988300020,SAS,,Service de presse en ligne,franceguyane.fr,Inscrit,,2592637,2027-07-31,2022-09-15,IPG,Non,Oui,http://www.franceguyane.fr
 IDM RHONE-ALPES - INFORMATIONS DÉVELOPPEMENT MÉDIAS RHÔNE-ALPES,48001821700020,SAS,69,Service de presse en ligne,brefeco.com,Inscrit,,2592367,2029-06-30,2024-06-27,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,https://www.brefeco.com
 CAPA CONSEIL,75062956000020,SARL,75,Service de presse en ligne,capaweb.com,Non Inscrit,,2591951,2015-11-12,2015-11-12,,Non,Non,http://www.capaweb.com
 CEO AFRIQUE,49516908800020,MICRO-ENTREPRENEUR,95,Service de presse en ligne,ceoafrique.com,Non Inscrit,,2595170,2026-03-26,2026-03-26,,Non,Non,http://www.ceoafrique.com
 NEWS TANK CULTURE,75202019800020,SAS,75,Service de presse en ligne,culture.newstank.fr,Inscrit,,2592165,2031-03-31,2026-03-26,,Non,Non,http://culture.newstank.fr
-LES PETITES AFFICHES BEARNAISES ET DES PYRENEES-ATLANTIQUES,33298762700020,SAS,64,Service de presse en ligne,affiches64.com,Inscrit,,2595350,2030-10-31,2025-10-30,,Non,Non,http://www.affiches64.com
+LES PETITES AFFICHES BEARNAISES ET DES PYRENEES-ATLANTIQUES,33298762700020,SAS,64,Service de presse en ligne,affiches64.com,Inscrit,,2595350,2030-10-31,2025-10-30,,Non,Oui,http://www.affiches64.com
 AVEYRON INFO,83417843600020,SARL,12,Service de presse en ligne,aveyrondigitalnews.fr,Non Inscrit,,2593832,2021-03-11,2021-03-11,,Non,Non,https://www.aveyrondigitalnews.fr
 WARNING TRADING,83883670800019,SASU,13,Service de presse en ligne,warning-trading.com,Inscrit,,2593802,2028-03-31,2023-03-09,,Non,Non,https://www.warning-trading.com
 MEDIA DATA SERVICES,82960659900019,SAS,60,Service de presse en ligne,web-agri.fr,Inscrit,,2592593,2027-01-31,2022-01-20,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,http://www.web-agri.fr
@@ -26052,7 +26052,7 @@ GROUPE MÉDIA THÉAPOLIS,82392339600019,SAS,06,Service de presse en ligne,lewebo
 MEDIA AUTREMENT PRODUCTION,91316929800019,SARL,35,Service de presse en ligne,mapinfo.bzh,Non Inscrit,,2595249,2026-06-25,2026-06-25,,Non,Non,http://www.mapinfo.bzh
 NORE ET PRESSE MEDIA +,49180884600019,SARL,75,Service de presse en ligne,lemediaplus.com,Non Inscrit,,2590941,2014-01-30,2014-01-30,,Non,Non,http://www.lemediaplus.com
 LE NOUVEAU PARADIGME,93959656500019,SAS,75,Service de presse en ligne,lenouveauparadigme.fr,Inscrit,,2595457,2027-07-31,2025-07-03,IPG,Non,Non,https://lenouveauparadigme.fr/
-LE PELICAN MESSAGER,45130816700019,SARL,,Service de presse en ligne,lepelican-journal.com,Inscrit,,2590870,2031-05-31,2026-05-28,IPG,Non,Non,http://www.lepelican-journal.com
+LE PELICAN MESSAGER,45130816700019,SARL,,Service de presse en ligne,lepelican-journal.com,Inscrit,,2590870,2031-05-31,2026-05-28,IPG,Non,Oui,http://www.lepelican-journal.com
 HIMA NEWS,48855324900019,SARL,31,Service de presse en ligne,latribunetoulouse.fr,Non Inscrit,,2591407,2023-01-19,2023-01-19,,Non,Non,http://www.latribunetoulouse.fr
 LE CRIEUR DE LA VILLENEUVE,80255509400019,ASSOCIATION,38,Service de presse en ligne,lecrieur.net,Non Inscrit,,2593146,2026-03-26,2026-03-26,,Non,Non,http://www.lecrieur.net
 LJF,82941896100019,SARL,63,Service de presse en ligne,lejournaldeleco.fr,Non Inscrit,,2592865,2017-11-16,2017-11-16,,Non,Non,https://lejournaldeleco.fr
@@ -26060,7 +26060,7 @@ JEUNES AGRICULTEURS,78485397000019,SYNDICAT NATIONAL,75,Service de presse en lig
 JOUR DE COURSES EDITIONS,49863585300019,SAS,75,Service de presse en ligne,jourdegalop.com,Inscrit,,2592237,2027-05-31,2022-05-25,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,http://www.jourdegalop.com
 HONFLEUR INFOS,81750637100019,ASSOCIATION,14,Service de presse en ligne,honfleur-infos.com,Non Inscrit,,2595257,2017-03-02,2017-03-02,,Non,Non,https://www.honfleur-infos.com
 CHALON INFOS,51186273200019,SARL,71,Service de presse en ligne,info-chalon.com,Inscrit,,2593615,2027-01-31,2022-01-20,DISPOSITIF_FISCAL_39_BIS_A,Non,Non,http://www.info-chalon.com
-COMIMPEX,48063751100019,SARL,,Service de presse en ligne,guyaweb.com,Inscrit,,2591184,2028-11-30,2023-11-30,IPG,Non,Non,https://www.guyaweb.com
+COMIMPEX,48063751100019,SARL,,Service de presse en ligne,guyaweb.com,Inscrit,,2591184,2028-11-30,2023-11-30,IPG,Non,Oui,https://www.guyaweb.com
 HFORART,80854127000019,SARL,75,Service de presse en ligne,happening.media,Non Inscrit,,2592874,2019-03-14,2019-03-14,,Non,Non,http://www.happening.media
 HARDWARE & CO,98511948600019,GIE,92,Service de presse en ligne,hardwareand.co,Inscrit,,2595418,2031-05-31,2026-05-28,,Non,Non,https://hardwareand.co/
 TINDLE EDITION,80422816100019,SAS,33,Service de presse en ligne,fiscalonline.com,Non Inscrit,,2595300,2025-11-27,2025-11-27,,Non,Non,http://www.fiscalonline.com
@@ -26086,7 +26086,7 @@ MEDIAVINOINFO,88487351400019,SAS,75,Service de presse en ligne,MédiavinoPro - N
 SOCIETE D'EDITION DE REVUES NATIONALES SPECIALISEES (SERNAS),32356489800019,SAS,35,Service de presse en ligne,Voiles et voiliers - Application,Inscrit,,2590070,2027-05-31,2022-05-25,,Non,Non,Voiles et voiliers - Application
 22-M,92991923100019,SAS,13,Service de presse en ligne,22-med.com,Inscrit,,2595330,2026-09-30,2024-10-31,DISPOSITIF_FISCAL_39_BIS_A,Non,Non,http://www.22-med.com
 Q/R,79904672700019,SAS,75,Service de presse en ligne,App' Q/Rmagazine,Non Inscrit,,2592226,2017-03-02,2017-03-02,,Non,Non,App' Q/Rmagazine
-COMINFOP,37864221900018,SARL,76,Service de presse en ligne,union-agricole.fr,Inscrit,,2593971,2029-07-31,2024-10-03,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,http://www.union-agricole.fr
+COMINFOP,37864221900018,SARL,76,Service de presse en ligne,union-agricole.fr,Inscrit,,2593971,2029-07-31,2024-10-03,DISPOSITIF_FISCAL_39_BIS_B,Non,Oui,http://www.union-agricole.fr
 GROUPE NICE MATIN,80785659600018,SASU,06,Service de presse en ligne,varmatin.com,Non Inscrit,,2590216,2025-10-30,2025-10-30,,Non,Non,http://www.varmatin.com
 DMT DEVELOPPEMENT,51534977700018,,75,Service de presse en ligne,zegreenweb.com,Non Inscrit,,2590875,2014-01-30,2014-01-30,,Non,Non,http://www.zegreenweb.com
 BOM PRESSE,50007446300018,SAS,66,Service de presse en ligne,tech-imago.fr,Inscrit,,2595216,2030-11-30,2025-11-27,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,http://www.tech-imago.fr
@@ -26105,8 +26105,8 @@ PARTICIPE,80191011800018,ASSOCIATION,38,Service de presse en ligne,particite.fr,
 MER7,49859983600018,SAS,75,Service de presse en ligne,pcachat.fr,Non Inscrit,,2591401,2018-03-08,2018-03-08,,Non,Non,http://www.pcachat.fr
 LES AMIS DE PENSER C'EST CHOUETTE,92075283900018,ASSOCIATION,75,Service de presse en ligne,pensercestchouette.com,Inscrit,,2595496,2026-09-30,2025-09-25,DISPOSITIF_FISCAL_39_BIS_A,Non,Non,http://www.pensercestchouette.com
 MERIDIEN MAG,51773107100018,SARL,13,Service de presse en ligne,meridienmag.fr,Non Inscrit,,2592556,2020-09-10,2020-09-10,,Non,Non,http://www.meridienmag.fr
-LA MOSELLE AGRICOLE,38268209400018,SAS,57,Service de presse en ligne,moselleagricole.agri-info-nordest.fr,Inscrit,,2594754,2026-11-30,2023-11-30,,Non,Non,https://moselleagricole.agri-info-nordest.fr/
-GROUPE NICE MATIN,80785659600018,SASU,06,Service de presse en ligne,nicematin.com,Inscrit,,2590215,2030-11-30,2025-10-30,IPG,Non,Non,http://www.nicematin.com
+LA MOSELLE AGRICOLE,38268209400018,SAS,57,Service de presse en ligne,moselleagricole.agri-info-nordest.fr,Inscrit,,2594754,2026-11-30,2023-11-30,,Non,Oui,https://moselleagricole.agri-info-nordest.fr/
+GROUPE NICE MATIN,80785659600018,SASU,06,Service de presse en ligne,nicematin.com,Inscrit,,2590215,2030-11-30,2025-10-30,IPG,Non,Oui,http://www.nicematin.com
 SECTION RÉGIONALE OCCITANIE - PYRÉNÉES - MÉDITERRANÉE DE L'INSTITUT D'ETUDES OCCITANES (IEO),82307359800018,ASSOCIATION,31,Service de presse en ligne,lodiari.com,Non Inscrit,,2594161,2026-05-28,2026-05-28,,Non,Non,http://www.lodiari.com
 INSTITUT LOUIS BACHELIER CENTRE D'INNOVATION FINANCIERE,50815173500018,ASSOCIATION,75,Service de presse en ligne,louisbachelier.org,Non Inscrit,,2592368,2022-01-20,2022-01-20,,Non,Non,http://www.louisbachelier.org
 LE VENT SE LEVE,83252002700018,ASSOCIATION,56,Service de presse en ligne,lvsl.fr,Non Inscrit,,2593840,2026-06-25,2026-06-25,,Non,Non,https://lvsl.fr
@@ -26116,12 +26116,12 @@ PEOPLE FACTOR WORLD,82058493600018,SASU,92,Service de presse en ligne,levraisite
 L'HEBDO DU HAUT JURA,53747828100018,SARL,39,Service de presse en ligne,lhebdoduhautjura.fr,Non Inscrit,,2594971,2025-03-27,2025-03-27,,Non,Non,http://www.lhebdoduhautjura.fr
 LES HORIZONS,85110170900018,SAS,44,Service de presse en ligne,leshorizons.net,Inscrit,,2594022,2027-05-31,2022-05-25,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,https://leshorizons.net/
 EN HUMANITÉS,92326169700018,ASSOCIATION,02,Service de presse en ligne,leshumanites-media.com,Inscrit,,2595167,2031-06-30,2026-06-25,IPG,Non,Non,https://www.leshumanites-media.com/
-SOCIETE D'EDITION DU BASSIN DE L'ADOUR,09668011100018,SARL,64,Service de presse en ligne,lesillon.info,Inscrit,,2590467,2030-07-31,2025-07-03,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,http://www.lesillon.info
+SOCIETE D'EDITION DU BASSIN DE L'ADOUR,09668011100018,SARL,64,Service de presse en ligne,lesillon.info,Inscrit,,2590467,2030-07-31,2025-07-03,DISPOSITIF_FISCAL_39_BIS_B,Non,Oui,http://www.lesillon.info
 L'ESSENTIEL,94915009800018,SAS,75,Service de presse en ligne,lessentiel.fr,Inscrit,,2595374,2026-11-30,2024-11-28,DISPOSITIF_FISCAL_39_BIS_A,Non,Non,http://www.lessentiel.fr
 LE MAINE LIBRE,57565040300018,SA,72,Service de presse en ligne,lemainelibre.fr,Non Inscrit,,2590473,2021-01-14,2021-01-14,,Non,Non,http://www.lemainelibre.fr
-LE PARISIEN LIBERE,33289035900018,SAS,75,Service de presse en ligne,leparisien.fr,Inscrit,,2590112,2030-12-31,2025-12-18,IPG,Non,Non,http://www.leparisien.fr
+LE PARISIEN LIBERE,33289035900018,SAS,75,Service de presse en ligne,leparisien.fr,Inscrit,,2590112,2030-12-31,2025-12-18,IPG,Non,Oui,http://www.leparisien.fr
 LES CENT PLUMES,74987539900018,SASU,75,Service de presse en ligne,lescentplumes.fr,Non Inscrit,,2595200,2026-05-28,2026-05-28,,Non,Non,http://www.lescentplumes.fr
-PRESSE ET MEDIA DE GIRONDE,81953818200018,SARL,33,Service de presse en ligne,lejournaldumedoc.fr,Inscrit,,2594025,2029-09-30,2024-10-03,IPG,Non,Non,https://www.lejournaldumedoc.fr
+PRESSE ET MEDIA DE GIRONDE,81953818200018,SARL,33,Service de presse en ligne,lejournaldumedoc.fr,Inscrit,,2594025,2029-09-30,2024-10-03,IPG,Non,Oui,https://www.lejournaldumedoc.fr
 GROUPE TOP SUD,52150069400018,SAS,17,Service de presse en ligne,lemagauto.fr,Non Inscrit,,2590729,2019-03-14,2019-03-14,,Non,Non,http://www.lemagauto.fr
 MARINE HERISSET,82503095000018,MICRO-ENTREPRENEUR,22,Service de presse en ligne,lefilrouge.media,Non Inscrit,,2593678,2020-11-19,2020-11-19,,Non,Non,https://lefilrouge.media
 CANAL JEUX VIDEO,50486230100018,SAS,92,Service de presse en ligne,jvn.com,Non Inscrit,,2591357,2014-06-26,2014-06-26,,Non,Non,http://www.jvn.com
@@ -26129,7 +26129,7 @@ INCA,89145074400018,SASU,70,Service de presse en ligne,laconcorde-hebdo.fr,Inscr
 INCA,89145074400018,SASU,70,Service de presse en ligne,lavenirleconfolentais.fr,Inscrit,,2594751,2026-11-30,2021-11-25,IPG,Non,Non,http://www.lavenirleconfolentais.fr
 L'ASSO D'ISMÉE,92481920400018,ASSOCIATION,33,Service de presse en ligne,ismee.info,Inscrit,,2595556,2031-05-31,2026-05-28,IPG,Non,Non,http://www.ismee.info
 GREENWEB,81803330000018,SASU,01,Service de presse en ligne,jeudegolf.org,Non Inscrit,,2593709,2026-01-22,2026-01-22,,Non,Non,https://www.jeudegolf.org
-PROMEDIA GROUP FRANCE,93840381300018,SAS,75,Service de presse en ligne,journalmarinemarchande.fr,Inscrit,,2595493,2027-09-30,2025-11-27,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,https://www.journalmarinemarchande.fr/
+PROMEDIA GROUP FRANCE,93840381300018,SAS,75,Service de presse en ligne,journalmarinemarchande.fr,Inscrit,,2595493,2027-09-30,2025-11-27,DISPOSITIF_FISCAL_39_BIS_B,Non,Oui,https://www.journalmarinemarchande.fr/
 HCL PUBLICATIONS,51202557800018,SARL,94,Service de presse en ligne,habitat-collectivites-locales.info,Inscrit,,2590099,2026-12-31,2021-11-25,,Non,Non,http://www.habitat-collectivites-locales.info
 HORIZON DURABLE,82349280600018,SAS,92,Service de presse en ligne,horizondurable.info,Non Inscrit,,2593450,2020-01-14,2020-01-14,,Non,Non,https://www.horizondurable.info
 HOTEL & LODGE SAS,49327516800018,SA,75,Service de presse en ligne,hoteletlodge.fr,Non Inscrit,,2590944,2017-03-02,2017-03-02,,Non,Non,http://www.hoteletlodge.fr
@@ -26167,7 +26167,7 @@ L'ESSENTIEL,94915009800018,SAS,75,Service de presse en ligne,L'essentiel Marseil
 L'ESSENTIEL,94915009800018,SAS,75,Service de presse en ligne,L'essentiel Nantes - Newsletter,Non Inscrit,,2595247,2024-11-28,2024-11-28,,Non,Non,L'essentiel Nantes - Newsletter
 L'ESSENTIEL,94915009800018,SAS,75,Service de presse en ligne,L'essentiel Paris - Newsletter,Non Inscrit,,2595266,2024-11-28,2024-11-28,,Non,Non,L'essentiel Paris - Newsletter
 L'ESSENTIEL,94915009800018,SAS,75,Service de presse en ligne,L'essentiel Strasbourg - Newsletter,Non Inscrit,,2595267,2024-11-28,2024-11-28,,Non,Non,L'essentiel Strasbourg - Newsletter
-SOMAPRESSE - SOCIETE MAHORAISE DE PRESSE,02406197000018,SARL,,Service de presse en ligne,Flash infos Mayotte - NewsLetter,Inscrit,,2593207,2027-09-30,2022-09-15,IPG,Non,Non,Flash infos Mayotte - NewsLetter
+SOMAPRESSE - SOCIETE MAHORAISE DE PRESSE,02406197000018,SARL,,Service de presse en ligne,Flash infos Mayotte - NewsLetter,Inscrit,,2593207,2027-09-30,2022-09-15,IPG,Non,Oui,Flash infos Mayotte - NewsLetter
 L'ESSENTIEL,94915009800018,SAS,75,Service de presse en ligne,L'essentiel Bordeaux - Newsletter,Non Inscrit,,2595201,2024-11-28,2024-11-28,,Non,Non,L'essentiel Bordeaux - Newsletter
 L'ESSENTIEL,94915009800018,SAS,75,Service de presse en ligne,L'essentiel Lille - Newsletter,Non Inscrit,,2595246,2024-11-28,2024-11-28,,Non,Non,L'essentiel Lille - Newsletter
 L'ESSENTIEL,94915009800018,SAS,75,Service de presse en ligne,L'essentiel Lyon - Newsletter,Non Inscrit,,2595202,2024-11-28,2024-11-28,,Non,Non,L'essentiel Lyon - Newsletter
@@ -26185,11 +26185,11 @@ NEWS TANK RH,83021819400017,SAS,75,Service de presse en ligne,rh.newstank.fr,Ins
 ROUTE 124,50822200700017,SARL,32,Service de presse en ligne,route124.fr,Non Inscrit,,2590069,2014-07-14,2014-07-14,,Non,Non,http://www.route124.fr
 VOIRON MEDIAS INDEPENDANTS,93199548400017,ASSOCIATION,69,Service de presse en ligne,ruehaute.info,Non Inscrit,,2595373,2024-11-28,2024-11-28,,Non,Non,http://www.ruehaute.info
 2TPRODUCTIONS,49760749900017,,92,Service de presse en ligne,soyoutv.com,Non Inscrit,,2590926,2014-01-30,2014-01-30,,Non,Non,http://www.soyoutv.com
-CONTRE-COURANT,85122284400017,SAS,75,Service de presse en ligne,qg.media,Inscrit,,2594355,2027-03-31,2025-03-27,IPG,Non,Non,https://qg.media/
+CONTRE-COURANT,85122284400017,SAS,75,Service de presse en ligne,qg.media,Inscrit,,2594355,2027-03-31,2025-03-27,IPG,Non,Oui,https://qg.media/
 ASK MEDIA,53245000400017,SAS,75,Service de presse en ligne,quoi.info,Non Inscrit,,2591223,2014-05-26,2014-05-26,,Non,Non,http://quoi.info
 LE JOURNAL REMIREMONTVALLEES.COM,84509537100017,ASSOCIATION,88,Service de presse en ligne,remiremontvallees.com,Inscrit,,2593852,2031-03-31,2026-03-26,IPG,Non,Non,https://remiremontvallees.com
-SOCIETE D'EDITION ET DE PRESSE AGRICOLE DU TARN,30586965300017,SARL,81,Service de presse en ligne,paysantarnais.com,Inscrit,,2593983,2029-07-31,2024-10-31,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,http://www.paysantarnais.com
-PLACE GRE' NET,82312486200017,SAS,38,Service de presse en ligne,placegrenet.fr,Inscrit,,2593239,2028-11-30,2023-11-30,IPG,Non,Non,http://www.placegrenet.fr
+SOCIETE D'EDITION ET DE PRESSE AGRICOLE DU TARN,30586965300017,SARL,81,Service de presse en ligne,paysantarnais.com,Inscrit,,2593983,2029-07-31,2024-10-31,DISPOSITIF_FISCAL_39_BIS_B,Non,Oui,http://www.paysantarnais.com
+PLACE GRE' NET,82312486200017,SAS,38,Service de presse en ligne,placegrenet.fr,Inscrit,,2593239,2028-11-30,2023-11-30,IPG,Non,Oui,http://www.placegrenet.fr
 MANON BORSI,81942042300017,MICRO-ENTREPRENEUR,75,Service de presse en ligne,projet-pc.com,Non Inscrit,,2593293,2019-07-04,2019-07-04,,Non,Non,http://www.projet-pc.com
 NORMANDIE XXL,81455592600017,ASSOCIATION,27,Service de presse en ligne,normandiexxl.com,Non Inscrit,,2593083,2019-03-14,2019-03-14,,Non,Non,http://www.normandiexxl.com
 OFF INVESTIGATION,90276814200017,SASU,92,Service de presse en ligne,off-investigation.fr,Inscrit,,2595025,2029-11-30,2025-05-22,IPG,Non,Non,http://www.off-investigation.fr
@@ -26209,10 +26209,10 @@ SCRIB,47780749900017,SARL,56,Service de presse en ligne,lemensuel.com,Non Inscri
 LES CLES DU DIGITAL,83082028800017,SAS,75,Service de presse en ligne,lesclesdudigital.fr,Inscrit,,2593624,2030-03-31,2025-05-22,,Non,Non,https://www.lesclesdudigital.fr
 LES INFOS DU PAYS GALLO,84375590100017,SAS,56,Service de presse en ligne,lesinfosdupaysgallo.com,Inscrit,,2592771,2027-06-30,2022-06-21,IPG,Non,Non,http://www.lesinfosdupaysgallo.com
 CULTURE ET PLURALISME,91381183200017,ASSOCIATION,13,Service de presse en ligne,journalzebuline.fr,Inscrit,,2595053,2030-01-31,2025-05-22,,Non,Non,http://www.journalzebuline.fr
-LA RENAISSANCE,35017489200017,SARL,71,Service de presse en ligne,larenaissancehebdo.fr,Inscrit,,2594580,2031-06-30,2026-06-25,IPG,Non,Non,http://www.larenaissancehebdo.fr
+LA RENAISSANCE,35017489200017,SARL,71,Service de presse en ligne,larenaissancehebdo.fr,Inscrit,,2594580,2031-06-30,2026-06-25,IPG,Non,Oui,http://www.larenaissancehebdo.fr
 NUIT & JOUR,81342809100017,ASSOCIATION,75,Service de presse en ligne,lautrequotidien.fr,Non Inscrit,,2593395,2024-11-28,2024-11-28,,Non,Non,https://www.lautrequotidien.fr
 SORAYA KHIREDDINE,79270732500017,SASU,75,Service de presse en ligne,influenth.com,Non Inscrit,,2593152,2019-03-14,2019-03-14,,Non,Non,http://www.influenth.com
-JOURNAL DE LA HAUTE MARNE,39119320800017,SAS,52,Service de presse en ligne,jhm.fr,Inscrit,,2591657,2028-07-31,2023-06-29,IPG,Non,Non,http://www.jhm.fr
+JOURNAL DE LA HAUTE MARNE,39119320800017,SAS,52,Service de presse en ligne,jhm.fr,Inscrit,,2591657,2028-07-31,2023-06-29,IPG,Non,Oui,http://www.jhm.fr
 LE JOURNAL DE L'AVIATION,78881013300017,SARL,75,Service de presse en ligne,journal-aviation.com,Inscrit,,2591953,2030-09-30,2025-09-25,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,http://www.journal-aviation.com
 LA FRANCAISE DU TOURISME,83520935400017,SASU,64,Service de presse en ligne,gazette-tourisme.com,Non Inscrit,,2593659,2023-10-26,2023-10-26,,Non,Non,http://www.gazette-tourisme.com
 LA GAZETTE OISE,88963529800017,SARL,60,Service de presse en ligne,gazetteoise.fr,Non Inscrit,,2594243,2025-09-25,2025-09-25,,Non,Non,http://www.gazetteoise.fr
@@ -26266,8 +26266,8 @@ YZE PRESSE,95314316100016,SAS,75,Service de presse en ligne,zebre-et-compagnie.f
 SPOT GYM,91028109600016,SASU,75,Service de presse en ligne,spotgym.fr,Non Inscrit,,2595117,2026-01-22,2026-01-22,,Non,Non,http://www.spotgym.fr
 333A,80984481400016,SARL,67,Service de presse en ligne,tchapp.alsace,Non Inscrit,,2592866,2019-03-14,2019-03-14,,Non,Non,http://www.tchapp.alsace
 THE WOMEN'S VOICES,90091272600016,SAS,92,Service de presse en ligne,thewomensvoices.fr,Inscrit,,2594690,2028-09-30,2023-11-30,IPG,Non,Non,http://www.thewomensvoices.fr
-SOCIÉTÉ D'ÉDITIONS RURALES ET AGRICOLES DE LORRAINE - SERAL,33226382100016,SARL,54,Service de presse en ligne,paysanlorrain.agri-info-nordest.fr,Inscrit,,2594767,2026-11-30,2023-11-30,,Non,Non,https://paysanlorrain.agri-info-nordest.fr/
-LES EDITIONS DU PHARE,40174576500016,SAS,17,Service de presse en ligne,pharedere.com,Inscrit,,2590877,2028-11-30,2024-01-25,IPG,Non,Non,https://www.pharedere.com
+SOCIÉTÉ D'ÉDITIONS RURALES ET AGRICOLES DE LORRAINE - SERAL,33226382100016,SARL,54,Service de presse en ligne,paysanlorrain.agri-info-nordest.fr,Inscrit,,2594767,2026-11-30,2023-11-30,,Non,Oui,https://paysanlorrain.agri-info-nordest.fr/
+LES EDITIONS DU PHARE,40174576500016,SAS,17,Service de presse en ligne,pharedere.com,Inscrit,,2590877,2028-11-30,2024-01-25,IPG,Non,Oui,https://www.pharedere.com
 RS FRANCE,87871843600016,SAS,75,Service de presse en ligne,rollingstone.fr,Inscrit,,2592412,2030-11-30,2025-11-27,DISPOSITIF_FISCAL_39_BIS_A,Non,Non,http://www.rollingstone.fr
 LA DANSE DU PHARAON,52327765500016,SARL,92,Service de presse en ligne,rugbyconnection.com,Non Inscrit,,2590397,2016-01-28,2016-01-28,,Non,Non,http://www.rugbyconnection.com
 MOTORS INSIDE,91920202800016,SASU,74,Service de presse en ligne,motorsinside.com,Non Inscrit,,2595112,2025-11-27,2025-11-27,,Non,Non,https://www.motorsinside.com
@@ -26282,11 +26282,11 @@ L'INCORRECT,83229062100016,SAS,75,Service de presse en ligne,lincorrect.org,Insc
 L'ESSENTIEL CULTUREL,83825315100016,ASSOCIATION,75,Service de presse en ligne,linfotoutcourt.com,Inscrit,,2593203,2029-10-31,2024-10-31,,Non,Non,https://linfotoutcourt.com
 LES ECRANS,82346007600016,SAS,75,Service de presse en ligne,lesecrans.fr,Non Inscrit,,2593401,2019-09-19,2019-09-19,,Non,Non,https://www.lesecrans.fr
 LES SPORTIVES,81802408500016,SASU,70,Service de presse en ligne,lessportives.fr,Inscrit,,2593238,2028-11-30,2023-11-30,,Non,Non,https://www.lessportives.fr/
-L'EVEIL DE LA HAUTE-LOIRE,58585043100016,SA,43,Service de presse en ligne,leveil.fr,Inscrit,,2591755,2028-03-31,2023-03-09,IPG,Non,Non,https://www.leveil.fr
-LES EDITIONS DU PHARE,40174576500016,SAS,17,Service de presse en ligne,le-littoral.com,Inscrit,,2593794,2028-11-30,2024-01-25,IPG,Non,Non,https://www.le-littoral.com
+L'EVEIL DE LA HAUTE-LOIRE,58585043100016,SA,43,Service de presse en ligne,leveil.fr,Inscrit,,2591755,2028-03-31,2023-03-09,IPG,Non,Oui,https://www.leveil.fr
+LES EDITIONS DU PHARE,40174576500016,SAS,17,Service de presse en ligne,le-littoral.com,Inscrit,,2593794,2028-11-30,2024-01-25,IPG,Non,Oui,https://www.le-littoral.com
 LMC MEDIA,51877181100016,SARL,75,Service de presse en ligne,lamaisonducancer.fr,Non Inscrit,,2590415,2014-07-14,2014-07-14,,Non,Non,http://www.lamaisonducancer.fr
 LA RENAISSANCE DU LOIR ET CHER,59652052800016,SARL,41,Service de presse en ligne,larenaissanceduloiretcher.fr,Inscrit,,2594020,2029-09-30,2024-10-03,IPG,Non,Non,https://larenaissanceduloiretcher.fr/
-SADIAR,33871495900016,SA,12,Service de presse en ligne,lavolontepaysanne.fr,Inscrit,,2594764,2026-11-30,2023-11-30,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,http://www.lavolontepaysanne.fr
+SADIAR,33871495900016,SA,12,Service de presse en ligne,lavolontepaysanne.fr,Inscrit,,2594764,2026-11-30,2023-11-30,DISPOSITIF_FISCAL_39_BIS_B,Non,Oui,http://www.lavolontepaysanne.fr
 ELEMENTS SANTE,49247425900016,SAS,63,Service de presse en ligne,info-vih.com,Non Inscrit,,2593485,2024-10-03,2024-10-03,,Non,Non,http://info-vih.com
 HAREAL EDITIONS,81519213300016,SAS,27,Service de presse en ligne,insolentiae.com,Inscrit,,2593526,2026-11-30,2024-11-28,,Non,Non,https://insolentiae.com/
 M6 DIGITAL SERVICES,41454946900016,SAS,92,Service de presse en ligne,jeuxvideo.fr,Non Inscrit,,2591879,2016-01-28,2016-01-28,,Non,Non,http://www.jeuxvideo.fr
@@ -26295,7 +26295,7 @@ ELEMENTS SANTE,49247425900016,SAS,63,Service de presse en ligne,info-atbvac.com,
 LA BEAUNE INFO,91403741100016,SAS,71,Service de presse en ligne,info-beaune.com,Inscrit,,2595198,2030-11-30,2025-11-27,IPG,Non,Non,http://www.info-beaune.com
 ELEMENTS SANTE,49247425900016,SAS,63,Service de presse en ligne,info-muco.com,Non Inscrit,,2593484,2025-03-27,2025-03-27,,Non,Non,http://info-muco.com
 LES CARNETS DE L'ALPHA,40470777000016,SA,09,Service de presse en ligne,gazette-ariegeoise.fr,Inscrit,,2592428,2029-09-30,2024-10-03,IPG,Non,Non,http://www.gazette-ariegeoise.fr
-LES EDITIONS DU PHARE,40174576500016,SAS,17,Service de presse en ligne,hautesaintonge.fr,Inscrit,,2593795,2028-11-30,2024-01-25,IPG,Non,Non,https://www.hautesaintonge.fr
+LES EDITIONS DU PHARE,40174576500016,SAS,17,Service de presse en ligne,hautesaintonge.fr,Inscrit,,2593795,2028-11-30,2024-01-25,IPG,Non,Oui,https://www.hautesaintonge.fr
 THE INDEPENDENT PHOTOGRAPHER,82370640300016,SARL,06,Service de presse en ligne,independent-photo.com,Non Inscrit,,2595031,2026-05-28,2026-05-28,,Non,Non,https://independent-photo.com/
 FRANCE-MOYENORIENT.COM,52421172900016,MICRO-ENTREPRENEUR,59,Service de presse en ligne,france-moyenorient.com,Non Inscrit,,2591039,2014-05-26,2014-05-26,,Non,Non,http://www.france-moyenorient.com
 FRICTIONS,88853224900016,SAS,75,Service de presse en ligne,frictions.co,Inscrit,,2594490,2028-03-31,2023-05-11,DISPOSITIF_FISCAL_39_BIS_A,Non,Non,http://www.frictions.co
@@ -26311,7 +26311,7 @@ CYBERBRIEF,83906116500016,SASU,75,Service de presse en ligne,cyberbrief.fr,Non I
 CHINE-MAGAZINE.COM,81877948000016,SARL,,Service de presse en ligne,chine-magazine.com,Non Inscrit,,2593233,2024-05-30,2024-05-30,,Non,Non,https://www.chine-magazine.com
 CITAZINE EDITIONS,52423804500016,SARL,75,Service de presse en ligne,citazine.fr,Non Inscrit,,2590766,2014-01-30,2014-01-30,,Non,Non,http://www.citazine.fr
 ICL,85148450100016,SARL,70,Service de presse en ligne,clermontinfos63.fr,Inscrit,,2594748,2028-11-30,2024-01-25,IPG,Non,Non,http://www.clermontinfos63.fr
-FJC EDITION,81515342400016,SAS,53,Service de presse en ligne,agri53.fr,Inscrit,,2594143,2030-01-31,2025-01-23,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,http://www.agri53.fr
+FJC EDITION,81515342400016,SAS,53,Service de presse en ligne,agri53.fr,Inscrit,,2594143,2030-01-31,2025-01-23,DISPOSITIF_FISCAL_39_BIS_B,Non,Oui,http://www.agri53.fr
 AIR JOURNAL,82036230900016,SAS,75,Service de presse en ligne,air-journal.fr,Inscrit,,2593232,2029-11-30,2024-10-03,,Non,Non,https://www.air-journal.fr
 ANTILLA PRODUCTION,32939586700016,SARL,,Service de presse en ligne,antilla-martinique.com,Inscrit,,2594923,2029-05-31,2024-05-30,IPG,Non,Non,https://antilla-martinique.com/
 TAN FRANCE,83379346600016,SASU,75,Service de presse en ligne,artnewspaper.fr,Non Inscrit,,2593667,2020-11-19,2020-11-19,,Non,Non,https://www.artnewspaper.fr
@@ -26326,7 +26326,7 @@ VERT,88328996900015,SAS,75,Service de presse en ligne,vert.eco,Inscrit,,2594155,
 VERTIGE COMPANY,92747133400015,SAS,75,Service de presse en ligne,vertigemedia.fr,Inscrit,,2595497,2026-09-30,2025-09-25,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,http://www.vertigemedia.fr
 CPMRA,88384810300015,SAS,38,Service de presse en ligne,skieur.com,Inscrit,,2595086,2030-11-30,2025-11-27,,Non,Non,http://www.skieur.com
 CPMRA,88384810300015,SAS,38,Service de presse en ligne,snowsurf.com,Non Inscrit,,2595255,2026-06-25,2026-06-25,,Non,Non,http://www.snowsurf.com
-SOCIETE DE PRESSE RURALE ET DES TERRITOIRES,82415179900015,SARL,59,Service de presse en ligne,terres-et-territoires.com,Inscrit,,2593574,2028-01-31,2023-01-19,IPG,Non,Non,https://terres-et-territoires.com
+SOCIETE DE PRESSE RURALE ET DES TERRITOIRES,82415179900015,SARL,59,Service de presse en ligne,terres-et-territoires.com,Inscrit,,2593574,2028-01-31,2023-01-19,IPG,Non,Oui,https://terres-et-territoires.com
 LES EDITIONS THIATE,79019683600015,SARL,69,Service de presse en ligne,thiate.fr,Non Inscrit,,2593547,2020-09-10,2020-09-10,,Non,Non,https://www.thiate.fr
 UNSIGHTED,84131438800015,SAS,14,Service de presse en ligne,revue-zola.fr,Non Inscrit,,2594597,2023-11-30,2023-11-30,,Non,Non,http://www.revue-zola.fr
 AU COEUR DES VILLES - ACDV,82529906800015,SAS,75,Service de presse en ligne,revuedescomptoirs.com,Non Inscrit,,2594011,2022-03-10,2022-03-10,,Non,Non,https://revuedescomptoirs.com
@@ -26344,12 +26344,12 @@ MATIÈRES PREMIÈRES ENERGIES MÉDIA (MPE-MEDIA),54002675400015,SAS,49,Service d
 ELECTRE,32578521000015,SA,75,Service de presse en ligne,livreshebdo.fr,Inscrit,,2590684,2030-11-30,2025-11-27,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,http://www.livreshebdo.fr
 ARBORESCENCE MEDIAS,95314765900015,EURL,13,Service de presse en ligne,maintenant-marseille.fr,Non Inscrit,,2595166,2026-03-26,2026-03-26,,Non,Non,http://www.maintenant-marseille.fr
 LE DRENCHE,81437234800015,SAS,75,Service de presse en ligne,ledrenche.fr,Non Inscrit,,2593236,2025-01-23,2025-01-23,,Non,Non,https://ledrenche.fr
-LE JOURNAL DU CENTRE,57188030100015,SA,58,Service de presse en ligne,lejdc.fr,Inscrit,,2590576,2030-09-30,2025-09-25,IPG,Non,Non,http://www.lejdc.fr
+LE JOURNAL DU CENTRE,57188030100015,SA,58,Service de presse en ligne,lejdc.fr,Inscrit,,2590576,2030-09-30,2025-09-25,IPG,Non,Oui,http://www.lejdc.fr
 E MAGINE MEDIAS,50345526300015,SARL,75,Service de presse en ligne,lemagit.fr,Non Inscrit,,2590081,2014-07-14,2014-07-14,,Non,Non,http://www.lemagit.fr
 LES MEDIAS EPHEMERES,88160700600015,SASU,69,Service de presse en ligne,larrierecour.fr,Inscrit,,2594199,2027-03-31,2023-01-19,IPG,Non,Non,http://www.larrierecour.fr/
 LA TRIBUNE NOUVELLE,74981460400015,SAS,31,Service de presse en ligne,latribune.fr,Inscrit,,2590117,2026-12-31,2021-11-25,IPG,Non,Non,http://www.latribune.fr
 EMPREINTE SXM,78951953500015,SARL,,Service de presse en ligne,le97150.fr,Inscrit,,2595011,2026-11-30,2022-11-24,DISPOSITIF_FISCAL_39_BIS_A,Non,Non,http://www.le97150.fr
-COMPAGNIE DES MÉDIAS ET PUBLICATIONS RHÔNE-ALPES - COMPRA,88384810300015,SAS,38,Service de presse en ligne,la-vie-nouvelle.fr,Inscrit,,2592805,2030-09-30,2025-09-25,IPG,Non,Non,http://www.la-vie-nouvelle.fr
+COMPAGNIE DES MÉDIAS ET PUBLICATIONS RHÔNE-ALPES - COMPRA,88384810300015,SAS,38,Service de presse en ligne,la-vie-nouvelle.fr,Inscrit,,2592805,2030-09-30,2025-09-25,IPG,Non,Oui,http://www.la-vie-nouvelle.fr
 LA LETTRE DE GALILEE,79739749400015,SAS,34,Service de presse en ligne,lalettredegalilee.fr,Non Inscrit,,2593290,2019-07-04,2019-07-04,,Non,Non,http://www.lalettredegalilee.fr
 SOCIETE D'EDITION LA MANCHE LIBRE,41290761000015,SARL,50,Service de presse en ligne,lamanchelibre.fr,Inscrit,,2590290,2030-02-28,2025-03-27,IPG,Non,Non,http://www.lamanchelibre.fr
 COMPAGNIE DES MÉDIAS ET PUBLICATIONS RHÔNE-ALPES - COMPRA,88384810300015,SAS,38,Service de presse en ligne,if-saint-etienne.fr,Inscrit,,2594319,2027-09-30,2024-10-03,IPG,Non,Non,https://www.if-saint-etienne.fr/
@@ -26368,20 +26368,20 @@ MOTAMOT,84302478700015,ASSOCIATION,24,Service de presse en ligne,bien-en-perigor
 CPMRA,88384810300015,SAS,38,Service de presse en ligne,bigbike-magazine.com,Non Inscrit,,2595143,2025-11-27,2025-11-27,,Non,Non,http://www.bigbike-magazine.com
 EZO MEDIA,88508975500015,SAS,75,Service de presse en ligne,briefstory.io,Non Inscrit,,2595219,2026-05-28,2026-05-28,,Non,Non,https://www.briefstory.io/
 OUEST EMEDIA PRESSE,78940139500015,SARL,49,Service de presse en ligne,angersmag.info,Non Inscrit,,2592387,2022-01-20,2022-01-20,,Non,Non,http://www.angersmag.info
-AU COEUR DES VILLES - ACDV,82529906800015,SAS,75,Service de presse en ligne,aucoeurduchr.fr,Inscrit,,2594010,2029-01-31,2024-01-25,,Non,Non,http://www.aucoeurduchr.fr
+AU COEUR DES VILLES - ACDV,82529906800015,SAS,75,Service de presse en ligne,aucoeurduchr.fr,Inscrit,,2594010,2029-01-31,2024-01-25,,Non,Oui,http://www.aucoeurduchr.fr
 SAECA,40310890500015,SARL,03,Service de presse en ligne,allier-agricole.com,Inscrit,,2594918,2027-05-31,2022-05-25,DISPOSITIF_FISCAL_39_BIS_A,Non,Non,http://www.allier-agricole.com
 ALPINE,88066764700015,SARL,38,Service de presse en ligne,alpinemag.fr,Inscrit,,2594186,2030-01-31,2025-01-23,,Non,Non,http://www.alpinemag.fr
 ALSA'SPORTS MÉDIAS,84043918600015,SAS,67,Service de presse en ligne,alsasports.fr,Non Inscrit,,2593829,2026-06-25,2026-06-25,,Non,Non,https://www.alsasports.fr
 ADOUR PRESSE COMMUNICATION,79414836100015,ASSOCIATION,64,Service de presse en ligne,adour-presse.com,Non Inscrit,,2595003,2026-05-28,2026-05-28,,Non,Non,http://www.adour-presse.com
 ADWEKNOW,82370115600015,SAS,92,Service de presse en ligne,adweknow.com,Non Inscrit,,2593611,2020-09-10,2020-09-10,,Non,Non,https://adweknow.com
 AEROBUZZ.FR,53119254000015,SARL,69,Service de presse en ligne,aerobuzz.fr,Inscrit,,2590653,2027-05-31,2022-05-25,,Non,Non,http://www.aerobuzz.fr
-COMPAGNIE DES MÉDIAS ET PUBLICATIONS RHÔNE-ALPES - COMPRA,88384810300015,SAS,38,Service de presse en ligne,affiches.fr,Inscrit,,2594316,2030-09-30,2025-09-25,IPG,Non,Non,http://www.affiches.fr
+COMPAGNIE DES MÉDIAS ET PUBLICATIONS RHÔNE-ALPES - COMPRA,88384810300015,SAS,38,Service de presse en ligne,affiches.fr,Inscrit,,2594316,2030-09-30,2025-09-25,IPG,Non,Oui,http://www.affiches.fr
 VIVANT L'ASSO,85087559200014,ASSOCIATION,86,Service de presse en ligne,vivant-le-media.fr,Inscrit,,2594257,2027-07-31,2022-06-21,DISPOSITIF_FISCAL_39_BIS_A,Non,Non,http://vivant-le-media.fr/
 BE SPORT,81395608300014,SAS,75,Service de presse en ligne,wup-media.com,Non Inscrit,,2593605,2020-09-10,2020-09-10,,Non,Non,https://www.wup-media.com
 ACTION AGRICOLE PICARDE,33994527100015,SARL,80,Service de presse en ligne,action-agricole-picarde.com,Inscrit,,2593566,2031-06-30,2026-06-25,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,http://www.action-agricole-picarde.com
-UNION FEDERALE DES SYNDICATS ET ASSOCIATIONS PROFESSIONNELS AGRICOLES DU LIMOUSIN,77805642400014,ASSOCIATION,87,Service de presse en ligne,terredactu.com,Inscrit,,2591885,2028-06-30,2023-06-29,DISPOSITIF_FISCAL_39_BIS_A,Non,Non,http://www.terredactu.com
-TERRITOIRE(S) EDITIONS,94018454200014,SASU,,Service de presse en ligne,territoires.media,Inscrit,,2595462,2030-07-31,2025-07-03,IPG,Non,Non,http://www.territoires.media
-SUD EST PRESSE,42130552500014,SAS,06,Service de presse en ligne,tribuca.net,Inscrit,,2593536,2029-11-30,2024-10-31,DISPOSITIF_FISCAL_39_BIS_A,Non,Non,https://tribuca.net
+UNION FEDERALE DES SYNDICATS ET ASSOCIATIONS PROFESSIONNELS AGRICOLES DU LIMOUSIN,77805642400014,ASSOCIATION,87,Service de presse en ligne,terredactu.com,Inscrit,,2591885,2028-06-30,2023-06-29,DISPOSITIF_FISCAL_39_BIS_A,Non,Oui,http://www.terredactu.com
+TERRITOIRE(S) EDITIONS,94018454200014,SASU,,Service de presse en ligne,territoires.media,Inscrit,,2595462,2030-07-31,2025-07-03,IPG,Non,Oui,http://www.territoires.media
+SUD EST PRESSE,42130552500014,SAS,06,Service de presse en ligne,tribuca.net,Inscrit,,2593536,2029-11-30,2024-10-31,DISPOSITIF_FISCAL_39_BIS_A,Non,Oui,https://tribuca.net
 SANTOR EDITION,50048065200014,SAS,92,Service de presse en ligne,rhumato.net,Non Inscrit,,2590629,2017-03-02,2017-03-02,,Non,Non,http://www.rhumato.net
 ROADS MAGAZINE,79051186900014,SAS,94,Service de presse en ligne,roadsmag.com,Non Inscrit,,2591940,2016-01-28,2016-01-28,,Non,Non,http://roadsmag.com
 RAPMINERZ MEDIA,89967971600014,ASSOCIATION,75,Service de presse en ligne,rapminerz.io,Inscrit,,2594917,2026-10-31,2024-10-03,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,http://www.rapminerz.io
@@ -26396,28 +26396,28 @@ LEXING EDITIONS,85077755800014,SARL,75,Service de presse en ligne,planeterobots.
 ASSOCIATION MIEUX PRESCRIRE,34064761900014,ASSOCIATION,75,Service de presse en ligne,prescrire.org,Inscrit,,2595006,2027-11-30,2022-11-24,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,http://www.prescrire.org
 PRESSELIB'EDITION,89281756300014,SAS,64,Service de presse en ligne,presselib.com,Inscrit,,2590466,2028-01-31,2022-11-24,IPG,Non,Non,https://presselib.com
 MEHR LICHT,88151965600014,SAS,69,Service de presse en ligne,ourscom.fr,Inscrit,,2594249,2028-05-31,2023-05-11,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,https://www.ourscom.fr
-MESINFOS,94987242800014,GIE,75,Service de presse en ligne,mesinfos.fr,Inscrit,,2595142,2028-06-30,2023-06-29,IPG,Non,Non,http://www.mesinfos.fr
+MESINFOS,94987242800014,GIE,75,Service de presse en ligne,mesinfos.fr,Inscrit,,2595142,2028-06-30,2023-06-29,IPG,Non,Oui,http://www.mesinfos.fr
 LES EDITIONS DE L'EQUERRE,53012421300014,SAS,75,Service de presse en ligne,mobilettre.com,Non Inscrit,,2591296,2018-03-08,2018-03-08,,Non,Non,http://www.mobilettre.com
 OGC PRESSE,81349512400014,SAS,44,Service de presse en ligne,ogc-veille.info,Non Inscrit,,2593006,2019-03-14,2019-03-14,,Non,Non,http://ogc-veille.info
-INF'AGRI 44,50023443000014,SARL,44,Service de presse en ligne,loire-atlantique-agricole.fr,Inscrit,,2593790,2028-11-30,2023-11-30,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,https://loire-atlantique-agricole.fr
+INF'AGRI 44,50023443000014,SARL,44,Service de presse en ligne,loire-atlantique-agricole.fr,Inscrit,,2593790,2028-11-30,2023-11-30,DISPOSITIF_FISCAL_39_BIS_B,Non,Oui,https://loire-atlantique-agricole.fr
 MARITIMA MÉDIAS,37821732700014,SA,13,Service de presse en ligne,maritima.info,Non Inscrit,,2591231,2023-11-30,2023-11-30,,Non,Non,http://www.maritima.info
 MARTIAL SPIRIT,53323885300014,SAS,93,Service de presse en ligne,martialspirit.fr,Non Inscrit,,2591551,2016-01-28,2016-01-28,,Non,Non,http://www.martialspirit.fr
 SANTOR EDITION,50048065200014,SAS,92,Service de presse en ligne,mediscoop.net,Inscrit,,2592432,2028-04-30,2023-05-11,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,http://www.mediscoop.net
 LESPHOTOGRAPHES.COM,53472127900014,ASSOCIATION,75,Service de presse en ligne,lesphotographes.com,Non Inscrit,,2591501,2015-01-29,2015-01-29,,Non,Non,http://www.lesphotographes.com
-SNLE LIBERTE-HEBDO,81192688000014,SAS,59,Service de presse en ligne,libertehebdo.fr,Inscrit,,2595029,2027-11-30,2022-11-24,IPG,Non,Non,http://www.libertehebdo.fr
+SNLE LIBERTE-HEBDO,81192688000014,SAS,59,Service de presse en ligne,libertehebdo.fr,Inscrit,,2595029,2027-11-30,2022-11-24,IPG,Non,Oui,http://www.libertehebdo.fr
 VALDAMIS,84302348200014,SAS,75,Service de presse en ligne,linfodurable.fr,Inscrit,,2593612,2031-01-31,2026-01-22,DISPOSITIF_FISCAL_39_BIS_A,Non,Non,https://www.linfodurable.fr
 PRESS' ONLINE,79983378500014,ASSOCIATION,33,Service de presse en ligne,lma.news,Non Inscrit,,2592893,2025-03-27,2025-03-27,,Non,Non,http://www.lma.news/
 PROMEDIANUM,79060693300014,SAS,59,Service de presse en ligne,lembarque.com,Non Inscrit,,2592879,2019-03-14,2019-03-14,,Non,Non,http://www.lembarque.com
 ENTREPRISE DE PRESSE LE MEDIA,83402475400014,SASU,75,Service de presse en ligne,lemediapresse.fr,Non Inscrit,,2593660,2020-11-19,2020-11-19,,Non,Non,https://lemediapresse.fr
 LE MEDIA,88023447100014,SCIC,75,Service de presse en ligne,lemediatv.fr,Inscrit,,2594203,2027-03-31,2022-06-21,IPG,Non,Non,http://www.lemediatv.fr
 LES ENOVATEURS,92315748100014,ASSOCIATION,69,Service de presse en ligne,les-enovateurs.com,Inscrit,,2595256,2030-01-31,2025-01-23,DISPOSITIF_FISCAL_39_BIS_A,Non,Non,https://les-enovateurs.com/
-SPAM (SOCIÉTÉ DE PRESSE DE L’AGGLOMÉRATION DE MONTPELLIER),44208781300014,SARL,34,Service de presse en ligne,lagglorieuse.info,Inscrit,,2594336,2030-09-30,2025-09-25,IPG,Non,Non,https://www.lagglorieuse.info/
+SPAM (SOCIÉTÉ DE PRESSE DE L’AGGLOMÉRATION DE MONTPELLIER),44208781300014,SARL,34,Service de presse en ligne,lagglorieuse.info,Inscrit,,2594336,2030-09-30,2025-09-25,IPG,Non,Oui,https://www.lagglorieuse.info/
 VISTEDIT,39817675000014,SCOP,64,Service de presse en ligne,lasetmana.fr,Non Inscrit,,2591019,2017-03-02,2017-03-02,,Non,Non,http://lasetmana.fr
 SOCIETE COMTOISE D'EDITION ET D'INFORMATION,33289077100014,SAS,25,Service de presse en ligne,laterredecheznous.com,Inscrit,,2595095,2028-03-31,2023-03-09,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,http://www.laterredecheznous.com
 LE CANARD SOCIAL,51871719400014,SCOP,44,Service de presse en ligne,lecanardsocial.com,Non Inscrit,,2590539,2016-01-28,2016-01-28,,Non,Non,http://www.lecanardsocial.com
 IJSBERG PRESS,80428723300014,SAS,42,Service de presse en ligne,ijsbergmagazine.com,Non Inscrit,,2592875,2018-11-15,2018-11-15,,Non,Non,https://ijsbergmagazine.com
 L'AMICALE ZIBELINE,50221170900014,ASSOCIATION,13,Service de presse en ligne,journalzibeline.fr,Non Inscrit,,2591409,2026-06-25,2026-06-25,,Non,Non,http://www.journalzibeline.fr
-LA GAZETTE FRANCE,31451513100014,SAS,59,Service de presse en ligne,lagazettefrance.fr,Inscrit,,2595336,2029-10-31,2026-05-28,,Non,Non,http://www.lagazettefrance.fr
+LA GAZETTE FRANCE,31451513100014,SAS,59,Service de presse en ligne,lagazettefrance.fr,Inscrit,,2595336,2029-10-31,2026-05-28,,Non,Oui,http://www.lagazettefrance.fr
 LA GAZETTE FRANCE,31451513100014,SAS,59,Service de presse en ligne,gazettenpdc.fr,Non Inscrit,,2593751,2025-09-25,2025-09-25,,Non,Non,https://www.gazettenpdc.fr
 T1SCH,51779726200014,,75,Service de presse en ligne,glove.tv,Non Inscrit,,2590933,2014-01-30,2014-01-30,,Non,Non,http://glove.tv
 HUM,94996336700014,SAS,75,Service de presse en ligne,hum-media.com,Inscrit,,2595509,2027-10-31,2025-10-30,DISPOSITIF_FISCAL_39_BIS_A,Non,Non,http://www.hum-media.com
@@ -26463,15 +26463,15 @@ AGRICULTURE ET INFORMATION,40712007000013,SARL,15,Service de presse en ligne,lun
 SYLVAIN D'HUISSEL,52862552800013,MICRO-ENTREPRENEUR,42,Service de presse en ligne,lyonpoleimmo.com,Inscrit,,2591369,2026-11-30,2021-11-25,,Non,Non,http://www.lyonpoleimmo.com
 LE TANGUE,84292302100013,EURL,,Service de presse en ligne,letangue.re,Non Inscrit,,2594154,2026-06-25,2026-06-25,,Non,Non,https://www.letangue.re/
 INNOMEDIAS,89468066900013,SAS,45,Service de presse en ligne,linspiration-politique.fr,Inscrit,,2594678,2027-09-30,2022-11-24,DISPOSITIF_FISCAL_39_BIS_A,Non,Non,https://www.linspiration-politique.fr/
-SOCIETE CAUCHOISE DE PRESSE ET DE PUBLICITE,97668052000013,SARL,76,Service de presse en ligne,lecourriercauchois.fr,Inscrit,,2594163,2030-01-31,2025-01-23,IPG,Non,Non,http://www.lecourriercauchois.fr
-SAVOIE EDITIONS,80843092000013,SAS,74,Service de presse en ligne,lefaucigny.fr,Inscrit,,2593530,2027-11-30,2022-11-24,IPG,Non,Non,http://www.lefaucigny.fr
+SOCIETE CAUCHOISE DE PRESSE ET DE PUBLICITE,97668052000013,SARL,76,Service de presse en ligne,lecourriercauchois.fr,Inscrit,,2594163,2030-01-31,2025-01-23,IPG,Non,Oui,http://www.lecourriercauchois.fr
+SAVOIE EDITIONS,80843092000013,SAS,74,Service de presse en ligne,lefaucigny.fr,Inscrit,,2593530,2027-11-30,2022-11-24,IPG,Non,Oui,http://www.lefaucigny.fr
 LA VOIX DU NORD,45750726700013,SA,59,Service de presse en ligne,lavoixdessports.com,Non Inscrit,,2591042,2016-01-28,2016-01-28,,Non,Non,http://www.lavoixdessports.com
-LA VOIX DU NORD,45750726700013,SA,59,Service de presse en ligne,lavoixdunord.fr,Inscrit,,2590328,2030-04-30,2025-05-22,IPG,Non,Non,https://www.lavoixdunord.fr/
+LA VOIX DU NORD,45750726700013,SA,59,Service de presse en ligne,lavoixdunord.fr,Inscrit,,2590328,2030-04-30,2025-05-22,IPG,Non,Oui,https://www.lavoixdunord.fr/
 LA VOIX DU NORD,45750726700013,SA,59,Service de presse en ligne,lavoixeco.com,Non Inscrit,,2591043,2016-01-28,2016-01-28,,Non,Non,http://www.lavoixeco.com
 LA VOIX DU NORD,45750726700013,SA,59,Service de presse en ligne,lavoixpourlesfemmes.fr,Non Inscrit,,2591044,2016-01-28,2016-01-28,,Non,Non,http://www.lavoixpourlesfemmes.fr
-"COMMUNIQUER, INFORMER ET VIVRE AU PAYS - CIVAP",77611292200013,ASSOCIATION,48,Service de presse en ligne,lalozerenouvelle.com,Inscrit,,2594569,2031-06-30,2026-06-25,IPG,Non,Non,http://www.lalozerenouvelle.com
+"COMMUNIQUER, INFORMER ET VIVRE AU PAYS - CIVAP",77611292200013,ASSOCIATION,48,Service de presse en ligne,lalozerenouvelle.com,Inscrit,,2594569,2031-06-30,2026-06-25,IPG,Non,Oui,http://www.lalozerenouvelle.com
 AGENCE PRESSE JEUNE,82508166400013,SAS,75,Service de presse en ligne,lalterego.fr,Non Inscrit,,2593702,2026-01-22,2026-01-22,,Non,Non,http://lalterego.fr
-LE GROUPE LA MARSEILLAISE,89020337500013,SAS,13,Service de presse en ligne,lamarseillaise.fr,Inscrit,,2590469,2027-01-31,2025-12-18,IPG,Non,Non,http://www.lamarseillaise.fr
+LE GROUPE LA MARSEILLAISE,89020337500013,SAS,13,Service de presse en ligne,lamarseillaise.fr,Inscrit,,2590469,2027-01-31,2025-12-18,IPG,Non,Oui,http://www.lamarseillaise.fr
 INFOSTOURISME MEDIA,10232556000013,SAS,13,Service de presse en ligne,infostourisme.com,Non Inscrit,,2595564,2026-06-25,2026-06-25,,Non,Non,https://infostourisme.com/
 JOURNAL PETIT PONT,83997646100013,SAS,75,Service de presse en ligne,journalpetitpont.fr,Non Inscrit,,2593750,2026-03-26,2026-03-26,,Non,Non,https://www.journalpetitpont.fr
 EL PUBLISHING,53004396700013,SAS,92,Service de presse en ligne,hautparleurlemag.com,Non Inscrit,,2592586,2018-03-08,2018-03-08,,Non,Non,http://www.hautparleurlemag.com
@@ -26503,7 +26503,7 @@ NETCANCER,80463556300013,SAS,75,Service de presse en ligne,Net Cancer Focus Actu
 ADN CONTENTS,79094686700013,SAS,68,Service de presse en ligne,24matins.fr,Non Inscrit,,2592160,2022-01-20,2022-01-20,,Non,Non,http://www.24matins.fr
 ADN CONTENTS,79094686700013,SAS,68,Service de presse en ligne,App' quickne.ws,Non Inscrit,,2592690,2015-04-23,2015-04-23,,Non,Non,App' quickne.ws
 PAPIER BROUILLON,87826801000013,SAS,74,Service de presse en ligne,Bulletin - Newsletter,Non Inscrit,,2594325,2023-03-09,2023-03-09,,Non,Non,Bulletin - Newsletter
-MEDIA ET AGRICULTURE,80113815700012,SAS,57,Service de presse en ligne,tema-agriculture-terroirs.fr,Inscrit,,2595298,2029-05-31,2024-06-27,,Non,Non,http://www.tema-agriculture-terroirs.fr
+MEDIA ET AGRICULTURE,80113815700012,SAS,57,Service de presse en ligne,tema-agriculture-terroirs.fr,Inscrit,,2595298,2029-05-31,2024-06-27,,Non,Oui,http://www.tema-agriculture-terroirs.fr
 TRANSONORE,90116461600012,ASSOCIATION,93,Service de presse en ligne,transonore.fr,Inscrit,,2595396,2027-01-31,2025-01-23,,Non,Non,https://transonore.fr/
 MK2 PUBLISHING,95203551700012,SASU,75,Service de presse en ligne,troiscouleurs.fr,Inscrit,,2595339,2026-10-31,2024-10-03,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,http://www.troiscouleurs.fr
 URBANIA FRANCE,88198044500012,SASU,75,Service de presse en ligne,urbania.fr,Inscrit,,2594598,2028-05-31,2023-05-11,DISPOSITIF_FISCAL_39_BIS_A,Non,Non,http://www.urbania.fr
@@ -26535,7 +26535,7 @@ SCRINEO,78843514700012,SAS,75,Service de presse en ligne,lelephant-larevue.fr,In
 LE MAG VOD,52353723100012,SARL,92,Service de presse en ligne,lemagvod.fr,Non Inscrit,,2590650,2014-01-30,2014-01-30,,Non,Non,http://www.lemagvod.fr
 KARICULTURE COMMUNICATION,81816351100012,EIRL,,Service de presse en ligne,kariculture.net,Non Inscrit,,2593712,2026-01-22,2026-01-22,,Non,Non,http://www.kariculture.net
 WE PRODUCE THINGS,98240485700012,SAS,75,Service de presse en ligne,lafashionerie.com,Non Inscrit,,2595271,2026-01-01,2026-01-01,,Non,Non,https://lafashionerie.com/
-EDITIONS GUYANAISES / L’APOSTILLE,81099968000012,SASU,,Service de presse en ligne,lapostille.fr,Inscrit,,2593746,2028-09-30,2023-09-28,DISPOSITIF_FISCAL_39_BIS_A,Non,Non,https://www.lapostille.fr
+EDITIONS GUYANAISES / L’APOSTILLE,81099968000012,SASU,,Service de presse en ligne,lapostille.fr,Inscrit,,2593746,2028-09-30,2023-09-28,DISPOSITIF_FISCAL_39_BIS_A,Non,Oui,https://www.lapostille.fr
 HUMECO,89233178600012,ASSOCIATION,93,Service de presse en ligne,humeco.fr,Non Inscrit,,2595017,2026-05-28,2026-05-28,,Non,Non,http://www.humeco.fr
 INSTITUT NATIONAL DE L'AUDIOVISUEL - INA,30242119300012,EPIC,94,Service de presse en ligne,inaglobal.fr,Non Inscrit,,2592876,2023-05-11,2023-05-11,,Non,Non,http://www.inaglobal.fr
 JAZZ ET COMPAGNIE,80229858800012,SAS,75,Service de presse en ligne,jazzmagazine.com,Inscrit,,2593658,2028-11-30,2023-11-30,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,http://www.jazzmagazine.com
@@ -26558,7 +26558,7 @@ BOULEVARD VOLTAIRE,79765247600012,ASSOCIATION,75,Service de presse en ligne,bvol
 WEBMEDIAS,79323753800012,SAS,75,Service de presse en ligne,cadre-dirigeant-magazine.com,Non Inscrit,,2592248,2021-09-16,2021-09-16,,Non,Non,http://www.cadre-dirigeant-magazine.com
 COMMODAFRICA,50064843100012,SARL,75,Service de presse en ligne,commodafrica.com,Non Inscrit,,2593451,2020-01-14,2020-01-14,,Non,Non,http://www.commodafrica.com
 LES EDITIONS ACTU17,90259070200012,SAS,75,Service de presse en ligne,actu17.fr,Inscrit,,2593850,2029-11-30,2026-05-28,,Non,Non,https://actu17.fr
-IMPRIMERIE NOUVELLE 03,38750265100012,SAS,03,Service de presse en ligne,affichesallier.org,Inscrit,,2593789,2026-11-30,2023-11-30,,Non,Non,https://affichesallier.org
+IMPRIMERIE NOUVELLE 03,38750265100012,SAS,03,Service de presse en ligne,affichesallier.org,Inscrit,,2593789,2026-11-30,2023-11-30,,Non,Oui,https://affichesallier.org
 AFRIKI'S BACK,80377126000012,SARL,92,Service de presse en ligne,afrikipresse.fr,Non Inscrit,,2592753,2018-03-08,2018-03-08,,Non,Non,http://www.afrikipresse.fr
 AIWEN,53469408800012,SARL,91,Service de presse en ligne,airsdeparis.fr,Inscrit,,2594694,2026-11-30,2022-11-24,,Non,Non,http://www.airsdeparis.fr
 CULTURE-MAG,88134882500012,SARL,75,Service de presse en ligne,arwiqaportiques.com,Non Inscrit,,2594696,2023-03-09,2023-03-09,,Non,Non,http://www.arwiqaportiques.com
@@ -26580,31 +26580,31 @@ APIDAE,82070260300011,SAS,75,Service de presse en ligne,sans-a.fr,Non Inscrit,,2
 FINANCE MAG,85044519800011,SAS,33,Service de presse en ligne,say.media,Inscrit,,2594746,2026-11-30,2021-11-25,DISPOSITIF_FISCAL_39_BIS_A,Non,Non,http://www.say.media
 NOVASTAN FRANCE,83337663500011,ASSOCIATION,75,Service de presse en ligne,novastan.org,Inscrit,,2594200,2027-03-31,2022-05-25,IPG,Non,Non,https://www.novastan.org
 OBSIDIENNE FINANCE,51013069300011,SARL,78,Service de presse en ligne,olivieranger.com,Inscrit,,2592431,2026-10-31,2021-11-25,,Non,Non,http://www.olivieranger.com
-SOCIETE OUEST FRANCE,37771465400011,SA,35,Service de presse en ligne,ouest-france.fr,Inscrit,,2590832,2030-12-31,2025-12-18,IPG,Non,Non,https://www.ouest-france.fr/
-SOCIÉTÉ D'EDITION VOSGIENNE DE LA PRESSE AGRICOLE (SEVPA),33259019900011,SARL,88,Service de presse en ligne,paysanvosgien.agri-info-nordest.fr,Inscrit,,2594766,2026-11-30,2023-11-30,,Non,Non,https://paysanvosgien.agri-info-nordest.fr/
-MARSACTU,81255058000011,SAS,13,Service de presse en ligne,marsactu.fr,Inscrit,,2590826,2026-11-30,2021-09-16,IPG,Non,Non,https://marsactu.fr
+SOCIETE OUEST FRANCE,37771465400011,SA,35,Service de presse en ligne,ouest-france.fr,Inscrit,,2590832,2030-12-31,2025-12-18,IPG,Non,Oui,https://www.ouest-france.fr/
+SOCIÉTÉ D'EDITION VOSGIENNE DE LA PRESSE AGRICOLE (SEVPA),33259019900011,SARL,88,Service de presse en ligne,paysanvosgien.agri-info-nordest.fr,Inscrit,,2594766,2026-11-30,2023-11-30,,Non,Oui,https://paysanvosgien.agri-info-nordest.fr/
+MARSACTU,81255058000011,SAS,13,Service de presse en ligne,marsactu.fr,Inscrit,,2590826,2026-11-30,2021-09-16,IPG,Non,Oui,https://marsactu.fr
 LES EDITIONS DU KAPOTIER,41190875900011,SARL,,Service de presse en ligne,memento.fr,Inscrit,,2594858,2027-03-31,2025-07-03,IPG,Non,Non,https://www.memento.fr
 SOCIETE OUEST FRANCE,37771465400011,SA,35,Service de presse en ligne,minuitsport.fr,Non Inscrit,,2594205,2022-11-24,2022-11-24,,Non,Non,https://www.minuitsport.fr/
 TOC CULTURE,79972555100011,SAS,69,Service de presse en ligne,mytoc.fr,Non Inscrit,,2592814,2021-07-08,2021-07-08,,Non,Non,http://www.mytoc.fr
 IT NEWS INFO,50003457400011,SAS,75,Service de presse en ligne,lemondeinformatique.fr,Non Inscrit,,2590969,2024-10-31,2024-10-31,,Non,Non,http://www.lemondeinformatique.fr
 FASTIGIUM,44484206600011,SARL,75,Service de presse en ligne,lepavedelassurance.fr,Non Inscrit,,2593849,2025-07-03,2025-07-03,,Non,Non,http://www.lepavedelassurance.fr
-MEDIA CAPITAL REUNION,92483484900011,SAS,,Service de presse en ligne,lequotidien.re,Inscrit,,2590496,2030-03-31,2025-03-27,IPG,Non,Non,https://www.lequotidien.re
+MEDIA CAPITAL REUNION,92483484900011,SAS,,Service de presse en ligne,lequotidien.re,Inscrit,,2590496,2030-03-31,2025-03-27,IPG,Non,Oui,https://www.lequotidien.re
 FEMINISPORT,82749653000011,ASSOCIATION,75,Service de presse en ligne,madamsport.fr,Non Inscrit,,2593489,2025-03-27,2025-03-27,,Non,Non,http://www.madamsport.fr
 LA TRIBUNE AUTO.COM,50162662600011,SARL,78,Service de presse en ligne,latribuneauto.com,Inscrit,,2590435,2027-01-31,2022-01-20,,Non,Non,http://www.latribuneauto.com
 LUDOVIC CHATAING,82296547100011,MICRO-ENTREPRENEUR,38,Service de presse en ligne,laverty.fr,Non Inscrit,,2594875,2023-10-26,2023-10-26,,Non,Non,http://www.laverty.fr
-LE CRESTOIS,95365148600011,SCOP,26,Service de presse en ligne,le-crestois.fr,Inscrit,,2594145,2031-05-31,2026-05-28,IPG,Non,Non,http://le-crestois.fr/
+LE CRESTOIS,95365148600011,SCOP,26,Service de presse en ligne,le-crestois.fr,Inscrit,,2594145,2031-05-31,2026-05-28,IPG,Non,Oui,http://le-crestois.fr/
 MEDIA KIOSQUE,92082400000011,SAS,49,Service de presse en ligne,le-kiosque.org,Inscrit,,2591500,2030-06-30,2025-09-25,IPG,Non,Non,http://www.le-kiosque.org
 DECHETS INFOS,79260886100011,SAS,94,Service de presse en ligne,lecho-circulaire.com,Non Inscrit,,2593651,2025-10-30,2025-10-30,,Non,Non,http://lecho-circulaire.com
 LE JOURNAL DE LA PHOTOGRAPHIE,53327179700011,SARL,75,Service de presse en ligne,lejournaldelaphotographie.com,Non Inscrit,,2591295,2014-01-30,2014-01-30,,Non,Non,http://lejournaldelaphotographie.com
-CHAMPAGNE EDITIONS,33861200500011,SARL,51,Service de presse en ligne,la-marne-agricole.fr,Inscrit,,2590776,2031-06-30,2026-06-25,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,http://www.la-marne-agricole.fr
+CHAMPAGNE EDITIONS,33861200500011,SARL,51,Service de presse en ligne,la-marne-agricole.fr,Inscrit,,2590776,2031-06-30,2026-06-25,DISPOSITIF_FISCAL_39_BIS_B,Non,Oui,http://www.la-marne-agricole.fr
 CHAMPAGNE EDITIONS,33861200500011,SARL,51,Service de presse en ligne,la-marne-viticole.fr,Inscrit,,2594967,2027-09-30,2022-09-15,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,http://www.la-marne-viticole.fr
 ANTOINE MEUNIER,88072658300011,MICRO-ENTREPRENEUR,75,Service de presse en ligne,lachroniquespatiale.com,Non Inscrit,,2594568,2026-06-25,2026-06-25,,Non,Non,http://www.lachroniquespatiale.com
 SOCIETE OUEST FRANCE,37771465400011,SA,35,Service de presse en ligne,lactuenclasse.fr,Non Inscrit,,2594334,2022-11-24,2022-11-24,,Non,Non,http://www.lactuenclasse.fr
 HACNUMEDIA,93451690700011,ASSOCIATION,13,Service de presse en ligne,hacnumedia.org,Inscrit,,2595565,2027-06-30,2026-06-25,,Non,Non,http://www.hacnumedia.org
 HARMONIE MUTUELLES,47983401200011,,75,Service de presse en ligne,harmonie-sante.fr,Inscrit,,2591521,2027-09-30,2024-03-14,,Non,Non,https://www.harmonie-sante.fr/
 V COLLECTION,92971536500011,SAS,75,Service de presse en ligne,harpersbazaar.fr,Inscrit,,2595254,2031-06-30,2026-06-25,,Non,Non,http://www.harpersbazaar.fr
-JAR,41278867100011,SCS,39,Service de presse en ligne,juragricole.com,Inscrit,,2593710,2028-06-30,2023-06-29,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,http://www.juragricole.com
-KARIB' INFO,88993282800011,SAS,,Service de presse en ligne,karibinfo.com,Inscrit,,2594579,2028-05-31,2023-06-29,IPG,Non,Non,http://www.karibinfo.com
+JAR,41278867100011,SCS,39,Service de presse en ligne,juragricole.com,Inscrit,,2593710,2028-06-30,2023-06-29,DISPOSITIF_FISCAL_39_BIS_B,Non,Oui,http://www.juragricole.com
+KARIB' INFO,88993282800011,SAS,,Service de presse en ligne,karibinfo.com,Inscrit,,2594579,2028-05-31,2023-06-29,IPG,Non,Oui,http://www.karibinfo.com
 FRANCE NET INFOS,53160411400011,ASSOCIATION,22,Service de presse en ligne,francenetinfos.com,Non Inscrit,,2591499,2020-03-12,2020-03-12,,Non,Non,http://www.francenetinfos.com
 IFESTIVAL,44193677000011,SARL,13,Service de presse en ligne,frequence-sud.fr,Inscrit,,2590464,2027-11-30,2022-11-24,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,https://www.frequence-sud.fr
 GLUCOSE TOUJOURS,90480807800011,SASU,75,Service de presse en ligne,glucosetoujours.com,Inscrit,,2595013,2029-11-30,2024-11-28,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,https://glucosetoujours.com
@@ -26625,7 +26625,7 @@ DECHETS INFOS,79260886100011,SAS,94,Service de presse en ligne,Déchets-infos - 
 SOCIETE OUEST FRANCE,37771465400011,SA,35,Service de presse en ligne,La lettre agri-agro - Newsletter,Non Inscrit,,2592939,2019-03-14,2019-03-14,,Non,Non,La lettre agri-agro - Newsletter
 ÉDITIONS PLAN BIO,88456568000011,SASU,77,Service de presse en ligne,Plan B(io) - newsletter,Inscrit,,2594375,2026-11-30,2022-11-24,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,Plan B(io) - newsletter
 TOTEM EXPERIENCE,79012169300010,SASU,92,Service de presse en ligne,totem-world.com,Non Inscrit,,2592170,2017-03-02,2017-03-02,,Non,Non,http://www.totem-world.com
-"INFAGRI 85, AGRI 85, VENDÉE AGRICOLE, RACINES",34024266800010,SARL,85,Service de presse en ligne,vendee-agricole.fr,Inscrit,,2593838,2029-01-31,2024-01-25,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,https://vendee-agricole.fr
+"INFAGRI 85, AGRI 85, VENDÉE AGRICOLE, RACINES",34024266800010,SARL,85,Service de presse en ligne,vendee-agricole.fr,Inscrit,,2593838,2029-01-31,2024-01-25,DISPOSITIF_FISCAL_39_BIS_B,Non,Oui,https://vendee-agricole.fr
 CAF DE NANCY MEURTHE MOSELLE,77561552900010,,54,Service de presse en ligne,viesdefamille.fr,Non Inscrit,,2590874,2017-03-02,2017-03-02,,Non,Non,http://www.viesdefamille.fr
 CAPITALE PUBLISHING,51781590800010,SARL,92,Service de presse en ligne,vivreparis.fr,Non Inscrit,,2592813,2023-03-09,2023-03-09,,Non,Non,https://vivreparis.fr
 VOTV,44509123400010,ASSOCIATION,95,Service de presse en ligne,vonews.fr,Non Inscrit,,2594871,2024-10-31,2024-10-31,,Non,Non,http://www.vonews.fr
@@ -26656,9 +26656,9 @@ CELYAN - CITOYENS.COM,52006155700010,SAS,94,Service de presse en ligne,nogent-ci
 MARCELLE LE MEDIA,84791893500010,SAS,13,Service de presse en ligne,marcelle.media,Inscrit,,2593881,2031-05-31,2026-05-28,,Non,Non,http://www.marcelle.media
 DES AMIS DE MASHALLAH NEWS,80508543800010,ASSOCIATION,74,Service de presse en ligne,mashallahnews.com,Non Inscrit,,2593070,2017-01-12,2017-01-12,,Non,Non,http://www.mashallahnews.com
 MÉDIA'PI !,82307195600010,ASSOCIATION,93,Service de presse en ligne,media-pi.fr,Inscrit,,2594129,2031-01-31,2026-01-22,IPG,Non,Non,https://media-pi.fr/
-COMPRA,79809645900010,SASU,38,Service de presse en ligne,memodelisere.fr,Inscrit,,2593102,2028-05-31,2023-05-11,IPG,Non,Non,https://www.memodelisere.fr/
+COMPRA,79809645900010,SASU,38,Service de presse en ligne,memodelisere.fr,Inscrit,,2593102,2028-05-31,2023-05-11,IPG,Non,Oui,https://www.memodelisere.fr/
 LE TELEGRAMME,42375424100010,SAS,29,Service de presse en ligne,meretmarine.com,Inscrit,,2592370,2027-05-31,2022-09-15,,Non,Non,http://www.meretmarine.com
-LE TELEGRAMME,42375424100010,SAS,29,Service de presse en ligne,letelegramme.fr,Inscrit,,2591653,2031-06-30,2026-06-25,IPG,Non,Non,http://www.letelegramme.fr
+LE TELEGRAMME,42375424100010,SAS,29,Service de presse en ligne,letelegramme.fr,Inscrit,,2591653,2031-06-30,2026-06-25,IPG,Non,Oui,http://www.letelegramme.fr
 LEX DAILY NEWS,91140089300010,SAS,75,Service de presse en ligne,lexdailynews.fr,Inscrit,,2594908,2029-05-31,2024-05-30,DISPOSITIF_FISCAL_39_BIS_A,Non,Non,https://www.lexdailynews.fr
 ASSOCIATION ANNECIENNE POUR LA PROMOTION DE LA LIBERTE D'EXPRESSION (AAPLE),51206977400010,ASSOCIATION,74,Service de presse en ligne,librinfo74.fr,Non Inscrit,,2593635,2025-09-25,2025-09-25,,Non,Non,http://www.librinfo74.fr
 L'INDEPENDANT DU PAS-DE-CALAIS,57568007900010,SA,62,Service de presse en ligne,lindependant.net,Non Inscrit,,2592371,2024-03-14,2024-03-14,,Non,Non,http://www.lindependant.net
@@ -26671,7 +26671,7 @@ LES AMI(E)S DES NOUVELLES NEWS - AANN,80938969500010,ASSOCIATION,75,Service de p
 LSD MEDIA,81088315700010,SAS,38,Service de presse en ligne,lesportdauphinois.com,Non Inscrit,,2594248,2023-03-09,2023-03-09,,Non,Non,http://www.lesportdauphinois.com
 AFRICA MEDIA GROUP,89231266100010,SASU,75,Service de presse en ligne,jeuneafrique.com,Inscrit,,2590336,2030-01-31,2025-07-03,IPG,Non,Non,http://www.jeuneafrique.com
 LA NUIT MAGAZINE,80193290600010,ASSOCIATION,13,Service de presse en ligne,lanuitmagazine.com,Non Inscrit,,2593014,2019-03-14,2019-03-14,,Non,Non,https://www.lanuitmagazine.com
-PYRÉNÉES PRESSE,09588036500010,SA,64,Service de presse en ligne,larepubliquedespyrenees.fr,Inscrit,,2590419,2030-07-31,2025-07-03,IPG,Non,Non,http://www.larepubliquedespyrenees.fr
+PYRÉNÉES PRESSE,09588036500010,SA,64,Service de presse en ligne,larepubliquedespyrenees.fr,Inscrit,,2590419,2030-07-31,2025-07-03,IPG,Non,Oui,http://www.larepubliquedespyrenees.fr
 LES EDITIONS DE LA SEMAINE,48064806200010,SARL,03,Service de presse en ligne,lasemainedelallier.fr,Inscrit,,2593754,2028-09-30,2023-09-28,IPG,Non,Non,https://www.lasemainedelallier.fr
 LE COURRIER DE LA MAYENNE,82137415400010,SAS,53,Service de presse en ligne,lecourrierdelamayenne.fr,Inscrit,,2593826,2028-09-30,2023-09-28,IPG,Non,Non,http://www.lecourrierdelamayenne.fr
 EST BOURGOGNE MEDIA,53385735500010,SA,21,Service de presse en ligne,lejsl.com,Inscrit,,2590330,2027-06-30,2022-05-25,IPG,Non,Non,http://www.lejsl.com
@@ -26684,7 +26684,7 @@ GAZETTE SPORTS,80916941000010,ASSOCIATION,80,Service de presse en ligne,gazettes
 ANTICIPOLIS,52426895000010,SARL,76,Service de presse en ligne,geab.eu,Non Inscrit,,2593830,2026-06-25,2026-06-25,,Non,Non,https://geab.eu
 LIRE LA SUITE,84771122300010,ASSOCIATION,14,Service de presse en ligne,grand-format.net,Inscrit,,2594601,2028-05-31,2023-05-11,DISPOSITIF_FISCAL_39_BIS_A,Non,Non,http://www.grand-format.net
 TUTTI KIDS,52377028700010,SARL,75,Service de presse en ligne,griffe-info.com,Non Inscrit,,2590221,2014-07-14,2014-07-14,,Non,Non,http://www.griffe-info.com
-LA FRANC-COMTOISE DE PRESSE ET D'EDITION,33509144300010,SARL,70,Service de presse en ligne,hautesaoneagricole.agri-info-nordest.fr/,Inscrit,,2594752,2026-11-30,2023-11-30,,Non,Non,https://hautesaoneagricole.agri-info-nordest.fr/
+LA FRANC-COMTOISE DE PRESSE ET D'EDITION,33509144300010,SARL,70,Service de presse en ligne,hautesaoneagricole.agri-info-nordest.fr/,Inscrit,,2594752,2026-11-30,2023-11-30,,Non,Oui,https://hautesaoneagricole.agri-info-nordest.fr/
 FLAASH,97782787200010,SAS,77,Service de presse en ligne,flaash.fr,Inscrit,,2595388,2030-01-31,2025-01-23,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,http://www.flaash.fr
 CHRYSTELLE CARROY ÉDITIONS (CDIT),94802327000010,SASU,75,Service de presse en ligne,forestopic.com,Inscrit,,2593075,2028-05-31,2023-05-11,DISPOSITIF_FISCAL_39_BIS_A,Non,Non,https://www.forestopic.com
 LA GAZETTE MEDOPOLITAINE,90325343300010,ASSOCIATION,33,Service de presse en ligne,gazettemedopolitaine.fr,Non Inscrit,,2594753,2022-11-24,2022-11-24,,Non,Non,https://www.gazettemedopolitaine.fr
@@ -26695,18 +26695,18 @@ FPMÉDIAS,90457224500010,EURL,75,Service de presse en ligne,entourages.media,Non
 FILFAX MEDIA,82445602400010,SCOP,76,Service de presse en ligne,filfax.com,Non Inscrit,,2593074,2023-01-19,2023-01-19,,Non,Non,https://www.filfax.com
 EDITOCOM,52400063500010,SAS,93,Service de presse en ligne,controles-essais-mesures.fr,Inscrit,,2591358,2027-05-31,2022-05-25,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,http://www.controles-essais-mesures.fr
 SOCIETE DES EDITIONS DU FINISTERE,52191738500010,SAS,29,Service de presse en ligne,cotequimper.fr,Non Inscrit,,2592811,2018-09-20,2018-09-20,,Non,Non,http://www.cotequimper.fr
-LE COURRIER PICARD,77571039500010,SA,80,Service de presse en ligne,courrier-picard.fr,Inscrit,,2590538,2031-06-30,2026-06-25,IPG,Non,Non,https://www.courrier-picard.fr
+LE COURRIER PICARD,77571039500010,SA,80,Service de presse en ligne,courrier-picard.fr,Inscrit,,2590538,2031-06-30,2026-06-25,IPG,Non,Oui,https://www.courrier-picard.fr
 JUSTICE SOCIALE MEDIA (JSMÉDIA),92243177000010,SAS,75,Service de presse en ligne,debrayage.fr,Non Inscrit,,2595243,2026-06-25,2026-06-25,,Non,Non,https://debrayage.fr/
 KANOPEE ASSOCIES,82427143100010,SARL,75,Service de presse en ligne,dismoisante.info,Non Inscrit,,2595206,2026-05-28,2026-05-28,,Non,Non,http://www.dismoisante.info
 L'ECOLE / L'ECOLE DES LOISIRS,30057018100010,SA,75,Service de presse en ligne,ecoledeslettres.fr,Inscrit,,2592888,2030-11-30,2025-11-27,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,http://www.ecoledeslettres.fr
 EST BOURGOGNE MEDIA,53385735500010,SA,21,Service de presse en ligne,bienpublic.com,Inscrit,,2590263,2027-06-30,2022-05-25,IPG,Non,Non,http://www.bienpublic.com
-REUSSIR NOUVELLE AQUITAINE,90525364700010,GIE,79,Service de presse en ligne,caracterres.fr,Inscrit,,2595028,2027-11-30,2022-11-24,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,http://www.caracterres.fr
+REUSSIR NOUVELLE AQUITAINE,90525364700010,GIE,79,Service de presse en ligne,caracterres.fr,Inscrit,,2595028,2027-11-30,2022-11-24,DISPOSITIF_FISCAL_39_BIS_B,Non,Oui,http://www.caracterres.fr
 CFACTUEL,81095815700010,SAS,60,Service de presse en ligne,cfactuel.fr,Non Inscrit,,2593023,2019-03-14,2019-03-14,,Non,Non,http://www.cfactuel.fr
 3615 EDITIONS,52842638000010,SARL,21,Service de presse en ligne,cinemateaser.com,Non Inscrit,,2594566,2022-11-24,2022-11-24,,Non,Non,http://www.cinemateaser.com
-CELYAN - CITOYENS.COM,52006155700010,SAS,94,Service de presse en ligne,citoyens.com,Inscrit,,2591748,2030-03-31,2025-03-27,IPG,Non,Non,https://www.citoyens.com/
+CELYAN - CITOYENS.COM,52006155700010,SAS,94,Service de presse en ligne,citoyens.com,Inscrit,,2591748,2030-03-31,2025-03-27,IPG,Non,Oui,https://www.citoyens.com/
 CONSEIL NATIONAL DES ECONOMIES REGIONALES (CNER),78431316500010,ASSOCIATION,75,Service de presse en ligne,cner-france.com,Non Inscrit,,2591420,2017-09-21,2017-09-21,,Non,Non,http://www.cner-france.com
 AGENCE ATOUTS PRESSE SENIOR (AAPS),44176920500010,SARL,75,Service de presse en ligne,atoutspresse.fr,Non Inscrit,,2592691,2018-03-08,2018-03-08,,Non,Non,http://www.atoutspresse.fr
-SOCIETE D'EDITIONS ET DE PUBLICATIONS AGRICOLES SEPA,84692007200010,SARL,52,Service de presse en ligne,avenir52.fr,Inscrit,,2594595,2031-06-30,2026-06-25,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,https://avenir52.fr/
+SOCIETE D'EDITIONS ET DE PUBLICATIONS AGRICOLES SEPA,84692007200010,SARL,52,Service de presse en ligne,avenir52.fr,Inscrit,,2594595,2031-06-30,2026-06-25,DISPOSITIF_FISCAL_39_BIS_B,Non,Oui,https://avenir52.fr/
 BATEAUX.INFO,81262364300010,SAS,91,Service de presse en ligne,bateaux.com,Non Inscrit,,2592868,2019-03-14,2019-03-14,,Non,Non,http://www.bateaux.com
 BEAU DEMAIN,91803406700010,SAS,75,Service de presse en ligne,beaumagazine.fr,Inscrit,,2595331,2029-10-31,2024-10-03,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,http://www.beaumagazine.fr
 LAB EDITIONS,84779258700010,EURL,69,Service de presse en ligne,Censored - Newsletter,Non Inscrit,,2594755,2024-05-30,2024-05-30,,Non,Non,Censored - Newsletter
