@@ -44,8 +44,8 @@
     },
     "publications": {
       "dataset_id": "5bb834e89ce2e7693d2456a5",
-      "dataset_page": "https://www.data.gouv.fr/datasets/liste-des-publications-de-presse",
-      "dataset_slug": "liste-des-publications-de-presse",
+      "dataset_page": "https://www.data.gouv.fr/datasets/liste-des-publications-de-presse-et-des-services-de-presse-en-ligne",
+      "dataset_slug": "liste-des-publications-de-presse-et-des-services-de-presse-en-ligne",
       "label": "Publication de presse",
       "license": "lov2",
       "type": "publication",
@@ -345,6 +345,49 @@
           "resource_url": "https://ministere-culture.s3.sbg.io.cloud.ovh.net/PRESSE/liste_des_publications_de_presse_inscrites.csv",
           "rows": 26719,
           "snapshot": "data/raw/publications/2026-09-07__5585dd97.csv",
+          "source_format": {
+            "delimiter": ";",
+            "encoding": "utf-8-sig",
+            "parser": "csv"
+          }
+        },
+        {
+          "columns": [
+            "editeur",
+            "siret",
+            "forme_juridique",
+            "departement",
+            "type_de_presse",
+            "nom_du_titre_de_presse",
+            "statut_inscription",
+            "demande_en_cours",
+            "numero_cppap",
+            "date_expiration_inscription",
+            "date_derniere_decision",
+            "qualification",
+            "regime_derogatoire",
+            "ajl",
+            "url_spel"
+          ],
+          "content_sha256": "83187bcb8ec15924774ea33bd9a281d3bdf673dba75b6e8edc7ef6e72bf2744e",
+          "content_sha8": "83187bcb",
+          "download_method": "resource-url",
+          "file_sha256": "0b02816f4c1b0d1ba83cdc0c784a78099585408117ff8dbf31854c9eaa5d3e29",
+          "observed_at": "2026-09-14",
+          "profile": {
+            "encoding": "utf-8",
+            "indexes": null,
+            "nb_duplicates": 0,
+            "separator": ";",
+            "total_lines": 26719
+          },
+          "resource_format": "csv",
+          "resource_id": "a98cced2-babe-45b4-95dd-ce5336155dbc",
+          "resource_last_modified": "2026-09-13T15:03:28+00:00",
+          "resource_title": "liste-des-publications-de-presse-inscrites.csv",
+          "resource_url": "https://ministere-culture.s3.sbg.io.cloud.ovh.net/PRESSE/liste_des_publications_de_presse_inscrites.csv",
+          "rows": 26719,
+          "snapshot": "data/raw/publications/2026-09-14__83187bcb.csv",
           "source_format": {
             "delimiter": ";",
             "encoding": "utf-8-sig",
