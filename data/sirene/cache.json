@@ -799615,6 +799615,7 @@
     "altermondes information|75": "489079053",
     "alternatives economiques|21": "330394479",
     "alternatives et liberte|75": "431833649",
+    "alves lopes yann|77": "106944739",
     "am presse|75": "980133375",
     "amateur de cigares|75": "402135313",
     "amdg|78": "379469927",
@@ -799816,6 +799817,7 @@
     "cardinalis|78": "903747301",
     "carrefour castan|82": "909107302",
     "casden banque populaire|77": "784275778",
+    "castel actualite|44": "100220995",
     "causeur fr|75": "504830969",
     "cb media|92": "789756202",
     "cce communication|75": "393472600",
@@ -799994,6 +799996,7 @@
     "data pro solutions|94": "532006491",
     "david yeates|32": "479480923",
     "dbd|92": "419620257",
+    "de commerce d edition et de prestations|94": "390060184",
     "de defense des consommateurs de france|54": "330995515",
     "de la medaille miraculeuse|75": "784285827",
     "de la procure saint nicolas du chardonnet|75": "428740633",
@@ -800297,6 +800300,7 @@
     "federation cgt des vrp et commerciaux|75": "408412484",
     "federation de l equipement de l environnement des transports et des services force ouvriere fets fo|75": "784312035",
     "federation de savoie du parti communiste francais|73": "776456907",
+    "federation dep des chasseurs de gironde|33": "781781646",
     "federation departementale des chasseurs de l herault|34": "776020034",
     "federation departementale des chasseurs de l indre et loire|37": "775318140",
     "federation departementale des chasseurs de la haute marne|52": "780461810",
@@ -800576,6 +800580,7 @@
     "infagri49|49": "354003287",
     "influencia|92": "753589050",
     "infodium|75": "494345309",
+    "infoguyane|973": "799842273",
     "infomedia|75": "344189998",
     "informateur judiciaire|44": "348327891",
     "information dentaire|75": "502494388",
@@ -801277,6 +801282,7 @@
     "opinion independante du sud ouest|31": "345018634",
     "option finance|75": "343256327",
     "oracom|75": "397522657",
+    "ordo|92": "944949742",
     "organisme professionnel de prevention du batiment et des travaux publics|92": "775725914",
     "orient xxi|75": "799401682",
     "ortho edition|62": "429649510",
@@ -801465,6 +801471,7 @@
     "relais m s|92": "398563247",
     "relikto|76": "804473700",
     "rembobine media|93": "924671860",
+    "rennes cite media|35": "333734838",
     "reporters sans frontieres|75": "343684221",
     "republique du centre|45": "085880037",
     "reseau d information sur les refractaires ce qu il faut detruire rire cqfd|13": "437556558",
@@ -803471,6 +803478,61 @@
       "siret_est_siege": true,
       "strategy": "SIRET publié dans la source"
     },
+    "100220995": {
+      "candidates": [],
+      "confidence": "siret",
+      "entreprise": {
+        "activite_principale": "60.10Z",
+        "activite_principale_naf25": "60.10Y",
+        "complements": {
+          "est_association": true,
+          "est_ess": true,
+          "identifiant_association": "W441007944"
+        },
+        "date_creation": "2026-01-21",
+        "date_mise_a_jour": "2026-09-27T08:49:22",
+        "date_mise_a_jour_insee": "2026-01-23T09:05:06",
+        "dirigeants": [],
+        "dirigeants_total": 0,
+        "etat_administratif": "A",
+        "nature_juridique": "9220",
+        "nom_complet": "ASSOCIATION CASTEL ACTUALITE",
+        "nom_raison_sociale": "ASSOCIATION CASTEL ACTUALITE",
+        "nombre_etablissements": 1,
+        "nombre_etablissements_ouverts": 1,
+        "section_activite_principale": "J",
+        "siege": {
+          "activite_principale": "60.10Z",
+          "activite_principale_naf25": "60.10Y",
+          "adresse": "17 RUE D'ANCENIS 44110 CHATEAUBRIANT",
+          "caractere_employeur": "N",
+          "code_postal": "44110",
+          "commune": "44036",
+          "date_creation": "2026-01-21",
+          "date_debut_activite": "2026-01-21",
+          "departement": "44",
+          "etat_administratif": "A",
+          "latitude": "47.7171826621118",
+          "libelle_commune": "CHATEAUBRIANT",
+          "libelle_voie": "D'ANCENIS",
+          "longitude": "-1.37039477569746",
+          "numero_voie": "17",
+          "region": "52",
+          "siret": "10022099500011",
+          "tranche_effectif_salarie": "NN",
+          "type_voie": "RUE"
+        },
+        "siren": "100220995",
+        "statut_diffusion": "O",
+        "tranche_effectif_salarie": "NN"
+      },
+      "resolved_at": "2026-09-28",
+      "score": 1.0,
+      "siren": "100220995",
+      "siret_declare": "10022099500011",
+      "siret_est_siege": true,
+      "strategy": "SIRET publié dans la source"
+    },
     "100310598": {
       "candidates": [],
       "confidence": "siret",
@@ -804097,6 +804159,67 @@
       "score": 1.0,
       "siren": "106461825",
       "siret_declare": "10646182500015",
+      "siret_est_siege": true,
+      "strategy": "SIRET publié dans la source"
+    },
+    "106944739": {
+      "candidates": [],
+      "confidence": "siret",
+      "entreprise": {
+        "activite_principale": "58.14Z",
+        "activite_principale_naf25": "58.13Y",
+        "complements": {
+          "est_entrepreneur_individuel": true
+        },
+        "date_creation": "2026-06-29",
+        "date_mise_a_jour": "2026-09-27T12:25:46",
+        "date_mise_a_jour_insee": "2026-09-21T13:00:51.443",
+        "date_mise_a_jour_rne": "2026-09-22T20:00:08",
+        "dirigeants": [
+          {
+            "annee_de_naissance": "2007",
+            "date_de_naissance": "2007-02",
+            "nom": "ALVES LOPES",
+            "prenoms": "YANN GABRIEL",
+            "type_dirigeant": "personne physique"
+          }
+        ],
+        "dirigeants_total": 1,
+        "etat_administratif": "A",
+        "nature_juridique": "1000",
+        "nom_complet": "YANN ALVES LOPES",
+        "nombre_etablissements": 1,
+        "nombre_etablissements_ouverts": 1,
+        "section_activite_principale": "J",
+        "siege": {
+          "activite_principale": "58.14Z",
+          "activite_principale_naf25": "58.13Y",
+          "adresse": "6 AVENUE DU ROND BUISSON 77330 OZOIR-LA-FERRIERE",
+          "caractere_employeur": "N",
+          "code_postal": "77330",
+          "commune": "77350",
+          "date_creation": "2026-06-29",
+          "date_debut_activite": "2026-09-07",
+          "departement": "77",
+          "etat_administratif": "A",
+          "latitude": "48.77827351351",
+          "libelle_commune": "OZOIR-LA-FERRIERE",
+          "libelle_voie": "DU ROND BUISSON",
+          "longitude": "2.68075973385124",
+          "numero_voie": "6",
+          "region": "11",
+          "siret": "10694473900015",
+          "tranche_effectif_salarie": "NN",
+          "type_voie": "AVENUE"
+        },
+        "siren": "106944739",
+        "statut_diffusion": "O",
+        "tranche_effectif_salarie": "NN"
+      },
+      "resolved_at": "2026-09-28",
+      "score": 1.0,
+      "siren": "106944739",
+      "siret_declare": "10694473900015",
       "siret_est_siege": true,
       "strategy": "SIRET publié dans la source"
     },
@@ -818361,6 +818484,158 @@
       "score": 1.0,
       "siren": "333352888",
       "siret_declare": "33335288800080",
+      "siret_est_siege": true,
+      "strategy": "SIRET publié dans la source"
+    },
+    "333734838": {
+      "candidates": [],
+      "confidence": "siret",
+      "entreprise": {
+        "activite_principale": "60.20B",
+        "activite_principale_naf25": "60.20H",
+        "annee_categorie_entreprise": "2023",
+        "annee_tranche_effectif_salarie": "2023",
+        "categorie_entreprise": "PME",
+        "complements": {
+          "convention_collective_renseignee": true,
+          "liste_idcc": [
+            "3241",
+            "1480"
+          ]
+        },
+        "date_creation": "1985-09-05",
+        "date_mise_a_jour": "2026-09-27T09:12:17",
+        "date_mise_a_jour_insee": "2025-12-06T10:55:00",
+        "date_mise_a_jour_rne": "2026-09-15T10:52:30",
+        "dirigeants": [
+          {
+            "annee_de_naissance": "1976",
+            "date_de_naissance": "1976-05",
+            "nom": "DE GOUVION SAINT CYR",
+            "prenoms": "AYMAR",
+            "qualite": "Autre",
+            "type_dirigeant": "personne physique"
+          },
+          {
+            "annee_de_naissance": "1966",
+            "date_de_naissance": "1966-05",
+            "nom": "LE BOUGEANT",
+            "prenoms": "DIDIER",
+            "qualite": "Président du conseil d’administration",
+            "type_dirigeant": "personne physique"
+          },
+          {
+            "annee_de_naissance": "1983",
+            "date_de_naissance": "1983-12",
+            "nom": "ROUSSEAU",
+            "prenoms": "ANTHONY",
+            "qualite": "Commissaire aux comptes suppléant",
+            "type_dirigeant": "personne physique"
+          },
+          {
+            "annee_de_naissance": "1979",
+            "date_de_naissance": "1979-09",
+            "nom": "ROUSSEAU-CHAMBARD (ROUSSEAU)",
+            "prenoms": "AURELIE",
+            "qualite": "Directeur Général",
+            "type_dirigeant": "personne physique"
+          },
+          {
+            "denomination": "CCI ILLE-ET-VILAINE",
+            "qualite": "Administrateur",
+            "siren": "130022809",
+            "type_dirigeant": "personne morale"
+          },
+          {
+            "denomination": "RENNES METROPOLE",
+            "qualite": "Administrateur",
+            "siren": "243500139",
+            "type_dirigeant": "personne morale"
+          },
+          {
+            "denomination": "SOCIETE OUEST-FRANCE",
+            "qualite": "Administrateur",
+            "siren": "377714654",
+            "type_dirigeant": "personne morale"
+          },
+          {
+            "denomination": "GEIREC",
+            "qualite": "Commissaire aux comptes titulaire",
+            "siren": "428929517",
+            "type_dirigeant": "personne morale"
+          },
+          {
+            "denomination": "VILLE DE RENNES",
+            "qualite": "Administrateur",
+            "siren": "689200269",
+            "type_dirigeant": "personne morale"
+          },
+          {
+            "denomination": "CREDIT MUTUEL ARKEA",
+            "qualite": "Autre",
+            "siren": "775577018",
+            "type_dirigeant": "personne morale"
+          },
+          {
+            "denomination": "LE TELEGRAMME DE BREST ET DE L'OUEST",
+            "qualite": "Autre",
+            "siren": "925750325",
+            "type_dirigeant": "personne morale"
+          },
+          {
+            "denomination": "DEPARTEMENT D'ILLE ET VILAINE",
+            "qualite": "Administrateur",
+            "type_dirigeant": "personne morale"
+          }
+        ],
+        "dirigeants_total": 12,
+        "etat_administratif": "A",
+        "finances": {
+          "2025": {
+            "ca": 1252961,
+            "resultat_net": 3984
+          }
+        },
+        "nature_juridique": "5515",
+        "nom_complet": "RENNES CITE MEDIA (TVR RENNES 35 BRETAGNE) (RCM)",
+        "nom_raison_sociale": "RENNES CITE MEDIA",
+        "nombre_etablissements": 2,
+        "nombre_etablissements_ouverts": 1,
+        "section_activite_principale": "J",
+        "siege": {
+          "activite_principale": "60.20B",
+          "activite_principale_naf25": "60.20H",
+          "adresse": "19 RUE DE LA QUINTAINE 35000 RENNES",
+          "caractere_employeur": "O",
+          "code_postal": "35000",
+          "commune": "35238",
+          "date_creation": "1993-09-01",
+          "date_debut_activite": "2021-10-29",
+          "departement": "35",
+          "etat_administratif": "A",
+          "latitude": "48.114661425",
+          "libelle_commune": "RENNES",
+          "libelle_voie": "DE LA QUINTAINE",
+          "longitude": "-1.686212715",
+          "nom_commercial": "TVR RENNES 35 BRETAGNE",
+          "numero_voie": "19",
+          "region": "53",
+          "siret": "33373483800027",
+          "tranche_effectif_salarie": "12",
+          "type_voie": "RUE"
+        },
+        "sigle": "RCM",
+        "siren": "333734838",
+        "statut_diffusion": "O",
+        "tranche_effectif_salarie": "12",
+        "tva": [
+          "FR14333734838"
+        ]
+      },
+      "resolved_at": "2026-09-28",
+      "score": 1.0,
+      "siren": "333734838",
+      "siret_declare": "33373483800027",
       "siret_est_siege": true,
       "strategy": "SIRET publié dans la source"
     },
@@ -834505,6 +834780,74 @@
       "score": 1.0,
       "siren": "390020873",
       "siret_declare": "39002087300027",
+      "siret_est_siege": true,
+      "strategy": "SIRET publié dans la source"
+    },
+    "390060184": {
+      "candidates": [],
+      "confidence": "siret",
+      "entreprise": {
+        "activite_principale": "55.10Z",
+        "activite_principale_naf25": "55.10Y",
+        "annee_categorie_entreprise": "2023",
+        "annee_tranche_effectif_salarie": "2023",
+        "categorie_entreprise": "PME",
+        "complements": {
+          "convention_collective_renseignee": true,
+          "est_association": true,
+          "est_ess": true,
+          "identifiant_association": "W751108355",
+          "liste_idcc": [
+            "2121",
+            "1979",
+            "1480"
+          ]
+        },
+        "date_creation": "1992-10-01",
+        "date_mise_a_jour": "2026-09-27T09:30:45",
+        "date_mise_a_jour_insee": "2025-12-06T05:58:51",
+        "dirigeants": [],
+        "dirigeants_total": 0,
+        "etat_administratif": "A",
+        "nature_juridique": "9220",
+        "nom_complet": "ASSOCIATION DE COMMERCE D EDITION ET DE PRESTATIONS (ACEP)",
+        "nom_raison_sociale": "ASSOCIATION DE COMMERCE D EDITION ET DE PRESTATIONS",
+        "nombre_etablissements": 7,
+        "nombre_etablissements_ouverts": 3,
+        "section_activite_principale": "I",
+        "siege": {
+          "activite_principale": "55.10Z",
+          "activite_principale_naf25": "55.10Y",
+          "adresse": "18 AVENUE CARNOT 94230 CACHAN",
+          "caractere_employeur": "O",
+          "code_postal": "94230",
+          "commune": "94016",
+          "date_creation": "2022-05-04",
+          "date_debut_activite": "2022-05-04",
+          "departement": "94",
+          "etat_administratif": "A",
+          "latitude": "48.7979584769354",
+          "libelle_commune": "CACHAN",
+          "libelle_voie": "CARNOT",
+          "longitude": "2.32937826125088",
+          "numero_voie": "18",
+          "region": "11",
+          "siret": "39006018400079",
+          "tranche_effectif_salarie": "NN",
+          "type_voie": "AVENUE"
+        },
+        "sigle": "ACEP",
+        "siren": "390060184",
+        "statut_diffusion": "O",
+        "tranche_effectif_salarie": "11",
+        "tva": [
+          "FR15390060184"
+        ]
+      },
+      "resolved_at": "2026-09-28",
+      "score": 1.0,
+      "siren": "390060184",
+      "siret_declare": "39006018400079",
       "siret_est_siege": true,
       "strategy": "SIRET publié dans la source"
     },
@@ -919535,6 +919878,66 @@
       "siret_est_siege": true,
       "strategy": "SIRET publié dans la source"
     },
+    "781781646": {
+      "candidates": [],
+      "confidence": "siret",
+      "entreprise": {
+        "activite_principale": "93.12Z",
+        "activite_principale_naf25": "93.12Y",
+        "annee_categorie_entreprise": "2023",
+        "annee_tranche_effectif_salarie": "2023",
+        "categorie_entreprise": "PME",
+        "complements": {
+          "convention_collective_renseignee": true,
+          "est_association": true,
+          "est_ess": true,
+          "identifiant_association": "W332005067",
+          "liste_idcc": [
+            "2697"
+          ]
+        },
+        "date_creation": "1900-01-01",
+        "date_mise_a_jour": "2026-09-27T10:50:35",
+        "date_mise_a_jour_insee": "2025-12-06T06:40:07",
+        "dirigeants": [],
+        "dirigeants_total": 0,
+        "etat_administratif": "A",
+        "nature_juridique": "9220",
+        "nom_complet": "FEDERATION DEP DES CHASSEURS DE GIRONDE",
+        "nom_raison_sociale": "FEDERATION DEP DES CHASSEURS DE GIRONDE",
+        "nombre_etablissements": 2,
+        "nombre_etablissements_ouverts": 1,
+        "section_activite_principale": "R",
+        "siege": {
+          "activite_principale": "93.12Z",
+          "activite_principale_naf25": "93.12Y",
+          "adresse": "DOMAINE DE PACHAN 33290 LUDON-MEDOC",
+          "caractere_employeur": "O",
+          "code_postal": "33290",
+          "commune": "33256",
+          "date_creation": "1996-06-16",
+          "date_debut_activite": "2008-01-01",
+          "departement": "33",
+          "etat_administratif": "A",
+          "latitude": "44.986628071",
+          "libelle_commune": "LUDON-MEDOC",
+          "libelle_voie": "DOMAINE DE PACHAN",
+          "longitude": "-0.555422365",
+          "region": "75",
+          "siret": "78178164600034",
+          "tranche_effectif_salarie": "12"
+        },
+        "siren": "781781646",
+        "statut_diffusion": "O",
+        "tranche_effectif_salarie": "12"
+      },
+      "resolved_at": "2026-09-28",
+      "score": 1.0,
+      "siren": "781781646",
+      "siret_declare": "78178164600034",
+      "siret_est_siege": true,
+      "strategy": "SIRET publié dans la source"
+    },
     "781846845": {
       "candidates": [],
       "confidence": "siret",
@@ -934228,6 +934631,81 @@
       "siren": "799833785",
       "siret_declare": "79983378500014",
       "siret_est_siege": false,
+      "strategy": "SIRET publié dans la source"
+    },
+    "799842273": {
+      "candidates": [],
+      "confidence": "siret",
+      "entreprise": {
+        "activite_principale": "60.10Z",
+        "activite_principale_naf25": "60.10Y",
+        "annee_categorie_entreprise": "2023",
+        "annee_tranche_effectif_salarie": "2023",
+        "categorie_entreprise": "PME",
+        "complements": {
+          "convention_collective_renseignee": true,
+          "liste_idcc": [
+            "1480"
+          ]
+        },
+        "date_creation": "2013-12-01",
+        "date_mise_a_jour": "2026-09-27T10:59:16",
+        "date_mise_a_jour_insee": "2025-12-06T05:43:38",
+        "date_mise_a_jour_rne": "2026-09-25T00:49:55",
+        "dirigeants": [
+          {
+            "annee_de_naissance": "1973",
+            "date_de_naissance": "1973-09",
+            "nom": "MANGACHOFF",
+            "prenoms": "WLADIMIR MICHEL",
+            "qualite": "Président de SAS",
+            "type_dirigeant": "personne physique"
+          }
+        ],
+        "dirigeants_total": 1,
+        "etat_administratif": "A",
+        "finances": {
+          "2023": {
+            "ca": 0,
+            "resultat_net": 29903
+          }
+        },
+        "nature_juridique": "5710",
+        "nom_complet": "INFOGUYANE",
+        "nom_raison_sociale": "INFOGUYANE",
+        "nombre_etablissements": 1,
+        "nombre_etablissements_ouverts": 1,
+        "section_activite_principale": "J",
+        "siege": {
+          "activite_principale": "60.10Z",
+          "activite_principale_naf25": "60.10Y",
+          "adresse": "2 BOULEVARD DE LA REPUBLIQUE 97300 CAYENNE",
+          "caractere_employeur": "O",
+          "code_postal": "97300",
+          "commune": "97302",
+          "date_creation": "2013-12-01",
+          "date_debut_activite": "2014-12-15",
+          "departement": "973",
+          "etat_administratif": "A",
+          "latitude": "4.93719196416039",
+          "libelle_commune": "CAYENNE",
+          "libelle_voie": "DE LA REPUBLIQUE",
+          "longitude": "-52.3243062501983",
+          "numero_voie": "2",
+          "region": "03",
+          "siret": "79984227300010",
+          "tranche_effectif_salarie": "02",
+          "type_voie": "BOULEVARD"
+        },
+        "siren": "799842273",
+        "statut_diffusion": "O",
+        "tranche_effectif_salarie": "02"
+      },
+      "resolved_at": "2026-09-28",
+      "score": 1.0,
+      "siren": "799842273",
+      "siret_declare": "79984227300010",
+      "siret_est_siege": true,
       "strategy": "SIRET publié dans la source"
     },
     "799856075": {
@@ -981656,6 +982134,76 @@
       "siren": "943820340",
       "siret_declare": "94382034000017",
       "siret_est_siege": true,
+      "strategy": "SIRET publié dans la source"
+    },
+    "944949742": {
+      "candidates": [],
+      "confidence": "siret",
+      "entreprise": {
+        "activite_principale": "58.14Z",
+        "activite_principale_naf25": "58.13Y",
+        "complements": {},
+        "date_creation": "2025-05-27",
+        "date_mise_a_jour": "2026-09-27T12:27:36",
+        "date_mise_a_jour_insee": "2026-09-10T17:33:33.158",
+        "date_mise_a_jour_rne": "2026-09-18T13:39:12",
+        "dirigeants": [
+          {
+            "annee_de_naissance": "1980",
+            "date_de_naissance": "1980-05",
+            "nom": "PICARD",
+            "prenoms": "BERTRAND",
+            "qualite": "Directeur Général",
+            "type_dirigeant": "personne physique"
+          },
+          {
+            "denomination": "ROCLEVALNOR",
+            "qualite": "Président de SAS",
+            "siren": "948859202",
+            "type_dirigeant": "personne morale"
+          }
+        ],
+        "dirigeants_total": 2,
+        "etat_administratif": "A",
+        "nature_juridique": "5710",
+        "nom_complet": "ORDO",
+        "nom_raison_sociale": "ORDO",
+        "nombre_etablissements": 2,
+        "nombre_etablissements_ouverts": 1,
+        "section_activite_principale": "J",
+        "siege": {
+          "activite_principale": "58.14Z",
+          "activite_principale_naf25": "58.13Y",
+          "adresse": "10 RUE DE LA PAIX 75002 PARIS",
+          "caractere_employeur": "N",
+          "code_postal": "75002",
+          "commune": "75102",
+          "date_creation": "2026-06-23",
+          "date_debut_activite": "2026-06-23",
+          "departement": "75",
+          "etat_administratif": "A",
+          "latitude": "48.868989004634564",
+          "libelle_commune": "PARIS",
+          "libelle_voie": "DE LA PAIX",
+          "longitude": "2.3311500282034605",
+          "numero_voie": "10",
+          "region": "11",
+          "siret": "94494974200026",
+          "tranche_effectif_salarie": "NN",
+          "type_voie": "RUE"
+        },
+        "siren": "944949742",
+        "statut_diffusion": "O",
+        "tranche_effectif_salarie": "NN",
+        "tva": [
+          "FR85944949742"
+        ]
+      },
+      "resolved_at": "2026-09-28",
+      "score": 1.0,
+      "siren": "944949742",
+      "siret_declare": "94494974200018",
+      "siret_est_siege": false,
       "strategy": "SIRET publié dans la source"
     },
     "945750735": {
