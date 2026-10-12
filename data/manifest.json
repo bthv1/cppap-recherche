@@ -39,6 +39,38 @@
             "encoding": "utf-8-sig",
             "parser": "csv"
           }
+        },
+        {
+          "columns": [
+            "IDENTIFICATION (dénomination sociale)",
+            "Nom commercial",
+            "Arrêté du",
+            "JORF – Date"
+          ],
+          "content_sha256": "b10c42b9a6904f5feef349c3d8990e70509a979184b619ef7b6ef8fb66fff0ed",
+          "content_sha8": "b10c42b9",
+          "download_method": "resource-url",
+          "file_sha256": "3cffebf58df6b46df34bb10b4b1fee3bf7f7d91d9120d5083a32723d7f2a9da5",
+          "observed_at": "2026-10-12",
+          "profile": {
+            "encoding": "UTF-8-SIG",
+            "indexes": null,
+            "nb_duplicates": 0,
+            "separator": ";",
+            "total_lines": 180
+          },
+          "resource_format": "csv",
+          "resource_id": "be70cfa6-4501-46cd-907c-422556ceefc3",
+          "resource_last_modified": "2026-10-09T07:35:46.745000+00:00",
+          "resource_title": "liste-des-agences-de-presse-agreees.csv",
+          "resource_url": "https://static.data.gouv.fr/resources/liste-des-agences-de-presse-agreees/20261009-073546/liste-des-agences-de-presse-agreees.csv",
+          "rows": 180,
+          "snapshot": "data/raw/agences/2026-10-12__b10c42b9.csv",
+          "source_format": {
+            "delimiter": ";",
+            "encoding": "utf-8-sig",
+            "parser": "csv"
+          }
         }
       ]
     },
@@ -523,6 +555,52 @@
           "resource_url": "https://ministere-culture.s3.sbg.io.cloud.ovh.net/PRESSE/liste_des_publications_de_presse_inscrites.csv",
           "rows": 26743,
           "snapshot": "data/raw/publications/2026-10-05__d90403a5.csv",
+          "source_format": {
+            "delimiter": ";",
+            "encoding": "utf-8-sig",
+            "parser": "csv"
+          }
+        },
+        {
+          "columns": [
+            "editeur",
+            "siret",
+            "forme_juridique",
+            "departement",
+            "type_de_presse",
+            "nom_du_titre_de_presse",
+            "statut_inscription",
+            "demande_en_cours",
+            "date_depot_derniere_demande",
+            "numero_cppap",
+            "date_expiration_inscription",
+            "date_derniere_decision",
+            "qualification",
+            "regime_derogatoire",
+            "ajl",
+            "url_spel",
+            "categorie_publication",
+            "sous_categorie_publication"
+          ],
+          "content_sha256": "63eea1222e20352bf1be6cfbaa15fbe824adbbba6fcaff3e1b2aece75e7534ab",
+          "content_sha8": "63eea122",
+          "download_method": "resource-url",
+          "file_sha256": "4d70c20516d12c73980081d25c2739bfe498e53ee78e82c929dc2d2fee7ba81e",
+          "observed_at": "2026-10-12",
+          "profile": {
+            "encoding": "utf-8",
+            "indexes": null,
+            "nb_duplicates": 0,
+            "separator": ";",
+            "total_lines": 26746
+          },
+          "resource_format": "csv",
+          "resource_id": "a98cced2-babe-45b4-95dd-ce5336155dbc",
+          "resource_last_modified": "2026-10-11T15:03:48+00:00",
+          "resource_title": "liste-des-publications-de-presse-inscrites.csv",
+          "resource_url": "https://ministere-culture.s3.sbg.io.cloud.ovh.net/PRESSE/liste_des_publications_de_presse_inscrites.csv",
+          "rows": 26746,
+          "snapshot": "data/raw/publications/2026-10-12__63eea122.csv",
           "source_format": {
             "delimiter": ";",
             "encoding": "utf-8-sig",

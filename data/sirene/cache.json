@@ -34882,6 +34882,86 @@
       "siren": "513068247",
       "strategy": "nom+departement"
     },
+    "amelie acatrinei aldea|93": {
+      "candidates": [
+        {
+          "adresse": "12 AVENUE GEORGE SAND 93210 SAINT-DENIS",
+          "departement": "93",
+          "etat_administratif": "A",
+          "nature_juridique": "1000",
+          "nom": "AMELIE ACATRINEI ALDEA (ACATRINEI)",
+          "score": 1.0,
+          "score_parts": {
+            "bonus_obtenu": 0.2,
+            "bonus_possible": 0.2,
+            "nom": 1.0
+          },
+          "siren": "790086011"
+        }
+      ],
+      "confidence": "certain",
+      "departement": "93",
+      "editeur": "Amélie ACATRINEI-ALDEA",
+      "entreprise": {
+        "activite_principale": "62.09Z",
+        "activite_principale_naf25": "62.90Y",
+        "annee_categorie_entreprise": "2024",
+        "categorie_entreprise": "PME",
+        "complements": {
+          "est_entrepreneur_individuel": true
+        },
+        "date_creation": "2012-12-18",
+        "date_mise_a_jour": "2026-10-08T09:24:15",
+        "date_mise_a_jour_insee": "2026-07-27T09:14:00",
+        "date_mise_a_jour_rne": "2026-08-25T16:59:48",
+        "dirigeants": [
+          {
+            "nom": "ACATRINEI ALDEA (ACATRINEI)",
+            "prenoms": "AMELIE",
+            "type_dirigeant": "personne physique"
+          }
+        ],
+        "dirigeants_total": 1,
+        "etat_administratif": "A",
+        "nature_juridique": "1000",
+        "nom_complet": "AMELIE ACATRINEI ALDEA (ACATRINEI)",
+        "nombre_etablissements": 3,
+        "nombre_etablissements_ouverts": 1,
+        "section_activite_principale": "J",
+        "siege": {
+          "activite_principale": "62.09Z",
+          "activite_principale_naf25": "62.90Y",
+          "adresse": "12 AVENUE GEORGE SAND 93210 SAINT-DENIS",
+          "caractere_employeur": "N",
+          "code_postal": "93210",
+          "commune": "93066",
+          "date_creation": "2025-06-24",
+          "date_debut_activite": "2025-06-24",
+          "departement": "93",
+          "etat_administratif": "A",
+          "latitude": "48.9074588973409",
+          "libelle_commune": "SAINT-DENIS",
+          "libelle_voie": "GEORGE SAND",
+          "longitude": "2.36471821736525",
+          "numero_voie": "12",
+          "region": "11",
+          "siret": "79008601100034",
+          "tranche_effectif_salarie": "NN",
+          "type_voie": "AVENUE"
+        },
+        "siren": "790086011",
+        "statut_diffusion": "O",
+        "tranche_effectif_salarie": "NN",
+        "tva": [
+          "FR92790086011"
+        ]
+      },
+      "forme_juridique": "Micro-entrepreneur",
+      "resolved_at": "2026-10-12",
+      "score": 1.0,
+      "siren": "790086011",
+      "strategy": "nom+departement"
+    },
     "america latina publicaciones|75": {
       "candidates": [],
       "confidence": "aucun",
@@ -641438,6 +641518,128 @@
       "score": 0.0,
       "strategy": "aucune"
     },
+    "sable rouge|": {
+      "candidates": [
+        {
+          "adresse": "67 RUE SAINT-JACQUES 75005 PARIS",
+          "departement": "75",
+          "etat_administratif": "A",
+          "nature_juridique": "5499",
+          "nom": "SABLE ROUGE",
+          "score": 1.0,
+          "score_parts": {
+            "bonus_obtenu": 0.05,
+            "bonus_possible": 0.05,
+            "nom": 1.0
+          },
+          "siren": "502601347"
+        },
+        {
+          "adresse": "18 EME KM - LA PLAINE DES CAFRES 2 CHEMIN GALET 97418 LE TAMPON",
+          "departement": "974",
+          "etat_administratif": "A",
+          "nature_juridique": "6599",
+          "nom": "SCI SABLE ROUGE",
+          "score": 1.0,
+          "score_parts": {
+            "bonus_obtenu": 0.05,
+            "bonus_possible": 0.05,
+            "nom": 1.0
+          },
+          "siren": "819673625"
+        },
+        {
+          "adresse": "11 RUE HUMBLOT 75015 PARIS",
+          "departement": "75",
+          "etat_administratif": "A",
+          "nature_juridique": "6540",
+          "nom": "SCI SABLE ROUGE",
+          "score": 1.0,
+          "score_parts": {
+            "bonus_obtenu": 0.05,
+            "bonus_possible": 0.05,
+            "nom": 1.0
+          },
+          "siren": "850610387"
+        }
+      ],
+      "confidence": "probable",
+      "departement": "",
+      "editeur": "SABLE ROUGE",
+      "entreprise": {
+        "activite_principale": "59.11A",
+        "activite_principale_naf25": "59.11G",
+        "annee_categorie_entreprise": "2024",
+        "annee_tranche_effectif_salarie": "2024",
+        "categorie_entreprise": "PME",
+        "complements": {
+          "convention_collective_renseignee": true,
+          "liste_idcc": [
+            "2642"
+          ]
+        },
+        "date_creation": "2007-10-01",
+        "date_mise_a_jour": "2026-10-08T10:05:20",
+        "date_mise_a_jour_insee": "2025-12-06T11:30:59",
+        "date_mise_a_jour_rne": "2026-09-24T03:35:46",
+        "dirigeants": [
+          {
+            "annee_de_naissance": "1968",
+            "date_de_naissance": "1968-10",
+            "nom": "GERARDIN",
+            "prenoms": "ARNAUD",
+            "qualite": "Gérant",
+            "type_dirigeant": "personne physique"
+          }
+        ],
+        "dirigeants_total": 1,
+        "etat_administratif": "A",
+        "finances": {
+          "2019": {
+            "ca": 217625,
+            "resultat_net": 61267
+          }
+        },
+        "nature_juridique": "5499",
+        "nom_complet": "SABLE ROUGE",
+        "nom_raison_sociale": "SABLE ROUGE",
+        "nombre_etablissements": 3,
+        "nombre_etablissements_ouverts": 1,
+        "section_activite_principale": "J",
+        "siege": {
+          "activite_principale": "59.11A",
+          "activite_principale_naf25": "59.11G",
+          "adresse": "67 RUE SAINT-JACQUES 75005 PARIS",
+          "caractere_employeur": "N",
+          "code_postal": "75005",
+          "commune": "75105",
+          "date_creation": "2024-04-23",
+          "date_debut_activite": "2024-04-23",
+          "departement": "75",
+          "etat_administratif": "A",
+          "latitude": "48.8500440743399",
+          "libelle_commune": "PARIS",
+          "libelle_voie": "SAINT-JACQUES",
+          "longitude": "2.34526041913531",
+          "numero_voie": "67",
+          "region": "11",
+          "siret": "50260134700037",
+          "tranche_effectif_salarie": "02",
+          "type_voie": "RUE"
+        },
+        "siren": "502601347",
+        "statut_diffusion": "O",
+        "tranche_effectif_salarie": "02",
+        "tva": [
+          "FR66502601347"
+        ]
+      },
+      "forme_juridique": "",
+      "resolved_at": "2026-10-12",
+      "score": 1.0,
+      "siren": "502601347",
+      "strategy": "nom"
+    },
     "sablos media s l|": {
       "candidates": [],
       "confidence": "aucun",
@@ -644833,6 +645035,109 @@
       "resolved_at": "2026-08-10",
       "score": 1.0,
       "siren": "338116189",
+      "strategy": "nom+departement"
+    },
+    "sante travail|75": {
+      "candidates": [
+        {
+          "adresse": "28 RUE DU SENTIER 75002 PARIS",
+          "departement": "75",
+          "etat_administratif": "A",
+          "nature_juridique": "8210",
+          "nom": "SANTE ET TRAVAIL (UGM SANTE ET TRAVAIL)",
+          "score": 0.9496,
+          "score_parts": {
+            "bonus_obtenu": 0.2,
+            "bonus_possible": 0.2,
+            "nom": 0.9328
+          },
+          "siren": "494996226"
+        },
+        {
+          "adresse": "CHEZ SCI TMT 8 RUE MONTESQUIEU 75001 PARIS 1",
+          "departement": "75",
+          "etat_administratif": "C",
+          "nature_juridique": "6220",
+          "nom": "SANTE TRAVAIL",
+          "score": 0.9375,
+          "score_parts": {
+            "bonus_obtenu": 0.15,
+            "bonus_possible": 0.2,
+            "nom": 1.0
+          },
+          "siren": "449318351"
+        },
+        {
+          "adresse": "RDC 27 RUE VILLIERS DE L'ISLE ADAM 75020 PARIS",
+          "departement": "75",
+          "etat_administratif": "A",
+          "nature_juridique": "5499",
+          "nom": "SANTE -TRAVAIL-SERVICE (STS)",
+          "score": 0.8853,
+          "score_parts": {
+            "bonus_obtenu": 0.2,
+            "bonus_possible": 0.2,
+            "nom": 0.8471
+          },
+          "siren": "498748458"
+        }
+      ],
+      "confidence": "probable",
+      "departement": "75",
+      "editeur": "SANTE & TRAVAIL",
+      "entreprise": {
+        "activite_principale": "65.12Z",
+        "activite_principale_naf25": "65.12Y",
+        "annee_categorie_entreprise": "2024",
+        "categorie_entreprise": "PME",
+        "complements": {
+          "est_ess": true
+        },
+        "date_creation": "2007-02-21",
+        "date_mise_a_jour": "2026-10-08T09:58:58",
+        "date_mise_a_jour_insee": "2025-12-06T06:30:58",
+        "dirigeants": [],
+        "dirigeants_total": 0,
+        "etat_administratif": "A",
+        "nature_juridique": "8210",
+        "nom_complet": "SANTE ET TRAVAIL (UGM SANTE ET TRAVAIL)",
+        "nom_raison_sociale": "SANTE ET TRAVAIL",
+        "nombre_etablissements": 1,
+        "nombre_etablissements_ouverts": 1,
+        "section_activite_principale": "K",
+        "siege": {
+          "activite_principale": "65.12Z",
+          "activite_principale_naf25": "65.12Y",
+          "adresse": "28 RUE DU SENTIER 75002 PARIS",
+          "caractere_employeur": "N",
+          "code_postal": "75002",
+          "commune": "75102",
+          "date_creation": "2007-02-21",
+          "date_debut_activite": "2008-01-01",
+          "departement": "75",
+          "etat_administratif": "A",
+          "latitude": "48.869911072",
+          "libelle_commune": "PARIS",
+          "libelle_voie": "DU SENTIER",
+          "longitude": "2.346316555",
+          "numero_voie": "28",
+          "region": "11",
+          "siret": "49499622600010",
+          "tranche_effectif_salarie": "NN",
+          "type_voie": "RUE"
+        },
+        "sigle": "UGM SANTE ET TRAVAIL",
+        "siren": "494996226",
+        "statut_diffusion": "O",
+        "tranche_effectif_salarie": "NN",
+        "tva": [
+          "FR73494996226"
+        ]
+      },
+      "forme_juridique": "",
+      "resolved_at": "2026-10-12",
+      "score": 0.9496,
+      "siren": "494996226",
       "strategy": "nom+departement"
     },
     "sapeso|33": {
@@ -713681,6 +713986,95 @@
       "siren": "524452950",
       "strategy": "nom+departement"
     },
+    "sportissimo photo|": {
+      "candidates": [
+        {
+          "adresse": "LA RELATIERE 522 ROUTE DU REPLATON 38410 SAINT-MARTIN-D'URIAGE",
+          "departement": "38",
+          "etat_administratif": "A",
+          "nature_juridique": "5499",
+          "nom": "SPORTISSIMO PHOTO",
+          "score": 1.0,
+          "score_parts": {
+            "bonus_obtenu": 0.05,
+            "bonus_possible": 0.05,
+            "nom": 1.0
+          },
+          "siren": "453070526"
+        }
+      ],
+      "confidence": "certain",
+      "departement": "",
+      "editeur": "SPORTISSIMO PHOTO",
+      "entreprise": {
+        "activite_principale": "63.91Z",
+        "activite_principale_naf25": "60.31Y",
+        "annee_categorie_entreprise": "2024",
+        "categorie_entreprise": "PME",
+        "complements": {},
+        "date_creation": "2004-04-15",
+        "date_mise_a_jour": "2026-10-08T09:40:10",
+        "date_mise_a_jour_insee": "2025-12-06T10:46:58",
+        "date_mise_a_jour_rne": "2026-08-23T05:35:14",
+        "dirigeants": [
+          {
+            "annee_de_naissance": "1970",
+            "date_de_naissance": "1970-11",
+            "nom": "PILLAUD",
+            "prenoms": "STEPHANE",
+            "qualite": "Gérant",
+            "type_dirigeant": "personne physique"
+          }
+        ],
+        "dirigeants_total": 1,
+        "etat_administratif": "A",
+        "finances": {
+          "2024": {
+            "ca": 1040,
+            "resultat_net": -4236
+          }
+        },
+        "nature_juridique": "5499",
+        "nom_complet": "SPORTISSIMO PHOTO",
+        "nom_raison_sociale": "SPORTISSIMO PHOTO",
+        "nombre_etablissements": 2,
+        "nombre_etablissements_ouverts": 1,
+        "section_activite_principale": "J",
+        "siege": {
+          "activite_principale": "63.91Z",
+          "activite_principale_naf25": "60.31Y",
+          "adresse": "LA RELATIERE 522 ROUTE DU REPLATON 38410 SAINT-MARTIN-D'URIAGE",
+          "caractere_employeur": "N",
+          "code_postal": "38410",
+          "commune": "38422",
+          "complement_adresse": "LA RELATIERE",
+          "date_creation": "2004-08-01",
+          "date_debut_activite": "2008-01-01",
+          "departement": "38",
+          "etat_administratif": "A",
+          "latitude": "45.135569815",
+          "libelle_commune": "SAINT-MARTIN-D'URIAGE",
+          "libelle_voie": "DU REPLATON",
+          "longitude": "5.8456162909",
+          "numero_voie": "522",
+          "region": "84",
+          "siret": "45307052600026",
+          "tranche_effectif_salarie": "NN",
+          "type_voie": "ROUTE"
+        },
+        "siren": "453070526",
+        "statut_diffusion": "O",
+        "tranche_effectif_salarie": "NN",
+        "tva": [
+          "FR60453070526"
+        ]
+      },
+      "forme_juridique": "",
+      "resolved_at": "2026-10-12",
+      "score": 1.0,
+      "siren": "453070526",
+      "strategy": "nom"
+    },
     "sportissimo|54": {
       "candidates": [
         {
@@ -716125,6 +716519,98 @@
       "score": 1.0,
       "siren": "420927048",
       "strategy": "nom+departement"
+    },
+    "step by step productions|": {
+      "candidates": [
+        {
+          "adresse": "2 RUE DE LA ROQUETTE 75011 PARIS",
+          "departement": "75",
+          "etat_administratif": "A",
+          "nature_juridique": "5710",
+          "nom": "STEP BY STEP PRODUCTIONS",
+          "score": 1.0,
+          "score_parts": {
+            "bonus_obtenu": 0.05,
+            "bonus_possible": 0.05,
+            "nom": 1.0
+          },
+          "siren": "503634164"
+        }
+      ],
+      "confidence": "certain",
+      "departement": "",
+      "editeur": "STEP BY STEP PRODUCTIONS",
+      "entreprise": {
+        "activite_principale": "59.11A",
+        "activite_principale_naf25": "59.11G",
+        "annee_categorie_entreprise": "2024",
+        "annee_tranche_effectif_salarie": "2024",
+        "categorie_entreprise": "PME",
+        "complements": {
+          "convention_collective_renseignee": true,
+          "liste_idcc": [
+            "2642"
+          ]
+        },
+        "date_creation": "2008-04-01",
+        "date_mise_a_jour": "2026-10-08T10:06:29",
+        "date_mise_a_jour_insee": "2025-12-06T06:36:36",
+        "date_mise_a_jour_rne": "2026-09-24T03:59:22",
+        "dirigeants": [
+          {
+            "denomination": "TOP HAT PRODUCTION",
+            "qualite": "Président de SAS",
+            "siren": "523225936",
+            "type_dirigeant": "personne morale"
+          }
+        ],
+        "dirigeants_total": 1,
+        "etat_administratif": "A",
+        "finances": {
+          "2024": {
+            "ca": 0,
+            "resultat_net": 315007
+          }
+        },
+        "nature_juridique": "5710",
+        "nom_complet": "STEP BY STEP PRODUCTIONS",
+        "nom_raison_sociale": "STEP BY STEP PRODUCTIONS",
+        "nombre_etablissements": 4,
+        "nombre_etablissements_ouverts": 1,
+        "section_activite_principale": "J",
+        "siege": {
+          "activite_principale": "59.11A",
+          "activite_principale_naf25": "59.11G",
+          "adresse": "2 RUE DE LA ROQUETTE 75011 PARIS",
+          "caractere_employeur": "O",
+          "code_postal": "75011",
+          "commune": "75111",
+          "date_creation": "2016-09-30",
+          "date_debut_activite": "2021-10-19",
+          "departement": "75",
+          "etat_administratif": "A",
+          "latitude": "48.8533061399655",
+          "libelle_commune": "PARIS",
+          "libelle_voie": "DE LA ROQUETTE",
+          "longitude": "2.37247035077782",
+          "numero_voie": "2",
+          "region": "11",
+          "siret": "50363416400043",
+          "tranche_effectif_salarie": "11",
+          "type_voie": "RUE"
+        },
+        "siren": "503634164",
+        "statut_diffusion": "O",
+        "tranche_effectif_salarie": "11",
+        "tva": [
+          "FR46503634164"
+        ]
+      },
+      "forme_juridique": "",
+      "resolved_at": "2026-10-12",
+      "score": 1.0,
+      "siren": "503634164",
+      "strategy": "nom"
     },
     "step cfdt de maine et loire|49": {
       "candidates": [],
@@ -799523,6 +800009,7 @@
     "ablock|95": "882849375",
     "abm|34": "915008551",
     "academie des sciences lettres et arts d agen|47": "307920090",
+    "acatrinei aldea acatrinei amelie|93": "790086011",
     "achatpublic com|94": "447854621",
     "acteurs d europe|75": "494883762",
     "actif|34": "303544324",
@@ -799620,7 +800107,6 @@
     "am presse|75": "980133375",
     "amateur de cigares|75": "402135313",
     "amdg|78": "379469927",
-    "amelie acatrinei aldea|93": "790086011",
     "amicale du camp de gurs|64": "448775213",
     "amiral conseil|75": "452621212",
     "amis de la fondation pour la memoire de la deportation|75": "410226518",
@@ -799852,6 +800338,7 @@
     "cercle genealogique du haut berry|18": "378136717",
     "cercle genealogique sud bretagne morbihan|56": "478703390",
     "cercle spirite allan kardec|54": "433250891",
+    "ceres editions presse|33": "890283369",
     "cerigo editions|75": "811896802",
     "cerisy luc|75": "942709163",
     "ceshe france|59": "823040696",
@@ -799874,6 +800361,7 @@
     "charles philippe presse|92": "444984801",
     "chasser en nouvelle aquitaine|79": "387996341",
     "chasseurs de l est|57": "320379118",
+    "cherry zebra agency|92": "510460694",
     "chine magazine com|": "818779480",
     "chlorobike|78": "352438550",
     "cho you|75": "440363679",
@@ -800543,6 +801031,7 @@
     "humeco|93": "892331786",
     "hum|75": "949963367",
     "ia vip|92": "534333166",
+    "ic news|75": "847783719",
     "ic publications|75": "712002450",
     "icl|70": "851484501",
     "ideal|75": "444126759",
@@ -800995,7 +801484,6 @@
     "les publications grand public pgp|92": "419648902",
     "les publications grand public|92": "519648902",
     "les publications libertaires|75": "448112524",
-    "les relations publiques administratives|75": "932016168",
     "les relations publiques et administratives|75": "632016168",
     "les retais productions|17": "921426136",
     "les sportives|70": "818024085",
@@ -801045,6 +801533,7 @@
     "luxury mobility ltd|75": "883528192",
     "lyderic|59": "982220196",
     "lyon capitale|92": "489069856",
+    "lyon decideurs|69": "880742630",
     "lyon entreprises|69": "447634650",
     "lyon media plus|69": "400840690",
     "lyon people|69": "420093593",
@@ -801430,6 +801919,7 @@
     "publications administrer|75": "702051343",
     "publications agora france|75": "399671809",
     "publications api|44": "381802982",
+    "publications architecture urbanisme|75": "572070175",
     "publications atlantique presse information api|44": "381802982",
     "publications conde nast|75": "562077206",
     "publications d architecture et d urbanisme|75": "572070175",
@@ -801519,6 +802009,7 @@
     "s a t|75": "784809758",
     "s e d i g a|33": "465202786",
     "s e p a c|18": "324443589",
+    "s e p a q|46": "731650537",
     "s e p l|33": "390100501",
     "s p a de montpellier|34": "776054355",
     "s p c editions|75": "432274181",
@@ -801532,8 +802023,8 @@
     "sambre avesnois tv|59": "105283667",
     "sans doute|75": "928977669",
     "sans filtre|83": "831966858",
+    "sante et travail|75": "494996226",
     "sante port royal ginkgo media|75": "434728952",
-    "sante travail|75": "494996226",
     "santor edition|92": "500480652",
     "saphir mediation|93": "452884299",
     "sat amikaro|75": "429692015",
@@ -885194,6 +885685,81 @@
       "siret_est_siege": false,
       "strategy": "SIRET publié dans la source"
     },
+    "510460694": {
+      "candidates": [],
+      "confidence": "siret",
+      "entreprise": {
+        "activite_principale": "82.30Z",
+        "activite_principale_naf25": "74.99Y",
+        "annee_categorie_entreprise": "2024",
+        "annee_tranche_effectif_salarie": "2024",
+        "categorie_entreprise": "PME",
+        "complements": {
+          "convention_collective_renseignee": true,
+          "liste_idcc": [
+            "1486"
+          ]
+        },
+        "date_creation": "2009-02-06",
+        "date_mise_a_jour": "2026-10-08T10:11:55",
+        "date_mise_a_jour_insee": "2025-12-23T13:02:21",
+        "date_mise_a_jour_rne": "2026-07-23T05:58:05",
+        "dirigeants": [
+          {
+            "denomination": "UNIVERSAL MEDICA GROUP",
+            "qualite": "Président de SAS",
+            "siren": "511426280",
+            "type_dirigeant": "personne morale"
+          }
+        ],
+        "dirigeants_total": 1,
+        "etat_administratif": "A",
+        "finances": {
+          "2019": {
+            "ca": 0,
+            "resultat_net": -72467
+          }
+        },
+        "nature_juridique": "5710",
+        "nom_complet": "CHERRY ZEBRA AGENCY",
+        "nom_raison_sociale": "CHERRY ZEBRA AGENCY",
+        "nombre_etablissements": 4,
+        "nombre_etablissements_ouverts": 1,
+        "section_activite_principale": "N",
+        "siege": {
+          "activite_principale": "82.30Z",
+          "activite_principale_naf25": "82.30Y",
+          "adresse": "106 LES BUREAUX DE LA COLLINE 92210 SAINT-CLOUD",
+          "caractere_employeur": "O",
+          "code_postal": "92210",
+          "commune": "92064",
+          "date_creation": "2022-03-10",
+          "date_debut_activite": "2025-11-01",
+          "departement": "92",
+          "etat_administratif": "A",
+          "latitude": "48.841250278",
+          "libelle_commune": "SAINT-CLOUD",
+          "libelle_voie": "LES BUREAUX DE LA COLLINE",
+          "longitude": "2.2199428845",
+          "numero_voie": "106",
+          "region": "11",
+          "siret": "51046069400043",
+          "tranche_effectif_salarie": "01"
+        },
+        "siren": "510460694",
+        "statut_diffusion": "O",
+        "tranche_effectif_salarie": "01",
+        "tva": [
+          "FR26510460694"
+        ]
+      },
+      "resolved_at": "2026-10-12",
+      "score": 1.0,
+      "siren": "510460694",
+      "siret_declare": "51046069400043",
+      "siret_est_siege": true,
+      "strategy": "SIRET publié dans la source"
+    },
     "510495559": {
       "candidates": [],
       "confidence": "siret",
@@ -909610,6 +910176,84 @@
       "score": 1.0,
       "siren": "722053477",
       "siret_declare": "72205347700062",
+      "siret_est_siege": true,
+      "strategy": "SIRET publié dans la source"
+    },
+    "731650537": {
+      "candidates": [],
+      "confidence": "siret",
+      "entreprise": {
+        "activite_principale": "58.14Z",
+        "activite_principale_naf25": "58.13Y",
+        "annee_categorie_entreprise": "2024",
+        "categorie_entreprise": "PME",
+        "complements": {
+          "convention_collective_renseignee": true,
+          "liste_idcc": [
+            "1480"
+          ]
+        },
+        "date_creation": "1973-01-01",
+        "date_mise_a_jour": "2026-10-08T09:10:09",
+        "date_mise_a_jour_insee": "2025-12-06T11:06:34",
+        "date_mise_a_jour_rne": "2026-09-24T17:28:35",
+        "dirigeants": [
+          {
+            "annee_de_naissance": "1978",
+            "date_de_naissance": "1978-12",
+            "nom": "PONS",
+            "prenoms": "STEPHANE REGIS",
+            "qualite": "Gérant",
+            "type_dirigeant": "personne physique"
+          }
+        ],
+        "dirigeants_total": 1,
+        "etat_administratif": "A",
+        "finances": {
+          "2019": {
+            "ca": 1819,
+            "resultat_net": 0
+          }
+        },
+        "nature_juridique": "5499",
+        "nom_complet": "S E P A Q (SEPAQ)",
+        "nom_raison_sociale": "S E P A Q",
+        "nombre_etablissements": 1,
+        "nombre_etablissements_ouverts": 1,
+        "section_activite_principale": "J",
+        "siege": {
+          "activite_principale": "58.14Z",
+          "activite_principale_naf25": "58.13Y",
+          "adresse": "430 AVENUE JEAN JAURES 46000 CAHORS",
+          "caractere_employeur": "O",
+          "code_postal": "46000",
+          "commune": "46042",
+          "date_creation": "1973-01-01",
+          "date_debut_activite": "2008-01-01",
+          "departement": "46",
+          "etat_administratif": "A",
+          "latitude": "44.4493593976996",
+          "libelle_commune": "CAHORS",
+          "libelle_voie": "JEAN JAURES",
+          "longitude": "1.43442438941189",
+          "numero_voie": "430",
+          "region": "76",
+          "siret": "73165053700012",
+          "tranche_effectif_salarie": "NN",
+          "type_voie": "AVENUE"
+        },
+        "sigle": "SEPAQ",
+        "siren": "731650537",
+        "statut_diffusion": "O",
+        "tranche_effectif_salarie": "NN",
+        "tva": [
+          "FR24731650537"
+        ]
+      },
+      "resolved_at": "2026-10-12",
+      "score": 1.0,
+      "siren": "731650537",
+      "siret_declare": "73165053700012",
       "siret_est_siege": true,
       "strategy": "SIRET publié dans la source"
     },
@@ -959878,6 +960522,90 @@
       "siret_est_siege": false,
       "strategy": "SIRET publié dans la source"
     },
+    "847783719": {
+      "candidates": [],
+      "confidence": "siret",
+      "entreprise": {
+        "activite_principale": "58.13Z",
+        "activite_principale_naf25": "58.12Y",
+        "annee_categorie_entreprise": "2024",
+        "annee_tranche_effectif_salarie": "2024",
+        "categorie_entreprise": "PME",
+        "complements": {
+          "convention_collective_renseignee": true,
+          "liste_idcc": [
+            "3230",
+            "1480"
+          ]
+        },
+        "date_creation": "2019-01-01",
+        "date_mise_a_jour": "2026-10-08T10:19:30",
+        "date_mise_a_jour_insee": "2025-12-06T07:32:36",
+        "date_mise_a_jour_rne": "2026-09-25T23:38:44",
+        "dirigeants": [
+          {
+            "annee_de_naissance": "1956",
+            "date_de_naissance": "1956-08",
+            "nom": "BARRY (DUC)",
+            "prenoms": "CHANTAL",
+            "qualite": "Directeur Général",
+            "type_dirigeant": "personne physique"
+          },
+          {
+            "denomination": "WATCHERS & CO",
+            "qualite": "Président de SAS",
+            "type_dirigeant": "personne morale"
+          }
+        ],
+        "dirigeants_total": 2,
+        "etat_administratif": "A",
+        "finances": {
+          "2023": {
+            "ca": 0,
+            "resultat_net": -72387
+          }
+        },
+        "nature_juridique": "5710",
+        "nom_complet": "IC NEWS",
+        "nom_raison_sociale": "IC NEWS",
+        "nombre_etablissements": 3,
+        "nombre_etablissements_ouverts": 1,
+        "section_activite_principale": "J",
+        "siege": {
+          "activite_principale": "58.13Z",
+          "activite_principale_naf25": "58.12Y",
+          "adresse": "61 RUE LAURISTON 75016 PARIS",
+          "caractere_employeur": "O",
+          "code_postal": "75016",
+          "commune": "75116",
+          "date_creation": "2023-02-10",
+          "date_debut_activite": "2023-02-10",
+          "departement": "75",
+          "etat_administratif": "A",
+          "latitude": "48.869508501",
+          "libelle_commune": "PARIS",
+          "libelle_voie": "LAURISTON",
+          "longitude": "2.2903169509",
+          "numero_voie": "61",
+          "region": "11",
+          "siret": "84778371900036",
+          "tranche_effectif_salarie": "02",
+          "type_voie": "RUE"
+        },
+        "siren": "847783719",
+        "statut_diffusion": "O",
+        "tranche_effectif_salarie": "02",
+        "tva": [
+          "FR14847783719"
+        ]
+      },
+      "resolved_at": "2026-10-12",
+      "score": 1.0,
+      "siren": "847783719",
+      "siret_declare": "84778371900036",
+      "siret_est_siege": true,
+      "strategy": "SIRET publié dans la source"
+    },
     "847792587": {
       "candidates": [],
       "confidence": "siret",
@@ -964207,6 +964935,80 @@
       "siret_est_siege": true,
       "strategy": "SIRET publié dans la source"
     },
+    "880742630": {
+      "candidates": [],
+      "confidence": "siret",
+      "entreprise": {
+        "activite_principale": "58.13Z",
+        "activite_principale_naf25": "58.13Y",
+        "annee_categorie_entreprise": "2024",
+        "annee_tranche_effectif_salarie": "2024",
+        "categorie_entreprise": "PME",
+        "complements": {
+          "convention_collective_renseignee": true,
+          "liste_idcc": [
+            "3242",
+            "1480"
+          ]
+        },
+        "date_creation": "2020-01-15",
+        "date_mise_a_jour": "2026-10-08T09:00:57",
+        "date_mise_a_jour_insee": "2025-12-06T05:14:24",
+        "date_mise_a_jour_rne": "2026-09-26T05:01:31",
+        "dirigeants": [
+          {
+            "annee_de_naissance": "1971",
+            "date_de_naissance": "1971-06",
+            "nom": "SAPY",
+            "prenoms": "FRANCOIS PETER",
+            "qualite": "Président de SAS",
+            "type_dirigeant": "personne physique"
+          }
+        ],
+        "dirigeants_total": 1,
+        "etat_administratif": "A",
+        "nature_juridique": "5710",
+        "nom_complet": "LYON DECIDEURS (LYON DECIDEURS)",
+        "nom_raison_sociale": "LYON DECIDEURS",
+        "nombre_etablissements": 1,
+        "nombre_etablissements_ouverts": 1,
+        "section_activite_principale": "J",
+        "siege": {
+          "activite_principale": "58.13Z",
+          "activite_principale_naf25": "58.13Y",
+          "adresse": "10 RUE DES MARRONNIERS 69002 LYON",
+          "caractere_employeur": "O",
+          "code_postal": "69002",
+          "commune": "69382",
+          "date_creation": "2020-01-15",
+          "date_debut_activite": "2020-01-15",
+          "departement": "69",
+          "etat_administratif": "A",
+          "latitude": "45.756731095",
+          "libelle_commune": "LYON",
+          "libelle_voie": "DES MARRONNIERS",
+          "longitude": "4.8345557608",
+          "nom_commercial": "LYON DECIDEURS",
+          "numero_voie": "10",
+          "region": "84",
+          "siret": "88074263000010",
+          "tranche_effectif_salarie": "03",
+          "type_voie": "RUE"
+        },
+        "siren": "880742630",
+        "statut_diffusion": "O",
+        "tranche_effectif_salarie": "03",
+        "tva": [
+          "FR88880742630"
+        ]
+      },
+      "resolved_at": "2026-10-12",
+      "score": 1.0,
+      "siren": "880742630",
+      "siret_declare": "88074263000010",
+      "siret_est_siege": true,
+      "strategy": "SIRET publié dans la source"
+    },
     "880805775": {
       "candidates": [],
       "confidence": "siret",
@@ -968074,6 +968876,70 @@
       "score": 1.0,
       "siren": "890251762",
       "siret_declare": "89025176200013",
+      "siret_est_siege": true,
+      "strategy": "SIRET publié dans la source"
+    },
+    "890283369": {
+      "candidates": [],
+      "confidence": "siret",
+      "entreprise": {
+        "activite_principale": "58.11Z",
+        "activite_principale_naf25": "58.11Y",
+        "annee_categorie_entreprise": "2024",
+        "categorie_entreprise": "PME",
+        "complements": {},
+        "date_creation": "2020-10-12",
+        "date_mise_a_jour": "2026-10-08T09:09:07",
+        "date_mise_a_jour_insee": "2025-12-06T06:00:49",
+        "date_mise_a_jour_rne": "2026-09-26T09:01:53",
+        "dirigeants": [
+          {
+            "annee_de_naissance": "2001",
+            "date_de_naissance": "2001-08",
+            "nom": "STEICHEN",
+            "prenoms": "RICHARD EDMOND MICHEL",
+            "qualite": "Président de SAS",
+            "type_dirigeant": "personne physique"
+          }
+        ],
+        "dirigeants_total": 1,
+        "etat_administratif": "A",
+        "nature_juridique": "5710",
+        "nom_complet": "CERES EDITIONS PRESSE",
+        "nom_raison_sociale": "CERES EDITIONS PRESSE",
+        "nombre_etablissements": 2,
+        "nombre_etablissements_ouverts": 1,
+        "section_activite_principale": "J",
+        "siege": {
+          "activite_principale": "58.11Z",
+          "activite_principale_naf25": "58.11Y",
+          "adresse": "BUREAU 3 9 RUE DE CONDE 33000 BORDEAUX",
+          "caractere_employeur": "N",
+          "code_postal": "33000",
+          "commune": "33063",
+          "complement_adresse": "BUREAU 3",
+          "date_creation": "2022-03-22",
+          "date_debut_activite": "2022-03-22",
+          "departement": "33",
+          "etat_administratif": "A",
+          "latitude": "44.843616447",
+          "libelle_commune": "BORDEAUX",
+          "libelle_voie": "DE CONDE",
+          "longitude": "-0.573851423",
+          "numero_voie": "9",
+          "region": "75",
+          "siret": "89028336900027",
+          "tranche_effectif_salarie": "NN",
+          "type_voie": "RUE"
+        },
+        "siren": "890283369",
+        "statut_diffusion": "O",
+        "tranche_effectif_salarie": "NN"
+      },
+      "resolved_at": "2026-10-12",
+      "score": 1.0,
+      "siren": "890283369",
+      "siret_declare": "89028336900027",
       "siret_est_siege": true,
       "strategy": "SIRET publié dans la source"
     },
