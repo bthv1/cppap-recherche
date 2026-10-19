@@ -800029,6 +800029,7 @@
     "actusoins|75": "520180688",
     "ad dsp|75": "442013389",
     "addictions alcool vie libre|51": "775723711",
+    "adelphite france|92": "101257855",
     "adn contents|68": "790946867",
     "adnov|13": "381000611",
     "adour presse communication|64": "794148361",
@@ -800157,6 +800158,7 @@
     "art press|59": "318025715",
     "artclair editions|75": "442241568",
     "artefakt|22": "978327898",
+    "artefakt|75": "978327898",
     "artiste de france|34": "844248815",
     "arts et lettres de france association culturelle internationale|33": "439532979",
     "arts et metiers multimedia|75": "803179563",
@@ -800228,6 +800230,7 @@
     "bibliotheque nationale de france|75": "180046252",
     "bicross editions|13": "984128876",
     "bierissima|94": "843968793",
+    "bihan melocene|59": "952946010",
     "bih|75": "492854567",
     "biotechfinances eei|07": "480764398",
     "biotechfinances|07": "480764398",
@@ -800253,6 +800256,7 @@
     "boulevard exterieur|75": "501541411",
     "boulevard voltaire|75": "797652476",
     "boum media|59": "893109207",
+    "bourbon soutien operationnel|974": "924271299",
     "bourgogne infos com|71": "491099552",
     "bourse du travail departement 93|93": "316699214",
     "bp media|75": "952116275",
@@ -800392,6 +800396,7 @@
     "cnpf services generaux|75": "180092355",
     "cnpp entreprise|27": "342901253",
     "co clicquot editions|76": "524709011",
+    "co media|93": "994210524",
     "coeur de cible|95": "819938838",
     "coeurs de foot|59": "810743856",
     "collectif prouvenco|13": "482442936",
@@ -800598,6 +800603,7 @@
     "edifa societe d editions pour la famille|75": "321702797",
     "edilaix|69": "524427135",
     "edimark|75": "493005581",
+    "edit hubert burda med sas paris|92": "484026067",
     "edit pres 7 jours publi gener|35": "589200344",
     "editag|55": "832232342",
     "editair|78": "334504701",
@@ -801658,6 +801664,7 @@
     "mondomix media|75": "430279620",
     "montagne expansion|38": "351775036",
     "more invent|75": "834083800",
+    "morere py et comet|66": "564200855",
     "mosaique magazine|14": "928678853",
     "moselle t v|57": "521117812",
     "motamot|24": "843024787",
@@ -804201,6 +804208,62 @@
       "score": 1.0,
       "siren": "101184968",
       "siret_declare": "10118496800010",
+      "siret_est_siege": true,
+      "strategy": "SIRET publié dans la source"
+    },
+    "101257855": {
+      "candidates": [],
+      "confidence": "siret",
+      "entreprise": {
+        "activite_principale": "94.99Z",
+        "activite_principale_naf25": "94.99Y",
+        "complements": {
+          "est_association": true,
+          "est_ess": true,
+          "identifiant_association": "W922022268"
+        },
+        "date_creation": "2025-06-26",
+        "date_mise_a_jour": "2026-10-18T08:13:35",
+        "date_mise_a_jour_insee": "2026-02-16T10:05:10",
+        "dirigeants": [],
+        "dirigeants_total": 0,
+        "etat_administratif": "A",
+        "nature_juridique": "9220",
+        "nom_complet": "ADELPHITE FRANCE",
+        "nom_raison_sociale": "ADELPHITE FRANCE",
+        "nombre_etablissements": 1,
+        "nombre_etablissements_ouverts": 1,
+        "section_activite_principale": "S",
+        "siege": {
+          "activite_principale": "94.99Z",
+          "activite_principale_naf25": "94.99Y",
+          "adresse": "92600 48 AVENUE D'ARGENTEUIL 92600 ASNIERES-SUR-SEINE",
+          "caractere_employeur": "N",
+          "code_postal": "92600",
+          "commune": "92004",
+          "complement_adresse": "92600",
+          "date_creation": "2025-06-26",
+          "date_debut_activite": "2025-06-26",
+          "departement": "92",
+          "etat_administratif": "A",
+          "latitude": "48.9121262224818",
+          "libelle_commune": "ASNIERES-SUR-SEINE",
+          "libelle_voie": "D'ARGENTEUIL",
+          "longitude": "2.28492377920285",
+          "numero_voie": "48",
+          "region": "11",
+          "siret": "10125785500011",
+          "tranche_effectif_salarie": "NN",
+          "type_voie": "AVENUE"
+        },
+        "siren": "101257855",
+        "statut_diffusion": "O",
+        "tranche_effectif_salarie": "NN"
+      },
+      "resolved_at": "2026-10-19",
+      "score": 1.0,
+      "siren": "101257855",
+      "siret_declare": "10125785500011",
       "siret_est_siege": true,
       "strategy": "SIRET publié dans la source"
     },
@@ -902689,6 +902752,104 @@
       "siret_est_siege": true,
       "strategy": "SIRET publié dans la source"
     },
+    "564200855": {
+      "candidates": [],
+      "confidence": "siret",
+      "entreprise": {
+        "activite_principale": "58.14Z",
+        "activite_principale_naf25": "58.13Y",
+        "annee_categorie_entreprise": "2024",
+        "annee_tranche_effectif_salarie": "2024",
+        "categorie_entreprise": "PME",
+        "complements": {
+          "convention_collective_renseignee": true,
+          "liste_idcc": [
+            "3230"
+          ]
+        },
+        "date_creation": "1956-01-01",
+        "date_mise_a_jour": "2026-10-18T08:19:52",
+        "date_mise_a_jour_insee": "2025-12-06T10:02:31",
+        "date_mise_a_jour_rne": "2026-09-24T16:19:34",
+        "dirigeants": [
+          {
+            "annee_de_naissance": "1953",
+            "date_de_naissance": "1953-03",
+            "nom": "CHARVOLIN",
+            "prenoms": "BRIGITTE DENISE HELENE",
+            "qualite": "Gérant",
+            "type_dirigeant": "personne physique"
+          },
+          {
+            "annee_de_naissance": "1972",
+            "date_de_naissance": "1972-07",
+            "nom": "CORTIJO",
+            "prenoms": "SOPHIE",
+            "qualite": "Gérant",
+            "type_dirigeant": "personne physique"
+          },
+          {
+            "annee_de_naissance": "1951",
+            "date_de_naissance": "1951-07",
+            "nom": "MORERE",
+            "prenoms": "PIERRE MAURICE FRANCOIS",
+            "qualite": "Gérant",
+            "type_dirigeant": "personne physique"
+          }
+        ],
+        "dirigeants_total": 3,
+        "etat_administratif": "A",
+        "finances": {
+          "2025": {
+            "ca": 0,
+            "resultat_net": 218306
+          }
+        },
+        "nature_juridique": "5499",
+        "nom_complet": "MORERE PY ET COMET",
+        "nom_raison_sociale": "MORERE PY ET COMET",
+        "nombre_etablissements": 2,
+        "nombre_etablissements_ouverts": 1,
+        "section_activite_principale": "J",
+        "siege": {
+          "activite_principale": "58.14Z",
+          "activite_principale_naf25": "58.13Y",
+          "adresse": "3 RUE SAINT-AMAND 66000 PERPIGNAN",
+          "caractere_employeur": "O",
+          "code_postal": "66000",
+          "commune": "66136",
+          "date_creation": "2013-04-01",
+          "date_debut_activite": "2013-04-01",
+          "departement": "66",
+          "etat_administratif": "A",
+          "latitude": "42.697647429",
+          "libelle_commune": "PERPIGNAN",
+          "libelle_voie": "SAINT-AMAND",
+          "liste_enseignes": [
+            "PARJAL (LES PETITES ANNONCES ROUSSILLONNAISES ET",
+            "JOURNAL D'ANNONCES LEGALES REUNIS)"
+          ],
+          "longitude": "2.8864109629",
+          "numero_voie": "3",
+          "region": "76",
+          "siret": "56420085500034",
+          "tranche_effectif_salarie": "02",
+          "type_voie": "RUE"
+        },
+        "siren": "564200855",
+        "statut_diffusion": "O",
+        "tranche_effectif_salarie": "02",
+        "tva": [
+          "FR10564200855"
+        ]
+      },
+      "resolved_at": "2026-10-19",
+      "score": 1.0,
+      "siren": "564200855",
+      "siret_declare": "56420085500034",
+      "siret_est_siege": true,
+      "strategy": "SIRET publié dans la source"
+    },
     "564503480": {
       "candidates": [],
       "confidence": "siret",
@@ -979299,6 +979460,62 @@
       "siret_est_siege": true,
       "strategy": "SIRET publié dans la source"
     },
+    "924271299": {
+      "candidates": [],
+      "confidence": "siret",
+      "entreprise": {
+        "activite_principale": "85.59B",
+        "activite_principale_naf25": "85.59H",
+        "complements": {
+          "est_association": true,
+          "est_ess": true,
+          "identifiant_association": "W9R4009213"
+        },
+        "date_creation": "2023-10-15",
+        "date_mise_a_jour": "2026-10-18T08:59:53",
+        "date_mise_a_jour_insee": "2025-12-04T13:11:17",
+        "dirigeants": [],
+        "dirigeants_total": 0,
+        "etat_administratif": "A",
+        "nature_juridique": "9220",
+        "nom_complet": "BOURBON SOUTIEN OPERATIONNEL",
+        "nom_raison_sociale": "BOURBON SOUTIEN OPERATIONNEL",
+        "nombre_etablissements": 2,
+        "nombre_etablissements_ouverts": 1,
+        "section_activite_principale": "P",
+        "siege": {
+          "activite_principale": "85.59B",
+          "activite_principale_naf25": "85.59H",
+          "adresse": "46 B CHEMIN BAROUTY 97419 LA POSSESSION",
+          "caractere_employeur": "N",
+          "code_postal": "97419",
+          "commune": "97408",
+          "date_creation": "2025-11-12",
+          "date_debut_activite": "2025-11-12",
+          "departement": "974",
+          "etat_administratif": "A",
+          "indice_repetition": "B",
+          "latitude": "-20.9581642827805",
+          "libelle_commune": "LA POSSESSION",
+          "libelle_voie": "BAROUTY",
+          "longitude": "55.3446624890509",
+          "numero_voie": "46",
+          "region": "04",
+          "siret": "92427129900027",
+          "tranche_effectif_salarie": "NN",
+          "type_voie": "CHEMIN"
+        },
+        "siren": "924271299",
+        "statut_diffusion": "O",
+        "tranche_effectif_salarie": "NN"
+      },
+      "resolved_at": "2026-10-19",
+      "score": 1.0,
+      "siren": "924271299",
+      "siret_declare": "92427129900027",
+      "siret_est_siege": true,
+      "strategy": "SIRET publié dans la source"
+    },
     "924300841": {
       "candidates": [],
       "confidence": "siret",
@@ -985117,6 +985334,82 @@
       "siret_est_siege": true,
       "strategy": "SIRET publié dans la source"
     },
+    "952946010": {
+      "candidates": [],
+      "confidence": "siret",
+      "entreprise": {
+        "activite_principale": "90.03B",
+        "activite_principale_naf25": "90.11Y",
+        "annee_categorie_entreprise": "2024",
+        "categorie_entreprise": "PME",
+        "complements": {
+          "est_entrepreneur_individuel": true
+        },
+        "date_creation": "2023-05-17",
+        "date_mise_a_jour": "2026-10-18T09:26:37",
+        "date_mise_a_jour_insee": "2025-12-06T11:20:53",
+        "date_mise_a_jour_rne": "2026-07-16T19:10:19",
+        "dirigeants": [
+          {
+            "annee_de_naissance": "[NON-DIFFUSIBLE]",
+            "date_de_naissance": "[NON-DIFFUSIBLE]",
+            "nationalite": "[NON-DIFFUSIBLE]",
+            "nom": "[NON-DIFFUSIBLE]",
+            "prenoms": "[NON-DIFFUSIBLE]",
+            "type_dirigeant": "personne physique"
+          }
+        ],
+        "dirigeants_total": 1,
+        "etat_administratif": "A",
+        "nature_juridique": "1000",
+        "nom_complet": "[NON-DIFFUSIBLE]",
+        "nom_raison_sociale": "[NON-DIFFUSIBLE]",
+        "nombre_etablissements": 2,
+        "nombre_etablissements_ouverts": 1,
+        "section_activite_principale": "R",
+        "siege": {
+          "activite_principale": "90.03B",
+          "activite_principale_naf25": "90.11Y",
+          "adresse": "[NON-DIFFUSIBLE]",
+          "caractere_employeur": "N",
+          "cedex": "[NON-DIFFUSIBLE]",
+          "code_postal": "[NON-DIFFUSIBLE]",
+          "commune": "59350",
+          "complement_adresse": "[NON-DIFFUSIBLE]",
+          "date_creation": "2025-07-16",
+          "date_debut_activite": "2025-07-16",
+          "departement": "59",
+          "etat_administratif": "A",
+          "indice_repetition": "[NON-DIFFUSIBLE]",
+          "latitude": "[NON-DIFFUSIBLE]",
+          "libelle_cedex": "[NON-DIFFUSIBLE]",
+          "libelle_commune": "LILLE",
+          "libelle_voie": "[NON-DIFFUSIBLE]",
+          "liste_enseignes": [
+            "[NON-DIFFUSIBLE]",
+            "[NON-DIFFUSIBLE]",
+            "[NON-DIFFUSIBLE]"
+          ],
+          "longitude": "[NON-DIFFUSIBLE]",
+          "nom_commercial": "[NON-DIFFUSIBLE]",
+          "numero_voie": "[NON-DIFFUSIBLE]",
+          "region": "32",
+          "siret": "95294601000024",
+          "tranche_effectif_salarie": "NN",
+          "type_voie": "[NON-DIFFUSIBLE]"
+        },
+        "sigle": "[NON-DIFFUSIBLE]",
+        "siren": "952946010",
+        "statut_diffusion": "P",
+        "tranche_effectif_salarie": "NN"
+      },
+      "resolved_at": "2026-10-19",
+      "score": 1.0,
+      "siren": "952946010",
+      "siret_declare": "95294601000024",
+      "siret_est_siege": true,
+      "strategy": "SIRET publié dans la source"
+    },
     "953143161": {
       "candidates": [],
       "confidence": "siret",
@@ -988931,6 +989224,78 @@
       "score": 1.0,
       "siren": "993500180",
       "siret_declare": "99350018000019",
+      "siret_est_siege": true,
+      "strategy": "SIRET publié dans la source"
+    },
+    "994210524": {
+      "candidates": [],
+      "confidence": "siret",
+      "entreprise": {
+        "activite_principale": "58.14Z",
+        "activite_principale_naf25": "58.13Y",
+        "complements": {},
+        "date_creation": "2025-11-20",
+        "date_mise_a_jour": "2026-10-18T09:46:02",
+        "date_mise_a_jour_insee": "2025-11-24T15:01:25",
+        "date_mise_a_jour_rne": "2026-09-28T06:12:54",
+        "dirigeants": [
+          {
+            "annee_de_naissance": "1991",
+            "date_de_naissance": "1991-06",
+            "nom": "BOUZIRI",
+            "prenoms": "AMIRA",
+            "qualite": "Président de SAS",
+            "type_dirigeant": "personne physique"
+          },
+          {
+            "annee_de_naissance": "1993",
+            "date_de_naissance": "1993-10",
+            "nom": "SARFATI",
+            "prenoms": "MATTIA PAUL BASTIEN",
+            "qualite": "Directeur Général",
+            "type_dirigeant": "personne physique"
+          }
+        ],
+        "dirigeants_total": 2,
+        "etat_administratif": "A",
+        "nature_juridique": "5710",
+        "nom_complet": "CO.MEDIA",
+        "nom_raison_sociale": "CO.MEDIA",
+        "nombre_etablissements": 1,
+        "nombre_etablissements_ouverts": 1,
+        "section_activite_principale": "J",
+        "siege": {
+          "activite_principale": "58.14Z",
+          "activite_principale_naf25": "58.13Y",
+          "adresse": "3 RUE MATHIEU 93400 SAINT-OUEN-SUR-SEINE",
+          "caractere_employeur": "N",
+          "code_postal": "93400",
+          "commune": "93070",
+          "date_creation": "2025-11-20",
+          "date_debut_activite": "2025-11-20",
+          "departement": "93",
+          "etat_administratif": "A",
+          "latitude": "48.9050509197048",
+          "libelle_commune": "SAINT-OUEN-SUR-SEINE",
+          "libelle_voie": "MATHIEU",
+          "longitude": "2.33691110477493",
+          "numero_voie": "3",
+          "region": "11",
+          "siret": "99421052400017",
+          "tranche_effectif_salarie": "NN",
+          "type_voie": "RUE"
+        },
+        "siren": "994210524",
+        "statut_diffusion": "O",
+        "tranche_effectif_salarie": "NN",
+        "tva": [
+          "FR21994210524"
+        ]
+      },
+      "resolved_at": "2026-10-19",
+      "score": 1.0,
+      "siren": "994210524",
+      "siret_declare": "99421052400017",
       "siret_est_siege": true,
       "strategy": "SIRET publié dans la source"
     },
