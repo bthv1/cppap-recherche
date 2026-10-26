@@ -800861,6 +800861,7 @@
     "fenetre sur l europe|67": "433672011",
     "fep cfdt poitou charentes|79": "380455824",
     "ferc cgt|93": "784312746",
+    "ffl media|92": "880976683",
     "fg edition|75": "823800982",
     "fgh invest|75": "799483953",
     "figaro publications|75": "338887912",
@@ -800958,6 +800959,7 @@
     "goodplanet|75": "514488295",
     "granat arielle|75": "504153479",
     "grand garage|75": "837634237",
+    "grand trail|75": "104063052",
     "grandprix|92": "498023084",
     "greenweb|01": "818033300",
     "groupe bakchich|75": "490374717",
@@ -801307,6 +801309,7 @@
     "laussat roux|17": "882325764",
     "lc edition|91": "499017978",
     "le 15 du mois|75": "334641479",
+    "le 28 tv|28": "131462400",
     "le berry republicain|18": "323622357",
     "le bord de l eau|33": "393529813",
     "le cafe du geek|30": "810738112",
@@ -801830,6 +801833,7 @@
     "pc media|56": "393566625",
     "pcf 17 federation de la charente maritime|17": "781343314",
     "pcf federation des ardennes|08": "775694821",
+    "pdlv co|53": "831034525",
     "pellissier pauline anne marie|75": "850900531",
     "people factor world|92": "820584936",
     "performances medicales|92": "352941884",
@@ -802524,6 +802528,7 @@
     "usbek et rica|75": "505366039",
     "uskalzain|64": "315030189",
     "v collection|75": "929715365",
+    "vagator productions|94": "498691062",
     "vaincre alzheimer|75": "483041315",
     "vaincre la mucoviscidose|75": "784287583",
     "val de seine vert|92": "404151243",
@@ -804612,6 +804617,70 @@
       "siret_est_siege": true,
       "strategy": "SIRET publié dans la source"
     },
+    "104063052": {
+      "candidates": [],
+      "confidence": "siret",
+      "entreprise": {
+        "activite_principale": "58.14Z",
+        "activite_principale_naf25": "58.13Y",
+        "complements": {},
+        "date_creation": "2026-04-22",
+        "date_mise_a_jour": "2026-10-25T09:01:21",
+        "date_mise_a_jour_insee": "2026-10-08T13:14:41.510",
+        "date_mise_a_jour_rne": "2026-10-08T02:14:29",
+        "dirigeants": [
+          {
+            "annee_de_naissance": "1976",
+            "date_de_naissance": "1976-12",
+            "nom": "BLANC (LUTRINGER)",
+            "prenoms": "JULIE VALENTINE",
+            "qualite": "Gérant",
+            "type_dirigeant": "personne physique"
+          }
+        ],
+        "dirigeants_total": 1,
+        "etat_administratif": "A",
+        "nature_juridique": "5499",
+        "nom_complet": "GRAND TRAIL",
+        "nom_raison_sociale": "GRAND TRAIL",
+        "nombre_etablissements": 1,
+        "nombre_etablissements_ouverts": 1,
+        "section_activite_principale": "J",
+        "siege": {
+          "activite_principale": "58.14Z",
+          "activite_principale_naf25": "58.13Y",
+          "adresse": "52 RUE DU FAUBOURG POISSONNIERE 75010 PARIS",
+          "caractere_employeur": "O",
+          "code_postal": "75010",
+          "commune": "75110",
+          "date_creation": "2026-04-22",
+          "date_debut_activite": "2026-09-01",
+          "departement": "75",
+          "etat_administratif": "A",
+          "latitude": "48.8746162566567",
+          "libelle_commune": "PARIS",
+          "libelle_voie": "DU FAUBOURG POISSONNIERE",
+          "longitude": "2.34810184696353",
+          "numero_voie": "52",
+          "region": "11",
+          "siret": "10406305200013",
+          "tranche_effectif_salarie": "NN",
+          "type_voie": "RUE"
+        },
+        "siren": "104063052",
+        "statut_diffusion": "O",
+        "tranche_effectif_salarie": "NN",
+        "tva": [
+          "FR03104063052"
+        ]
+      },
+      "resolved_at": "2026-10-26",
+      "score": 1.0,
+      "siren": "104063052",
+      "siret_declare": "10406305200013",
+      "siret_est_siege": true,
+      "strategy": "SIRET publié dans la source"
+    },
     "104415203": {
       "candidates": [],
       "confidence": "siret",
@@ -804995,6 +805064,72 @@
       "score": 1.0,
       "siren": "130009186",
       "siret_declare": "13000918600011",
+      "siret_est_siege": true,
+      "strategy": "SIRET publié dans la source"
+    },
+    "131462400": {
+      "candidates": [],
+      "confidence": "siret",
+      "entreprise": {
+        "activite_principale": "58.14Z",
+        "activite_principale_naf25": "58.13Y",
+        "complements": {},
+        "date_creation": "2026-10-13",
+        "date_mise_a_jour": "2026-10-25T09:09:23",
+        "date_mise_a_jour_insee": "2026-10-13T15:47:01.203",
+        "date_mise_a_jour_rne": "2026-10-13T17:06:48",
+        "dirigeants": [
+          {
+            "annee_de_naissance": "1982",
+            "date_de_naissance": "1982-09",
+            "nom": "SENECHARLES",
+            "prenoms": "EMMANUEL",
+            "qualite": "Président de SAS",
+            "type_dirigeant": "personne physique"
+          }
+        ],
+        "dirigeants_total": 1,
+        "etat_administratif": "A",
+        "nature_juridique": "5710",
+        "nom_complet": "LE 28.TV",
+        "nom_raison_sociale": "LE 28.TV",
+        "nombre_etablissements": 1,
+        "nombre_etablissements_ouverts": 1,
+        "section_activite_principale": "J",
+        "siege": {
+          "activite_principale": "58.14Z",
+          "activite_principale_naf25": "58.13Y",
+          "adresse": "APP LOT 7 13 F ROUTE DU BOIS DE LEVES 28300 LEVES",
+          "caractere_employeur": "N",
+          "code_postal": "28300",
+          "commune": "28209",
+          "complement_adresse": "APP LOT 7",
+          "date_creation": "2026-10-13",
+          "date_debut_activite": "2026-10-13",
+          "departement": "28",
+          "etat_administratif": "A",
+          "indice_repetition": "F",
+          "latitude": "48.48257902110717",
+          "libelle_commune": "LEVES",
+          "libelle_voie": "DU BOIS DE LEVES",
+          "longitude": "1.47455898351372",
+          "numero_voie": "13",
+          "region": "24",
+          "siret": "13146240000014",
+          "tranche_effectif_salarie": "NN",
+          "type_voie": "ROUTE"
+        },
+        "siren": "131462400",
+        "statut_diffusion": "O",
+        "tranche_effectif_salarie": "NN",
+        "tva": [
+          "FR53131462400"
+        ]
+      },
+      "resolved_at": "2026-10-26",
+      "score": 1.0,
+      "siren": "131462400",
+      "siret_declare": "13146240000014",
       "siret_est_siege": true,
       "strategy": "SIRET publié dans la source"
     },
@@ -877054,6 +877189,73 @@
       "score": 1.0,
       "siren": "498664648",
       "siret_declare": "49866464800041",
+      "siret_est_siege": true,
+      "strategy": "SIRET publié dans la source"
+    },
+    "498691062": {
+      "candidates": [],
+      "confidence": "siret",
+      "entreprise": {
+        "activite_principale": "90.03B",
+        "activite_principale_naf25": "90.11Y",
+        "annee_categorie_entreprise": "2024",
+        "annee_tranche_effectif_salarie": "2024",
+        "categorie_entreprise": "PME",
+        "complements": {},
+        "date_creation": "2007-06-15",
+        "date_mise_a_jour": "2026-10-25T10:08:15",
+        "date_mise_a_jour_insee": "2025-12-06T10:49:59",
+        "date_mise_a_jour_rne": "2026-09-24T01:54:31",
+        "dirigeants": [
+          {
+            "annee_de_naissance": "1969",
+            "date_de_naissance": "1969-05",
+            "nom": "BERNIERE",
+            "prenoms": "VINCENT",
+            "qualite": "Gérant",
+            "type_dirigeant": "personne physique"
+          }
+        ],
+        "dirigeants_total": 1,
+        "etat_administratif": "A",
+        "nature_juridique": "5499",
+        "nom_complet": "VAGATOR PRODUCTIONS",
+        "nom_raison_sociale": "VAGATOR PRODUCTIONS",
+        "nombre_etablissements": 2,
+        "nombre_etablissements_ouverts": 1,
+        "section_activite_principale": "R",
+        "siege": {
+          "activite_principale": "90.03B",
+          "activite_principale_naf25": "90.11Y",
+          "adresse": "62 RUE DE TRUCY 94120 FONTENAY-SOUS-BOIS",
+          "caractere_employeur": "N",
+          "code_postal": "94120",
+          "commune": "94033",
+          "date_creation": "2019-10-11",
+          "date_debut_activite": "2019-10-11",
+          "departement": "94",
+          "etat_administratif": "A",
+          "latitude": "48.852782099",
+          "libelle_commune": "FONTENAY-SOUS-BOIS",
+          "libelle_voie": "DE TRUCY",
+          "longitude": "2.4525742154",
+          "numero_voie": "62",
+          "region": "11",
+          "siret": "49869106200026",
+          "tranche_effectif_salarie": "NN",
+          "type_voie": "RUE"
+        },
+        "siren": "498691062",
+        "statut_diffusion": "O",
+        "tranche_effectif_salarie": "NN",
+        "tva": [
+          "FR03498691062"
+        ]
+      },
+      "resolved_at": "2026-10-26",
+      "score": 1.0,
+      "siren": "498691062",
+      "siret_declare": "49869106200026",
       "siret_est_siege": true,
       "strategy": "SIRET publié dans la source"
     },
@@ -953676,6 +953878,78 @@
       "siret_est_siege": true,
       "strategy": "SIRET publié dans la source"
     },
+    "831034525": {
+      "candidates": [],
+      "confidence": "siret",
+      "entreprise": {
+        "activite_principale": "63.12Z",
+        "activite_principale_naf25": "63.91Y",
+        "annee_categorie_entreprise": "2024",
+        "categorie_entreprise": "PME",
+        "complements": {},
+        "date_creation": "2017-07-01",
+        "date_mise_a_jour": "2026-10-25T10:12:00",
+        "date_mise_a_jour_insee": "2026-03-17T19:26:52",
+        "date_mise_a_jour_rne": "2026-09-25T15:53:20",
+        "dirigeants": [
+          {
+            "annee_de_naissance": "1993",
+            "date_de_naissance": "1993-01",
+            "nom": "DROUART",
+            "prenoms": "THOMAS",
+            "qualite": "Gérant",
+            "type_dirigeant": "personne physique"
+          }
+        ],
+        "dirigeants_total": 1,
+        "etat_administratif": "A",
+        "finances": {
+          "2019": {
+            "ca": 0,
+            "resultat_net": 0
+          }
+        },
+        "nature_juridique": "5499",
+        "nom_complet": "PDLV & CO",
+        "nom_raison_sociale": "PDLV & CO",
+        "nombre_etablissements": 3,
+        "nombre_etablissements_ouverts": 1,
+        "section_activite_principale": "J",
+        "siege": {
+          "activite_principale": "63.12Z",
+          "activite_principale_naf25": "63.91Y",
+          "adresse": "50 RUE D'OISSEAU 53100 MAYENNE",
+          "caractere_employeur": "N",
+          "code_postal": "53100",
+          "commune": "53147",
+          "date_creation": "2026-01-02",
+          "date_debut_activite": "2026-01-02",
+          "departement": "53",
+          "etat_administratif": "A",
+          "latitude": "48.3121750107489",
+          "libelle_commune": "MAYENNE",
+          "libelle_voie": "D'OISSEAU",
+          "longitude": "-0.631954189430764",
+          "numero_voie": "50",
+          "region": "52",
+          "siret": "83103452500038",
+          "tranche_effectif_salarie": "NN",
+          "type_voie": "RUE"
+        },
+        "siren": "831034525",
+        "statut_diffusion": "O",
+        "tranche_effectif_salarie": "NN",
+        "tva": [
+          "FR81831034525"
+        ]
+      },
+      "resolved_at": "2026-10-26",
+      "score": 1.0,
+      "siren": "831034525",
+      "siret_declare": "83103452500038",
+      "siret_est_siege": true,
+      "strategy": "SIRET publié dans la source"
+    },
     "831164645": {
       "candidates": [],
       "confidence": "siret",
@@ -965305,6 +965579,79 @@
       "score": 1.0,
       "siren": "880959168",
       "siret_declare": "88095916800019",
+      "siret_est_siege": true,
+      "strategy": "SIRET publié dans la source"
+    },
+    "880976683": {
+      "candidates": [],
+      "confidence": "siret",
+      "entreprise": {
+        "activite_principale": "58.14Z",
+        "activite_principale_naf25": "58.13Y",
+        "annee_categorie_entreprise": "2024",
+        "annee_tranche_effectif_salarie": "2024",
+        "categorie_entreprise": "PME",
+        "complements": {
+          "convention_collective_renseignee": true,
+          "liste_idcc": [
+            "3230",
+            "1480"
+          ]
+        },
+        "date_creation": "2020-01-14",
+        "date_mise_a_jour": "2026-10-25T08:58:36",
+        "date_mise_a_jour_insee": "2025-12-06T09:24:40",
+        "date_mise_a_jour_rne": "2026-09-26T05:05:45",
+        "dirigeants": [
+          {
+            "annee_de_naissance": "1987",
+            "date_de_naissance": "1987-12",
+            "nom": "DECLERCQ",
+            "prenoms": "ANTOINE",
+            "qualite": "Président de SAS",
+            "type_dirigeant": "personne physique"
+          }
+        ],
+        "dirigeants_total": 1,
+        "etat_administratif": "A",
+        "nature_juridique": "5710",
+        "nom_complet": "FFL MEDIA",
+        "nom_raison_sociale": "FFL MEDIA",
+        "nombre_etablissements": 2,
+        "nombre_etablissements_ouverts": 1,
+        "section_activite_principale": "J",
+        "siege": {
+          "activite_principale": "58.14Z",
+          "activite_principale_naf25": "58.13Y",
+          "adresse": "24 RUE DU GOUVERNEUR GENERAL EBOUE 92130 ISSY-LES-MOULINEAUX",
+          "caractere_employeur": "N",
+          "code_postal": "92130",
+          "commune": "92040",
+          "date_creation": "2024-12-06",
+          "date_debut_activite": "2024-12-06",
+          "departement": "92",
+          "etat_administratif": "A",
+          "latitude": "48.8275309089686",
+          "libelle_commune": "ISSY-LES-MOULINEAUX",
+          "libelle_voie": "DU GOUVERNEUR GENERAL EBOUE",
+          "longitude": "2.27106268635496",
+          "numero_voie": "24",
+          "region": "11",
+          "siret": "88097668300024",
+          "tranche_effectif_salarie": "02",
+          "type_voie": "RUE"
+        },
+        "siren": "880976683",
+        "statut_diffusion": "O",
+        "tranche_effectif_salarie": "02",
+        "tva": [
+          "FR64880976683"
+        ]
+      },
+      "resolved_at": "2026-10-26",
+      "score": 1.0,
+      "siren": "880976683",
+      "siret_declare": "88097668300024",
       "siret_est_siege": true,
       "strategy": "SIRET publié dans la source"
     },
