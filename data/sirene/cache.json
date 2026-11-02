@@ -75842,6 +75842,125 @@
       "score": 0.0,
       "strategy": "aucune"
     },
+    "blue ocean|99": {
+      "candidates": [
+        {
+          "adresse": "13 RUE DES PETUNIAS 97470 SAINT-BENOIT",
+          "departement": "974",
+          "etat_administratif": "A",
+          "nature_juridique": "6540",
+          "nom": "BLUE OCEAN",
+          "score": 0.8125,
+          "score_parts": {
+            "bonus_obtenu": 0.05,
+            "bonus_possible": 0.2,
+            "nom": 1.0
+          },
+          "siren": "108111105"
+        },
+        {
+          "adresse": "DOMAINE DES BRUYERES RUE DES BATELEURS 33127 MARTIGNAS-SUR-JALLE",
+          "departement": "33",
+          "etat_administratif": "A",
+          "nature_juridique": "5710",
+          "nom": "BLUE OCEAN (BLUE FILLER)",
+          "score": 0.8125,
+          "score_parts": {
+            "bonus_obtenu": 0.05,
+            "bonus_possible": 0.2,
+            "nom": 1.0
+          },
+          "siren": "932228273"
+        },
+        {
+          "adresse": "DOMAINE D'AMANIEU 2 ALLEE CHRISTINE DE PISAN 33270 BOULIAC",
+          "departement": "33",
+          "etat_administratif": "A",
+          "nature_juridique": "5710",
+          "nom": "BLUE OCEAN (BLUE OCEAN)",
+          "score": 0.8125,
+          "score_parts": {
+            "bonus_obtenu": 0.05,
+            "bonus_possible": 0.2,
+            "nom": 1.0
+          },
+          "siren": "881169361"
+        }
+      ],
+      "confidence": "incertain",
+      "departement": "99",
+      "editeur": "BLUE OCEAN",
+      "entreprise": {
+        "activite_principale": "68.20B",
+        "activite_principale_naf25": "68.20H",
+        "complements": {},
+        "date_creation": "2026-06-18",
+        "date_mise_a_jour": "2026-11-02T08:32:56",
+        "date_mise_a_jour_insee": "2026-08-03T11:15:46",
+        "date_mise_a_jour_rne": "2026-08-04T20:00:07",
+        "dirigeants": [
+          {
+            "annee_de_naissance": "1967",
+            "date_de_naissance": "1967-01",
+            "nom": "DALLEAU",
+            "prenoms": "JEAN PATRICK",
+            "qualite": "Associé indéfiniment responsable",
+            "type_dirigeant": "personne physique"
+          },
+          {
+            "annee_de_naissance": "1967",
+            "date_de_naissance": "1967-12",
+            "nom": "DALLEAU (RIVIERE)",
+            "prenoms": "MARIE THÉRÈSE NADINE",
+            "qualite": "Gérant et associé indéfiniment responsable",
+            "type_dirigeant": "personne physique"
+          },
+          {
+            "denomination": "DALLIMMORUN",
+            "qualite": "Associé indéfiniment responsable",
+            "siren": "106217722",
+            "type_dirigeant": "personne morale"
+          }
+        ],
+        "dirigeants_total": 3,
+        "etat_administratif": "A",
+        "nature_juridique": "6540",
+        "nom_complet": "BLUE OCEAN",
+        "nom_raison_sociale": "BLUE OCEAN",
+        "nombre_etablissements": 1,
+        "nombre_etablissements_ouverts": 1,
+        "section_activite_principale": "L",
+        "siege": {
+          "activite_principale": "68.20B",
+          "activite_principale_naf25": "68.20H",
+          "adresse": "13 RUE DES PETUNIAS 97470 SAINT-BENOIT",
+          "caractere_employeur": "N",
+          "code_postal": "97470",
+          "commune": "97410",
+          "date_creation": "2026-06-18",
+          "date_debut_activite": "2026-08-03",
+          "departement": "974",
+          "etat_administratif": "A",
+          "latitude": "-21.0518033436451",
+          "libelle_commune": "SAINT-BENOIT",
+          "libelle_voie": "DES PETUNIAS",
+          "longitude": "55.7134867273116",
+          "numero_voie": "13",
+          "region": "04",
+          "siret": "10811110500012",
+          "tranche_effectif_salarie": "NN",
+          "type_voie": "RUE"
+        },
+        "siren": "108111105",
+        "statut_diffusion": "O",
+        "tranche_effectif_salarie": "NN"
+      },
+      "forme_juridique": "UN ÉDITEUR ÉTRANGER",
+      "resolved_at": "2026-11-02",
+      "score": 0.8125,
+      "siren": "108111105",
+      "strategy": "nom"
+    },
     "blue ride|93": {
       "candidates": [
         {
@@ -800569,6 +800688,7 @@
     "dumas|25": "881161103",
     "dunod|92": "316053628",
     "dynamique entrepreneuriale|75": "504739863",
+    "dyonysos|64": "999108558",
     "e edition|69": "834189664",
     "e graine|78": "494165863",
     "e lucide media|75": "899123980",
@@ -801558,6 +801678,7 @@
     "made in edition|34": "900960782",
     "made in perpignan|66": "819607326",
     "madmoizelle agency|75": "483344107",
+    "mag eruptif|63": "109355149",
     "mag factory|75": "524518354",
     "magcentre|45": "794089631",
     "magjournal 77|77": "831327606",
@@ -801690,6 +801811,7 @@
     "mutuelle generale de l education nationale mgen|75": "775685399",
     "mutuelle generale des affaires sociales|75": "440602944",
     "mutuelle generale des cheminots|75": "775678550",
+    "mybizzfeed|75": "101327088",
     "m|34": "329095111",
     "n3d|94": "812784692",
     "nathalie dassa|75": "491578951",
@@ -801735,6 +801857,7 @@
     "night4good|92": "983110008",
     "nightmess|75": "904493103",
     "nivis medias|38": "400248324",
+    "no context|59": "984201269",
     "nofi|92": "934171331",
     "nore et presse media|75": "491808846",
     "norinfo|": "422948885",
@@ -802419,6 +802542,7 @@
     "thuries magazine|75": "851996736",
     "tibesti|75": "519818322",
     "ticmedia|75": "878596048",
+    "time for africa|91": "131904005",
     "timeformed|92": "952190296",
     "tindle edition|33": "804228161",
     "tip shaft|56": "839468378",
@@ -802443,6 +802567,7 @@
     "tp presse|78": "333999563",
     "traces ecrites|21": "380644047",
     "tranchet media|74": "899706873",
+    "transitions|75": "990279028",
     "transonore|93": "901164616",
     "tribeleadr|92": "753495316",
     "tripalio|75": "808094940",
@@ -804272,6 +804397,70 @@
       "siret_est_siege": true,
       "strategy": "SIRET publié dans la source"
     },
+    "101327088": {
+      "candidates": [],
+      "confidence": "siret",
+      "entreprise": {
+        "activite_principale": "63.11Z",
+        "activite_principale_naf25": "63.10Y",
+        "complements": {},
+        "date_creation": "2026-02-20",
+        "date_mise_a_jour": "2026-11-02T08:25:41",
+        "date_mise_a_jour_insee": "2026-02-18T18:32:54",
+        "date_mise_a_jour_rne": "2026-09-28T08:26:51",
+        "dirigeants": [
+          {
+            "annee_de_naissance": "1965",
+            "date_de_naissance": "1965-04",
+            "nom": "GIRARD-CLAUDON",
+            "prenoms": "MARTIN-PIERRE",
+            "qualite": "Gérant",
+            "type_dirigeant": "personne physique"
+          }
+        ],
+        "dirigeants_total": 1,
+        "etat_administratif": "A",
+        "nature_juridique": "5499",
+        "nom_complet": "MYBIZZFEED (MYBIZZFEED.COM) (MYBF.AI)",
+        "nom_raison_sociale": "MYBIZZFEED",
+        "nombre_etablissements": 1,
+        "nombre_etablissements_ouverts": 1,
+        "section_activite_principale": "J",
+        "siege": {
+          "activite_principale": "63.11Z",
+          "activite_principale_naf25": "63.10Y",
+          "adresse": "CS 48756 75380 PARIS CEDEX 08 58 RUE DE MONCEAU 75008 PARIS",
+          "caractere_employeur": "N",
+          "code_postal": "75008",
+          "commune": "75108",
+          "complement_adresse": "CS 48756 75380 PARIS CEDEX 08",
+          "date_creation": "2026-02-20",
+          "date_debut_activite": "2026-02-20",
+          "departement": "75",
+          "etat_administratif": "A",
+          "latitude": "48.8783317630282",
+          "libelle_commune": "PARIS",
+          "libelle_voie": "DE MONCEAU",
+          "longitude": "2.31216282451369",
+          "nom_commercial": "MYBIZZFEED.COM",
+          "numero_voie": "58",
+          "region": "11",
+          "siret": "10132708800015",
+          "tranche_effectif_salarie": "NN",
+          "type_voie": "RUE"
+        },
+        "sigle": "MYBF.AI",
+        "siren": "101327088",
+        "statut_diffusion": "O",
+        "tranche_effectif_salarie": "NN"
+      },
+      "resolved_at": "2026-11-02",
+      "score": 1.0,
+      "siren": "101327088",
+      "siret_declare": "10132708800015",
+      "siret_est_siege": true,
+      "strategy": "SIRET publié dans la source"
+    },
     "101404895": {
       "candidates": [],
       "confidence": "siret",
@@ -804992,6 +805181,61 @@
       "siret_est_siege": true,
       "strategy": "SIRET publié dans la source"
     },
+    "109355149": {
+      "candidates": [],
+      "confidence": "siret",
+      "entreprise": {
+        "activite_principale": "58.13Z",
+        "activite_principale_naf25": "58.13Y",
+        "complements": {
+          "est_association": true,
+          "est_ess": true,
+          "identifiant_association": "W632015454"
+        },
+        "date_creation": "2025-10-03",
+        "date_mise_a_jour": "2026-11-02T08:34:15",
+        "date_mise_a_jour_insee": "2026-08-31T14:20:30",
+        "dirigeants": [],
+        "dirigeants_total": 0,
+        "etat_administratif": "A",
+        "nature_juridique": "9220",
+        "nom_complet": "MAG'ERUPTIF",
+        "nom_raison_sociale": "MAG'ERUPTIF",
+        "nombre_etablissements": 1,
+        "nombre_etablissements_ouverts": 1,
+        "section_activite_principale": "J",
+        "siege": {
+          "activite_principale": "58.13Z",
+          "activite_principale_naf25": "58.13Y",
+          "adresse": "3 RUE GAULTIER DE BIAUZAT 63000 CLERMONT-FERRAND",
+          "caractere_employeur": "N",
+          "code_postal": "63000",
+          "commune": "63113",
+          "date_creation": "2025-10-03",
+          "date_debut_activite": "2025-10-03",
+          "departement": "63",
+          "etat_administratif": "A",
+          "latitude": "45.780602127329",
+          "libelle_commune": "CLERMONT-FERRAND",
+          "libelle_voie": "GAULTIER DE BIAUZAT",
+          "longitude": "3.08274455330583",
+          "numero_voie": "3",
+          "region": "84",
+          "siret": "10935514900013",
+          "tranche_effectif_salarie": "NN",
+          "type_voie": "RUE"
+        },
+        "siren": "109355149",
+        "statut_diffusion": "O",
+        "tranche_effectif_salarie": "NN"
+      },
+      "resolved_at": "2026-11-02",
+      "score": 1.0,
+      "siren": "109355149",
+      "siret_declare": "10935514900013",
+      "siret_est_siege": true,
+      "strategy": "SIRET publié dans la source"
+    },
     "130009186": {
       "candidates": [],
       "confidence": "siret",
@@ -805130,6 +805374,62 @@
       "score": 1.0,
       "siren": "131462400",
       "siret_declare": "13146240000014",
+      "siret_est_siege": true,
+      "strategy": "SIRET publié dans la source"
+    },
+    "131904005": {
+      "candidates": [],
+      "confidence": "siret",
+      "entreprise": {
+        "activite_principale": "94.99Z",
+        "activite_principale_naf25": "94.99Y",
+        "complements": {
+          "est_association": true,
+          "est_ess": true,
+          "identifiant_association": "W912017409"
+        },
+        "date_creation": "2026-09-03",
+        "date_mise_a_jour": "2026-11-02T08:36:53",
+        "date_mise_a_jour_insee": "2026-10-22T11:27:13.124",
+        "dirigeants": [],
+        "dirigeants_total": 0,
+        "etat_administratif": "A",
+        "nature_juridique": "9220",
+        "nom_complet": "TIME FOR AFRICA",
+        "nom_raison_sociale": "TIME FOR AFRICA",
+        "nombre_etablissements": 1,
+        "nombre_etablissements_ouverts": 1,
+        "section_activite_principale": "S",
+        "siege": {
+          "activite_principale": "94.99Z",
+          "activite_principale_naf25": "94.99Y",
+          "adresse": "REZ-DE -CHAUSSEE 84 RUE DU SAULE SAINT JACQUES 91540 MENNECY",
+          "caractere_employeur": "N",
+          "code_postal": "91540",
+          "commune": "91386",
+          "complement_adresse": "REZ-DE -CHAUSSEE",
+          "date_creation": "2026-09-03",
+          "date_debut_activite": "2026-09-03",
+          "departement": "91",
+          "etat_administratif": "A",
+          "latitude": "48.56964155706704",
+          "libelle_commune": "MENNECY",
+          "libelle_voie": "DU SAULE SAINT JACQUES",
+          "longitude": "2.4485287205238344",
+          "numero_voie": "84",
+          "region": "11",
+          "siret": "13190400500017",
+          "tranche_effectif_salarie": "NN",
+          "type_voie": "RUE"
+        },
+        "siren": "131904005",
+        "statut_diffusion": "O",
+        "tranche_effectif_salarie": "NN"
+      },
+      "resolved_at": "2026-11-02",
+      "score": 1.0,
+      "siren": "131904005",
+      "siret_declare": "13190400500017",
       "siret_est_siege": true,
       "strategy": "SIRET publié dans la source"
     },
@@ -988437,6 +988737,81 @@
       "siret_est_siege": true,
       "strategy": "SIRET publié dans la source"
     },
+    "984201269": {
+      "candidates": [],
+      "confidence": "siret",
+      "entreprise": {
+        "activite_principale": "58.14Z",
+        "activite_principale_naf25": "58.13Y",
+        "annee_categorie_entreprise": "2024",
+        "annee_tranche_effectif_salarie": "2024",
+        "categorie_entreprise": "PME",
+        "complements": {
+          "convention_collective_renseignee": true,
+          "liste_idcc": [
+            "0086"
+          ]
+        },
+        "date_creation": "2024-01-01",
+        "date_mise_a_jour": "2026-11-02T09:49:25",
+        "date_mise_a_jour_insee": "2026-04-22T11:25:40",
+        "date_mise_a_jour_rne": "2026-09-27T16:28:18",
+        "dirigeants": [
+          {
+            "denomination": "HOLDING NO CONTEXT",
+            "qualite": "Président de SAS",
+            "siren": "983553066",
+            "type_dirigeant": "personne morale"
+          }
+        ],
+        "dirigeants_total": 1,
+        "etat_administratif": "A",
+        "nature_juridique": "5710",
+        "nom_complet": "NO CONTEXT",
+        "nom_raison_sociale": "NO CONTEXT",
+        "nombre_etablissements": 1,
+        "nombre_etablissements_ouverts": 1,
+        "section_activite_principale": "J",
+        "siege": {
+          "activite_principale": "58.14Z",
+          "activite_principale_naf25": "58.13Y",
+          "adresse": "[NON-DIFFUSIBLE]",
+          "caractere_employeur": "O",
+          "cedex": "[NON-DIFFUSIBLE]",
+          "code_postal": "[NON-DIFFUSIBLE]",
+          "commune": "59350",
+          "complement_adresse": "[NON-DIFFUSIBLE]",
+          "date_creation": "2024-01-01",
+          "date_debut_activite": "2024-01-01",
+          "departement": "59",
+          "etat_administratif": "A",
+          "indice_repetition": "[NON-DIFFUSIBLE]",
+          "latitude": "[NON-DIFFUSIBLE]",
+          "libelle_cedex": "[NON-DIFFUSIBLE]",
+          "libelle_commune": "LILLE",
+          "libelle_voie": "[NON-DIFFUSIBLE]",
+          "longitude": "[NON-DIFFUSIBLE]",
+          "numero_voie": "[NON-DIFFUSIBLE]",
+          "region": "32",
+          "siret": "98420126900011",
+          "tranche_effectif_salarie": "01",
+          "type_voie": "[NON-DIFFUSIBLE]"
+        },
+        "sigle": "[NON-DIFFUSIBLE]",
+        "siren": "984201269",
+        "statut_diffusion": "P",
+        "tranche_effectif_salarie": "01",
+        "tva": [
+          "FR61984201269"
+        ]
+      },
+      "resolved_at": "2026-11-02",
+      "score": 1.0,
+      "siren": "984201269",
+      "siret_declare": "98420126900011",
+      "siret_est_siege": true,
+      "strategy": "SIRET publié dans la source"
+    },
     "985050897": {
       "candidates": [],
       "confidence": "siret",
@@ -989119,6 +989494,70 @@
       "score": 1.0,
       "siren": "990277063",
       "siret_declare": "99027706300014",
+      "siret_est_siege": true,
+      "strategy": "SIRET publié dans la source"
+    },
+    "990279028": {
+      "candidates": [],
+      "confidence": "siret",
+      "entreprise": {
+        "activite_principale": "63.91Z",
+        "activite_principale_naf25": "58.13Y",
+        "complements": {},
+        "date_creation": "2025-05-09",
+        "date_mise_a_jour": "2026-11-02T09:54:30",
+        "date_mise_a_jour_insee": "2025-10-21T18:31:35",
+        "date_mise_a_jour_rne": "2026-07-16T19:27:49",
+        "dirigeants": [
+          {
+            "annee_de_naissance": "1975",
+            "date_de_naissance": "1975-06",
+            "nom": "ANNICK MASOUNAVE (MASOUNAVE)",
+            "prenoms": "ANNICK",
+            "qualite": "Président de SAS",
+            "type_dirigeant": "personne physique"
+          }
+        ],
+        "dirigeants_total": 1,
+        "etat_administratif": "A",
+        "nature_juridique": "5710",
+        "nom_complet": "TRANSITIONS",
+        "nom_raison_sociale": "TRANSITIONS",
+        "nombre_etablissements": 1,
+        "nombre_etablissements_ouverts": 1,
+        "section_activite_principale": "J",
+        "siege": {
+          "activite_principale": "63.91Z",
+          "activite_principale_naf25": "58.13Y",
+          "adresse": "35 BOULEVARD ORNANO 75018 PARIS",
+          "caractere_employeur": "N",
+          "code_postal": "75018",
+          "commune": "75118",
+          "date_creation": "2025-05-09",
+          "date_debut_activite": "2025-09-01",
+          "departement": "75",
+          "etat_administratif": "A",
+          "latitude": "48.8943816876291",
+          "libelle_commune": "PARIS",
+          "libelle_voie": "ORNANO",
+          "longitude": "2.34694309402807",
+          "numero_voie": "35",
+          "region": "11",
+          "siret": "99027902800015",
+          "tranche_effectif_salarie": "NN",
+          "type_voie": "BOULEVARD"
+        },
+        "siren": "990279028",
+        "statut_diffusion": "O",
+        "tranche_effectif_salarie": "NN",
+        "tva": [
+          "FR54990279028"
+        ]
+      },
+      "resolved_at": "2026-11-02",
+      "score": 1.0,
+      "siren": "990279028",
+      "siret_declare": "99027902800015",
       "siret_est_siege": true,
       "strategy": "SIRET publié dans la source"
     },
@@ -989919,6 +990358,70 @@
       "score": 1.0,
       "siren": "999046667",
       "siret_declare": "99904666700013",
+      "siret_est_siege": true,
+      "strategy": "SIRET publié dans la source"
+    },
+    "999108558": {
+      "candidates": [],
+      "confidence": "siret",
+      "entreprise": {
+        "activite_principale": "47.91B",
+        "activite_principale_naf25": "47.72G",
+        "complements": {},
+        "date_creation": "2025-12-24",
+        "date_mise_a_jour": "2026-11-02T10:00:43",
+        "date_mise_a_jour_insee": "2025-12-29T15:00:23",
+        "date_mise_a_jour_rne": "2026-09-28T07:03:55",
+        "dirigeants": [
+          {
+            "annee_de_naissance": "1987",
+            "date_de_naissance": "1987-01",
+            "nom": "DAURES",
+            "prenoms": "JULIEN VINCENT",
+            "qualite": "Président de SAS",
+            "type_dirigeant": "personne physique"
+          }
+        ],
+        "dirigeants_total": 1,
+        "etat_administratif": "A",
+        "nature_juridique": "5710",
+        "nom_complet": "DYONYSOS",
+        "nom_raison_sociale": "DYONYSOS",
+        "nombre_etablissements": 1,
+        "nombre_etablissements_ouverts": 1,
+        "section_activite_principale": "G",
+        "siege": {
+          "activite_principale": "47.91B",
+          "activite_principale_naf25": "47.72G",
+          "adresse": "275 CHEMIN DE MIQUELON 64990 MOUGUERRE",
+          "caractere_employeur": "N",
+          "code_postal": "64990",
+          "commune": "64407",
+          "date_creation": "2025-12-24",
+          "date_debut_activite": "2025-12-24",
+          "departement": "64",
+          "etat_administratif": "A",
+          "latitude": "43.4795550666896",
+          "libelle_commune": "MOUGUERRE",
+          "libelle_voie": "DE MIQUELON",
+          "longitude": "-1.43124518414454",
+          "numero_voie": "275",
+          "region": "75",
+          "siret": "99910855800019",
+          "tranche_effectif_salarie": "NN",
+          "type_voie": "CHEMIN"
+        },
+        "siren": "999108558",
+        "statut_diffusion": "O",
+        "tranche_effectif_salarie": "NN",
+        "tva": [
+          "FR78999108558"
+        ]
+      },
+      "resolved_at": "2026-11-02",
+      "score": 1.0,
+      "siren": "999108558",
+      "siret_declare": "99910855800019",
       "siret_est_siege": true,
       "strategy": "SIRET publié dans la source"
     },
