@@ -46671,6 +46671,117 @@
       "siren": "490020864",
       "strategy": "nom+departement"
     },
+    "archeveche de strasbourg|67": {
+      "candidates": [
+        {
+          "adresse": "16 RUE BRULEE 67000 STRASBOURG",
+          "departement": "67",
+          "etat_administratif": "A",
+          "nature_juridique": "7430",
+          "nom": "MENSE EPISCOPALE ARCHEVECHE STRASBOURG",
+          "score": 0.8567,
+          "score_parts": {
+            "bonus_obtenu": 0.2,
+            "bonus_possible": 0.2,
+            "nom": 0.8089
+          },
+          "siren": "186708707"
+        },
+        {
+          "adresse": "5 RUE SAINT LEON 67000 STRASBOURG",
+          "departement": "67",
+          "etat_administratif": "C",
+          "nature_juridique": "8210",
+          "nom": "SERVICE ASSURANCES SOCIALES ARCHEVECHE",
+          "score": 0.5936,
+          "score_parts": {
+            "bonus_obtenu": 0.15,
+            "bonus_possible": 0.2,
+            "nom": 0.5414
+          },
+          "siren": "778868422"
+        },
+        {
+          "adresse": "ARCHEVECHE 16 RUE BRULEE 67000 STRASBOURG",
+          "departement": "67",
+          "etat_administratif": "A",
+          "nature_juridique": "9260",
+          "nom": "ASSOCIATION DIOCESAINE DE CREATION ET DE DIFFUSION AUDIOVISUELLE PARABOLES TV",
+          "score": 0.4827,
+          "score_parts": {
+            "bonus_obtenu": 0.2,
+            "bonus_possible": 0.2,
+            "nom": 0.3103
+          },
+          "siren": "919624130"
+        }
+      ],
+      "confidence": "probable",
+      "departement": "67",
+      "editeur": "ARCHEVECHE DE STRASBOURG",
+      "entreprise": {
+        "activite_principale": "94.91Z",
+        "activite_principale_naf25": "94.91Y",
+        "annee_categorie_entreprise": "2024",
+        "annee_tranche_effectif_salarie": "2024",
+        "categorie_entreprise": "PME",
+        "complements": {
+          "convention_collective_renseignee": true,
+          "est_administration": true,
+          "liste_idcc": [
+            "1979",
+            "9999"
+          ]
+        },
+        "date_creation": "1983-10-11",
+        "date_mise_a_jour": "2026-11-09T08:57:13",
+        "date_mise_a_jour_insee": "2025-12-06T07:04:15",
+        "dirigeants": [],
+        "dirigeants_total": 0,
+        "etat_administratif": "A",
+        "nature_juridique": "7430",
+        "nom_complet": "MENSE EPISCOPALE ARCHEVECHE STRASBOURG",
+        "nom_raison_sociale": "MENSE EPISCOPALE ARCHEVECHE STRASBOURG",
+        "nombre_etablissements": 13,
+        "nombre_etablissements_ouverts": 8,
+        "section_activite_principale": "S",
+        "siege": {
+          "activite_principale": "94.91Z",
+          "activite_principale_naf25": "94.91Y",
+          "adresse": "16 RUE BRULEE 67000 STRASBOURG",
+          "caractere_employeur": "N",
+          "code_postal": "67000",
+          "commune": "67482",
+          "date_creation": "1985-10-28",
+          "date_debut_activite": "2008-01-01",
+          "departement": "67",
+          "etat_administratif": "A",
+          "latitude": "48.58471499",
+          "libelle_commune": "STRASBOURG",
+          "libelle_voie": "BRULEE",
+          "liste_enseignes": [
+            "ARCHEVECHE DE STRASBOURG"
+          ],
+          "longitude": "7.752611387",
+          "numero_voie": "16",
+          "region": "44",
+          "siret": "18670870700010",
+          "tranche_effectif_salarie": "NN",
+          "type_voie": "RUE"
+        },
+        "siren": "186708707",
+        "statut_diffusion": "O",
+        "tranche_effectif_salarie": "21",
+        "tva": [
+          "FR21186708707"
+        ]
+      },
+      "forme_juridique": "",
+      "resolved_at": "2026-11-09",
+      "score": 0.8567,
+      "siren": "186708707",
+      "strategy": "nom+departement"
+    },
     "archiconfrerie de sainte barbe|18": {
       "candidates": [],
       "confidence": "aucun",
@@ -499176,6 +499287,114 @@
       "score": 0.0,
       "strategy": "aucune"
     },
+    "marc schneider|67": {
+      "candidates": [
+        {
+          "adresse": "GEBOLSHEIM 2 RUE DE MOMMENHEIM 67670 WITTERSHEIM",
+          "departement": "67",
+          "etat_administratif": "A",
+          "nature_juridique": "1000",
+          "nom": "MARC SCHNEIDER",
+          "score": 1.0,
+          "score_parts": {
+            "bonus_obtenu": 0.2,
+            "bonus_possible": 0.2,
+            "nom": 1.0
+          },
+          "siren": "392558870"
+        },
+        {
+          "adresse": "5 ROUTE DE STRASBOURG 67120 ALTORF",
+          "departement": "67",
+          "etat_administratif": "A",
+          "nature_juridique": "1000",
+          "nom": "MARC SCHNEIDER",
+          "score": 1.0,
+          "score_parts": {
+            "bonus_obtenu": 0.2,
+            "bonus_possible": 0.2,
+            "nom": 1.0
+          },
+          "siren": "414512830"
+        },
+        {
+          "adresse": "16 RUE DE LA PAIX 67470 MOTHERN",
+          "departement": "67",
+          "etat_administratif": "A",
+          "nature_juridique": "1000",
+          "nom": "MARC SCHNEIDER",
+          "score": 1.0,
+          "score_parts": {
+            "bonus_obtenu": 0.2,
+            "bonus_possible": 0.2,
+            "nom": 1.0
+          },
+          "siren": "414088864"
+        }
+      ],
+      "confidence": "probable",
+      "departement": "67",
+      "editeur": "MARC SCHNEIDER",
+      "entreprise": {
+        "activite_principale": "01.47Z",
+        "activite_principale_naf25": "01.47Y",
+        "annee_tranche_effectif_salarie": "2024",
+        "complements": {
+          "est_entrepreneur_individuel": true
+        },
+        "date_creation": "1993-09-01",
+        "date_mise_a_jour": "2026-11-09T10:11:43",
+        "date_mise_a_jour_insee": "2025-12-06T07:13:00",
+        "date_mise_a_jour_rne": "2026-08-31T15:35:56",
+        "dirigeants": [
+          {
+            "nom": "SCHNEIDER",
+            "prenoms": "MARC JOSEPH LUCIEN",
+            "type_dirigeant": "personne physique"
+          }
+        ],
+        "dirigeants_total": 1,
+        "etat_administratif": "A",
+        "nature_juridique": "1000",
+        "nom_complet": "MARC SCHNEIDER",
+        "nombre_etablissements": 2,
+        "nombre_etablissements_ouverts": 1,
+        "section_activite_principale": "A",
+        "siege": {
+          "activite_principale": "01.47Z",
+          "activite_principale_naf25": "01.47Y",
+          "adresse": "GEBOLSHEIM 2 RUE DE MOMMENHEIM 67670 WITTERSHEIM",
+          "caractere_employeur": "N",
+          "code_postal": "67670",
+          "commune": "67546",
+          "complement_adresse": "GEBOLSHEIM",
+          "date_creation": "2009-01-01",
+          "date_debut_activite": "2009-01-01",
+          "departement": "67",
+          "etat_administratif": "A",
+          "latitude": "48.772826747",
+          "libelle_commune": "WITTERSHEIM",
+          "libelle_voie": "DE MOMMENHEIM",
+          "longitude": "7.6499202831",
+          "numero_voie": "2",
+          "region": "44",
+          "siret": "39255887000029",
+          "tranche_effectif_salarie": "01",
+          "type_voie": "RUE"
+        },
+        "siren": "392558870",
+        "statut_diffusion": "O",
+        "tranche_effectif_salarie": "01",
+        "tva": [
+          "FR10392558870"
+        ]
+      },
+      "forme_juridique": "UNE PERSONNE PHYSIQUE",
+      "resolved_at": "2026-11-09",
+      "score": 1.0,
+      "siren": "392558870",
+      "strategy": "nom+departement"
+    },
     "marche etude creation communication|91": {
       "candidates": [],
       "confidence": "aucun",
@@ -699688,6 +699907,228 @@
       "siren": "452181662",
       "strategy": "nom+departement"
     },
+    "societe generale de presse|75": {
+      "candidates": [
+        {
+          "adresse": "29 BOULEVARD HAUSSMANN 75009 PARIS",
+          "departement": "75",
+          "etat_administratif": "A",
+          "nature_juridique": "5599",
+          "nom": "SOCIETE GENERALE (SG)",
+          "score": 0.8839,
+          "score_parts": {
+            "bonus_obtenu": 0.25,
+            "bonus_possible": 0.25,
+            "nom": 0.8452
+          },
+          "siren": "552120222"
+        },
+        {
+          "adresse": "25 RUE DU GENERAL LECLERC 77370 NANGIS",
+          "departement": "77",
+          "etat_administratif": "A",
+          "nature_juridique": "5499",
+          "nom": "SOCIETE G D PRESSE",
+          "score": 0.6786,
+          "score_parts": {
+            "bonus_obtenu": 0.05,
+            "bonus_possible": 0.25,
+            "nom": 0.8381
+          },
+          "siren": "319814265"
+        },
+        {
+          "adresse": "6 AVENUE DES ETANGS PRES 78250 HARDRICOURT",
+          "departement": "78",
+          "etat_administratif": "A",
+          "nature_juridique": "5710",
+          "nom": "SOCIETE DE RENOVATION GENERALE",
+          "score": 0.6547,
+          "score_parts": {
+            "bonus_obtenu": 0.05,
+            "bonus_possible": 0.25,
+            "nom": 0.8063
+          },
+          "siren": "800506958"
+        }
+      ],
+      "confidence": "probable",
+      "departement": "75",
+      "editeur": "SOCIETE GENERALE DE PRESSE",
+      "entreprise": {
+        "activite_principale": "64.19Z",
+        "activite_principale_naf25": "64.19Y",
+        "annee_categorie_entreprise": "2024",
+        "annee_tranche_effectif_salarie": "2024",
+        "categorie_entreprise": "GE",
+        "complements": {
+          "bilan_ges_renseigne": true,
+          "convention_collective_renseignee": true,
+          "egapro_renseignee": true,
+          "est_achats_responsables": true,
+          "est_finess": true,
+          "est_organisme_formation": true,
+          "liste_finess_juridique": [
+            "750073843"
+          ],
+          "liste_id_organisme_formation": [
+            "11754504475"
+          ],
+          "liste_idcc": [
+            "2120"
+          ]
+        },
+        "date_creation": "1900-01-01",
+        "date_mise_a_jour": "2026-11-09T08:51:46",
+        "date_mise_a_jour_insee": "2026-10-23T10:25:08",
+        "date_mise_a_jour_rne": "2026-03-05T11:39:56",
+        "dirigeants": [
+          {
+            "annee_de_naissance": "1967",
+            "date_de_naissance": "1967-03",
+            "nom": "BARLOW",
+            "prenoms": "LAURA JANE",
+            "qualite": "Administrateur",
+            "type_dirigeant": "personne physique"
+          },
+          {
+            "annee_de_naissance": "1956",
+            "date_de_naissance": "1956-11",
+            "nom": "BINI SMAGHI",
+            "prenoms": "LORENZO",
+            "qualite": "Président du conseil d’administration",
+            "type_dirigeant": "personne physique"
+          },
+          {
+            "annee_de_naissance": "1958",
+            "date_de_naissance": "1958-02",
+            "nom": "CONNELLY",
+            "prenoms": "WILLIAM",
+            "qualite": "Administrateur",
+            "type_dirigeant": "personne physique"
+          },
+          {
+            "annee_de_naissance": "1957",
+            "date_de_naissance": "1957-11",
+            "nom": "CONTAMINE",
+            "prenoms": "JEROME",
+            "qualite": "Administrateur",
+            "type_dirigeant": "personne physique"
+          },
+          {
+            "annee_de_naissance": "1963",
+            "date_de_naissance": "1963-12",
+            "nom": "CÔTÉ",
+            "prenoms": "DIANE",
+            "qualite": "Administrateur",
+            "type_dirigeant": "personne physique"
+          },
+          {
+            "annee_de_naissance": "1966",
+            "date_de_naissance": "1966-06",
+            "nom": "DE RUFFRAY",
+            "prenoms": "BENOIT",
+            "qualite": "Administrateur",
+            "type_dirigeant": "personne physique"
+          },
+          {
+            "annee_de_naissance": "1962",
+            "date_de_naissance": "1962-10",
+            "nom": "EKMAN",
+            "prenoms": "MARIA ULRIKA MARGARETA",
+            "qualite": "Administrateur",
+            "type_dirigeant": "personne physique"
+          },
+          {
+            "annee_de_naissance": "1967",
+            "date_de_naissance": "1967-07",
+            "nom": "HOUSSAYE",
+            "prenoms": "FRANCE",
+            "qualite": "Autre",
+            "type_dirigeant": "personne physique"
+          },
+          {
+            "annee_de_naissance": "1957",
+            "date_de_naissance": "1957-06",
+            "nom": "KLEIN",
+            "prenoms": "OLIVIER",
+            "qualite": "Administrateur",
+            "type_dirigeant": "personne physique"
+          },
+          {
+            "annee_de_naissance": "1968",
+            "date_de_naissance": "1968-10",
+            "nom": "ARNOLD (KOSA)",
+            "prenoms": "INGRID-HELEN",
+            "qualite": "Administrateur",
+            "type_dirigeant": "personne physique"
+          },
+          {
+            "annee_de_naissance": "1974",
+            "date_de_naissance": "1974-06",
+            "nom": "KRUPA",
+            "prenoms": "SLAWOMIR",
+            "qualite": "Autre",
+            "type_dirigeant": "personne physique"
+          },
+          {
+            "annee_de_naissance": "1964",
+            "date_de_naissance": "1964-08",
+            "nom": "MESSEMER",
+            "prenoms": "ANNETTE",
+            "qualite": "Administrateur",
+            "type_dirigeant": "personne physique"
+          }
+        ],
+        "dirigeants_total": 18,
+        "etat_administratif": "A",
+        "finances": {
+          "2025": {
+            "ca": 27254000000,
+            "resultat_net": 7032000000
+          }
+        },
+        "nature_juridique": "5599",
+        "nom_complet": "SOCIETE GENERALE (SG)",
+        "nom_raison_sociale": "SOCIETE GENERALE",
+        "nombre_etablissements": 4260,
+        "nombre_etablissements_ouverts": 2297,
+        "section_activite_principale": "K",
+        "siege": {
+          "activite_principale": "64.19Z",
+          "activite_principale_naf25": "64.19Y",
+          "adresse": "29 BOULEVARD HAUSSMANN 75009 PARIS",
+          "caractere_employeur": "O",
+          "code_postal": "75009",
+          "commune": "75109",
+          "date_creation": "1900-01-01",
+          "date_debut_activite": "2008-01-01",
+          "departement": "75",
+          "etat_administratif": "A",
+          "latitude": "48.872915957",
+          "libelle_commune": "PARIS",
+          "libelle_voie": "HAUSSMANN",
+          "longitude": "2.3323864781",
+          "numero_voie": "29",
+          "region": "11",
+          "siret": "55212022200013",
+          "tranche_effectif_salarie": "41",
+          "type_voie": "BOULEVARD"
+        },
+        "sigle": "SG",
+        "siren": "552120222",
+        "statut_diffusion": "O",
+        "tranche_effectif_salarie": "53",
+        "tva": [
+          "FR27552120222"
+        ]
+      },
+      "forme_juridique": "SA",
+      "resolved_at": "2026-11-09",
+      "score": 0.8839,
+      "siren": "552120222",
+      "strategy": "nom"
+    },
     "societe geologique de france sgf|75": {
       "candidates": [],
       "confidence": "aucun",
@@ -800236,6 +800677,7 @@
     "amnesty international section france|75": "308238401",
     "amylc|05": "894425586",
     "anastassion lydie|75": "512243064",
+    "ancgg as nat chas gr gib|75": "318720638",
     "ancrage en partage|47": "535153530",
     "andrh association nationale des directeurs des ressources humaines|75": "784414187",
     "anercea association nationale des eleveurs de reines et des centres d elevages apicoles|17": "478340516",
@@ -800265,7 +800707,6 @@
     "arborescence medias|13": "953147659",
     "arc pour la recherche sur le cancer|94": "752064949",
     "archemedias|31": "879820785",
-    "archeveche de strasbourg|67": "186708707",
     "areion group|13": "450210257",
     "armada concept|28": "444258917",
     "armen revue bretagne|29": "941724668",
@@ -800441,7 +800882,7 @@
     "centre d etude de formation et d actions paysans|75": "775663396",
     "centre d etude de la documentation et de l information scolaires cedis|91": "785194598",
     "centre d etudes avancees en education et developpement durable|91": "948580014",
-    "centre d etudes genealogiques rhone alpes cegra|38": "430138875",
+    "centre d etudes genealogiques|38": "430138875",
     "centre d information et de documentation jeunesse cidj|75": "775685605",
     "centre de culture ouvriere culture et liberte paris|92": "301855664",
     "centre de recherche et d action sociales ceras|93": "775730526",
@@ -800931,7 +801372,7 @@
     "federation departementale des chasseurs du vaucluse|84": "783183387",
     "federation departementale du mouvement chretiens dans le monde rural du departement de maine et loire|49": "339974388",
     "federation des amis des chemins de fer secondaires facs|75": "784286718",
-    "federation des amputes de guerre de france|75": "784361362",
+    "federation des amputes guerre francais|75": "784361362",
     "federation des associations de chasseurs aux chiens courant faccc|39": "923035893",
     "federation des chasseurs de loire atlantique|44": "785977042",
     "federation des employes et cadres|75": "784854564",
@@ -801053,6 +801494,7 @@
     "gabriel zignani|92": "817955750",
     "gaelle guernalec levy|75": "827473158",
     "galene media|28": "941360745",
+    "galorama|14": "932280043",
     "gamewave|86": "905391975",
     "gastronomie info|74": "811343367",
     "gault millau|75": "418576955",
@@ -801171,6 +801613,7 @@
     "ijsberg press|42": "804287233",
     "image media|75": "497888040",
     "imaz press reunion|": "428816755",
+    "immobil ia|75": "991625765",
     "impact medecine|75": "322708116",
     "impact s|64": "841619372",
     "imprimerie belliloise|56": "409166196",
@@ -801229,6 +801672,7 @@
     "intelekto|69": "948530126",
     "interactiva dfo sportiva|75": "493095798",
     "intermed publishing|75": "823025457",
+    "internationale pour la promotion de l ideal maconnique|63": "106490832",
     "internet presse infos|10": "433578622",
     "intramuros|75": "401605233",
     "intuitives medias|92": "911839470",
@@ -801405,7 +801849,6 @@
     "la renaissance lochoise|37": "634800031",
     "la renaissance|71": "350174892",
     "la republique du centre|45": "085880037",
-    "la restauration nationale centre de propagande royaliste et d action francaise|75": "389124728",
     "la revue banque|75": "572142206",
     "la russie hors frontieres|78": "517897633",
     "la semaine du pays basque|64": "822006367",
@@ -801479,6 +801922,7 @@
     "le paysan vigneron|16": "905820106",
     "le paysan|16": "929058201",
     "le pelican messager|": "451308167",
+    "le pelican messager|978": "451308167",
     "le petit journal com|06": "453390148",
     "le petit journal de sagy|95": "510842230",
     "le petites affiches des pyrenees atlantiques|64": "352964787",
@@ -801755,6 +802199,7 @@
     "mehr licht|69": "881519656",
     "melting book|92": "804314862",
     "memoire d ardeche et temps present|07": "442414090",
+    "mense episcopale archeveche strasbourg|67": "186708707",
     "mer7|75": "498599836",
     "meridien mag|13": "517731071",
     "mesinfos|75": "949872428",
@@ -801819,7 +802264,6 @@
     "nationale de formation des organistes liturgiques anfol|75": "399275122",
     "nationale des anciens combattants de la resistance comite departemental de l aveyron|12": "392639472",
     "nationale des anciens combattants de la resistance comite departemental de l isere|38": "779528496",
-    "nationale des chasseurs de grand gibier ancgg|75": "318720638",
     "nationale des directeurs financiers et de controle de gestion|75": "383224045",
     "nationale des hospitaliers retraites|33": "320318322",
     "nationale des membres de l ordre national du merite|75": "309159556",
@@ -802065,7 +802509,7 @@
     "publipresse medias|25": "424896645",
     "publishing 21|75": "838399186",
     "publishing invest|": "929602233",
-    "publitronic|95": "319937454",
+    "publitronic|93": "319937454",
     "puissance group|52": "751392929",
     "pure region|54": "788467546",
     "pxnetwork|75": "814545026",
@@ -802080,6 +802524,7 @@
     "qui vive|13": "923645592",
     "r a image|22": "479243230",
     "r m p|92": "802743781",
+    "r p presse|81": "448190447",
     "r2p|75": "807713177",
     "radio caraibes international martinique|": "342705050",
     "radio classique|75": "340249366",
@@ -802107,6 +802552,7 @@
     "republique du centre|45": "085880037",
     "reseau d information sur les refractaires ce qu il faut detruire rire cqfd|13": "437556558",
     "respect media|75": "444576508",
+    "restauration nationale|75": "389124728",
     "reussir nouvelle aquitaine|79": "905253647",
     "reussir|14": "388308637",
     "reux julie|44": "807489984",
@@ -802134,7 +802580,6 @@
     "rouge vif|78": "345174221",
     "route 124|32": "508222007",
     "royalement votre editions|75": "834291387",
-    "rp presse|81": "448190447",
     "rs france|75": "878718436",
     "rue premion|44": "403711211",
     "rue89|75": "497751925",
@@ -802246,7 +802691,6 @@
     "snu ipp 33|33": "493418842",
     "snu ipp 39|39": "924300841",
     "snu ipp 42|42": "539594887",
-    "snu ipp 49|49": "775609613",
     "snu ipp fsu nord|59": "431757863",
     "snu ipp section de l indre|36": "402767354",
     "snuipp 56|56": "777844291",
@@ -802265,6 +802709,7 @@
     "so good|75": "899216030",
     "so philatelie co|95": "990784985",
     "so press|75": "445391196",
+    "soc gener presse document edition commun|75": "592005326",
     "sochepar|17": "731780185",
     "societe agricole d edition et de communication de l allier saeca|03": "403108905",
     "societe agricole d editions et de communication s a e c|27": "340241322",
@@ -802336,13 +802781,11 @@
     "societe de l industrie minerale|75": "775602378",
     "societe de l union francaise|75": "672029733",
     "societe de presse antillaise|": "400718185",
-    "societe de presse de l oise spo|60": "393372164",
     "societe de presse de l oise|60": "393372164",
     "societe de presse du breil|75": "443034624",
     "societe de presse du breil|92": "443034624",
     "societe de presse et conseils immobiliers peci|31": "422833509",
     "societe de presse et d edition ovine et caprine speoc|75": "572212314",
-    "societe de presse et d information sdpi|86": "401418668",
     "societe de presse et d information|86": "401418868",
     "societe de presse et de documentation agricole de la creuse|23": "997250030",
     "societe de presse rurale et des territoires|59": "824151799",
@@ -802389,7 +802832,6 @@
     "societe francaise des editions techniques|92": "308298611",
     "societe franco armenienne de presse et de communication sfapc|75": "400400495",
     "societe generale de presse de documentation d editions et de communication|75": "592005326",
-    "societe generale de presse|75": "592005326",
     "societe guyanaise de presse|": "894465400",
     "societe hippique francaise|93": "784662876",
     "societe historique et archeologique de langres|52": "348698879",
@@ -802442,6 +802884,7 @@
     "sport 24|75": "419583182",
     "sporteen media|31": "890803513",
     "spot gym|75": "910281096",
+    "spotlighted|73": "100774694",
     "springer verlag france editions medicales et scientifiques|75": "338911555",
     "stratedia|79": "394192298",
     "street press|93": "522306505",
@@ -802463,6 +802906,7 @@
     "sw medias|54": "828939843",
     "sylvain d huissel|42": "528625528",
     "sylvie meunier|21": "849605266",
+    "synd national unitaire des instituteurs|49": "775609613",
     "syndicat cgt de l arsenal de brest|29": "316620327",
     "syndicat cgt energie 24|24": "490702156",
     "syndicat cgt energie 87|87": "399228816",
@@ -802558,6 +803002,7 @@
     "tourmag com|13": "430353458",
     "tous les jours curieux|66": "829548171",
     "tous les jours curieux|75": "377589957",
+    "tout lyon|42": "494341944",
     "tout lyon|69": "494341944",
     "toute l europe|75": "385022983",
     "toute la culture|75": "538910092",
@@ -802579,7 +803024,6 @@
     "tutti kids|75": "523770287",
     "tv net citoyenne|73": "534255781",
     "u d syndicat cgt|65": "777168790",
-    "u f a c union francaise des associations de combattants et de victimes de guerre|75": "784411241",
     "u ribombu internaziunale|20": "890515695",
     "ud cfe cgc des alpes maritimes|06": "775659733",
     "ud cgt 69|69": "779904366",
@@ -802598,8 +803042,8 @@
     "union confederale des ingenieurs et cadres cfdt|75": "784410565",
     "union confederale des retraites c f d t|75": "303214712",
     "union de mutuelles pavillon de la mutualite prevoyance|33": "442978086",
+    "union depart synd cgt fo moselle|57": "780003562",
     "union departementale cgt du puy de dome|63": "779221134",
-    "union departementale des syndicats c g t force ouvriere de la moselle|57": "780003562",
     "union departementale des syndicats cgt de l essonne|91": "785183807",
     "union departementale des syndicats cgt de l isere|38": "779557776",
     "union departementale des syndicats cgt de la haute loire|43": "779145457",
@@ -802625,6 +803069,7 @@
     "union federale des consommateurs que choisir de toulon|83": "389732405",
     "union federale des consommateurs que choisir union locale de saint nazaire et de sa region|44": "391216652",
     "union federale des syndicats et associations professionnels agricoles du limousin|87": "778056424",
+    "union fr ass combattants victimes guerre|75": "784411241",
     "union francaise des oeuvres laiques d education physique u f o l e p|75": "387557796",
     "union generale des ingenieurs cadres techniciens ugict cgt|93": "784546657",
     "union generale des viticulteurs pour l aoc cognac ugvc|16": "538656539",
@@ -804275,6 +804720,67 @@
       "siret_est_siege": true,
       "strategy": "SIRET publié dans la source"
     },
+    "100774694": {
+      "candidates": [],
+      "confidence": "siret",
+      "entreprise": {
+        "activite_principale": "58.14Z",
+        "activite_principale_naf25": "58.13Y",
+        "complements": {},
+        "date_creation": "2026-02-04",
+        "date_mise_a_jour": "2026-11-09T08:44:22",
+        "date_mise_a_jour_insee": "2026-09-25T13:18:30",
+        "date_mise_a_jour_rne": "2026-09-28T08:09:18",
+        "dirigeants": [
+          {
+            "annee_de_naissance": "1997",
+            "date_de_naissance": "1997-07",
+            "nom": "LECLÈRE LO GIUDICE (LECLÈRE)",
+            "prenoms": "CALVIN JOSEPH JEAN-CLAUDE",
+            "qualite": "Président de SAS",
+            "type_dirigeant": "personne physique"
+          }
+        ],
+        "dirigeants_total": 1,
+        "etat_administratif": "A",
+        "nature_juridique": "5710",
+        "nom_complet": "SPOTLIGHTED",
+        "nom_raison_sociale": "SPOTLIGHTED",
+        "nombre_etablissements": 1,
+        "nombre_etablissements_ouverts": 1,
+        "section_activite_principale": "J",
+        "siege": {
+          "activite_principale": "58.14Z",
+          "activite_principale_naf25": "58.13Y",
+          "adresse": "8 RUE SUAREZ 73200 ALBERTVILLE",
+          "caractere_employeur": "O",
+          "code_postal": "73200",
+          "commune": "73011",
+          "date_creation": "2026-02-04",
+          "date_debut_activite": "2026-09-22",
+          "departement": "73",
+          "etat_administratif": "A",
+          "latitude": "45.6773668234367",
+          "libelle_commune": "ALBERTVILLE",
+          "libelle_voie": "SUAREZ",
+          "longitude": "6.38723677087569",
+          "numero_voie": "8",
+          "region": "84",
+          "siret": "10077469400010",
+          "tranche_effectif_salarie": "NN",
+          "type_voie": "RUE"
+        },
+        "siren": "100774694",
+        "statut_diffusion": "O",
+        "tranche_effectif_salarie": "NN"
+      },
+      "resolved_at": "2026-11-09",
+      "score": 1.0,
+      "siren": "100774694",
+      "siret_declare": "10077469400010",
+      "siret_est_siege": true,
+      "strategy": "SIRET publié dans la source"
+    },
     "101184968": {
       "candidates": [],
       "confidence": "siret",
@@ -805117,6 +805623,61 @@
       "score": 1.0,
       "siren": "106461825",
       "siret_declare": "10646182500015",
+      "siret_est_siege": true,
+      "strategy": "SIRET publié dans la source"
+    },
+    "106490832": {
+      "candidates": [],
+      "confidence": "siret",
+      "entreprise": {
+        "activite_principale": "94.99Z",
+        "activite_principale_naf25": "94.99Y",
+        "complements": {
+          "est_association": true,
+          "est_ess": true,
+          "identifiant_association": "W632015771"
+        },
+        "date_creation": "2026-06-16",
+        "date_mise_a_jour": "2026-11-09T08:50:41",
+        "date_mise_a_jour_insee": "2026-06-17T16:38:24",
+        "dirigeants": [],
+        "dirigeants_total": 0,
+        "etat_administratif": "A",
+        "nature_juridique": "9220",
+        "nom_complet": "ASSOCIATION INTERNATIONALE POUR LA PROMOTION DE L'IDEAL MACONNIQUE",
+        "nom_raison_sociale": "ASSOCIATION INTERNATIONALE POUR LA PROMOTION DE L'IDEAL MACONNIQUE",
+        "nombre_etablissements": 1,
+        "nombre_etablissements_ouverts": 1,
+        "section_activite_principale": "S",
+        "siege": {
+          "activite_principale": "94.99Z",
+          "activite_principale_naf25": "94.99Y",
+          "adresse": "12 RUE CLEMENT ADER 63000 CLERMONT-FERRAND",
+          "caractere_employeur": "N",
+          "code_postal": "63000",
+          "commune": "63113",
+          "date_creation": "2026-06-16",
+          "date_debut_activite": "2026-06-16",
+          "departement": "63",
+          "etat_administratif": "A",
+          "latitude": "45.7747449297624",
+          "libelle_commune": "CLERMONT-FERRAND",
+          "libelle_voie": "CLEMENT ADER",
+          "longitude": "3.09891780549666",
+          "numero_voie": "12",
+          "region": "84",
+          "siret": "10649083200016",
+          "tranche_effectif_salarie": "NN",
+          "type_voie": "RUE"
+        },
+        "siren": "106490832",
+        "statut_diffusion": "O",
+        "tranche_effectif_salarie": "NN"
+      },
+      "resolved_at": "2026-11-09",
+      "score": 1.0,
+      "siren": "106490832",
+      "siret_declare": "10649083200016",
       "siret_est_siege": true,
       "strategy": "SIRET publié dans la source"
     },
@@ -981673,6 +982234,80 @@
       "siret_declare": "93201616800056",
       "strategy": "SIRET publié dans la source"
     },
+    "932280043": {
+      "candidates": [],
+      "confidence": "siret",
+      "entreprise": {
+        "activite_principale": "73.12Z",
+        "activite_principale_naf25": "73.12Y",
+        "annee_categorie_entreprise": "2024",
+        "annee_tranche_effectif_salarie": "2024",
+        "categorie_entreprise": "PME",
+        "complements": {
+          "convention_collective_renseignee": true,
+          "liste_idcc": [
+            "1480",
+            "3230"
+          ]
+        },
+        "date_creation": "2024-08-22",
+        "date_mise_a_jour": "2026-11-09T09:40:43",
+        "date_mise_a_jour_insee": "2025-12-17T10:01:32",
+        "date_mise_a_jour_rne": "2026-09-27T20:30:07",
+        "dirigeants": [
+          {
+            "annee_de_naissance": "1988",
+            "date_de_naissance": "1988-10",
+            "nom": "BENAROUSSI",
+            "prenoms": "SOFIANE KARIM BOULIFA",
+            "qualite": "Président de SAS",
+            "type_dirigeant": "personne physique"
+          }
+        ],
+        "dirigeants_total": 1,
+        "etat_administratif": "A",
+        "nature_juridique": "5710",
+        "nom_complet": "GALORAMA",
+        "nom_raison_sociale": "GALORAMA",
+        "nombre_etablissements": 1,
+        "nombre_etablissements_ouverts": 1,
+        "section_activite_principale": "M",
+        "siege": {
+          "activite_principale": "73.12Z",
+          "activite_principale_naf25": "73.12Y",
+          "adresse": "6 B AVENUE DE LA REPUBLIQUE 14800 DEAUVILLE",
+          "caractere_employeur": "O",
+          "code_postal": "14800",
+          "commune": "14220",
+          "date_creation": "2024-08-22",
+          "date_debut_activite": "2024-10-01",
+          "departement": "14",
+          "etat_administratif": "A",
+          "indice_repetition": "B",
+          "latitude": "49.3610434729401",
+          "libelle_commune": "DEAUVILLE",
+          "libelle_voie": "DE LA REPUBLIQUE",
+          "longitude": "0.0841135327018936",
+          "numero_voie": "6",
+          "region": "28",
+          "siret": "93228004300013",
+          "tranche_effectif_salarie": "02",
+          "type_voie": "AVENUE"
+        },
+        "siren": "932280043",
+        "statut_diffusion": "O",
+        "tranche_effectif_salarie": "02",
+        "tva": [
+          "FR50932280043"
+        ]
+      },
+      "resolved_at": "2026-11-09",
+      "score": 1.0,
+      "siren": "932280043",
+      "siret_declare": "93228004300013",
+      "siret_est_siege": true,
+      "strategy": "SIRET publié dans la source"
+    },
     "932599673": {
       "candidates": [],
       "confidence": "siret",
@@ -989754,6 +990389,75 @@
       "score": 1.0,
       "siren": "991219759",
       "siret_declare": "99121975900016",
+      "siret_est_siege": true,
+      "strategy": "SIRET publié dans la source"
+    },
+    "991625765": {
+      "candidates": [],
+      "confidence": "siret",
+      "entreprise": {
+        "activite_principale": "58.19Z",
+        "activite_principale_naf25": "58.29Y",
+        "complements": {
+          "convention_collective_renseignee": true,
+          "liste_idcc": [
+            "2121"
+          ]
+        },
+        "date_creation": "2025-09-10",
+        "date_mise_a_jour": "2026-11-09T10:18:24",
+        "date_mise_a_jour_insee": "2025-11-05T05:21:21",
+        "date_mise_a_jour_rne": "2026-09-28T04:53:39",
+        "dirigeants": [
+          {
+            "annee_de_naissance": "1988",
+            "date_de_naissance": "1988-07",
+            "nom": "LE ROUX",
+            "prenoms": "HADRIEN",
+            "qualite": "Président de SAS",
+            "type_dirigeant": "personne physique"
+          }
+        ],
+        "dirigeants_total": 1,
+        "etat_administratif": "A",
+        "nature_juridique": "5710",
+        "nom_complet": "IMMOBIL-IA",
+        "nom_raison_sociale": "IMMOBIL-IA",
+        "nombre_etablissements": 1,
+        "nombre_etablissements_ouverts": 1,
+        "section_activite_principale": "J",
+        "siege": {
+          "activite_principale": "58.19Z",
+          "activite_principale_naf25": "58.29Y",
+          "adresse": "44 RUE CARDINET 75017 PARIS",
+          "caractere_employeur": "O",
+          "code_postal": "75017",
+          "commune": "75117",
+          "date_creation": "2025-09-10",
+          "date_debut_activite": "2025-11-01",
+          "departement": "75",
+          "etat_administratif": "A",
+          "latitude": "48.8825633850624",
+          "libelle_commune": "PARIS",
+          "libelle_voie": "CARDINET",
+          "longitude": "2.30597235991059",
+          "numero_voie": "44",
+          "region": "11",
+          "siret": "99162576500011",
+          "tranche_effectif_salarie": "NN",
+          "type_voie": "RUE"
+        },
+        "siren": "991625765",
+        "statut_diffusion": "O",
+        "tranche_effectif_salarie": "NN",
+        "tva": [
+          "FR21991625765"
+        ]
+      },
+      "resolved_at": "2026-11-09",
+      "score": 1.0,
+      "siren": "991625765",
+      "siret_declare": "99162576500011",
       "siret_est_siege": true,
       "strategy": "SIRET publié dans la source"
     },
