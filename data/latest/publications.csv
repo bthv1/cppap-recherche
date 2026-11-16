@@ -1,10 +1,113 @@
 editeur,siret,forme_juridique,departement,type_de_presse,nom_du_titre_de_presse,statut_inscription,demande_en_cours,date_depot_derniere_demande,numero_cppap,date_expiration_inscription,date_derniere_decision,qualification,regime_derogatoire,ajl,url_spel,categorie_publication,sous_categorie_publication
-L'ABEILLE,30019739900011,SARL,88,Publication imprimée,"L'ABEILLE - Hebdomadaire régional d'information - Vosges, Meuse Haute-Marne",Non Inscrit,Demande de renouvellement en cours,2026-11-06,2586982,2026-06-30,2025-06-26,CIBLAGE_POSTAL_D_19_2,Non,Oui,,,
+HAPPY RADIO,90879440700019,"SAS, SOCIÉTÉ PAR ACTIONS SIMPLIFIÉE",37,Service de presse en ligne,happyradio.fr,Non Inscrit,Nouvel examen d’une première demande en cours,2026-11-13,,,,,Non,,https://happyradio.fr,,
+L'ABEILLE,30019739900011,SARL,88,Publication imprimée,"L'ABEILLE - Hebdomadaire régional d'information - Vosges, Meuse Haute-Marne",Non Inscrit,,2026-11-06,2586982,2026-06-30,2026-11-12,CIBLAGE_POSTAL_D_19_2,Non,Oui,,,
+SISTERON JOURNAL,99277560100014,SAS,04,Publication imprimée,SISTERON JOURNAL - Val de Durance,Non Inscrit,,2026-11-05,2587763,2026-05-31,2026-11-12,,Non,Non,,,
+HCR,41953946500080,"SAS, SOCIÉTÉ PAR ACTIONS SIMPLIFIÉE",01,Publication imprimée,LE REVEIL  - Vivarais - vallée du Rhône - Pilat,Inscrit,,2026-11-04,2586385,2031-11-12,2026-11-12,CIBLAGE_POSTAL_D_19_2,Non,Oui,,Information générale et politique,Locale
+IMPRIMERIE DU SUD,,SARL,20,Publication imprimée,JOURNAL DE LA CORSE,Non Inscrit,,2026-11-03,2580690,2026-09-30,2026-11-12,CIBLAGE_POSTAL_D_19_2,Non,Oui,,,
+JOURNAL ALBERT,91089312200010,SOCIÉTÉ À RESPONSABILITÉ LIMITÉE (SANS AUTRE INDICATION),63,Publication imprimée,ALBERT - Petit journal illustré,Inscrit,,2026-10-26,2593225,2031-11-12,2026-11-12,IPG,Non,Non,,Information générale et politique,Nationale et Internationale
+SARL C.M.2.,39804593000029,"SAS, SOCIÉTÉ PAR ACTIONS SIMPLIFIÉE",30,Publication imprimée,CEVENNES MAGAZINE,Inscrit,,2026-10-26,2580730,2028-11-12,2026-11-12,,Non,Oui,,Presse culturelle scientifique et jeunesse,"Histoire, archéologie et généalogie"
+FINANCIERE DE LOISIRS,39223844000060,SA À CONSEIL D'ADMINISTRATION (S.A.I.),37,Publication imprimée,RetroGamer Collection,Inscrit,,2026-10-20,2592903,2031-11-12,2026-11-12,,Non,Non,,Presse divertissement loisirs,"Jeux autres : jeux de société, jeux informatiques, etc"
+P.A.L,51895646100017,"SAS, SOCIÉTÉ PAR ACTIONS SIMPLIFIÉE",40,Publication imprimée,LES PETITES AFFICHES LANDAISES,Inscrit,,2026-11-04,2586829,2028-12-31,2026-11-12,,Non,Oui,,Information générale et politique,Régionale
+SNEP-FSU,17130431400494,,13,Publication imprimée,BULLETIN ACADEMIQUE DU SNEP FSU AIX-MARSEILLE,Non Inscrit,,2026-10-12,2508032,2026-05-31,2026-11-12,,Oui,Non,,,
+EDITIONS ARC EN CIEL,,SARL,82,Publication imprimée,LE PETIT JOURNAL - L'hebdo de la Haute-Garonne,Inscrit,,2026-10-22,2600009,2031-11-12,2026-11-12,CIBLAGE_POSTAL_D_19_2,Non,Oui,,Information générale et politique,Locale
+SOCIETE D'EDITION DE PRESSE LOCALE,39010050100100,SOCIÉTÉ À RESPONSABILITÉ LIMITÉE (SANS AUTRE INDICATION),33,Publication imprimée,LE RESISTANT,Inscrit,,2026-10-07,2581039,2031-11-12,2026-11-12,CIBLAGE_POSTAL_D_19_2,Non,Oui,,Information générale et politique,Régionale
+INDIGO EDITIONS,98072834900013,"SAS, SOCIÉTÉ PAR ACTIONS SIMPLIFIÉE",75,Publication imprimée,Revue21,Inscrit,,2026-11-04,2589299,2031-11-12,2026-11-12,IPG,Non,Non,,Information générale et politique,Nationale et Internationale
+IMPRIMERIE GRAVE,42134836800018,SOCIÉTÉ À RESPONSABILITÉ LIMITÉE (SANS AUTRE INDICATION),72,Publication imprimée,L'ECHO DE VIBRAYE,Inscrit,,2026-10-02,2585428,2031-11-30,2026-11-12,,Non,Oui,,Information générale et politique,Locale
+SOCIETE NOUVELLE D'IMPRIMERIE,83552014900039,SOCIÉTÉ À RESPONSABILITÉ LIMITÉE (SANS AUTRE INDICATION),21,Publication imprimée,LE CHATILLONNAIS ET L'AUXOIS,Inscrit,,2026-10-30,2585273,2031-11-30,2026-11-12,CIBLAGE_POSTAL_D_19_2,Non,Oui,,Information générale et politique,Régionale
+EDITIONS ARC EN CIEL,34457230000046,SOCIÉTÉ À RESPONSABILITÉ LIMITÉE (SANS AUTRE INDICATION),82,Publication imprimée,Le Petit Journal l'hebdo du Pays Toulousain,Inscrit,,2026-10-21,2587656,2031-11-12,2026-11-12,CIBLAGE_POSTAL_D_19_2,Non,Oui,,Information générale et politique,Régionale
+PUBLIHEBDOS,48728001801364,"SAS, SOCIÉTÉ PAR ACTIONS SIMPLIFIÉE",35,Publication imprimée,VOIX DU JURA,Inscrit,,2026-10-01,2585545,2031-11-30,2026-11-12,CIBLAGE_POSTAL_D_19_2,Non,Oui,,Information générale et politique,Régionale
+LE COURRIER DE LA MAYENNE,82137415400044,"SAS, SOCIÉTÉ PAR ACTIONS SIMPLIFIÉE",53,Publication imprimée,Le Courrier de la Mayenne,Inscrit,,2026-10-05,2586003,2031-12-31,2026-11-12,CIBLAGE_POSTAL_D_19_2,Non,Oui,,Information générale et politique,Régionale
+PUBLIHEBDOS,48728001801364,"SAS, SOCIÉTÉ PAR ACTIONS SIMPLIFIÉE",35,Publication imprimée,LE PUBLICATEUR LIBRE,Inscrit,,2026-10-05,2585670,2031-11-30,2026-11-12,CIBLAGE_POSTAL_D_19_2,Non,Oui,,Information générale et politique,Régionale
+EDITIONS SPART,51874526000027,SOCIÉTÉ À RESPONSABILITÉ LIMITÉE (SANS AUTRE INDICATION),14,Publication imprimée,Patrimoine Normand - Le magazine de la culture et de l'art de vivre en Normandie,Inscrit,,2026-10-05,2587991,2028-11-12,2026-11-12,,Non,Non,,Presse divertissement loisirs,"Voyages, découvertes, gastronomie, art de vivre et patrimoine local"
+BAYARD,54204248600127,SA À DIRECTOIRE (S.A.I.),92,Publication imprimée,JE COLLE JE COLORIE,Inscrit,,2026-09-29,2593169,2031-11-12,2026-11-12,,Non,Non,,Presse culturelle scientifique et jeunesse,Publications d'éveil (0-5 ans)
+S E P A Q,73165053700012,SOCIÉTÉ À RESPONSABILITÉ LIMITÉE (SANS AUTRE INDICATION),46,Publication imprimée,La Défense Paysanne du Lot,Inscrit,,2026-10-26,2583596,2031-11-12,2026-11-12,,Non,Non,,Presse technique et professionnelle,"Agriculture, sylviculture, aquaculture, élevage et agro-alimentaire"
+MUTUALE,77536988700242,MUTUELLE,41,Publication imprimée,Mutuale et Vous - Le magazine de celles et ceux qui font vivre la mutuelle,Inscrit,,2026-11-12,2600008,2031-11-12,2026-11-12,,Oui,Non,,Autres,Mutuelles
+GROUPE INDUSTRIE SERVICES INFO,44223341700090,"SAS, SOCIÉTÉ PAR ACTIONS SIMPLIFIÉE",94,Publication imprimée,NEO RESTAURATION,Inscrit,,2026-10-02,2581055,2031-11-30,2026-11-12,,Non,Non,,Presse technique et professionnelle,"Hôtellerie, restauration et tourisme"
+JOURNAL DU DIOIS ET DE LA DROME,48965985400025,SOCIÉTÉ À RESPONSABILITÉ LIMITÉE (SANS AUTRE INDICATION),26,Publication imprimée,JOURNAL DU DIOIS ET DE LA DROME,Inscrit,,2026-09-25,2586398,2031-11-30,2026-11-12,CIBLAGE_POSTAL_D_19_2,Non,Oui,,Information générale et politique,Régionale
+LA DORDOGNE LIBRE,57198010100067,SOCIÉTÉ À RESPONSABILITÉ LIMITÉE (SANS AUTRE INDICATION),24,Publication imprimée,DORDOGNE LIBRE,Inscrit,,2026-11-02,2586295,2031-12-31,2026-11-12,CIBLAGE_POSTAL_D_19_2,Non,Oui,,Information générale et politique,Régionale
+CORSICAPRESS EDITIONS,52879003300039,SAS,20,Publication imprimée,ICN - Informateur Corse Nouvelle,Non Inscrit,,2026-09-23,2588773,2026-10-31,2026-11-12,,Non,Non,,,
+PUBLIHEBDOS,48728001801364,"SAS, SOCIÉTÉ PAR ACTIONS SIMPLIFIÉE",35,Publication imprimée,LE COURRIER INDEPENDANT,Inscrit,,2026-09-22,2580982,2031-11-12,2026-11-12,CIBLAGE_POSTAL_D_19_2,Non,Oui,,Information générale et politique,Régionale
+SOCIETE AGRICOLE D EDITION ET DE   COMMUNICATION DE S.A.E.C.A,40310890500015,SOCIÉTÉ À RESPONSABILITÉ LIMITÉE (SANS AUTRE INDICATION),03,Publication imprimée,L'ALLIER AGRICOLE,Inscrit,,2026-11-04,2583132,2031-11-12,2026-11-12,,Non,Oui,,Presse technique et professionnelle,"Agriculture, sylviculture, aquaculture, élevage et agro-alimentaire"
+SOC PRESSE DOCUMENTATION AGRICOLE CREUSE,99725003000027,SOCIÉTÉ À RESPONSABILITÉ LIMITÉE (SANS AUTRE INDICATION),23,Publication imprimée,LA CREUSE AGRICOLE ET RURALE,Inscrit,,2026-10-30,2585298,2031-11-12,2026-11-12,DISPOSITIF_FISCAL_39_BIS_A,Non,Oui,,Presse technique et professionnelle,"Agriculture, sylviculture, aquaculture, élevage et agro-alimentaire"
+AFRIQUE EDUCATION,44116111400018,SARL,92,Publication imprimée,AFRIQUE EDUCATION,Non Inscrit,,2026-10-07,2583251,2026-09-30,2026-11-12,IPG,Non,Non,,,
+L'OBSERVATEUR,44632040000034,"SAS, SOCIÉTÉ PAR ACTIONS SIMPLIFIÉE",59,Publication imprimée,La Thiérache,Inscrit,,2026-10-01,2582409,2031-11-30,2026-11-12,CIBLAGE_POSTAL_D_19_2,Non,Oui,,Information générale et politique,Locale
+EXCEPTO,38796320000028,SA À CONSEIL D'ADMINISTRATION (S.A.I.),63,Publication imprimée,L'AUVERGNE AGRICOLE,Inscrit,,2026-09-08,2579650,2031-11-12,2026-11-12,DISPOSITIF_FISCAL_39_BIS_A,Non,Oui,,Information générale et politique,Régionale
+AMIS FRERES MISSION SOEUR CAMP,78494824200028,ASSOCIATION DÉCLARÉE,77,Publication imprimée,"CHRONIQUE Frères, Soeurs, Amis Missionnaires des Campagnes",Inscrit,,2026-10-02,2585241,2031-11-12,2026-11-12,,Non,Non,,Presse culturelle scientifique et jeunesse,Religions
+ORACOM,39752265700055,SA À CONSEIL D'ADMINISTRATION (S.A.I.),75,Publication imprimée,Cultur'G &jeux,Inscrit,,2026-10-19,2600007,2031-11-12,2026-11-12,,Non,Non,,Presse divertissement loisirs,"Jeux autres : jeux de société, jeux informatiques, etc"
+STE NOUVELLE DEPECHE DE L AUBE,30634869900027,SOCIÉTÉ À RESPONSABILITÉ LIMITÉE (SANS AUTRE INDICATION),10,Publication imprimée,LA DEPECHE DE L'AUBE,Inscrit,,2026-10-02,2587550,2031-11-12,2026-11-12,CIBLAGE_POSTAL_D_19_2,Non,Oui,,Information générale et politique,"Débats d'idées, politique et défense de cause"
+GESTION E.V,83894171400035,"SAS, SOCIÉTÉ PAR ACTIONS SIMPLIFIÉE",75,Publication imprimée,Go-détente,Inscrit,,2026-10-02,2593771,2031-11-12,2026-11-12,,Non,Non,,Presse divertissement loisirs,"Jeux, mots croisés"
+UNION DEPARTEMENTALE SYNDICATS CGT,77847752100026,SYNDICAT DE SALARIÉS,58,Publication imprimée,LE TRAVAILLEUR NIVERNAIS - Journal de l'Union Départementale des Syndicats CGT de la Nièvre,Inscrit,,,2506702,2031-11-12,2026-11-12,,Oui,Non,,Autres,Syndicats
+EDITIONS DE MEDIA D'INFORMATIONS REGIONALES - E-MIR,81196733000028,"SAS, SOCIÉTÉ PAR ACTIONS SIMPLIFIÉE",91,Publication imprimée,LE REPUBLICAIN DE L'ESSONNE,Inscrit,,,2586769,2031-11-12,2026-11-12,CIBLAGE_POSTAL_D_19_2,Non,Oui,,Information générale et politique,Locale
+UNION APOSTOLIQUE DU CLERGE,78454705100010,ASSOCIATION DÉCLARÉE,75,Publication imprimée,Prêtres  Diocésains,Inscrit,,2026-10-02,2588114,2031-11-12,2026-11-12,,Non,Non,,Autres,Presse religieuse
+CINEMATEASER MEDIAS,92780434400012,"SAS, SOCIÉTÉ PAR ACTIONS SIMPLIFIÉE",75,Publication imprimée,CINEMATEASER,Inscrit,,2026-10-02,2590846,2031-11-12,2026-11-12,HORS_SERIE,Non,Non,,Presse divertissement loisirs,"Musique, cinéma, et photo - Oeuvres et auteurs"
+SOCIETE DE PRESSE L'ESSOR BIGOURDAN,,SARL,65,Publication imprimée,L'ESSOR BIGOURDAN,Non Inscrit,,2026-09-25,2583694,2026-09-30,2026-11-12,CIBLAGE_POSTAL_D_19_2,Non,Oui,,,
+SOC JOURNAL PAYSANS DE LA LOIRE,56450348000027,SOCIÉTÉ À RESPONSABILITÉ LIMITÉE (SANS AUTRE INDICATION),42,Publication imprimée,Paysans de la Loire,Inscrit,,2026-10-02,2585967,2031-11-12,2026-11-12,CIBLAGE_POSTAL_D_19_2,Non,Oui,,Information générale et politique,Régionale
+FEDER COMPAGNON METIERS BATIMENT,78477870600050,ASSOCIATION DÉCLARÉE,75,Publication imprimée,Compagnons & Maîtres d'Œuvre,Inscrit,,,2585563,2031-11-12,2026-11-12,,Non,Non,,Autres,Syndicats
+PUBLIHEBDOS,48728001801364,"SAS, SOCIÉTÉ PAR ACTIONS SIMPLIFIÉE",35,Publication imprimée,LIBERTE - Le bonhomme libre,Inscrit,,,2580762,2031-11-12,2026-11-12,CIBLAGE_POSTAL_D_19_2,Non,Oui,,Information générale et politique,Régionale
+SOCIETE NOUVELLE DES EDITIONS COMTOISES,38455180000020,SOCIÉTÉ À RESPONSABILITÉ LIMITÉE (SANS AUTRE INDICATION),70,Publication imprimée,LA PRESSE DE GRAY,Inscrit,,,2579353,2031-11-12,2026-11-12,CIBLAGE_POSTAL_D_19_2,Non,Oui,,Information générale et politique,Régionale
+TENDANCE OUEST,32598592700020,SOCIÉTÉ À RESPONSABILITÉ LIMITÉE (SANS AUTRE INDICATION),50,Publication imprimée,TENDANCE ROUEN,Inscrit,,2026-10-01,2594708,2031-11-12,2026-11-12,CIBLAGE_POSTAL_D_19_2,Non,Non,,Information générale et politique,Gratuit
+TENDANCE OUEST,32598592700020,SOCIÉTÉ À RESPONSABILITÉ LIMITÉE (SANS AUTRE INDICATION),50,Publication imprimée,TENDANCE CAEN,Inscrit,,2026-10-01,2594707,2031-11-12,2026-11-12,CIBLAGE_POSTAL_D_19_2,Non,Non,,Information générale et politique,Gratuit
+LA REDACTION,82919659100020,ASSOCIATION DÉCLARÉE,13,Publication imprimée,l'Arlésienne - enquête gazette anisette,Inscrit,,,2593873,2031-11-12,2026-11-12,IPG/HORS_SERIE,Non,Non,,Information générale et politique,Locale
+UNION NATIONALE DES PARACHUTISTES,30586995000140,ASSOCIATION DÉCLARÉE,94,Publication imprimée,Debout les PARAS,Inscrit,,,2584994,2031-11-12,2026-11-12,,Oui,Non,,Autres,Anciens combattants
+PRESSE ET MEDIAS DE GIRONDE,81953818200018,SOCIÉTÉ À RESPONSABILITÉ LIMITÉE (SANS AUTRE INDICATION),33,Publication imprimée,LE JOURNAL DU MEDOC,Inscrit,,,2586861,2031-11-12,2026-11-12,CIBLAGE_POSTAL_D_19_2,Non,Oui,,Information générale et politique,Régionale
+LE POPULAIRE DU CENTRE,75750035000090,SA NATIONALE À CONSEIL D'ADMINISTRATION,87,Publication imprimée,LE POPULAIRE DU CENTRE DIMANCHE,Inscrit,,2026-09-25,2588495,2031-11-12,2026-11-12,CIBLAGE_POSTAL_D_19_2,Non,Oui,,Information générale et politique,Régionale
+LE JOURNAL DU CENTRE,57188030100015,SA À PARTICIPATION OUVRIÈRE À CONSEIL D'ADMINISTRATION,58,Publication imprimée,LE JOURNAL DU CENTRE DIMANCHE,Inscrit,,2026-09-25,2588494,2031-11-12,2026-11-12,CIBLAGE_POSTAL_D_19_2,Non,Oui,,Information générale et politique,Régionale
+CENTRE FRANCE HEBDOS,85620030800075,"SAS, SOCIÉTÉ PAR ACTIONS SIMPLIFIÉE",63,Publication imprimée,LE PAYS ROANNAIS,Inscrit,,2026-09-22,2579295,2031-11-12,2026-11-12,CIBLAGE_POSTAL_D_19_2,Non,Oui,,Information générale et politique,Régionale
+CENTRE FRANCE HEBDOS,85620030800075,"SAS, SOCIÉTÉ PAR ACTIONS SIMPLIFIÉE",63,Publication imprimée,L'ECLAIREUR DU GATINAIS,Inscrit,,2026-09-22,2583722,2031-11-12,2026-11-12,CIBLAGE_POSTAL_D_19_2,Non,Oui,,Information générale et politique,Régionale
+SOCIETE D EDITION DE LA TERRE DAUPHINOISE SETD,38399885300022,SOCIÉTÉ À RESPONSABILITÉ LIMITÉE (SANS AUTRE INDICATION),38,Publication imprimée,TERRE DAUPHINOISE,Inscrit,,,2585371,2031-11-12,2026-11-12,CIBLAGE_POSTAL_D_19_2,Non,Oui,,Information générale et politique,Régionale
+IMPRIMERIES REUNIES,,SARL,03,Publication imprimée,L'AURORE DU BOURBONNAIS,Non Inscrit,,2026-09-21,2586805,2026-10-31,2026-11-12,,Non,Non,,,
+NOUVELLES DE LOIRE ATLANTIQUE PUBLICITE,32151228700012,SOCIÉTÉ À RESPONSABILITÉ LIMITÉE (SANS AUTRE INDICATION),44,Publication imprimée,Les Nouvelles de Loire-Atlantique,Inscrit,,2026-09-25,2511519,2031-11-12,2026-11-12,,Oui,Non,,Autres,Action et philosophie politique
+P E C CI,39185756200014,SOCIÉTÉ À RESPONSABILITÉ LIMITÉE (SANS AUTRE INDICATION),75,Publication imprimée,Inprecor - Correspondance de presse internationale,Inscrit,,2026-09-24,2588313,2031-11-12,2026-11-12,IPG,Non,Non,,Information générale et politique,"Débats d'idées, politique et défense de cause"
+PUBLIHEBDOS,48728001801364,"SAS, SOCIÉTÉ PAR ACTIONS SIMPLIFIÉE",35,Publication imprimée,CHRONIQUE REPUBLICAINE,Inscrit,,,2580165,2031-11-12,2026-11-12,CIBLAGE_POSTAL_D_19_2,Non,Oui,,Information générale et politique,Locale
+POTOS FEU !,99475614600027,ASSOCIATION DÉCLARÉE,93,Publication imprimée,Courts Bouillon - De nouveaux horizons se dessinent,Inscrit,,2026-10-02,2600006,2028-11-12,2026-11-12,,Non,Non,,Presse divertissement loisirs,BD adultes
+AFFICHES PARISIENNE EDITION,57222759300066,SA À CONSEIL D'ADMINISTRATION (S.A.I.),75,Publication imprimée,AFFICHES PARISIENNES,Inscrit,,,2586209,2031-11-12,2026-11-12,CIBLAGE_POSTAL_D_19_2,Non,Oui,,Information générale et politique,Nationale et Internationale
+WEDEMAIN,75005157500058,"SAS, SOCIÉTÉ PAR ACTIONS SIMPLIFIÉE",75,Publication imprimée,WE DEMAIN,Inscrit,,,2591382,2031-11-12,2026-11-12,IPG,Non,Non,,Information générale et politique,"Débats d'idées, politique et défense de cause"
+CENTRE FRANCE HEBDOS,85620030800075,"SAS, SOCIÉTÉ PAR ACTIONS SIMPLIFIÉE",63,Publication imprimée,LA VOIX DU SANCERROIS,Inscrit,,,2581471,2031-11-12,2026-11-12,CIBLAGE_POSTAL_D_19_2,Non,Oui,,Information générale et politique,Locale
+LES AMIS DE JACQUES BAINVILLE,48350828900012,ASSOCIATION DÉCLARÉE,75,Publication imprimée,La Nouvelle Revue Universelle,Inscrit,Admis sous-réserve,,2586910,2028-11-12,2026-11-12,,Non,Non,,Information générale et politique,"Débats d'idées, politique et défense de cause"
+PUBLIHEBDOS,48728001801364,"SAS, SOCIÉTÉ PAR ACTIONS SIMPLIFIÉE",35,Publication imprimée,L'INFORMATEUR,Inscrit,,,2584625,2031-11-12,2026-11-12,CIBLAGE_POSTAL_D_19_2,Non,Oui,,Information générale et politique,Régionale
+PUBLIHEBDOS,48728001801364,"SAS, SOCIÉTÉ PAR ACTIONS SIMPLIFIÉE",35,Publication imprimée,LE PETIT COURRIER L'ECHO DE LA VALLEE DU LOIR,Inscrit,,,2581073,2031-11-12,2026-11-12,CIBLAGE_POSTAL_D_19_2,Non,Oui,,Information générale et politique,Régionale
+L'ABEILLE DE LA TERNOISE COMMUNICATION,70192064700081,SA À DIRECTOIRE (S.A.I.),62,Publication imprimée,L'Observateur de Beauvais,Inscrit,,,2578231,2031-11-12,2026-11-12,CIBLAGE_POSTAL_D_19_2,Non,Oui,,Information générale et politique,Régionale
+"SARL ""SOCIETE D'EXPLOITATION IMPRIMERIE DU SARLADAIS""",39199431600019,SOCIÉTÉ À RESPONSABILITÉ LIMITÉE (SANS AUTRE INDICATION),24,Publication imprimée,L'Essor Sarladais,Inscrit,,,2583767,2031-11-12,2026-11-12,CIBLAGE_POSTAL_D_19_2,Non,Oui,,Information générale et politique,Locale
+SEPRECOM,50899580000036,SARL,75,Publication imprimée,ELEMENTS POUR LA CIVILISATION EUROPEENNE,Non Inscrit,,,2584270,2026-04-30,2026-11-12,IPG,Non,Non,,,
+LES RELATIONS PUBLIQUES ADMINISTRATIVES,63201616800056,"SAS, SOCIÉTÉ PAR ACTIONS SIMPLIFIÉE",75,Publication imprimée,l'essor de la gendarmerie,Inscrit,,,2580636,2031-11-12,2026-11-12,,Non,Non,,Presse divertissement loisirs,"Social, familles, retraités, ruraux, etc"
+AVOTEAM,44019468600026,"SAS, SOCIÉTÉ PAR ACTIONS SIMPLIFIÉE",92,Publication imprimée,Vetofficine,Inscrit,,,2593897,2031-11-12,2026-11-12,,Non,Non,,Presse technique et professionnelle,"Médicales, para-médicales et médico-sociales, professions en hôpitaux"
+L'EST ECLAIR,41287958700100,"SAS, SOCIÉTÉ PAR ACTIONS SIMPLIFIÉE",10,Publication imprimée,LIBERATION CHAMPAGNE,Inscrit,,,2586491,2028-11-12,2026-11-12,CIBLAGE_POSTAL_D_19_2,Non,Oui,,Information générale et politique,Régionale
+SOCIETE INDEPENDANTE DE PRESSE D'ANCENIS,85780456100028,SOCIÉTÉ À RESPONSABILITÉ LIMITÉE (SANS AUTRE INDICATION),44,Publication imprimée,L'ECHO D'ANCENIS,Inscrit,,,2580630,2031-11-12,2026-11-12,CIBLAGE_POSTAL_D_19_2,Non,Oui,,Information générale et politique,Régionale
+MEDIA CAPITAL REUNION,92483484900011,"SAS, SOCIÉTÉ PAR ACTIONS SIMPLIFIÉE",974,Publication imprimée,LE QUOTIDIEN DE LA REUNION ET DE L'OCEAN INDIEN,Inscrit,,,2587475,2031-11-12,2026-11-12,CIBLAGE_POSTAL_D_19_2,Non,Oui,,Information générale et politique,Régionale
+L'EST ECLAIR,41287958700100,"SAS, SOCIÉTÉ PAR ACTIONS SIMPLIFIÉE",10,Publication imprimée,L'EST ECLAIR,Inscrit,,,2586412,2028-11-12,2026-11-12,CIBLAGE_POSTAL_D_19_2,Non,Oui,,Information générale et politique,Régionale
+SOCIETE DU JOURNAL L'UNION,33568067400629,SA À CONSEIL D'ADMINISTRATION (S.A.I.),51,Publication imprimée,L'ARDENNAIS,Inscrit,,,2586726,2031-11-12,2026-11-12,CIBLAGE_POSTAL_D_19_2,Non,Oui,,Information générale et politique,Régionale
+IDM RHONE ALPES INFO DEVE MEDIAS RA,48001821700020,"SAS, SOCIÉTÉ PAR ACTIONS SIMPLIFIÉE",69,Publication imprimée,BREF ECO,Inscrit,,,2579536,2031-11-12,2026-11-12,HORS_SERIE,Non,Non,,Information générale et politique,Régionale
+L'ABEILLE DE LA TERNOISE COMMUNICATION,70192064700081,SA À DIRECTOIRE (S.A.I.),62,Publication imprimée,L'ABEILLE DE LA TERNOISE,Inscrit,,,2579390,2031-11-12,2026-11-12,CIBLAGE_POSTAL_D_19_2,Non,Oui,,Information générale et politique,Régionale
+SOCIETE PRETRES SAINT JACQUES,34213294100010,CONGRÉGATION,29,Publication imprimée,La Lettre de Saint-Jacques,Inscrit,,2026-09-22,2587559,2031-11-12,2026-11-12,,Non,Non,,Autres,Presse religieuse
+EDITIONS PUY DU FOU,93397721700019,SAS,85,Publication imprimée,LE PANACHE Toutes les histoires qui racontent la France,Non Inscrit,,,2595435,2026-05-31,2026-11-12,,Non,Non,,,
+LA VOIX DU NORD,45750726700013,SA À CONSEIL D'ADMINISTRATION (S.A.I.),59,Publication imprimée,NORD ECLAIR,Inscrit,,,2583024,2031-11-12,2026-11-12,CIBLAGE_POSTAL_D_19_2,Non,Oui,,Information générale et politique,Régionale
+LA VOIX DU NORD,45750726700013,SA À CONSEIL D'ADMINISTRATION (S.A.I.),59,Publication imprimée,LA VOIX DU NORD,Inscrit,,,2586576,2031-11-12,2026-11-12,HORS_SERIE/CIBLAGE_POSTAL_D_19_2,Non,Oui,,Information générale et politique,Régionale
+CONFEDERATION FRANCAISE DES TRAVAILLEURS CHRETIENS,78445097500049,SYNDICAT DE SALARIÉS,75,Publication imprimée,La Lettre confédérale,Inscrit,,,2506330,2031-11-12,2026-11-12,,Oui,Non,,Autres,Syndicats
+B&D EDITIONS,79897976100029,"SAS, SOCIÉTÉ PAR ACTIONS SIMPLIFIÉE",13,Publication imprimée,Info-Pêche,Inscrit,,,2590175,2031-11-12,2026-11-12,,Non,Non,,Presse divertissement loisirs,"Chasse, pêche, nature et animaux"
+LES AMIS DU JOURNAL DE SAINT-PALAIS,39191467800019,ASSOCIATION DÉCLARÉE,64,Publication imprimée,Le journal de Saint-Palais et de Basse Navarre,Inscrit,,,2584274,2031-11-12,2026-11-12,,Non,Oui,,Information générale et politique,Locale
+FOOD AND GOOD,92120939100025,SAS,68,Publication imprimée,FOOD & GOOD - Le magazine de la Gastronomie et du Bien-être en Alsace,Non Inscrit,,,2595383,2026-01-31,2026-11-12,,Non,Non,,,
+IN EXTENSO,45190089800011,SOCIÉTÉ À RESPONSABILITÉ LIMITÉE (SANS AUTRE INDICATION),31,Publication imprimée,PARCOURS DES ARTS  - Sud et Espagne,Inscrit,,,2587704,2031-11-12,2026-11-12,,Non,Non,,Presse divertissement loisirs,Spectacles et sorties (programmes)
+SOC DE EDITIONS JUSTICE,38444964100016,SOCIÉTÉ À RESPONSABILITÉ LIMITÉE (SANS AUTRE INDICATION),972,Publication imprimée,Justice,Inscrit,,,2587526,2031-11-12,2026-11-12,CIBLAGE_POSTAL_D_19_2,Non,Oui,,Information générale et politique,Régionale
+LE MATRICULE DES ANGES,38973084700057,ASSOCIATION DÉCLARÉE,83,Publication imprimée,Le Matricule des anges,Inscrit,,,2587593,2031-11-12,2026-11-12,,Non,Non,,Presse culturelle scientifique et jeunesse,"Arts et lettres (littérature, poésie, beaux-arts, danse...), langues"
+INFODIUM,49434530900038,SAS,75,Publication imprimée,LFT - La lettre du Financier Territorial,Non Inscrit,,,2584973,2026-01-31,2026-11-12,,Non,Non,,,
+IMPRIMERIE FLEURENT,32646730500016,SARL,88,Publication imprimée,LES ANNONCES DES HAUTES-VOSGES,Non Inscrit,,,2587612,2026-02-28,2026-11-12,,Non,Oui,,,
+LE PROGRES SOCIAL EDITIONS,49400541600016,SOCIÉTÉ À RESPONSABILITÉ LIMITÉE (SANS AUTRE INDICATION),971,Publication imprimée,LE PROGRES SOCIAL,Inscrit,,,2594126,2031-11-12,2026-11-12,CIBLAGE_POSTAL_D_19_2,Non,Oui,,Information générale et politique,Régionale
+CULTURE MÉDIA,79948351600016,SARL,75,Service de presse en ligne,ecranlarge.com,Non Inscrit,Demande de renouvellement en cours,2026-11-09,2593973,2026-05-31,2023-05-11,,Non,Non,https://www.ecranlarge.com/,,
+UDAF DE LA MANCHE,,ASSOCIATION,50,Publication imprimée,FAMILLES DE LA MANCHE,Non Inscrit,Demande de renouvellement en cours,2026-11-09,2585594,2025-10-31,2020-12-21,,Non,Non,,,
+SCAN-IMMO,53149577800015,"SAS, SOCIÉTÉ PAR ACTIONS SIMPLIFIÉE",78,Service de presse en ligne,https://padelmagazine.fr/,Non Inscrit,Première demande en cours,2026-11-09,,,,,Non,,https://padelmagazine.fr/,,
+MEMOGO,98836265300012,"SAS, SOCIÉTÉ PAR ACTIONS SIMPLIFIÉE",13,Publication imprimée,MémoGo,Non Inscrit,Première demande en cours,2026-11-09,,,,,Non,,,,
+HOSPITALITE DIOCESAINE,,,56,Publication imprimée,AIMER - SERVIR,Non Inscrit,Demande de renouvellement en cours,2026-11-09,2587868,2008-11-06,2008-11-06,,Non,Non,,,
+L'ACTEUR RURAL,,SARL,61,Publication imprimée,VILLAGE,Inscrit,Demande de renouvellement en cours,2026-11-09,2587861,2027-01-31,2022-01-13,IPG,Non,Non,,,
+SOCIETE PROTECTRICE DES ANIMAUX DE BESANCON ET DE FRANCHE-COMTE,,ASSOCIATION,25,Publication imprimée,LE TRAIT D'UNION - Le magazine de la SPA de Besançon,Inscrit,Demande de renouvellement en cours,2026-11-09,2588631,2026-12-31,2021-11-18,,Non,Non,,,
+NEWS TANK EDUCATION,80159167800025,SAS,75,Service de presse en ligne,education.newstank.fr,Non Inscrit,Demande de renouvellement en cours,2026-11-09,2592329,2026-05-31,2021-05-27,,Non,Non,http://education.newstank.fr,,
+ASSOCIATION YANASALAM MEDIA,88414328000011,ASSOCIATION DÉCLARÉE,973,Service de presse en ligne,https://www.yanasalam.fr/,Non Inscrit,Première demande en cours,2026-11-09,,,,,Non,,https://www.yanasalam.fr/,,
+CONGREGATION DES PETITES SOEURS DES PAUVRES,77559145600014,,35,Publication imprimée,DECOUVERTE,Non Inscrit,Nouvel examen d’un renouvellement en cours,2026-11-09,2584949,2026-06-30,2021-06-03,,Non,Non,,,
+FEDERATION DES ENTREPRISES MONEGASQUES (FEDEM),,ASSOCIATION,,Publication imprimée,MONACO BUSINESS NEWS,Non Inscrit,Demande de renouvellement en cours,2026-11-09,2593995,2026-05-31,2021-04-29,,Non,Non,,,
+GROUPE PROFESSION SANTE,53033017400034,SAS,92,Service de presse en ligne,lequotidiendumedecin.fr,Non Inscrit,Demande de renouvellement en cours,2026-11-09,2590942,2026-06-30,2022-03-10,,Non,Non,http://www.lequotidiendumedecin.fr,,
 GUARDIAN NEWS AND MEDIA LTD,49493910100015,,,Publication imprimée,THE GUARDIAN WEEKLY,Non Inscrit,Demande de renouvellement en cours,2026-11-06,2583455,2026-05-31,2021-05-20,,Non,Non,,,
 FEDERATION DEPARTEMENTALE DES CHASSEURS DE L'HERAULT,77602003400034,,34,Publication imprimée,"DES HAUTS CANTONS A LA MER, LA CHASSE DANS L'HERAULT",Non Inscrit,Nouvel examen d’un renouvellement en cours,2026-11-06,2585520,2026-05-21,2026-05-21,,Non,Non,,,
 SYNDICAT INTERCO CFDT DES COTES D'ARMOR,77746115300028,,22,Publication imprimée,LES BRANCHES DU 22,Non Inscrit,Demande de renouvellement en cours,2026-11-06,2508046,2026-05-31,2021-03-30,,Oui,Non,,,
 "ASSOCIATION FEDEREE""""PELERINAGE DU ROSAIRE""""",10031059800014,ASSOCIATION,06,Publication imprimée,ROSAIRE,Non Inscrit,Demande de renouvellement en cours,2026-11-06,2591003,2026-05-31,2021-05-20,,Non,Non,,,
-SISTERON JOURNAL,99277560100014,SAS,04,Publication imprimée,SISTERON JOURNAL - Val de Durance,Non Inscrit,Demande de renouvellement en cours,2026-11-05,2587763,2026-05-31,2023-05-04,,Non,Non,,,
 DBD,41962025700032,SARL,92,Publication imprimée,LES ARTS DESSINES,Non Inscrit,Demande de renouvellement en cours,2026-11-05,2593585,2026-06-30,2021-06-17,,Non,Non,,,
 MARC SCHNEIDER,,UNE PERSONNE PHYSIQUE,67,Service de presse en ligne,observateur-de-la-vie.com,Non Inscrit,Première demande en cours,2026-11-05,,,,,Non,,https://observateur-de-la-vie.com,,
 SOCIETE DE PRESSE ET D'INFORMATION,40141886800048,SA À CONSEIL D'ADMINISTRATION (S.A.I.),86,Publication imprimée,CENTRE PRESSE - Le Quotidien de la Vienne,Inscrit,,2026-10-06,2586526,2031-10-15,2026-10-15,HORS_SERIE/CIBLAGE_POSTAL_D_19_2,Non,Oui,,Information générale et politique,Régionale
@@ -60,15 +163,10 @@ RESTAURATION NATIONALE,38912472800020,ASSOCIATION DÉCLARÉE,75,Publication impr
 EUROPRESSE DEVELOPPEMENT,53394217300030,SOCIÉTÉ À RESPONSABILITÉ LIMITÉE (SANS AUTRE INDICATION),94,Publication imprimée,Balades - Le magazine de toutes les randos,Inscrit,,,2584519,2031-10-15,2026-10-15,,Non,Non,,Presse divertissement loisirs,"Voyages, découvertes, gastronomie, art de vivre et patrimoine local"
 FEDERATION FRANCAISE DE BOXE,78471417200029,ASSOCIATION DÉCLARÉE,93,Publication imprimée,France Boxe,Inscrit,,,2587367,2031-10-15,2026-10-15,,Non,Non,,Presse divertissement loisirs,Actualités sportives et pratique d’un sport
 ALPES AZUR EDITIONS,79395504800012,SARL,06,Publication imprimée,PATRIOTE COTE D'AZUR,Non Inscrit,,,2592180,2026-02-28,2026-10-15,CIBLAGE_POSTAL_D_19_2,Non,Oui,,,
-H C R,41953946500080,SAS,01,Publication imprimée,LE REVEIL - Vivarais-vallée du Rhône-Pilat,Non Inscrit,Demande de renouvellement en cours,2026-11-04,2586385,2026-07-31,2021-07-01,CIBLAGE_POSTAL_D_19_2,Non,Oui,,,
-INDIGO EDITIONS,98072834900013,SAS,75,Publication imprimée,REVUE21,Non Inscrit,Demande de renouvellement en cours,2026-11-04,2589299,2026-06-30,2026-02-19,IPG,Non,Non,,,
 GALORAMA,93228004300013,"SAS, SOCIÉTÉ PAR ACTIONS SIMPLIFIÉE",14,Publication imprimée,GALORAMA L'IMPRIMÉ - CHEVAL - TOUTES DISCIPLINES - LIFESTYLE,Non Inscrit,Première demande en cours,2026-11-04,,,,,Non,,,,
 LES ETUDES HOSPITALIERES,,SAS,33,Publication imprimée,LE BJPH - BULLETIN JURIDIQUE DU PROFESSIONNEL HOSPITALIER,Non Inscrit,Demande de renouvellement en cours,2026-11-04,2578312,2026-10-31,2023-10-19,,Non,Non,,,
-SOCIETE AGRICOLE D'EDITION ET DE COMMUNICATION DE L'ALLIER (SAECA),40310890500015,SARL,03,Publication imprimée,L'ALLIER AGRICOLE,Non Inscrit,Demande de renouvellement en cours,2026-11-04,2583132,2026-10-31,2025-10-09,,Non,Non,,,
 LES AMIS DU DEMOCRATE,,ASSOCIATION,02,Publication imprimée,LE DEMOCRATE DE L'AISNE,Inscrit,Demande de renouvellement en cours,2026-11-04,2587029,2027-02-28,2022-02-03,CIBLAGE_POSTAL_D_19_2,Non,Oui,,,
-"LES PETITES AFFICHES LANDAISES""""P.A.L.""""",51895646100017,SAS,40,Publication imprimée,LES PETITES AFFICHES LANDAISES,Inscrit,Demande de renouvellement en cours,2026-11-04,2586829,2026-12-31,2023-12-07,,Non,Oui,,,
 "FEDERATION NATIONALE DES SYNDICATS DU SPECTACLE, DU CINEME, DE L'AUDIOVISUEL ET DE L'ACTION CULTURELLE - CGT",,,75,Publication imprimée,SPECTACLE CULTURE ET COMMUNICATION,Non Inscrit,Demande de renouvellement en cours,2026-11-03,2506840,2026-10-31,2021-10-07,,Non,Non,,,
-IMPRIMERIE DU SUD,,SARL,20,Publication imprimée,JOURNAL DE LA CORSE,Non Inscrit,Demande de renouvellement en cours,2026-11-03,2580690,2026-09-30,2021-09-23,CIBLAGE_POSTAL_D_19_2,Non,Oui,,,
 EDITIONS JIBENA,63201116900059,SA,94,Publication imprimée,FLECHES DETENTE,Non Inscrit,Demande de renouvellement en cours,2026-11-03,2586467,2026-06-30,2025-06-26,,Non,Non,,,
 VIASANTE MUTUELLE,77792712000744,,75,Publication imprimée,LE MUTUALISTE VIASANTE,Non Inscrit,Demande de renouvellement en cours,2026-11-03,2507799,2026-04-30,2021-03-04,,Oui,Non,,,
 ASSOCIATION DES AMIS DU MUSEE DE LA MARINE,,ASSOCIATION,75,Publication imprimée,NEPTUNIA,Non Inscrit,Demande de renouvellement en cours,2026-11-03,2581100,2026-10-31,2021-06-03,,Non,Non,,,
@@ -84,10 +182,7 @@ CHASSE ET PECHE EN SOMME,,SARL,80,Publication imprimée,PICARDIE CHASSE ET PECHE
 ASSOCIATION INTERNATIONALE POUR LA PROMOTION DE L'IDEAL MACONNIQUE,10649083200016,ASSOCIATION DÉCLARÉE,63,Publication imprimée,Revue Idéal Maçonnique,Non Inscrit,Première demande en cours,2026-11-02,,,,,Non,,,,
 LE JOURNAL PAROISSIAL,,,87,Publication imprimée,D'UNE RIVE A L'AUTRE - Journal des paroisses de Confolens et de Champagne Mouton et de Chabanais,Non Inscrit,Demande de renouvellement en cours,2026-11-02,2587911,2026-04-30,2021-06-03,,Non,Non,,,
 SPOTLIGHTED,10077469400010,"SAS, SOCIÉTÉ PAR ACTIONS SIMPLIFIÉE",73,Service de presse en ligne,spotlighted.fr,Non Inscrit,Première demande en cours,2026-11-02,,,,,Non,,https://spotlighted.fr,,
-DORDOGNE LIBRE,,SARL,24,Publication imprimée,DORDOGNE LIBRE,Inscrit,Demande de renouvellement en cours,2026-11-02,2586295,2026-12-31,2021-12-09,CIBLAGE_POSTAL_D_19_2,Non,Oui,,,
 EDITIONS DIPA BURDA,,SA,67,Publication imprimée,BURDA STYLE,Non Inscrit,Demande de renouvellement en cours,2026-10-21,2588267,2026-10-31,2021-10-07,,Non,Non,,,
-LA MONTAGNE,,SA,63,Publication imprimée,LE POPULAIRE DU CENTRE DIMANCHE,Non Inscrit,Demande de renouvellement en cours,2026-09-25,2588495,2026-10-31,2022-01-13,,Non,Non,,,
-SOCIETE D'EDITION DE PRESSE LOCALE (SEPL),,SARL,33,Publication imprimée,LE RESISTANT,Non Inscrit,Demande de renouvellement en cours,2026-10-07,2581039,2026-10-31,2022-01-13,,Non,Non,,,
 PAROISSE DE SAINTE GENEVIEVE EN VIADENE/ASSOCIATION DIOCESE DE RODEZ,,ASSOCIATION,12,Publication imprimée,EN HAUTE VIADENE,Non Inscrit,Demande de renouvellement en cours,2026-09-22,2584789,2026-10-31,2024-10-10,,Non,Non,,,
 PAYSAN BRETON,49548015400048,SAS,22,Service de presse en ligne,paysan-breton.fr,Non Inscrit,Demande de renouvellement en cours,2026-10-29,2591096,2026-10-31,2021-11-25,,Non,Non,http://www.paysan-breton.fr,,
 ELEMENTS SANTE,49247425900016,SAS,63,Service de presse en ligne,info-atbvac.com,Non Inscrit,,,2593483,2026-10-31,2024-10-03,,Non,Non,http://info-atbvac.com,,
@@ -102,23 +197,18 @@ KOMUNE.MEDIA,94872927200013,SAS,75,Service de presse en ligne,La newsletter de K
 OBSIDIENNE FINANCE,51013069300011,SARL,78,Service de presse en ligne,olivieranger.com,Non Inscrit,,,2592431,2026-10-31,2021-11-25,,Non,Non,http://www.olivieranger.com,,
 FAMILLE COR UNUM,,ASSOCIATION,75,Publication imprimée,COR UNUM,Non Inscrit,,,2588442,2026-10-31,2021-11-18,,Non,Non,,,
 LA PRESSE IMMOBILIERE,,SARL,75,Publication imprimée,35 MILLIONS DE PROPRIETAIRES,Non Inscrit,,,2581970,2026-10-31,2025-04-17,,Non,Non,,,
-CORSICAPRESS EDITIONS,52879003300039,SAS,20,Publication imprimée,ICN - Informateur Corse Nouvelle,Non Inscrit,Demande de renouvellement en cours,2026-09-23,2588773,2026-10-31,2025-10-23,,Non,Non,,,
 GROUPE MONITEUR,,SAS,94,Publication imprimée,SECURITE INCENDIE,Non Inscrit,,,2578848,2026-10-31,2024-10-10,,Non,Non,,,
 RAPMINERZ MEDIA,89967971600014,ASSOCIATION,75,Service de presse en ligne,rapminerz.io,Non Inscrit,,,2594917,2026-10-31,2024-10-03,,Non,Non,http://www.rapminerz.io,,
-SOCIETE NOUVELLE DE LA DEPECHE DE L'AUBE,30634869900027,SARL,10,Publication imprimée,LA DEPECHE DE L'AUBE,Non Inscrit,Demande de renouvellement en cours,2026-10-02,2587550,2026-10-31,2024-10-10,,Non,Non,,,
 BAYARD,,SA,59,Publication imprimée,REGARDS - JOURNAL DE LA PAROISSE SAINT LEGER SAINTE PROCULE,Non Inscrit,,,2584252,2026-10-31,2021-10-21,,Non,Non,,,
-FNCMB,,ASSOCIATION,75,Publication imprimée,COMPAGNONS ET MAITRES D'OEUVRE,Non Inscrit,Demande de renouvellement en cours,,2585563,2026-10-31,2021-10-07,,Non,Non,,,
 SYNDICAT CFDT DES SERVICES DE SANTE ET DES SERVICES SOCIAUX DU DOUBS,,,25,Publication imprimée,SI ON NOUS CHERCHE - CFDT Santé Sociaux du Doubs,Non Inscrit,,,2506994,2026-10-31,2021-10-21,,Non,Non,,,
 EDIDEC,,SARL,51,Publication imprimée,AUTO RECYCLAGE,Non Inscrit,Demande de renouvellement en cours,2026-09-22,2588459,2026-10-31,2021-10-07,,Non,Non,,,
 CMR 21,,ASSOCIATION,21,Publication imprimée,EFFORT pour l'avenir en rural,Non Inscrit,Demande de renouvellement en cours,2026-09-28,2588445,2026-10-31,2021-11-18,,Non,Non,,,
-IMPRIMERIE DU SARLADAIS,39199431600019,SARL,24,Publication imprimée,L'ESSOR SARLADAIS,Non Inscrit,Demande de renouvellement en cours,,2583767,2026-10-31,2021-05-20,,Non,Non,,,
 PUBLICATIONS AGORA FRANCE,39967180900081,SARL,75,Service de presse en ligne,JIM RICKARDS TRADING - Newsletter,Non Inscrit,,,2595341,2026-10-31,2024-10-03,,Non,Non,JIM RICKARDS TRADING - Newsletter,,
 WEEKULT. MEDIA,88496744900015,ASSOCIATION,33,Service de presse en ligne,weekult.com,Non Inscrit,,,2595343,2026-10-31,2024-10-03,,Non,Non,https://www.weekult.com/,,
 OLIVETAN,,ASSOCIATION,69,Publication imprimée,REVEIL - Presse régionale protestante - Centre Alpes Rhône,Non Inscrit,,,2580856,2026-10-31,2021-09-09,,Non,Non,,,
 VERON ET CIE,42170675500020,SAS,35,Publication imprimée,LE PETIT JOURNAL DE L'HISTOIRE,Non Inscrit,,,2595329,2026-10-31,2024-10-10,,Non,Non,,,
 MONNAIES ET DETECTIONS,,SAS,31,Publication imprimée,MONNAIES ET DETECTIONS,Non Inscrit,Demande de renouvellement en cours,2026-09-22,2581186,2026-10-31,2021-09-23,,Non,Non,,,
 AFRICA MEDIA GROUP,,SARL,75,Publication imprimée,JEUNE AFRIQUE,Non Inscrit,,,2580822,2026-10-31,2023-01-12,,Non,Non,,,
-LA MONTAGNE,,SA,63,Publication imprimée,LE JOURNAL DU CENTRE DIMANCHE,Non Inscrit,Demande de renouvellement en cours,2026-09-25,2588494,2026-10-31,2022-01-13,,Non,Non,,,
 ALGOR,,SASU,22,Publication imprimée,MARCHE NORDIQUE MAGAZINE,Non Inscrit,,,2592521,2026-10-31,2022-10-20,,Non,Non,,,
 SPOTLIGHT VERLAG GMBH,,,,Publication imprimée,DEUTSCH PERFEKT,Non Inscrit,,,2588497,2026-10-31,2021-10-21,,Non,Non,,,
 ACTIONAID FRANCE -PEUPLES SOLIDAIRES,,ASSOCIATION,93,Publication imprimée,ECHOS DE PEUPLES SOLIDAIRES,Non Inscrit,Demande de renouvellement en cours,2026-09-30,2591077,2026-10-31,2021-10-07,,Non,Non,,,
@@ -130,7 +220,6 @@ VISION PLURIELLE,,SAS,75,Publication imprimée,BIEN VU,Non Inscrit,,,2582158,202
 LEXISNEXIS,,SA,75,Publication imprimée,JURIS CLASSEUR ADMINISTRATIF,Non Inscrit,,,2580896,2026-10-31,2021-11-18,,Non,Non,,,
 SOCIETE D'EDITION DE REVUES NATIONALES SPECIALISEES - SERNAS,,SASU,35,Publication imprimée,VOILES ET VOILIERS,Non Inscrit,Demande de renouvellement en cours,2026-10-15,2580845,2026-10-31,2021-10-07,,Non,Non,,,
 LEXISNEXIS,,SA,75,Publication imprimée,JURIS CLASSEUR GEOMETRE EXPERT-FONCIER,Non Inscrit,,,2580900,2026-10-31,2021-11-18,,Non,Non,,,
-PUBLIHEBDOS,,SAS,35,Publication imprimée,LE COURRIER INDEPENDANT,Non Inscrit,Demande de renouvellement en cours,2026-09-22,2580982,2026-10-31,2021-09-23,,Non,Non,,,
 MK2 PUBLISHING,95203551700012,SASU,75,Service de presse en ligne,troiscouleurs.fr,Non Inscrit,,,2595339,2026-10-31,2024-10-03,,Non,Non,http://www.troiscouleurs.fr,,
 LAMY LIAISONS,,SAS,93,Publication imprimée,LES CAHIERS DU DRH,Non Inscrit,,,2579085,2026-10-31,2021-09-09,,Non,Non,,,
 PUBLICATIONS AGORA FRANCE,39967180900081,SARL,75,Service de presse en ligne,Oxford Elite Rendements - Newsletter,Non Inscrit,,,2595342,2026-10-31,2024-10-03,,Non,Non,Oxford Elite Rendements - Newsletter,,
@@ -145,7 +234,6 @@ FRANCE GAZ,78485482000031,ASSOCIATION,92,Service de presse en ligne,gazdaujourdh
 GOLDY MEDIA,82232701100018,MICRO-ENTREPRENEUR,75,Service de presse en ligne,goldy.fr,Non Inscrit,,,2595344,2026-10-31,2024-10-03,,Non,Non,https://goldy.fr/,,
 BAYARD,,SA,59,Publication imprimée,DIMANCHE - Les amis de Lourdes,Non Inscrit,,,2581045,2026-10-31,2021-10-21,,Non,Non,,,
 MRJ INFORMATIQUE,,SAS,92,Publication imprimée,ESSAIS & SIMULATIONS,Non Inscrit,,,2594043,2026-10-31,2021-09-09,,Non,Non,,,
-CENTRE FRANCE HEBDOS,,SAS,63,Publication imprimée,LE PAYS ROANNAIS,Non Inscrit,Demande de renouvellement en cours,2026-09-22,2579295,2026-10-31,2021-12-09,,Non,Non,,,
 PUBLICATIONS PERIODIQUES DE L'IMPRIMERIE PAUL DUPONT,57214784100074,SAS,75,Publication imprimée,PETITES ET MOYENNES COMMUNES DE FRANCE,Non Inscrit,,,2591287,2026-10-31,2024-10-10,,Non,Non,,,
 ORACOM,,SA,75,Publication imprimée,IA MAGAZINE,Non Inscrit,,,2595328,2026-10-31,2024-10-10,,Non,Non,,,
 EDITIONS ETZEL SA,,,,Publication imprimée,MAISONS ET AMBIANCES,Non Inscrit,,,2508341,2026-10-31,2021-10-07,,Non,Non,,,
@@ -173,12 +261,10 @@ LE SAINT HUBERT CLUB DE FRANCE,,ASSOCIATION,75,Publication imprimée,LE SAINT HU
 STREET PRESS,52230650500028,SAS,93,Service de presse en ligne,streetpress.com,Non Inscrit,,,2590833,2026-10-31,2022-03-10,,Non,Non,http://www.streetpress.com,,
 ELSEVIER MASSON,,SAS,92,Publication imprimée,ARCHIVES DES MALADIES DU COEUR ET DES VAISSEAUX - PRATIQUE,Non Inscrit,,,2581247,2026-10-31,2023-10-19,,Non,Non,,,
 INFODIUM,49434530900038,SASU,75,Service de presse en ligne,financierterritorial.fr,Non Inscrit,Demande de renouvellement en cours,2026-10-02,2593931,2026-10-31,2024-10-03,,Non,Non,http://www.financierterritorial.fr,,
-IMPRIMERIES REUNIES,,SARL,03,Publication imprimée,L'AURORE DU BOURBONNAIS,Non Inscrit,Demande de renouvellement en cours,2026-09-21,2586805,2026-10-31,2021-11-18,,Non,Non,,,
 THE ECONOMIST NEWSPAPER LTD,,,,Publication imprimée,THE ECONOMIST,Non Inscrit,Demande de renouvellement en cours,2026-10-30,2580823,2026-10-31,2021-11-18,,Non,Non,,,
 AMICALE DES FOREURS ET DES METIERS DU PETROLE (AFMP),,ASSOCIATION,64,Publication imprimée,FOREURS CONTACT,Non Inscrit,,,2580849,2026-10-31,2021-10-07,,Non,Non,,,
 PUISSANCE GROUP',75139292900038,ASSOCIATION,52,Service de presse en ligne,puissancetelevision.fr,Non Inscrit,,,2595351,2026-10-31,2024-10-31,,Non,Non,http://www.puissancetelevision.fr,,
 BAYARD,,SA,92,Publication imprimée,NOTRE TEMPS SANTE & BIEN ETRE,Non Inscrit,Demande de renouvellement en cours,2026-10-23,2594718,2026-10-31,2021-10-07,,Non,Non,,,
-GESTION E.V,,SAS,34,Publication imprimée,GO DETENTE,Non Inscrit,Demande de renouvellement en cours,2026-10-02,2593771,2026-10-31,2024-09-19,,Non,Non,,,
 BLANC SEC MEDIA,90372805300013,SAS,95,Service de presse en ligne,hamelin.info,Non Inscrit,Demande de renouvellement en cours,,2594975,2026-10-31,2023-10-26,,Non,Non,http://www.hamelin.info,,
 FREEDOM VOICES NETWORK,83787059100034,ASSOCIATION,75,Service de presse en ligne,forbiddenstories.org,Non Inscrit,Demande de renouvellement en cours,,2594578,2026-10-31,2024-10-09,,Non,Non,https://forbiddenstories.org,,
 MT COM,83538040300021,SASU,06,Service de presse en ligne,h2-mobile.fr,Non Inscrit,,,2595190,2026-10-31,2024-10-03,,Non,Non,http://www.h2-mobile.fr,,
@@ -187,7 +273,6 @@ ALTERNATIVES ECONOMIQUES,33039447900043,SCOP,21,Publication imprimée,L'ECONOMIE
 SOCIETE FRANCAISE DE PROMOTION ARTISTIQUE,30495146000068,SARL,75,Service de presse en ligne,historia.fr,Non Inscrit,Demande de renouvellement en cours,2026-09-25,2594742,2026-10-31,2024-10-03,,Non,Non,https://www.historia.fr,,
 PAROISSE DE PLUVIGNER,,,56,Publication imprimée,BULLETIN INTERPAROISSIAL - EN MARCHE VERS L'AVENIR,Non Inscrit,,,2585630,2026-10-31,2021-10-21,,Non,Non,,,
 FRACAS,98505089700018,SCOP,93,Service de presse en ligne,fracas.media,Non Inscrit,,,2595346,2026-10-31,2024-10-31,,Non,Non,http://www.fracas.media,,
-CENTRE FRANCE HEBDOS,,SAS,63,Publication imprimée,L'ECLAIREUR DU GATINAIS,Non Inscrit,Demande de renouvellement en cours,2026-09-22,2583722,2026-10-31,2021-11-18,,Non,Non,,,
 JOURNAL DE LA CORSE,52270344600032,SARL,20,Service de presse en ligne,journaldelacorse.corsica,Non Inscrit,,,2595349,2026-10-31,2024-10-31,,Non,Non,http://www.journaldelacorse.corsica,,
 UNION TERRITORIALE DES RETRAITÉS (UTR) ET PRERETRAITES CFDT DE LA MOSELLE (U.D.I.R.),,,57,Publication imprimée,L'INTERPRO CFDT - Retraités Moselle,Non Inscrit,Demande de renouvellement en cours,2026-10-21,2505853,2026-10-31,2021-10-07,,Non,Non,,,
 H2 COM,45295182500044,SASU,75,Service de presse en ligne,telescopemag.fr,Non Inscrit,,,2595348,2026-10-31,2024-10-31,,Non,Non,http://www.telescopemag.fr,,
@@ -211,10 +296,8 @@ LA TRIBUNE NOUVELLE,74981460400015,SAS,31,Service de presse en ligne,latribune.f
 LA FRANC-COMTOISE DE PRESSE ET D'EDITION,33509144300010,SARL,70,Service de presse en ligne,hautesaoneagricole.agri-info-nordest.fr/,Inscrit,Demande de renouvellement en cours,2026-10-30,2594752,2026-11-30,2023-11-30,,Non,Oui,https://hautesaoneagricole.agri-info-nordest.fr/,,
 UNION DES AMICALES SOCIETE GENERALE ET CREDIT DU NORD (UASGCDN),,ASSOCIATION,75,Publication imprimée,L'ANCIEN DE LA BANQUE,Inscrit,,,2587532,2031-07-31,2026-07-02,,Non,Non,,,
 PREPRESSE DU LIMOUXIN,79135540700036,SAS,11,Publication imprimée,LE LIMOUXIN,Inscrit,,,2587577,2031-10-07,2026-10-07,,Non,Non,,,
-SOCIETE NOUVELLE D'IMPRIMERIE,,SARL,21,Publication imprimée,LE CHATILLONNAIS ET L'AUXOIS,Inscrit,Demande de renouvellement en cours,2026-10-30,2585273,2026-11-30,2021-12-09,CIBLAGE_POSTAL_D_19_2,Non,Oui,,,
 SOCIETE D'EDITION DES ELEVEURS DE BREBIS (SEEB),,SARL,12,Publication imprimée,L'ECHO DES BERGERS,Inscrit,Demande de renouvellement en cours,2026-10-30,2585578,2026-12-31,2021-12-09,,Non,Non,,,
 AWEBNET,53927300300027,ASSOCIATION,25,Service de presse en ligne,toutmontbeliard.com,Non Inscrit,Demande de renouvellement en cours,2026-10-30,2593192,2026-09-30,2025-09-25,,Non,Non,http://www.toutmontbeliard.com,,
-SOCIETE DE PRESSE ET DE DOCUMENTATION AGRICOLE DE LA CREUSE,99725003000027,SARL,23,Publication imprimée,LA CREUSE AGRICOLE ET RURALE,Non Inscrit,Demande de renouvellement en cours,2026-10-30,2585298,2026-07-31,2021-09-23,DISPOSITIF_FISCAL_39_BIS_A,Non,Oui,,,
 HCL PUBLICATIONS,51202557800018,SARL,94,Service de presse en ligne,habitat-collectivites-locales.info,Inscrit,Demande de renouvellement en cours,2026-10-30,2590099,2026-12-31,2021-11-25,,Non,Non,http://www.habitat-collectivites-locales.info,,
 HCR,41953946500080,SAS,01,Service de presse en ligne,magville.fr,Non Inscrit,Demande de renouvellement en cours,2026-10-30,2594641,2026-09-30,2024-10-03,,Non,Non,http://www.magville.fr,,
 L'OBSERVATEUR,44632040000034,SAS,59,Service de presse en ligne,lobservateur.fr,Non Inscrit,Demande de renouvellement en cours,2026-10-30,2593204,2026-09-30,2021-07-08,IPG,Non,Non,http://www.lobservateur.fr,,
@@ -244,10 +327,7 @@ TATOUVU,43037719200025,SARL,75,Publication imprimée,TATOUVU.MAG,Non Inscrit,Nou
 SOCIETE NOUVELLE DU JOURNAL L'HUMANITE,,SA,93,Publication imprimée,LA TERRE ENGAGÉS POUR LA NATURE ET POUR L'ALIMENTATION,Non Inscrit,Demande de renouvellement en cours,2026-10-27,2579486,2023-12-21,2023-12-21,,Non,Non,,,
 SUD EDUCATION CLERMONT-FERRAND,,,63,Publication imprimée,AZIMUTS - SUD EDUCATION CLERMONT-FERRAND,Non Inscrit,Demande de renouvellement en cours,2026-10-27,2506036,2026-05-31,2021-04-29,,Oui,Non,,,
 L ECHO DU LANGUEDOC,35306935400051,"SAS, SOCIÉTÉ PAR ACTIONS SIMPLIFIÉE",11,Service de presse en ligne,aude-tribune,Non Inscrit,Première demande en cours,2026-10-27,,,,,Non,,https://echo-des-tribunes.com/aude-tribune,,
-SOCIETE D'EDITION ET D'INFORMATION PROFESSIONNELLE AGRICOLE DU QUERCY S.E.P.A.Q.,,SARL,46,Publication imprimée,DEFENSE PAYSANNE DU LOT,Non Inscrit,Demande de renouvellement en cours,2026-10-26,2583596,2026-09-30,2024-10-15,,Non,Non,,,
-CM2,39804593000029,SAS,30,Publication imprimée,CEVENNES MAGAZINE,Non Inscrit,Nouvel examen d’un renouvellement en cours,2026-10-26,2580730,2026-06-30,2026-09-17,,Non,Non,,,
 DES AMIS DE VIEIL ILLE,50008566700011,ASSOCIATION,66,Publication imprimée,CAHIERS DES AMIS DU VIEIL ILLE ET DES VILLAGES VOISINS,Non Inscrit,Demande de renouvellement en cours,2026-10-26,2588604,2026-06-30,2021-07-01,,Non,Non,,,
-JOURNAL ALBERT,91089312200010,SARL,63,Publication imprimée,ALBERT - Petit journal illustré,Non Inscrit,Demande de renouvellement en cours,2026-10-26,2593225,2025-10-31,2023-10-19,IPG,Non,Non,,,
 TIME FOR AFRICA,13190400500017,ASSOCIATION DÉCLARÉE,91,Publication imprimée,TIME FOR AFRICA MAGAZINE,Non Inscrit,Première demande en cours,2026-10-26,,,,,Non,,,,
 MAG'ERUPTIF,10935514900013,ASSOCIATION DÉCLARÉE,63,Service de presse en ligne,mag'éruptif,Non Inscrit,Première demande en cours,2026-10-26,,,,,Non,,,,
 MYBIZZFEED,10132708800015,SOCIÉTÉ À RESPONSABILITÉ LIMITÉE (SANS AUTRE INDICATION),75,Service de presse en ligne,mybizzfeed.com,Non Inscrit,Première demande en cours,2026-10-26,,,,,Non,,app.myagrofeed.com,,
@@ -255,23 +335,19 @@ DYONYSOS,99910855800019,"SAS, SOCIÉTÉ PAR ACTIONS SIMPLIFIÉE",64,Service de p
 LE CERCLE DES ECONOMISTES,81887300200013,SAS,75,Publication imprimée,MERMOZ - La revue du cercle des économistes,Non Inscrit,Demande de renouvellement en cours,2026-10-23,2595453,2026-06-30,2025-06-26,IPG,Non,Non,,,
 LA NEWS,43196075600028,SOCIÉTÉ À RESPONSABILITÉ LIMITÉE (SANS AUTRE INDICATION),69,Service de presse en ligne,nicemag.com,Non Inscrit,Première demande en cours,2026-10-23,,,,,Non,,https://www.nicemag.com/,,
 SADIAR,33871495900016,SA,12,Service de presse en ligne,lavolontepaysanne.fr,Inscrit,Demande de renouvellement en cours,2026-10-22,2594764,2026-11-30,2023-11-30,DISPOSITIF_FISCAL_39_BIS_B,Non,Oui,http://www.lavolontepaysanne.fr,,
-EDITIONS ARC EN CIEL,,SARL,82,Publication imprimée,LE PETIT JOURNAL - L'hebdo de la Haute-Garonne,Non Inscrit,Première demande en cours,2026-10-22,2587805,2026-09-30,2021-07-01,CIBLAGE_POSTAL_D_19_2,Non,Oui,,,
 PRISMA MEDIA,,SAS,92,Publication imprimée,CUISINE ACTUELLE,Non Inscrit,Demande de renouvellement en cours,2026-10-22,2584150,2026-09-30,2024-09-19,,Non,Non,,,
 INFODIUM,,SAS,75,Publication imprimée,AUTONOMIE,Inscrit,Demande de renouvellement en cours,2026-10-22,2595362,2026-11-30,2024-11-21,,Non,Non,,,
 SYNDICAT CGT ENERGIE - BAGNEUX,,,94,Publication imprimée,INITIATIVES BIRBE (Bulletin d'Information des Retraités de Bagneux-Energie),Non Inscrit,Demande de renouvellement en cours,2026-10-22,2506317,2026-06-30,2021-05-20,,Oui,Non,,,
 GRAND TRAIL,10406305200013,SOCIÉTÉ À RESPONSABILITÉ LIMITÉE (SANS AUTRE INDICATION),75,Publication imprimée,GRAND TRAIL,Non Inscrit,Première demande en cours,2026-10-21,,,,,Non,,,,
 LA MOSELLE AGRICOLE,38268209400018,SAS,57,Service de presse en ligne,moselleagricole.agri-info-nordest.fr,Inscrit,Demande de renouvellement en cours,2026-10-21,2594754,2026-11-30,2023-11-30,,Non,Oui,https://moselleagricole.agri-info-nordest.fr/,,
-EDITIONS ARC EN CIEL,,SARL,82,Publication imprimée,LE PETIT JOURNAL - L'hebdo du pays toulousain,Non Inscrit,Demande de renouvellement en cours,2026-10-21,2587656,2020-09-24,2020-09-24,,Non,Non,,,
 SERVICE LITTERAIRE,,SARL,75,Publication imprimée,SERVICE LITTERAIRE - Le mensuel de l'actualité romanesque,Non Inscrit,Demande de renouvellement en cours,2026-10-21,2589296,2026-09-30,2021-09-23,,Non,Non,,,
 GL HF,,SARL,,Publication imprimée,PLATO MAGAZINE,Non Inscrit,Demande de renouvellement en cours,2026-10-21,2595313,2026-06-30,2024-06-20,,Non,Non,,,
 VAGATOR PRODUCTIONS,49869106200026,SOCIÉTÉ À RESPONSABILITÉ LIMITÉE (SANS AUTRE INDICATION),94,Publication imprimée,Le Nouvel Actuel,Non Inscrit,Première demande en cours,2026-10-20,,,,,Non,,,,
-FINANCIERE DE LOISIRS,39223844000060,SA,37,Publication imprimée,RETRO GAMER COLLECTION,Non Inscrit,Demande de renouvellement en cours,2026-10-20,2592903,2025-10-31,2020-12-10,,Non,Non,,,
 CANAL SUD CORSICA,48888679700015,SAS,20,Service de presse en ligne,alta-frequenza.corsica,Non Inscrit,Demande de renouvellement en cours,2026-10-20,2594611,2026-06-30,2023-06-29,,Non,Non,http://www.alta-frequenza.corsica,,
 INSTITUT COOPERATIF DE L'ECOLE MODERNE (I.C.E.M) - PEDAGOGIE FREINET,,ASSOCIATION,44,Publication imprimée,JMAGAZINE- ICEM Pédagogie Freinet,Non Inscrit,Demande de renouvellement en cours,2026-10-20,2585081,2026-03-31,2021-04-29,,Non,Non,,,
 LISBETH MEDIA,91080509200020,ASSOCIATION,29,Service de presse en ligne,lisbethmedia.com,Inscrit,Demande de renouvellement en cours,2026-10-20,2594942,2026-11-30,2024-11-28,DISPOSITIF_FISCAL_39_BIS_A,Non,Non,https://lisbethmedia.com/,,
 PDLV & CO,83103452500038,SOCIÉTÉ À RESPONSABILITÉ LIMITÉE (SANS AUTRE INDICATION),53,Service de presse en ligne,PDLV,Non Inscrit,Première demande en cours,2026-10-20,,,,,Non,,https://pdlv.fr/,,
 ORACOM,39752265700055,SA À CONSEIL D'ADMINISTRATION (S.A.I.),75,Publication imprimée,CULTUR'G & JEUX,Non Inscrit,,,,,,,Non,,,,
-ORACOM,39752265700055,SA À CONSEIL D'ADMINISTRATION (S.A.I.),75,Publication imprimée,Cultur'G &jeux,Non Inscrit,Première demande en cours,2026-10-19,,,,,Non,,,,
 REVEIL OUVRIER,,ASSOCIATION,93,Publication imprimée,L'INTERNATIONALE,Non Inscrit,Demande de renouvellement en cours,2026-10-19,2593127,2026-09-30,2024-09-19,,Non,Non,,,
 LE 28.TV,13146240000014,"SAS, SOCIÉTÉ PAR ACTIONS SIMPLIFIÉE",28,Service de presse en ligne,https://www.le28.tv/,Non Inscrit,Première demande en cours,2026-10-19,,,,,Non,,https://www.le28.tv/,,
 FFL MEDIA,88097668300024,"SAS, SOCIÉTÉ PAR ACTIONS SIMPLIFIÉE",92,Service de presse en ligne,fflose.com,Non Inscrit,Première demande en cours,2026-10-19,,,,,Non,,https://fflose.com/,,
@@ -302,7 +378,6 @@ PRESSE NON STOP,45048287200071,SAS,94,Service de presse en ligne,Le pavé numeri
 PLANETE MED,53798861000037,SARL,75,Service de presse en ligne,whatsupdoc-lemag.fr,Inscrit,Demande de renouvellement en cours,2026-10-12,2595371,2026-11-30,2024-11-28,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,http://www.whatsupdoc-lemag.fr,,
 EDITIONS SENONAISES DE PRESSE,41058565700035,SARL,89,Service de presse en ligne,independantdelyonne.com,Inscrit,Nouvel examen d’un renouvellement en cours,2026-10-12,2594744,2026-11-30,2021-11-25,DISPOSITIF_FISCAL_39_BIS_A,Non,Non,http://www.independantdelyonne.com,,
 CO.MEDIA,99421052400017,"SAS, SOCIÉTÉ PAR ACTIONS SIMPLIFIÉE",93,Service de presse en ligne,https://www.co-media.fr/,Non Inscrit,Première demande en cours,2026-10-12,,,,,Non,,https://co-media.fr/,,
-SNEP-FSU,17130431400494,,13,Publication imprimée,BULLETIN ACADEMIQUE DU SNEP FSU AIX-MARSEILLE,Non Inscrit,Demande de renouvellement en cours,2026-10-12,2508032,2026-05-31,2025-05-15,,Oui,Non,,,
 CULTURE ET PLURALISME,91381183200017,ASSOCIATION,13,Publication imprimée,ZEBULINE,Inscrit,Demande de renouvellement en cours,2026-10-12,2595402,2030-03-31,2025-10-01,,Non,Non,,,
 ADELPHITE FRANCE,10125785500011,ASSOCIATION DÉCLARÉE,92,Service de presse en ligne,https://adelphitefrance.com/,Non Inscrit,Première demande en cours,2026-10-12,,,,,Non,,https://adelphitefrance.com/,,
 BIHAN MELOCENE,95294601000024,ENTREPRENEUR INDIVIDUEL,59,Service de presse en ligne,Espaces,Non Inscrit,Première demande en cours,2026-10-12,,,,,Non,,https://espaces.media,,
@@ -335,7 +410,6 @@ ETRE A L'EST,94809461000011,SAS,75,Service de presse en ligne,kometarevue.com,No
 ELECTRE,,SA,75,Publication imprimée,LH Le magazine,Non Inscrit,Demande de renouvellement en cours,2026-10-07,2585471,2026-09-30,2021-09-23,,Non,Non,,,
 CERES EDITIONS PRESSE,89028336900027,"SAS, SOCIÉTÉ PAR ACTIONS SIMPLIFIÉE",33,Publication imprimée,SADPAD Magazine,Non Inscrit,Première demande en cours,2026-10-07,,,,,Non,,,,
 ORACOM,39752265700055,SA À CONSEIL D'ADMINISTRATION (S.A.I.),75,Publication imprimée,LITTERATURE DU MONDE,Non Inscrit,,,,,,,Non,,,,
-AFRIQUE EDUCATION,44116111400018,SARL,92,Publication imprimée,AFRIQUE EDUCATION,Non Inscrit,Demande de renouvellement en cours,2026-10-07,2583251,2026-09-30,2023-09-21,IPG,Non,Non,,,
 PRODIGEO ASSURANCES,48201126900016,SA,75,Publication imprimée,LE FIL DES ANS - Edition régionale 1 - SUD OUEST,Non Inscrit,Demande de renouvellement en cours,2026-10-07,2583733,2026-06-30,2021-10-07,,Non,Non,,,
 PRODIGEO ASSURANCES,48201126900016,SA,75,Publication imprimée,LE FIL DES ANS - Edition régionale 7 - Paris-Seine,Non Inscrit,Demande de renouvellement en cours,2026-10-07,2583454,2026-06-30,2021-10-07,,Non,Non,,,
 PRODIGEO ASSURANCES,48201169000016,SA,75,Publication imprimée,LE FIL DES ANS - Edition régionale 6- OUEST ATLANTIQUE,Non Inscrit,Demande de renouvellement en cours,2026-10-07,2583738,2026-06-30,2021-10-07,,Non,Non,,,
@@ -348,11 +422,8 @@ WORLD OF GOLF,,SA,,Publication imprimée,WORLD OF GOLF,Non Inscrit,Demande de re
 CHERRY ZEBRA AGENCY,51046069400043,"SAS, SOCIÉTÉ PAR ACTIONS SIMPLIFIÉE",92,Service de presse en ligne,MEDFLIXS.COM,Non Inscrit,Première demande en cours,2026-10-06,,,,,Non,,https://www.medflixs.com,,
 PGV MAISON,,SAS,78,Publication imprimée,SYSTEME D,Inscrit,Demande de renouvellement en cours,2026-10-06,2588493,2026-11-30,2022-01-13,,Non,Non,,,
 LELA PRESSE,,SARL,87,Publication imprimée,LES AILES - La revue du patrimoine et de l'histoire aéronautique française,Non Inscrit,Demande de renouvellement en cours,2026-10-05,2594700,2026-09-30,2025-09-18,,Non,Non,,,
-LE COURRIER DE LA MAYENNE,,SASU,53,Publication imprimée,LE COURRIER DE LA MAYENNE,Inscrit,Demande de renouvellement en cours,2026-10-05,2586003,2026-12-31,2021-12-09,CIBLAGE_POSTAL_D_19_2,Non,Oui,,,
-PUBLIHEBDOS,,SAS,35,Publication imprimée,LE PUBLICATEUR LIBRE,Inscrit,Demande de renouvellement en cours,2026-10-05,2585670,2026-11-30,2021-10-21,CIBLAGE_POSTAL_D_19_2,Non,Oui,,,
 YZE PRESSE,,SAS,75,Publication imprimée,ZEBRES & CIE - Le magazine de la neurodiversité,Inscrit,Demande de renouvellement en cours,2026-10-05,2595358,2026-11-30,2025-05-28,,Non,Non,,,
 PERFORMANCES MEDICALES,,SA,92,Publication imprimée,REALITES THERAPEUTIQUES EN ONCOLOGIE,Inscrit,Demande de renouvellement en cours,2026-10-05,2595356,2026-11-30,2024-11-07,,Non,Non,,,
-EDITIONS SPART,51874526000027,SARL,14,Publication imprimée,PATRIMOINE NORMAND,Non Inscrit,Nouvel examen d’un renouvellement en cours,2026-10-05,2587991,2026-07-02,2026-07-02,,Non,Non,,,
 FSU-SNUIPP 95,,,95,Publication imprimée,SNUIPP FSU 95 INFOS,Non Inscrit,Nouvel examen d’un renouvellement en cours,2026-10-05,2507630,2026-02-19,2026-02-19,,Oui,Non,,,
 SYNDICAT NATIONAL DES ENSEIGNANTS DU SECOND DEGRE/SECTION ACADEMIQUE DE VERSAILLES,,,75,Publication imprimée,SNES VERSAILLES,Inscrit,Demande de renouvellement en cours,2026-10-05,2508041,2026-11-30,2021-10-07,,Oui,Non,,,
 LA GAZETTE ECONOMIQUE DE L'HERAULT,,SARL,34,Publication imprimée,METROPOLITAIN 7 OFFICIEL,Inscrit,Demande de renouvellement en cours,2026-10-05,2587223,2026-11-30,2021-10-21,,Non,Oui,,,
@@ -378,24 +449,17 @@ FUTURIBLES,34054176200043,SARL,75,Service de presse en ligne,futuribles.com,Non 
 TOUS AU BAIN!,,SARL,75,Service de presse en ligne,sdbpro.fr,Non Inscrit,Demande de renouvellement en cours,2026-10-02,2594033,2026-09-30,2021-09-16,,Non,Non,https://www.sdbpro.fr/,,
 SOCIETE NOUVELLE SEMEUR HEBDO,80329468000022,SARL,63,Service de presse en ligne,semeur.com,Inscrit,Demande de renouvellement en cours,2026-10-02,2594119,2026-11-30,2021-09-16,IPG,Non,Oui,http://www.semeur.com,,
 SOCIÉTÉ D’EDITION MEUSIENNE DE LA PRESSE AGRICOLE - SEMPA,84718008000024,SARL,55,Service de presse en ligne,vieagricole-meuse.fr,Inscrit,Demande de renouvellement en cours,2026-10-02,2594765,2026-11-30,2024-10-03,,Non,Oui,https://www.vieagricole-meuse.fr/,,
-IMPRIMERIE GRAVE,42134836800018,SARL,72,Publication imprimée,L'ECHO DE VIBRAYE,Inscrit,Demande de renouvellement en cours,2026-10-02,2585428,2026-11-30,2024-11-07,,Non,Oui,,,
-GROUPE INDUSTRIE SERVICES INFO,,SAS,94,Publication imprimée,NEO RESTAURATION,Inscrit,Demande de renouvellement en cours,2026-10-02,2581055,2026-11-30,2021-12-09,,Non,Non,,,
 EDITIONS RIVA,,SAS,75,Publication imprimée,CYCLO COACH,Non Inscrit,Nouvel examen d’un renouvellement en cours,2026-10-02,2589385,2026-06-30,2023-06-08,,Non,Non,,,
 POÈTES SANS FRONTIÈRES,,ASSOCIATION,84,Publication imprimée,L'ETRAVE -Revue de poètes sans frontières,Non Inscrit,Demande de renouvellement en cours,2026-10-02,2588386,2026-09-30,2021-09-23,,Non,Non,,,
 DISSIDENTE,99208800500010,"SAS, SOCIÉTÉ PAR ACTIONS SIMPLIFIÉE",75,Publication imprimée,Dissidente - Revue antiraciste et féministe,Non Inscrit,Nouvel examen d’une première demande en cours,2026-10-02,,,,,Non,,,,
 SE UNSA,,,46,Publication imprimée,L'ENSEIGNANT DU LOT,Non Inscrit,Demande de renouvellement en cours,2026-10-02,2507978,2026-09-30,2021-09-09,,Oui,Non,,,
 CONFORM,33847050300040,SARL,75,Publication imprimée,HUMANISME,Non Inscrit,Demande de renouvellement en cours,2026-10-02,2586598,2026-09-30,2025-09-18,,Non,Non,,,
-SOCIETE D'EXPLOITATION DU JOURNAL PAYSANS DE LA LOIRE,,SARL,42,Publication imprimée,PAYSANS DE LA LOIRE,Non Inscrit,Demande de renouvellement en cours,2026-10-02,2585967,2026-09-30,2021-09-09,CIBLAGE_POSTAL_D_19_2,Non,Oui,,,
 OFFICE UNIVERSITAIRE DE RECHERCHE SOCIALISTE (OURS),,,75,Publication imprimée,L'OURS,Non Inscrit,Demande de renouvellement en cours,2026-10-02,2585555,2026-09-30,2021-09-23,,Non,Non,,,
-CINEMATEASER MEDIAS,92780434400012,SAS,75,Publication imprimée,CINEMATEASER,Non Inscrit,Demande de renouvellement en cours,2026-10-02,2590846,2026-09-30,2024-09-19,,Non,Non,,,
-UNION APOSTOLIQUE DU CLERGE (UAC),,ASSOCIATION,75,Publication imprimée,PRÊTRES DIOCESAINS,Non Inscrit,Demande de renouvellement en cours,2026-10-02,2588114,2026-05-31,2021-06-03,,Non,Non,,,
 ALCYON,,SARL,75,Publication imprimée,HOSPITALITY ON,Non Inscrit,Demande de renouvellement en cours,2026-10-02,2581904,2026-09-30,2024-09-19,,Non,Non,,,
-ASSOCIATION DES AMIS DES FRERES ET DES SOEURS DES MISSIONNAIRES ET DES SOEURS DES CAMPAGNES,78494824200028,,77,Publication imprimée,"CHRONIQUE- Frères, soeurs, amis missionnaires des campagnes",Non Inscrit,Nouvel examen d’un renouvellement en cours,2026-10-02,2585241,2026-04-30,2021-04-29,,Non,Non,,,
 HUBERT BURDA MEDIA,,SAS,92,Publication imprimée,SILENCE CA POUSSE,Non Inscrit,Nouvel examen d’un renouvellement en cours,2026-10-02,2594517,2023-03-23,2023-03-23,,Non,Non,,,
 SOCIETE D'EDITION DE LA VOIX DE LA TERRE,02712009600022,SARL,47,Publication imprimée,LA VOIX DE LA TERRE - Le journal rural du Lot-et-Garonne,Non Inscrit,Demande de renouvellement en cours,2026-10-02,2584155,2026-09-30,2025-09-18,,Non,Non,,,
 "SOCIETE D'EDITIONS ET DE PUBLICATIONS""""LES TALEMELIERS""""- SOTAL",,SA,75,Publication imprimée,LES NOUVELLES DE LA BOULANGERIE PATISSERIE,Non Inscrit,Demande de renouvellement en cours,2026-10-02,2588408,2026-09-30,2021-09-09,,Non,Non,,,
 ASSOCIATION SAINT-PAUL LE SILLON,,ASSOCIATION,87,Publication imprimée,LE SILLON - Journal familial Limousin,Non Inscrit,Demande de renouvellement en cours,2026-10-02,2588385,2026-09-30,2021-09-09,,Non,Non,,,
-POTOS FEU !,99475614600027,ASSOCIATION DÉCLARÉE,93,Publication imprimée,Courts Bouillon - De nouveaux horizons se dessinent,Non Inscrit,Première demande en cours,2026-10-02,,,,,Non,,,,
 100% VOLLEY,10140489500019,"SAS, SOCIÉTÉ PAR ACTIONS SIMPLIFIÉE",85,Publication imprimée,100% Volley,Non Inscrit,Première demande en cours,2026-10-02,,,,,Non,,,,
 EDITION RIVA,38914538400043,SAS,75,Publication imprimée,PECHE MOUCHE,Non Inscrit,Nouvel examen d’un renouvellement en cours,2026-10-02,2588853,2026-09-30,2025-09-18,,Non,Non,,,
 EDITIONS RIVA,,SAS,75,Publication imprimée,ESPRIT TRAIL,Non Inscrit,Nouvel examen d’un renouvellement en cours,2026-10-02,2584427,2026-09-30,2021-10-21,,Non,Non,,,
@@ -404,19 +468,15 @@ L'ESPACE DES SCIENCES,33073949100034,ASSOCIATION DÉCLARÉE,35,Publication impri
 EDITIONS LARIVIERE,,SAS,92,Publication imprimée,LE MONDE DU MULTICOQUE,Non Inscrit,Demande de renouvellement en cours,2026-10-01,2593456,2026-07-31,2021-09-09,,Non,Non,,,
 STUDIO GRAPHIQUES C. CHOPAT,44461501700019,SARL,88,Publication imprimée,CAUSONS-EN ! Votre magazine 100 % Vosgien,Non Inscrit,Demande de renouvellement en cours,2026-10-01,2585300,2026-09-30,2021-06-17,,Non,Non,,,
 PRESSMAKER,,SAS,75,Publication imprimée,FOU DE PATISSERIE,Non Inscrit,Demande de renouvellement en cours,2026-10-01,2594036,2026-09-30,2021-09-09,,Non,Non,,,
-TENDANCE OUEST,32598592700020,SARL,50,Publication imprimée,TENDANCE OUEST CAEN,Non Inscrit,Demande de renouvellement en cours,2026-10-01,2594707,2026-09-30,2021-09-23,,Non,Non,,,
-TENDANCE OUEST,32598592700020,SARL,50,Publication imprimée,TENDANCE OUEST ROUEN,Non Inscrit,Demande de renouvellement en cours,2026-10-01,2594708,2026-09-30,2021-09-23,,Non,Non,,,
 ASSOCIATION DES MUTILES DE GUERRE DES YEUX ET DES OREILLES,,,75,Publication imprimée,LE MUTILE DES YEUX,Non Inscrit,Demande de renouvellement en cours,2026-10-01,2507938,2026-07-31,2021-09-23,,Oui,Non,,,
 PRISMA MEDIA,31882618700102,SAS,92,Publication imprimée,ÇA M'INTERESSE HISTOIRE,Non Inscrit,Demande de renouvellement en cours,2026-10-01,2590735,2026-03-31,2021-04-29,,Non,Non,,,
 INVESTIR PUBLICATIONS,35166080800053,SAS,75,Service de presse en ligne,datagora.fr,Non Inscrit,Demande de renouvellement en cours,2026-10-01,2595415,2026-03-31,2025-03-27,,Non,Non,http://www.datagora.fr,,
 VERTIGE COMPANY,92747133400015,SAS,75,Service de presse en ligne,vertigemedia.fr,Non Inscrit,Demande de renouvellement en cours,2026-10-01,2595497,2026-09-30,2025-09-25,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,http://www.vertigemedia.fr,,
 VENTS DU MORVAN,,ASSOCIATION,71,Publication imprimée,VENTS DU MORVAN,Inscrit,Demande de renouvellement en cours,2026-10-01,2592539,2026-11-30,2021-11-18,,Non,Non,,,
-SOCIETE D'EDITION DE LA PRESSE REGIONALE,,SA,31,Publication imprimée,VOIX DU JURA,Inscrit,Demande de renouvellement en cours,2026-10-01,2585545,2026-11-30,2021-10-21,CIBLAGE_POSTAL_D_19_2,Non,Oui,,,
 L'INFORMATION DENTAIRE,50249438800064,SASU,75,Publication imprimée,CLINIC Pratiques et concepts actuels en médecine bucco-dentaire,Non Inscrit,Nouvel examen d’un renouvellement en cours,2026-10-01,2581204,2026-09-30,2025-09-18,,Non,Non,,,
 AGENCE D'EDITION MEDICALE (AEI),34982984600089,SARL,75,Service de presse en ligne,infectio-news.com,Non Inscrit,Demande de renouvellement en cours,2026-10-01,2594480,2026-06-30,2023-06-29,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,http://infectio-news.com/,,
 LE BON MESSAGER,,ASSOCIATION,82,Publication imprimée,LE BON MESSAGER - Journal du consistoire réformé du montalbanais,Inscrit,Demande de renouvellement en cours,2026-10-01,2580119,2026-12-31,2021-11-18,,Non,Non,,,
 BAYARD,54204248600119,SA,92,Service de presse en ligne,lepelerin.com,Non Inscrit,Demande de renouvellement en cours,2026-10-01,2590211,2026-09-30,2024-11-28,IPG,Non,Non,http://www.lepelerin.com,,
-L'OBSERVATEUR,,SAS,59,Publication imprimée,LA THIERACHE,Inscrit,Demande de renouvellement en cours,2026-10-01,2582409,2026-11-30,2021-10-21,CIBLAGE_POSTAL_D_19_2,Non,Oui,,,
 CHAMPAGNE EDITIONS,,SARL,51,Publication imprimée,LA MARNE VITICOLE,Inscrit,Demande de renouvellement en cours,2026-10-01,2592522,2026-11-30,2021-11-18,,Non,Non,,,
 LES EDITIONS LA VIE DU RAIL,,SA,75,Publication imprimée,VILLE RAIL ET TRANSPORTS - Territoires mobilités,Inscrit,Demande de renouvellement en cours,2026-10-01,2590055,2026-11-30,2021-10-21,,Non,Non,,,
 DIS-LEUR,85061415700012,SAS,34,Service de presse en ligne,dis-leur.fr,Non Inscrit,,,2594032,2026-09-30,2023-03-09,,Non,Non,https://dis-leur.fr/,,
@@ -425,11 +485,8 @@ CHASSES DE PICARDIE,,EURL,02,Publication imprimée,CHASSES DE PICARDIE,Non Inscr
 SNES-FSU HERAULT,,,34,Publication imprimée,SNES 34,Non Inscrit,Demande de renouvellement en cours,2026-09-21,2505287,2026-09-30,2021-10-07,,Oui,Non,,,
 EDP SCIENCES,30839268700049,SAS,91,Publication imprimée,LE NOUVEAU PRATICIEN VETERINAIRE - Elevages et santé,Non Inscrit,Nouvel examen d’un renouvellement en cours,2026-09-22,2588300,2026-09-30,2025-09-18,,Non,Non,,,
 1HEALTHMEDIA - HEALTH INITIATIVE,,SAS,75,Service de presse en ligne,lepointveterinaire.fr,Non Inscrit,Demande de renouvellement en cours,2026-09-25,2592242,2026-09-30,2022-01-20,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,http://www.lepointveterinaire.fr,,
-PRESSE ET MEDIAS DE GIRONDE,,SARL,33,Publication imprimée,LE JOURNAL DU MEDOC,Non Inscrit,Demande de renouvellement en cours,,2586861,2026-09-30,2021-09-09,CIBLAGE_POSTAL_D_19_2,Non,Oui,,,
 SNES,,,45,Publication imprimée,SNES ORLEANS TOURS,Non Inscrit,Demande de renouvellement en cours,2026-09-21,2506794,2026-09-30,2021-09-23,,Oui,Non,,,
-EXCEPTO,,SA,63,Publication imprimée,L'AUVERGNE AGRICOLE,Non Inscrit,Demande de renouvellement en cours,2026-09-08,2579650,2026-09-30,2021-09-23,DISPOSITIF_FISCAL_39_BIS_A,Non,Oui,,,
 GRAPHIK EDITIONS,,SARL,06,Publication imprimée,HISTOIRE & CONSEQUENCES,Non Inscrit,,,2594701,2026-09-30,2021-09-23,,Non,Non,,,
-SOCIETE DES EDITIONS DE PRESSE AFFICHES PARISIENNES,57222759300066,SA,75,Publication imprimée,AFFICHES PARISIENNES,Non Inscrit,Nouvel examen d’un renouvellement en cours,,2586209,2026-09-30,2021-09-23,CIBLAGE_POSTAL_D_19_2,Non,Oui,,,
 WEB LEX,80306481500019,SAS,44,Service de presse en ligne,weblex.fr,Non Inscrit,Demande de renouvellement en cours,,2592436,2026-09-30,2021-09-16,,Non,Non,http://www.weblex.fr,,
 PREMIERES LOGES,,SARL,75,Service de presse en ligne,pianiste.fr,Non Inscrit,,,2594687,2026-09-30,2021-09-16,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,http://www.pianiste.fr,,
 ORACOM,,SA,75,Publication imprimée,LA MACHINE A ECRIRE,Non Inscrit,,,2595326,2026-09-30,2024-09-19,,Non,Non,,,
@@ -438,9 +495,6 @@ GASTRONOMIE-INFO,81134336700017,SARL,74,Service de presse en ligne,gastronomie-a
 FRATERNITE CHRETIENNE DES PERSONNES MALADES ET HANDICAPEES DU DEPARTEMENT DE LA MAYENNE,,,53,Publication imprimée,LES MALADES PARLENT AUX MALADES,Non Inscrit,,,2585291,2026-09-30,2024-11-16,,Non,Non,,,
 EDITIONS LEGISLATIVES,73201140800059,SASU,92,Service de presse en ligne,elnet.fr,Non Inscrit,,,2593198,2026-09-30,2021-11-25,,Non,Non,http://www.elnet.fr,,
 SNUDI FO,,,02,Publication imprimée,L'INSTITUTEUR LAIQUE DE L'AISNE,Non Inscrit,,,2506739,2026-09-30,2021-09-09,,Oui,Non,,,
-SOCIETE NOUVELLE DES EDITIONS COMTOISES - SNEC -,,SARL,70,Publication imprimée,LA PRESSE DE GRAY,Non Inscrit,Demande de renouvellement en cours,,2579353,2026-09-30,2021-09-09,CIBLAGE_POSTAL_D_19_2,Non,Oui,,,
-PRESSE EDITION COMMUNICATION INTERNATIONALES (PECI),,SARL,75,Publication imprimée,INPRECOR,Non Inscrit,Demande de renouvellement en cours,2026-09-24,2588313,2026-09-30,2021-10-21,,Non,Non,,,
-PUBLIHEBDOS,48728001801364,SAS,35,Publication imprimée,LIBERTE - Le bonhomme libre,Non Inscrit,Demande de renouvellement en cours,,2580762,2026-09-30,2022-02-03,CIBLAGE_POSTAL_D_19_2,Non,Oui,,,
 VAMEDIA,49178784200021,SARL,59,Service de presse en ligne,va-infos.fr,Non Inscrit,Demande de renouvellement en cours,2026-09-25,2592434,2026-09-30,2021-09-16,,Non,Non,http://www.va-infos.fr,,
 EDITIONS ESKA,,SARL,75,Publication imprimée,SECURITE GLOBALE Horizons Stratégiques,Non Inscrit,,,2590246,2026-09-30,2021-12-09,,Non,Non,,,
 CONFEDERATION GENERALE DU TRAVAIL FORCE OUVRIERE,78457824700040,,75,Publication imprimée,L'INFO MILITANTE,Non Inscrit,Demande de renouvellement en cours,,2505818,2026-09-30,2021-09-23,,Oui,Non,,,
@@ -455,7 +509,6 @@ BAYARD,,SA,92,Publication imprimée,NOTRE TEMPS JEUX,Non Inscrit,Demande de reno
 REWORLD MEDIA MAGAZINES,,SAS,92,Publication imprimée,ICON,Non Inscrit,,,2595324,2026-09-30,2024-09-19,,Non,Non,,,
 ASSOCIATION DES ANCIENS ELEVES DE L'ENSCP (A.A.E. E.N.S.C.P),,,75,Publication imprimée,CHIMIE PARIS,Non Inscrit,,,2585844,2026-09-30,2021-09-09,,Non,Non,,,
 LES EDITIONS IMAGINAIRES,83436464800016,SASU,13,Publication imprimée,LA TRIBU DES IDÉES,Non Inscrit,Demande de renouvellement en cours,2026-09-25,2593729,2026-09-30,2021-09-23,,Non,Non,,,
-SOCIETE D'EDITION DE LA TERRE DAUPHINOISE,38399885300022,SARL,38,Publication imprimée,TERRE DAUPHINOISE,Non Inscrit,Demande de renouvellement en cours,,2585371,2026-09-30,2021-09-09,CIBLAGE_POSTAL_D_19_2,Non,Oui,,,
 HEALTH & CO,43465589000029,SARL,69,Service de presse en ligne,risqual.net,Non Inscrit,,,2594991,2026-09-30,2022-09-28,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,http://www.risqual.net,,
 BOOKSTORMING PUBLICATIONS,,SARL,75,Publication imprimée,ARCHISTORM Architecture et Design,Non Inscrit,,,2583530,2026-09-30,2021-09-23,,Non,Non,,,
 ACTA MEDIA,,SARL,75,Publication imprimée,ASSISTANT(E) PLUS,Non Inscrit,,,2580962,2026-09-30,2021-09-23,,Non,Non,,,
@@ -469,7 +522,6 @@ RÉGIE PRESSE & PUB,89086100800013,SASU,75,Publication imprimée,TOUT CHIEN !,No
 MARIE CLAIRE ALBUM,55206277000044,SAS,92,Publication imprimée,MARIE CLAIRE IDEES,Non Inscrit,Nouvel examen d’un renouvellement en cours,,2584619,2026-09-30,2024-09-19,,Non,Non,,,
 LEARNINGSHELTER,,SA,75,Publication imprimée,ODYSSEES par Livementor,Non Inscrit,,,2594228,2026-09-30,2024-10-15,,Non,Non,,,
 THE FUNAMBULIST,,SARL,75,Publication imprimée,THE FUNAMBULIST,Non Inscrit,,,2592818,2026-09-30,2021-09-09,,Non,Non,,,
-SOCIETE DE PRESSE L'ESSOR BIGOURDAN,,SARL,65,Publication imprimée,L'ESSOR BIGOURDAN,Non Inscrit,Demande de renouvellement en cours,2026-09-25,2583694,2026-09-30,2024-10-15,CIBLAGE_POSTAL_D_19_2,Non,Oui,,,
 CANCERODIGEST,75101491100018,SARL,63,Service de presse en ligne,lecancer.fr,Non Inscrit,Demande de renouvellement en cours,,2592416,2026-09-30,2021-09-16,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,http://lecancer.fr,,
 RAYKEEA,79350837500052,SARL,75,Publication imprimée,HOTEL & LODGE,Non Inscrit,Demande de renouvellement en cours,2026-09-22,2582562,2026-09-30,2025-09-18,,Non,Non,,,
 JAZZ CLUB FRANCE,,ASSOCIATION,27,Publication imprimée,JAZZ DIXIE / SWING,Non Inscrit,,,2588417,2026-09-30,2021-09-23,,Non,Non,,,
@@ -540,7 +592,6 @@ SNUIPP FSU - SECTION VAUCLUSE,42057452700016,,84,Publication imprimée,L'ECOLE D
 MANGO MEDIA,88039275800012,ASSOCIATION,74,Service de presse en ligne,lepetitreporterdu73.com,Non Inscrit,,,2594324,2026-09-30,2022-09-28,DISPOSITIF_FISCAL_39_BIS_A,Non,Non,https://www.lepetitreporterdu73.com/,,
 LEXISNEXIS,,SA,75,Publication imprimée,JURIS CLASSEUR CONSTRUCTION - URBANISME,Non Inscrit,,,2580898,2026-09-30,2021-09-23,,Non,Non,,,
 EDITIONS RIVA,38914538400043,,75,Publication imprimée,ESPRIT TRACTEUR,Non Inscrit,,,2595477,2026-09-30,2025-09-18,,Non,Non,,,
-LA REDACTION,82919659100020,ASSOCIATION,13,Publication imprimée,L'ARLESIENNE enquête gazette anisette,Non Inscrit,Demande de renouvellement en cours,,2593873,2026-09-30,2024-09-19,IPG,Non,Non,,,
 ELSEVIER MASSON,,SAS,92,Publication imprimée,ORTHO Magazine,Non Inscrit,,,2581172,2026-09-30,2023-10-19,,Non,Non,,,
 SOCIÉTÉ MIDI AVEYRON PRESSE (SOMAP),,SNC,34,Service de presse en ligne,journaldemillau.fr,Non Inscrit,Demande de renouvellement en cours,,2594688,2026-09-30,2021-09-16,IPG,Non,Non,http://www.journaldemillau.fr,,
 "FONDATION""""LA CAUSE""""",,ASSOCIATION,78,Publication imprimée,LES NOUVELLES DE LA CAUSE,Non Inscrit,,,2586756,2026-09-30,2021-06-03,,Non,Non,,,
@@ -587,7 +638,6 @@ SYNDICAT CGT DE L'ENERGIE DE LA GIRONDE/ SECTION RETRAITES ET VEUVES DU SYNDICAT
 BRICKLY,94178172600018,SAS,75,Service de presse en ligne,brickly.fr,Non Inscrit,,,2595498,2026-09-30,2025-10-07,DISPOSITIF_FISCAL_39_BIS_A,Non,Non,http://www.brickly.fr,,
 BOCAGE,,SARL,75,Publication imprimée,RACONTE - MOI DES PRINCESSES,Non Inscrit,,,2594006,2026-09-30,2022-03-03,,Non,Non,,,
 NEXTINTERACTIVE,31124379400162,SAS,75,Service de presse en ligne,tradingsat.com,Non Inscrit,,,2590725,2026-09-30,2021-11-25,,Non,Non,https://www.tradingsat.com/,,
-BAYARD,,SA,92,Publication imprimée,JE COLLE JE COLORIE,Non Inscrit,Demande de renouvellement en cours,2026-09-29,2593169,2026-09-30,2021-10-21,,Non,Non,,,
 PYC MEDIA,,SAS,75,Publication imprimée,SERVICES,Non Inscrit,Demande de renouvellement en cours,2026-09-25,2582588,2026-09-30,2021-10-07,,Non,Non,,,
 OLIVETAN,,ASSOCIATION,69,Publication imprimée,ECHANGES - Presse régionale protestante en Provence-Alpes-Corse-Côte-d'Azur,Non Inscrit,Demande de renouvellement en cours,2026-09-22,2582351,2026-09-30,2021-09-09,,Non,Non,,,
 DEALFLOW-DATA,82010879300028,SAS,91,Service de presse en ligne,fusions-acquisitions.info,Non Inscrit,Demande de renouvellement en cours,,2593143,2026-09-30,2023-09-28,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,http://fusions-acquisitions.info,,
@@ -612,8 +662,6 @@ GROUPE PEDAGOFICHE,58628001800043,SAS,63,Service de presse en ligne,mairiexpertb
 DIVERTI EDITIONS,49031736900026,"SAS, SOCIÉTÉ PAR ACTIONS SIMPLIFIÉE",86,Publication imprimée,TOUT SAVOIR SANTE,Non Inscrit,Première demande en cours,2026-09-28,,,,,Non,,,,
 FSU SNUIPP 34,,ASSOCIATION,34,Publication imprimée,VOIX ACTIVE FSU SNUIPP 34,Non Inscrit,Nouvel examen d’un renouvellement en cours,2026-09-28,2508105,2026-04-30,2024-04-18,,Oui,Non,,,
 AUTOMOBILITY MEDIA,,SAS,92,Publication imprimée,LE JOURNAL DE L'AUTOMOBILE,Inscrit,Demande de renouvellement en cours,2026-09-25,2583044,2026-11-30,2021-10-21,,Non,Non,,,
-NOUVELLES DE LOIRE-ATLANTIQUE PUBLICITE,32151228700012,SARL,44,Publication imprimée,LES NOUVELLES DE LOIRE ATLANTIQUE,Non Inscrit,Demande de renouvellement en cours,2026-09-25,2511519,2025-10-23,2025-10-23,,Oui,Non,,,
-JOURNAL DU DIOIS ET DE LA DROME,,SARL,26,Publication imprimée,LE JOURNAL DU DIOIS ET DE LA DROME,Inscrit,Demande de renouvellement en cours,2026-09-25,2586398,2026-11-30,2024-11-07,CIBLAGE_POSTAL_D_19_2,Non,Oui,,,
 BAUER MEDIA FRANCE,33311070800059,SCS,75,Publication imprimée,LES JEUX DE MAXI,Non Inscrit,Demande de renouvellement en cours,2026-09-25,2589252,2026-05-31,2025-05-15,,Non,Non,,,
 TURBULENCES PRESSE,39901199800081,"SAS, SOCIÉTÉ PAR ACTIONS SIMPLIFIÉE",63,Publication imprimée,GRAVEL - L'AVENTURE AU BOUT DU CHEMIN,Non Inscrit,Première demande en cours,2026-09-25,,,,,Non,,,,
 ALVES LOPES YANN,10694473900015,ENTREPRENEUR INDIVIDUEL,77,Service de presse en ligne,thecrossingtime.com,Non Inscrit,Première demande en cours,2026-09-25,,,,,Non,,https://thecrossingtime.com/,,
@@ -631,7 +679,6 @@ PLUS LOIN QUE LES ETOILES,90972662200014,MICRO-ENTREPRENEUR,30,Publication impri
 ASSOCIATION CASTEL ACTUALITE,10022099500011,ASSOCIATION DÉCLARÉE,44,Service de presse en ligne,CasteActu.fr,Non Inscrit,Première demande en cours,2026-09-23,,,,,Non,,http://www.CastelActu.fr,,
 DEPESCHE VERTRIEB GMBH,,,,Publication imprimée,TOP MODEL,Non Inscrit,Demande de renouvellement en cours,2026-09-23,2594636,2026-07-31,2021-07-01,,Non,Non,,,
 PRESSES UNIVERSITAIRES DE GRENOBLE,,SCIC,38,Publication imprimée,JUSQU'A LA MORT ACCOMPAGNER LA VIE,Non Inscrit,Demande de renouvellement en cours,2026-09-23,2585229,2026-07-31,2021-07-01,,Non,Non,,,
-SOCIETE DES PRETRES DE SAINT JACQUES,,,29,Publication imprimée,LA LETTRE DE SAINT JACQUES,Non Inscrit,Demande de renouvellement en cours,2026-09-22,2587559,2026-02-28,2021-03-30,,Non,Non,,,
 EDITIONS RIVA,38914538400043,"SAS, SOCIÉTÉ PAR ACTIONS SIMPLIFIÉE",75,Publication imprimée,LE BUREAU DES ENQUETES,Non Inscrit,Première demande en cours,2026-09-22,,,,,Non,,,,
 SPORTEEN MEDIA,89080351300013,SAS,31,Publication imprimée,SPORTEEN - BIEN PLUS QUE DU SPORT,Non Inscrit,Nouvel examen d’un renouvellement en cours,2026-09-22,2594453,2026-06-11,2026-06-11,,Non,Non,,,
 MAGICUS,,ASSOCIATION,31,Publication imprimée,MAGICUS MAGAZINE,Non Inscrit,Demande de renouvellement en cours,2026-09-22,2586969,2024-02-15,2024-02-15,,Non,Non,,,
@@ -754,7 +801,6 @@ LES AMIS DE RADIO NIZZA - ASSOCIATION FRANCO ITALIENNE,90475519600014,ASSOCIATIO
 SOCIETE D'EXPLOITATION DE L'HEBDOMADAIRE LE POINT (SEBDO),31240878400030,SA,75,Service de presse en ligne,lepoint.fr,Non Inscrit,,,2590627,2025-11-30,2021-01-14,IPG,Non,Non,http://www.lepoint.fr,,
 SW MEDIAS,82893984300011,SAS,54,Service de presse en ligne,basketeurope.com,Non Inscrit,,,2593399,2025-11-30,2020-11-19,,Non,Non,http://www.basketeurope.com,,
 WEB CULTURE VIDEO,53883429200012,ASSOCIATION,75,Service de presse en ligne,forks-monaco.net,Non Inscrit,,,2594505,2023-03-31,2023-10-26,,Non,Non,http://www.forks-monaco.net,,
-E-MIR,81196733000028,SAS,91,Publication imprimée,LE REPUBLICAIN DE L'ESSONNE,Non Inscrit,Demande de renouvellement en cours,,2586769,2026-04-30,2021-07-06,CIBLAGE_POSTAL_D_19_2,Non,Oui,,,
 L'INFORMATION GARDOISE,56020035400010,SARL,30,Publication imprimée,LE COMMERCIAL DU GARD,Non Inscrit,Nouvel examen d’un renouvellement en cours,,2585866,2026-06-30,2025-06-05,,Non,Oui,,,
 ADDICTIONS ALCOOL VIE LIBRE,77572371100203,ASSOCIATION,51,Publication imprimée,LIBRES,Non Inscrit,Demande de renouvellement en cours,,2584803,2026-06-30,2025-06-26,,Non,Non,,,
 SOCIETE D'EDITION FRANCE D'ABORD,58207899400016,SARL,75,Publication imprimée,LE JOURNAL DE LA RESISTANCE - FRANCE D'ABORD,Non Inscrit,Demande de renouvellement en cours,,2506405,2026-05-31,2021-04-29,,Oui,Non,,,
@@ -769,33 +815,19 @@ QUALI'PRESSE,93440721400014,"SAS, SOCIÉTÉ PAR ACTIONS SIMPLIFIÉE",14,Publicat
 EDITIONS LEGISLATIVES,73201140800059,SAS,92,Publication imprimée,ACTUALITES GESTION ET ADMINISTRATION DES RESSOURCES HUMAINES,Non Inscrit,Demande de renouvellement en cours,,2591307,2026-05-31,2021-06-03,,Non,Non,,,
 LE DROIT DE VIVRE,55202524900020,SOCIÉTÉ À RESPONSABILITÉ LIMITÉE (SANS AUTRE INDICATION),75,Publication imprimée,LE DROIT DE VIVRE (LE DDV) - Revue universaliste et antiraciste,Non Inscrit,Première demande en cours,,,,,,Non,,,,
 BICROSS EDITIONS,98412887600047,"SAS, SOCIÉTÉ PAR ACTIONS SIMPLIFIÉE",13,Publication imprimée,Bicross Club,Non Inscrit,Première demande en cours,,,,,,Non,,,,
-UNION DEPARTEMENTALE DES SYNDICATS CGT DE LA NIEVRE,77847752100026,,58,Publication imprimée,LE TRAVAILLEUR NIVERNAIS - Journal de l'Union Départementale des Syndicats CGTde la Nièvre,Non Inscrit,Demande de renouvellement en cours,,2506702,2025-11-30,2021-01-21,,Oui,Non,,,
 "CENTRE D'ETUDE DE FORMATION ET D'ACTIONS""""PAYSANS""""",77566339600056,ASSOCIATION,75,Publication imprimée,PAYSANS & SOCIETE,Non Inscrit,Demande de renouvellement en cours,,2588326,2026-07-31,2021-09-29,IPG,Non,Non,,,
 PRIVAL JEAN MARIE,53363211300031,MICRO-ENTREPRENEUR,63,Publication imprimée,KIPUKA,Non Inscrit,Demande de renouvellement en cours,,2595129,2026-06-30,2024-11-26,,Non,Non,,,
-UNION NATIONALE DES PARACHUTISTES (UNP),30586995000140,ASSOCIATION,94,Publication imprimée,DEBOUT LES PARAS,Non Inscrit,Demande de renouvellement en cours,,2584994,2026-06-30,2021-07-01,,Oui,Non,,,
-EDITIONS PUY DU FOU,93397721700019,SAS,85,Publication imprimée,LE PANACHE Toutes les histoires qui racontent la France,Non Inscrit,Demande de renouvellement en cours,,2595435,2026-05-31,2025-05-15,,Non,Non,,,
-L'EST ECLAIR,41289758700100,SAS,10,Publication imprimée,LIBERATION CHAMPAGNE,Non Inscrit,Demande de renouvellement en cours,,2586491,2026-06-30,2025-06-26,CIBLAGE_POSTAL_D_19_2,Non,Oui,,,
-L'EST ECLAIR,41287958700100,SAS,10,Publication imprimée,L'EST ECLAIR,Non Inscrit,Demande de renouvellement en cours,,2586412,2026-06-30,2025-06-26,CIBLAGE_POSTAL_D_19_2,Non,Oui,,,
 ANERCEA-ASSOCIATION NATIONALE DES ELEVEURS DE REINES ET DES CENTRES D'ELEVAGES APICOLES,47834051600028,ASSOCIATION,17,Publication imprimée,INFO REINES,Non Inscrit,Demande de renouvellement en cours,,2587122,2026-07-31,2021-09-23,,Non,Non,,,
-SOCIETE DU JOURNAL DE L'UNION,33568067400629,SA,51,Publication imprimée,L'ARDENNAIS,Non Inscrit,Demande de renouvellement en cours,,2586726,2026-07-31,2021-07-01,CIBLAGE_POSTAL_D_19_2,Non,Oui,,,
 ASSOCIATION AMICALE DES ANCIENNES ELÈVES DES MAISONS D'EDUCATION DE LA LÉGION D'HONNEUR,,,37,Publication imprimée,FAIRE EQUIPE,Non Inscrit,Demande de renouvellement en cours,,2583386,2026-07-31,2021-11-18,,Non,Non,,,
-CENTRE FRANCE HEBDOS,85620030800075,SAS,63,Publication imprimée,LA VOIX-SANCERROIS-SOLOGNE-VAL DE LOIRE,Non Inscrit,Demande de renouvellement en cours,,2581471,2026-07-31,2021-09-23,CIBLAGE_POSTAL_D_19_2,Non,Oui,,,
-PUBLIHEBDOS,48728001801364,SAS,35,Publication imprimée,CHRONIQUE REPUBLICAINE,Non Inscrit,Demande de renouvellement en cours,,2580165,2026-07-31,2021-07-01,CIBLAGE_POSTAL_D_19_2,Non,Non,,,
-"IDM RHÔNE- ALPES, INFORMATION DEVELOPPEMENT MEDIAS RHÔNE ALPES",48001821700020,SAS,69,Publication imprimée,BREF ECO,Non Inscrit,Demande de renouvellement en cours,,2579536,2026-07-31,2021-10-21,,Non,Non,,,
 CONFEDERATION GENERALE DU TRAVAIL,77567845100060,,93,Publication imprimée,LE PEUPLE Organe officiel de la CGT,Non Inscrit,Demande de renouvellement en cours,,2506460,2026-07-31,2021-09-23,,Oui,Non,,,
 UNION PRESSE,32018930100023,SARL,75,Publication imprimée,UNION PRESSE,Non Inscrit,Demande de renouvellement en cours,,2588273,2026-07-31,2021-06-17,,Non,Non,,,
 SE UNSA LOIRET,30066233500037,,45,Publication imprimée,L'ENSEIGNANT DU LOIRET - SE-UNSA,Non Inscrit,Demande de renouvellement en cours,,2507786,2026-07-31,2021-07-01,,Oui,Non,,,
-"ASSOCIATION""""LES AMIS DE JACQUES BAINVILLE""""",48350828900012,,75,Publication imprimée,LA NOUVELLE REVUE UNIVERSELLE,Non Inscrit,Demande de renouvellement en cours,,2586910,2026-07-31,2021-07-01,IPG,Non,Non,,,
-SOCIETE INDEPENDANTE DE PRESSE D'ANCENIS,85780456100028,SARL,44,Publication imprimée,L'ECHO D'ANCENIS,Non Inscrit,Demande de renouvellement en cours,,2580630,2026-06-30,2021-05-20,CIBLAGE_POSTAL_D_19_2,Non,Oui,,,
-LA VOIX DU NORD,45750726700013,SA,59,Publication imprimée,LA VOIX DU NORD,Non Inscrit,Demande de renouvellement en cours,,2586576,2026-04-30,2025-06-05,CIBLAGE_POSTAL_D_19_2,Non,Oui,,,
-LA VOIX DU NORD,45750726700013,SA,59,Publication imprimée,NORD ECLAIR,Non Inscrit,Demande de renouvellement en cours,,2583024,2026-04-30,2021-04-15,CIBLAGE_POSTAL_D_19_2,Non,Oui,,,
 ASSOCIATION DIOCESAINE DE NICE,78261368100017,,06,Publication imprimée,EGLISE DES ALPES-MARITIMES,Non Inscrit,Demande de renouvellement en cours,,2580499,2026-04-30,2021-04-29,,Non,Non,,,
 LES ETUDES HOSPITALIERES,40155055300028,SAS,33,Publication imprimée,REVUE GENERALE DE DROIT MEDICAL,Non Inscrit,Demande de renouvellement en cours,,2588183,2026-05-31,2023-05-25,,Non,Non,,,
 SOCIETE D'EXPLOITATION DE L'HEBDOMADAIRE LE POINT,31240878400030,SA À CONSEIL D'ADMINISTRATION (S.A.I.),75,Publication imprimée,Saisons,Non Inscrit,Première demande en cours,,,,,,Non,,,,
 TERRAN MAGAZINE,42175044900017,SASU,31,Publication imprimée,LE LIEN CREATIF,Inscrit,Demande de renouvellement en cours,,2591615,2028-06-11,2026-06-11,,Non,Non,,,
 DIOCESE DE METZ,18570093700013,,57,Publication imprimée,EGLISE DE METZ,Inscrit,Demande de renouvellement en cours,,2587442,2031-06-11,2026-06-11,,Non,Non,,,
 ARCHEMEDIAS,87982078500013,SARL,31,Publication imprimée,"NATIVES - Des peuples, des racines",Non Inscrit,Demande de renouvellement en cours,,2594312,2026-06-30,2025-06-05,,Non,Non,,,
-LES RELATIONS PUBLIQUES ET ADMINISTRATIVES,63201616800056,SARL,75,Publication imprimée,L'ESSOR DE LA GENDARMERIE,Non Inscrit,Demande de renouvellement en cours,,2580636,2026-06-30,2021-06-17,,Non,Non,,,
 R.M.P,80274378100048,SAS,92,Publication imprimée,MAISON ET TRAVAUX,Non Inscrit,Demande de renouvellement en cours,,2583223,2026-06-30,2021-09-23,,Non,Non,,,
 CP PRESSE,44498480100043,SARL,92,Publication imprimée,VOYAGES A MOTO,Non Inscrit,Demande de renouvellement en cours,,2594562,2026-05-31,2021-05-20,,Non,Non,,,
 BUCODES SURDIFRANCE,42078416700058,ASSOCIATION,75,Publication imprimée,6 MILLIONS DE MALENTENDANTS,Non Inscrit,Demande de renouvellement en cours,,2584996,2026-06-30,2021-07-01,,Non,Non,,,
@@ -810,7 +842,6 @@ PRISMA MEDIA,31882618700102,"SAS, SOCIÉTÉ PAR ACTIONS SIMPLIFIÉE",92,Publicat
 LEVAS,94766554300015,"SAS, SOCIÉTÉ PAR ACTIONS SIMPLIFIÉE",75,Publication imprimée,Globalsecurity Mag,Non Inscrit,Première demande en cours,,,,,,Non,,,,
 ASSOCIATION DIOCESAINE DE SAINT-BRIEUC ET TREGUIER,43226952000024,,22,Publication imprimée,VIVRE ENSEMBLE - Bulletin de la Paroisse Saint-Brieuc,Non Inscrit,Demande de renouvellement en cours,,2584993,2026-06-30,2021-07-01,,Non,Non,,,
 LES EDITIONS SECONDES,80809033600039,SAS,75,Publication imprimée,MOUVEMENT magazine culturel indisciplinaire,Non Inscrit,Demande de renouvellement en cours,,2578261,2026-05-31,2024-05-29,IPG,Non,Non,,,
-PUBLIHEBDOS,48728001801364,SAS,35,Publication imprimée,L'INFORMATEUR,Non Inscrit,Demande de renouvellement en cours,,2584625,2026-06-30,2021-07-01,CIBLAGE_POSTAL_D_19_2,Non,Oui,,,
 MOUVEMENT DE LA PAIX COMITE DES VOSGES,84990464400010,ASSOCIATION,88,Publication imprimée,VOSGES POUR LA PAIX,Non Inscrit,Demande de renouvellement en cours,,2593950,2026-06-30,2021-06-03,,Non,Non,,,
 C.H.A.T.E.L.,42044449900016,ASSOCIATION,54,Publication imprimée,LA GAZETTE LORRAINE - La revue du Patrimoine et de l'Environnement,Non Inscrit,Demande de renouvellement en cours,,2588003,2026-05-31,2021-06-03,,Non,Non,,,
 ALCYON MEDIA,45117067400043,SARL,05,Publication imprimée,CARNETS D'AVENTURES,Non Inscrit,Demande de renouvellement en cours,,2584534,2026-06-30,2024-06-06,,Non,Non,,,
@@ -827,7 +858,6 @@ FALLET MAROUSSIA,94146550200016,ENTREPRENEUR INDIVIDUEL,38,Publication imprimée
 ECONOMIE ET POLITIQUE,59201847700030,SARL,75,Publication imprimée,ECONOMIE ET POLITIQUE,Non Inscrit,Demande de renouvellement en cours,,2584443,2026-06-30,2024-06-20,,Non,Non,,,
 EDITIONS HUBERT BURDA MEDIA,48402606700047,SAS,92,Publication imprimée,SAVEURS,Non Inscrit,Demande de renouvellement en cours,,2586782,2026-06-30,2021-09-09,,Non,Non,,,
 HC EDITIONS,44460474800053,SAS,33,Publication imprimée,REVUE GENERALE DES CHEMINS DE FER,Non Inscrit,Demande de renouvellement en cours,,2580183,2026-05-31,2023-05-04,,Non,Non,,,
-WE DEMAIN,75005157500058,SARL,75,Publication imprimée,WE DEMAIN,Non Inscrit,Demande de renouvellement en cours,,2591382,2026-06-30,2021-06-17,IPG,Non,Non,,,
 JLJ PRESSE,44513462000027,SARL,92,Publication imprimée,LE MANAGER DE L'ALIMENTAIRE,Non Inscrit,Demande de renouvellement en cours,,2582822,2026-06-30,2024-06-20,,Non,Non,,,
 L'AMI DU 20ÈME,41475260000026,ASSOCIATION,75,Publication imprimée,L'AMI DU 20ème,Non Inscrit,Demande de renouvellement en cours,,2588395,2026-06-30,2021-07-01,,Non,Non,,,
 ASSOCIATION DES MAIRES RURAUX DE FRANCE (A.M.R.F),32811628000079,,69,Publication imprimée,36000 COMMUNES Le mensuel des maires ruraux de France,Non Inscrit,Demande de renouvellement en cours,,2584400,2026-06-30,2021-06-03,,Non,Non,,,
@@ -838,8 +868,6 @@ NG PRESSE,49450143000032,SARL,69,Publication imprimée,EVO,Non Inscrit,Demande d
 V COLLECTION,,SAS,75,Publication imprimée,HARPER'S BAZAAR - Edition Française,Inscrit,Demande de renouvellement en cours,,2595107,2028-05-31,2023-05-04,,Non,Non,,,
 ASSOCIATION DIOCESAINE DE SAINT- BRIEUC ET TREGUIER,40994154900027,,22,Publication imprimée,VIVRE EN EGLISE AU PAYS DE JUGON,Non Inscrit,Demande de renouvellement en cours,,2578868,2026-06-30,2021-05-20,,Non,Non,,,
 MISSION CATHOLIQUE HONGROISE,31228462300013,,75,Publication imprimée,ELETÜNK,Non Inscrit,Demande de renouvellement en cours,,2588058,2026-05-31,2021-07-01,,Non,Non,,,
-PUBLIHEBDOS,48728001801364,SAS,35,Publication imprimée,LE PETIT COURRIER L'ECHO DE LA VALLEE DU LOIR,Non Inscrit,Demande de renouvellement en cours,,2581073,2026-06-30,2021-07-01,CIBLAGE_POSTAL_D_19_2,Non,Oui,,,
-L'ABEILLE DE LA TERNOISE COMMUNICATION,,SA,62,Publication imprimée,L'OBSERVATEUR DE BEAUVAIS,Non Inscrit,Demande de renouvellement en cours,,2578231,2026-06-30,2025-05-15,CIBLAGE_POSTAL_D_19_2,Non,Oui,,,
 SOCIETE DU FIGARO,54207775500149,SAS,75,Publication imprimée,MADAME FIGARO # MADFOR,Non Inscrit,Demande de renouvellement en cours,,2590925,2026-06-30,2021-09-23,,Non,Non,,,
 USKALZAIN,31503018900015,SARL,64,Publication imprimée,LE MIROIR DE LA SOULE,Non Inscrit,Demande de renouvellement en cours,,2587097,2026-06-30,2025-06-26,,Non,Non,,,
 K! WORLD,83277023400025,SAS,23,Publication imprimée,K! WORLD,Non Inscrit,Demande de renouvellement en cours,,2593595,2026-05-31,2025-05-15,,Non,Non,,,
@@ -854,8 +882,6 @@ VPW,80276811900025,SAS,34,Publication imprimée,SIGMAG TV.FR,Non Inscrit,Demande
 VAL DE SEINE VERT,40415124300049,ASSOCIATION,92,Publication imprimée,ECHO VAL DE SEINE,Non Inscrit,Demande de renouvellement en cours,,2584983,2026-06-30,2021-06-03,,Non,Non,,,
 MEDIA ACTUALITES FRANCE MONDE -M-A-F-M,84217035900017,SAS,75,Publication imprimée,POLITIQUE MAGAZINE,Non Inscrit,Demande de renouvellement en cours,,2582054,2026-05-31,2021-07-01,IPG,Non,Non,,,
 BUSHIDO STUDIO,99534292000015,SAS,75,Publication imprimée,KARATE BUSHIDO,Inscrit,Demande de renouvellement en cours,,2579791,2028-05-21,2026-05-21,,Non,Non,,,
-MEDIA CAPITAL REUNION,92483484900011,SAS,,Publication imprimée,LE QUOTIDIEN DE LA REUNION ET DE L'OCEAN INDIEN,Non Inscrit,Demande de renouvellement en cours,,2587475,2026-06-30,2024-06-20,CIBLAGE_POSTAL_D_19_2,Non,Oui,,,
-AVOTEAM,44019468600026,SAS,92,Publication imprimée,VETOFFICINE,Non Inscrit,Demande de renouvellement en cours,,2593897,2026-05-31,2023-05-25,,Non,Non,,,
 LA DEPECHE VETERINAIRE,50764203100011,SAS,75,Publication imprimée,LA DEPECHE VETERINAIRE,Non Inscrit,Demande de renouvellement en cours,,2581416,2026-06-30,2024-06-06,,Non,Non,,,
 LE MAUSOLEE,95650572100038,SAS,69,Publication imprimée,FUNERAIRE MAGAZINE,Non Inscrit,Demande de renouvellement en cours,,2585060,2026-05-31,2021-06-03,,Non,Non,,,
 ARTXPACE,87803665600030,SAS,75,Publication imprimée,GRAFFITI ART,Non Inscrit,Demande de renouvellement en cours,,2592150,2026-05-31,2025-05-15,,Non,Non,,,
@@ -867,7 +893,6 @@ SOCIETE FRANCAISE D'EDITION ET DE DOCUMENTATION,94005813400013,"SAS, SOCIÉTÉ P
 RAYKEEA,79350837500052,SARL,75,Publication imprimée,MA CAMPAGNE,Non Inscrit,Demande de renouvellement en cours,,2594345,2026-04-30,2023-04-06,,Non,Non,,,
 RAYKEEA,79350837500052,SARL,75,Publication imprimée,RESTO,Non Inscrit,Demande de renouvellement en cours,,2595104,2026-04-30,2023-04-06,,Non,Non,,,
 PARISEKO ESKUAL-ETXEA,78467128100029,ASSOCIATION,93,Publication imprimée,ELGAR Bimestriel des Basques de Paris,Non Inscrit,Demande de renouvellement en cours,,2592266,2026-04-30,2021-06-03,,Non,Non,,,
-SEPRECOM,50899580000036,SARL,75,Publication imprimée,ELEMENTS POUR LA CIVILISATION EUROPEENNE,Non Inscrit,Demande de renouvellement en cours,,2584270,2026-04-30,2021-07-01,IPG,Non,Non,,,
 DANIEL LOUIS DIFFUSION DLD,34418311600054,SAS,53,Publication imprimée,INFOS ENTRAINEMENT,Non Inscrit,Demande de renouvellement en cours,,2594543,2026-04-30,2021-04-29,,Non,Non,,,
 UNION DES SYNDICATS DE RETRAITES CGT DE CHARENTE-MARITIME (USR CGT 17),40214725000011,,17,Publication imprimée,LE LIEN SYNDICAL USR CGT 17,Non Inscrit,Demande de renouvellement en cours,,2507823,2026-04-30,2021-06-03,,Oui,Non,,,
 LA NOUVELLE QUINZAINE,79985607500020,SARL,75,Publication imprimée,"QUINZAINES - Lettres, arts et idées",Non Inscrit,Demande de renouvellement en cours,,2579994,2026-04-30,2021-05-20,,Non,Non,,,
@@ -879,7 +904,6 @@ BURDA SENATOR VERLAG GMBH,84292452400031,,,Publication imprimée,LISA - Edition 
 KLAMB VERLAG GMBH & CIE,84292452400031,,,Publication imprimée,WOCHE DER FRAU,Non Inscrit,Demande de renouvellement en cours,,2579006,2026-04-30,2021-04-29,,Non,Non,,,
 "KLAMBT- VERLAG GMBH & CO. KG,",84292452400031,,,Publication imprimée,LEA,Non Inscrit,Demande de renouvellement en cours,,2579537,2026-04-30,2021-04-15,,Non,Non,,,
 APPPF,50255250800058,SARL,61,Publication imprimée,PROFESSION PHOTOGRAPHE,Non Inscrit,Demande de renouvellement en cours,,2591577,2026-04-30,2021-06-03,,Non,Non,,,
-B & D EDITIONS,79897976100011,SAS,13,Publication imprimée,INFO PECHE,Non Inscrit,Demande de renouvellement en cours,,2590175,2026-04-30,2021-04-29,,Non,Non,,,
 AL LIAMM,30696557500021,ASSOCIATION,22,Publication imprimée,AL LIAMM - Tir na Nog,Non Inscrit,Demande de renouvellement en cours,,2588189,2026-04-30,2021-06-03,,Non,Non,,,
 BASTILLE MEDIA,51125486400016,SAS,75,Publication imprimée,BASTILLE MAGAZINE,Non Inscrit,Demande de renouvellement en cours,,2594780,2026-04-16,2026-04-16,,Non,Non,,,
 SEN NO SEN,82081308700021,SAS,94,Publication imprimée,L'ESPRIT DU JUDO,Non Inscrit,Demande de renouvellement en cours,,2587750,2026-03-31,2021-03-30,,Non,Non,,,
@@ -897,32 +921,22 @@ CHO YOU,44036367900067,SAS,75,Publication imprimée,IT FOR BUSINESS,Non Inscrit,
 ASSOCIATION DE LA PROCURE SAINT NICOLAS DU CHARDONNET,42874063300022,,75,Publication imprimée,LE CHARDONNET,Non Inscrit,Demande de renouvellement en cours,,2587731,2026-03-31,2021-03-04,,Non,Non,,,
 COMITE NATIONAL DE TOURISME EQUESTRE (CNTE),78422672200048,ASSOCIATION,41,Publication imprimée,L'ESTAFETTE,Non Inscrit,Nouvel examen d’un renouvellement en cours,,2586918,2026-03-19,2026-03-19,,Non,Non,,,
 BOURSE DU TRAVAIL DEPARTEMENT 93,31669921400011,,93,Publication imprimée,POUR 93 Bulletin de la Fédération Syndicale Unitaire de Seine-Saint-Denis,Non Inscrit,Demande de renouvellement en cours,,2507010,2026-02-28,2025-02-20,,Oui,Non,,,
-LE MATRICULE DES ANGES,38973084700057,ASSOCIATION,83,Publication imprimée,LE MATRICULE DES ANGES,Non Inscrit,Demande de renouvellement en cours,,2587593,2026-02-28,2021-04-15,,Non,Non,,,
 UNION DEPARTEMENTALE DES SYNDICATS CGT DE L'ISERE,77955777600027,,38,Publication imprimée,BULLETIN - Union Départementale CGT - Isère,Non Inscrit,Demande de renouvellement en cours,,2505444,2026-02-28,2021-02-18,,Oui,Non,,,
 INSTITUT D'ETUDE OCCITANES REGION OCCITANIE IEO-OPM,82307359800018,ASSOCIATION,31,Publication imprimée,LO DIARI - La cultura en occitan,Non Inscrit,Demande de renouvellement en cours,,2592946,2026-02-28,2021-03-04,,Non,Non,,,
 ASSOCIATION SURVIE,34406219500062,,75,Publication imprimée,DECOLONISONS !,Non Inscrit,Demande de renouvellement en cours,,2587632,2026-02-28,2021-04-15,,Non,Non,,,
 LES EDITIONS LARDONS,10219586400016,SAS,33,Publication imprimée,GUEULETON le magazine des bons vivants,Non Inscrit,Demande de renouvellement en cours,,2594459,2026-02-28,2021-02-18,,Non,Non,,,
-L'ABEILLE DE LA TERNOISE COMMUNICATION,70192064700081,SA,62,Publication imprimée,L'ABEILLE DE LA TERNOISE,Non Inscrit,Demande de renouvellement en cours,,2579390,2026-02-28,2021-09-07,CIBLAGE_POSTAL_D_19_2,Non,Oui,,,
 CHAMBRE SYNDICALE DES COCHERS CHAUFFEURS CGT-TAXIS,78445033000013,,75,Publication imprimée,LE REVEIL DES COCHERS CHAUFFEURS,Inscrit,Demande de renouvellement en cours,,2507479,2031-05-21,2026-05-21,,Oui,Non,,,
 EDITIONS RETRO LOISIRS,79786602700015,SARL,81,Publication imprimée,MOTO CROSS D'HIER,Non Inscrit,Demande de renouvellement en cours,,2585682,2026-02-28,2021-03-30,,Non,Non,,,
 JP EDITIONS,40391170400035,SARL,93,Publication imprimée,KART MAG,Non Inscrit,Demande de renouvellement en cours,,2584341,2026-02-28,2024-02-15,,Non,Non,,,
 SYNDICAT CGT DE L'ARSENAL DE BREST,31662032700015,,29,Publication imprimée,L'OA,Non Inscrit,Demande de renouvellement en cours,,2507819,2026-02-28,2021-03-30,,Oui,Non,,,
 FSU - SECTION DEPARTEMENTALE HAUTES PYRENEES,45228712100019,,65,Publication imprimée,FSU INFOS 65,Non Inscrit,Demande de renouvellement en cours,,2506760,2026-02-28,2021-03-04,,Oui,Non,,,
 EDITIONS MINAUTO,31914115600020,SARL,67,Publication imprimée,MINAUTO mag',Non Inscrit,Demande de renouvellement en cours,,2590361,2026-02-28,2023-02-16,,Non,Non,,,
-CFTC - CONFEDERATION FRANCAISE DES TRAVAILLEURS CHRETIENS,78445097500049,,75,Publication imprimée,LA LETTRE CONFEDERALE,Non Inscrit,Demande de renouvellement en cours,,2506330,2026-02-28,2021-02-18,,Oui,Non,,,
-IMPRIMERIE FLEURENT,32646730500016,SARL,88,Publication imprimée,LES ANNONCES DES HAUTES-VOSGES,Non Inscrit,Demande de renouvellement en cours,,2587612,2026-02-28,2021-05-20,,Non,Oui,,,
 EDITIONS HEIMDAL,37852186800042,SAS,14,Publication imprimée,DEFENSE EXPERT,Non Inscrit,Demande de renouvellement en cours,,2594512,2026-02-28,2021-03-30,,Non,Non,,,
-IN EXTENSO,45190089800011,SARL,31,Publication imprimée,PARCOURS DES ARTS - Sud et Espagne,Non Inscrit,Demande de renouvellement en cours,,2587704,2026-02-28,2023-02-16,,Non,Non,,,
 LE PARISIEN LIBERE,33289035900323,SAS,75,Publication imprimée,AUJOURD'HUI EN FRANCE,Non Inscrit,Demande de renouvellement en cours,,2580333,2026-02-28,2021-04-15,CIBLAGE_POSTAL_D_19_2,Non,Oui,,,
-LES AMIS DU JOURNAL DE SAINT PALAIS,39191467800019,ASSOCIATION,64,Publication imprimée,LE JOURNAL DE SAINT-PALAIS ET DE BASSE NAVARRE,Non Inscrit,Demande de renouvellement en cours,,2584274,2026-02-28,2021-07-06,,Non,Oui,,,
 L' AMITIE FRANCO-TCHECOSLOVAQUE,53978294600021,ASSOCIATION,75,Publication imprimée,L'AMITIE FRANCO-TCHECO-SLOVAQUE,Non Inscrit,Demande de renouvellement en cours,,2588451,2026-02-28,2021-04-15,,Non,Non,,,
 ETUDES THEOLOGIQUES ET RELIGIEUSES,77603219500013,ASSOCIATION,34,Publication imprimée,ETUDES THEOLOGIQUES ET RELIGIEUSES,Non Inscrit,Demande de renouvellement en cours,,2581187,2026-01-31,2025-01-30,,Non,Non,,,
-INFODIUM,49434530900038,SAS,75,Publication imprimée,LFT - La lettre du Financier Territorial,Non Inscrit,Demande de renouvellement en cours,,2584973,2026-01-31,2025-01-16,,Non,Non,,,
-LE PROGRES SOCIAL EDITIONS ( LPSE),49400541600016,SARL,,Publication imprimée,LE PROGRES SOCIAL,Non Inscrit,Demande de renouvellement en cours,,2594126,2026-01-31,2025-01-30,CIBLAGE_POSTAL_D_19_2,Non,Oui,,,
 FEDERATION FRANCAISE DES DONNEURS DE SANG BENEVOLES,78440877500020,ASSOCIATION,75,Publication imprimée,LE DONNEUR DE SANG BENEVOLE,Non Inscrit,Demande de renouvellement en cours,,2580524,2026-01-31,2020-12-10,,Oui,Non,,,
 BURDA SENATOR VERLAG,84292452400031,,,Publication imprimée,GLÜCKS REVUE,Non Inscrit,Demande de renouvellement en cours,,2580272,2026-01-31,2021-06-03,,Non,Non,,,
-SOCIETE DES EDITIONS JUSTICE,38444964100016,SARL,,Publication imprimée,JUSTICE,Non Inscrit,Demande de renouvellement en cours,,2587526,2026-01-31,2021-09-07,CIBLAGE_POSTAL_D_19_2,Non,Oui,,,
-FOOD AND GOOD,92120939100025,SAS,68,Publication imprimée,FOOD & GOOD - Le magazine de la Gastronomie et du Bien-être en Alsace,Non Inscrit,Demande de renouvellement en cours,,2595383,2026-01-31,2025-01-16,,Non,Non,,,
 LES EDITIONS DE MONTREUIL,79450415900011,SARL,93,Publication imprimée,CAMPAGNE CHIC & BROC,Non Inscrit,Demande de renouvellement en cours,,2591847,2026-01-31,2021-01-07,,Non,Non,,,
 CCE COMMUNICATION,39347260000054,SARL,75,Publication imprimée,ENTREPRENDRE Á L' INTERNATIONAL - La revue des Conseillers du Commerce Extérieur de la France,Non Inscrit,Demande de renouvellement en cours,,2587289,2025-11-30,2021-03-30,,Non,Non,,,
 JLE,98293587600010,SDE,94,Publication imprimée,EUROPEAN JOURNAL OF DERMATOLOGY,Non Inscrit,Demande de renouvellement en cours,,2581390,2025-09-30,2020-12-10,,Non,Non,,,
@@ -1090,7 +1104,6 @@ DUNOD,,SA,92,Publication imprimée,ANNALES DE GEOGRAPHIE,Non Inscrit,,,2579507,2
 ZIGZAG MEDIA,,SAS,93,Publication imprimée,ZIGZAG Paris au rayon Z,Non Inscrit,,,2594464,2026-02-28,2022-03-24,,Non,Non,,,
 "ASSOCIATION""""LE JURA FRANÇAIS""""",,,92,Publication imprimée,LE JURA FRANCAIS - Franche-Comté - Pays de l'Ain,Non Inscrit,,,2587303,2025-11-30,2021-02-04,,Non,Non,,,
 GROUPE MONITEUR,40308082300244,SAS,94,Publication imprimée,CCAG DES MARCHES PUBLICS ET AUTRES DOCUMENTS CONTRACTUELS TYPE,Non Inscrit,,,2589016,2025-12-31,2024-12-05,,Non,Non,,,
-CONGREGATION DES PETITES SOEURS DES PAUVRES,77559145600014,,35,Publication imprimée,DECOUVERTE,Non Inscrit,,,2584949,2026-06-30,2021-06-03,,Non,Non,,,
 SOCIETE NOUVELLE DES EDITIONS MARINE & OCEANS,82840300600020,SAS,92,Publication imprimée,MARINE & OCEANS,Non Inscrit,,,2586639,2026-06-30,2025-06-26,,Non,Non,,,
 FEDERATION DES FINANCES FO,,,75,Publication imprimée,FINANCES INFORMATIONS,Non Inscrit,,,2506604,2025-10-31,2020-12-10,,Oui,Non,,,
 MUTAMI,,,31,Publication imprimée,L'AMI MUTUALISTE,Non Inscrit,,,2506799,2025-11-30,2021-02-04,,Oui,Non,,,
@@ -1119,7 +1132,6 @@ MEININGERS VERLAG GMBH,,,,Publication imprimée,MEININGERS WEINWELT,Non Inscrit,
 RODALE - MOTOR - PRESSE GMBH & CO,,,,Publication imprimée,MEN'S HEALTH - Edition allemande,Non Inscrit,,,2590033,2026-04-30,2021-04-29,,Non,Non,,,
 EDITIONS LA VIE DU RAIL,,SA,75,Publication imprimée,LA VIE DU RAIL MAGAZINE,Non Inscrit,,,2590350,2026-04-30,2021-03-04,,Non,Non,,,
 ENTREPRENDRE,,SA,92,Publication imprimée,SPECIAL ARGENT,Non Inscrit,,,2594063,2025-11-30,2020-12-10,,Non,Non,,,
-CULTURE MÉDIA,79948351600016,SARL,75,Service de presse en ligne,ecranlarge.com,Non Inscrit,,,2593973,2026-05-31,2023-05-11,,Non,Non,https://www.ecranlarge.com/,,
 GROUPE REVUE FIDUCIAIRE,55207230800067,SA,75,Publication imprimée,RF SOCIAL,Non Inscrit,,,2580818,2026-03-31,2021-02-04,,Non,Non,,,
 RMP,80274378100048,SAS,92,Service de presse en ligne,lejournaldelamaison.fr,Non Inscrit,,,2595092,2026-03-31,2023-03-09,,Non,Non,http://www.lejournaldelamaison.fr,,
 SAXIFRAGES UNIVERSELLES,,ASSOCIATION,81,Publication imprimée,SAXIFRAGE,Non Inscrit,,,2592786,2026-01-31,2021-03-30,,Non,Non,,,
@@ -1143,7 +1155,6 @@ MELCHIOR,,SAS,,Publication imprimée,LES NOUVELLES CALEDONIENNES,Non Inscrit,,,2
 LE CHEVAL,,SARL,88,Publication imprimée,LE CHEVAL,Non Inscrit,,,2585848,2026-05-31,2021-05-20,,Non,Non,,,
 SURF SESSION,33986287200035,SA,64,Service de presse en ligne,surfsession.com,Non Inscrit,,,2590887,2026-05-31,2021-07-08,,Non,Non,http://www.surfsession.com,,
 CLUB DE L'ARCHE 2.0,75182698300015,ASSOCIATION,49,Service de presse en ligne,villeintelligente-mag.fr,Non Inscrit,,,2593927,2026-06-30,2022-03-10,DISPOSITIF_FISCAL_39_BIS_A,Non,Non,https://www.villeintelligente-mag.fr/,,
-GROUPE PROFESSION SANTE,53033017400034,SAS,92,Service de presse en ligne,lequotidiendumedecin.fr,Non Inscrit,,,2590942,2026-06-30,2022-03-10,,Non,Non,http://www.lequotidiendumedecin.fr,,
 MEININGER VERLAG GMBH,,,,Publication imprimée,MEININGERS SOMMELIER,Non Inscrit,,,2594549,2026-04-30,2021-04-29,,Non,Non,,,
 LE JOURNAL PAROISSIAL,,,87,Publication imprimée,SAINT MARTIAL LIMOGES CENTRE - Saint Joseph - Saint Michel des Lions - Saint Pierre du Queyroix,Non Inscrit,,,2588174,2026-06-30,2021-09-09,,Non,Non,,,
 AMIF ASSOCIATION DES MEDECINS ISRAELITES DE FRANCE,,ASSOCIATION,75,Publication imprimée,JAMIF - Journal de l' Association des médecins israélites de France,Non Inscrit,,,2581653,2026-02-28,2024-02-15,,Non,Non,,,
@@ -1223,7 +1234,6 @@ GENERATION NUMERIQUE,,SARL,92,Publication imprimée,SONOVISION - Communication &
 FALKEMEDIA GMBH,,,,Publication imprimée,MAC LIFE,Non Inscrit,,,2508252,2026-02-28,2021-02-18,,Non,Non,,,
 CFDT EDUCATION FORMATION RECHERCHE PUBLIQUE,,,75,Publication imprimée,PROFESSION EDUCATION,Non Inscrit,,,2507555,2025-10-31,2024-09-19,,Oui,Non,,,
 FRANCE PATCHWORK,,ASSOCIATION,75,Publication imprimée,LES NOUVELLES - PATCHWORK ET CREATION TEXTILE,Non Inscrit,,,2584992,2023-07-31,2023-06-22,,Non,Non,,,
-NEWS TANK EDUCATION,80159167800025,SAS,75,Service de presse en ligne,education.newstank.fr,Non Inscrit,,,2592329,2026-05-31,2021-05-27,,Non,Non,http://education.newstank.fr,,
 AVENIR SANTE MUTUELLE,,,78,Publication imprimée,AVENIR Le journal d'information d'AVENIR SANTE MUTUELLE,Non Inscrit,,,2506367,2025-09-30,2020-10-22,,Oui,Non,,,
 ISMENE,98215381900015,EURL,91,Service de presse en ligne,Qant: IA & TECHS EMERGENTES - Newsletter,Non Inscrit,,,2595420,2026-03-31,2025-03-27,DISPOSITIF_FISCAL_39_BIS_B,Non,Non,Qant: IA & TECHS EMERGENTES - Newsletter,,
 HEBDI,,SARL,67,Publication imprimée,HEB'DI,Non Inscrit,,,2590443,2025-12-31,2020-12-10,IPG,Non,Non,,,
@@ -1423,7 +1433,6 @@ HISTOIRES ORDINAIRES EDITIONS,53115194600027,ASSOCIATION,35,Service de presse en
 VALMONDE ET CIE,,SAS,75,Publication imprimée,LA LETTRE DE LA BOURSE,Non Inscrit,,,2584189,2026-02-28,2021-06-17,,Non,Non,,,
 ELSEVIER MASSON,,SAS,92,Publication imprimée,EMC - PSYCHIATRIE,Non Inscrit,,,2581312,2026-01-31,2023-01-12,,Non,Non,,,
 AFRICA MEDIA GROUP,78468348400025,SA,75,Publication imprimée,THE AFRICA REPORT,Non Inscrit,,,2586885,2025-07-31,2023-01-12,,Non,Non,,,
-FEDERATION DES ENTREPRISES MONEGASQUES (FEDEM),,ASSOCIATION,,Publication imprimée,MONACO BUSINESS NEWS,Non Inscrit,,,2593995,2026-05-31,2021-04-29,,Non,Non,,,
 PAROISSE NOTRE DAME DES SOURCES,,,88,Publication imprimée,BULLETIN DE LA PAROISSE NOTRE-DAME DES SOURCES,Non Inscrit,,,2580393,2026-02-28,2021-03-30,,Non,Non,,,
 EDITIONS RIVA,,SAS,75,Publication imprimée,PLANETE CHEVAL,Non Inscrit,,,2594349,2025-09-30,2020-09-24,,Non,Non,,,
 EDITIONS FATON,,SAS,21,Publication imprimée,HISTOIRE ANTIQUE A NOS JOURS,Non Inscrit,,,2581385,2026-06-30,2021-10-21,,Non,Non,,,
@@ -1443,7 +1452,6 @@ PUBLICATIONS ADMINISTRER,70205134300060,SARL,75,Publication imprimée,ADMINISTRE
 MEDIA ET AGRICULTURE,,SAS,57,Publication imprimée,CULTIVAR LEADERS,Non Inscrit,,,2589919,2026-05-31,2021-06-17,,Non,Non,,,
 ASSOCIATION DIOCESAINE DE SAINT CLAUDE,,,39,Publication imprimée,ENSEMBLE NOUS FORMONS L'EGLISE paroisse Saint Claude Saint Lupicin,Non Inscrit,,,2585350,2026-05-31,2021-04-29,,Non,Non,,,
 FEDERATION DES CONSEILS DE PARENTS D'ELEVES DES ECOLES PUBLIQUES (FCPE),,ASSOCIATION,75,Publication imprimée,LA REVUE DES PARENTS,Non Inscrit,,,2587187,2025-10-31,2020-12-10,,Non,Non,,,
-UDAF DE LA MANCHE,,ASSOCIATION,50,Publication imprimée,FAMILLES DE LA MANCHE,Non Inscrit,,,2585594,2025-10-31,2020-12-21,,Non,Non,,,
 EDITIONS DE MONTREUIL,79450415900011,SARL,93,Publication imprimée,HACK & CRACK,Non Inscrit,,,2593424,2026-06-30,2024-06-20,,Non,Non,,,
 EDITIONS PREMIERES LOGES,,SARL,75,Publication imprimée,CLASSICA,Non Inscrit,,,2578228,2025-11-30,2021-01-07,,Non,Non,,,
 JOURNAL LE SAINT-AFFRICAIN - JLSA,50896970600011,SARL,12,Service de presse en ligne,lesaintaffricain.fr,Non Inscrit,,,2594448,2026-05-31,2024-05-30,,Non,Non,https://lesaintaffricain.fr/,,
@@ -5677,7 +5685,6 @@ SOCIETE ARCHEOLOGIQUE ET HISTORIQUE DE L'ORLEANAIS,,,45,Publication imprimée,BU
 LES AMIS DE L'ILE DE NOIRMOUTIER,,ASSOCIATION,85,Publication imprimée,LETTRE AUX AMIS,Inscrit,,,2588640,2028-11-30,2024-02-19,,Non,Non,,,
 EDITIONS EMILE,,SCOP,75,Publication imprimée,TRAD MAGAZINE - Le monde des musiques & danses traditionnelles,Non Inscrit,,,2588629,2018-03-15,2018-03-15,,Non,Non,,,
 SOCIÉTÉ DES POÈTES ET ARTISTES DE FRANCE,,,82,Publication imprimée,VENT D'AUTAN POETIQUE - Bulletin trimestriel de liaison et d'information de la délégation Midi-Pyrénées de la societé des poètes et artistes de France,Non Inscrit,,,2588630,2014-02-27,2014-02-27,,Non,Non,,,
-SOCIETE PROTECTRICE DES ANIMAUX DE BESANCON ET DE FRANCHE-COMTE,,ASSOCIATION,25,Publication imprimée,LE TRAIT D'UNION - Le magazine de la SPA de Besançon,Inscrit,,,2588631,2026-12-31,2021-11-18,,Non,Non,,,
 MAISON FRANCO-HELLENIQUE LORRAINE,39814497200013,ASSOCIATION,54,Publication imprimée,EPHEMERIDE,Inscrit,,,2588632,2027-12-31,2023-01-26,,Non,Non,,,
 AMICALE DES PERSONNELS RETRAITES DE LA MAIRIE ET DU DEPARTEMENT DE PARIS DE L'APHP,,ASSOCIATION,75,Publication imprimée,NOUVELLES DE L'AMICALE,Non Inscrit,,,2588633,2025-05-15,2025-05-15,,Non,Non,,,
 MILAN PRESSE,,SAS,31,Publication imprimée,OKOO,Inscrit,,,2588634,2027-03-31,2022-04-21,,Non,Non,,,
@@ -6350,11 +6357,9 @@ ASSOCIATION DIOCESAINE DE SAINT-BRIEUC ET TREGUIER,,,22,Publication imprimée,L'
 ASSOCIATION DU JOURNAL DES ÉGLISES PROTESTANTES DE LA RÉGION DE STRASBOURG ENSEMBLE,,,67,Publication imprimée,ENSEMBLE - Journal des Eglises Protestantes de la Région de Strasbourg,Non Inscrit,,,2587876,2021-11-18,2021-11-18,,Non,Non,,,
 FINANCIAL TIMES BUSINESS LTD,,,,Publication imprimée,PWM - Professional Wealth Management,Non Inscrit,,,2587866,2011-10-13,2011-10-13,,Non,Non,,,
 SEATRADE COMMUNICATION LTD.,,,,Publication imprimée,SEATRADE,Non Inscrit,,,2587867,2011-10-13,2011-10-13,,Non,Non,,,
-HOSPITALITE DIOCESAINE,,,56,Publication imprimée,AIMER - SERVIR,Non Inscrit,,,2587868,2008-11-06,2008-11-06,,Non,Non,,,
 FEDERATION GENERALE DES RETRAITES DES CHEMINS DE FER DE FRANCE ET D'OUTRE MER - FGRCF,,,75,Publication imprimée,LE CHEMINOT RETRAITE,Inscrit,,,2587869,2027-04-30,2022-05-05,,Non,Non,,,
 ASSOCIATION CONGRÉGATION DES SACRÉS COEURS,,,75,Publication imprimée,HORIZONS BLANCS,Non Inscrit,,,2587870,2011-02-10,2011-02-10,,Non,Non,,,
 GALATE,,SARL,93,Publication imprimée,LES CAHIERS DE L'AUDITION,Non Inscrit,,,2587860,2011-10-13,2011-10-13,,Non,Non,,,
-L'ACTEUR RURAL,,SARL,61,Publication imprimée,VILLAGE,Inscrit,,,2587861,2027-01-31,2022-01-13,IPG,Non,Non,,,
 LE JOURNAL DE LA MONTAGNE NOIRE,,ASSOCIATION,81,Publication imprimée,LA MONTAGNE NOIRE,Inscrit,,,2587862,2027-04-30,2022-03-24,,Non,Oui,,,
 EDITIONS MD,,SAS,92,Publication imprimée,LES DOSSIERS DE L'EPARGNE,Non Inscrit,,,2587863,2008-11-06,2008-11-06,,Non,Non,,,
 CONDE NAST,,SA,,Publication imprimée,AD-ARCHITECTURAL DIGEST - Edition espagnole,Non Inscrit,,,2587864,2018-02-15,2018-02-15,,Non,Non,,,
