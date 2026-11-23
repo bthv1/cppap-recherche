@@ -98451,6 +98451,112 @@
       "siren": "451824288",
       "strategy": "nom+departement"
     },
+    "canal sud corsica|20": {
+      "candidates": [
+        {
+          "adresse": "IMM LE GENET 15 BOULEVARD DU COMMANDANT BENIELLI 20090 AJACCIO",
+          "departement": "2A",
+          "etat_administratif": "A",
+          "nature_juridique": "5710",
+          "nom": "CANAL SUD CORSICA",
+          "score": 0.85,
+          "score_parts": {
+            "bonus_obtenu": 0.1,
+            "bonus_possible": 0.25,
+            "nom": 1.0
+          },
+          "siren": "488886797"
+        },
+        {
+          "adresse": "VILLAGE 20251 PANCHERACCIA",
+          "departement": "2B",
+          "etat_administratif": "A",
+          "nature_juridique": "5710",
+          "nom": "CORSICA SOLE 16",
+          "score": 0.5717,
+          "score_parts": {
+            "bonus_obtenu": 0.1,
+            "bonus_possible": 0.25,
+            "nom": 0.629
+          },
+          "siren": "827450081"
+        }
+      ],
+      "confidence": "probable",
+      "departement": "20",
+      "editeur": "CANAL SUD CORSICA",
+      "entreprise": {
+        "activite_principale": "60.10Z",
+        "activite_principale_naf25": "60.10Y",
+        "annee_categorie_entreprise": "2024",
+        "annee_tranche_effectif_salarie": "2024",
+        "categorie_entreprise": "PME",
+        "complements": {
+          "convention_collective_renseignee": true,
+          "liste_idcc": [
+            "1922"
+          ]
+        },
+        "date_creation": "2006-02-17",
+        "date_mise_a_jour": "2026-11-23T11:25:42",
+        "date_mise_a_jour_insee": "2025-12-06T05:43:37",
+        "date_mise_a_jour_rne": "2026-09-23T22:24:23",
+        "dirigeants": [
+          {
+            "annee_de_naissance": "1949",
+            "date_de_naissance": "1949-09",
+            "nom": "ANTONA",
+            "prenoms": "FRANCE ANGELE MARTHE",
+            "qualite": "Président de SAS",
+            "type_dirigeant": "personne physique"
+          }
+        ],
+        "dirigeants_total": 1,
+        "etat_administratif": "A",
+        "nature_juridique": "5710",
+        "nom_complet": "CANAL SUD CORSICA",
+        "nom_raison_sociale": "CANAL SUD CORSICA",
+        "nombre_etablissements": 1,
+        "nombre_etablissements_ouverts": 1,
+        "section_activite_principale": "J",
+        "siege": {
+          "activite_principale": "60.10Z",
+          "activite_principale_naf25": "60.10Y",
+          "adresse": "IMM LE GENET 15 BOULEVARD DU COMMANDANT BENIELLI 20090 AJACCIO",
+          "caractere_employeur": "O",
+          "code_postal": "20090",
+          "commune": "2A004",
+          "complement_adresse": "IMM LE GENET",
+          "date_creation": "2006-02-17",
+          "date_debut_activite": "2020-02-03",
+          "departement": "2A",
+          "etat_administratif": "A",
+          "latitude": "41.91801899999999",
+          "libelle_commune": "AJACCIO",
+          "libelle_voie": "DU COMMANDANT BENIELLI",
+          "liste_enseignes": [
+            "ALTA FREQUENZA"
+          ],
+          "longitude": "8.727085999999998",
+          "numero_voie": "15",
+          "region": "94",
+          "siret": "48888679700015",
+          "tranche_effectif_salarie": "02",
+          "type_voie": "BOULEVARD"
+        },
+        "siren": "488886797",
+        "statut_diffusion": "O",
+        "tranche_effectif_salarie": "02",
+        "tva": [
+          "FR33488886797"
+        ]
+      },
+      "forme_juridique": "SAS",
+      "resolved_at": "2026-11-23",
+      "score": 0.85,
+      "siren": "488886797",
+      "strategy": "nom"
+    },
     "canal|75": {
       "candidates": [
         {
@@ -400143,6 +400249,115 @@
       "siren": "656970340",
       "strategy": "nom"
     },
+    "julien billy|43": {
+      "candidates": [
+        {
+          "adresse": "L'ALOUETTE 9 ROUTE DE CREMIEU 38090 BONNEFAMILLE",
+          "departement": "38",
+          "etat_administratif": "A",
+          "nature_juridique": "1000",
+          "nom": "JULIEN BILLY",
+          "score": 0.8125,
+          "score_parts": {
+            "bonus_obtenu": 0.05,
+            "bonus_possible": 0.2,
+            "nom": 1.0
+          },
+          "siren": "808930762"
+        },
+        {
+          "adresse": "26 RUE DE PARADIS 51480 LA NEUVILLE-AUX-LARRIS",
+          "departement": "51",
+          "etat_administratif": "A",
+          "nature_juridique": "1000",
+          "nom": "JULIEN BILLY",
+          "score": 0.8125,
+          "score_parts": {
+            "bonus_obtenu": 0.05,
+            "bonus_possible": 0.2,
+            "nom": 1.0
+          },
+          "siren": "909782203"
+        },
+        {
+          "adresse": "13 RUE MARCEL PAGNOL 91800 BOUSSY-SAINT-ANTOINE",
+          "departement": "91",
+          "etat_administratif": "A",
+          "nature_juridique": "1000",
+          "nom": "JULIEN BILLY",
+          "score": 0.8125,
+          "score_parts": {
+            "bonus_obtenu": 0.05,
+            "bonus_possible": 0.2,
+            "nom": 1.0
+          },
+          "siren": "828088294"
+        }
+      ],
+      "confidence": "incertain",
+      "departement": "43",
+      "editeur": "Julien BILLY",
+      "entreprise": {
+        "activite_principale": "43.32A",
+        "activite_principale_naf25": "43.32G",
+        "annee_categorie_entreprise": "2024",
+        "categorie_entreprise": "PME",
+        "complements": {
+          "est_entrepreneur_individuel": true
+        },
+        "date_creation": "2015-02-02",
+        "date_mise_a_jour": "2026-11-23T11:13:40",
+        "date_mise_a_jour_insee": "2025-12-06T06:14:28",
+        "date_mise_a_jour_rne": "2026-09-01T04:16:43",
+        "dirigeants": [
+          {
+            "nom": "BILLY",
+            "prenoms": "JULIEN",
+            "type_dirigeant": "personne physique"
+          }
+        ],
+        "dirigeants_total": 1,
+        "etat_administratif": "A",
+        "nature_juridique": "1000",
+        "nom_complet": "JULIEN BILLY",
+        "nombre_etablissements": 3,
+        "nombre_etablissements_ouverts": 2,
+        "section_activite_principale": "F",
+        "siege": {
+          "activite_principale": "43.32A",
+          "activite_principale_naf25": "43.32G",
+          "adresse": "L'ALOUETTE 9 ROUTE DE CREMIEU 38090 BONNEFAMILLE",
+          "caractere_employeur": "N",
+          "code_postal": "38090",
+          "commune": "38048",
+          "complement_adresse": "L'ALOUETTE",
+          "date_creation": "2020-02-28",
+          "date_debut_activite": "2020-02-28",
+          "departement": "38",
+          "etat_administratif": "A",
+          "latitude": "45.6158404860596",
+          "libelle_commune": "BONNEFAMILLE",
+          "libelle_voie": "DE CREMIEU",
+          "longitude": "5.0852125108112",
+          "numero_voie": "9",
+          "region": "84",
+          "siret": "80893076200022",
+          "tranche_effectif_salarie": "NN",
+          "type_voie": "ROUTE"
+        },
+        "siren": "808930762",
+        "statut_diffusion": "O",
+        "tranche_effectif_salarie": "NN",
+        "tva": [
+          "FR29808930762"
+        ]
+      },
+      "forme_juridique": "Micro-entrepreneur",
+      "resolved_at": "2026-11-23",
+      "score": 0.8125,
+      "siren": "808930762",
+      "strategy": "nom"
+    },
     "julien muel|30": {
       "candidates": [
         {
@@ -410026,6 +410241,101 @@
       "resolved_at": "2026-08-03",
       "score": 0.0,
       "strategy": "aucune"
+    },
+    "l aunisienne de presse|17": {
+      "candidates": [
+        {
+          "adresse": "29 AVENUE DU GENERAL LECLERC 17400 SAINT-JEAN-D'ANGELY",
+          "departement": "17",
+          "etat_administratif": "A",
+          "nature_juridique": "5499",
+          "nom": "AUNISIENNE DE PRESSE",
+          "score": 0.9768,
+          "score_parts": {
+            "bonus_obtenu": 0.25,
+            "bonus_possible": 0.25,
+            "nom": 0.969
+          },
+          "siren": "797446481"
+        }
+      ],
+      "confidence": "certain",
+      "departement": "17",
+      "editeur": "L'AUNISIENNE DE PRESSE",
+      "entreprise": {
+        "activite_principale": "58.13Z",
+        "activite_principale_naf25": "58.13Y",
+        "annee_categorie_entreprise": "2024",
+        "annee_tranche_effectif_salarie": "2024",
+        "categorie_entreprise": "PME",
+        "complements": {
+          "convention_collective_renseignee": true,
+          "liste_idcc": [
+            "1480",
+            "3242"
+          ]
+        },
+        "date_creation": "2013-09-23",
+        "date_mise_a_jour": "2026-11-23T11:00:37",
+        "date_mise_a_jour_insee": "2025-12-06T09:23:19",
+        "date_mise_a_jour_rne": "2026-09-24T23:32:35",
+        "dirigeants": [
+          {
+            "annee_de_naissance": "1962",
+            "date_de_naissance": "1962-08",
+            "nom": "DAVID",
+            "prenoms": "VINCENT RAOUL GEORGES",
+            "qualite": "Gérant",
+            "type_dirigeant": "personne physique"
+          }
+        ],
+        "dirigeants_total": 1,
+        "etat_administratif": "A",
+        "finances": {
+          "2022": {
+            "ca": 742431,
+            "resultat_net": 12792
+          }
+        },
+        "nature_juridique": "5499",
+        "nom_complet": "AUNISIENNE DE PRESSE",
+        "nom_raison_sociale": "AUNISIENNE DE PRESSE",
+        "nombre_etablissements": 3,
+        "nombre_etablissements_ouverts": 3,
+        "section_activite_principale": "J",
+        "siege": {
+          "activite_principale": "58.13Z",
+          "activite_principale_naf25": "58.13Y",
+          "adresse": "29 AVENUE DU GENERAL LECLERC 17400 SAINT-JEAN-D'ANGELY",
+          "caractere_employeur": "N",
+          "code_postal": "17400",
+          "commune": "17347",
+          "date_creation": "2013-09-23",
+          "date_debut_activite": "2014-03-04",
+          "departement": "17",
+          "etat_administratif": "A",
+          "latitude": "45.942081346",
+          "libelle_commune": "SAINT-JEAN-D'ANGELY",
+          "libelle_voie": "DU GENERAL LECLERC",
+          "longitude": "-0.518999605",
+          "numero_voie": "29",
+          "region": "75",
+          "siret": "79744648100013",
+          "tranche_effectif_salarie": "NN",
+          "type_voie": "AVENUE"
+        },
+        "siren": "797446481",
+        "statut_diffusion": "O",
+        "tranche_effectif_salarie": "02",
+        "tva": [
+          "FR34797446481"
+        ]
+      },
+      "forme_juridique": "SARL",
+      "resolved_at": "2026-11-23",
+      "score": 0.9768,
+      "siren": "797446481",
+      "strategy": "nom+departement"
     },
     "l automobile club association aca|67": {
       "candidates": [
@@ -474353,6 +474663,16 @@
       "score": 0.9418,
       "siren": "535325930",
       "strategy": "nom+departement"
+    },
+    "les petites affiches des pyrennees atlantiques|64": {
+      "candidates": [],
+      "confidence": "aucun",
+      "departement": "64",
+      "editeur": "LES PETITES AFFICHES DES PYRENNEES-ATLANTIQUES",
+      "forme_juridique": "SAS",
+      "resolved_at": "2026-11-23",
+      "score": 0.0,
+      "strategy": "aucune"
     },
     "les petites affiches matot braine|51": {
       "candidates": [
@@ -800901,6 +801221,7 @@
     "bierissima|94": "843968793",
     "bihan melocene|59": "952946010",
     "bih|75": "492854567",
+    "billy julien|43": "453964371",
     "biotechfinances eei|07": "480764398",
     "biotechfinances|07": "480764398",
     "bisly|75": "804251080",
@@ -800964,7 +801285,7 @@
     "canal 32|10": "434951455",
     "canal jeux video|92": "504862301",
     "canal sport|75": "331293076",
-    "canal sud corsica|20": "488886797",
+    "canal sud corsica|2A": "488886797",
     "cancan media|50": "980873491",
     "cancerodigest|63": "751014911",
     "cap presse|": "941016628",
@@ -801236,6 +801557,7 @@
     "du foyer des missions africaines|67": "778805481",
     "dumas|25": "881161103",
     "dunod|92": "316053628",
+    "duventru david|13": "408575173",
     "dynamique entrepreneuriale|75": "504739863",
     "dyonysos|64": "999108558",
     "e edition|69": "834189664",
@@ -801782,6 +802104,7 @@
     "intelekto|69": "948530126",
     "interactiva dfo sportiva|75": "493095798",
     "intermed publishing|75": "823025457",
+    "intermedias|988": "102956505",
     "internationale pour la promotion de l ideal maconnique|63": "106490832",
     "internet presse infos|10": "433578622",
     "intramuros|75": "401605233",
@@ -801834,7 +802157,6 @@
     "jp editions|93": "403911704",
     "judgehype sprl|": "838936433",
     "julianne films|75": "349497032",
-    "julien billy|43": "453964371",
     "junkee|63": "824132419",
     "just 4 me|75": "519663553",
     "justice sociale media jsmedia|75": "922431770",
@@ -801877,7 +802199,6 @@
     "l atelier de l ulm|49": "953196961",
     "l atelier mediatique|12": "517440806",
     "l audace|75": "990797862",
-    "l aunisienne de presse|17": "797446481",
     "l autre cuisine|94": "823497656",
     "l d m|78": "429773633",
     "l echo de la timbrologie|80": "541720330",
@@ -802085,6 +802406,7 @@
     "les cent plumes|75": "749875399",
     "les cles du digital|75": "830820288",
     "les cocottes editions|20": "943385443",
+    "les cocottes editions|2B": "943385443",
     "les cogiteurs|51": "920160744",
     "les deviations|75": "843135575",
     "les dreamers|94": "895229201",
@@ -802160,7 +802482,7 @@
     "les petites affiches bearnaises et des pyrenees atlantiques|64": "332987627",
     "les petites affiches de vaucluse|84": "481669885",
     "les petites affiches des alpes de haute provence|04": "518986096",
-    "les petites affiches des pyrennees atlantiques|64": "352964787",
+    "les petites affiches des pyrenees atlantiques|64": "352964787",
     "les petits resistants|75": "890908569",
     "les poetes de l amitie poetes sans frontieres|21": "449667070",
     "les pro de la petite enfance|75": "818653479",
@@ -802643,6 +802965,7 @@
     "r m p|92": "802743781",
     "r p presse|81": "448190447",
     "r2p|75": "807713177",
+    "racca emmanuel|75": "497519116",
     "radio caraibes international martinique|": "342705050",
     "radio classique|75": "340249366",
     "radio volcans d auvergne rva|69": "382323400",
@@ -802828,8 +803151,10 @@
     "so philatelie co|95": "990784985",
     "so press|75": "445391196",
     "soc de editions justice|972": "384449641",
+    "soc editi meusienne presse agricole|55": "847180080",
     "soc gener presse document edition commun|75": "592005326",
     "soc journal paysans de la loire|42": "564503480",
+    "soc midi aveyron presse|34": "305463275",
     "soc presse documentation agricole creuse|23": "997250030",
     "sochepar|17": "731780185",
     "societe agricole d edition et de communication de s a e c a|03": "403108905",
@@ -802974,7 +803299,7 @@
     "societe nouvelle du nouvel economiste s2ne|75": "809449234",
     "societe nouvelle le patriote beaujolais|69": "410472245",
     "societe nouvelle nord littoral|62": "339058539",
-    "societe nouvelle semeur hebdo|63": "803294680",
+    "societe nouvelle semeur hebdo|63": "803694280",
     "societe ouest france|35": "377714654",
     "societe prehistorique francaise|75": "784242521",
     "societe pretres saint jacques|29": "342132941",
@@ -803108,6 +803433,7 @@
     "theatre public|75": "498362656",
     "thermpresse media|92": "842029753",
     "thierry philippon|71": "450666417",
+    "thioubou coumba|93": "503767238",
     "thuries magazine|75": "851996736",
     "tibesti|75": "519818322",
     "ticmedia|75": "878596048",
@@ -803141,6 +803467,7 @@
     "transonore|93": "901164616",
     "tribeleadr|92": "753495316",
     "tripalio|75": "808094940",
+    "troisieme presse|35": "105007868",
     "troussard nicolas|37": "532388592",
     "tsm bourgogne|21": "881935290",
     "turbulences presse|63": "399011998",
@@ -803265,6 +803592,7 @@
     "volcanologique europeenne|93": "410895742",
     "vonews|95": "494687999",
     "vosges info pub|88": "798178976",
+    "vosges television|88": "507778561",
     "votv|95": "445091234",
     "vox pharma|75": "310668439",
     "voxeurop|75": "832198048",
@@ -805440,6 +805768,61 @@
       "siret_est_siege": true,
       "strategy": "SIRET publié dans la source"
     },
+    "102956505": {
+      "candidates": [],
+      "confidence": "siret",
+      "entreprise": {
+        "activite_principale": "58.14Z",
+        "activite_principale_naf25": "58.13Y",
+        "complements": {
+          "a_aide_minimis": true
+        },
+        "date_creation": "2023-06-09",
+        "date_mise_a_jour": "2026-11-23T10:26:21",
+        "date_mise_a_jour_insee": "2026-03-26T13:41:28",
+        "dirigeants": [],
+        "dirigeants_total": 0,
+        "etat_administratif": "A",
+        "nature_juridique": "5710",
+        "nom_complet": "INTERMEDIAS",
+        "nom_raison_sociale": "INTERMEDIAS",
+        "nombre_etablissements": 1,
+        "nombre_etablissements_ouverts": 1,
+        "section_activite_principale": "J",
+        "siege": {
+          "activite_principale": "58.14Z",
+          "activite_principale_naf25": "58.13Y",
+          "adresse": "CENTRE VILLE 29 AVENUE DU MARECHAL FOCH 98800 NOUMEA",
+          "code_postal": "98800",
+          "commune": "98818",
+          "complement_adresse": "CENTRE VILLE",
+          "date_creation": "2023-06-09",
+          "date_debut_activite": "2023-06-09",
+          "departement": "988",
+          "etat_administratif": "A",
+          "latitude": "-22.272128336876886",
+          "libelle_commune": "NOUMEA",
+          "libelle_voie": "DU MARECHAL FOCH",
+          "liste_enseignes": [
+            "LA VOIX DU CAILLOU"
+          ],
+          "longitude": "166.44274190350052",
+          "numero_voie": "29",
+          "siret": "10295650500014",
+          "tranche_effectif_salarie": "NN",
+          "type_voie": "AVENUE"
+        },
+        "siren": "102956505",
+        "statut_diffusion": "O",
+        "tranche_effectif_salarie": "NN"
+      },
+      "resolved_at": "2026-11-23",
+      "score": 1.0,
+      "siren": "102956505",
+      "siret_declare": "10295650500014",
+      "siret_est_siege": true,
+      "strategy": "SIRET publié dans la source"
+    },
     "104063052": {
       "candidates": [],
       "confidence": "siret",
@@ -805577,6 +805960,76 @@
       "score": 1.0,
       "siren": "104415203",
       "siret_declare": "10441520300017",
+      "siret_est_siege": true,
+      "strategy": "SIRET publié dans la source"
+    },
+    "105007868": {
+      "candidates": [],
+      "confidence": "siret",
+      "entreprise": {
+        "activite_principale": "58.13Z",
+        "activite_principale_naf25": "58.12Y",
+        "complements": {
+          "convention_collective_renseignee": true,
+          "liste_idcc": [
+            "3230",
+            "1480"
+          ]
+        },
+        "date_creation": "2026-05-12",
+        "date_mise_a_jour": "2026-11-23T10:28:34",
+        "date_mise_a_jour_insee": "2026-09-25T13:30:43",
+        "date_mise_a_jour_rne": "2026-09-28T10:44:33",
+        "dirigeants": [
+          {
+            "annee_de_naissance": "1979",
+            "date_de_naissance": "1979-05",
+            "nom": "DU BOISBAUDRY",
+            "prenoms": "HUGUES",
+            "qualite": "Président de SAS",
+            "type_dirigeant": "personne physique"
+          }
+        ],
+        "dirigeants_total": 1,
+        "etat_administratif": "A",
+        "nature_juridique": "5710",
+        "nom_complet": "TROISIEME PRESSE",
+        "nom_raison_sociale": "TROISIEME PRESSE",
+        "nombre_etablissements": 1,
+        "nombre_etablissements_ouverts": 1,
+        "section_activite_principale": "J",
+        "siege": {
+          "activite_principale": "58.13Z",
+          "activite_principale_naf25": "58.12Y",
+          "adresse": "13 SQUARE DU CHENE GERMAIN 35510 CESSON-SEVIGNE",
+          "caractere_employeur": "N",
+          "code_postal": "35510",
+          "commune": "35051",
+          "date_creation": "2026-05-12",
+          "date_debut_activite": "2026-07-01",
+          "departement": "35",
+          "etat_administratif": "A",
+          "latitude": "48.1313318458863",
+          "libelle_commune": "CESSON-SEVIGNE",
+          "libelle_voie": "DU CHENE GERMAIN",
+          "longitude": "-1.62294951089768",
+          "numero_voie": "13",
+          "region": "53",
+          "siret": "10500786800018",
+          "tranche_effectif_salarie": "NN",
+          "type_voie": "SQUARE"
+        },
+        "siren": "105007868",
+        "statut_diffusion": "O",
+        "tranche_effectif_salarie": "NN",
+        "tva": [
+          "FR14105007868"
+        ]
+      },
+      "resolved_at": "2026-11-23",
+      "score": 1.0,
+      "siren": "105007868",
+      "siret_declare": "10500786800018",
       "siret_est_siege": true,
       "strategy": "SIRET publié dans la source"
     },
@@ -808416,6 +808869,88 @@
       "score": 1.0,
       "siren": "304951460",
       "siret_declare": "30495146000068",
+      "siret_est_siege": true,
+      "strategy": "SIRET publié dans la source"
+    },
+    "305463275": {
+      "candidates": [],
+      "confidence": "siret",
+      "entreprise": {
+        "activite_principale": "58.14Z",
+        "activite_principale_naf25": "58.13Y",
+        "annee_categorie_entreprise": "2024",
+        "annee_tranche_effectif_salarie": "2024",
+        "categorie_entreprise": "ETI",
+        "complements": {
+          "convention_collective_renseignee": true,
+          "liste_idcc": [
+            "1480",
+            "3242"
+          ]
+        },
+        "date_creation": "1976-01-01",
+        "date_mise_a_jour": "2026-11-23T10:43:19",
+        "date_mise_a_jour_insee": "2025-12-06T08:16:11",
+        "date_mise_a_jour_rne": "2026-08-25T16:17:17",
+        "dirigeants": [
+          {
+            "denomination": "SOCIETE DU JOURNAL MIDI LIBRE",
+            "qualite": "Gérant et associé indéfiniment responsable",
+            "siren": "456801158",
+            "type_dirigeant": "personne morale"
+          },
+          {
+            "denomination": "L'INDEPENDANT DU MIDI",
+            "qualite": "Autre",
+            "siren": "574201414",
+            "type_dirigeant": "personne morale"
+          }
+        ],
+        "dirigeants_total": 2,
+        "etat_administratif": "A",
+        "finances": {
+          "2024": {
+            "ca": 600703,
+            "resultat_net": 65090
+          }
+        },
+        "nature_juridique": "5202",
+        "nom_complet": "SOC MIDI AVEYRON PRESSE (SOMAP)",
+        "nom_raison_sociale": "SOC MIDI AVEYRON PRESSE",
+        "nombre_etablissements": 6,
+        "nombre_etablissements_ouverts": 2,
+        "section_activite_principale": "J",
+        "siege": {
+          "activite_principale": "70.10Z",
+          "activite_principale_naf25": "70.10Y",
+          "adresse": "MAS DE GRILLE 34430 SAINT-JEAN-DE-VEDAS",
+          "caractere_employeur": "N",
+          "code_postal": "34430",
+          "commune": "34270",
+          "date_creation": "1999-11-08",
+          "date_debut_activite": "2008-01-01",
+          "departement": "34",
+          "etat_administratif": "A",
+          "latitude": "43.573858855",
+          "libelle_commune": "SAINT-JEAN-DE-VEDAS",
+          "libelle_voie": "MAS DE GRILLE",
+          "longitude": "3.8532957041",
+          "region": "76",
+          "siret": "30546327500050",
+          "tranche_effectif_salarie": "NN"
+        },
+        "sigle": "SOMAP",
+        "siren": "305463275",
+        "statut_diffusion": "O",
+        "tranche_effectif_salarie": "03",
+        "tva": [
+          "FR88305463275"
+        ]
+      },
+      "resolved_at": "2026-11-23",
+      "score": 1.0,
+      "siren": "305463275",
+      "siret_declare": "30546327500050",
       "siret_est_siege": true,
       "strategy": "SIRET publié dans la source"
     },
@@ -846596,6 +847131,82 @@
       "siret_est_siege": true,
       "strategy": "SIRET publié dans la source"
     },
+    "408575173": {
+      "candidates": [],
+      "confidence": "siret",
+      "entreprise": {
+        "activite_principale": "74.10Z",
+        "activite_principale_naf25": "74.12Y",
+        "annee_categorie_entreprise": "2024",
+        "categorie_entreprise": "PME",
+        "complements": {
+          "est_entrepreneur_individuel": true
+        },
+        "date_creation": "1996-07-29",
+        "date_mise_a_jour": "2026-11-23T10:25:04",
+        "date_mise_a_jour_insee": "2025-12-06T08:48:54",
+        "date_mise_a_jour_rne": "2026-09-01T22:40:45",
+        "dirigeants": [
+          {
+            "annee_de_naissance": "[NON-DIFFUSIBLE]",
+            "date_de_naissance": "[NON-DIFFUSIBLE]",
+            "nationalite": "[NON-DIFFUSIBLE]",
+            "nom": "[NON-DIFFUSIBLE]",
+            "prenoms": "[NON-DIFFUSIBLE]",
+            "type_dirigeant": "personne physique"
+          }
+        ],
+        "dirigeants_total": 1,
+        "etat_administratif": "A",
+        "nature_juridique": "1000",
+        "nom_complet": "[NON-DIFFUSIBLE]",
+        "nom_raison_sociale": "[NON-DIFFUSIBLE]",
+        "nombre_etablissements": 3,
+        "nombre_etablissements_ouverts": 1,
+        "section_activite_principale": "M",
+        "siege": {
+          "activite_principale": "74.10Z",
+          "activite_principale_naf25": "74.12Y",
+          "adresse": "[NON-DIFFUSIBLE]",
+          "caractere_employeur": "N",
+          "cedex": "[NON-DIFFUSIBLE]",
+          "code_postal": "[NON-DIFFUSIBLE]",
+          "commune": "13214",
+          "complement_adresse": "[NON-DIFFUSIBLE]",
+          "date_creation": "2024-08-22",
+          "date_debut_activite": "2024-08-22",
+          "departement": "13",
+          "etat_administratif": "A",
+          "indice_repetition": "[NON-DIFFUSIBLE]",
+          "latitude": "[NON-DIFFUSIBLE]",
+          "libelle_cedex": "[NON-DIFFUSIBLE]",
+          "libelle_commune": "MARSEILLE",
+          "libelle_voie": "[NON-DIFFUSIBLE]",
+          "liste_enseignes": [
+            "[NON-DIFFUSIBLE]",
+            "[NON-DIFFUSIBLE]",
+            "[NON-DIFFUSIBLE]"
+          ],
+          "longitude": "[NON-DIFFUSIBLE]",
+          "nom_commercial": "[NON-DIFFUSIBLE]",
+          "numero_voie": "[NON-DIFFUSIBLE]",
+          "region": "93",
+          "siret": "40857517300039",
+          "tranche_effectif_salarie": "NN",
+          "type_voie": "[NON-DIFFUSIBLE]"
+        },
+        "sigle": "[NON-DIFFUSIBLE]",
+        "siren": "408575173",
+        "statut_diffusion": "P",
+        "tranche_effectif_salarie": "NN"
+      },
+      "resolved_at": "2026-11-23",
+      "score": 1.0,
+      "siren": "408575173",
+      "siret_declare": "40857517300039",
+      "siret_est_siege": true,
+      "strategy": "SIRET publié dans la source"
+    },
     "409166196": {
       "candidates": [],
       "confidence": "siret",
@@ -877398,6 +878009,80 @@
       "siret_est_siege": true,
       "strategy": "SIRET publié dans la source"
     },
+    "497519116": {
+      "candidates": [],
+      "confidence": "siret",
+      "entreprise": {
+        "activite_principale": "58.19Z",
+        "activite_principale_naf25": "58.19Y",
+        "complements": {
+          "est_entrepreneur_individuel": true
+        },
+        "date_creation": "2007-03-30",
+        "date_mise_a_jour": "2026-11-23T11:33:56",
+        "date_mise_a_jour_insee": "2026-10-07T16:48:10",
+        "date_mise_a_jour_rne": "2026-10-07T17:06:04",
+        "dirigeants": [
+          {
+            "annee_de_naissance": "[NON-DIFFUSIBLE]",
+            "date_de_naissance": "[NON-DIFFUSIBLE]",
+            "nationalite": "[NON-DIFFUSIBLE]",
+            "nom": "[NON-DIFFUSIBLE]",
+            "prenoms": "[NON-DIFFUSIBLE]",
+            "type_dirigeant": "personne physique"
+          }
+        ],
+        "dirigeants_total": 1,
+        "etat_administratif": "A",
+        "nature_juridique": "1000",
+        "nom_complet": "[NON-DIFFUSIBLE]",
+        "nom_raison_sociale": "[NON-DIFFUSIBLE]",
+        "nombre_etablissements": 1,
+        "nombre_etablissements_ouverts": 1,
+        "section_activite_principale": "J",
+        "siege": {
+          "activite_principale": "58.19Z",
+          "activite_principale_naf25": "58.19Y",
+          "adresse": "[NON-DIFFUSIBLE]",
+          "caractere_employeur": "N",
+          "cedex": "[NON-DIFFUSIBLE]",
+          "code_postal": "[NON-DIFFUSIBLE]",
+          "commune": "75113",
+          "complement_adresse": "[NON-DIFFUSIBLE]",
+          "date_creation": "2026-10-15",
+          "date_debut_activite": "2026-10-15",
+          "departement": "75",
+          "etat_administratif": "A",
+          "indice_repetition": "[NON-DIFFUSIBLE]",
+          "latitude": "[NON-DIFFUSIBLE]",
+          "libelle_cedex": "[NON-DIFFUSIBLE]",
+          "libelle_commune": "PARIS",
+          "libelle_voie": "[NON-DIFFUSIBLE]",
+          "liste_enseignes": [
+            "[NON-DIFFUSIBLE]",
+            "[NON-DIFFUSIBLE]",
+            "[NON-DIFFUSIBLE]"
+          ],
+          "longitude": "[NON-DIFFUSIBLE]",
+          "nom_commercial": "[NON-DIFFUSIBLE]",
+          "numero_voie": "[NON-DIFFUSIBLE]",
+          "region": "11",
+          "siret": "49751911600022",
+          "tranche_effectif_salarie": "NN",
+          "type_voie": "[NON-DIFFUSIBLE]"
+        },
+        "sigle": "[NON-DIFFUSIBLE]",
+        "siren": "497519116",
+        "statut_diffusion": "P",
+        "tranche_effectif_salarie": "NN"
+      },
+      "resolved_at": "2026-11-23",
+      "score": 1.0,
+      "siren": "497519116",
+      "siret_declare": "49751911600022",
+      "siret_est_siege": true,
+      "strategy": "SIRET publié dans la source"
+    },
     "497607499": {
       "candidates": [],
       "confidence": "siret",
@@ -883288,6 +883973,67 @@
       "siret_est_siege": false,
       "strategy": "SIRET publié dans la source"
     },
+    "503767238": {
+      "candidates": [],
+      "confidence": "siret",
+      "entreprise": {
+        "activite_principale": "47.91B",
+        "activite_principale_naf25": "47.71Y",
+        "annee_categorie_entreprise": "2024",
+        "categorie_entreprise": "PME",
+        "complements": {
+          "est_entrepreneur_individuel": true
+        },
+        "date_creation": "2008-04-19",
+        "date_mise_a_jour": "2026-11-23T11:41:34",
+        "date_mise_a_jour_insee": "2025-12-06T11:30:52",
+        "date_mise_a_jour_rne": "2026-08-31T21:58:09",
+        "dirigeants": [
+          {
+            "nom": "THIOUBOU",
+            "prenoms": "COUMBA",
+            "type_dirigeant": "personne physique"
+          }
+        ],
+        "dirigeants_total": 1,
+        "etat_administratif": "A",
+        "nature_juridique": "1000",
+        "nom_complet": "COUMBA THIOUBOU",
+        "nombre_etablissements": 2,
+        "nombre_etablissements_ouverts": 1,
+        "section_activite_principale": "G",
+        "siege": {
+          "activite_principale": "47.91B",
+          "activite_principale_naf25": "47.71Y",
+          "adresse": "4 RUE DES FRANCS AUBIERS 93140 BONDY",
+          "caractere_employeur": "N",
+          "code_postal": "93140",
+          "commune": "93010",
+          "date_creation": "2008-04-19",
+          "date_debut_activite": "2008-04-19",
+          "departement": "93",
+          "etat_administratif": "A",
+          "latitude": "48.917536653",
+          "libelle_commune": "BONDY",
+          "libelle_voie": "DES FRANCS AUBIERS",
+          "longitude": "2.4817880238",
+          "numero_voie": "4",
+          "region": "11",
+          "siret": "50376723800010",
+          "tranche_effectif_salarie": "NN",
+          "type_voie": "RUE"
+        },
+        "siren": "503767238",
+        "statut_diffusion": "O",
+        "tranche_effectif_salarie": "NN"
+      },
+      "resolved_at": "2026-11-23",
+      "score": 1.0,
+      "siren": "503767238",
+      "siret_declare": "50376723800010",
+      "siret_est_siege": true,
+      "strategy": "SIRET publié dans la source"
+    },
     "503830390": {
       "candidates": [],
       "confidence": "siret",
@@ -885063,6 +885809,174 @@
       "score": 1.0,
       "siren": "507731578",
       "siret_declare": "50773157800021",
+      "siret_est_siege": true,
+      "strategy": "SIRET publié dans la source"
+    },
+    "507778561": {
+      "candidates": [],
+      "confidence": "siret",
+      "entreprise": {
+        "activite_principale": "60.20B",
+        "activite_principale_naf25": "60.20G",
+        "annee_categorie_entreprise": "2024",
+        "annee_tranche_effectif_salarie": "2024",
+        "categorie_entreprise": "PME",
+        "complements": {
+          "convention_collective_renseignee": true,
+          "liste_idcc": [
+            "1480",
+            "3241"
+          ]
+        },
+        "date_creation": "2008-08-25",
+        "date_mise_a_jour": "2026-11-23T11:44:04",
+        "date_mise_a_jour_insee": "2025-12-06T05:59:57",
+        "date_mise_a_jour_rne": "2026-09-24T04:50:56",
+        "dirigeants": [
+          {
+            "annee_de_naissance": "1969",
+            "date_de_naissance": "1969-07",
+            "nom": "LOUIS (AUBEL)",
+            "prenoms": "CATHERINE MARIE COLETTE",
+            "qualite": "Administrateur",
+            "type_dirigeant": "personne physique"
+          },
+          {
+            "annee_de_naissance": "1966",
+            "date_de_naissance": "1966-08",
+            "nom": "MONANGE (DALLÉ)",
+            "prenoms": "ANNE-SOPHIE",
+            "qualite": "Administrateur",
+            "type_dirigeant": "personne physique"
+          },
+          {
+            "annee_de_naissance": "1967",
+            "date_de_naissance": "1967-05",
+            "nom": "EYMARD",
+            "prenoms": "PHILIPPE ROBERT",
+            "qualite": "Administrateur",
+            "type_dirigeant": "personne physique"
+          },
+          {
+            "annee_de_naissance": "1950",
+            "date_de_naissance": "1950-01",
+            "nom": "FOURNIER",
+            "prenoms": "MICHEL LOUIS EMILE",
+            "qualite": "Administrateur",
+            "type_dirigeant": "personne physique"
+          },
+          {
+            "annee_de_naissance": "1946",
+            "date_de_naissance": "1946-02",
+            "nom": "HEINRICH",
+            "prenoms": "MICHEL LUCIEN EMILE",
+            "qualite": "Vice-Président",
+            "type_dirigeant": "personne physique"
+          },
+          {
+            "annee_de_naissance": "1962",
+            "date_de_naissance": "1962-09",
+            "nom": "JEANDEL JEANPIERRE (JEANDEL)",
+            "prenoms": "GHISLAINE MICHELE",
+            "qualite": "Administrateur",
+            "type_dirigeant": "personne physique"
+          },
+          {
+            "annee_de_naissance": "1961",
+            "date_de_naissance": "1961-06",
+            "nom": "KLIPFEL",
+            "prenoms": "ELISABETH MARIE HELENE",
+            "qualite": "Administrateur",
+            "type_dirigeant": "personne physique"
+          },
+          {
+            "annee_de_naissance": "1986",
+            "date_de_naissance": "1986-08",
+            "nom": "LABURTHE",
+            "prenoms": "XAVIER",
+            "qualite": "Commissaire aux comptes suppléant",
+            "type_dirigeant": "personne physique"
+          },
+          {
+            "annee_de_naissance": "1954",
+            "date_de_naissance": "1954-09",
+            "nom": "MATHIS",
+            "prenoms": "WILLIAM JEAN REMY",
+            "qualite": "Administrateur",
+            "type_dirigeant": "personne physique"
+          },
+          {
+            "annee_de_naissance": "1962",
+            "date_de_naissance": "1962-03",
+            "nom": "MARCOT (MEYER)",
+            "prenoms": "VERONIQUE CLAUDIE MARIE-ROSE",
+            "qualite": "Administrateur",
+            "type_dirigeant": "personne physique"
+          },
+          {
+            "annee_de_naissance": "1968",
+            "date_de_naissance": "1968-12",
+            "nom": "PIERRAT",
+            "prenoms": "BENOIT JEAN-LOUIS",
+            "qualite": "Administrateur",
+            "type_dirigeant": "personne physique"
+          },
+          {
+            "annee_de_naissance": "1964",
+            "date_de_naissance": "1964-09",
+            "nom": "POIRSON",
+            "prenoms": "LAURENT RENE",
+            "qualite": "Directeur Général",
+            "type_dirigeant": "personne physique"
+          }
+        ],
+        "dirigeants_total": 21,
+        "etat_administratif": "A",
+        "finances": {
+          "2024": {
+            "ca": 439936,
+            "resultat_net": 3666
+          }
+        },
+        "nature_juridique": "5515",
+        "nom_complet": "VOSGES TELEVISION (VIAVOSGES)",
+        "nom_raison_sociale": "VOSGES TELEVISION",
+        "nombre_etablissements": 3,
+        "nombre_etablissements_ouverts": 2,
+        "section_activite_principale": "J",
+        "siege": {
+          "activite_principale": "60.20B",
+          "activite_principale_naf25": "60.20G",
+          "adresse": "2 RUE DE LA CHIPOTTE 88000 EPINAL",
+          "caractere_employeur": "O",
+          "code_postal": "88000",
+          "commune": "88160",
+          "date_creation": "2008-08-25",
+          "date_debut_activite": "2009-01-01",
+          "departement": "88",
+          "etat_administratif": "A",
+          "latitude": "48.177818681",
+          "libelle_commune": "EPINAL",
+          "libelle_voie": "DE LA CHIPOTTE",
+          "longitude": "6.4482990093",
+          "nom_commercial": "VIAVOSGES",
+          "numero_voie": "2",
+          "region": "44",
+          "siret": "50777856100013",
+          "tranche_effectif_salarie": "12",
+          "type_voie": "RUE"
+        },
+        "siren": "507778561",
+        "statut_diffusion": "O",
+        "tranche_effectif_salarie": "12",
+        "tva": [
+          "FR68507778561"
+        ]
+      },
+      "resolved_at": "2026-11-23",
+      "score": 1.0,
+      "siren": "507778561",
+      "siret_declare": "50777856100013",
       "siret_est_siege": true,
       "strategy": "SIRET publié dans la source"
     },
@@ -939680,6 +940594,86 @@
       "score": 1.0,
       "siren": "803606557",
       "siret_declare": "80360655700038",
+      "siret_est_siege": true,
+      "strategy": "SIRET publié dans la source"
+    },
+    "803694280": {
+      "candidates": [],
+      "confidence": "siret",
+      "entreprise": {
+        "activite_principale": "58.14Z",
+        "activite_principale_naf25": "58.13Y",
+        "annee_categorie_entreprise": "2024",
+        "annee_tranche_effectif_salarie": "2024",
+        "categorie_entreprise": "PME",
+        "complements": {
+          "convention_collective_renseignee": true,
+          "liste_idcc": [
+            "1480",
+            "3242"
+          ]
+        },
+        "date_creation": "2014-07-10",
+        "date_mise_a_jour": "2026-11-23T11:09:08",
+        "date_mise_a_jour_insee": "2025-12-06T05:14:10",
+        "date_mise_a_jour_rne": "2026-09-25T02:40:08",
+        "dirigeants": [
+          {
+            "annee_de_naissance": "1962",
+            "date_de_naissance": "1962-08",
+            "nom": "DAVID",
+            "prenoms": "VINCENT",
+            "qualite": "Gérant",
+            "type_dirigeant": "personne physique"
+          }
+        ],
+        "dirigeants_total": 1,
+        "etat_administratif": "A",
+        "finances": {
+          "2025": {
+            "ca": 0,
+            "resultat_net": -66398
+          }
+        },
+        "nature_juridique": "5499",
+        "nom_complet": "SOCIETE NOUVELLE SEMEUR HEBDO (SNSH)",
+        "nom_raison_sociale": "SOCIETE NOUVELLE SEMEUR HEBDO",
+        "nombre_etablissements": 2,
+        "nombre_etablissements_ouverts": 1,
+        "section_activite_principale": "J",
+        "siege": {
+          "activite_principale": "58.14Z",
+          "activite_principale_naf25": "58.13Y",
+          "adresse": "4 ALL GROUPE N BOURBAKI 63170 AUBIERE",
+          "caractere_employeur": "O",
+          "code_postal": "63170",
+          "commune": "63014",
+          "date_creation": "2018-01-15",
+          "date_debut_activite": "2018-07-02",
+          "departement": "63",
+          "etat_administratif": "A",
+          "latitude": "45.756668073",
+          "libelle_commune": "AUBIERE",
+          "libelle_voie": "GROUPE N BOURBAKI",
+          "longitude": "3.1305888374",
+          "numero_voie": "4",
+          "region": "84",
+          "siret": "80369428000022",
+          "tranche_effectif_salarie": "03",
+          "type_voie": "ALL"
+        },
+        "sigle": "SNSH",
+        "siren": "803694280",
+        "statut_diffusion": "O",
+        "tranche_effectif_salarie": "03",
+        "tva": [
+          "FR24803694280"
+        ]
+      },
+      "resolved_at": "2026-11-23",
+      "score": 1.0,
+      "siren": "803694280",
+      "siret_declare": "80369428000022",
       "siret_est_siege": true,
       "strategy": "SIRET publié dans la source"
     },
